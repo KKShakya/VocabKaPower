@@ -3,22 +3,34 @@ import React from 'react';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   isLoading?: boolean;
+  size?: 'sm' | 'md' | 'lg';
 }
 
 export const Button: React.FC<ButtonProps> = ({ 
   children, 
   variant = 'primary', 
   isLoading, 
+  size = 'md',
   className = '', 
   ...props 
 }) => {
-  const baseStyle = "px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-offset-1 disabled:opacity-50 disabled:cursor-not-allowed";
+  const sizeClasses = {
+    sm: "px-3 py-1.5 text-xs",
+    md: "px-5 py-2.5 text-sm",
+    lg: "px-8 py-3.5 text-base",
+  };
+
+  const baseStyle = `rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.98] ${sizeClasses[size]}`;
   
   const variants = {
-    primary: "bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-500/30 focus:ring-brand-500",
-    secondary: "bg-accent-600 hover:bg-accent-700 text-white shadow-md shadow-accent-500/30 focus:ring-accent-500",
-    outline: "border-2 border-slate-200 hover:border-brand-500 hover:text-brand-600 text-slate-600 bg-transparent",
-    ghost: "text-slate-600 hover:bg-slate-100",
+    // Gradient Glass Primary
+    primary: "bg-gradient-to-br from-brand-500 to-brand-600 text-white shadow-lg shadow-brand-500/25 border border-brand-400/20 hover:shadow-brand-500/40 hover:-translate-y-0.5",
+    // Gradient Glass Secondary
+    secondary: "bg-gradient-to-br from-slate-700 to-slate-800 text-white shadow-lg shadow-slate-500/20 border border-slate-600/20 hover:shadow-slate-500/30 hover:-translate-y-0.5",
+    // Glass Outline
+    outline: "bg-white/40 backdrop-blur-sm border border-slate-200 text-slate-700 hover:bg-white/60 hover:border-brand-300 hover:text-brand-700 hover:shadow-md",
+    // Ghost
+    ghost: "text-slate-600 hover:bg-slate-100/50 hover:text-brand-700",
   };
 
   return (
