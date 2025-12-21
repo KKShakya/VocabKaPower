@@ -1,6 +1,9 @@
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { WordAnalysis, ReadingComprehension, SilsilaItem, PracticeQuestion, SilsilaCategory } from "../types";
 
+// Polyfill process for TS environment if unused imports are causing issues
+declare const process: { env: { API_KEY: string } };
+
 const apiKey = process.env.API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 
@@ -121,6 +124,7 @@ export const generateSilsila = async (category: SilsilaCategory): Promise<Silsil
     [SilsilaCategory.PREVIOUS_YEAR]: "List 5 vocabulary words frequently asked in GRE/GMAT/CAT exams in previous years.",
     [SilsilaCategory.CONFUSING]: "List 3 pairs of commonly confusing words (e.g., adverse/averse). Treat each pair as a distinct item in the list.",
     [SilsilaCategory.TRENDING]: "List 5 trending or sophisticated English words used in top editorial columns recently (like 'starkly', 'expatriate').",
+    [SilsilaCategory.MASTER_COLLECTION]: "List 5 essential master vocabulary words for advanced learners.",
   };
 
   const schema: Schema = {

@@ -20,12 +20,12 @@ const openDB = (): Promise<IDBDatabase> => {
 
     const request = indexedDB.open(DB_NAME, VERSION);
 
-    request.onerror = (event) => {
+    request.onerror = () => {
       console.error("IndexedDB Open Error:", request.error);
       reject(request.error);
     };
 
-    request.onsuccess = (event) => {
+    request.onsuccess = () => {
       dbInstance = request.result;
       
       // Handle generic connection errors
@@ -70,7 +70,7 @@ export const saveWordToNotebook = async (item: SavedWord): Promise<void> => {
     try {
       const transaction = db.transaction(STORE_NAME, 'readwrite');
       const store = transaction.objectStore(STORE_NAME);
-      const request = store.put(item);
+      store.put(item);
       
       // Use transaction.oncomplete to ensure data is committed
       transaction.oncomplete = () => resolve();
@@ -107,7 +107,7 @@ export const deleteFromNotebook = async (word: string): Promise<void> => {
     try {
       const transaction = db.transaction(STORE_NAME, 'readwrite');
       const store = transaction.objectStore(STORE_NAME);
-      const request = store.delete(word);
+      store.delete(word);
       
       transaction.oncomplete = () => resolve();
       transaction.onerror = () => reject(transaction.error);

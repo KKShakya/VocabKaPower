@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { getNotebookWords, deleteFromNotebook, exportNotebookData, importNotebookData, saveWordToNotebook } from '../services/storageService';
 import { generateWordAnalysis, generateWordImage } from '../services/geminiService';
 import { SavedWord } from '../types';
-import { Trash2, X, Image as ImageIcon, Search, Download, Upload, PlusCircle, Loader2, ImageOff, CheckCircle } from 'lucide-react';
+import { Trash2, X, Image as ImageIcon, Search, Download, Upload, PlusCircle, Loader2 } from 'lucide-react';
 import { Button } from './Button';
 import { WordCard } from './WordCard';
 

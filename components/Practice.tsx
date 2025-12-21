@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Brain, Trophy, ArrowRight, RefreshCcw } from 'lucide-react';
+import { Brain, Trophy, ArrowRight } from 'lucide-react';
 import { PracticeQuestion, SilsilaCategory } from '../types';
 import { Button } from './Button';
 import { getNotebookWords } from '../services/storageService';

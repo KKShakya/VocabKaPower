@@ -1,5 +1,5 @@
 import React from 'react';
-import { Volume2, Heart, Image as ImageIcon, BookOpen } from 'lucide-react';
+import { Volume2, Heart } from 'lucide-react';
 import { WordAnalysis, SavedWord } from '../types';
 
 interface WordCardProps {
