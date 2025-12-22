@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { X, Server, Wifi, WifiOff, Save, AlertCircle, CloudUpload, Loader2, CheckCircle2, RefreshCw } from 'lucide-react';
+import { X, Server, Wifi, WifiOff, Save, AlertCircle, Upload, Loader2, CheckCircle2, RefreshCw } from 'lucide-react';
 import { Button } from './Button';
 import { getApiSettings, saveApiSettings, migrateLocalToCloud, validateApiConnection, ConnectionTestResult } from '../services/storageService';
 import { ApiSettings } from '../types';
@@ -85,7 +85,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, o
 
     setMigrationStatus('processing');
     try {
-        const count = await migrateLocalToCloud((current, total) => {
+        await migrateLocalToCloud((current, total) => {
             setMigrationProgress({ current, total });
         });
         setMigrationStatus('done');
@@ -224,7 +224,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, o
                     {migrationStatus === 'idle' && (
                         <div className="bg-blue-50 p-4 rounded-xl border border-blue-100">
                              <div className="flex items-start gap-3">
-                                <CloudUpload className="text-blue-500 mt-1" size={20} />
+                                <Upload className="text-blue-500 mt-1" size={20} />
                                 <div>
                                     <h5 className="font-semibold text-blue-900 text-sm">Upload Local Data</h5>
                                     <p className="text-xs text-blue-700 mt-1 mb-3">Push all existing words from this browser to your connected cloud API.</p>
