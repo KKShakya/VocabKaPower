@@ -1,3 +1,4 @@
+
 export interface WordAnalysis {
   word: string;
   partOfSpeech: string;
@@ -35,6 +36,12 @@ export interface PracticeQuestion {
   prompt: string;
   answer: string;
   options: string[];
+}
+
+export interface ApiSettings {
+  baseUrl: string;
+  authToken: string;
+  enabled: boolean;
 }
 
 export enum AppTab {

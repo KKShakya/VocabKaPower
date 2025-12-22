@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState, useRef } from 'react';
 import { getNotebookWords, deleteFromNotebook, exportNotebookData, importNotebookData, saveWordToNotebook } from '../services/storageService';
 import { generateWordAnalysis, generateWordImage } from '../services/geminiService';
@@ -49,12 +50,15 @@ export const Notebook: React.FC = () => {
 
   const handleExport = async () => {
     try {
-        const json = await exportNotebookData();
-        const blob = new Blob([json], { type: 'application/json' });
+        const compressedData = await exportNotebookData();
+        // Use text/plain to avoid browser trying to parse it as JSON if it's not valid JSON
+        const blob = new Blob([compressedData], { type: 'text/plain' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
         const date = new Date().toISOString().split('T')[0];
+        // Extension .lexicon or .txt might be safer, but .json is expected by many
+        // We stick to .json but the content is a compressed string
         a.download = `lexicon-backup-${date}.json`;
         document.body.appendChild(a);
         a.click();
@@ -66,7 +70,10 @@ export const Notebook: React.FC = () => {
   };
 
   const handleImportClick = () => {
-    fileInputRef.current?.click();
+    if (fileInputRef.current) {
+        fileInputRef.current.value = ''; // Reset input to ensure change event fires even for same file
+        fileInputRef.current.click();
+    }
   };
 
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -82,16 +89,23 @@ export const Notebook: React.FC = () => {
     const reader = new FileReader();
     reader.onload = async (event) => {
         try {
-            const json = event.target?.result as string;
-            const count = await importNotebookData(json);
-            alert(`Successfully restored ${count} words!`);
-            loadWords(); // Reload UI
-        } catch (err) {
-            alert("Failed to restore data. Invalid file format.");
+            const content = event.target?.result as string;
+            if (!content) throw new Error("File is empty");
+            
+            const count = await importNotebookData(content);
+            alert(`Success! Restored ${count} words.`);
+            await loadWords(); // Reload UI
+        } catch (err: any) {
+            console.error("Import failed:", err);
+            alert(`Failed to restore data: ${err.message || "Unknown error"}`);
         } finally {
             setImporting(false);
             if (fileInputRef.current) fileInputRef.current.value = '';
         }
+    };
+    reader.onerror = () => {
+        alert("Error reading file");
+        setImporting(false);
     };
     reader.readAsText(file);
   };
@@ -163,7 +177,7 @@ export const Notebook: React.FC = () => {
                 <input 
                     type="text" 
                     placeholder="Search your words..." 
-                    className="w-full pl-10 pr-4 py-2 rounded-lg border border-slate-200 focus:border-brand-500 outline-none"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 placeholder:text-slate-400 focus:bg-white focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all shadow-sm"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -184,7 +198,7 @@ export const Notebook: React.FC = () => {
                     type="file" 
                     ref={fileInputRef} 
                     onChange={handleFileChange} 
-                    accept=".json" 
+                    accept=".json,.txt" 
                     className="hidden" 
                 />
             </div>
@@ -204,7 +218,7 @@ export const Notebook: React.FC = () => {
                     <>
                         <p className="text-slate-600 mb-4 text-sm">Paste a list of words. AI will generate cards and save them to your notebook.</p>
                         <textarea 
-                            className="w-full h-40 p-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 outline-none mb-4 resize-none"
+                            className="w-full h-40 p-4 border border-slate-200 bg-slate-50 text-slate-700 placeholder:text-slate-400 rounded-xl focus:bg-white focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none mb-4 resize-none transition-all shadow-sm"
                             placeholder="e.g. Callow, Abate, Cacophony..."
                             value={bulkInput}
                             onChange={(e) => setBulkInput(e.target.value)}
@@ -214,7 +228,7 @@ export const Notebook: React.FC = () => {
                              <div className={`w-10 h-6 rounded-full p-1 transition-colors ${bulkGenerateImages ? 'bg-brand-500' : 'bg-slate-300'}`}>
                                  <div className={`w-4 h-4 bg-white rounded-full transition-transform ${bulkGenerateImages ? 'translate-x-4' : ''}`}></div>
                              </div>
-                             <span className="text-sm text-slate-700 font-medium">Generate Images (High Storage)</span>
+                             <span className="text-sm text-slate-700 font-medium">Generate Optimized Images</span>
                         </div>
 
                         <div className="flex justify-end gap-3">

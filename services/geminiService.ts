@@ -1,5 +1,6 @@
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { WordAnalysis, ReadingComprehension, SilsilaItem, PracticeQuestion, SilsilaCategory } from "../types";
+import { compressImage } from "../utils/imageCompression";
 
 // Polyfill process for TS environment if unused imports are causing issues
 declare const process: { env: { API_KEY: string } };
@@ -66,7 +67,10 @@ export const generateWordImage = async (word: string): Promise<string | null> =>
 
     for (const part of response.candidates?.[0]?.content?.parts || []) {
       if (part.inlineData) {
-        return `data:image/png;base64,${part.inlineData.data}`;
+        const rawBase64 = `data:image/png;base64,${part.inlineData.data}`;
+        // Compress the image before returning to save storage space
+        const compressedBase64 = await compressImage(rawBase64);
+        return compressedBase64;
       }
     }
   } catch (e) {

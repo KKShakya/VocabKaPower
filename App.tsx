@@ -1,16 +1,22 @@
+
 import React, { useState, useEffect } from 'react';
 import { WordExplorer } from './components/WordExplorer';
 import { ReadingComprehension } from './components/ReadingComprehension';
 import { VocabSilsila } from './components/VocabSilsila';
 import { Practice } from './components/Practice';
 import { Notebook } from './components/Notebook';
+import { SettingsModal } from './components/SettingsModal';
 import { initStorage } from './services/storageService';
 import { AppTab } from './types';
-import { Compass, Book, Layers, Zap, Bookmark } from 'lucide-react';
+import { Compass, Book, Layers, Zap, Bookmark, Settings as SettingsIcon } from 'lucide-react';
 
 const App: React.FC = () => {
   const [currentTab, setCurrentTab] = useState<AppTab>(AppTab.EXPLORER);
   const [scrolled, setScrolled] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  
+  // Triggers re-render/refresh of components when settings change
+  const [refreshTrigger, setRefreshTrigger] = useState(0);
 
   useEffect(() => {
     initStorage().catch(console.error);
@@ -22,14 +28,24 @@ const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleSettingsSave = () => {
+    setRefreshTrigger(prev => prev + 1);
+    // If user was on notebook, refresh it
+    if (currentTab === AppTab.NOTEBOOK) {
+        // The Notebook component needs to reload data when this happens.
+        // We can force it by remounting via the key prop
+    }
+  };
+
   const renderContent = () => {
+    // Add key={refreshTrigger} to force re-mount when settings change
     switch (currentTab) {
-      case AppTab.EXPLORER: return <WordExplorer />;
-      case AppTab.NOTEBOOK: return <Notebook />;
-      case AppTab.READING: return <ReadingComprehension />;
-      case AppTab.SILSILA: return <VocabSilsila />;
-      case AppTab.PRACTICE: return <Practice />;
-      default: return <WordExplorer />;
+      case AppTab.EXPLORER: return <WordExplorer key={refreshTrigger} />;
+      case AppTab.NOTEBOOK: return <Notebook key={refreshTrigger} />;
+      case AppTab.READING: return <ReadingComprehension key={refreshTrigger} />;
+      case AppTab.SILSILA: return <VocabSilsila key={refreshTrigger} />;
+      case AppTab.PRACTICE: return <Practice key={refreshTrigger} />;
+      default: return <WordExplorer key={refreshTrigger} />;
     }
   };
 
@@ -86,10 +102,14 @@ const App: React.FC = () => {
             })}
           </nav>
 
-          {/* Mobile Profile/Menu Placeholder */}
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-slate-100 to-white border border-white flex items-center justify-center text-slate-400 shadow-inner">
-             <div className="w-2 h-2 bg-brand-500 rounded-full"></div>
-          </div>
+          {/* Settings / Menu */}
+          <button 
+            onClick={() => setIsSettingsOpen(true)}
+            className="w-10 h-10 rounded-full bg-white border border-slate-200 hover:border-brand-300 flex items-center justify-center text-slate-400 hover:text-brand-600 hover:bg-brand-50 shadow-sm transition-all"
+            title="API Settings"
+          >
+             <SettingsIcon size={20} />
+          </button>
 
         </header>
       </div>
@@ -117,6 +137,13 @@ const App: React.FC = () => {
            )
         })}
       </nav>
+
+      {/* Settings Modal */}
+      <SettingsModal 
+        isOpen={isSettingsOpen} 
+        onClose={() => setIsSettingsOpen(false)} 
+        onSave={handleSettingsSave} 
+      />
 
     </div>
   );
