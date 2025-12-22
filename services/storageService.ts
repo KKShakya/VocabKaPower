@@ -125,10 +125,12 @@ export interface ConnectionTestResult {
   url?: string;
 }
 
-export const validateApiConnection = async (settings: ApiSettings): Promise<ConnectionTestResult> => {
+export const validateApiConnection = async (_settings: ApiSettings): Promise<ConnectionTestResult> => {
+  // Stubs for disabled backend functionality
   return { success: false, message: "Backend is disabled in this version." };
 };
 
-export const migrateLocalToCloud = async (onProgress: (current: number, total: number) => void): Promise<void> => {
+export const migrateLocalToCloud = async (_onProgress: (current: number, total: number) => void): Promise<void> => {
+    // Stubs for disabled backend functionality
     throw new Error("Cloud sync is disabled.");
 };
