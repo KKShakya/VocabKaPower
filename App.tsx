@@ -8,7 +8,7 @@ import { Notebook } from './components/Notebook';
 import { SettingsModal } from './components/SettingsModal';
 import { initStorage } from './services/storageService';
 import { AppTab } from './types';
-import { Compass, Book, Layers, Zap, Bookmark, Settings as SettingsIcon } from 'lucide-react';
+import { Compass, Book, Layers, Zap, Bookmark } from 'lucide-react';
 
 const App: React.FC = () => {
   const [currentTab, setCurrentTab] = useState<AppTab>(AppTab.EXPLORER);
@@ -30,11 +30,6 @@ const App: React.FC = () => {
 
   const handleSettingsSave = () => {
     setRefreshTrigger(prev => prev + 1);
-    // If user was on notebook, refresh it
-    if (currentTab === AppTab.NOTEBOOK) {
-        // The Notebook component needs to reload data when this happens.
-        // We can force it by remounting via the key prop
-    }
   };
 
   const renderContent = () => {
@@ -102,14 +97,8 @@ const App: React.FC = () => {
             })}
           </nav>
 
-          {/* Settings / Menu */}
-          <button 
-            onClick={() => setIsSettingsOpen(true)}
-            className="w-10 h-10 rounded-full bg-white border border-slate-200 hover:border-brand-300 flex items-center justify-center text-slate-400 hover:text-brand-600 hover:bg-brand-50 shadow-sm transition-all"
-            title="API Settings"
-          >
-             <SettingsIcon size={20} />
-          </button>
+          {/* Right spacer to balance layout since settings button is removed */}
+          <div className="w-10 h-10"></div>
 
         </header>
       </div>
@@ -138,7 +127,7 @@ const App: React.FC = () => {
         })}
       </nav>
 
-      {/* Settings Modal */}
+      {/* Settings Modal - Kept in code but hidden trigger, effectively disabled for standard user */}
       <SettingsModal 
         isOpen={isSettingsOpen} 
         onClose={() => setIsSettingsOpen(false)} 

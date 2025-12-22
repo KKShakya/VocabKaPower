@@ -1,8 +1,9 @@
+
 import React, { useState } from 'react';
 import { Brain, Trophy, ArrowRight } from 'lucide-react';
 import { PracticeQuestion, SilsilaCategory } from '../types';
 import { Button } from './Button';
-import { getNotebookWords } from '../services/storageService';
+import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
 
 export const Practice: React.FC = () => {
@@ -13,13 +14,10 @@ export const Practice: React.FC = () => {
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
   const generateLocalQuestion = async (): Promise<PracticeQuestion> => {
-    // 1. Gather all available words
-    const notebookWords = await getNotebookWords();
+    // 1. Gather all available words from Static Notebook
+    const pool1 = STATIC_NOTEBOOK_DATA.map(w => ({ word: w.word, definition: w.meaning }));
     
-    // Map notebook words
-    const pool1 = notebookWords.map(w => ({ word: w.word, definition: w.meaning }));
-    
-    // Map static words
+    // 2. Map static Silsila words
     const pool2: {word: string, definition: string}[] = [];
     
     // Process Trending (Simple types)
@@ -87,7 +85,7 @@ export const Practice: React.FC = () => {
       setQuestion(q);
     } catch (e) {
       console.error(e);
-      alert("Failed to load question. Make sure you have words in your notebook or use the static collections.");
+      alert("Failed to load question.");
     } finally {
       setLoading(false);
     }

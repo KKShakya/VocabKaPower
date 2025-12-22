@@ -1,7 +1,7 @@
+
 import React, { useState } from 'react';
-import { Search, Image as ImageIcon, ImageOff, Sparkles } from 'lucide-react';
-import { generateWordAnalysis, generateWordImage } from '../services/geminiService';
-import { saveWordToNotebook, checkWordExists } from '../services/storageService';
+import { Search, Sparkles } from 'lucide-react';
+import { generateWordAnalysis } from '../services/geminiService';
 import { WordAnalysis } from '../types';
 import { Button } from './Button';
 import { WordCard } from './WordCard';
@@ -9,11 +9,8 @@ import { WordCard } from './WordCard';
 export const WordExplorer: React.FC = () => {
   const [query, setQuery] = useState('');
   const [data, setData] = useState<WordAnalysis | null>(null);
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [isSaved, setIsSaved] = useState(false);
-  const [generateImage, setGenerateImage] = useState(true);
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,42 +19,15 @@ export const WordExplorer: React.FC = () => {
     setLoading(true);
     setError('');
     setData(null);
-    setImageUrl(null);
-    setIsSaved(false);
 
     try {
       const analysis = await generateWordAnalysis(query);
       setData(analysis);
-      
-      const exists = await checkWordExists(analysis.word);
-      setIsSaved(exists);
-
-      if (generateImage) {
-          generateWordImage(analysis.word).then(url => {
-            if (url) setImageUrl(url);
-          });
-      }
-
     } catch (err) {
       setError('Could not analyze the word. Please try again.');
       console.error(err);
     } finally {
       setLoading(false);
-    }
-  };
-
-  const handleSave = async () => {
-    if (!data) return;
-    try {
-      await saveWordToNotebook({
-        ...data,
-        imageUrl: generateImage ? imageUrl : null,
-        createdAt: Date.now()
-      });
-      setIsSaved(true);
-    } catch (e) {
-      console.error("Failed to save", e);
-      alert("Failed to save word. Storage might be full.");
     }
   };
 
@@ -101,18 +71,6 @@ export const WordExplorer: React.FC = () => {
                     </Button>
                 </div>
             </div>
-          
-            {/* Toggle Switch */}
-            <div className="flex justify-center mt-6">
-                <button 
-                    type="button"
-                    onClick={() => setGenerateImage(!generateImage)}
-                    className={`flex items-center gap-2 text-xs font-semibold uppercase tracking-wider px-4 py-2 rounded-full transition-all border ${generateImage ? 'bg-brand-50/50 text-brand-700 border-brand-200' : 'bg-slate-50/50 text-slate-500 border-slate-200'} hover:bg-white/60 backdrop-blur-sm`}
-                >
-                    {generateImage ? <ImageIcon size={14} /> : <ImageOff size={14} />}
-                    {generateImage ? 'Visuals Enabled' : 'Text Only Mode'}
-                </button>
-            </div>
         </form>
         {error && <p className="text-red-500 bg-red-50 inline-block px-4 py-2 rounded-lg text-sm">{error}</p>}
       </div>
@@ -122,9 +80,8 @@ export const WordExplorer: React.FC = () => {
           <div className="w-full max-w-md perspective-1000">
             <WordCard 
                 data={data} 
-                imageUrl={imageUrl} 
-                onSave={handleSave} 
-                isSaved={isSaved} 
+                imageUrl={null} 
+                // No save functionality in static mode
             />
           </div>
         </div>

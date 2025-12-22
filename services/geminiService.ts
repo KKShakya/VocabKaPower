@@ -1,6 +1,6 @@
+
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { WordAnalysis, ReadingComprehension, SilsilaItem, PracticeQuestion, SilsilaCategory } from "../types";
-import { compressImage } from "../utils/imageCompression";
 
 // Polyfill process for TS environment if unused imports are causing issues
 declare const process: { env: { API_KEY: string } };
@@ -52,32 +52,6 @@ export const generateWordAnalysis = async (word: string): Promise<WordAnalysis> 
   const text = response.text;
   if (!text) throw new Error("No response from Gemini");
   return JSON.parse(text) as WordAnalysis;
-};
-
-export const generateWordImage = async (word: string): Promise<string | null> => {
-  checkApiKey();
-  const model = "gemini-2.5-flash-image"; 
-  
-  try {
-    const response = await ai.models.generateContent({
-      model,
-      contents: `Create a minimalist, high-contrast, artistic illustration representing the concept of the word "${word}". 
-      Make it look like a flashcard illustration. No text in the image.`,
-    });
-
-    for (const part of response.candidates?.[0]?.content?.parts || []) {
-      if (part.inlineData) {
-        const rawBase64 = `data:image/png;base64,${part.inlineData.data}`;
-        // Compress the image before returning to save storage space
-        const compressedBase64 = await compressImage(rawBase64);
-        return compressedBase64;
-      }
-    }
-  } catch (e) {
-    console.error("Image generation failed", e);
-    return null; 
-  }
-  return null;
 };
 
 export const generateReadingComprehension = async (): Promise<ReadingComprehension> => {
