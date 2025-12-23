@@ -431,5 +431,275 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     synonyms: ["Miserable", "Sorrowful", "Wretched"],
     antonyms: ["Joyful", "Cheerful", "Delighted"],
     trick: "Woe -> Sounds like 'Oh no', expressing deep sadness."
+  },
+  {
+    word: "Lax",
+    partOfSpeech: "Adjective",
+    meaning: "Not sufficiently strict, severe, or careful.",
+    translation: "ढीला / लापरवाह",
+    sentence: "The security at the airport was lax, allowing people to enter easily.",
+    synonyms: ["Slack", "Negligent", "Careless"],
+    antonyms: ["Strict", "Stringent", "Careful"],
+    trick: "Relax -> If you relax too much at work, you become lax."
+  },
+  {
+    word: "Solvency",
+    partOfSpeech: "Noun",
+    meaning: "The ability to pay all debts; financial stability.",
+    translation: "ऋण शोधन क्षमता",
+    sentence: "The bank had to prove its solvency to the regulators.",
+    synonyms: ["Stability", "Soundness", "Wealth"],
+    antonyms: ["Insolvency", "Bankruptcy", "Debt"],
+    trick: "Solve + Currency -> Ability to solve problems with currency."
+  },
+  {
+    word: "Obtuse",
+    partOfSpeech: "Adjective",
+    meaning: "Annoyingly insensitive or slow to understand.",
+    translation: "मंदबुद्धि",
+    sentence: "He was being deliberately obtuse to avoid answering the question.",
+    synonyms: ["Stupid", "Slow-witted", "Insensitive"],
+    antonyms: ["Sharp", "Astute", "Clever"],
+    trick: "Obtuse Angle -> An angle > 90° is blunt and wide, not sharp."
+  },
+  {
+    word: "Pragmatic",
+    partOfSpeech: "Adjective",
+    meaning: "Dealing with things sensibly and realistically.",
+    translation: "व्यावहारिक",
+    sentence: "We need a pragmatic solution, not just a theoretical one.",
+    synonyms: ["Practical", "Realistic", "Sensible"],
+    antonyms: ["Idealistic", "Impractical", "Dreamy"],
+    trick: "Programmer -> Good programmers are practical (pragmatic), not emotional."
+  },
+  {
+    word: "Erudite",
+    partOfSpeech: "Adjective",
+    meaning: "Having or showing great knowledge or learning.",
+    translation: "विद्वान / ज्ञानी",
+    sentence: "The professor’s erudite lecture impressed the students.",
+    synonyms: ["Learned", "Scholarly", "Knowledgeable"],
+    antonyms: ["Ignorant", "Uneducated", "Illiterate"],
+    trick: "Rude? -> No, he is not rude, he is educated (E-rudite)."
+  },
+  {
+    word: "Usurp",
+    partOfSpeech: "Verb",
+    meaning: "Take (a position of power) illegally or by force.",
+    translation: "हड़पना",
+    sentence: "The general tried to usurp the throne from the king.",
+    synonyms: ["Seize", "Commandeer", "Hijack"],
+    antonyms: ["Surrender", "Relinquish", "Give in"],
+    trick: "U + Slurp -> You slurp (drink) someone else's drink illegally."
+  },
+  {
+    word: "Riveting",
+    partOfSpeech: "Adjective",
+    meaning: "Completely engrossing; compelling.",
+    translation: "दिलचस्प",
+    sentence: "The movie was so riveting that I couldn't look away.",
+    synonyms: ["Fascinating", "Gripping", "Absorbing"],
+    antonyms: ["Boring", "Dull", "Tedious"],
+    trick: "Rivet -> A metal pin that holds things tight. It holds your attention tight."
+  },
+  {
+    word: "Insipid",
+    partOfSpeech: "Adjective",
+    meaning: "Lacking flavor; lacking vigor or interest.",
+    translation: "फीका / नीरस",
+    sentence: "The soup was insipid and tasted like hot water.",
+    synonyms: ["Tasteless", "Bland", "Boring"],
+    antonyms: ["Tasty", "Interesting", "Piquant"],
+    trick: "In + Sip -> When you sip it, there is no taste in it."
+  },
+  {
+    word: "Sporadic",
+    partOfSpeech: "Adjective",
+    meaning: "Occurring at irregular intervals or only in a few places.",
+    translation: "छिटपुट / अनियमित",
+    sentence: "Sporadic gunfire was heard throughout the night.",
+    synonyms: ["Occasional", "Infrequent", "Irregular"],
+    antonyms: ["Constant", "Frequent", "Steady"],
+    trick: "Spot -> Occurring in random spots, not everywhere."
+  },
+  {
+    word: "Erratic",
+    partOfSpeech: "Adjective",
+    meaning: "Not even or regular in pattern or movement; unpredictable.",
+    translation: "अनिश्चित / अस्थिर",
+    sentence: "The stock market has been erratic due to global wars.",
+    synonyms: ["Unpredictable", "Inconsistent", "Volatile"],
+    antonyms: ["Consistent", "Stable", "Predictable"],
+    trick: "Error -> Acting like a computer error or glitch."
+  },
+  {
+    word: "Diabolical",
+    partOfSpeech: "Adjective",
+    meaning: "Disgracefully bad or unpleasant; characteristic of the Devil.",
+    translation: "शैतानी / नृशंस",
+    sentence: "The villain hatched a diabolical plot to destroy the city.",
+    synonyms: ["Devilish", "Fiendish", "Wicked"],
+    antonyms: ["Angelic", "Good", "Saintly"],
+    trick: "Diablo -> Diablo means Devil in Spanish."
+  },
+  {
+    word: "Heinous",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a person or wrongful act) utterly odious or wicked.",
+    translation: "जघन्य",
+    sentence: "The judge sentenced him to life for the heinous crime.",
+    synonyms: ["Atrocious", "Abominable", "Monstrous"],
+    antonyms: ["Admirable", "Commendable", "Good"],
+    trick: "Highness -> A crime of such 'highness' (magnitude) that it is evil."
+  },
+  {
+    word: "Fiendish",
+    partOfSpeech: "Adjective",
+    meaning: "Extremely cruel or unpleasant; extremely complex.",
+    translation: "पिशाच तुल्य / क्रूर",
+    sentence: "The puzzle was fiendishly difficult to solve.",
+    synonyms: ["Wicked", "Cruel", "Vicious"],
+    antonyms: ["Kind", "Gentle", "Benevolent"],
+    trick: "Friend -> Opposite of a Friend is a Fiend (Enemy/Devil)."
+  },
+  {
+    word: "Atrocious",
+    partOfSpeech: "Adjective",
+    meaning: "Horrifyingly wicked; of a very poor quality.",
+    translation: "अति दुष्ट / बहुत बुरा",
+    sentence: "The weather has been atrocious all week.",
+    synonyms: ["Appalling", "Dreadful", "Terrible"],
+    antonyms: ["Excellent", "Superb", "Wonderful"],
+    trick: "Atrocity -> Committing an atrocity makes you atrocious."
+  },
+  {
+    word: "Silos",
+    partOfSpeech: "Noun",
+    meaning: "A system/department causing isolation from others (Corporate Term).",
+    translation: "एकांत / विभाग",
+    sentence: "We need to break down the silos and encourage teamwork between departments.",
+    synonyms: ["Isolation", "Separation", "Pockets"],
+    antonyms: ["Integration", "Unity", "Collaboration"],
+    trick: "Solo -> Working solo (alone) creates silos."
+  },
+  {
+    word: "Emulate",
+    partOfSpeech: "Verb",
+    meaning: "Match or surpass (a person or achievement), typically by imitation.",
+    translation: "अनुकरण करना",
+    sentence: "Young players try to emulate their sporting heroes.",
+    synonyms: ["Imitate", "Copy", "Mirror"],
+    antonyms: ["Neglect", "Reject", "Ignore"],
+    trick: "Simulator -> A simulator tries to copy real life."
+  },
+  {
+    word: "Virulent",
+    partOfSpeech: "Adjective",
+    meaning: "(of a disease) extremely severe/harmful; bitterly hostile.",
+    translation: "विषैला / संक्रामक",
+    sentence: "A virulent strain of the flu is spreading.",
+    synonyms: ["Toxic", "Deadly", "Venomous"],
+    antonyms: ["Harmless", "Benign", "Mild"],
+    trick: "Virus -> Related to a dangerous virus."
+  },
+  {
+    word: "Hostile",
+    partOfSpeech: "Adjective",
+    meaning: "Unfriendly; antagonistic.",
+    translation: "शत्रुतापूर्ण",
+    sentence: "The audience was hostile towards the comedian.",
+    synonyms: ["Aggressive", "Belligerent", "Unfriendly"],
+    antonyms: ["Friendly", "Warm", "Welcoming"],
+    trick: "Hostel -> Hostel wardens are often hostile (strict/unfriendly)."
+  },
+  {
+    word: "Churlish",
+    partOfSpeech: "Adjective",
+    meaning: "Rude in a mean-spirited and surly way.",
+    translation: "अभद्र / गंवार",
+    sentence: "It would be churlish to refuse such a generous offer.",
+    synonyms: ["Rude", "Impolite", "Boorish"],
+    antonyms: ["Polite", "Gracious", "Courteous"],
+    trick: "Childish -> Acting rude like a spoiled child."
+  },
+  {
+    word: "Loutish",
+    partOfSpeech: "Adjective",
+    meaning: "Uncouth and aggressive.",
+    translation: "गंवार / अशिष्ट",
+    sentence: "His loutish behavior at the party embarrassed his wife.",
+    synonyms: ["Thuggish", "Boorish", "Oafish"],
+    antonyms: ["Refined", "Gentlemanly", "Polite"],
+    trick: "Loud -> Loud and aggressive people are loutish."
+  },
+  {
+    word: "Ebullient",
+    partOfSpeech: "Adjective",
+    meaning: "Cheerful and full of energy.",
+    translation: "जोशीला",
+    sentence: "The ebullient host kept the party alive all night.",
+    synonyms: ["Buoyant", "Cheerful", "Joyful"],
+    antonyms: ["Depressed", "Apathetic", "Sullen"],
+    trick: "Bull -> Having the energy of a raging bull (happy energy)."
+  },
+  {
+    word: "Placid",
+    partOfSpeech: "Adjective",
+    meaning: "Not easily upset or excited; calm.",
+    translation: "शांत",
+    sentence: "The placid waters of the lake reflected the moon.",
+    synonyms: ["Calm", "Tranquil", "Serene"],
+    antonyms: ["Excitable", "Temperamental", "Angry"],
+    trick: "Plastic -> Plastic doesn't move or react; it stays calm."
+  },
+  {
+    word: "Lethargic",
+    partOfSpeech: "Adjective",
+    meaning: "Affected by lethargy; sluggish and apathetic.",
+    translation: "सुस्त",
+    sentence: "The hot weather made everyone feel lethargic.",
+    synonyms: ["Sluggish", "Inert", "Torpid"],
+    antonyms: ["Energetic", "Vigorous", "Active"],
+    trick: "Leather -> Moving as if you are made of heavy leather."
+  },
+  {
+    word: "Adroit",
+    partOfSpeech: "Adjective",
+    meaning: "Clever or skillful in using the hands or mind.",
+    translation: "निपुण / चतुर",
+    sentence: "She was adroit at avoiding awkward questions.",
+    synonyms: ["Skillful", "Adept", "Dexterous"],
+    antonyms: ["Clumsy", "Incompetent", "Inept"],
+    trick: "Android -> Androids (robots) are programmed to be skillful."
+  },
+  {
+    word: "Doctrine",
+    partOfSpeech: "Noun",
+    meaning: "A belief or set of beliefs held and taught by a Church, party, or group.",
+    translation: "सिद्धांत",
+    sentence: "The government is committed to the doctrine of free trade.",
+    synonyms: ["Creed", "Dogma", "Principle"],
+    antonyms: ["Skepticism", "Disbelief", "Doubt"],
+    trick: "Doctor -> A doctor follows the rules of medicine strictly."
+  },
+  {
+    word: "Dogma",
+    partOfSpeech: "Noun",
+    meaning: "A principle or set of principles laid down by an authority as incontrovertibly true.",
+    translation: "हठधर्मिता / मत",
+    sentence: "He challenged the political dogma of the party.",
+    synonyms: ["Tenet", "Canon", "Belief"],
+    antonyms: ["Open-mindedness", "Ambiguity", "Doubt"],
+    trick: "Dog -> A dog follows its master's orders without questioning."
+  },
+  {
+    word: "Dexterous",
+    partOfSpeech: "Adjective",
+    meaning: "Showing or having skill, especially with the hands.",
+    translation: "निपुण / कुशल",
+    sentence: "The magician's dexterous hands amazed the audience.",
+    synonyms: ["Deft", "Adept", "Agile"],
+    antonyms: ["Clumsy", "Awkward", "Unskilled"],
+    trick: "Dexter -> Dexter (from the cartoon) was a genius kid with machines."
   }
 ];

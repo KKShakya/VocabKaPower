@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { WordAnalysis } from '../types';
-import { Search, Book } from 'lucide-react';
+import { Search, Book, Sparkles } from 'lucide-react';
 import { WordCard } from './WordCard';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
 
@@ -14,6 +14,11 @@ export const Notebook: React.FC = () => {
     w.meaning.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const handleRandomWord = () => {
+    const random = STATIC_NOTEBOOK_DATA[Math.floor(Math.random() * STATIC_NOTEBOOK_DATA.length)];
+    setSelectedWord(random);
+  };
+
   return (
     <div className="max-w-6xl mx-auto">
        <div className="flex flex-col md:flex-row justify-between items-end md:items-center mb-8 gap-4">
@@ -22,15 +27,24 @@ export const Notebook: React.FC = () => {
             <p className="text-slate-500">Permanent collection of vocabulary ({STATIC_NOTEBOOK_DATA.length} words)</p>
         </div>
         
-        <div className="relative w-full md:w-72">
-            <input 
-                type="text" 
-                placeholder="Search your collection..." 
-                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-700 placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all shadow-sm"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            <Search className="absolute left-3 top-3.5 text-slate-400" size={18} />
+        <div className="flex items-center gap-2 w-full md:w-auto">
+            <button 
+                onClick={handleRandomWord}
+                className="p-3 rounded-xl bg-brand-50 text-brand-600 hover:bg-brand-100 border border-brand-200 transition-colors shadow-sm"
+                title="Surprise Me (Random Word)"
+            >
+                <Sparkles size={20} />
+            </button>
+            <div className="relative flex-1 md:w-72">
+                <input 
+                    type="text" 
+                    placeholder="Search your collection..." 
+                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-700 placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 outline-none transition-all shadow-sm"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
+                <Search className="absolute left-3 top-3.5 text-slate-400" size={18} />
+            </div>
         </div>
       </div>
 
