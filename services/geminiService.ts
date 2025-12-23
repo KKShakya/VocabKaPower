@@ -103,6 +103,7 @@ export const generateSilsila = async (category: SilsilaCategory): Promise<Silsil
     [SilsilaCategory.CONFUSING]: "List 3 pairs of commonly confusing words (e.g., adverse/averse). Treat each pair as a distinct item in the list.",
     [SilsilaCategory.TRENDING]: "List 5 trending or sophisticated English words used in top editorial columns recently (like 'starkly', 'expatriate').",
     [SilsilaCategory.MASTER_COLLECTION]: "List 5 essential master vocabulary words for advanced learners.",
+    [SilsilaCategory.IDIOMS]: "List 5 common English idioms or phrases useful for competitive exams, with their meanings and an example sentence.",
   };
 
   const schema: Schema = {
@@ -110,8 +111,8 @@ export const generateSilsila = async (category: SilsilaCategory): Promise<Silsil
     items: {
       type: Type.OBJECT,
       properties: {
-        word: { type: Type.STRING, description: "The word or word pair" },
-        context: { type: Type.STRING, description: "A brief tag like '2022 GMAT' or 'Confusing Pair'" },
+        word: { type: Type.STRING, description: "The word, word pair, or idiom" },
+        context: { type: Type.STRING, description: "A brief tag like 'Idiom', '2022 GMAT' or 'Confusing Pair'" },
         definition: { type: Type.STRING },
       },
       required: ["word", "context", "definition"],

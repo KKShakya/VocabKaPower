@@ -57,4 +57,5 @@ export enum SilsilaCategory {
   PREVIOUS_YEAR = 'Previous Year / Frequent',
   CONFUSING = 'Commonly Confusing',
   TRENDING = 'Trending Words',
+  IDIOMS = 'Idioms & Phrases',
 }

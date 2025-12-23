@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { History, GitCompare, TrendingUp, ChevronRight, GraduationCap, ArrowLeft, Smile, Frown, CloudRain, Flame, Shield, Skull, HelpCircle, Zap, Coffee } from 'lucide-react';
+import { History, GitCompare, TrendingUp, ChevronRight, GraduationCap, ArrowLeft, Smile, CloudRain, Flame, Shield, Skull, HelpCircle, Zap, Coffee, Quote } from 'lucide-react';
 import { SilsilaCategory, SilsilaItem } from '../types';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
@@ -67,6 +67,15 @@ const CATEGORIES = [
     gradient: "from-purple-400 to-purple-600",
     bg: "bg-purple-50",
     text: "text-purple-700"
+  },
+  {
+    id: SilsilaCategory.IDIOMS,
+    title: "Idioms & Phrases",
+    description: "Unlock the figurative meaning of common expressions.",
+    icon: Quote,
+    gradient: "from-pink-400 to-pink-600",
+    bg: "bg-pink-50",
+    text: "text-pink-700"
   },
 ];
 

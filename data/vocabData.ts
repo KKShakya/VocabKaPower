@@ -1,3 +1,4 @@
+
 import { SilsilaCategory, SilsilaItem } from "../types";
 
 export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
@@ -140,6 +141,56 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
       word: "Bolster",
       context: "Most Repeated",
       definition: "To support or strengthen. (e.g., 'Bolster the economy')."
+    }
+  ],
+  [SilsilaCategory.IDIOMS]: [
+    {
+      type: 'simple',
+      word: "Bite the Bullet",
+      context: "Common Idiom",
+      definition: "To force yourself to do something difficult or unpleasant that you have been avoiding.\nUsage: 'I hate going to the dentist, but I'll just have to bite the bullet.'"
+    },
+    {
+      type: 'simple',
+      word: "Devil's Advocate",
+      context: "Common Idiom",
+      definition: "To pretend to disagree with someone in order to have a good discussion about something.\nUsage: 'I don't really disagree, I'm just playing devil's advocate.'"
+    },
+    {
+      type: 'simple',
+      word: "Miss the Boat",
+      context: "Common Idiom",
+      definition: "To be too slow to take an opportunity.\nUsage: 'There were tickets available last week, but you missed the boat.'"
+    },
+    {
+      type: 'simple',
+      word: "The Best of Both Worlds",
+      context: "Common Idiom",
+      definition: "A situation in which you can enjoy the advantages of two very different things at the same time.\nUsage: 'Working from home is the best of both worlds.'"
+    },
+    {
+      type: 'simple',
+      word: "Sit on the Fence",
+      context: "Common Idiom",
+      definition: "To delay making a decision.\nUsage: 'You can't sit on the fence forever; you need to choose a side.'"
+    },
+    {
+      type: 'simple',
+      word: "Blessing in Disguise",
+      context: "Common Idiom",
+      definition: "Something that seems bad or unlucky at first, but results in something good happening later.\nUsage: 'Losing that job was a blessing in disguise.'"
+    },
+    {
+      type: 'simple',
+      word: "Once in a Blue Moon",
+      context: "Common Idiom",
+      definition: "Happening very rarely.\nUsage: 'I visit my hometown once in a blue moon.'"
+    },
+    {
+      type: 'simple',
+      word: "Beat Around the Bush",
+      context: "Common Idiom",
+      definition: "Avoiding the main topic; not speaking directly about the issue.\nUsage: 'Stop beating around the bush and tell me what happened.'"
     }
   ]
 };
