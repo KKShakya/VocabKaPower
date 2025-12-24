@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { History, GitCompare, TrendingUp, ChevronRight, GraduationCap, ArrowLeft, Smile, CloudRain, Flame, Shield, Skull, HelpCircle, Zap, Coffee, Quote } from 'lucide-react';
+import { History, GitCompare, TrendingUp, ChevronRight, GraduationCap, ArrowLeft, Smile, CloudRain, Flame, Shield, Skull, HelpCircle, Zap, Coffee, Quote, Gavel, Timer } from 'lucide-react';
 import { SilsilaCategory, SilsilaItem } from '../types';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
@@ -12,11 +12,13 @@ const EMOTION_MAP: Record<string, string[]> = {
     "Gloom & Despair": ["Harrowing", "Sullen", "Dejected", "Forlorn", "Wretched", "Melancholy", "Despondent", "Woeful", "Morose"],
     "Calm & Composed": ["Serene", "Halcyon", "Stoic", "Impassive", "Tranquil", "Salubrious", "Placid"],
     "Fury & Irritation": ["Ire", "Flustered", "Vexed", "Irate", "Hostile", "Churlish", "Loutish"],
-    "Smart & Sharp": ["Erudite", "Adroit", "Dexterous", "Pragmatic", "Riveting", "Solvency", "Emulate"],
-    "Weak & Dull": ["Lax", "Lethargic", "Insipid", "Obtuse", "Sporadic", "Erratic"],
+    "Smart & Sharp": ["Erudite", "Adroit", "Dexterous", "Pragmatic", "Riveting", "Solvency", "Emulate", "Efficacious", "Prolific"],
+    "Weak & Dull": ["Lax", "Lethargic", "Insipid", "Obtuse", "Sedentary", "Abortive", "Vagabond"],
     "Fear & Doubt": ["Trepidation", "Apprehension", "Skeptical", "Perturb"],
     "Noble & Good": ["Majestic", "Propitious", "Magnanimous", "Benign", "Sanguine", "Mellifluous"],
-    "Dark & Negative": ["Callous", "Rancid", "Envy", "Repulsed", "Diabolical", "Heinous", "Fiendish", "Atrocious", "Virulent", "Usurp", "Silos", "Dogma", "Doctrine"]
+    "Dark & Negative": ["Callous", "Rancid", "Envy", "Repulsed", "Diabolical", "Heinous", "Fiendish", "Atrocious", "Virulent", "Usurp", "Silos", "Dogma", "Doctrine", "Vain", "Pompous", "Indulgent"],
+    "Power & Politics": ["Prerogative", "Perquisite", "Sanction", "Leeway", "Latitude", "Deposition", "Abdication", "Impeachment", "Disavowal", "Ratified", "Repudiate", "Abrogate", "Concomitant", "Credence"],
+    "Time & Motion": ["Advent", "Inception", "Cessation", "Peregrine", "Endemic", "Sporadic", "Erratic"]
 };
 
 const EMOTION_CONFIG: Record<string, { icon: React.ElementType, color: string, bg: string }> = {
@@ -28,7 +30,9 @@ const EMOTION_CONFIG: Record<string, { icon: React.ElementType, color: string, b
     "Weak & Dull": { icon: Coffee, color: "text-stone-600", bg: "bg-stone-200" },
     "Fear & Doubt": { icon: HelpCircle, color: "text-violet-600", bg: "bg-violet-100" },
     "Noble & Good": { icon: GraduationCap, color: "text-emerald-600", bg: "bg-emerald-100" },
-    "Dark & Negative": { icon: Skull, color: "text-rose-900", bg: "bg-rose-200" }
+    "Dark & Negative": { icon: Skull, color: "text-rose-900", bg: "bg-rose-200" },
+    "Power & Politics": { icon: Gavel, color: "text-blue-800", bg: "bg-blue-200" },
+    "Time & Motion": { icon: Timer, color: "text-teal-700", bg: "bg-teal-200" }
 };
 
 const CATEGORIES = [

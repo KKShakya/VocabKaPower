@@ -701,5 +701,275 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     synonyms: ["Deft", "Adept", "Agile"],
     antonyms: ["Clumsy", "Awkward", "Unskilled"],
     trick: "Dexter -> Dexter (from the cartoon) was a genius kid with machines."
+  },
+  {
+    word: "Vagabond",
+    partOfSpeech: "Noun/Adj",
+    meaning: "A person who wanders from place to place without a home.",
+    translation: "आवारा / घुमक्कड़",
+    sentence: "He lived the life of a vagabond, traveling with just a backpack.",
+    synonyms: ["Wanderer", "Nomad", "Drifter"],
+    antonyms: ["Resident", "Settler", "Inhabitant"],
+    trick: "James Bond -> James Bond is always traveling like a vagabond."
+  },
+  {
+    word: "Peregrine",
+    partOfSpeech: "Adjective",
+    meaning: "Wandering, traveling, or migratory.",
+    translation: "विदेशी / घुमंतू",
+    sentence: "The peregrine falcon is known for its long migrations.",
+    synonyms: ["Migratory", "Wandering", "Roving"],
+    antonyms: ["Native", "Indigenous", "Resident"],
+    trick: "Per + Agri -> Moving per (through) agri (fields/land)."
+  },
+  {
+    word: "Sedentary",
+    partOfSpeech: "Adjective",
+    meaning: "Tending to spend much time seated; somewhat inactive.",
+    translation: "निष्क्रिय / बैठा रहने वाला",
+    sentence: "A sedentary lifestyle can lead to health problems like obesity.",
+    synonyms: ["Inactive", "Stationary", "Desk-bound"],
+    antonyms: ["Active", "Mobile", "Energetic"],
+    trick: "Sediment -> Sediment settles at the bottom and doesn't move."
+  },
+  {
+    word: "Endemic",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a disease or condition) regularly found among particular people or in a certain area.",
+    translation: "स्थानीय / विशेष क्षेत्र का",
+    sentence: "Malaria is endemic to many tropical countries.",
+    synonyms: ["Indigenous", "Native", "Local"],
+    antonyms: ["Foreign", "Exotic", "Pandemic"],
+    trick: "End + Mic -> The sound of the mic ends here; it is local to this room."
+  },
+  {
+    word: "Prerogative",
+    partOfSpeech: "Noun",
+    meaning: "A right or privilege exclusive to a particular individual or class.",
+    translation: "विशेषाधिकार",
+    sentence: "Making executive decisions is the prerogative of the CEO.",
+    synonyms: ["Privilege", "Right", "Entitlement"],
+    antonyms: ["Duty", "Obligation", "Disqualification"],
+    trick: "Pre-rogative -> A King's right before (Pre) anyone else questions (Interrogative)."
+  },
+  {
+    word: "Perquisite",
+    partOfSpeech: "Noun",
+    meaning: "A benefit which one enjoys or is entitled to on account of one's job.",
+    translation: "अनुलाभ / ऊपरी लाभ",
+    sentence: "Free travel is a perquisite of working for an airline.",
+    synonyms: ["Perk", "Bonus", "Benefit"],
+    antonyms: ["Loss", "Penalty", "Disadvantage"],
+    trick: "Perk -> The word 'Perk' is just a short form of Perquisite."
+  },
+  {
+    word: "Sanction",
+    partOfSpeech: "Noun/Verb",
+    meaning: "1. Official permission. 2. A penalty for disobeying a law.",
+    translation: "1. मंजूरी 2. प्रतिबंध",
+    sentence: "The project received official sanction. 2. Trade sanctions were imposed.",
+    synonyms: ["Authorization", "Penalty"],
+    antonyms: ["Prohibition", "Reward"],
+    trick: "Sank -> If you get a sanction (penalty), your business sank."
+  },
+  {
+    word: "Indulgent",
+    partOfSpeech: "Adjective",
+    meaning: "Having or indicating a tendency to be overly generous to or lenient with someone.",
+    translation: "उदार / पक्षपाती",
+    sentence: "The indulgent grandmother gave the kids candy before dinner.",
+    synonyms: ["Lenient", "Permissive", "Tolerant"],
+    antonyms: ["Strict", "Severe", "Stern"],
+    trick: "Indulge -> If you indulge in chocolate, you are being indulgent to yourself."
+  },
+  {
+    word: "Leeway",
+    partOfSpeech: "Noun",
+    meaning: "The amount of freedom to move or act that is available.",
+    translation: "छूट / गुंजाइश",
+    sentence: "The manager gave us some leeway to finish the project late.",
+    synonyms: ["Latitude", "Freedom", "Scope"],
+    antonyms: ["Restriction", "Constraint", "Tightness"],
+    trick: "Lee + Way -> Leaving a way open for movement."
+  },
+  {
+    word: "Latitude",
+    partOfSpeech: "Noun",
+    meaning: "Scope for freedom of action or thought.",
+    translation: "स्वतंत्रता / विस्तार",
+    sentence: "Journalists should have considerable latitude in criticizing public officials.",
+    synonyms: ["Freedom", "Liberty", "Leeway"],
+    antonyms: ["Limitation", "Restriction", "Bondage"],
+    trick: "Map Lines -> Latitude lines show how wide the world is (width/freedom)."
+  },
+  {
+    word: "Deposition",
+    partOfSpeech: "Noun",
+    meaning: "1. The action of deposing someone, especially a monarch. 2. A formal legal statement.",
+    translation: "1. पदच्युति 2. बयान",
+    sentence: "The deposition of the dictator led to chaos. 2. He gave a deposition in court.",
+    synonyms: ["Removal", "Testimony"],
+    antonyms: ["Installation", "Coronation"],
+    trick: "De-Position -> Removing someone from their Position."
+  },
+  {
+    word: "Abdication",
+    partOfSpeech: "Noun",
+    meaning: "An act of renouncing the throne or authority.",
+    translation: "त्याग",
+    sentence: "The king's abdication shocked the nation.",
+    synonyms: ["Resignation", "Renunciation", "Surrender"],
+    antonyms: ["Coronation", "Accession", "Acceptance"],
+    trick: "Ab-Dictation -> The Dictator leaves (Absent)."
+  },
+  {
+    word: "Impeachment",
+    partOfSpeech: "Noun",
+    meaning: "A charge of misconduct made against the holder of a public office.",
+    translation: "महाभियोग",
+    sentence: "The president faced impeachment for corruption.",
+    synonyms: ["Indictment", "Accusation", "Charge"],
+    antonyms: ["Absolution", "Exoneration", "Praise"],
+    trick: "Peach -> A peach bruises easily; impeachment bruises your reputation."
+  },
+  {
+    word: "Disavowal",
+    partOfSpeech: "Noun",
+    meaning: "The denial of any responsibility or support for something.",
+    translation: "इनकार / अस्वीकृति",
+    sentence: "The government issued a disavowal of the secret operation.",
+    synonyms: ["Denial", "Rejection", "Repudiation"],
+    antonyms: ["Admission", "Acknowledgment", "Confession"],
+    trick: "Dis-Vow -> To break a vow or promise; to say you didn't do it."
+  },
+  {
+    word: "Credence",
+    partOfSpeech: "Noun",
+    meaning: "Belief in or acceptance of something as true.",
+    translation: "विश्वास / साख",
+    sentence: "The letters give credence to the theory that he was murdered.",
+    synonyms: ["Credibility", "Belief", "Trust"],
+    antonyms: ["Disbelief", "Distrust", "Skepticism"],
+    trick: "Credit -> If you have credit, people give credence to you."
+  },
+  {
+    word: "Vain",
+    partOfSpeech: "Adjective",
+    meaning: "1. Having or showing an excessively high opinion of one's appearance. 2. Producing no result; useless.",
+    translation: "1. अहंकारी 2. व्यर्थ",
+    sentence: "He is so vain about his hair. 2. They made a vain attempt to escape.",
+    synonyms: ["Conceited", "Futile"],
+    antonyms: ["Modest", "Successful"],
+    trick: "Vein -> Looking at your veins in the mirror (Self-obsessed) OR 'In vain' (useless)."
+  },
+  {
+    word: "Abortive",
+    partOfSpeech: "Adjective",
+    meaning: "Failing to produce the intended result.",
+    translation: "निष्फल / अधूरा",
+    sentence: "The rebels made an abortive attempt to seize power.",
+    synonyms: ["Unsuccessful", "Failed", "Futile"],
+    antonyms: ["Successful", "Fruitful", "Effective"],
+    trick: "Abort -> To abort a mission means it failed."
+  },
+  {
+    word: "Pompous",
+    partOfSpeech: "Adjective",
+    meaning: "Affectedly and irritatingly grand, solemn, or self-important.",
+    translation: "आडंबरपूर्ण / घमंडी",
+    sentence: "The pompous official refused to talk to the common people.",
+    synonyms: ["Arrogant", "Pretentious", "Haughty"],
+    antonyms: ["Humble", "Modest", "Unassuming"],
+    trick: "Pomp -> 'Pomp and Show' -> Showing off too much."
+  },
+  {
+    word: "Efficacious",
+    partOfSpeech: "Adjective",
+    meaning: "(Typically of something inanimate or abstract) successful in producing a desired or intended result.",
+    translation: "प्रभावकारी",
+    sentence: "The vaccine proved to be highly efficacious against the virus.",
+    synonyms: ["Effective", "Productive", "Potent"],
+    antonyms: ["Ineffective", "Useless", "Weak"],
+    trick: "Effect -> Something that produces a good effect."
+  },
+  {
+    word: "Prolific",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a plant, animal, or person) producing much fruit or foliage or many offspring.",
+    translation: "उपजाऊ / बहुफलदायक",
+    sentence: "Picasso was a prolific artist, creating thousands of works.",
+    synonyms: ["Productive", "Creative", "Fertile"],
+    antonyms: ["Unproductive", "Barren", "Sterile"],
+    trick: "Pro-Life -> Creating a lot of life (or work)."
+  },
+  {
+    word: "Advent",
+    partOfSpeech: "Noun",
+    meaning: "The arrival of a notable person, thing, or event.",
+    translation: "आगमन",
+    sentence: "The advent of the internet changed the world forever.",
+    synonyms: ["Arrival", "Appearance", "Emergence"],
+    antonyms: ["Departure", "Disappearance", "Exit"],
+    trick: "Adventure -> Every adventure starts with an advent (arrival)."
+  },
+  {
+    word: "Inception",
+    partOfSpeech: "Noun",
+    meaning: "The establishment or starting point of an institution or activity.",
+    translation: "आरंभ / शुरुआत",
+    sentence: "Since its inception, the company has grown rapidly.",
+    synonyms: ["Beginning", "Commencement", "Origin"],
+    antonyms: ["Conclusion", "End", "Termination"],
+    trick: "Incept -> Movie 'Inception' was about planting an idea (the start)."
+  },
+  {
+    word: "Cessation",
+    partOfSpeech: "Noun",
+    meaning: "The fact or process of ending or being brought to an end.",
+    translation: "समाप्ति / विराम",
+    sentence: "The treaty called for a cessation of hostilities.",
+    synonyms: ["End", "Stoppage", "Halt"],
+    antonyms: ["Commencement", "Start", "Continuation"],
+    trick: "Cease -> Ceasefire means stopping the fire."
+  },
+  {
+    word: "Ratified",
+    partOfSpeech: "Verb",
+    meaning: "Sign or give formal consent to (a treaty, contract, or agreement), making it officially valid.",
+    translation: "पुष्टि करना / मंजूर करना",
+    sentence: "The parliament ratified the peace treaty.",
+    synonyms: ["Approved", "Confirmed", "Endorsed"],
+    antonyms: ["Rejected", "Vetoed", "Revoked"],
+    trick: "Rate -> You rate something 5 stars to approve/validate it."
+  },
+  {
+    word: "Repudiate",
+    partOfSpeech: "Verb",
+    meaning: "Refuse to accept or be associated with; deny the truth or validity of.",
+    translation: "अस्वीकार करना",
+    sentence: "The politician repudiated the allegations of corruption.",
+    synonyms: ["Reject", "Deny", "Renounce"],
+    antonyms: ["Accept", "Embrace", "Confirm"],
+    trick: "Reputation -> To save your reputation, you reject (repudiate) bad claims."
+  },
+  {
+    word: "Abrogate",
+    partOfSpeech: "Verb",
+    meaning: "Repeal or do away with (a law, right, or formal agreement).",
+    translation: "रद्द करना",
+    sentence: "The new government promised to abrogate the old tax laws.",
+    synonyms: ["Repeal", "Revoke", "Annul"],
+    antonyms: ["Enact", "Institute", "Establish"],
+    trick: "Abe-Gate -> Close the gate on a law; cancel it."
+  },
+  {
+    word: "Concomitant",
+    partOfSpeech: "Adjective",
+    meaning: "Naturally accompanying or associated.",
+    translation: "सहगामी / साथ में",
+    sentence: "Inflation is a concomitant of rapid economic growth.",
+    synonyms: ["Accompanying", "Associated", "Related"],
+    antonyms: ["Unrelated", "Independent", "Separate"],
+    trick: "Come + Commit -> Things that come together and are committed to each other."
   }
 ];
