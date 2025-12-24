@@ -971,5 +971,25 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     synonyms: ["Accompanying", "Associated", "Related"],
     antonyms: ["Unrelated", "Independent", "Separate"],
     trick: "Come + Commit -> Things that come together and are committed to each other."
+  },
+  {
+    word: "Profound",
+    partOfSpeech: "Adjective",
+    meaning: "Showing great knowledge, insight, or intensity; reaching to the depths of one's nature.",
+    translation: "गहरा / गंभीर",
+    sentence: "The speaker's words had a profound impact on the audience, changing their perspective forever.",
+    synonyms: ["Deep", "Intense", "Insightful"],
+    antonyms: ["Superficial", "Shallow", "Trivial"],
+    trick: "Pro + Found -> A 'Pro' (professional) person has 'Found' deep knowledge that is not just on the surface."
+  },
+  {
+    word: "Bleak",
+    partOfSpeech: "Adjective",
+    meaning: "Lacking in warmth, life, or hope; cold and miserable.",
+    translation: "बेरंग / निराशाजनक",
+    sentence: "The future of the company looks bleak unless they find a new investor soon.",
+    synonyms: ["Gloomy", "Desolate", "Cheerless"],
+    antonyms: ["Bright", "Cheerful", "Promising"],
+    trick: "Leak -> If your roof has a leak during a cold, rainy winter night, the situation becomes bleak."
   }
 ];

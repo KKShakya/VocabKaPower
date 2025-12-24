@@ -9,10 +9,10 @@ import { WordCard } from './WordCard';
 // Define Categories for Master Collection
 const EMOTION_MAP: Record<string, string[]> = {
     "Joy & Bliss": ["Elation", "Felicity", "Euphoric", "Rapturous", "Winsome", "Cheerful", "Jubilant", "Delighted", "Beatific", "Exuberant", "Ebullient"],
-    "Gloom & Despair": ["Harrowing", "Sullen", "Dejected", "Forlorn", "Wretched", "Melancholy", "Despondent", "Woeful", "Morose"],
+    "Gloom & Despair": ["Harrowing", "Sullen", "Dejected", "Forlorn", "Wretched", "Melancholy", "Despondent", "Woeful", "Morose", "Bleak"],
     "Calm & Composed": ["Serene", "Halcyon", "Stoic", "Impassive", "Tranquil", "Salubrious", "Placid"],
     "Fury & Irritation": ["Ire", "Flustered", "Vexed", "Irate", "Hostile", "Churlish", "Loutish"],
-    "Smart & Sharp": ["Erudite", "Adroit", "Dexterous", "Pragmatic", "Riveting", "Solvency", "Emulate", "Efficacious", "Prolific"],
+    "Smart & Sharp": ["Erudite", "Adroit", "Dexterous", "Pragmatic", "Riveting", "Solvency", "Emulate", "Efficacious", "Prolific", "Profound"],
     "Weak & Dull": ["Lax", "Lethargic", "Insipid", "Obtuse", "Sedentary", "Abortive", "Vagabond"],
     "Fear & Doubt": ["Trepidation", "Apprehension", "Skeptical", "Perturb"],
     "Noble & Good": ["Majestic", "Propitious", "Magnanimous", "Benign", "Sanguine", "Mellifluous"],
