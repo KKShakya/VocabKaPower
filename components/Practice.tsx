@@ -1,109 +1,144 @@
 
 import React, { useState, useMemo } from 'react';
-import { Brain, Trophy, ArrowRight, RotateCcw, Play, CheckCircle2, XCircle, Lightbulb } from 'lucide-react';
+import { Brain, Trophy, ArrowRight, RotateCcw, CheckCircle2, XCircle, Lightbulb, Target, AlertTriangle, BookOpen } from 'lucide-react';
 import { Button } from './Button';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
-import { SilsilaCategory } from '../types';
+import { STATIC_GRAMMAR_DATA } from '../data/grammarData';
+import { SilsilaCategory, PracticeLevel } from '../types';
 
-type GameState = 'start' | 'playing' | 'finished';
+type GameState = 'menu' | 'playing' | 'finished';
 
 interface GameQuestion {
   id: number;
+  type: 'meaning' | 'cloze' | 'validation';
   prompt: string;
-  answer: string;
-  options: string[];
+  answer: string | boolean;
+  options?: string[];
   trick?: string;
-  meaning: string;
-  synonyms?: string[];
-  antonyms?: string[];
+  explanation?: string;
+  topic?: string;
+  context?: string;
+  synonyms?: string[]; // Added for feedback
+  antonyms?: string[]; // Added for feedback
 }
 
 interface WrongAnswer {
-  word: string;
-  meaning: string;
-  trick?: string;
+  prompt: string;
+  correctAnswer: string;
+  userAnswer?: string;
+  explanation?: string;
 }
 
 export const Practice: React.FC = () => {
-  const [gameState, setGameState] = useState<GameState>('start');
+  const [gameState, setGameState] = useState<GameState>('menu');
+  const [currentLevel, setCurrentLevel] = useState<PracticeLevel>('level1');
   const [questions, setQuestions] = useState<GameQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [selectedOption, setSelectedOption] = useState<string | boolean | null>(null);
   const [wrongAnswers, setWrongAnswers] = useState<WrongAnswer[]>([]);
-  
-  // Combine all data sources
-  const allWords = useMemo(() => {
-    const combined: { word: string; meaning: string; trick?: string; synonyms?: string[]; antonyms?: string[] }[] = [];
+
+  // --- DATA PREPARATION ---
+
+  const vocabSource = useMemo(() => {
+    const combined: { 
+        word: string; 
+        meaning: string; 
+        sentence: string; 
+        trick?: string; 
+        synonyms?: string[]; 
+        antonyms?: string[];
+    }[] = [];
     
-    // 1. From Notebook
     STATIC_NOTEBOOK_DATA.forEach(w => combined.push({ 
         word: w.word, 
         meaning: w.meaning, 
+        sentence: w.sentence,
         trick: w.trick,
         synonyms: w.synonyms,
         antonyms: w.antonyms
     }));
 
-    // 2. From Silsila
     STATIC_VOCAB_DATA[SilsilaCategory.MASTER_COLLECTION].forEach(item => {
         if(item.type === 'detailed') combined.push({ 
             word: item.data.word, 
             meaning: item.data.meaning, 
+            sentence: item.data.sentence,
             trick: item.data.trick,
             synonyms: item.data.synonyms,
             antonyms: item.data.antonyms
         });
     });
-    STATIC_VOCAB_DATA[SilsilaCategory.PREVIOUS_YEAR].forEach(item => {
-         if(item.type === 'simple') combined.push({ 
-             word: item.word, 
-             meaning: item.definition, 
-             trick: "Practice often to remember!",
-             synonyms: [],
-             antonyms: []
-         });
-    });
     
     return combined;
   }, []);
 
-  const startGame = () => {
-    const QUESTIONS_COUNT = 20;
-    const count = Math.min(QUESTIONS_COUNT, allWords.length);
+  const startGame = (level: PracticeLevel) => {
+    setCurrentLevel(level);
+    let newQuestions: GameQuestion[] = [];
     
-    if (count < 4) {
-        alert("Not enough words to start practice.");
-        return;
+    if (level === 'level1') {
+        const shuffled = [...vocabSource].sort(() => Math.random() - 0.5).slice(0, 15);
+        newQuestions = shuffled.map((item, idx) => {
+            const distractors = vocabSource
+                .filter(w => w.word !== item.word)
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 3)
+                .map(w => w.word);
+            
+            return {
+                id: idx,
+                type: 'meaning',
+                prompt: item.meaning,
+                answer: item.word,
+                options: [item.word, ...distractors].sort(() => Math.random() - 0.5),
+                trick: item.trick,
+                synonyms: item.synonyms,
+                antonyms: item.antonyms
+            };
+        });
+    } else if (level === 'level2') {
+        const validItems = vocabSource.filter(i => i.sentence && i.sentence.length > 10).sort(() => Math.random() - 0.5).slice(0, 15);
+        
+        newQuestions = validItems.map((item, idx) => {
+            const regex = new RegExp(`\\b${item.word}\\w*`, 'gi');
+            const maskedSentence = item.sentence.replace(regex, '_______');
+            
+            const distractors = vocabSource
+                .filter(w => w.word !== item.word)
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 3)
+                .map(w => w.word);
+
+            return {
+                id: idx,
+                type: 'cloze',
+                prompt: maskedSentence,
+                answer: item.word,
+                options: [item.word, ...distractors].sort(() => Math.random() - 0.5),
+                trick: item.trick,
+                context: item.meaning,
+                synonyms: item.synonyms,
+                antonyms: item.antonyms
+            };
+        });
+    } else {
+        const shuffled = [...STATIC_GRAMMAR_DATA].sort(() => Math.random() - 0.5).slice(0, 15);
+        newQuestions = shuffled.map((item, idx) => ({
+            id: idx,
+            type: 'validation',
+            prompt: item.sentence,
+            answer: item.isCorrect,
+            explanation: item.explanation,
+            topic: item.topic
+        }));
     }
 
-    // Shuffle and pick 20
-    const shuffled = [...allWords].sort(() => Math.random() - 0.5);
-    const selected = shuffled.slice(0, count);
-    
-    // Generate Options
-    const newQuestions: GameQuestion[] = selected.map((item, index) => {
-        const distractors: string[] = [];
-        while(distractors.length < 3) {
-            const random = allWords[Math.floor(Math.random() * allWords.length)];
-            if (random.word !== item.word && !distractors.includes(random.word)) {
-                distractors.push(random.word);
-            }
-        }
-        const options = [item.word, ...distractors].sort(() => Math.random() - 0.5);
-        
-        return {
-            id: index,
-            prompt: item.meaning,
-            answer: item.word,
-            options,
-            trick: item.trick,
-            meaning: item.meaning,
-            synonyms: item.synonyms,
-            antonyms: item.antonyms
-        };
-    });
+    if (newQuestions.length === 0) {
+        alert("Not enough data to start this level.");
+        return;
+    }
 
     setQuestions(newQuestions);
     setGameState('playing');
@@ -113,8 +148,8 @@ export const Practice: React.FC = () => {
     setSelectedOption(null);
   };
 
-  const handleAnswer = (option: string) => {
-    if (selectedOption) return;
+  const handleAnswer = (option: string | boolean) => {
+    if (selectedOption !== null) return;
     
     setSelectedOption(option);
     const currentQ = questions[currentIndex];
@@ -122,10 +157,16 @@ export const Practice: React.FC = () => {
     if (option === currentQ.answer) {
         setScore(s => s + 1);
     } else {
+        let explanation = "";
+        if (currentQ.type === 'validation') explanation = currentQ.explanation || "";
+        else if (currentQ.type === 'cloze') explanation = `Correct: ${currentQ.answer} (${currentQ.context})`;
+        else explanation = `Correct: ${currentQ.answer}`;
+
         setWrongAnswers(prev => [...prev, { 
-            word: currentQ.answer, 
-            meaning: currentQ.meaning, 
-            trick: currentQ.trick 
+            prompt: currentQ.prompt,
+            correctAnswer: String(currentQ.answer),
+            userAnswer: String(option),
+            explanation: currentQ.trick ? `${explanation} | Tip: ${currentQ.trick}` : explanation
         }]);
     }
   };
@@ -139,27 +180,49 @@ export const Practice: React.FC = () => {
     }
   };
 
-  // --- RENDERERS ---
-
-  if (gameState === 'start') {
+  if (gameState === 'menu') {
     return (
-        <div className="max-w-2xl mx-auto py-8">
-            <div className="bg-white rounded-3xl p-10 shadow-xl border border-slate-100 text-center relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-400 to-accent-500"></div>
-                
-                <div className="bg-brand-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner">
-                    <Brain className="text-brand-600" size={36} />
+        <div className="max-w-4xl mx-auto py-8 px-4">
+            <div className="text-center mb-10">
+                <h2 className="text-4xl font-serif font-bold text-slate-900 mb-3">Practice Arena</h2>
+                <p className="text-slate-500 max-w-xl mx-auto">Choose your difficulty level. Start with basic meaning matching and graduate to error detection.</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer relative overflow-hidden" onClick={() => startGame('level1')}>
+                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-emerald-600"></div>
+                    <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4 text-emerald-600 group-hover:scale-110 transition-transform">
+                        <BookOpen size={24} />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Basic Drill</h3>
+                    <p className="text-slate-500 text-sm mb-4">The classic flashcard method. Match the definition to the correct word.</p>
+                    <div className="flex items-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 w-fit px-2 py-1 rounded">
+                        <Target size={12} /> Level 1
+                    </div>
                 </div>
-                
-                <h2 className="text-3xl font-serif font-bold text-slate-900 mb-3">Vocabulary Challenge</h2>
-                <p className="text-slate-500 mb-8 text-base max-w-md mx-auto leading-relaxed">
-                    Test yourself with <span className="font-bold text-slate-800">20 random questions</span> from your notebook and collections.
-                </p>
-                
-                <div className="flex justify-center">
-                    <Button onClick={startGame} size="lg" className="pl-8 pr-10 py-3 text-lg shadow-brand-500/20 shadow-xl">
-                        Start Quiz <Play size={20} className="ml-2 fill-current" />
-                    </Button>
+
+                <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer relative overflow-hidden" onClick={() => startGame('level2')}>
+                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+                    <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4 text-blue-600 group-hover:scale-110 transition-transform">
+                        <Brain size={24} />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Context Match</h3>
+                    <p className="text-slate-500 text-sm mb-4">Fill in the blanks. Learn how words fit into actual sentences.</p>
+                    <div className="flex items-center gap-2 text-xs font-bold text-blue-700 bg-blue-50 w-fit px-2 py-1 rounded">
+                        <Target size={12} /> Level 2
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer relative overflow-hidden" onClick={() => startGame('level3')}>
+                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-purple-600"></div>
+                    <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-4 text-purple-600 group-hover:scale-110 transition-transform">
+                        <AlertTriangle size={24} />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Usage Validator</h3>
+                    <p className="text-slate-500 text-sm mb-4">Detect errors in redundancy and collocations. True/False style.</p>
+                    <div className="flex items-center gap-2 text-xs font-bold text-purple-700 bg-purple-50 w-fit px-2 py-1 rounded">
+                        <Target size={12} /> Level 3
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,7 +231,7 @@ export const Practice: React.FC = () => {
 
   if (gameState === 'finished') {
     return (
-        <div className="max-w-3xl mx-auto py-8">
+        <div className="max-w-3xl mx-auto py-8 animate-fade-in">
             <div className="bg-white rounded-3xl p-8 shadow-xl border border-slate-100 text-center mb-8">
                 <div className="inline-block p-4 rounded-full bg-yellow-50 mb-4">
                     <Trophy size={48} className="text-yellow-500" />
@@ -177,10 +240,12 @@ export const Practice: React.FC = () => {
                 <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-accent-600 mb-2">
                     {score} / {questions.length}
                 </div>
-                <p className="text-slate-500">Accuracy: {Math.round((score / questions.length) * 100)}%</p>
                 
-                <div className="mt-8 flex justify-center">
-                    <Button onClick={startGame} variant="secondary">
+                <div className="mt-8 flex justify-center gap-4">
+                    <Button onClick={() => setGameState('menu')} variant="secondary">
+                         Menu
+                    </Button>
+                    <Button onClick={() => startGame(currentLevel)}>
                         <RotateCcw size={18} /> Play Again
                     </Button>
                 </div>
@@ -194,16 +259,13 @@ export const Practice: React.FC = () => {
                     </h3>
                     <div className="grid gap-4">
                         {wrongAnswers.map((item, idx) => (
-                            <div key={idx} className="p-4 rounded-xl bg-red-50/50 border border-red-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                                <div>
-                                    <h4 className="text-lg font-bold text-slate-900">{item.word}</h4>
-                                    <p className="text-slate-600 text-sm">{item.meaning}</p>
+                            <div key={idx} className="p-4 rounded-xl bg-red-50/50 border border-red-100 flex flex-col gap-2">
+                                <div className="text-slate-900 font-medium">"{item.prompt}"</div>
+                                <div className="flex items-center gap-4 text-sm">
+                                    <span className="text-red-600 font-bold line-through">{String(item.userAnswer)}</span>
+                                    <ArrowRight size={14} className="text-slate-400" />
+                                    <span className="text-emerald-600 font-bold">{String(item.correctAnswer)}</span>
                                 </div>
-                                {item.trick && (
-                                    <div className="text-xs font-medium text-orange-700 bg-orange-100 px-3 py-2 rounded-lg border border-orange-200 sm:max-w-xs italic">
-                                        Tip: {item.trick}
-                                    </div>
-                                )}
                             </div>
                         ))}
                     </div>
@@ -214,131 +276,156 @@ export const Practice: React.FC = () => {
   }
 
   const currentQ = questions[currentIndex];
-  const isCorrect = selectedOption === currentQ.answer;
-
+  
   return (
-    <div className="max-w-3xl mx-auto py-2 md:py-6">
-      {/* Header */}
-      <div className="flex justify-between items-center mb-4 px-2">
-        <div className="text-slate-500 font-medium text-xs md:text-sm">
-           Question <span className="text-slate-900 font-bold">{currentIndex + 1}</span> / {questions.length}
-        </div>
-        <div className="h-1.5 w-24 md:w-32 bg-slate-200 rounded-full overflow-hidden">
-            <div 
-                className="h-full bg-brand-500 transition-all duration-500" 
-                style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
-            ></div>
-        </div>
-      </div>
+    <div className="max-w-2xl mx-auto py-2 animate-fade-in">
+      {/* CARD */}
+      <div className="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden relative flex flex-col">
+         
+         {/* Question Header */}
+         <div className="px-6 pt-6 pb-2">
+            <div className="flex justify-between items-start mb-3">
+                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                    {currentLevel === 'level1' ? 'IDENTIFY THE WORD FOR' : 
+                     currentLevel === 'level2' ? 'FILL IN THE BLANK' : 
+                     'IDENTIFY VALIDITY'}
+                </p>
+                <div className="text-[10px] font-bold text-slate-300 bg-slate-50 px-2 py-0.5 rounded border border-slate-100">
+                    {currentIndex + 1} / {questions.length}
+                </div>
+            </div>
 
-      {/* Card */}
-      <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden relative">
-         <div className="px-6 pt-5 pb-2">
-            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Identify the word for</p>
-            <h3 className="text-lg md:text-xl font-sans font-semibold text-slate-900 leading-snug min-h-[3rem] flex items-center">
-                "{currentQ.prompt}"
+            <h3 className="font-serif font-bold text-2xl text-slate-900 leading-snug mb-5">
+                {currentLevel === 'level2' ? (
+                     currentQ.prompt.split('_______').map((part, i, arr) => (
+                         <React.Fragment key={i}>
+                             {part}
+                             {i < arr.length - 1 && <span className="inline-block w-16 border-b-2 border-slate-300 mx-1"></span>}
+                         </React.Fragment>
+                     ))
+                ) : (
+                    `"${currentQ.prompt}"`
+                )}
             </h3>
-         </div>
 
-         {/* Options Grid - Compact 2x2 */}
-         <div className="px-5 py-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {currentQ.options.map((opt) => {
-                let btnStyle = "px-4 py-3 rounded-xl border-2 text-left font-semibold transition-all duration-200 flex justify-between items-center group relative overflow-hidden text-sm md:text-base ";
-                
-                if (selectedOption) {
-                    if (opt === currentQ.answer) {
-                        btnStyle += "bg-emerald-50 border-emerald-500 text-emerald-800 shadow-sm";
-                    } else if (opt === selectedOption) {
-                        btnStyle += "bg-red-50 border-red-500 text-red-800 shadow-sm";
-                    } else {
-                        btnStyle += "border-slate-100 text-slate-400 opacity-40 grayscale";
-                    }
-                } else {
-                    btnStyle += "border-slate-100 bg-slate-50/50 hover:border-brand-200 hover:bg-white hover:shadow-md text-slate-700";
-                }
+            {/* OPTIONS (Shown immediately) */}
+            {(currentLevel === 'level1' || currentLevel === 'level2') && currentQ.options && (
+                <div className="grid grid-cols-2 gap-3 mb-4">
+                    {currentQ.options.map((opt) => {
+                         let btnStyle = "px-4 py-3 rounded-xl border-2 text-left font-semibold transition-all duration-200 flex justify-between items-center text-sm ";
+                         if (selectedOption !== null) {
+                             if (opt === currentQ.answer) btnStyle += "bg-emerald-50 border-emerald-500 text-emerald-800 shadow-sm";
+                             else if (opt === selectedOption) btnStyle += "bg-red-50 border-red-500 text-red-800 shadow-sm";
+                             else btnStyle += "border-slate-50 text-slate-300 opacity-50";
+                         } else {
+                             btnStyle += "border-slate-200 bg-white hover:border-brand-300 hover:shadow-md text-slate-700";
+                         }
+ 
+                         return (
+                             <button key={opt} onClick={() => handleAnswer(opt)} disabled={selectedOption !== null} className={btnStyle}>
+                                 <span>{opt}</span>
+                                 {selectedOption !== null && opt === currentQ.answer && <CheckCircle2 size={16} className="text-emerald-600" />}
+                                 {selectedOption !== null && opt === selectedOption && opt !== currentQ.answer && <XCircle size={16} className="text-red-500" />}
+                             </button>
+                         )
+                    })}
+                </div>
+            )}
 
-                return (
+            {currentLevel === 'level3' && (
+                <div className="flex gap-3 mb-4">
                     <button 
-                        key={opt}
-                        onClick={() => handleAnswer(opt)}
-                        disabled={!!selectedOption}
-                        className={btnStyle}
+                        onClick={() => handleAnswer(true)} 
+                        disabled={selectedOption !== null}
+                        className={`flex-1 py-3 rounded-xl border-2 font-bold text-base flex items-center justify-center gap-2 transition-all ${
+                            selectedOption !== null 
+                            ? (currentQ.answer === true ? "bg-emerald-100 border-emerald-500 text-emerald-800" : (selectedOption === true ? "bg-red-100 border-red-500 text-red-800" : "opacity-40 border-slate-100 text-slate-300"))
+                            : "bg-white border-slate-200 hover:border-emerald-400 hover:bg-emerald-50 text-emerald-700"
+                        }`}
                     >
-                        <span className="relative z-10 truncate mr-2">{opt}</span>
-                        {selectedOption && opt === currentQ.answer && <CheckCircle2 size={18} className="text-emerald-600 relative z-10 shrink-0" />}
-                        {selectedOption && opt === selectedOption && opt !== currentQ.answer && <XCircle size={18} className="text-red-500 relative z-10 shrink-0" />}
-                        
-                        {/* Hover Effect Background */}
-                        {!selectedOption && (
-                             <div className="absolute inset-0 bg-gradient-to-r from-brand-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        )}
+                        <CheckCircle2 size={18} /> Correct
                     </button>
-                )
-            })}
+                    <button 
+                        onClick={() => handleAnswer(false)} 
+                        disabled={selectedOption !== null}
+                        className={`flex-1 py-3 rounded-xl border-2 font-bold text-base flex items-center justify-center gap-2 transition-all ${
+                            selectedOption !== null 
+                            ? (currentQ.answer === false ? "bg-emerald-100 border-emerald-500 text-emerald-800" : (selectedOption === false ? "bg-red-100 border-red-500 text-red-800" : "opacity-40 border-slate-100 text-slate-300"))
+                            : "bg-white border-slate-200 hover:border-rose-400 hover:bg-rose-50 text-rose-700"
+                        }`}
+                    >
+                        <XCircle size={18} /> Incorrect
+                    </button>
+                </div>
+            )}
          </div>
 
-         {/* Feedback / Next Section */}
-         {selectedOption && (
-            <div className="bg-slate-50 border-t border-slate-100 p-4 animate-fade-in">
+         {/* FEEDBACK AREA (Appears after selection) */}
+         {selectedOption !== null && (
+             <div className="bg-slate-50 border-t border-slate-100 p-4 animate-fade-in">
                 
-                {/* Memory Hook */}
-                {currentQ.trick && (
-                    <div className="mb-3 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-lg p-3 flex gap-3 items-center shadow-sm">
-                        <div className="bg-orange-100 p-1 rounded-full shrink-0">
-                             <Lightbulb size={14} className="text-orange-600" />
-                        </div>
-                        <div className="flex-1">
-                            <p className="text-orange-900 text-sm font-medium italic font-serif leading-tight">"{currentQ.trick}"</p>
-                        </div>
+                {/* 1. Memory Hook (Trick) */}
+                {(currentLevel === 'level1' || currentLevel === 'level2') && currentQ.trick && (
+                    <div className="mb-3 bg-amber-50 border border-amber-100 rounded-lg p-2.5 flex gap-2 items-start">
+                        <Lightbulb size={16} className="text-amber-500 shrink-0 mt-0.5" />
+                        <p className="text-amber-900 text-sm italic font-serif leading-snug">"{currentQ.trick}"</p>
                     </div>
                 )}
-
-                {/* Synonyms & Antonyms (Visible on Answer) */}
-                {((currentQ.synonyms && currentQ.synonyms.length > 0) || (currentQ.antonyms && currentQ.antonyms.length > 0)) && (
-                    <div className="flex flex-wrap gap-4 mb-4 pb-4 border-b border-slate-200/50">
+                
+                {/* 2. Synonyms & Antonyms (Grid Layout) */}
+                {(currentLevel === 'level1' || currentLevel === 'level2') && (
+                    <div className="grid grid-cols-2 gap-3 mb-3">
                         {currentQ.synonyms && currentQ.synonyms.length > 0 && (
-                            <div className="flex-1 min-w-[120px]">
-                                <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block mb-1">Synonyms</span>
+                            <div>
+                                <h4 className="text-[10px] font-bold text-emerald-600 uppercase mb-1.5 opacity-70">Synonyms</h4>
                                 <div className="flex flex-wrap gap-1">
-                                    {currentQ.synonyms.slice(0, 3).map(s => (
-                                        <span key={s} className="text-xs bg-emerald-100/50 text-emerald-800 px-1.5 py-0.5 rounded border border-emerald-100">{s}</span>
+                                    {currentQ.synonyms.slice(0, 3).map((s, i) => (
+                                        <span key={i} className="text-[11px] bg-white text-emerald-800 px-1.5 py-0.5 rounded-md font-medium border border-emerald-200/50 shadow-sm">{s}</span>
                                     ))}
                                 </div>
                             </div>
                         )}
-                        {currentQ.antonyms && currentQ.antonyms.length > 0 && (
-                            <div className="flex-1 min-w-[120px]">
-                                <span className="text-[10px] font-bold text-rose-600 uppercase tracking-wider block mb-1">Antonyms</span>
+                         {currentQ.antonyms && currentQ.antonyms.length > 0 && (
+                            <div>
+                                <h4 className="text-[10px] font-bold text-rose-600 uppercase mb-1.5 opacity-70">Antonyms</h4>
                                 <div className="flex flex-wrap gap-1">
-                                    {currentQ.antonyms.slice(0, 3).map(s => (
-                                        <span key={s} className="text-xs bg-rose-100/50 text-rose-800 px-1.5 py-0.5 rounded border border-rose-100">{s}</span>
+                                    {currentQ.antonyms.slice(0, 3).map((s, i) => (
+                                        <span key={i} className="text-[11px] bg-white text-rose-800 px-1.5 py-0.5 rounded-md font-medium border border-rose-200/50 shadow-sm">{s}</span>
                                     ))}
                                 </div>
                             </div>
                         )}
                     </div>
                 )}
-
-                <div className="flex items-center justify-between gap-2">
-                    <div className="flex-1">
-                        {isCorrect ? (
-                             <p className="text-emerald-700 font-bold text-sm md:text-base flex items-center gap-1.5">
-                                <CheckCircle2 size={16} className="fill-emerald-100" /> Correct!
-                             </p>
-                        ) : (
-                             <p className="text-red-600 font-bold text-sm md:text-base flex items-center gap-1.5">
-                                <XCircle size={16} className="fill-red-100" /> Incorrect
-                             </p>
-                        )}
-                        <p className="text-slate-500 text-xs ml-6 truncate">
-                            {isCorrect ? 'Keep it up!' : `Answer: ${currentQ.answer}`}
-                        </p>
+                
+                {/* 3. Level 3 Explanation */}
+                {currentLevel === 'level3' && currentQ.explanation && (
+                    <div className="mb-3 p-3 bg-white rounded-xl border border-slate-200 text-slate-600 text-xs leading-relaxed">
+                        <span className="font-bold text-slate-800 block mb-0.5">Explanation:</span>
+                        {currentQ.explanation}
                     </div>
-                    <Button onClick={nextQuestion} size="sm" className="shadow-md px-6 py-2 h-10">
+                )}
+
+                {/* 4. Bottom Status Bar */}
+                <div className="flex items-center justify-between mt-1">
+                    <div className="flex items-center gap-2">
+                        {selectedOption === currentQ.answer ? (
+                            <span className="flex items-center gap-1.5 text-emerald-600 font-bold text-base">
+                                <CheckCircle2 size={20} className="fill-current text-emerald-100" /> Correct!
+                            </span>
+                        ) : (
+                             <span className="flex items-center gap-1.5 text-red-600 font-bold text-base">
+                                <XCircle size={20} className="fill-current text-red-100" /> Incorrect
+                                <span className="text-xs font-normal text-slate-500 ml-1.5 hidden sm:inline">Ans: {String(currentQ.answer)}</span>
+                            </span>
+                        )}
+                    </div>
+                    
+                    <Button onClick={nextQuestion} className="shadow-lg px-5 h-10 rounded-full text-sm">
                         {currentIndex === questions.length - 1 ? 'Finish' : 'Next'} <ArrowRight size={16} />
                     </Button>
                 </div>
-            </div>
+             </div>
          )}
       </div>
     </div>

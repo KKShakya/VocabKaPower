@@ -62,3 +62,15 @@ export enum SilsilaCategory {
   TRENDING = 'Trending Words',
   IDIOMS = 'Idioms & Phrases',
 }
+
+// --- NEW PRACTICE TYPES ---
+
+export type PracticeLevel = 'level1' | 'level2' | 'level3';
+
+export interface GrammarItem {
+  id: number;
+  sentence: string;
+  isCorrect: boolean;
+  explanation: string; // Why it is correct/incorrect
+  topic: string; // e.g. "Redundancy", "Collocation"
+}
