@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Volume2, Heart } from 'lucide-react';
+import { Volume2, Heart, Plus, Minus, Circle, Link as LinkIcon } from 'lucide-react';
 import { WordAnalysis, SavedWord } from '../types';
 
 interface WordCardProps {
@@ -16,6 +17,21 @@ export const WordCard: React.FC<WordCardProps> = ({ data, imageUrl, onSave, isSa
   };
 
   const displayImage = imageUrl !== undefined ? imageUrl : (data as SavedWord).imageUrl;
+
+  // Helper to determine tone styling
+  const getToneConfig = (tone: string) => {
+    const lower = tone.toLowerCase();
+    if (lower.includes('positive') || lower.includes('+')) {
+      return { icon: Plus, color: 'text-emerald-300', bg: 'bg-emerald-900/30', border: 'border-emerald-500/30', label: 'Positive' };
+    }
+    if (lower.includes('negative') || lower.includes('-')) {
+      return { icon: Minus, color: 'text-rose-300', bg: 'bg-rose-900/30', border: 'border-rose-500/30', label: 'Negative' };
+    }
+    return { icon: Circle, color: 'text-slate-300', bg: 'bg-slate-900/30', border: 'border-slate-500/30', label: 'Neutral' };
+  };
+
+  const toneConfig = data.tone ? getToneConfig(data.tone) : null;
+  const ToneIcon = toneConfig ? toneConfig.icon : Circle;
   
   return (
     <div className="glass-card bg-white/70 rounded-3xl overflow-hidden max-w-md mx-auto h-full flex flex-col transition-all duration-500 hover:shadow-2xl hover:shadow-brand-900/10 border border-white/60">
@@ -23,20 +39,56 @@ export const WordCard: React.FC<WordCardProps> = ({ data, imageUrl, onSave, isSa
       {displayImage ? (
         <div className="w-full h-64 bg-slate-100 relative group">
           <img src={displayImage} alt={data.word} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-80"></div>
-          <div className="absolute bottom-5 left-6 text-white">
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-90"></div>
+          
+          <div className="absolute bottom-5 left-6 text-white w-full pr-6">
              <h2 className="text-4xl font-serif font-bold capitalize tracking-tight drop-shadow-md">{data.word}</h2>
-             <p className="text-white/80 font-medium tracking-wider text-sm uppercase mt-1 bg-white/10 backdrop-blur-md inline-block px-2 py-0.5 rounded border border-white/20">{data.partOfSpeech}</p>
+             
+             <div className="flex flex-wrap items-center gap-2 mt-2">
+                <span className="text-white/90 font-bold tracking-wider text-[10px] uppercase bg-white/20 backdrop-blur-md px-2 py-0.5 rounded border border-white/20">
+                    {data.partOfSpeech}
+                </span>
+
+                {toneConfig && (
+                    <span className={`flex items-center gap-1 text-[10px] font-bold uppercase px-2 py-0.5 rounded border backdrop-blur-md ${toneConfig.bg} ${toneConfig.color} ${toneConfig.border}`}>
+                        <ToneIcon size={10} strokeWidth={4} /> {toneConfig.label}
+                    </span>
+                )}
+
+                {data.collocation && (
+                    <span className="flex items-center gap-1 text-[10px] font-bold uppercase text-amber-200 bg-amber-900/30 px-2 py-0.5 rounded border border-amber-500/30 backdrop-blur-md">
+                        <LinkIcon size={10} /> Friend: {data.collocation}
+                    </span>
+                )}
+             </div>
           </div>
         </div>
       ) : (
-        <div className="w-full h-40 bg-gradient-to-br from-slate-800 to-slate-900 p-8 text-white relative overflow-hidden flex flex-col justify-center">
+        <div className="w-full h-48 bg-gradient-to-br from-slate-800 to-slate-900 p-8 text-white relative overflow-hidden flex flex-col justify-end pb-6">
            <div className="absolute right-0 top-0 w-32 h-32 bg-white/5 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
+           
            <div className="relative z-10">
              <h2 className="text-4xl font-serif font-bold capitalize tracking-tight mb-2">{data.word}</h2>
-             <span className="inline-block bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm border border-white/10 text-white/80">
-                {data.partOfSpeech}
-             </span>
+             
+             <div className="flex flex-wrap items-center gap-2">
+                 <span className="inline-block bg-white/10 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm border border-white/10 text-white/80">
+                    {data.partOfSpeech}
+                 </span>
+
+                 {toneConfig && (
+                    <span className={`flex items-center gap-1.5 text-xs font-bold uppercase px-3 py-1 rounded-full border backdrop-blur-sm ${toneConfig.bg} ${toneConfig.color} ${toneConfig.border}`}>
+                        <ToneIcon size={10} strokeWidth={4} /> {toneConfig.label}
+                    </span>
+                )}
+             </div>
+             
+             {data.collocation && (
+                <div className="mt-3 inline-flex items-center gap-2 text-xs font-semibold text-amber-100 bg-amber-500/10 px-3 py-1.5 rounded-lg border border-amber-500/20">
+                    <LinkIcon size={12} className="text-amber-300" /> 
+                    <span className="opacity-70 uppercase tracking-wider text-[10px]">Best Friend:</span> 
+                    <span className="text-amber-200 tracking-wide">{data.collocation}</span>
+                </div>
+             )}
            </div>
         </div>
       )}

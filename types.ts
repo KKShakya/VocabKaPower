@@ -8,6 +8,8 @@ export interface WordAnalysis {
   synonyms: string[];
   antonyms: string[];
   trick: string; // Mnemonic
+  tone?: string; // e.g. "Negative (-)" or "Positive (+)"
+  collocation?: string; // e.g. "Heinous Crime" (The "Best Friend" word)
 }
 
 export interface SavedWord extends WordAnalysis {

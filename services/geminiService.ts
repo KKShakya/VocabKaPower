@@ -27,22 +27,26 @@ export const generateWordAnalysis = async (word: string): Promise<WordAnalysis> 
       sentence: { type: Type.STRING },
       synonyms: { type: Type.ARRAY, items: { type: Type.STRING } },
       antonyms: { type: Type.ARRAY, items: { type: Type.STRING } },
-      trick: { type: Type.STRING, description: "A memorable mnemonic or trick to remember the word, e.g. 'sounds like...'" },
+      trick: { type: Type.STRING, description: "A memorable mnemonic or trick to remember the word." },
+      tone: { type: Type.STRING, description: "The sentiment tone: 'Positive (+)', 'Negative (-)', or 'Neutral (0)'" },
+      collocation: { type: Type.STRING, description: "The 'Best Friend' word that naturally pairs with this word (e.g., for 'Heinous', return 'Heinous Crime')." },
     },
-    required: ["word", "partOfSpeech", "meaning", "translation", "sentence", "synonyms", "antonyms", "trick"],
+    required: ["word", "partOfSpeech", "meaning", "translation", "sentence", "synonyms", "antonyms", "trick", "tone", "collocation"],
   };
 
   const response = await ai.models.generateContent({
     model,
-    contents: `Analyze the word "${word}" for a competitive exam student. 
+    contents: `Analyze the word "${word}" for a competitive exam student (Banking/GRE). 
     Provide:
     1. The part of speech.
     2. A simple English meaning.
-    3. A Hindi translation/meaning in brackets (or just the word in Hindi script).
+    3. A Hindi translation.
     4. A usage sentence.
     5. 5 common synonyms.
     6. 5 common antonyms.
-    7. A clever "Trick" or mnemonic to remember it (e.g., using sound-alikes or funny imagery).`,
+    7. A clever "Trick" or mnemonic.
+    8. The "Tone" of the word. Is it Positive (+), Negative (-), or Neutral (0)?
+    9. A "Collocation" (Best Friend): The word that most naturally appears next to it (e.g., if word is "Alleviate", collocation is "Pain" or "Poverty").`,
     config: {
       responseMimeType: "application/json",
       responseSchema: schema,

@@ -19,6 +19,15 @@ export const Notebook: React.FC = () => {
     setSelectedWord(random);
   };
 
+  const getGradient = (tone?: string) => {
+    if (!tone) return "from-brand-500 to-accent-600";
+    const lower = tone.toLowerCase();
+    if (lower.includes('positive') || lower.includes('+')) return "from-emerald-400 to-teal-600";
+    if (lower.includes('negative') || lower.includes('-')) return "from-rose-400 to-red-600";
+    if (lower.includes('neutral') || lower.includes('0')) return "from-slate-400 to-slate-600";
+    return "from-brand-500 to-accent-600";
+  };
+
   return (
     <div className="max-w-6xl mx-auto">
        <div className="flex flex-col md:flex-row justify-between items-end md:items-center mb-8 gap-4">
@@ -65,7 +74,7 @@ export const Notebook: React.FC = () => {
                     onClick={() => setSelectedWord(word)}
                     className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden cursor-pointer hover:shadow-md hover:border-brand-200 transition-all group flex flex-col relative h-full"
                 >
-                    <div className="h-32 relative overflow-hidden flex items-center justify-center bg-gradient-to-br from-brand-500 to-accent-600">
+                    <div className={`h-32 relative overflow-hidden flex items-center justify-center bg-gradient-to-br ${getGradient(word.tone)}`}>
                         <div className="text-white text-center p-4">
                             <h3 className="text-2xl font-bold capitalize mb-1">{word.word}</h3>
                             <p className="text-white/80 text-xs uppercase tracking-wider">{word.partOfSpeech}</p>

@@ -10,7 +10,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "His elation was visible when he saw his exam results.",
     synonyms: ["Euphoria", "Ecstasy", "Delight"],
     antonyms: ["Despair", "Misery", "Sorrow"],
-    trick: "Election -> Winning an election brings elation."
+    trick: "Election -> Winning an election brings elation.",
+    tone: "Positive (+)",
+    collocation: "Sheer Elation"
   },
   {
     word: "Felicity",
@@ -20,7 +22,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Domestic felicity is essential for a happy life.",
     synonyms: ["Bliss", "Happiness", "Aptness"],
     antonyms: ["Unhappiness", "Misery", "Inappropriateness"],
-    trick: "Fell in City -> If you fell in love in a city, you found felicity."
+    trick: "Fell in City -> If you fell in love in a city, you found felicity.",
+    tone: "Positive (+)",
+    collocation: "Domestic Felicity"
   },
   {
     word: "Majestic",
@@ -30,7 +34,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The majestic Himalayas are a sight to behold.",
     synonyms: ["Grand", "Magnificent", "Imperial"],
     antonyms: ["Modest", "Humble", "Shabby"],
-    trick: "Magic -> Kings use magic to look majestic."
+    trick: "Magic -> Kings use magic to look majestic.",
+    tone: "Positive (+)",
+    collocation: "Majestic View"
   },
   {
     word: "Euphoric",
@@ -40,7 +46,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The crowd was euphoric after the winning goal.",
     synonyms: ["Elated", "Ecstatic", "Joyful"],
     antonyms: ["Miserable", "Depressed", "Downcast"],
-    trick: "U + For + Ic -> You are for Ice cream (makes you happy)."
+    trick: "U + For + Ic -> You are for Ice cream (makes you happy).",
+    tone: "Positive (+)",
+    collocation: "Euphoric Mood"
   },
   {
     word: "Rapturous",
@@ -50,7 +58,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The singer received a rapturous welcome from the fans.",
     synonyms: ["Ecstatic", "Enthusiastic", "Delighted"],
     antonyms: ["Bored", "Uninterested", "Apathetic"],
-    trick: "Rap -> Good Rap music makes the crowd rapturous."
+    trick: "Rap -> Good Rap music makes the crowd rapturous.",
+    tone: "Positive (+)",
+    collocation: "Rapturous Applause"
   },
   {
     word: "Salubrious",
@@ -60,7 +70,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The hill station has a salubrious climate.",
     synonyms: ["Healthy", "Beneficial", "Wholesome"],
     antonyms: ["Unhealthy", "Insalubrious", "Harmful"],
-    trick: "Salu (Salman) + Brio -> Salu bhai is very healthy/fit."
+    trick: "Salu (Salman) + Brio -> Salu bhai is very healthy/fit.",
+    tone: "Positive (+)",
+    collocation: "Salubrious Climate"
   },
   {
     word: "Propitious",
@@ -70,7 +82,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "It was a propitious time to start a new business.",
     synonyms: ["Favorable", "Auspicious", "Promising"],
     antonyms: ["Unfavorable", "Inauspicious", "Unlucky"],
-    trick: "Proper + Profit -> A time that is proper for profit."
+    trick: "Proper + Profit -> A time that is proper for profit.",
+    tone: "Positive (+)",
+    collocation: "Propitious Moment"
   },
   {
     word: "Serene",
@@ -80,7 +94,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Her face remained serene despite the chaos around her.",
     synonyms: ["Calm", "Peaceful", "Placid"],
     antonyms: ["Agitated", "Turbulent", "Anxious"],
-    trick: "Siren -> When the ambulance siren stops, it becomes serene."
+    trick: "Siren -> When the ambulance siren stops, it becomes serene.",
+    tone: "Positive (+)",
+    collocation: "Serene Smile"
   },
   {
     word: "Halcyon",
@@ -90,7 +106,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He recalled the halcyon days of his childhood.",
     synonyms: ["Peaceful", "Golden", "Prosperous"],
     antonyms: ["Stormy", "Turbulent", "Troubled"],
-    trick: "Hall + Cyan -> A hall painted cyan (blue) feels peaceful."
+    trick: "Hall + Cyan -> A hall painted cyan (blue) feels peaceful.",
+    tone: "Positive (+)",
+    collocation: "Halcyon Days"
   },
   {
     word: "Winsome",
@@ -100,7 +118,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "She has a winsome smile that wins everyone's heart.",
     synonyms: ["Charming", "Engaging", "Appealing"],
     antonyms: ["Repulsive", "Unattractive", "Loathsome"],
-    trick: "Win + Some -> You can win some hearts if you are winsome."
+    trick: "Win + Some -> You can win some hearts if you are winsome.",
+    tone: "Positive (+)",
+    collocation: "Winsome Smile"
   },
   {
     word: "Stoic",
@@ -110,7 +130,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He remained stoic even after losing his job.",
     synonyms: ["Impassive", "Resigned", "Long-suffering"],
     antonyms: ["Emotional", "Passionate", "Complaining"],
-    trick: "Stone -> Be like a stone; no feelings."
+    trick: "Stone -> Be like a stone; no feelings.",
+    tone: "Neutral (0)",
+    collocation: "Stoic Silence"
   },
   {
     word: "Impassive",
@@ -120,7 +142,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The judge kept an impassive face throughout the trial.",
     synonyms: ["Expressionless", "Poker-faced", "Stoic"],
     antonyms: ["Expressive", "Emotional", "Demonstrative"],
-    trick: "I'm Passive -> I am not active with emotions; I am passive."
+    trick: "I'm Passive -> I am not active with emotions; I am passive.",
+    tone: "Neutral (0)",
+    collocation: "Impassive Face"
   },
   {
     word: "Harrowing",
@@ -130,7 +154,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The passengers told harrowing tales of the crash.",
     synonyms: ["Distressing", "Traumatic", "Agonizing"],
     antonyms: ["Calming", "Soothing", "Pleasant"],
-    trick: "Arrow -> Getting hit by an arrow is a harrowing experience."
+    trick: "Arrow -> Getting hit by an arrow is a harrowing experience.",
+    tone: "Negative (-)",
+    collocation: "Harrowing Experience"
   },
   {
     word: "Sullen",
@@ -140,7 +166,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The sullen teenager refused to come out of his room.",
     synonyms: ["Morose", "Sulky", "Gloomy"],
     antonyms: ["Cheerful", "Sociable", "Friendly"],
-    trick: "Swollen -> When you cry, your face gets swollen and you look sullen."
+    trick: "Swollen -> When you cry, your face gets swollen and you look sullen.",
+    tone: "Negative (-)",
+    collocation: "Sullen Silence"
   },
   {
     word: "Trepidation",
@@ -150,7 +178,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He opened the letter with some trepidation.",
     synonyms: ["Apprehension", "Dread", "Anxiety"],
     antonyms: ["Composure", "Calm", "Confidence"],
-    trick: "Trap -> Fear of getting caught in a trap."
+    trick: "Trap -> Fear of getting caught in a trap.",
+    tone: "Negative (-)",
+    collocation: "With Trepidation"
   },
   {
     word: "Dejected",
@@ -160,7 +190,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The players looked dejected after losing the final match.",
     synonyms: ["Downcast", "Despondent", "Gloomy"],
     antonyms: ["Cheerful", "Happy", "Elated"],
-    trick: "Rejected -> If you get rejected, you feel dejected."
+    trick: "Rejected -> If you get rejected, you feel dejected.",
+    tone: "Negative (-)",
+    collocation: "Dejected Look"
   },
   {
     word: "Forlorn",
@@ -170,7 +202,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The lost puppy looked forlorn sitting in the rain.",
     synonyms: ["Unhappy", "Sad", "Miserable"],
     antonyms: ["Happy", "Cheerful", "Cared for"],
-    trick: "For + Loan -> If you ask for a loan and get no money, you feel forlorn."
+    trick: "For + Loan -> If you ask for a loan and get no money, you feel forlorn.",
+    tone: "Negative (-)",
+    collocation: "Forlorn Hope"
   },
   {
     word: "Wretched",
@@ -180,7 +214,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The refugees were living in wretched conditions.",
     synonyms: ["Miserable", "Pitiable", "Abject"],
     antonyms: ["Comfortable", "Fortunate", "Excellent"],
-    trick: "Retch -> Feeling so bad/sick that you want to retch (vomit)."
+    trick: "Retch -> Feeling so bad/sick that you want to retch (vomit).",
+    tone: "Negative (-)",
+    collocation: "Wretched Life"
   },
   {
     word: "Callous",
@@ -190,7 +226,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "His callous remark about the accident shocked everyone.",
     synonyms: ["Heartless", "Unfeeling", "Cold"],
     antonyms: ["Compassionate", "Sensitive", "Kind"],
-    trick: "Call + Us -> He never calls us; he is callous (doesn't care)."
+    trick: "Call + Us -> He never calls us; he is callous (doesn't care).",
+    tone: "Negative (-)",
+    collocation: "Callous Attitude"
   },
   {
     word: "Rancid",
@@ -200,7 +238,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The butter had gone rancid after being left out in the sun.",
     synonyms: ["Sour", "Stale", "Rotten"],
     antonyms: ["Fresh", "Sweet", "Perfumed"],
-    trick: "Rain + Acid -> Smells bad like acid rain."
+    trick: "Rain + Acid -> Smells bad like acid rain.",
+    tone: "Negative (-)",
+    collocation: "Rancid Butter"
   },
   {
     word: "Melancholy",
@@ -210,7 +250,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The gloomy weather filled him with melancholy.",
     synonyms: ["Sadness", "Sorrow", "Desolation"],
     antonyms: ["Happiness", "Cheerfulness", "Joy"],
-    trick: "Melon + Colic -> Eating a bad melon gives you colic pain -> makes you sad."
+    trick: "Melon + Colic -> Eating a bad melon gives you colic pain -> makes you sad.",
+    tone: "Negative (-)",
+    collocation: "Deep Melancholy"
   },
   {
     word: "Ire",
@@ -220,7 +262,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The manager faced the ire of the dissatisfied customers.",
     synonyms: ["Anger", "Rage", "Fury"],
     antonyms: ["Calmness", "Peace", "Pleasure"],
-    trick: "Fire -> Ire sounds like Fire; burning with anger."
+    trick: "Fire -> Ire sounds like Fire; burning with anger.",
+    tone: "Negative (-)",
+    collocation: "Draw the Ire"
   },
   {
     word: "Flustered",
@@ -230,7 +274,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He became flustered when he forgot his lines on stage.",
     synonyms: ["Agitated", "Unsettled", "Unnerved"],
     antonyms: ["Calm", "Composed", "Cool"],
-    trick: "Flush -> Blood rushes to face (flush) when you are nervous/flustered."
+    trick: "Flush -> Blood rushes to face (flush) when you are nervous/flustered.",
+    tone: "Negative (-)",
+    collocation: "Visibly Flustered"
   },
   {
     word: "Envy",
@@ -240,7 +286,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He watched with envy as his friend drove away in a new car.",
     synonyms: ["Jealousy", "Covetousness", "Resentment"],
     antonyms: ["Goodwill", "Kindness", "Contentment"],
-    trick: "Enemy -> You often feel envy towards an enemy's success."
+    trick: "Enemy -> You often feel envy towards an enemy's success.",
+    tone: "Negative (-)",
+    collocation: "Green with Envy"
   },
   {
     word: "Cheerful",
@@ -250,7 +298,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The cheerful music made everyone want to dance at the party.",
     synonyms: ["Joyful", "Buoyant", "Sunny"],
     antonyms: ["Gloomy", "Depressed", "Sullen"],
-    trick: "Cheers! -> In a party, saying 'Cheers' makes everyone cheerful."
+    trick: "Cheers! -> In a party, saying 'Cheers' makes everyone cheerful.",
+    tone: "Positive (+)",
+    collocation: "Cheerful Disposition"
   },
   {
     word: "Jubilant",
@@ -260,7 +310,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The fans were jubilant after their team won the World Cup.",
     synonyms: ["Triumphant", "Ecstatic", "Overjoyed"],
     antonyms: ["Despondent", "Defeated", "Sorrowful"],
-    trick: "Jubilee -> Silver/Golden Jubilee celebrations make people jubilant."
+    trick: "Jubilee -> Silver/Golden Jubilee celebrations make people jubilant.",
+    tone: "Positive (+)",
+    collocation: "Jubilant Mood"
   },
   {
     word: "Delighted",
@@ -270,7 +322,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "She was delighted to receive the invitation to the gala.",
     synonyms: ["Thrilled", "Captivated", "Enchanted"],
     antonyms: ["Disappointed", "Dismayed"],
-    trick: "De-Light -> When the light comes back after a power cut, we feel delighted."
+    trick: "De-Light -> When the light comes back after a power cut, we feel delighted.",
+    tone: "Positive (+)",
+    collocation: "Absolutely Delighted"
   },
   {
     word: "Tranquil",
@@ -280,7 +334,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The tranquil lake reflected the mountains perfectly.",
     synonyms: ["Serene", "Placid", "Calm", "Peaceful"],
     antonyms: ["Turbulent", "Chaotic", "Agitated"],
-    trick: "Train + Quill -> Writing with a quill on a quiet train is a tranquil experience."
+    trick: "Train + Quill -> Writing with a quill on a quiet train is a tranquil experience.",
+    tone: "Positive (+)",
+    collocation: "Tranquil Lake"
   },
   {
     word: "Sanguine",
@@ -290,7 +346,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He remained sanguine about the company's recovery despite the losses.",
     synonyms: ["Optimistic", "Buoyant", "Hopeful"],
     antonyms: ["Pessimistic", "Gloomy", "Cynical"],
-    trick: "Sang + Win -> He sang because he was sure he would win (optimistic)."
+    trick: "Sang + Win -> He sang because he was sure he would win (optimistic).",
+    tone: "Positive (+)",
+    collocation: "Sanguine Attitude"
   },
   {
     word: "Beatific",
@@ -300,7 +358,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The monk had a beatific smile on his face while meditating.",
     synonyms: ["Blissful", "Saintly", "Angelic"],
     antonyms: ["Demonic", "Miserable", "Wretched"],
-    trick: "Beautiful + Terrific -> Divine happiness is beautiful and terrific."
+    trick: "Beautiful + Terrific -> Divine happiness is beautiful and terrific.",
+    tone: "Positive (+)",
+    collocation: "Beatific Smile"
   },
   {
     word: "Exuberant",
@@ -310,7 +370,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The exuberant crowd cheered loudly for the rock star.",
     synonyms: ["Ebullient", "Spirited", "Energetic"],
     antonyms: ["Lethargic", "Apathetic", "Listless"],
-    trick: "Ex + Uber -> You need extra energy to drive an Uber all day."
+    trick: "Ex + Uber -> You need extra energy to drive an Uber all day.",
+    tone: "Positive (+)",
+    collocation: "Exuberant Personality"
   },
   {
     word: "Mellifluous",
@@ -320,7 +382,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "She has a rich, mellifluous voice that soothes the soul.",
     synonyms: ["Dulcet", "Melodious", "Euphonious"],
     antonyms: ["Cacophonous", "Harsh", "Grating"],
-    trick: "Melody + Flow -> A melody that flows smoothly is mellifluous."
+    trick: "Melody + Flow -> A melody that flows smoothly is mellifluous.",
+    tone: "Positive (+)",
+    collocation: "Mellifluous Voice"
   },
   {
     word: "Magnanimous",
@@ -330,7 +394,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He was magnanimous in victory, praising his opponent's skill.",
     synonyms: ["Benevolent", "Generous", "Altruistic"],
     antonyms: ["Petty", "Vindictive", "Selfish"],
-    trick: "Mega + Animus -> 'Mega' means big, 'Animus' means soul. Big-souled."
+    trick: "Mega + Animus -> 'Mega' means big, 'Animus' means soul. Big-souled.",
+    tone: "Positive (+)",
+    collocation: "Magnanimous Gesture"
   },
   {
     word: "Benign",
@@ -340,7 +406,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The tumor turned out to be benign, much to the patient's relief.",
     synonyms: ["Gentle", "Harmless", "Kindly"],
     antonyms: ["Malignant", "Harmful", "Hostile"],
-    trick: "Be Nine -> Be innocent and harmless like a nine-year-old."
+    trick: "Be Nine -> Be innocent and harmless like a nine-year-old.",
+    tone: "Positive (+)",
+    collocation: "Benign Tumor"
   },
   {
     word: "Vexed",
@@ -350,7 +418,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The vexed customer demanded to speak to the manager immediately.",
     synonyms: ["Irked", "Annoyed", "Agitated"],
     antonyms: ["Pleased", "Soothed", "Delighted"],
-    trick: "Wax -> Getting your hair waxed is painful and makes you vexed."
+    trick: "Wax -> Getting your hair waxed is painful and makes you vexed.",
+    tone: "Negative (-)",
+    collocation: "Vexed Question"
   },
   {
     word: "Irate",
@@ -360,7 +430,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He received an irate email from a dissatisfied client.",
     synonyms: ["Furious", "Enraged", "Incensed"],
     antonyms: ["Calm", "Composed", "Pacified"],
-    trick: "Pirate -> Pirates are always fighting and irate."
+    trick: "Pirate -> Pirates are always fighting and irate.",
+    tone: "Negative (-)",
+    collocation: "Irate Customer"
   },
   {
     word: "Morose",
@@ -370,7 +442,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He sat in the corner, silent and morose, refusing to talk.",
     synonyms: ["Sullen", "Gloomy", "Glum"],
     antonyms: ["Cheerful", "Genial", "Happy"],
-    trick: "No Rose -> If you get no rose on Valentine's day, you feel morose."
+    trick: "No Rose -> If you get no rose on Valentine's day, you feel morose.",
+    tone: "Negative (-)",
+    collocation: "Morose Silence"
   },
   {
     word: "Apprehension",
@@ -380,7 +454,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "She felt a wave of apprehension before the exam results were announced.",
     synonyms: ["Anxiety", "Dread", "Unease"],
     antonyms: ["Confidence", "Calmness"],
-    trick: "Pre-Tension -> Tension before an event happens is apprehension."
+    trick: "Pre-Tension -> Tension before an event happens is apprehension.",
+    tone: "Negative (-)",
+    collocation: "Deep Apprehension"
   },
   {
     word: "Skeptical",
@@ -390,7 +466,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Investors were skeptical about the startup's ambitious claims.",
     synonyms: ["Dubious", "Cynical", "Unconvinced"],
     antonyms: ["Convinced", "Gullible", "Certain"],
-    trick: "Skip it -> You want to skip the plan because you doubt it will work."
+    trick: "Skip it -> You want to skip the plan because you doubt it will work.",
+    tone: "Neutral (0)",
+    collocation: "Skeptical About"
   },
   {
     word: "Repulsed",
@@ -400,7 +478,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "She was repulsed by the smell of the rotting garbage.",
     synonyms: ["Disgusted", "Revolted", "Repelled"],
     antonyms: ["Attracted", "Enchanted", "Allured"],
-    trick: "Pulse -> Seeing something so gross your pulse drops."
+    trick: "Pulse -> Seeing something so gross your pulse drops.",
+    tone: "Negative (-)",
+    collocation: "Utterly Repulsed"
   },
   {
     word: "Perturb",
@@ -410,7 +490,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The loud noises outside perturbed his concentration.",
     synonyms: ["Unsettle", "Disturb", "Agitate"],
     antonyms: ["Calm", "Soothe", "Reassure"],
-    trick: "Turbo -> Putting a car in turbo mode disturbs the silence."
+    trick: "Turbo -> Putting a car in turbo mode disturbs the silence.",
+    tone: "Negative (-)",
+    collocation: "Deeply Perturbed"
   },
   {
     word: "Despondent",
@@ -420,7 +502,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "After failing the interview, he became despondent.",
     synonyms: ["Disheartened", "Hopeless", "Dejected"],
     antonyms: ["Hopeful", "Cheerful", "Sanguine"],
-    trick: "The Pond -> Feeling so sad you want to jump in the pond."
+    trick: "The Pond -> Feeling so sad you want to jump in the pond.",
+    tone: "Negative (-)",
+    collocation: "Despondent Mood"
   },
   {
     word: "Woeful",
@@ -430,7 +514,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The puppy gave a woeful look when I left for work.",
     synonyms: ["Miserable", "Sorrowful", "Wretched"],
     antonyms: ["Joyful", "Cheerful", "Delighted"],
-    trick: "Woe -> Sounds like 'Oh no', expressing deep sadness."
+    trick: "Woe -> Sounds like 'Oh no', expressing deep sadness.",
+    tone: "Negative (-)",
+    collocation: "Woeful Tale"
   },
   {
     word: "Lax",
@@ -440,7 +526,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The security at the airport was lax, allowing people to enter easily.",
     synonyms: ["Slack", "Negligent", "Careless"],
     antonyms: ["Strict", "Stringent", "Careful"],
-    trick: "Relax -> If you relax too much at work, you become lax."
+    trick: "Relax -> If you relax too much at work, you become lax.",
+    tone: "Negative (-)",
+    collocation: "Lax Security"
   },
   {
     word: "Solvency",
@@ -450,7 +538,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The bank had to prove its solvency to the regulators.",
     synonyms: ["Stability", "Soundness", "Wealth"],
     antonyms: ["Insolvency", "Bankruptcy", "Debt"],
-    trick: "Solve + Currency -> Ability to solve problems with currency."
+    trick: "Solve + Currency -> Ability to solve problems with currency.",
+    tone: "Positive (+)",
+    collocation: "Financial Solvency"
   },
   {
     word: "Obtuse",
@@ -460,7 +550,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He was being deliberately obtuse to avoid answering the question.",
     synonyms: ["Stupid", "Slow-witted", "Insensitive"],
     antonyms: ["Sharp", "Astute", "Clever"],
-    trick: "Obtuse Angle -> An angle > 90° is blunt and wide, not sharp."
+    trick: "Obtuse Angle -> An angle > 90° is blunt and wide, not sharp.",
+    tone: "Negative (-)",
+    collocation: "Deliberately Obtuse"
   },
   {
     word: "Pragmatic",
@@ -470,7 +562,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "We need a pragmatic solution, not just a theoretical one.",
     synonyms: ["Practical", "Realistic", "Sensible"],
     antonyms: ["Idealistic", "Impractical", "Dreamy"],
-    trick: "Programmer -> Good programmers are practical (pragmatic), not emotional."
+    trick: "Programmer -> Good programmers are practical (pragmatic), not emotional.",
+    tone: "Positive (+)",
+    collocation: "Pragmatic Approach"
   },
   {
     word: "Erudite",
@@ -480,7 +574,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The professor’s erudite lecture impressed the students.",
     synonyms: ["Learned", "Scholarly", "Knowledgeable"],
     antonyms: ["Ignorant", "Uneducated", "Illiterate"],
-    trick: "Rude? -> No, he is not rude, he is educated (E-rudite)."
+    trick: "Rude? -> No, he is not rude, he is educated (E-rudite).",
+    tone: "Positive (+)",
+    collocation: "Erudite Scholar"
   },
   {
     word: "Usurp",
@@ -490,7 +586,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The general tried to usurp the throne from the king.",
     synonyms: ["Seize", "Commandeer", "Hijack"],
     antonyms: ["Surrender", "Relinquish", "Give in"],
-    trick: "U + Slurp -> You slurp (drink) someone else's drink illegally."
+    trick: "U + Slurp -> You slurp (drink) someone else's drink illegally.",
+    tone: "Negative (-)",
+    collocation: "Usurp Power"
   },
   {
     word: "Riveting",
@@ -500,7 +598,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The movie was so riveting that I couldn't look away.",
     synonyms: ["Fascinating", "Gripping", "Absorbing"],
     antonyms: ["Boring", "Dull", "Tedious"],
-    trick: "Rivet -> A metal pin that holds things tight. It holds your attention tight."
+    trick: "Rivet -> A metal pin that holds things tight. It holds your attention tight.",
+    tone: "Positive (+)",
+    collocation: "Riveting Story"
   },
   {
     word: "Insipid",
@@ -510,7 +610,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The soup was insipid and tasted like hot water.",
     synonyms: ["Tasteless", "Bland", "Boring"],
     antonyms: ["Tasty", "Interesting", "Piquant"],
-    trick: "In + Sip -> When you sip it, there is no taste in it."
+    trick: "In + Sip -> When you sip it, there is no taste in it.",
+    tone: "Negative (-)",
+    collocation: "Insipid Taste"
   },
   {
     word: "Sporadic",
@@ -520,7 +622,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Sporadic gunfire was heard throughout the night.",
     synonyms: ["Occasional", "Infrequent", "Irregular"],
     antonyms: ["Constant", "Frequent", "Steady"],
-    trick: "Spot -> Occurring in random spots, not everywhere."
+    trick: "Spot -> Occurring in random spots, not everywhere.",
+    tone: "Neutral (0)",
+    collocation: "Sporadic Incidents"
   },
   {
     word: "Erratic",
@@ -530,7 +634,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The stock market has been erratic due to global wars.",
     synonyms: ["Unpredictable", "Inconsistent", "Volatile"],
     antonyms: ["Consistent", "Stable", "Predictable"],
-    trick: "Error -> Acting like a computer error or glitch."
+    trick: "Error -> Acting like a computer error or glitch.",
+    tone: "Negative (-)",
+    collocation: "Erratic Behavior"
   },
   {
     word: "Diabolical",
@@ -540,7 +646,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The villain hatched a diabolical plot to destroy the city.",
     synonyms: ["Devilish", "Fiendish", "Wicked"],
     antonyms: ["Angelic", "Good", "Saintly"],
-    trick: "Diablo -> Diablo means Devil in Spanish."
+    trick: "Diablo -> Diablo means Devil in Spanish.",
+    tone: "Negative (-)",
+    collocation: "Diabolical Plot"
   },
   {
     word: "Heinous",
@@ -550,7 +658,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The judge sentenced him to life for the heinous crime.",
     synonyms: ["Atrocious", "Abominable", "Monstrous"],
     antonyms: ["Admirable", "Commendable", "Good"],
-    trick: "Highness -> A crime of such 'highness' (magnitude) that it is evil."
+    trick: "Highness -> A crime of such 'highness' (magnitude) that it is evil.",
+    tone: "Negative (-)",
+    collocation: "Heinous Crime"
   },
   {
     word: "Fiendish",
@@ -560,7 +670,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The puzzle was fiendishly difficult to solve.",
     synonyms: ["Wicked", "Cruel", "Vicious"],
     antonyms: ["Kind", "Gentle", "Benevolent"],
-    trick: "Friend -> Opposite of a Friend is a Fiend (Enemy/Devil)."
+    trick: "Friend -> Opposite of a Friend is a Fiend (Enemy/Devil).",
+    tone: "Negative (-)",
+    collocation: "Fiendishly Difficult"
   },
   {
     word: "Atrocious",
@@ -570,7 +682,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The weather has been atrocious all week.",
     synonyms: ["Appalling", "Dreadful", "Terrible"],
     antonyms: ["Excellent", "Superb", "Wonderful"],
-    trick: "Atrocity -> Committing an atrocity makes you atrocious."
+    trick: "Atrocity -> Committing an atrocity makes you atrocious.",
+    tone: "Negative (-)",
+    collocation: "Atrocious Weather"
   },
   {
     word: "Silos",
@@ -580,7 +694,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "We need to break down the silos and encourage teamwork between departments.",
     synonyms: ["Isolation", "Separation", "Pockets"],
     antonyms: ["Integration", "Unity", "Collaboration"],
-    trick: "Solo -> Working solo (alone) creates silos."
+    trick: "Solo -> Working solo (alone) creates silos.",
+    tone: "Negative (-)",
+    collocation: "Organizational Silos"
   },
   {
     word: "Emulate",
@@ -590,7 +706,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Young players try to emulate their sporting heroes.",
     synonyms: ["Imitate", "Copy", "Mirror"],
     antonyms: ["Neglect", "Reject", "Ignore"],
-    trick: "Simulator -> A simulator tries to copy real life."
+    trick: "Simulator -> A simulator tries to copy real life.",
+    tone: "Positive (+)",
+    collocation: "Emulate Success"
   },
   {
     word: "Virulent",
@@ -600,7 +718,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "A virulent strain of the flu is spreading.",
     synonyms: ["Toxic", "Deadly", "Venomous"],
     antonyms: ["Harmless", "Benign", "Mild"],
-    trick: "Virus -> Related to a dangerous virus."
+    trick: "Virus -> Related to a dangerous virus.",
+    tone: "Negative (-)",
+    collocation: "Virulent Strain"
   },
   {
     word: "Hostile",
@@ -610,7 +730,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The audience was hostile towards the comedian.",
     synonyms: ["Aggressive", "Belligerent", "Unfriendly"],
     antonyms: ["Friendly", "Warm", "Welcoming"],
-    trick: "Hostel -> Hostel wardens are often hostile (strict/unfriendly)."
+    trick: "Hostel -> Hostel wardens are often hostile (strict/unfriendly).",
+    tone: "Negative (-)",
+    collocation: "Hostile Takeover"
   },
   {
     word: "Churlish",
@@ -620,7 +742,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "It would be churlish to refuse such a generous offer.",
     synonyms: ["Rude", "Impolite", "Boorish"],
     antonyms: ["Polite", "Gracious", "Courteous"],
-    trick: "Childish -> Acting rude like a spoiled child."
+    trick: "Childish -> Acting rude like a spoiled child.",
+    tone: "Negative (-)",
+    collocation: "Churlish Behavior"
   },
   {
     word: "Loutish",
@@ -630,7 +754,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "His loutish behavior at the party embarrassed his wife.",
     synonyms: ["Thuggish", "Boorish", "Oafish"],
     antonyms: ["Refined", "Gentlemanly", "Polite"],
-    trick: "Loud -> Loud and aggressive people are loutish."
+    trick: "Loud -> Loud and aggressive people are loutish.",
+    tone: "Negative (-)",
+    collocation: "Loutish Behavior"
   },
   {
     word: "Ebullient",
@@ -640,7 +766,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The ebullient host kept the party alive all night.",
     synonyms: ["Buoyant", "Cheerful", "Joyful"],
     antonyms: ["Depressed", "Apathetic", "Sullen"],
-    trick: "Bull -> Having the energy of a raging bull (happy energy)."
+    trick: "Bull -> Having the energy of a raging bull (happy energy).",
+    tone: "Positive (+)",
+    collocation: "Ebullient Mood"
   },
   {
     word: "Placid",
@@ -650,7 +778,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The placid waters of the lake reflected the moon.",
     synonyms: ["Calm", "Tranquil", "Serene"],
     antonyms: ["Excitable", "Temperamental", "Angry"],
-    trick: "Plastic -> Plastic doesn't move or react; it stays calm."
+    trick: "Plastic -> Plastic doesn't move or react; it stays calm.",
+    tone: "Positive (+)",
+    collocation: "Placid Waters"
   },
   {
     word: "Lethargic",
@@ -660,7 +790,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The hot weather made everyone feel lethargic.",
     synonyms: ["Sluggish", "Inert", "Torpid"],
     antonyms: ["Energetic", "Vigorous", "Active"],
-    trick: "Leather -> Moving as if you are made of heavy leather."
+    trick: "Leather -> Moving as if you are made of heavy leather.",
+    tone: "Negative (-)",
+    collocation: "Feeling Lethargic"
   },
   {
     word: "Adroit",
@@ -670,7 +802,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "She was adroit at avoiding awkward questions.",
     synonyms: ["Skillful", "Adept", "Dexterous"],
     antonyms: ["Clumsy", "Incompetent", "Inept"],
-    trick: "Android -> Androids (robots) are programmed to be skillful."
+    trick: "Android -> Androids (robots) are programmed to be skillful.",
+    tone: "Positive (+)",
+    collocation: "Adroit Handling"
   },
   {
     word: "Doctrine",
@@ -680,7 +814,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The government is committed to the doctrine of free trade.",
     synonyms: ["Creed", "Dogma", "Principle"],
     antonyms: ["Skepticism", "Disbelief", "Doubt"],
-    trick: "Doctor -> A doctor follows the rules of medicine strictly."
+    trick: "Doctor -> A doctor follows the rules of medicine strictly.",
+    tone: "Neutral (0)",
+    collocation: "Official Doctrine"
   },
   {
     word: "Dogma",
@@ -690,7 +826,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He challenged the political dogma of the party.",
     synonyms: ["Tenet", "Canon", "Belief"],
     antonyms: ["Open-mindedness", "Ambiguity", "Doubt"],
-    trick: "Dog -> A dog follows its master's orders without questioning."
+    trick: "Dog -> A dog follows its master's orders without questioning.",
+    tone: "Neutral (0)",
+    collocation: "Political Dogma"
   },
   {
     word: "Dexterous",
@@ -700,7 +838,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The magician's dexterous hands amazed the audience.",
     synonyms: ["Deft", "Adept", "Agile"],
     antonyms: ["Clumsy", "Awkward", "Unskilled"],
-    trick: "Dexter -> Dexter (from the cartoon) was a genius kid with machines."
+    trick: "Dexter -> Dexter (from the cartoon) was a genius kid with machines.",
+    tone: "Positive (+)",
+    collocation: "Dexterous Movement"
   },
   {
     word: "Vagabond",
@@ -710,7 +850,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He lived the life of a vagabond, traveling with just a backpack.",
     synonyms: ["Wanderer", "Nomad", "Drifter"],
     antonyms: ["Resident", "Settler", "Inhabitant"],
-    trick: "James Bond -> James Bond is always traveling like a vagabond."
+    trick: "James Bond -> James Bond is always traveling like a vagabond.",
+    tone: "Neutral (0)",
+    collocation: "Vagabond Life"
   },
   {
     word: "Peregrine",
@@ -720,7 +862,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The peregrine falcon is known for its long migrations.",
     synonyms: ["Migratory", "Wandering", "Roving"],
     antonyms: ["Native", "Indigenous", "Resident"],
-    trick: "Per + Agri -> Moving per (through) agri (fields/land)."
+    trick: "Per + Agri -> Moving per (through) agri (fields/land).",
+    tone: "Neutral (0)",
+    collocation: "Peregrine Falcon"
   },
   {
     word: "Sedentary",
@@ -730,7 +874,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "A sedentary lifestyle can lead to health problems like obesity.",
     synonyms: ["Inactive", "Stationary", "Desk-bound"],
     antonyms: ["Active", "Mobile", "Energetic"],
-    trick: "Sediment -> Sediment settles at the bottom and doesn't move."
+    trick: "Sediment -> Sediment settles at the bottom and doesn't move.",
+    tone: "Negative (-)",
+    collocation: "Sedentary Lifestyle"
   },
   {
     word: "Endemic",
@@ -740,7 +886,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Malaria is endemic to many tropical countries.",
     synonyms: ["Indigenous", "Native", "Local"],
     antonyms: ["Foreign", "Exotic", "Pandemic"],
-    trick: "End + Mic -> The sound of the mic ends here; it is local to this room."
+    trick: "End + Mic -> The sound of the mic ends here; it is local to this room.",
+    tone: "Neutral (0)",
+    collocation: "Endemic Disease"
   },
   {
     word: "Prerogative",
@@ -750,7 +898,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Making executive decisions is the prerogative of the CEO.",
     synonyms: ["Privilege", "Right", "Entitlement"],
     antonyms: ["Duty", "Obligation", "Disqualification"],
-    trick: "Pre-rogative -> A King's right before (Pre) anyone else questions (Interrogative)."
+    trick: "Pre-rogative -> A King's right before (Pre) anyone else questions (Interrogative).",
+    tone: "Neutral (0)",
+    collocation: "Royal Prerogative"
   },
   {
     word: "Perquisite",
@@ -760,7 +910,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Free travel is a perquisite of working for an airline.",
     synonyms: ["Perk", "Bonus", "Benefit"],
     antonyms: ["Loss", "Penalty", "Disadvantage"],
-    trick: "Perk -> The word 'Perk' is just a short form of Perquisite."
+    trick: "Perk -> The word 'Perk' is just a short form of Perquisite.",
+    tone: "Positive (+)",
+    collocation: "Job Perquisite"
   },
   {
     word: "Sanction",
@@ -770,7 +922,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The project received official sanction. 2. Trade sanctions were imposed.",
     synonyms: ["Authorization", "Penalty"],
     antonyms: ["Prohibition", "Reward"],
-    trick: "Sank -> If you get a sanction (penalty), your business sank."
+    trick: "Sank -> If you get a sanction (penalty), your business sank.",
+    tone: "Neutral (0)",
+    collocation: "Official Sanction"
   },
   {
     word: "Indulgent",
@@ -780,7 +934,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The indulgent grandmother gave the kids candy before dinner.",
     synonyms: ["Lenient", "Permissive", "Tolerant"],
     antonyms: ["Strict", "Severe", "Stern"],
-    trick: "Indulge -> If you indulge in chocolate, you are being indulgent to yourself."
+    trick: "Indulge -> If you indulge in chocolate, you are being indulgent to yourself.",
+    tone: "Negative (-)",
+    collocation: "Indulgent Parent"
   },
   {
     word: "Leeway",
@@ -790,7 +946,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The manager gave us some leeway to finish the project late.",
     synonyms: ["Latitude", "Freedom", "Scope"],
     antonyms: ["Restriction", "Constraint", "Tightness"],
-    trick: "Lee + Way -> Leaving a way open for movement."
+    trick: "Lee + Way -> Leaving a way open for movement.",
+    tone: "Positive (+)",
+    collocation: "Give Leeway"
   },
   {
     word: "Latitude",
@@ -800,7 +958,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Journalists should have considerable latitude in criticizing public officials.",
     synonyms: ["Freedom", "Liberty", "Leeway"],
     antonyms: ["Limitation", "Restriction", "Bondage"],
-    trick: "Map Lines -> Latitude lines show how wide the world is (width/freedom)."
+    trick: "Map Lines -> Latitude lines show how wide the world is (width/freedom).",
+    tone: "Positive (+)",
+    collocation: "Wide Latitude"
   },
   {
     word: "Deposition",
@@ -810,7 +970,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The deposition of the dictator led to chaos. 2. He gave a deposition in court.",
     synonyms: ["Removal", "Testimony"],
     antonyms: ["Installation", "Coronation"],
-    trick: "De-Position -> Removing someone from their Position."
+    trick: "De-Position -> Removing someone from their Position.",
+    tone: "Neutral (0)",
+    collocation: "Legal Deposition"
   },
   {
     word: "Abdication",
@@ -820,7 +982,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The king's abdication shocked the nation.",
     synonyms: ["Resignation", "Renunciation", "Surrender"],
     antonyms: ["Coronation", "Accession", "Acceptance"],
-    trick: "Ab-Dictation -> The Dictator leaves (Absent)."
+    trick: "Ab-Dictation -> The Dictator leaves (Absent).",
+    tone: "Neutral (0)",
+    collocation: "Abdication of Duty"
   },
   {
     word: "Impeachment",
@@ -830,7 +994,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The president faced impeachment for corruption.",
     synonyms: ["Indictment", "Accusation", "Charge"],
     antonyms: ["Absolution", "Exoneration", "Praise"],
-    trick: "Peach -> A peach bruises easily; impeachment bruises your reputation."
+    trick: "Peach -> A peach bruises easily; impeachment bruises your reputation.",
+    tone: "Negative (-)",
+    collocation: "Face Impeachment"
   },
   {
     word: "Disavowal",
@@ -840,7 +1006,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The government issued a disavowal of the secret operation.",
     synonyms: ["Denial", "Rejection", "Repudiation"],
     antonyms: ["Admission", "Acknowledgment", "Confession"],
-    trick: "Dis-Vow -> To break a vow or promise; to say you didn't do it."
+    trick: "Dis-Vow -> To break a vow or promise; to say you didn't do it.",
+    tone: "Negative (-)",
+    collocation: "Public Disavowal"
   },
   {
     word: "Credence",
@@ -850,7 +1018,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The letters give credence to the theory that he was murdered.",
     synonyms: ["Credibility", "Belief", "Trust"],
     antonyms: ["Disbelief", "Distrust", "Skepticism"],
-    trick: "Credit -> If you have credit, people give credence to you."
+    trick: "Credit -> If you have credit, people give credence to you.",
+    tone: "Positive (+)",
+    collocation: "Give Credence"
   },
   {
     word: "Vain",
@@ -860,7 +1030,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He is so vain about his hair. 2. They made a vain attempt to escape.",
     synonyms: ["Conceited", "Futile"],
     antonyms: ["Modest", "Successful"],
-    trick: "Vein -> Looking at your veins in the mirror (Self-obsessed) OR 'In vain' (useless)."
+    trick: "Vein -> Looking at your veins in the mirror (Self-obsessed) OR 'In vain' (useless).",
+    tone: "Negative (-)",
+    collocation: "In Vain"
   },
   {
     word: "Abortive",
@@ -870,7 +1042,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The rebels made an abortive attempt to seize power.",
     synonyms: ["Unsuccessful", "Failed", "Futile"],
     antonyms: ["Successful", "Fruitful", "Effective"],
-    trick: "Abort -> To abort a mission means it failed."
+    trick: "Abort -> To abort a mission means it failed.",
+    tone: "Negative (-)",
+    collocation: "Abortive Attempt"
   },
   {
     word: "Pompous",
@@ -880,7 +1054,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The pompous official refused to talk to the common people.",
     synonyms: ["Arrogant", "Pretentious", "Haughty"],
     antonyms: ["Humble", "Modest", "Unassuming"],
-    trick: "Pomp -> 'Pomp and Show' -> Showing off too much."
+    trick: "Pomp -> 'Pomp and Show' -> Showing off too much.",
+    tone: "Negative (-)",
+    collocation: "Pompous Ass"
   },
   {
     word: "Efficacious",
@@ -890,7 +1066,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The vaccine proved to be highly efficacious against the virus.",
     synonyms: ["Effective", "Productive", "Potent"],
     antonyms: ["Ineffective", "Useless", "Weak"],
-    trick: "Effect -> Something that produces a good effect."
+    trick: "Effect -> Something that produces a good effect.",
+    tone: "Positive (+)",
+    collocation: "Highly Efficacious"
   },
   {
     word: "Prolific",
@@ -900,7 +1078,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Picasso was a prolific artist, creating thousands of works.",
     synonyms: ["Productive", "Creative", "Fertile"],
     antonyms: ["Unproductive", "Barren", "Sterile"],
-    trick: "Pro-Life -> Creating a lot of life (or work)."
+    trick: "Pro-Life -> Creating a lot of life (or work).",
+    tone: "Positive (+)",
+    collocation: "Prolific Writer"
   },
   {
     word: "Advent",
@@ -910,7 +1090,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The advent of the internet changed the world forever.",
     synonyms: ["Arrival", "Appearance", "Emergence"],
     antonyms: ["Departure", "Disappearance", "Exit"],
-    trick: "Adventure -> Every adventure starts with an advent (arrival)."
+    trick: "Adventure -> Every adventure starts with an advent (arrival).",
+    tone: "Neutral (0)",
+    collocation: "Advent of Technology"
   },
   {
     word: "Inception",
@@ -920,7 +1102,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Since its inception, the company has grown rapidly.",
     synonyms: ["Beginning", "Commencement", "Origin"],
     antonyms: ["Conclusion", "End", "Termination"],
-    trick: "Incept -> Movie 'Inception' was about planting an idea (the start)."
+    trick: "Incept -> Movie 'Inception' was about planting an idea (the start).",
+    tone: "Neutral (0)",
+    collocation: "Since Inception"
   },
   {
     word: "Cessation",
@@ -930,7 +1114,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The treaty called for a cessation of hostilities.",
     synonyms: ["End", "Stoppage", "Halt"],
     antonyms: ["Commencement", "Start", "Continuation"],
-    trick: "Cease -> Ceasefire means stopping the fire."
+    trick: "Cease -> Ceasefire means stopping the fire.",
+    tone: "Neutral (0)",
+    collocation: "Cessation of Hostilities"
   },
   {
     word: "Ratified",
@@ -940,7 +1126,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The parliament ratified the peace treaty.",
     synonyms: ["Approved", "Confirmed", "Endorsed"],
     antonyms: ["Rejected", "Vetoed", "Revoked"],
-    trick: "Rate -> You rate something 5 stars to approve/validate it."
+    trick: "Rate -> You rate something 5 stars to approve/validate it.",
+    tone: "Positive (+)",
+    collocation: "Ratified Treaty"
   },
   {
     word: "Repudiate",
@@ -950,7 +1138,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The politician repudiated the allegations of corruption.",
     synonyms: ["Reject", "Deny", "Renounce"],
     antonyms: ["Accept", "Embrace", "Confirm"],
-    trick: "Reputation -> To save your reputation, you reject (repudiate) bad claims."
+    trick: "Reputation -> To save your reputation, you reject (repudiate) bad claims.",
+    tone: "Negative (-)",
+    collocation: "Repudiate Claims"
   },
   {
     word: "Abrogate",
@@ -960,7 +1150,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The new government promised to abrogate the old tax laws.",
     synonyms: ["Repeal", "Revoke", "Annul"],
     antonyms: ["Enact", "Institute", "Establish"],
-    trick: "Abe-Gate -> Close the gate on a law; cancel it."
+    trick: "Abe-Gate -> Close the gate on a law; cancel it.",
+    tone: "Negative (-)",
+    collocation: "Abrogate Treaty"
   },
   {
     word: "Concomitant",
@@ -970,7 +1162,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "Inflation is a concomitant of rapid economic growth.",
     synonyms: ["Accompanying", "Associated", "Related"],
     antonyms: ["Unrelated", "Independent", "Separate"],
-    trick: "Come + Commit -> Things that come together and are committed to each other."
+    trick: "Come + Commit -> Things that come together and are committed to each other.",
+    tone: "Neutral (0)",
+    collocation: "Concomitant Risk"
   },
   {
     word: "Profound",
@@ -980,7 +1174,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The speaker's words had a profound impact on the audience, changing their perspective forever.",
     synonyms: ["Deep", "Intense", "Insightful"],
     antonyms: ["Superficial", "Shallow", "Trivial"],
-    trick: "Pro + Found -> A 'Pro' (professional) person has 'Found' deep knowledge that is not just on the surface."
+    trick: "Pro + Found -> A 'Pro' (professional) person has 'Found' deep knowledge that is not just on the surface.",
+    tone: "Positive (+)",
+    collocation: "Profound Impact"
   },
   {
     word: "Bleak",
@@ -990,6 +1186,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "The future of the company looks bleak unless they find a new investor soon.",
     synonyms: ["Gloomy", "Desolate", "Cheerless"],
     antonyms: ["Bright", "Cheerful", "Promising"],
-    trick: "Leak -> If your roof has a leak during a cold, rainy winter night, the situation becomes bleak."
+    trick: "Leak -> If your roof has a leak during a cold, rainy winter night, the situation becomes bleak.",
+    tone: "Negative (-)",
+    collocation: "Bleak Future"
   }
 ];
