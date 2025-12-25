@@ -10,6 +10,7 @@ export interface WordAnalysis {
   trick: string; // Mnemonic
   tone?: string; // e.g. "Negative (-)" or "Positive (+)"
   collocation?: string; // e.g. "Heinous Crime" (The "Best Friend" word)
+  intensitySpectrum?: { word: string; level: string }[]; // The Intensity Training Spectrum
 }
 
 export interface SavedWord extends WordAnalysis {

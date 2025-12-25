@@ -29,24 +29,35 @@ export const generateWordAnalysis = async (word: string): Promise<WordAnalysis> 
       antonyms: { type: Type.ARRAY, items: { type: Type.STRING } },
       trick: { type: Type.STRING, description: "A memorable mnemonic or trick to remember the word." },
       tone: { type: Type.STRING, description: "The sentiment tone: 'Positive (+)', 'Negative (-)', or 'Neutral (0)'" },
-      collocation: { type: Type.STRING, description: "The 'Best Friend' word that naturally pairs with this word (e.g., for 'Heinous', return 'Heinous Crime')." },
+      collocation: { type: Type.STRING, description: "The 'Best Friend' word that naturally pairs with this word." },
+      intensitySpectrum: { 
+        type: Type.ARRAY, 
+        items: { 
+            type: Type.OBJECT,
+            properties: {
+                word: { type: Type.STRING },
+                level: { type: Type.STRING, description: "e.g. Mild, Medium, High, Extreme" }
+            },
+            required: ["word", "level"]
+        },
+        description: "A list of 3-5 related words sorted by intensity (Mild to Extreme), including the main word." 
+      }
     },
-    required: ["word", "partOfSpeech", "meaning", "translation", "sentence", "synonyms", "antonyms", "trick", "tone", "collocation"],
+    required: ["word", "partOfSpeech", "meaning", "translation", "sentence", "synonyms", "antonyms", "trick", "tone", "collocation", "intensitySpectrum"],
   };
 
   const response = await ai.models.generateContent({
     model,
     contents: `Analyze the word "${word}" for a competitive exam student (Banking/GRE). 
     Provide:
-    1. The part of speech.
-    2. A simple English meaning.
-    3. A Hindi translation.
-    4. A usage sentence.
-    5. 5 common synonyms.
-    6. 5 common antonyms.
-    7. A clever "Trick" or mnemonic.
-    8. The "Tone" of the word. Is it Positive (+), Negative (-), or Neutral (0)?
-    9. A "Collocation" (Best Friend): The word that most naturally appears next to it (e.g., if word is "Alleviate", collocation is "Pain" or "Poverty").`,
+    1. Basics: Part of speech, meaning, Hindi translation, sentence.
+    2. Vocab: 5 synonyms, 5 antonyms.
+    3. Memory: A clever mnemonic trick.
+    4. Nuance: 
+       - Tone: Positive/Negative/Neutral.
+       - Collocation: The word that naturally sits next to it.
+       - Intensity Spectrum: Create a scale of 3-5 words related to this concept ranging from Mild to Extreme intensity. Place the requested word "${word}" correctly within this scale.
+       Example for "Irate": [{word: "Annoyed", level: "Mild"}, {word: "Vexed", level: "Medium"}, {word: "Irate", level: "High"}, {word: "Incensed", level: "Extreme"}]`,
     config: {
       responseMimeType: "application/json",
       responseSchema: schema,

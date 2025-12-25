@@ -12,7 +12,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Despair", "Misery", "Sorrow"],
     trick: "Election -> Winning an election brings elation.",
     tone: "Positive (+)",
-    collocation: "Sheer Elation"
+    collocation: "Sheer Elation",
+    intensitySpectrum: [
+      { word: "Happiness", level: "Mild" },
+      { word: "Delight", level: "Medium" },
+      { word: "Elation", level: "High" },
+      { word: "Euphoria", level: "Extreme" }
+    ]
   },
   {
     word: "Felicity",
@@ -24,7 +30,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Unhappiness", "Misery", "Inappropriateness"],
     trick: "Fell in City -> If you fell in love in a city, you found felicity.",
     tone: "Positive (+)",
-    collocation: "Domestic Felicity"
+    collocation: "Domestic Felicity",
+    intensitySpectrum: [
+      { word: "Contentment", level: "Mild" },
+      { word: "Happiness", level: "Medium" },
+      { word: "Felicity", level: "High" },
+      { word: "Bliss", level: "Extreme" }
+    ]
   },
   {
     word: "Majestic",
@@ -36,7 +48,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Modest", "Humble", "Shabby"],
     trick: "Magic -> Kings use magic to look majestic.",
     tone: "Positive (+)",
-    collocation: "Majestic View"
+    collocation: "Majestic View",
+    intensitySpectrum: [
+      { word: "Nice", level: "Mild" },
+      { word: "Impressive", level: "Medium" },
+      { word: "Grand", level: "High" },
+      { word: "Majestic", level: "Extreme" }
+    ]
   },
   {
     word: "Euphoric",
@@ -48,7 +66,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Miserable", "Depressed", "Downcast"],
     trick: "U + For + Ic -> You are for Ice cream (makes you happy).",
     tone: "Positive (+)",
-    collocation: "Euphoric Mood"
+    collocation: "Euphoric Mood",
+    intensitySpectrum: [
+      { word: "Happy", level: "Mild" },
+      { word: "Excited", level: "Medium" },
+      { word: "Euphoric", level: "High" },
+      { word: "Ecstatic", level: "Extreme" }
+    ]
   },
   {
     word: "Rapturous",
@@ -60,7 +84,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Bored", "Uninterested", "Apathetic"],
     trick: "Rap -> Good Rap music makes the crowd rapturous.",
     tone: "Positive (+)",
-    collocation: "Rapturous Applause"
+    collocation: "Rapturous Applause",
+    intensitySpectrum: [
+      { word: "Pleased", level: "Mild" },
+      { word: "Delighted", level: "Medium" },
+      { word: "Rapturous", level: "High" },
+      { word: "Ecstatic", level: "Extreme" }
+    ]
   },
   {
     word: "Salubrious",
@@ -96,7 +126,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Agitated", "Turbulent", "Anxious"],
     trick: "Siren -> When the ambulance siren stops, it becomes serene.",
     tone: "Positive (+)",
-    collocation: "Serene Smile"
+    collocation: "Serene Smile",
+    intensitySpectrum: [
+      { word: "Quiet", level: "Mild" },
+      { word: "Calm", level: "Medium" },
+      { word: "Serene", level: "High" },
+      { word: "Tranquil", level: "Extreme" }
+    ]
   },
   {
     word: "Halcyon",
@@ -108,7 +144,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Stormy", "Turbulent", "Troubled"],
     trick: "Hall + Cyan -> A hall painted cyan (blue) feels peaceful.",
     tone: "Positive (+)",
-    collocation: "Halcyon Days"
+    collocation: "Halcyon Days",
+    intensitySpectrum: [
+      { word: "Pleasant", level: "Mild" },
+      { word: "Happy", level: "Medium" },
+      { word: "Halcyon", level: "High" },
+      { word: "Idyllic", level: "Extreme" }
+    ]
   },
   {
     word: "Winsome",
@@ -132,7 +174,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Emotional", "Passionate", "Complaining"],
     trick: "Stone -> Be like a stone; no feelings.",
     tone: "Neutral (0)",
-    collocation: "Stoic Silence"
+    collocation: "Stoic Silence",
+    intensitySpectrum: [
+      { word: "Reserved", level: "Mild" },
+      { word: "Unemotional", level: "Medium" },
+      { word: "Stoic", level: "High" },
+      { word: "Impassive", level: "Extreme" }
+    ]
   },
   {
     word: "Impassive",
@@ -144,7 +192,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Expressive", "Emotional", "Demonstrative"],
     trick: "I'm Passive -> I am not active with emotions; I am passive.",
     tone: "Neutral (0)",
-    collocation: "Impassive Face"
+    collocation: "Impassive Face",
+    intensitySpectrum: [
+      { word: "Blank", level: "Mild" },
+      { word: "Expressionless", level: "Medium" },
+      { word: "Impassive", level: "High" },
+      { word: "Catatonic", level: "Extreme" }
+    ]
   },
   {
     word: "Harrowing",
@@ -156,7 +210,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Calming", "Soothing", "Pleasant"],
     trick: "Arrow -> Getting hit by an arrow is a harrowing experience.",
     tone: "Negative (-)",
-    collocation: "Harrowing Experience"
+    collocation: "Harrowing Experience",
+    intensitySpectrum: [
+      { word: "Upsetting", level: "Mild" },
+      { word: "Distressing", level: "Medium" },
+      { word: "Harrowing", level: "High" },
+      { word: "Traumatic", level: "Extreme" }
+    ]
   },
   {
     word: "Sullen",
@@ -168,7 +228,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Cheerful", "Sociable", "Friendly"],
     trick: "Swollen -> When you cry, your face gets swollen and you look sullen.",
     tone: "Negative (-)",
-    collocation: "Sullen Silence"
+    collocation: "Sullen Silence",
+    intensitySpectrum: [
+      { word: "Upset", level: "Mild" },
+      { word: "Sulky", level: "Medium" },
+      { word: "Sullen", level: "High" },
+      { word: "Morose", level: "Extreme" }
+    ]
   },
   {
     word: "Trepidation",
@@ -180,7 +246,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Composure", "Calm", "Confidence"],
     trick: "Trap -> Fear of getting caught in a trap.",
     tone: "Negative (-)",
-    collocation: "With Trepidation"
+    collocation: "With Trepidation",
+    intensitySpectrum: [
+      { word: "Nervousness", level: "Mild" },
+      { word: "Anxiety", level: "Medium" },
+      { word: "Trepidation", level: "High" },
+      { word: "Terror", level: "Extreme" }
+    ]
   },
   {
     word: "Dejected",
@@ -192,7 +264,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Cheerful", "Happy", "Elated"],
     trick: "Rejected -> If you get rejected, you feel dejected.",
     tone: "Negative (-)",
-    collocation: "Dejected Look"
+    collocation: "Dejected Look",
+    intensitySpectrum: [
+      { word: "Sad", level: "Mild" },
+      { word: "Disappointed", level: "Medium" },
+      { word: "Dejected", level: "High" },
+      { word: "Despondent", level: "Extreme" }
+    ]
   },
   {
     word: "Forlorn",
@@ -204,7 +282,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Happy", "Cheerful", "Cared for"],
     trick: "For + Loan -> If you ask for a loan and get no money, you feel forlorn.",
     tone: "Negative (-)",
-    collocation: "Forlorn Hope"
+    collocation: "Forlorn Hope",
+    intensitySpectrum: [
+      { word: "Lonely", level: "Mild" },
+      { word: "Sad", level: "Medium" },
+      { word: "Forlorn", level: "High" },
+      { word: "Desolate", level: "Extreme" }
+    ]
   },
   {
     word: "Wretched",
@@ -216,7 +300,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Comfortable", "Fortunate", "Excellent"],
     trick: "Retch -> Feeling so bad/sick that you want to retch (vomit).",
     tone: "Negative (-)",
-    collocation: "Wretched Life"
+    collocation: "Wretched Life",
+    intensitySpectrum: [
+      { word: "Uncomfortable", level: "Mild" },
+      { word: "Miserable", level: "Medium" },
+      { word: "Wretched", level: "High" },
+      { word: "Abject", level: "Extreme" }
+    ]
   },
   {
     word: "Callous",
@@ -228,7 +318,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Compassionate", "Sensitive", "Kind"],
     trick: "Call + Us -> He never calls us; he is callous (doesn't care).",
     tone: "Negative (-)",
-    collocation: "Callous Attitude"
+    collocation: "Callous Attitude",
+    intensitySpectrum: [
+      { word: "Indifferent", level: "Mild" },
+      { word: "Insensitive", level: "Medium" },
+      { word: "Callous", level: "High" },
+      { word: "Heartless", level: "Extreme" }
+    ]
   },
   {
     word: "Rancid",
@@ -240,7 +336,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Fresh", "Sweet", "Perfumed"],
     trick: "Rain + Acid -> Smells bad like acid rain.",
     tone: "Negative (-)",
-    collocation: "Rancid Butter"
+    collocation: "Rancid Butter",
+    intensitySpectrum: [
+      { word: "Stale", level: "Mild" },
+      { word: "Off", level: "Medium" },
+      { word: "Rancid", level: "High" },
+      { word: "Putrid", level: "Extreme" }
+    ]
   },
   {
     word: "Melancholy",
@@ -252,7 +354,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Happiness", "Cheerfulness", "Joy"],
     trick: "Melon + Colic -> Eating a bad melon gives you colic pain -> makes you sad.",
     tone: "Negative (-)",
-    collocation: "Deep Melancholy"
+    collocation: "Deep Melancholy",
+    intensitySpectrum: [
+      { word: "Sadness", level: "Mild" },
+      { word: "Gloom", level: "Medium" },
+      { word: "Melancholy", level: "High" },
+      { word: "Despair", level: "Extreme" }
+    ]
   },
   {
     word: "Ire",
@@ -264,7 +372,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Calmness", "Peace", "Pleasure"],
     trick: "Fire -> Ire sounds like Fire; burning with anger.",
     tone: "Negative (-)",
-    collocation: "Draw the Ire"
+    collocation: "Draw the Ire",
+    intensitySpectrum: [
+      { word: "Annoyance", level: "Mild" },
+      { word: "Anger", level: "Medium" },
+      { word: "Ire", level: "High" },
+      { word: "Fury", level: "Extreme" }
+    ]
   },
   {
     word: "Flustered",
@@ -276,7 +390,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Calm", "Composed", "Cool"],
     trick: "Flush -> Blood rushes to face (flush) when you are nervous/flustered.",
     tone: "Negative (-)",
-    collocation: "Visibly Flustered"
+    collocation: "Visibly Flustered",
+    intensitySpectrum: [
+      { word: "Unsettled", level: "Mild" },
+      { word: "Confused", level: "Medium" },
+      { word: "Flustered", level: "High" },
+      { word: "Panicked", level: "Extreme" }
+    ]
   },
   {
     word: "Envy",
@@ -288,7 +408,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Goodwill", "Kindness", "Contentment"],
     trick: "Enemy -> You often feel envy towards an enemy's success.",
     tone: "Negative (-)",
-    collocation: "Green with Envy"
+    collocation: "Green with Envy",
+    intensitySpectrum: [
+      { word: "Longing", level: "Mild" },
+      { word: "Jealousy", level: "Medium" },
+      { word: "Envy", level: "High" },
+      { word: "Resentment", level: "Extreme" }
+    ]
   },
   {
     word: "Cheerful",
@@ -300,7 +426,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Gloomy", "Depressed", "Sullen"],
     trick: "Cheers! -> In a party, saying 'Cheers' makes everyone cheerful.",
     tone: "Positive (+)",
-    collocation: "Cheerful Disposition"
+    collocation: "Cheerful Disposition",
+    intensitySpectrum: [
+      { word: "Glad", level: "Mild" },
+      { word: "Cheerful", level: "Medium" },
+      { word: "Joyful", level: "High" },
+      { word: "Jubilant", level: "Extreme" }
+    ]
   },
   {
     word: "Jubilant",
@@ -312,7 +444,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Despondent", "Defeated", "Sorrowful"],
     trick: "Jubilee -> Silver/Golden Jubilee celebrations make people jubilant.",
     tone: "Positive (+)",
-    collocation: "Jubilant Mood"
+    collocation: "Jubilant Mood",
+    intensitySpectrum: [
+      { word: "Happy", level: "Mild" },
+      { word: "Thrilled", level: "Medium" },
+      { word: "Jubilant", level: "High" },
+      { word: "Triumphant", level: "Extreme" }
+    ]
   },
   {
     word: "Delighted",
@@ -324,7 +462,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Disappointed", "Dismayed"],
     trick: "De-Light -> When the light comes back after a power cut, we feel delighted.",
     tone: "Positive (+)",
-    collocation: "Absolutely Delighted"
+    collocation: "Absolutely Delighted",
+    intensitySpectrum: [
+      { word: "Pleased", level: "Mild" },
+      { word: "Happy", level: "Medium" },
+      { word: "Delighted", level: "High" },
+      { word: "Thrilled", level: "Extreme" }
+    ]
   },
   {
     word: "Tranquil",
@@ -336,7 +480,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Turbulent", "Chaotic", "Agitated"],
     trick: "Train + Quill -> Writing with a quill on a quiet train is a tranquil experience.",
     tone: "Positive (+)",
-    collocation: "Tranquil Lake"
+    collocation: "Tranquil Lake",
+    intensitySpectrum: [
+      { word: "Quiet", level: "Mild" },
+      { word: "Calm", level: "Medium" },
+      { word: "Tranquil", level: "High" },
+      { word: "Serene", level: "Extreme" }
+    ]
   },
   {
     word: "Sanguine",
@@ -348,7 +498,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Pessimistic", "Gloomy", "Cynical"],
     trick: "Sang + Win -> He sang because he was sure he would win (optimistic).",
     tone: "Positive (+)",
-    collocation: "Sanguine Attitude"
+    collocation: "Sanguine Attitude",
+    intensitySpectrum: [
+      { word: "Hopeful", level: "Mild" },
+      { word: "Optimistic", level: "Medium" },
+      { word: "Sanguine", level: "High" },
+      { word: "Confident", level: "Extreme" }
+    ]
   },
   {
     word: "Beatific",
@@ -360,7 +516,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Demonic", "Miserable", "Wretched"],
     trick: "Beautiful + Terrific -> Divine happiness is beautiful and terrific.",
     tone: "Positive (+)",
-    collocation: "Beatific Smile"
+    collocation: "Beatific Smile",
+    intensitySpectrum: [
+      { word: "Happy", level: "Mild" },
+      { word: "Serene", level: "Medium" },
+      { word: "Beatific", level: "High" },
+      { word: "Divine", level: "Extreme" }
+    ]
   },
   {
     word: "Exuberant",
@@ -372,7 +534,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Lethargic", "Apathetic", "Listless"],
     trick: "Ex + Uber -> You need extra energy to drive an Uber all day.",
     tone: "Positive (+)",
-    collocation: "Exuberant Personality"
+    collocation: "Exuberant Personality",
+    intensitySpectrum: [
+      { word: "Lively", level: "Mild" },
+      { word: "Energetic", level: "Medium" },
+      { word: "Exuberant", level: "High" },
+      { word: "Manic", level: "Extreme" }
+    ]
   },
   {
     word: "Mellifluous",
@@ -396,7 +564,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Petty", "Vindictive", "Selfish"],
     trick: "Mega + Animus -> 'Mega' means big, 'Animus' means soul. Big-souled.",
     tone: "Positive (+)",
-    collocation: "Magnanimous Gesture"
+    collocation: "Magnanimous Gesture",
+    intensitySpectrum: [
+      { word: "Fair", level: "Mild" },
+      { word: "Generous", level: "Medium" },
+      { word: "Magnanimous", level: "High" },
+      { word: "Altruistic", level: "Extreme" }
+    ]
   },
   {
     word: "Benign",
@@ -420,7 +594,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Pleased", "Soothed", "Delighted"],
     trick: "Wax -> Getting your hair waxed is painful and makes you vexed.",
     tone: "Negative (-)",
-    collocation: "Vexed Question"
+    collocation: "Vexed Question",
+    intensitySpectrum: [
+      { word: "Annoyed", level: "Mild" },
+      { word: "Vexed", level: "Medium" },
+      { word: "Irate", level: "High" },
+      { word: "Incensed", level: "Extreme" }
+    ]
   },
   {
     word: "Irate",
@@ -432,7 +612,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Calm", "Composed", "Pacified"],
     trick: "Pirate -> Pirates are always fighting and irate.",
     tone: "Negative (-)",
-    collocation: "Irate Customer"
+    collocation: "Irate Customer",
+    intensitySpectrum: [
+      { word: "Annoyed", level: "Mild" },
+      { word: "Vexed", level: "Medium" },
+      { word: "Irate", level: "High" },
+      { word: "Incensed", level: "Extreme" }
+    ]
   },
   {
     word: "Morose",
@@ -444,7 +630,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Cheerful", "Genial", "Happy"],
     trick: "No Rose -> If you get no rose on Valentine's day, you feel morose.",
     tone: "Negative (-)",
-    collocation: "Morose Silence"
+    collocation: "Morose Silence",
+    intensitySpectrum: [
+      { word: "Gloomy", level: "Mild" },
+      { word: "Glum", level: "Medium" },
+      { word: "Morose", level: "High" },
+      { word: "Depressed", level: "Extreme" }
+    ]
   },
   {
     word: "Apprehension",
@@ -456,7 +648,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Confidence", "Calmness"],
     trick: "Pre-Tension -> Tension before an event happens is apprehension.",
     tone: "Negative (-)",
-    collocation: "Deep Apprehension"
+    collocation: "Deep Apprehension",
+    intensitySpectrum: [
+      { word: "Worry", level: "Mild" },
+      { word: "Anxiety", level: "Medium" },
+      { word: "Apprehension", level: "High" },
+      { word: "Dread", level: "Extreme" }
+    ]
   },
   {
     word: "Skeptical",
@@ -468,7 +666,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Convinced", "Gullible", "Certain"],
     trick: "Skip it -> You want to skip the plan because you doubt it will work.",
     tone: "Neutral (0)",
-    collocation: "Skeptical About"
+    collocation: "Skeptical About",
+    intensitySpectrum: [
+      { word: "Unsure", level: "Mild" },
+      { word: "Doubtful", level: "Medium" },
+      { word: "Skeptical", level: "High" },
+      { word: "Cynical", level: "Extreme" }
+    ]
   },
   {
     word: "Repulsed",
@@ -480,7 +684,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Attracted", "Enchanted", "Allured"],
     trick: "Pulse -> Seeing something so gross your pulse drops.",
     tone: "Negative (-)",
-    collocation: "Utterly Repulsed"
+    collocation: "Utterly Repulsed",
+    intensitySpectrum: [
+      { word: "Disliked", level: "Mild" },
+      { word: "Distaste", level: "Medium" },
+      { word: "Repulsed", level: "High" },
+      { word: "Disgusted", level: "Extreme" }
+    ]
   },
   {
     word: "Perturb",
@@ -492,7 +702,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Calm", "Soothe", "Reassure"],
     trick: "Turbo -> Putting a car in turbo mode disturbs the silence.",
     tone: "Negative (-)",
-    collocation: "Deeply Perturbed"
+    collocation: "Deeply Perturbed",
+    intensitySpectrum: [
+      { word: "Bother", level: "Mild" },
+      { word: "Unsettle", level: "Medium" },
+      { word: "Perturb", level: "High" },
+      { word: "Agitate", level: "Extreme" }
+    ]
   },
   {
     word: "Despondent",
@@ -504,7 +720,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Hopeful", "Cheerful", "Sanguine"],
     trick: "The Pond -> Feeling so sad you want to jump in the pond.",
     tone: "Negative (-)",
-    collocation: "Despondent Mood"
+    collocation: "Despondent Mood",
+    intensitySpectrum: [
+      { word: "Sad", level: "Mild" },
+      { word: "Hopeless", level: "Medium" },
+      { word: "Despondent", level: "High" },
+      { word: "Despairing", level: "Extreme" }
+    ]
   },
   {
     word: "Woeful",
@@ -516,7 +738,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Joyful", "Cheerful", "Delighted"],
     trick: "Woe -> Sounds like 'Oh no', expressing deep sadness.",
     tone: "Negative (-)",
-    collocation: "Woeful Tale"
+    collocation: "Woeful Tale",
+    intensitySpectrum: [
+      { word: "Sad", level: "Mild" },
+      { word: "Sorrowful", level: "Medium" },
+      { word: "Woeful", level: "High" },
+      { word: "Wretched", level: "Extreme" }
+    ]
   },
   {
     word: "Lax",
@@ -528,7 +756,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Strict", "Stringent", "Careful"],
     trick: "Relax -> If you relax too much at work, you become lax.",
     tone: "Negative (-)",
-    collocation: "Lax Security"
+    collocation: "Lax Security",
+    intensitySpectrum: [
+      { word: "Relaxed", level: "Mild" },
+      { word: "Careless", level: "Medium" },
+      { word: "Lax", level: "High" },
+      { word: "Negligent", level: "Extreme" }
+    ]
   },
   {
     word: "Solvency",
@@ -552,7 +786,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Sharp", "Astute", "Clever"],
     trick: "Obtuse Angle -> An angle > 90° is blunt and wide, not sharp.",
     tone: "Negative (-)",
-    collocation: "Deliberately Obtuse"
+    collocation: "Deliberately Obtuse",
+    intensitySpectrum: [
+      { word: "Slow", level: "Mild" },
+      { word: "Dull", level: "Medium" },
+      { word: "Obtuse", level: "High" },
+      { word: "Dense", level: "Extreme" }
+    ]
   },
   {
     word: "Pragmatic",
@@ -648,7 +888,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Angelic", "Good", "Saintly"],
     trick: "Diablo -> Diablo means Devil in Spanish.",
     tone: "Negative (-)",
-    collocation: "Diabolical Plot"
+    collocation: "Diabolical Plot",
+    intensitySpectrum: [
+      { word: "Bad", level: "Mild" },
+      { word: "Wicked", level: "Medium" },
+      { word: "Evil", level: "High" },
+      { word: "Diabolical", level: "Extreme" }
+    ]
   },
   {
     word: "Heinous",
@@ -660,7 +906,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Admirable", "Commendable", "Good"],
     trick: "Highness -> A crime of such 'highness' (magnitude) that it is evil.",
     tone: "Negative (-)",
-    collocation: "Heinous Crime"
+    collocation: "Heinous Crime",
+    intensitySpectrum: [
+      { word: "Mean", level: "Mild" },
+      { word: "Wicked", level: "Medium" },
+      { word: "Heinous", level: "High" },
+      { word: "Diabolical", level: "Extreme" }
+    ]
   },
   {
     word: "Fiendish",
@@ -672,7 +924,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Kind", "Gentle", "Benevolent"],
     trick: "Friend -> Opposite of a Friend is a Fiend (Enemy/Devil).",
     tone: "Negative (-)",
-    collocation: "Fiendishly Difficult"
+    collocation: "Fiendishly Difficult",
+    intensitySpectrum: [
+      { word: "Unpleasant", level: "Mild" },
+      { word: "Cruel", level: "Medium" },
+      { word: "Fiendish", level: "High" },
+      { word: "Evil", level: "Extreme" }
+    ]
   },
   {
     word: "Atrocious",
@@ -684,7 +942,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Excellent", "Superb", "Wonderful"],
     trick: "Atrocity -> Committing an atrocity makes you atrocious.",
     tone: "Negative (-)",
-    collocation: "Atrocious Weather"
+    collocation: "Atrocious Weather",
+    intensitySpectrum: [
+      { word: "Bad", level: "Mild" },
+      { word: "Terrible", level: "Medium" },
+      { word: "Atrocious", level: "High" },
+      { word: "Horrific", level: "Extreme" }
+    ]
   },
   {
     word: "Silos",
@@ -732,7 +996,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Friendly", "Warm", "Welcoming"],
     trick: "Hostel -> Hostel wardens are often hostile (strict/unfriendly).",
     tone: "Negative (-)",
-    collocation: "Hostile Takeover"
+    collocation: "Hostile Takeover",
+    intensitySpectrum: [
+      { word: "Unfriendly", level: "Mild" },
+      { word: "Aggressive", level: "Medium" },
+      { word: "Hostile", level: "High" },
+      { word: "Belligerent", level: "Extreme" }
+    ]
   },
   {
     word: "Churlish",
@@ -744,7 +1014,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Polite", "Gracious", "Courteous"],
     trick: "Childish -> Acting rude like a spoiled child.",
     tone: "Negative (-)",
-    collocation: "Churlish Behavior"
+    collocation: "Churlish Behavior",
+    intensitySpectrum: [
+      { word: "Impolite", level: "Mild" },
+      { word: "Rude", level: "Medium" },
+      { word: "Churlish", level: "High" },
+      { word: "Boorish", level: "Extreme" }
+    ]
   },
   {
     word: "Loutish",
@@ -756,7 +1032,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Refined", "Gentlemanly", "Polite"],
     trick: "Loud -> Loud and aggressive people are loutish.",
     tone: "Negative (-)",
-    collocation: "Loutish Behavior"
+    collocation: "Loutish Behavior",
+    intensitySpectrum: [
+      { word: "Uncouth", level: "Mild" },
+      { word: "Aggressive", level: "Medium" },
+      { word: "Loutish", level: "High" },
+      { word: "Thuggish", level: "Extreme" }
+    ]
   },
   {
     word: "Ebullient",
@@ -768,7 +1050,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Depressed", "Apathetic", "Sullen"],
     trick: "Bull -> Having the energy of a raging bull (happy energy).",
     tone: "Positive (+)",
-    collocation: "Ebullient Mood"
+    collocation: "Ebullient Mood",
+    intensitySpectrum: [
+      { word: "Cheerful", level: "Mild" },
+      { word: "Lively", level: "Medium" },
+      { word: "Ebullient", level: "High" },
+      { word: "Ecstatic", level: "Extreme" }
+    ]
   },
   {
     word: "Placid",
@@ -780,7 +1068,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Excitable", "Temperamental", "Angry"],
     trick: "Plastic -> Plastic doesn't move or react; it stays calm.",
     tone: "Positive (+)",
-    collocation: "Placid Waters"
+    collocation: "Placid Waters",
+    intensitySpectrum: [
+      { word: "Quiet", level: "Mild" },
+      { word: "Calm", level: "Medium" },
+      { word: "Placid", level: "High" },
+      { word: "Serene", level: "Extreme" }
+    ]
   },
   {
     word: "Lethargic",
@@ -792,7 +1086,13 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Energetic", "Vigorous", "Active"],
     trick: "Leather -> Moving as if you are made of heavy leather.",
     tone: "Negative (-)",
-    collocation: "Feeling Lethargic"
+    collocation: "Feeling Lethargic",
+    intensitySpectrum: [
+      { word: "Tired", level: "Mild" },
+      { word: "Sluggish", level: "Medium" },
+      { word: "Lethargic", level: "High" },
+      { word: "Torpid", level: "Extreme" }
+    ]
   },
   {
     word: "Adroit",

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Volume2, Heart, Plus, Minus, Circle, Link as LinkIcon } from 'lucide-react';
+import { Volume2, Heart, Plus, Minus, Circle, Link as LinkIcon, Thermometer } from 'lucide-react';
 import { WordAnalysis, SavedWord } from '../types';
 
 interface WordCardProps {
@@ -121,6 +121,38 @@ export const WordCard: React.FC<WordCardProps> = ({ data, imageUrl, onSave, isSa
                 <p className="text-sm text-slate-500 font-medium">{data.translation}</p>
             )}
         </div>
+
+        {/* Intensity Spectrum */}
+        {data.intensitySpectrum && data.intensitySpectrum.length > 0 && (
+            <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200/60">
+                <div className="flex items-center gap-2 mb-3">
+                    <Thermometer size={16} className="text-brand-600" />
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Intensity Spectrum</span>
+                </div>
+                <div className="flex flex-col gap-0 relative pl-4">
+                    {/* Vertical Line */}
+                    <div className="absolute left-[21px] top-2 bottom-2 w-0.5 bg-gradient-to-b from-slate-200 via-brand-200 to-rose-200"></div>
+                    
+                    {data.intensitySpectrum.map((level, idx) => {
+                        const isCurrent = level.word.toLowerCase() === data.word.toLowerCase();
+                        
+                        return (
+                            <div key={idx} className={`relative flex items-center gap-4 py-2 ${isCurrent ? 'scale-105 origin-left' : 'opacity-70'}`}>
+                                <div className={`w-3 h-3 rounded-full z-10 border-2 ${
+                                    isCurrent ? 'bg-brand-500 border-white ring-2 ring-brand-200' : 'bg-slate-300 border-white'
+                                }`}></div>
+                                <div className={`flex-1 flex justify-between items-center rounded-lg px-3 py-1.5 ${
+                                    isCurrent ? 'bg-white shadow-sm border border-slate-200' : ''
+                                }`}>
+                                    <span className={`font-semibold text-sm ${isCurrent ? 'text-slate-900' : 'text-slate-600'}`}>{level.word}</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-wide text-slate-400 bg-slate-100 px-1.5 rounded">{level.level}</span>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+        )}
 
         {/* Trick */}
         <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-5 rounded-2xl border border-amber-100/50 relative mx-2">
