@@ -1,13 +1,15 @@
 
 import React, { useState, useMemo } from 'react';
-import { Brain, Trophy, ArrowRight, RotateCcw, CheckCircle2, XCircle, Lightbulb, Target, AlertTriangle, BookOpen } from 'lucide-react';
+import { Brain, Trophy, ArrowRight, RotateCcw, CheckCircle2, XCircle, Lightbulb, Target, AlertTriangle, BookOpen, Layers, ChevronLeft } from 'lucide-react';
 import { Button } from './Button';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
 import { STATIC_GRAMMAR_DATA } from '../data/grammarData';
-import { SilsilaCategory, PracticeLevel } from '../types';
+import { SilsilaCategory, PracticeLevel, GrammarItem } from '../types';
 
-type GameState = 'menu' | 'playing' | 'finished';
+type GameState = 'menu' | 'range_selection' | 'playing' | 'finished';
+
+const BATCH_SIZE = 25;
 
 interface GameQuestion {
   id: number;
@@ -19,8 +21,8 @@ interface GameQuestion {
   explanation?: string;
   topic?: string;
   context?: string;
-  synonyms?: string[]; // Added for feedback
-  antonyms?: string[]; // Added for feedback
+  synonyms?: string[]; 
+  antonyms?: string[]; 
 }
 
 interface WrongAnswer {
@@ -28,6 +30,25 @@ interface WrongAnswer {
   correctAnswer: string;
   userAnswer?: string;
   explanation?: string;
+}
+
+interface VocabSourceItem {
+  word: string;
+  meaning: string;
+  sentence: string;
+  trick?: string;
+  synonyms?: string[];
+  antonyms?: string[];
+}
+
+// Fisher-Yates Shuffle Algorithm for unbiased randomization
+function shuffleArray<T>(array: T[]): T[] {
+  const newArr = [...array];
+  for (let i = newArr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+  }
+  return newArr;
 }
 
 export const Practice: React.FC = () => {
@@ -41,15 +62,8 @@ export const Practice: React.FC = () => {
 
   // --- DATA PREPARATION ---
 
-  const vocabSource = useMemo(() => {
-    const combined: { 
-        word: string; 
-        meaning: string; 
-        sentence: string; 
-        trick?: string; 
-        synonyms?: string[]; 
-        antonyms?: string[];
-    }[] = [];
+  const vocabSource = useMemo<VocabSourceItem[]>(() => {
+    const combined: VocabSourceItem[] = [];
     
     STATIC_NOTEBOOK_DATA.forEach(w => combined.push({ 
         word: w.word, 
@@ -74,49 +88,81 @@ export const Practice: React.FC = () => {
     return combined;
   }, []);
 
-  const startGame = (level: PracticeLevel) => {
+  // --- STEP 1: LEVEL SELECTION ---
+  const handleLevelSelect = (level: PracticeLevel) => {
     setCurrentLevel(level);
+    setGameState('range_selection');
+  };
+
+  // --- STEP 2: RANGE SELECTION & GAME START ---
+  const handleRangeSelect = (startIdx: number, endIdx: number) => {
     let newQuestions: GameQuestion[] = [];
     
-    if (level === 'level1') {
-        const shuffled = [...vocabSource].sort(() => Math.random() - 0.5).slice(0, 15);
-        newQuestions = shuffled.map((item, idx) => {
-            const distractors = vocabSource
-                .filter(w => w.word !== item.word)
-                .sort(() => Math.random() - 0.5)
+    // Determine source data based on level
+    let sourcePool: any[] = [];
+    if (currentLevel === 'level3') {
+        sourcePool = STATIC_GRAMMAR_DATA;
+    } else if (currentLevel === 'level2') {
+        sourcePool = vocabSource.filter(i => i.sentence && i.sentence.length > 10);
+    } else {
+        sourcePool = vocabSource;
+    }
+
+    // Slice the specific range requested by user
+    // We safeguard endIdx to not exceed array length
+    const actualEnd = Math.min(endIdx, sourcePool.length);
+    const rangeData = sourcePool.slice(startIdx, actualEnd);
+
+    if (rangeData.length === 0) {
+        alert("No data available in this range.");
+        return;
+    }
+
+    // Shuffle the range data to pick random questions from this specific set
+    // We pick up to 15 questions from the selected range (or less if the range is small)
+    const gameBatch = shuffleArray(rangeData).slice(0, 15);
+
+    if (currentLevel === 'level1') {
+        newQuestions = gameBatch.map((itemRaw, idx) => {
+            const item = itemRaw as VocabSourceItem;
+            // Distractors come from the ENTIRE pool to make it harder/fairer
+            const potentialDistractors = vocabSource.filter(w => w.word !== item.word);
+            const distractors = shuffleArray(potentialDistractors)
                 .slice(0, 3)
                 .map(w => w.word);
+            
+            const options = shuffleArray([item.word, ...distractors]);
             
             return {
                 id: idx,
                 type: 'meaning',
                 prompt: item.meaning,
                 answer: item.word,
-                options: [item.word, ...distractors].sort(() => Math.random() - 0.5),
+                options: options,
                 trick: item.trick,
                 synonyms: item.synonyms,
                 antonyms: item.antonyms
             };
         });
-    } else if (level === 'level2') {
-        const validItems = vocabSource.filter(i => i.sentence && i.sentence.length > 10).sort(() => Math.random() - 0.5).slice(0, 15);
-        
-        newQuestions = validItems.map((item, idx) => {
+    } else if (currentLevel === 'level2') {
+        newQuestions = gameBatch.map((itemRaw, idx) => {
+            const item = itemRaw as VocabSourceItem;
             const regex = new RegExp(`\\b${item.word}\\w*`, 'gi');
             const maskedSentence = item.sentence.replace(regex, '_______');
             
-            const distractors = vocabSource
-                .filter(w => w.word !== item.word)
-                .sort(() => Math.random() - 0.5)
+            const potentialDistractors = vocabSource.filter(w => w.word !== item.word);
+            const distractors = shuffleArray(potentialDistractors)
                 .slice(0, 3)
                 .map(w => w.word);
+            
+            const options = shuffleArray([item.word, ...distractors]);
 
             return {
                 id: idx,
                 type: 'cloze',
                 prompt: maskedSentence,
                 answer: item.word,
-                options: [item.word, ...distractors].sort(() => Math.random() - 0.5),
+                options: options,
                 trick: item.trick,
                 context: item.meaning,
                 synonyms: item.synonyms,
@@ -124,20 +170,18 @@ export const Practice: React.FC = () => {
             };
         });
     } else {
-        const shuffled = [...STATIC_GRAMMAR_DATA].sort(() => Math.random() - 0.5).slice(0, 15);
-        newQuestions = shuffled.map((item, idx) => ({
-            id: idx,
-            type: 'validation',
-            prompt: item.sentence,
-            answer: item.isCorrect,
-            explanation: item.explanation,
-            topic: item.topic
-        }));
-    }
-
-    if (newQuestions.length === 0) {
-        alert("Not enough data to start this level.");
-        return;
+        // Grammar Level
+        newQuestions = gameBatch.map((itemRaw, idx) => {
+            const item = itemRaw as GrammarItem;
+            return {
+                id: idx,
+                type: 'validation',
+                prompt: item.sentence,
+                answer: item.isCorrect,
+                explanation: item.explanation,
+                topic: item.topic
+            }
+        });
     }
 
     setQuestions(newQuestions);
@@ -180,6 +224,24 @@ export const Practice: React.FC = () => {
     }
   };
 
+  // Helper to calculate available ranges
+  const getRanges = () => {
+    let totalItems = 0;
+    if (currentLevel === 'level3') totalItems = STATIC_GRAMMAR_DATA.length;
+    else if (currentLevel === 'level2') totalItems = vocabSource.filter(i => i.sentence && i.sentence.length > 10).length;
+    else totalItems = vocabSource.length;
+
+    const ranges = [];
+    const count = Math.ceil(totalItems / BATCH_SIZE);
+    
+    for(let i=0; i<count; i++) {
+        const start = i * BATCH_SIZE;
+        const end = Math.min((i + 1) * BATCH_SIZE, totalItems);
+        ranges.push({ label: `Set ${i + 1}`, range: `${start + 1} - ${end}`, startIdx: start, endIdx: end });
+    }
+    return ranges;
+  };
+
   if (gameState === 'menu') {
     return (
         <div className="max-w-4xl mx-auto py-8 px-4">
@@ -189,7 +251,7 @@ export const Practice: React.FC = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer relative overflow-hidden" onClick={() => startGame('level1')}>
+                <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer relative overflow-hidden" onClick={() => handleLevelSelect('level1')}>
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-emerald-600"></div>
                     <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4 text-emerald-600 group-hover:scale-110 transition-transform">
                         <BookOpen size={24} />
@@ -201,7 +263,7 @@ export const Practice: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer relative overflow-hidden" onClick={() => startGame('level2')}>
+                <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer relative overflow-hidden" onClick={() => handleLevelSelect('level2')}>
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
                     <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4 text-blue-600 group-hover:scale-110 transition-transform">
                         <Brain size={24} />
@@ -213,7 +275,7 @@ export const Practice: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer relative overflow-hidden" onClick={() => startGame('level3')}>
+                <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group cursor-pointer relative overflow-hidden" onClick={() => handleLevelSelect('level3')}>
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-purple-600"></div>
                     <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-4 text-purple-600 group-hover:scale-110 transition-transform">
                         <AlertTriangle size={24} />
@@ -227,6 +289,39 @@ export const Practice: React.FC = () => {
             </div>
         </div>
     );
+  }
+
+  if (gameState === 'range_selection') {
+      const ranges = getRanges();
+      
+      return (
+        <div className="max-w-4xl mx-auto py-8 px-4 animate-fade-in">
+             <button onClick={() => setGameState('menu')} className="flex items-center gap-2 text-slate-500 hover:text-slate-900 mb-6 transition-colors">
+                <ChevronLeft size={20} /> Back to Modes
+             </button>
+
+             <div className="text-center mb-10">
+                <h2 className="text-3xl font-serif font-bold text-slate-900 mb-2">Select Word Set</h2>
+                <p className="text-slate-500">Pick a range to focus your practice session.</p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {ranges.map((r, idx) => (
+                    <button 
+                        key={idx}
+                        onClick={() => handleRangeSelect(r.startIdx, r.endIdx)}
+                        className="bg-white border border-slate-200 hover:border-brand-300 hover:shadow-lg rounded-2xl p-6 flex flex-col items-center justify-center transition-all group"
+                    >
+                        <div className="w-10 h-10 rounded-full bg-slate-50 text-slate-400 group-hover:bg-brand-50 group-hover:text-brand-600 flex items-center justify-center mb-3 transition-colors">
+                            <Layers size={20} />
+                        </div>
+                        <span className="font-bold text-slate-800 text-lg">{r.label}</span>
+                        <span className="text-xs text-slate-500 font-medium bg-slate-100 px-2 py-1 rounded mt-1">Words {r.range}</span>
+                    </button>
+                ))}
+            </div>
+        </div>
+      )
   }
 
   if (gameState === 'finished') {
@@ -245,8 +340,8 @@ export const Practice: React.FC = () => {
                     <Button onClick={() => setGameState('menu')} variant="secondary">
                          Menu
                     </Button>
-                    <Button onClick={() => startGame(currentLevel)}>
-                        <RotateCcw size={18} /> Play Again
+                    <Button onClick={() => setGameState('range_selection')}>
+                        <RotateCcw size={18} /> Select New Set
                     </Button>
                 </div>
             </div>
