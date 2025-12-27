@@ -126,10 +126,10 @@ export const Practice: React.FC = () => {
         newQuestions = gameBatch.map((itemRaw, idx) => {
             const item = itemRaw as VocabSourceItem;
             // Distractors come from the ENTIRE pool to make it harder/fairer
-            const potentialDistractors = vocabSource.filter(w => w.word !== item.word);
+            const potentialDistractors = vocabSource.filter((w: VocabSourceItem) => w.word !== item.word);
             const distractors = shuffleArray(potentialDistractors)
                 .slice(0, 3)
-                .map(w => w.word);
+                .map((w: VocabSourceItem) => w.word);
             
             const options = shuffleArray([item.word, ...distractors]);
             
@@ -150,10 +150,10 @@ export const Practice: React.FC = () => {
             const regex = new RegExp(`\\b${item.word}\\w*`, 'gi');
             const maskedSentence = item.sentence.replace(regex, '_______');
             
-            const potentialDistractors = vocabSource.filter(w => w.word !== item.word);
+            const potentialDistractors = vocabSource.filter((w: VocabSourceItem) => w.word !== item.word);
             const distractors = shuffleArray(potentialDistractors)
                 .slice(0, 3)
-                .map(w => w.word);
+                .map((w: VocabSourceItem) => w.word);
             
             const options = shuffleArray([item.word, ...distractors]);
 
