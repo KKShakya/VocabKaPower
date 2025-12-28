@@ -2875,5 +2875,653 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
       { word: "Vicarious", level: "High" },
       { word: "Identical", level: "Extreme" }
     ]
+  },
+  {
+    word: "Arcane",
+    partOfSpeech: "Adjective",
+    meaning: "Understood by few; mysterious or secret.",
+    translation: "गुप्त / रहस्यमयी",
+    sentence: "The professor specialized in arcane rituals of ancient civilizations.",
+    synonyms: ["Esoteric", "Obscure", "Recondite"],
+    antonyms: ["Common", "Known", "Exoteric"],
+    trick: "Are + Cane -> Walking with a cane implies an old, mysterious wizard.",
+    tone: "Neutral (0)",
+    collocation: "Arcane knowledge",
+    intensitySpectrum: [
+      { word: "Unknown", level: "Mild" },
+      { word: "Secret", level: "Medium" },
+      { word: "Arcane", level: "High" },
+      { word: "Occult", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Rancor",
+    partOfSpeech: "Noun",
+    meaning: "Bitterness or resentfulness, especially when long-standing.",
+    translation: "विद्वेष / शत्रुता",
+    sentence: "He spoke without rancor despite the insults thrown at him.",
+    synonyms: ["Bitterness", "Spite", "Malice"],
+    antonyms: ["Amity", "Goodwill", "Friendliness"],
+    trick: "Rank -> A rank (rotten) smell creates bitterness.",
+    tone: "Negative (-)",
+    collocation: "Deep-seated rancor",
+    intensitySpectrum: [
+      { word: "Dislike", level: "Mild" },
+      { word: "Resentment", level: "Medium" },
+      { word: "Rancor", level: "High" },
+      { word: "Hatred", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Facade",
+    partOfSpeech: "Noun",
+    meaning: "1. The face of a building. 2. A deceptive outward appearance.",
+    translation: "मुखौटा / बाहरी दिखावा",
+    sentence: "Behind her cheerful facade, she was deeply unhappy.",
+    synonyms: ["Exterior", "Front", "Pretense"],
+    antonyms: ["Reality", "Interior", "Truth"],
+    trick: "Face + Aid -> A fake face to aid in hiding the truth.",
+    tone: "Neutral (0)",
+    collocation: "Crumbling facade",
+    intensitySpectrum: [
+      { word: "Look", level: "Mild" },
+      { word: "Front", level: "Medium" },
+      { word: "Facade", level: "High" },
+      { word: "Deception", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Abash",
+    partOfSpeech: "Verb",
+    meaning: "Make (someone) feel embarrassed, disconcerted, or ashamed.",
+    translation: "लज्जित करना",
+    sentence: "He was not abashed by the criticism.",
+    synonyms: ["Embarrass", "Ashamed", "Humiliate"],
+    antonyms: ["Encourage", "Embolden", "Reassure"],
+    trick: "Bash -> If you get bashed (hit) publicly, you feel abashed.",
+    tone: "Negative (-)",
+    collocation: "Stand abashed",
+    intensitySpectrum: [
+      { word: "Shy", level: "Mild" },
+      { word: "Embarrass", level: "Medium" },
+      { word: "Abash", level: "High" },
+      { word: "Mortify", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Conspicuous",
+    partOfSpeech: "Adjective",
+    meaning: "Standing out so as to be clearly visible.",
+    translation: "सुस्पष्ट / विशिष्ट",
+    sentence: "She felt conspicuous in her bright red dress.",
+    synonyms: ["Noticeable", "Prominent", "Striking"],
+    antonyms: ["Inconspicuous", "Hidden", "Obscure"],
+    trick: "Can See Pic -> You 'Can See the Pic' clearly because it stands out.",
+    tone: "Neutral (0)",
+    collocation: "Conspicuous consumption",
+    intensitySpectrum: [
+      { word: "Visible", level: "Mild" },
+      { word: "Noticeable", level: "Medium" },
+      { word: "Conspicuous", level: "High" },
+      { word: "Glaring", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Panacea",
+    partOfSpeech: "Noun",
+    meaning: "A solution or remedy for all difficulties or diseases.",
+    translation: "रामबाण / सर्वरोगहर",
+    sentence: "Technology is not a panacea for all our educational problems.",
+    synonyms: ["Cure-all", "Universal remedy", "Elixir"],
+    antonyms: ["Poison", "Toxin", "Problem"],
+    trick: "Pan (All) + Ace -> An Ace card that wins 'all' games.",
+    tone: "Positive (+)",
+    collocation: "Universal panacea",
+    intensitySpectrum: [
+      { word: "Help", level: "Mild" },
+      { word: "Remedy", level: "Medium" },
+      { word: "Cure", level: "High" },
+      { word: "Panacea", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Modicum",
+    partOfSpeech: "Noun",
+    meaning: "A small quantity of a particular thing, especially something considered desirable or valuable.",
+    translation: "अल्प मात्रा",
+    sentence: "He didn't even have a modicum of common sense.",
+    synonyms: ["Particle", "Speck", "Fragment"],
+    antonyms: ["Abundance", "Lot", "Excess"],
+    trick: "Moderate -> A moderate/small amount.",
+    tone: "Neutral (0)",
+    collocation: "Modicum of truth",
+    intensitySpectrum: [
+      { word: "Drop", level: "Mild" },
+      { word: "Bit", level: "Medium" },
+      { word: "Modicum", level: "High" },
+      { word: "Trace", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Frugal",
+    partOfSpeech: "Adjective",
+    meaning: "Sparing or economical with regard to money or food.",
+    translation: "किफायती / मितव्ययी",
+    sentence: "He led a frugal life, saving every penny.",
+    synonyms: ["Thrifty", "Economical", "Prudent"],
+    antonyms: ["Extravagant", "Wasteful", "Lavish"],
+    trick: "Fruit + Gal -> A girl who eats only fruits to save money.",
+    tone: "Positive (+)",
+    collocation: "Frugal lifestyle",
+    intensitySpectrum: [
+      { word: "Careful", level: "Mild" },
+      { word: "Economical", level: "Medium" },
+      { word: "Frugal", level: "High" },
+      { word: "Miserly", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Quintessential",
+    partOfSpeech: "Adjective",
+    meaning: "Representing the most perfect or typical example of a quality or class.",
+    translation: "सर्वोत्कृष्ट / ठेठ",
+    sentence: "He is the quintessential gentleman.",
+    synonyms: ["Typical", "Archetypal", "Classic"],
+    antonyms: ["Atypical", "Substandard", "Inferior"],
+    trick: "Queen + Essential -> Essential qualities of a Queen (Perfect).",
+    tone: "Positive (+)",
+    collocation: "Quintessential example",
+    intensitySpectrum: [
+      { word: "Good", level: "Mild" },
+      { word: "Typical", level: "Medium" },
+      { word: "Quintessential", level: "High" },
+      { word: "Perfect", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Aver",
+    partOfSpeech: "Verb",
+    meaning: "State or assert to be the case.",
+    translation: "दृढ़ता से कहना",
+    sentence: "He averred that he was innocent of the allegations.",
+    synonyms: ["Assert", "Declare", "Claim"],
+    antonyms: ["Deny", "Disclaim", "Refute"],
+    trick: "Ver (Truth) -> To state as verify/truth.",
+    tone: "Neutral (0)",
+    collocation: "Averred that",
+    intensitySpectrum: [
+      { word: "Say", level: "Mild" },
+      { word: "State", level: "Medium" },
+      { word: "Aver", "level": "High" },
+      { word: "Swear", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Fetid",
+    partOfSpeech: "Adjective",
+    meaning: "Smelling extremely unpleasant.",
+    translation: "बदबूदार",
+    sentence: "The fetid smell of the swamp made us nauseous.",
+    synonyms: ["Stinking", "Malodorous", "Rank"],
+    antonyms: ["Fragrant", "Aromatic", "Perfumed"],
+    trick: "Feet -> Smelly feet are fetid.",
+    tone: "Negative (-)",
+    collocation: "Fetid odor",
+    intensitySpectrum: [
+      { word: "Smelly", level: "Mild" },
+      { word: "Stinky", level: "Medium" },
+      { word: "Fetid", level: "High" },
+      { word: "Noxious", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Dulcet",
+    partOfSpeech: "Adjective",
+    meaning: "(Especially of sound) sweet and soothing.",
+    translation: "मधुर / आनंदमय",
+    sentence: "The dulcet tones of the cello calmed the baby.",
+    synonyms: ["Sweet", "Melodious", "Soothing"],
+    antonyms: ["Harsh", "Grating", "Cacophonous"],
+    trick: "Dil (Heart) + Set -> Sets the heart at ease.",
+    tone: "Positive (+)",
+    collocation: "Dulcet tones",
+    intensitySpectrum: [
+      { word: "Pleasant", level: "Mild" },
+      { word: "Sweet", level: "Medium" },
+      { word: "Dulcet", level: "High" },
+      { word: "Angelic", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Remission",
+    partOfSpeech: "Noun",
+    meaning: "1. Cancellation of a debt/penalty. 2. Diminution of disease symptoms.",
+    translation: "छूट / रोगमुक्ति",
+    sentence: "The cancer has gone into remission.",
+    synonyms: ["Cancellation", "Reduction", "Suspension"],
+    antonyms: ["Increase", "Aggravation", "Imposition"],
+    trick: "Re-Mission -> Mission cancelled/paused.",
+    tone: "Positive (+)",
+    collocation: "Cancer remission",
+    intensitySpectrum: [
+      { word: "Pause", level: "Mild" },
+      { word: "Reduction", level: "Medium" },
+      { word: "Remission", level: "High" },
+      { word: "Cure", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Skirmish",
+    partOfSpeech: "Noun",
+    meaning: "A minor fight or battle.",
+    translation: "झड़प",
+    sentence: "Border skirmishes were reported between the two countries.",
+    synonyms: ["Clash", "Conflict", "Scuffle"],
+    antonyms: ["Peace", "Accord", "War"],
+    trick: "Skirt -> Fighting over the skirt (boundary) of a territory.",
+    tone: "Negative (-)",
+    collocation: "Border skirmish",
+    intensitySpectrum: [
+      { word: "Argument", level: "Mild" },
+      { word: "Scuffle", level: "Medium" },
+      { word: "Skirmish", level: "High" },
+      { word: "Battle", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Mercurial",
+    partOfSpeech: "Adjective",
+    meaning: "Subject to sudden or unpredictable changes of mood or mind.",
+    translation: "अस्थिर / चंचल",
+    sentence: "His mercurial temperament made him difficult to work with.",
+    synonyms: ["Volatile", "Capricious", "Temperamental"],
+    antonyms: ["Stable", "Steady", "Constant"],
+    trick: "Mercury -> Liquid metal that moves fast and changes shape.",
+    tone: "Negative (-)",
+    collocation: "Mercurial nature",
+    intensitySpectrum: [
+      { word: "Moody", level: "Mild" },
+      { word: "Changeable", level: "Medium" },
+      { word: "Mercurial", level: "High" },
+      { word: "Bipolar", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Indolent",
+    partOfSpeech: "Adjective",
+    meaning: "Wanting to avoid activity or exertion; lazy.",
+    translation: "आलसी / अकर्मण्य",
+    sentence: "The indolent employee was fired for sleeping on the job.",
+    synonyms: ["Lazy", "Slothful", "Lethargic"],
+    antonyms: ["Industrious", "Energetic", "Active"],
+    trick: "In + Dole -> Someone who lives on 'dole' (unemployment money) and doesn't work.",
+    tone: "Negative (-)",
+    collocation: "Indolent lifestyle",
+    intensitySpectrum: [
+      { word: "Relaxed", level: "Mild" },
+      { word: "Lazy", level: "Medium" },
+      { word: "Indolent", level: "High" },
+      { word: "Slothful", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Mantle",
+    partOfSpeech: "Noun",
+    meaning: "1. A cloak/covering. 2. An important role or responsibility.",
+    translation: "लबादा / उत्तरदायित्व",
+    sentence: "He assumed the mantle of leadership after his father died.",
+    synonyms: ["Role", "Responsibility", "Cloak"],
+    antonyms: ["None"],
+    trick: "Man + Tall -> A tall man wearing a long cloak (mantle).",
+    tone: "Neutral (0)",
+    collocation: "Assume the mantle",
+    intensitySpectrum: [
+      { word: "Cover", "level": "Mild" },
+      { "word": "Cloak", "level": "Medium" },
+      { "word": "Mantle", "level": "High" },
+      { "word": "Burden", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Obdurate",
+    partOfSpeech: "Adjective",
+    meaning: "Stubbornly refusing to change one's opinion or course of action.",
+    translation: "हठी / जिद्दी",
+    sentence: "Despite the evidence, he remained obdurate in his denial.",
+    synonyms: ["Stubborn", "Obstinate", "Intransigent"],
+    antonyms: ["Compliant", "Flexible", "Yielding"],
+    trick: "Dura (Hard) -> Hard headed and durable in opinion.",
+    tone: "Negative (-)",
+    collocation: "Obdurate refusal",
+    intensitySpectrum: [
+      { word: "Firm", "level": "Mild" },
+      { word: "Stubborn", "level": "Medium" },
+      { word: "Obdurate", "level": "High" },
+      { word: "Pig-headed", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Doyen",
+    partOfSpeech: "Noun",
+    meaning: "The most respected or prominent person in a particular field.",
+    translation: "वरिष्ठ सदस्य",
+    sentence: "He is considered the doyen of political journalism.",
+    synonyms: ["Veteran", "Master", "Dean"],
+    antonyms: ["Novice", "Beginner", "Amateur"],
+    trick: "Do + Yen -> Someone who has been 'Doing' it for 'Yens' (Years).",
+    tone: "Positive (+)",
+    collocation: "Doyen of industry",
+    intensitySpectrum: [
+      { word: "Senior", "level": "Mild" },
+      { word: "Expert", "level": "Medium" },
+      { word: "Doyen", "level": "High" },
+      { word: "Legend", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Recondite",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a subject or knowledge) little known; abstruse.",
+    translation: "गूढ़ / गंभीर",
+    sentence: "The book is full of recondite information.",
+    synonyms: ["Obscure", "Arcane", "Esoteric"],
+    antonyms: ["Simple", "Common", "Obvious"],
+    trick: "Re-conduct -> Research that is hard to conduct again.",
+    tone: "Neutral (0)",
+    collocation: "Recondite subject",
+    intensitySpectrum: [
+      { word: "Hard", "level": "Mild" },
+      { word: "Complex", "level": "Medium" },
+      { word: "Recondite", "level": "High" },
+      { word: "Incomprehensible", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Hamlet",
+    partOfSpeech: "Noun",
+    meaning: "A small settlement, generally smaller than a village.",
+    translation: "छोटा गाँव / पुरवा",
+    sentence: "They lived in a quiet hamlet in the hills.",
+    synonyms: ["Village", "Settlement", "Community"],
+    antonyms: ["City", "Metropolis", "Town"],
+    trick: "Helmet -> A small covering; a small village.",
+    tone: "Neutral (0)",
+    collocation: "Rural hamlet",
+    intensitySpectrum: [
+      { word: "House", "level": "Mild" },
+      { word: "Hamlet", "level": "Medium" },
+      { word: "Village", "level": "High" },
+      { word: "Town", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Creche",
+    partOfSpeech: "Noun",
+    meaning: "A nursery where babies and young children are cared for during the working day.",
+    translation: "शिशु-गृह",
+    sentence: "The company provides a creche for employees' children.",
+    synonyms: ["Nursery", "Daycare", "Playgroup"],
+    antonyms: ["None"],
+    trick: "Crash -> A place where kids 'crash' (sleep/play) while parents work.",
+    tone: "Neutral (0)",
+    collocation: "Office creche",
+    intensitySpectrum: [
+      { word: "Babysitter", "level": "Mild" },
+      { word: "Nursery", "level": "Medium" },
+      { word: "Creche", "level": "High" },
+      { word: "School", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Esoteric",
+    partOfSpeech: "Adjective",
+    meaning: "Intended for or likely to be understood by only a small number of people with specialized knowledge.",
+    translation: "गुह्य / गोपनीय",
+    sentence: "He has an esoteric collection of antique stamps.",
+    synonyms: ["Arcane", "Obscure", "Private"],
+    antonyms: ["Common", "Public", "Familiar"],
+    trick: "Iso -> Isolated knowledge for few people.",
+    tone: "Neutral (0)",
+    collocation: "Esoteric rituals",
+    intensitySpectrum: [
+      { word: "Niche", "level": "Mild" },
+      { word: "Specialized", "level": "Medium" },
+      { word: "Esoteric", "level": "High" },
+      { word: "Secret", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Maestro",
+    partOfSpeech: "Noun",
+    meaning: "A distinguished musician, especially a conductor of classical music.",
+    translation: "उस्ताद / संगीत-ज्ञ",
+    sentence: "The maestro conducted the orchestra with passion.",
+    synonyms: ["Master", "Conductor", "Virtuoso"],
+    antonyms: ["Amateur", "Novice", "Student"],
+    trick: "Master -> Maestro sounds like Master.",
+    tone: "Positive (+)",
+    collocation: "Musical maestro",
+    intensitySpectrum: [
+      { word: "Musician", "level": "Mild" },
+      { word: "Expert", "level": "Medium" },
+      { word: "Virtuoso", "level": "High" },
+      { word: "Maestro", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Fawning",
+    partOfSpeech: "Adjective",
+    meaning: "Displaying exaggerated flattery or affection.",
+    translation: "चापलूसी करना",
+    sentence: "The fawning waiter annoyed the customers.",
+    synonyms: ["Sycophantic", "Obsequious", "Flattering"],
+    antonyms: ["Critical", "Domineering", "Aloof"],
+    trick: "Fan -> A fan acting like a servant to a star.",
+    tone: "Negative (-)",
+    collocation: "Fawning attention",
+    intensitySpectrum: [
+      { word: "Nice", "level": "Mild" },
+      { word: "Complimentary", "level": "Medium" },
+      { word: "Fawning", "level": "High" },
+      { word: "Groveling", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Shoal",
+    partOfSpeech: "Noun",
+    meaning: "A large number of fish swimming together.",
+    translation: "मछलियों का झुंड",
+    sentence: "A shoal of fish darted through the water.",
+    synonyms: ["School", "Group", "Mass"],
+    antonyms: ["Individual", "Solitary"],
+    trick: "Shore -> Fish gather in shoals near the shore.",
+    tone: "Neutral (0)",
+    collocation: "Shoal of herring",
+    intensitySpectrum: [
+      { word: "Couple", "level": "Mild" },
+      { word: "Group", "level": "Medium" },
+      { word: "Shoal", "level": "High" },
+      { word: "Swarm", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Bevy",
+    partOfSpeech: "Noun",
+    meaning: "A large group of people or things of a particular kind (often women/birds).",
+    translation: "झुंड / मंडली",
+    sentence: "A bevy of reporters waited outside the court.",
+    synonyms: ["Group", "Crowd", "Cluster"],
+    antonyms: ["Individual", "One"],
+    trick: "Heavy -> A heavy crowd of people.",
+    tone: "Neutral (0)",
+    collocation: "Bevy of beauties",
+    intensitySpectrum: [
+      { word: "Few", "level": "Mild" },
+      { word: "Bunch", "level": "Medium" },
+      { word: "Bevy", "level": "High" },
+      { word: "Horde", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Facsimile",
+    partOfSpeech: "Noun",
+    meaning: "An exact copy, especially of written or printed material.",
+    translation: "हूबहू नकल",
+    sentence: "He produced a facsimile of the original manuscript.",
+    synonyms: ["Copy", "Replica", "Reproduction"],
+    antonyms: ["Original", "Prototype", "Master"],
+    trick: "Fax -> Fax machines send facsimiles.",
+    tone: "Neutral (0)",
+    collocation: "Digital facsimile",
+    intensitySpectrum: [
+      { word: "Likeness", "level": "Mild" },
+      { word: "Copy", "level": "Medium" },
+      { word: "Facsimile", "level": "High" },
+      { word: "Clone", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Caucus",
+    partOfSpeech: "Noun",
+    meaning: "A meeting of the members of a legislative body who are members of a particular political party.",
+    translation: "दल की बैठक",
+    sentence: "The party held a caucus to select their candidate.",
+    synonyms: ["Meeting", "Assembly", "Convention"],
+    antonyms: ["None"],
+    trick: "Discuss -> They 'Discuss' in a Cau-'cus'.",
+    tone: "Neutral (0)",
+    collocation: "Party caucus",
+    intensitySpectrum: [
+      { word: "Gathering", "level": "Mild" },
+      { word: "Meeting", "level": "Medium" },
+      { word: "Caucus", "level": "High" },
+      { word: "Congress", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Cortege",
+    partOfSpeech: "Noun",
+    meaning: "A solemn procession, especially for a funeral.",
+    translation: "जुलूस (शव यात्रा)",
+    sentence: "The funeral cortege moved slowly through the streets.",
+    synonyms: ["Procession", "Retinue", "Entourage"],
+    antonyms: ["Dispersal"],
+    trick: "Cart -> A cart carrying a body in a procession.",
+    tone: "Negative (-)",
+    collocation: "Funeral cortege",
+    intensitySpectrum: [
+      { word: "Line", "level": "Mild" },
+      { word: "Procession", "level": "Medium" },
+      { word: "Cortege", "level": "High" },
+      { word: "Parade", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Facile",
+    partOfSpeech: "Adjective",
+    meaning: "1. Appearing neat and comprehensive only by ignoring the true complexities of an issue; superficial. 2. Easily achieved.",
+    translation: "सुगम / सतही",
+    sentence: "He offered a facile solution to a complex problem.",
+    synonyms: ["Simplistic", "Superficial", "Shallow"],
+    antonyms: ["Profound", "Thorough", "Complex"],
+    trick: "Face -> Only looking at the face (surface), ignoring the depth.",
+    tone: "Negative (-)",
+    collocation: "Facile argument",
+    intensitySpectrum: [
+      { word: "Easy", "level": "Mild" },
+      { word: "Simple", "level": "Medium" },
+      { word: "Facile", "level": "High" },
+      { word: "Mindless", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Polyglot",
+    partOfSpeech: "Adjective/Noun",
+    meaning: "Knowing or using several languages.",
+    translation: "बहुभाषी",
+    sentence: "As a polyglot, she could travel anywhere in Europe easily.",
+    synonyms: ["Multilingual", "Linguist"],
+    antonyms: ["Monolingual"],
+    trick: "Poly (Many) + Glot (Throat/Tongue) -> Many tongues.",
+    tone: "Positive (+)",
+    collocation: "Polyglot society",
+    intensitySpectrum: [
+      { word: "Bilingual", "level": "Mild" },
+      { word: "Trilingual", "level": "Medium" },
+      { word: "Polyglot", "level": "High" },
+      { word: "Hyperpolyglot", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Debonair",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a man) confident, stylish, and charming.",
+    translation: "खुशमिजाज / आकर्षक",
+    sentence: "The debonair actor waved to his fans.",
+    synonyms: ["Suave", "Urbane", "Charming"],
+    antonyms: ["Unsophisticated", "Awkward", "Clumsy"],
+    trick: "De + Bone + Air -> Good posture (bone) and an air of confidence.",
+    tone: "Positive (+)",
+    collocation: "Debonair gentleman",
+    intensitySpectrum: [
+      { word: "Polite", "level": "Mild" },
+      { word: "Charming", "level": "Medium" },
+      { word: "Debonair", "level": "High" },
+      { word: "Dashing", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Tantamount",
+    partOfSpeech: "Adjective",
+    meaning: "Equivalent in seriousness to; virtually the same as.",
+    translation: "समान / बराबर",
+    sentence: "His silence was tantamount to a confession.",
+    synonyms: ["Equivalent", "Synonymous", "Equal"],
+    antonyms: ["Different", "Opposite", "Unrelated"],
+    trick: "Amount -> The same amount (Equal).",
+    tone: "Neutral (0)",
+    collocation: "Tantamount to treason",
+    intensitySpectrum: [
+      { word: "Like", "level": "Mild" },
+      { word: "Similar", "level": "Medium" },
+      { word: "Tantamount", "level": "High" },
+      { word: "Identical", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Odium",
+    partOfSpeech: "Noun",
+    meaning: "General or widespread hatred or disgust directed toward someone as a result of their actions.",
+    translation: "घृणा / बदनामी",
+    sentence: "He faced the odium of the public after the scandal.",
+    synonyms: ["Hatred", "Disgust", "Repugnance"],
+    antonyms: ["Admiration", "Affection", "Approval"],
+    trick: "Odor -> A bad odor makes people hate/disgust you.",
+    tone: "Negative (-)",
+    collocation: "Public odium",
+    intensitySpectrum: [
+      { word: "Dislike", "level": "Mild" },
+      { word: "Contempt", "level": "Medium" },
+      { word: "Odium", "level": "High" },
+      { word: "Abhorrence", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Avowed",
+    partOfSpeech: "Adjective",
+    meaning: "That has been asserted, admitted, or stated publicly.",
+    translation: "स्वीकृत / घोषित",
+    sentence: "He is an avowed vegetarian.",
+    synonyms: ["Declared", "Admitted", "Self-confessed"],
+    antonyms: ["Secret", "Denyed", "Closeted"],
+    trick: "Vow -> Took a vow publicly.",
+    tone: "Neutral (0)",
+    collocation: "Avowed enemy",
+    intensitySpectrum: [
+      { word: "Open", "level": "Mild" },
+      { word: "Stated", "level": "Medium" },
+      { word: "Avowed", "level": "High" },
+      { word: "Sworn", "level": "Extreme" }
+    ]
   }
 ];

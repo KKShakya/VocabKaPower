@@ -9,16 +9,16 @@ import { WordCard } from './WordCard';
 // Define Categories for Master Collection
 const EMOTION_MAP: Record<string, string[]> = {
     "Joy & Bliss": ["Elation", "Felicity", "Euphoric", "Rapturous", "Winsome", "Cheerful", "Jubilant", "Delighted", "Beatific", "Exuberant", "Ebullient"],
-    "Gloom & Despair": ["Harrowing", "Sullen", "Dejected", "Forlorn", "Wretched", "Melancholy", "Despondent", "Woeful", "Morose", "Bleak"],
-    "Calm & Composed": ["Serene", "Halcyon", "Stoic", "Impassive", "Tranquil", "Salubrious", "Placid"],
-    "Fury & Irritation": ["Ire", "Flustered", "Vexed", "Irate", "Hostile", "Churlish", "Loutish"],
-    "Smart & Sharp": ["Erudite", "Adroit", "Dexterous", "Pragmatic", "Riveting", "Solvency", "Emulate", "Efficacious", "Prolific", "Profound"],
-    "Weak & Dull": ["Lax", "Lethargic", "Insipid", "Obtuse", "Sedentary", "Abortive", "Vagabond"],
+    "Gloom & Despair": ["Harrowing", "Sullen", "Dejected", "Forlorn", "Wretched", "Melancholy", "Despondent", "Woeful", "Morose", "Bleak", "Abash", "Cortege"],
+    "Calm & Composed": ["Serene", "Halcyon", "Stoic", "Impassive", "Tranquil", "Salubrious", "Placid", "Dulcet", "Remission", "Hamlet"],
+    "Fury & Irritation": ["Ire", "Flustered", "Vexed", "Irate", "Hostile", "Churlish", "Loutish", "Rancor", "Skirmish", "Mercurial", "Obdurate"],
+    "Smart & Sharp": ["Erudite", "Adroit", "Dexterous", "Pragmatic", "Riveting", "Solvency", "Emulate", "Efficacious", "Prolific", "Profound", "Arcane", "Conspicuous", "Frugal", "Recondite", "Esoteric", "Maestro", "Facsimile", "Polyglot", "Tantamount"],
+    "Weak & Dull": ["Lax", "Lethargic", "Insipid", "Obtuse", "Sedentary", "Abortive", "Vagabond", "Modicum", "Indolent", "Fawning", "Facile"],
     "Fear & Doubt": ["Trepidation", "Apprehension", "Skeptical", "Perturb"],
-    "Noble & Good": ["Majestic", "Propitious", "Magnanimous", "Benign", "Sanguine", "Mellifluous"],
-    "Dark & Negative": ["Callous", "Rancid", "Envy", "Repulsed", "Diabolical", "Heinous", "Fiendish", "Atrocious", "Virulent", "Usurp", "Silos", "Dogma", "Doctrine", "Vain", "Pompous", "Indulgent"],
-    "Power & Politics": ["Prerogative", "Perquisite", "Sanction", "Leeway", "Latitude", "Deposition", "Abdication", "Impeachment", "Disavowal", "Ratified", "Repudiate", "Abrogate", "Concomitant", "Credence"],
-    "Time & Motion": ["Advent", "Inception", "Cessation", "Peregrine", "Endemic", "Sporadic", "Erratic"]
+    "Noble & Good": ["Majestic", "Propitious", "Magnanimous", "Benign", "Sanguine", "Mellifluous", "Panacea", "Quintessential", "Doyen", "Creche", "Debonair"],
+    "Dark & Negative": ["Callous", "Rancid", "Envy", "Repulsed", "Diabolical", "Heinous", "Fiendish", "Atrocious", "Virulent", "Usurp", "Silos", "Dogma", "Doctrine", "Vain", "Pompous", "Indulgent", "Facade", "Fetid", "Odium"],
+    "Power & Politics": ["Prerogative", "Perquisite", "Sanction", "Leeway", "Latitude", "Deposition", "Abdication", "Impeachment", "Disavowal", "Ratified", "Repudiate", "Abrogate", "Concomitant", "Credence", "Aver", "Mantle", "Caucus", "Avowed"],
+    "Time & Motion": ["Advent", "Inception", "Cessation", "Peregrine", "Endemic", "Sporadic", "Erratic", "Shoal", "Bevy"]
 };
 
 const EMOTION_CONFIG: Record<string, { icon: React.ElementType, color: string, bg: string }> = {
