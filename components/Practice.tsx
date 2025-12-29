@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { Brain, Trophy, ArrowRight, RotateCcw, CheckCircle2, XCircle, Lightbulb, Target, AlertTriangle, BookOpen, Layers, ChevronLeft } from 'lucide-react';
+import { Brain, Trophy, ArrowRight, RotateCcw, CheckCircle2, XCircle, Lightbulb, Target, AlertTriangle, BookOpen, Layers, ChevronLeft, Shuffle } from 'lucide-react';
 import { Button } from './Button';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
@@ -13,7 +13,7 @@ const BATCH_SIZE = 25;
 
 interface GameQuestion {
   id: number;
-  type: 'meaning' | 'cloze' | 'validation';
+  type: 'meaning' | 'cloze' | 'validation' | 'synonym' | 'antonym';
   prompt: string;
   answer: string | boolean;
   options?: string[];
@@ -125,6 +125,65 @@ export const Practice: React.FC = () => {
     if (currentLevel === 'level1') {
         newQuestions = gameBatch.map((itemRaw, idx) => {
             const item = itemRaw as VocabSourceItem;
+
+            // Decide Question Type: Meaning (40%), Synonym (30%), Antonym (30%)
+            const hasSyn = item.synonyms && item.synonyms.length > 0;
+            const hasAnt = item.antonyms && item.antonyms.length > 0;
+            
+            let qType: 'meaning' | 'synonym' | 'antonym' = 'meaning';
+            const rand = Math.random();
+
+            if (hasSyn && hasAnt) {
+                if (rand > 0.66) qType = 'antonym';
+                else if (rand > 0.33) qType = 'synonym';
+            } else if (hasSyn) {
+                if (rand > 0.5) qType = 'synonym';
+            } else if (hasAnt) {
+                if (rand > 0.5) qType = 'antonym';
+            }
+
+            // SYNONYM QUESTION
+            if (qType === 'synonym') {
+                const target = item.synonyms![Math.floor(Math.random() * item.synonyms!.length)];
+                // Distractors: Synonyms of other words (to ensure they are plausible words, not definitions)
+                const otherItems = vocabSource.filter(w => w.word !== item.word && w.synonyms && w.synonyms.length > 0);
+                const distractors = shuffleArray(otherItems).slice(0, 3).map((w: VocabSourceItem) => w.synonyms![0]);
+                // Fill if not enough
+                while(distractors.length < 3) { distractors.push("Unknown"); }
+
+                return {
+                    id: idx,
+                    type: 'synonym',
+                    prompt: item.word,
+                    answer: target,
+                    options: shuffleArray([target, ...distractors]),
+                    trick: item.trick,
+                    synonyms: item.synonyms,
+                    antonyms: item.antonyms
+                };
+            }
+
+            // ANTONYM QUESTION
+            if (qType === 'antonym') {
+                const target = item.antonyms![Math.floor(Math.random() * item.antonyms!.length)];
+                // Distractors: Antonyms of other words
+                const otherItems = vocabSource.filter(w => w.word !== item.word && w.antonyms && w.antonyms.length > 0);
+                const distractors = shuffleArray(otherItems).slice(0, 3).map((w: VocabSourceItem) => w.antonyms![0]);
+                while(distractors.length < 3) { distractors.push("Unknown"); }
+
+                return {
+                    id: idx,
+                    type: 'antonym',
+                    prompt: item.word,
+                    answer: target,
+                    options: shuffleArray([target, ...distractors]),
+                    trick: item.trick,
+                    synonyms: item.synonyms,
+                    antonyms: item.antonyms
+                };
+            }
+
+            // MEANING QUESTION (Default)
             // Distractors come from the ENTIRE pool to make it harder/fairer
             const potentialDistractors = vocabSource.filter((w: VocabSourceItem) => w.word !== item.word);
             const distractors = shuffleArray(potentialDistractors)
@@ -202,12 +261,17 @@ export const Practice: React.FC = () => {
         setScore(s => s + 1);
     } else {
         let explanation = "";
+        let promptPrefix = "";
+
         if (currentQ.type === 'validation') explanation = currentQ.explanation || "";
         else if (currentQ.type === 'cloze') explanation = `Correct: ${currentQ.answer} (${currentQ.context})`;
         else explanation = `Correct: ${currentQ.answer}`;
 
+        if (currentQ.type === 'synonym') promptPrefix = "Synonym of ";
+        if (currentQ.type === 'antonym') promptPrefix = "Antonym of ";
+
         setWrongAnswers(prev => [...prev, { 
-            prompt: currentQ.prompt,
+            prompt: promptPrefix + currentQ.prompt,
             correctAnswer: String(currentQ.answer),
             userAnswer: String(option),
             explanation: currentQ.trick ? `${explanation} | Tip: ${currentQ.trick}` : explanation
@@ -257,7 +321,7 @@ export const Practice: React.FC = () => {
                         <BookOpen size={24} />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Basic Drill</h3>
-                    <p className="text-slate-500 text-sm mb-4">The classic flashcard method. Match the definition to the correct word.</p>
+                    <p className="text-slate-500 text-sm mb-4">Match definitions, synonyms, and antonyms to the correct word.</p>
                     <div className="flex items-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 w-fit px-2 py-1 rounded">
                         <Target size={12} /> Level 1
                     </div>
@@ -355,11 +419,20 @@ export const Practice: React.FC = () => {
                     <div className="grid gap-4">
                         {wrongAnswers.map((item, idx) => (
                             <div key={idx} className="p-4 rounded-xl bg-red-50/50 border border-red-100 flex flex-col gap-2">
-                                <div className="text-slate-900 font-medium">"{item.prompt}"</div>
-                                <div className="flex items-center gap-4 text-sm">
-                                    <span className="text-red-600 font-bold line-through">{String(item.userAnswer)}</span>
-                                    <ArrowRight size={14} className="text-slate-400" />
-                                    <span className="text-emerald-600 font-bold">{String(item.correctAnswer)}</span>
+                                <div className="text-slate-900 font-medium">
+                                    <span className="text-xs font-bold uppercase text-slate-500 block mb-1">Question</span>
+                                    {item.prompt}
+                                </div>
+                                <div className="flex items-center gap-4 text-sm bg-white/60 p-2 rounded-lg mt-1">
+                                    <div className="flex-1">
+                                        <span className="text-[10px] font-bold text-red-400 uppercase block">Your Answer</span>
+                                        <span className="text-red-700 font-bold">{String(item.userAnswer)}</span>
+                                    </div>
+                                    <ArrowRight size={14} className="text-slate-300" />
+                                    <div className="flex-1 text-right">
+                                        <span className="text-[10px] font-bold text-emerald-400 uppercase block">Correct Answer</span>
+                                        <span className="text-emerald-700 font-bold">{String(item.correctAnswer)}</span>
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -372,6 +445,16 @@ export const Practice: React.FC = () => {
 
   const currentQ = questions[currentIndex];
   
+  // Determine Header Text
+  let headerText = 'IDENTIFY THE WORD';
+  if (currentQ.type === 'synonym') headerText = 'IDENTIFY THE SYNONYM';
+  if (currentQ.type === 'antonym') headerText = 'IDENTIFY THE ANTONYM';
+  if (currentQ.type === 'cloze') headerText = 'FILL IN THE BLANK';
+  if (currentQ.type === 'validation') headerText = 'IDENTIFY VALIDITY';
+
+  // Determine Prompt Display Class
+  const isWordPrompt = currentQ.type === 'synonym' || currentQ.type === 'antonym';
+  
   return (
     <div className="max-w-2xl mx-auto py-2 animate-fade-in">
       {/* CARD */}
@@ -380,17 +463,18 @@ export const Practice: React.FC = () => {
          {/* Question Header */}
          <div className="px-6 pt-6 pb-2">
             <div className="flex justify-between items-start mb-3">
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                    {currentLevel === 'level1' ? 'IDENTIFY THE WORD FOR' : 
-                     currentLevel === 'level2' ? 'FILL IN THE BLANK' : 
-                     'IDENTIFY VALIDITY'}
+                <p className={`text-[10px] font-bold uppercase tracking-widest ${
+                    currentQ.type === 'synonym' ? 'text-blue-500' : 
+                    currentQ.type === 'antonym' ? 'text-rose-500' : 'text-slate-400'
+                }`}>
+                    {headerText}
                 </p>
                 <div className="text-[10px] font-bold text-slate-300 bg-slate-50 px-2 py-0.5 rounded border border-slate-100">
                     {currentIndex + 1} / {questions.length}
                 </div>
             </div>
 
-            <h3 className="font-serif font-bold text-2xl text-slate-900 leading-snug mb-5">
+            <h3 className={`font-serif font-bold text-slate-900 leading-snug mb-5 ${isWordPrompt ? 'text-4xl text-center py-4 text-brand-900' : 'text-2xl'}`}>
                 {currentLevel === 'level2' ? (
                      currentQ.prompt.split('_______').map((part, i, arr) => (
                          <React.Fragment key={i}>
@@ -399,7 +483,7 @@ export const Practice: React.FC = () => {
                          </React.Fragment>
                      ))
                 ) : (
-                    `"${currentQ.prompt}"`
+                    isWordPrompt ? currentQ.prompt : `"${currentQ.prompt}"`
                 )}
             </h3>
 
@@ -475,7 +559,13 @@ export const Practice: React.FC = () => {
                                 <h4 className="text-[10px] font-bold text-emerald-600 uppercase mb-1.5 opacity-70">Synonyms</h4>
                                 <div className="flex flex-wrap gap-1">
                                     {currentQ.synonyms.slice(0, 3).map((s, i) => (
-                                        <span key={i} className="text-[11px] bg-white text-emerald-800 px-1.5 py-0.5 rounded-md font-medium border border-emerald-200/50 shadow-sm">{s}</span>
+                                        <span key={i} className={`text-[11px] px-1.5 py-0.5 rounded-md font-medium border shadow-sm ${
+                                            currentQ.type === 'synonym' && s === currentQ.answer 
+                                            ? 'bg-emerald-100 text-emerald-800 border-emerald-200 ring-1 ring-emerald-300'
+                                            : 'bg-white text-emerald-800 border-emerald-200/50'
+                                        }`}>
+                                            {s}
+                                        </span>
                                     ))}
                                 </div>
                             </div>
@@ -485,7 +575,13 @@ export const Practice: React.FC = () => {
                                 <h4 className="text-[10px] font-bold text-rose-600 uppercase mb-1.5 opacity-70">Antonyms</h4>
                                 <div className="flex flex-wrap gap-1">
                                     {currentQ.antonyms.slice(0, 3).map((s, i) => (
-                                        <span key={i} className="text-[11px] bg-white text-rose-800 px-1.5 py-0.5 rounded-md font-medium border border-rose-200/50 shadow-sm">{s}</span>
+                                        <span key={i} className={`text-[11px] px-1.5 py-0.5 rounded-md font-medium border shadow-sm ${
+                                            currentQ.type === 'antonym' && s === currentQ.answer 
+                                            ? 'bg-rose-100 text-rose-800 border-rose-200 ring-1 ring-rose-300'
+                                            : 'bg-white text-rose-800 border-rose-200/50'
+                                        }`}>
+                                            {s}
+                                        </span>
                                     ))}
                                 </div>
                             </div>

@@ -21,6 +21,16 @@ export interface SavedWord extends WordAnalysis {
 export interface ReadingComprehension {
   title: string;
   passage: string;
+  sourceTopic: string;
+  mainIdea: string;
+  inference: string;
+  tone: string;
+  vocab: {
+    word: string;
+    contextMeaning: string;
+    synonyms: string[];
+    antonyms: string[];
+  }[];
   questions: {
     id: number;
     question: string;

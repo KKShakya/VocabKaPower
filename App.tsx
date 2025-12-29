@@ -53,7 +53,7 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col font-sans text-slate-900 overflow-x-hidden selection:bg-brand-200 selection:text-brand-900">
+    <div className="min-h-screen flex flex-col font-sans text-slate-900 overflow-x-hidden selection:bg-brand-200 selection:text-brand-900 antialiased">
       
       {/* Floating Glass Header */}
       <div className="fixed top-0 left-0 right-0 z-50 p-4 flex justify-center pointer-events-none">

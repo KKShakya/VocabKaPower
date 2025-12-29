@@ -20,51 +20,99 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
   [SilsilaCategory.CONFUSING]: [
     {
       type: 'simple',
+      word: "Appraise vs Apprise",
+      context: "Similar Sounding",
+      definition: "Appraise: To assess value/quality.\n(e.g. The bank appraised the house.)\n\nApprise: To inform or tell.\n(e.g. Please apprise me of the situation.)\n\nMemory Hook: Appraise = Praise value; Apprise = Rise and tell."
+    },
+    {
+      type: 'simple',
       word: "Adverse vs Averse",
-      context: "Spelling Traps",
-      definition: "Adverse: Unfavorable/Bad (e.g., Adverse weather).\nAverse: Reluctant/Dislike (e.g., I am averse to risk).\n\nMemory Hook: D in Adverse = Disaster."
-    },
-    {
-      type: 'simple',
-      word: "Elicit vs Illicit",
-      context: "Spelling Traps",
-      definition: "Elicit: To draw out (e.g., Police elicited the truth).\nIllicit: Illegal (e.g., Illicit drugs).\n\nMemory Hook: Illist = Illegal."
-    },
-    {
-      type: 'simple',
-      word: "Compliment vs Complement",
-      context: "Spelling Traps",
-      definition: "Compliment: Praise.\nComplement: To complete (e.g., Bread complements butter).\n\nMemory Hook: Complement = Complete."
-    },
-    {
-      type: 'simple',
-      word: "Allude vs Elude",
-      context: "Spelling Traps",
-      definition: "Allude: To hint indirectly.\nElude: To escape (e.g., The thief eluded the police).\n\nMemory Hook: Elude = Escape."
+      context: "Spelling Trap",
+      definition: "Adverse: Unfavorable/Bad.\n(e.g. Adverse weather conditions.)\n\nAverse: Reluctant/Dislike.\n(e.g. He is averse to taking risks.)\n\nMemory Hook: Adverse = Adversity (Bad luck); Averse = Against the Verse."
     },
     {
       type: 'simple',
       word: "Censure vs Censor",
-      context: "Spelling Traps",
-      definition: "Censure: To Criticize/Scold.\nCensor: To Ban/Cut (e.g., The movie was censored).\n\nMemory Hook: Censure = Scold."
+      context: "Meaning Trap",
+      definition: "Censure: To criticize harshly.\n(e.g. The MP was censured for bad behavior.)\n\nCensor: To suppress or cut.\n(e.g. The movie was censored before release.)\n\nMemory Hook: Censure = Sure he did wrong; Censor = Scissor (Cut)."
     },
     {
       type: 'simple',
-      word: "Stationary vs Stationery",
-      context: "Spelling Traps",
-      definition: "Stationary: Not moving (e.g., The car was stationary).\nStationery: Pens/Paper.\n\nMemory Hook: Stationery = Letter."
+      word: "Compliment vs Complement",
+      context: "Spelling Trap",
+      definition: "Compliment: Praise.\n(e.g. She received a compliment.)\n\nComplement: To complete/enhance.\n(e.g. The red tie complements his suit.)\n\nMemory Hook: Compliment = 'I' like praise; Complement = Complete."
     },
     {
       type: 'simple',
-      word: "Discrete vs Discreet",
-      context: "Spelling Traps",
-      definition: "Discrete: Separate/Distinct.\nDiscreet: Careful/Secret.\n\nMemory Hook: Discreet = Keep quiet."
+      word: "Discreet vs Discrete",
+      context: "Spelling Trap",
+      definition: "Discreet: Careful/Secretive.\n(e.g. We must be discreet about the merger.)\n\nDiscrete: Separate/Distinct.\n(e.g. Data is broken into discrete categories.)\n\nMemory Hook: Discrete = 'E's are separate; Discreet = 'E's are hiding together."
+    },
+    {
+      type: 'simple',
+      word: "Elicit vs Illicit",
+      context: "Sound Trap",
+      definition: "Elicit: To draw out info.\n(e.g. Police elicited the truth.)\n\nIllicit: Illegal.\n(e.g. Illicit trade in gold.)\n\nMemory Hook: Elicit = Exit (Bring out); Illicit = Illegal (Ill)."
     },
     {
       type: 'simple',
       word: "Eminent vs Imminent",
-      context: "Spelling Traps",
-      definition: "Eminent: Famous/Respected (e.g., An eminent scientist).\nImminent: About to happen (e.g., The storm is imminent).\n\nMemory Hook: Imminent = Immediate."
+      context: "Spelling Trap",
+      definition: "Eminent: Famous/Respected.\n(e.g. An eminent scientist.)\n\nImminent: About to happen.\n(e.g. A storm is imminent.)\n\nMemory Hook: Eminent = Eminem (Famous); Imminent = Immediate."
+    },
+    {
+      type: 'simple',
+      word: "Exalt vs Exult",
+      context: "Meaning Trap",
+      definition: "Exalt: To praise highly.\n(e.g. The poem exalts nature.)\n\nExult: To rejoice/celebrate.\n(e.g. The team exulted in victory.)\n\nMemory Hook: Exalt = Altitude (High praise); Exult = Result (Win)."
+    },
+    {
+      type: 'simple',
+      word: "Ingenious vs Ingenuous",
+      context: "Tricky Pair",
+      definition: "Ingenious: Clever/Inventive.\n(e.g. An ingenious solution.)\n\nIngenuous: Innocent/Unsuspecting.\n(e.g. An ingenuous smile.)\n\nMemory Hook: Ingenious = Genius; Ingenuous = Genuine (Innocent)."
+    },
+    {
+      type: 'simple',
+      word: "Persecute vs Prosecute",
+      context: "Legal vs Personal",
+      definition: "Persecute: To ill-treat/harass.\n(e.g. Minorities were persecuted.)\n\nProsecute: To take legal action.\n(e.g. Shoplifters will be prosecuted.)\n\nMemory Hook: Persecute = Personal attack; Prosecute = Pro Legal action."
+    },
+    {
+      type: 'simple',
+      word: "Prescribe vs Proscribe",
+      context: "Opposites",
+      definition: "Prescribe: To recommend/authorize.\n(e.g. Doctor prescribed rest.)\n\nProscribe: To forbid/ban.\n(e.g. The school proscribed cell phones.)\n\nMemory Hook: Prescribe = Pre-health; Proscribe = Prohibit."
+    },
+    {
+      type: 'simple',
+      word: "Principal vs Principle",
+      context: "Classic Trap",
+      definition: "Principal: Head/Main person.\n(e.g. The School Principal.)\n\nPrinciple: Rule/Truth.\n(e.g. Man of high principles.)\n\nMemory Hook: Principal = Pal (Person); Principle = Rule (ends in le)."
+    },
+    {
+      type: 'simple',
+      word: "Stationary vs Stationery",
+      context: "Spelling Trap",
+      definition: "Stationary: Not moving.\n(e.g. A stationary car.)\n\nStationery: Writing materials.\n(e.g. Pens and stationery.)\n\nMemory Hook: Stationary = Parked (Ary); Stationery = Letter (E)."
+    },
+    {
+      type: 'simple',
+      word: "Allude vs Elude",
+      context: "Sound Trap",
+      definition: "Allude: To hint indirectly.\n(e.g. He alluded to the problem.)\n\nElude: To escape.\n(e.g. The thief eluded police.)\n\nMemory Hook: Allude = Address indirectly; Elude = Escape."
+    },
+    {
+      type: 'simple',
+      word: "Emigrate vs Immigrate",
+      context: "Direction Trap",
+      definition: "Emigrate: To leave a country.\n(e.g. Emigrated from India.)\n\nImmigrate: To enter a country.\n(e.g. Immigrated to USA.)\n\nMemory Hook: Emigrate = Exit; Immigrate = In."
+    },
+    {
+      type: 'simple',
+      word: "Loath vs Loathe",
+      context: "Spelling Trap",
+      definition: "Loath: Reluctant/Unwilling.\n(e.g. I was loath to admit it.)\n\nLoathe: To hate intensely.\n(e.g. I loathe waking up early.)\n\nMemory Hook: Loath = Oath (not to do); Loathe = Hate (ends in e)."
     }
   ],
   [SilsilaCategory.TRENDING]: [

@@ -69,15 +69,33 @@ export const generateWordAnalysis = async (word: string): Promise<WordAnalysis> 
   return JSON.parse(text) as WordAnalysis;
 };
 
-export const generateReadingComprehension = async (): Promise<ReadingComprehension> => {
+export const generateReadingComprehension = async (topic: string): Promise<ReadingComprehension> => {
   checkApiKey();
+  // Using gemini-3-flash-preview for speed and creative writing capability
   const model = "gemini-3-flash-preview";
 
   const schema: Schema = {
     type: Type.OBJECT,
     properties: {
       title: { type: Type.STRING },
+      sourceTopic: { type: Type.STRING },
       passage: { type: Type.STRING },
+      mainIdea: { type: Type.STRING, description: "The central thesis of the editorial in 1-2 sentences." },
+      inference: { type: Type.STRING, description: "What can be inferred about the author's stance or the future implications?" },
+      tone: { type: Type.STRING, description: "e.g. Critical, Optimistic, Cautionary, Satirical" },
+      vocab: {
+        type: Type.ARRAY,
+        items: {
+            type: Type.OBJECT,
+            properties: {
+                word: { type: Type.STRING },
+                contextMeaning: { type: Type.STRING, description: "Meaning of the word specifically in this context." },
+                synonyms: { type: Type.ARRAY, items: { type: Type.STRING } },
+                antonyms: { type: Type.ARRAY, items: { type: Type.STRING } },
+            },
+            required: ["word", "contextMeaning", "synonyms", "antonyms"]
+        }
+      },
       questions: {
         type: Type.ARRAY,
         items: {
@@ -92,12 +110,24 @@ export const generateReadingComprehension = async (): Promise<ReadingComprehensi
         },
       },
     },
-    required: ["title", "passage", "questions"],
+    required: ["title", "sourceTopic", "passage", "mainIdea", "inference", "tone", "vocab", "questions"],
   };
 
   const response = await ai.models.generateContent({
     model,
-    contents: "Write a reading comprehension passage (approx 200 words) based on a recent viral or vital news topic (e.g., technology, environment, economy). Create 3 multiple choice questions based on it.",
+    contents: `Write a high-quality Editorial passage (approx 350-400 words) based on the topic: "${topic}".
+    
+    STYLE GUIDE:
+    - Imitate the writing style of "The Hindu" or "The Indian Express" editorials.
+    - Use sophisticated vocabulary, complex sentence structures, and a critical/analytical tone.
+    - The content should feel like a genuine analysis of recent events related to the topic.
+
+    AFTER WRITING THE PASSAGE, GENERATE:
+    1. 5 Multiple Choice Questions (Mix of factual, inference-based, and vocabulary-based).
+    2. The Main Idea (Central Thesis).
+    3. A key Inference (What is suggested but not explicitly stated?).
+    4. The overall Tone of the passage.
+    5. Analysis of 3 unique/difficult words used in the passage (Synonyms/Antonyms).`,
     config: {
       responseMimeType: "application/json",
       responseSchema: schema,

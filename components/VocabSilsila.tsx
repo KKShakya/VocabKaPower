@@ -108,6 +108,48 @@ export const VocabSilsila: React.FC = () => {
      return STATIC_NOTEBOOK_DATA.filter(word => targetWords.includes(word.word));
   }, [selectedCategory, activeEmotion]);
 
+  // Helper function to render text based on category for better typography
+  const renderDefinition = (text: string, category: SilsilaCategory) => {
+    // 1. Trending & Idioms: Split Definition from Usage
+    if (category === SilsilaCategory.TRENDING || category === SilsilaCategory.IDIOMS) {
+        const parts = text.split(/Usage:/i);
+        if (parts.length > 1) {
+            return (
+                <div className="space-y-4">
+                    <p className="font-bold text-slate-800 text-base leading-snug">
+                        {parts[0].trim()}
+                    </p>
+                    <div className="bg-slate-50 p-3 rounded-lg border border-slate-100 text-sm text-slate-600 italic">
+                        <span className="not-italic font-bold text-[10px] text-slate-400 uppercase tracking-wider block mb-1">Usage</span>
+                        "{parts[1].trim().replace(/^'|'$/g, '')}"
+                    </div>
+                </div>
+            );
+        }
+    }
+
+    // 2. Confusing Words: Highlight Memory Hook
+    if (category === SilsilaCategory.CONFUSING) {
+        const parts = text.split(/Memory Hook:/i);
+        if (parts.length > 1) {
+            return (
+                <div className="space-y-4">
+                    <p className="whitespace-pre-line text-slate-600 font-medium">
+                        {parts[0].trim()}
+                    </p>
+                    <div className="inline-block bg-amber-50 text-amber-900 px-3 py-2 rounded-lg border border-amber-100/60 text-sm">
+                        <span className="font-bold text-amber-700 block text-[10px] uppercase tracking-wide mb-0.5">Memory Hook</span> 
+                        {parts[1].trim()}
+                    </div>
+                </div>
+            );
+        }
+    }
+
+    // Default Fallback
+    return <div className="whitespace-pre-line text-slate-600 font-medium">{text}</div>;
+  };
+
   if (selectedCategory) {
     // --- MASTER COLLECTION VIEW ---
     if (selectedCategory === SilsilaCategory.MASTER_COLLECTION) {
@@ -210,16 +252,16 @@ export const VocabSilsila: React.FC = () => {
                 );
               }
               
-              // Simple Glass Card
+              // Simple Glass Card with Enhanced Typography
               return (
-                <div key={idx} className="glass-card rounded-2xl p-6 hover:shadow-xl hover:bg-white/80 transition-all duration-300 group border border-white/60 relative overflow-hidden">
+                <div key={idx} className="glass-card rounded-2xl p-6 hover:shadow-xl hover:bg-white/80 transition-all duration-300 group border border-white/60 relative overflow-hidden flex flex-col h-full">
                     <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-brand-400 to-brand-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div className="flex justify-between items-start mb-3">
-                        <h3 className="text-2xl font-serif font-bold text-slate-800 group-hover:text-brand-700 transition-colors">{item.word}</h3>
-                        <span className="text-[10px] font-bold px-2 py-1 bg-slate-900/5 text-slate-600 rounded-full uppercase tracking-wide border border-slate-200/50">{item.context}</span>
+                    <div className="flex justify-between items-start mb-4 border-b border-slate-100 pb-3">
+                        <h3 className="text-xl font-serif font-bold text-slate-800 group-hover:text-brand-700 transition-colors pr-2 leading-tight">{item.word}</h3>
+                        <span className="text-[10px] font-bold px-2 py-1 bg-slate-900/5 text-slate-600 rounded-full uppercase tracking-wide border border-slate-200/50 shrink-0">{item.context}</span>
                     </div>
-                    <div className="text-slate-600 whitespace-pre-line leading-relaxed text-sm font-medium">
-                        {item.definition}
+                    <div className="flex-1">
+                        {renderDefinition(item.definition, selectedCategory)}
                     </div>
                 </div>
               );
