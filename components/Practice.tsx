@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { Brain, Trophy, ArrowRight, RotateCcw, CheckCircle2, XCircle, Lightbulb, Target, AlertTriangle, BookOpen, Layers, ChevronLeft, Shuffle } from 'lucide-react';
+import { Brain, Trophy, ArrowRight, RotateCcw, CheckCircle2, XCircle, Lightbulb, Target, AlertTriangle, BookOpen, Layers, ChevronLeft } from 'lucide-react';
 import { Button } from './Button';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
