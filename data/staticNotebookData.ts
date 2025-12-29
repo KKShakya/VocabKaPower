@@ -1498,7 +1498,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "A single technical error can vitiate the entire contract.",
     synonyms: ["Spoil", "Impair", "Mar"],
     antonyms: ["Purify", "Validate", "Strengthen"],
-    trick: "Wish + Ate -> If you 'ate' a wish, you spoiled (vitiated) it.",
+    trick: "Wish + Ate -> If you 'ate' a wish, you spoiled it.",
     tone: "Negative (-)",
     collocation: "Vitiate the atmosphere",
     intensitySpectrum: [
@@ -3208,7 +3208,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     sentence: "He is considered the doyen of political journalism.",
     synonyms: ["Veteran", "Master", "Dean"],
     antonyms: ["Novice", "Beginner", "Amateur"],
-    trick: "Do + Yen -> Someone who has been 'Doing' it for 'Yens' (Years).",
+    trick: "Do + Yen -> Someone who has to 'Doing' it for 'Yens' (Years).",
     tone: "Positive (+)",
     collocation: "Doyen of industry",
     intensitySpectrum: [
@@ -3522,6 +3522,330 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
       { word: "Stated", "level": "Medium" },
       { word: "Avowed", "level": "High" },
       { word: "Sworn", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Querulous",
+    partOfSpeech: "Adjective",
+    meaning: "Complaining in a petulant or whining manner.",
+    translation: "विलापी / शिकायती",
+    sentence: "He became querulous and demanding in his old age.",
+    synonyms: ["Whining", "Cantankerous", "Peevish"],
+    antonyms: ["Cheerful", "Patient", "Stoic"],
+    trick: "Query -> Always raising a 'query' or complaint about everything.",
+    tone: "Negative (-)",
+    collocation: "Querulous voice",
+    intensitySpectrum: [
+      { word: "Unhappy", level: "Mild" },
+      { word: "Complaining", level: "Medium" },
+      { word: "Querulous", level: "High" },
+      { word: "Unbearable", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Equable",
+    partOfSpeech: "Adjective",
+    meaning: "Not easily disturbed or angered; calm and even-tempered.",
+    translation: "शांत / एक समान",
+    sentence: "Her equable temperament made her a perfect mediator.",
+    synonyms: ["Calm", "Composed", "Placid"],
+    antonyms: ["Temperamental", "Moody", "Excitable"],
+    trick: "Equal -> Mood stays 'equal' (stable) in all situations.",
+    tone: "Positive (+)",
+    collocation: "Equable climate/temperament",
+    intensitySpectrum: [
+      { word: "Steady", level: "Mild" },
+      { word: "Calm", level: "Medium" },
+      { word: "Equable", level: "High" },
+      { word: "Unflappable", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Irascible",
+    partOfSpeech: "Adjective",
+    meaning: "Having or showing a tendency to be easily angered.",
+    translation: "चिड़चिड़ा / क्रोधी",
+    sentence: "The irascible old man shouted at the kids playing on his lawn.",
+    synonyms: ["Irritable", "Short-tempered", "Testy"],
+    antonyms: ["Good-natured", "Affable", "Placid"],
+    trick: "Rascal -> A rascal makes you irascible (angry).",
+    tone: "Negative (-)",
+    collocation: "Irascible nature",
+    intensitySpectrum: [
+      { word: "Grumpy", level: "Mild" },
+      { word: "Irritable", level: "Medium" },
+      { word: "Irascible", level: "High" },
+      { word: "Volatile", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Peevish",
+    partOfSpeech: "Adjective",
+    meaning: "Easily irritated, especially by unimportant things.",
+    translation: "चिड़चिड़ा / तुनकमिज़ाज",
+    sentence: "Lack of sleep made him peevish and impatient.",
+    synonyms: ["Fretful", "Petulant", "Crabby"],
+    antonyms: ["Agreeable", "Friendly", "Patient"],
+    trick: "Pea -> Getting annoyed by a small 'pea' under the mattress.",
+    tone: "Negative (-)",
+    collocation: "Peevish complaint",
+    intensitySpectrum: [
+      { word: "Annoyed", level: "Mild" },
+      { word: "Peevish", level: "Medium" },
+      { word: "Cranky", level: "High" },
+      { word: "Furious", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Fretful",
+    partOfSpeech: "Adjective",
+    meaning: "Feeling or expressing distress or irritation.",
+    translation: "बेचैन / झुँझलाया हुआ",
+    sentence: "The baby was tired and fretful.",
+    synonyms: ["Restless", "Uneasy", "Agitated"],
+    antonyms: ["Calm", "Content", "Peaceful"],
+    trick: "Fret -> Don't fret (worry); fretting makes you fretful.",
+    tone: "Negative (-)",
+    collocation: "Fretful sleep",
+    intensitySpectrum: [
+      { word: "Concerned", level: "Mild" },
+      { word: "Worried", level: "Medium" },
+      { word: "Fretful", level: "High" },
+      { word: "Distraught", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Fractious",
+    partOfSpeech: "Adjective",
+    meaning: "(Typically of children) irritable and quarrelsome.",
+    translation: "झगड़ालू / चिड़चिड़ा",
+    sentence: "The long journey made the children fractious.",
+    synonyms: ["Grumpy", "Grouchy", "Unruly"],
+    antonyms: ["Obedient", "Affable", "Happy"],
+    trick: "Fracture -> Relationships 'fracture' easily when you are quarrelsome.",
+    tone: "Negative (-)",
+    collocation: "Fractious crowd",
+    intensitySpectrum: [
+      { word: "Restless", level: "Mild" },
+      { word: "Irritable", level: "Medium" },
+      { word: "Fractious", level: "High" },
+      { word: "Uncontrollable", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Petulant",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a person or their manner) childishly sulky or bad-tempered.",
+    translation: "ढीठ / तुनकमिज़ाज",
+    sentence: "He stormed out of the room like a petulant child.",
+    synonyms: ["Sulky", "Moody", "Peevish"],
+    antonyms: ["Good-humored", "Mature", "Resilient"],
+    trick: "Pet -> Acting like a spoiled 'pet' or child who didn't get a treat.",
+    tone: "Negative (-)",
+    collocation: "Petulant behavior",
+    intensitySpectrum: [
+      { word: "Upset", level: "Mild" },
+      { word: "Sulky", level: "Medium" },
+      { word: "Petulant", level: "High" },
+      { word: "Tantrum-throwing", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Amenable",
+    partOfSpeech: "Adjective",
+    meaning: "Open and responsive to suggestion; easily persuaded or controlled.",
+    translation: "आज्ञाकारी / जिम्मेदार",
+    sentence: "They are usually amenable to our advice.",
+    synonyms: ["Compliant", "Manageable", "Agreeable"],
+    antonyms: ["Stubborn", "Recalcitrant", "Defiant"],
+    trick: "Amen -> Someone who says 'Amen' (Yes) to everything.",
+    tone: "Positive (+)",
+    collocation: "Amenable to reason",
+    intensitySpectrum: [
+      { word: "Open", level: "Mild" },
+      { word: "Willing", level: "Medium" },
+      { word: "Amenable", level: "High" },
+      { word: "Submissive", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Temerity",
+    partOfSpeech: "Noun",
+    meaning: "Excessive confidence or boldness; audacity.",
+    translation: "दुस्साहस",
+    sentence: "No one had the temerity to question his decision.",
+    synonyms: ["Audacity", "Boldness", "Nerve"],
+    antonyms: ["Shyness", "Bashfulness", "Caution"],
+    trick: "Team -> It takes 'temerity' to lead a team into a fire.",
+    tone: "Negative (-)",
+    collocation: "Have the temerity",
+    intensitySpectrum: [
+      { word: "Confidence", level: "Mild" },
+      { word: "Boldness", level: "Medium" },
+      { word: "Temerity", level: "High" },
+      { word: "Recklessness", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Prudence",
+    partOfSpeech: "Noun",
+    meaning: "The quality of being prudent; cautiousness.",
+    translation: "विवेक / सावधानी",
+    sentence: "We need to exercise prudence in our financial planning.",
+    synonyms: ["Wisdom", "Caution", "Foresight"],
+    antonyms: ["Recklessness", "Folly", "Impulsiveness"],
+    trick: "Prude -> A 'prude' person is very careful and avoids risks/scandals.",
+    tone: "Positive (+)",
+    collocation: "Financial prudence",
+    intensitySpectrum: [
+      { word: "Care", level: "Mild" },
+      { word: "Caution", level: "Medium" },
+      { word: "Prudence", level: "High" },
+      { word: "Wisdom", "level": "Extreme" }
+    ]
+  },
+  {
+    word: "Insolent",
+    partOfSpeech: "Adjective",
+    meaning: "Showing a rude and arrogant lack of respect.",
+    translation: "बदतमीज़ / धृष्ट",
+    sentence: "The student was suspended for his insolent behavior towards the teacher.",
+    synonyms: ["Impertinent", "Impudent", "Cheeky"],
+    antonyms: ["Polite", "Respectful", "Courteous"],
+    trick: "Insult -> An insolent person 'insults' everyone.",
+    tone: "Negative (-)",
+    collocation: "Insolent tone",
+    intensitySpectrum: [
+      { word: "Rude", level: "Mild" },
+      { word: "Disrespectful", level: "Medium" },
+      { word: "Insolent", level: "High" },
+      { word: "Abusive", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Contumacious",
+    partOfSpeech: "Adjective",
+    meaning: "(Especially of a defendant's behavior) stubbornly or willfully disobedient to authority.",
+    translation: "अवज्ञाकारी / ढीठ",
+    sentence: "The judge punished the contumacious witness for refusing to answer.",
+    synonyms: ["Rebellious", "Defiant", "Recalcitrant"],
+    antonyms: ["Obedient", "Submissive", "Compliant"],
+    trick: "Continue -> Continuing to argue with the judge.",
+    tone: "Negative (-)",
+    collocation: "Contumacious conduct",
+    intensitySpectrum: [
+      { word: "Stubborn", level: "Mild" },
+      { word: "Disobedient", level: "Medium" },
+      { word: "Contumacious", level: "High" },
+      { word: "Mutinous", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Obsequious",
+    partOfSpeech: "Adjective",
+    meaning: "Obedient or attentive to an excessive or servile degree.",
+    translation: "चापलूसी करनेवाला / जी-हुज़ूरिया",
+    sentence: "The obsequious assistant agreed with everything the boss said.",
+    synonyms: ["Servile", "Fawning", "Sycophantic"],
+    antonyms: ["Domineering", "Assertive", "Independent"],
+    trick: "Sequence -> Follows the 'sequence' of orders blindly like a robot.",
+    tone: "Negative (-)",
+    collocation: "Obsequious bow",
+    intensitySpectrum: [
+      { word: "Helpful", level: "Mild" },
+      { word: "Compliant", level: "Medium" },
+      { word: "Obsequious", level: "High" },
+      { word: "Groveling", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Abysmal",
+    partOfSpeech: "Adjective",
+    meaning: "Extremely bad; appalling.",
+    translation: "बेहद खराब / रसातल",
+    sentence: "The quality of service at the hotel was abysmal.",
+    synonyms: ["Dreadful", "Awful", "Terrible"],
+    antonyms: ["Superb", "Excellent", "Outstanding"],
+    trick: "Abyss -> Like falling into a bottomless pit (Abyss).",
+    tone: "Negative (-)",
+    collocation: "Abysmal performance",
+    intensitySpectrum: [
+      { word: "Poor", level: "Mild" },
+      { word: "Bad", level: "Medium" },
+      { word: "Abysmal", level: "High" },
+      { word: "Catastrophic", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Preponderance",
+    partOfSpeech: "Noun",
+    meaning: "The quality or fact of being greater in number, quantity, or importance.",
+    translation: "प्रधानता / बाहुल्य",
+    sentence: "There is a preponderance of female students in the class.",
+    synonyms: ["Majority", "Prevalence", "Dominance"],
+    antonyms: ["Minority", "Scarcity", "Paucity"],
+    trick: "Ponder -> Ponderous means heavy. Preponderance means heavier/greater weight.",
+    tone: "Neutral (0)",
+    collocation: "Preponderance of evidence",
+    intensitySpectrum: [
+      { word: "More", level: "Mild" },
+      { word: "Majority", level: "Medium" },
+      { word: "Preponderance", level: "High" },
+      { word: "Monopoly", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Prevalence",
+    partOfSpeech: "Noun",
+    meaning: "The fact or condition of being prevalent; commonness.",
+    translation: "प्रसार / व्यापकता",
+    sentence: "The prevalence of obesity is a major health concern.",
+    synonyms: ["Commonness", "Frequency", "Ubiquity"],
+    antonyms: ["Rarity", "Uncommonness", "Infrequency"],
+    trick: "Prevail -> To win/spread everywhere. If it prevails, it has prevalence.",
+    tone: "Neutral (0)",
+    collocation: "High prevalence",
+    intensitySpectrum: [
+      { word: "Presence", level: "Mild" },
+      { word: "Frequency", level: "Medium" },
+      { word: "Prevalence", level: "High" },
+      { word: "Ubiquity", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Ascendancy",
+    partOfSpeech: "Noun",
+    meaning: "Occupation of a position of dominant power or influence.",
+    translation: "प्रभुत्व / चढ़ाई",
+    sentence: "The party is slowly gaining ascendancy in the region.",
+    synonyms: ["Dominance", "Supremacy", "Sovereignty"],
+    antonyms: ["Subordination", "Decline", "Fall"],
+    trick: "Ascend -> Going up to the top position.",
+    tone: "Positive (+)",
+    collocation: "Gain ascendancy",
+    intensitySpectrum: [
+      { word: "Influence", level: "Mild" },
+      { word: "Control", level: "Medium" },
+      { word: "Ascendancy", level: "High" },
+      { word: "Supremacy", level: "Extreme" }
+    ]
+  },
+  {
+    word: "Pugnacious",
+    partOfSpeech: "Adjective",
+    meaning: "Eager or quick to argue, quarrel, or fight.",
+    translation: "झगड़ालू / लड़ाकू",
+    sentence: "The pugnacious little boy was always getting into fights.",
+    synonyms: ["Combative", "Aggressive", "Belligerent"],
+    antonyms: ["Peaceable", "Friendly", "Conciliatory"],
+    trick: "Pug -> A Pug dog might look small but can be pugnacious (fighter).",
+    tone: "Negative (-)",
+    collocation: "Pugnacious mood",
+    intensitySpectrum: [
+      { word: "Assertive", level: "Mild" },
+      { word: "Aggressive", level: "Medium" },
+      { word: "Pugnacious", level: "High" },
+      { word: "Belligerent", level: "Extreme" }
     ]
   }
 ];

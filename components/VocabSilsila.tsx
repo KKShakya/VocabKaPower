@@ -10,15 +10,15 @@ import { WordCard } from './WordCard';
 const EMOTION_MAP: Record<string, string[]> = {
     "Joy & Bliss": ["Elation", "Felicity", "Euphoric", "Rapturous", "Winsome", "Cheerful", "Jubilant", "Delighted", "Beatific", "Exuberant", "Ebullient"],
     "Gloom & Despair": ["Harrowing", "Sullen", "Dejected", "Forlorn", "Wretched", "Melancholy", "Despondent", "Woeful", "Morose", "Bleak", "Abash", "Cortege"],
-    "Calm & Composed": ["Serene", "Halcyon", "Stoic", "Impassive", "Tranquil", "Salubrious", "Placid", "Dulcet", "Remission", "Hamlet"],
-    "Fury & Irritation": ["Ire", "Flustered", "Vexed", "Irate", "Hostile", "Churlish", "Loutish", "Rancor", "Skirmish", "Mercurial", "Obdurate"],
-    "Smart & Sharp": ["Erudite", "Adroit", "Dexterous", "Pragmatic", "Riveting", "Solvency", "Emulate", "Efficacious", "Prolific", "Profound", "Arcane", "Conspicuous", "Frugal", "Recondite", "Esoteric", "Maestro", "Facsimile", "Polyglot", "Tantamount"],
-    "Weak & Dull": ["Lax", "Lethargic", "Insipid", "Obtuse", "Sedentary", "Abortive", "Vagabond", "Modicum", "Indolent", "Fawning", "Facile"],
-    "Fear & Doubt": ["Trepidation", "Apprehension", "Skeptical", "Perturb"],
+    "Calm & Composed": ["Serene", "Halcyon", "Stoic", "Impassive", "Tranquil", "Salubrious", "Placid", "Dulcet", "Remission", "Hamlet", "Equable", "Amenable"],
+    "Fury & Irritation": ["Ire", "Flustered", "Vexed", "Irate", "Hostile", "Churlish", "Loutish", "Rancor", "Skirmish", "Mercurial", "Obdurate", "Querulous", "Irascible", "Peevish", "Fractious", "Petulant", "Insolent", "Pugnacious"],
+    "Smart & Sharp": ["Erudite", "Adroit", "Dexterous", "Pragmatic", "Riveting", "Solvency", "Emulate", "Efficacious", "Prolific", "Profound", "Arcane", "Conspicuous", "Frugal", "Recondite", "Esoteric", "Maestro", "Facsimile", "Polyglot", "Tantamount", "Prudence"],
+    "Weak & Dull": ["Lax", "Lethargic", "Insipid", "Obtuse", "Sedentary", "Abortive", "Vagabond", "Modicum", "Indolent", "Fawning", "Facile", "Obsequious"],
+    "Fear & Doubt": ["Trepidation", "Apprehension", "Skeptical", "Perturb", "Fretful"],
     "Noble & Good": ["Majestic", "Propitious", "Magnanimous", "Benign", "Sanguine", "Mellifluous", "Panacea", "Quintessential", "Doyen", "Creche", "Debonair"],
-    "Dark & Negative": ["Callous", "Rancid", "Envy", "Repulsed", "Diabolical", "Heinous", "Fiendish", "Atrocious", "Virulent", "Usurp", "Silos", "Dogma", "Doctrine", "Vain", "Pompous", "Indulgent", "Facade", "Fetid", "Odium"],
-    "Power & Politics": ["Prerogative", "Perquisite", "Sanction", "Leeway", "Latitude", "Deposition", "Abdication", "Impeachment", "Disavowal", "Ratified", "Repudiate", "Abrogate", "Concomitant", "Credence", "Aver", "Mantle", "Caucus", "Avowed"],
-    "Time & Motion": ["Advent", "Inception", "Cessation", "Peregrine", "Endemic", "Sporadic", "Erratic", "Shoal", "Bevy"]
+    "Dark & Negative": ["Callous", "Rancid", "Envy", "Repulsed", "Diabolical", "Heinous", "Fiendish", "Atrocious", "Virulent", "Usurp", "Silos", "Dogma", "Doctrine", "Vain", "Pompous", "Indulgent", "Facade", "Fetid", "Odium", "Temerity", "Abysmal"],
+    "Power & Politics": ["Prerogative", "Perquisite", "Sanction", "Leeway", "Latitude", "Deposition", "Abdication", "Impeachment", "Disavowal", "Ratified", "Repudiate", "Abrogate", "Concomitant", "Credence", "Aver", "Mantle", "Caucus", "Avowed", "Contumacious", "Preponderance", "Ascendancy"],
+    "Time & Motion": ["Advent", "Inception", "Cessation", "Peregrine", "Endemic", "Sporadic", "Erratic", "Shoal", "Bevy", "Prevalence"]
 };
 
 const EMOTION_CONFIG: Record<string, { icon: React.ElementType, color: string, bg: string }> = {
