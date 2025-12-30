@@ -2,6 +2,7 @@
 import { WordAnalysis } from "../types";
 
 export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
+  // --- Group: Joy & Bliss / General (Restored) ---
   {
     word: "Elation",
     partOfSpeech: "Noun",
@@ -13,12 +14,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Election -> Winning an election brings elation.",
     tone: "Positive (+)",
     collocation: "Sheer Elation",
-    intensitySpectrum: [
-      { word: "Happiness", level: "Mild" },
-      { word: "Delight", level: "Medium" },
-      { word: "Elation", level: "High" },
-      { word: "Euphoria", level: "Extreme" }
-    ]
+    intensitySpectrum: [{ word: "Happiness", level: "Mild" }, { word: "Elation", level: "High" }, { word: "Euphoria", level: "Extreme" }],
+    characterHook: "Virat Kohli (After winning)",
+    hookWhy: "Fist pumping, screaming, pure energy."
   },
   {
     word: "Felicity",
@@ -31,12 +29,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fell in City -> If you fell in love in a city, you found felicity.",
     tone: "Positive (+)",
     collocation: "Domestic Felicity",
-    intensitySpectrum: [
-      { word: "Contentment", level: "Mild" },
-      { word: "Happiness", level: "Medium" },
-      { word: "Felicity", level: "High" },
-      { word: "Bliss", level: "Extreme" }
-    ]
+    characterHook: "Sooraj Barjatya Movies",
+    hookWhy: "Everyone is happy, singing, eating together."
   },
   {
     word: "Majestic",
@@ -49,12 +43,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Magic -> Kings use magic to look majestic.",
     tone: "Positive (+)",
     collocation: "Majestic View",
-    intensitySpectrum: [
-      { word: "Nice", level: "Mild" },
-      { word: "Impressive", level: "Medium" },
-      { word: "Grand", level: "High" },
-      { word: "Majestic", level: "Extreme" }
-    ]
+    characterHook: "Baahubali Set / Mysore Palace",
+    hookWhy: "Grand, huge, royal."
   },
   {
     word: "Euphoric",
@@ -67,12 +57,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "U + For + Ic -> You are for Ice cream (makes you happy).",
     tone: "Positive (+)",
     collocation: "Euphoric Mood",
-    intensitySpectrum: [
-      { word: "Happy", level: "Mild" },
-      { word: "Excited", level: "Medium" },
-      { word: "Euphoric", level: "High" },
-      { word: "Ecstatic", level: "Extreme" }
-    ]
+    characterHook: "Winning Lottery Ticket Holder",
+    hookWhy: "Can't believe the luck, floating on air."
   },
   {
     word: "Rapturous",
@@ -85,12 +71,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rap -> Good Rap music makes the crowd rapturous.",
     tone: "Positive (+)",
     collocation: "Rapturous Applause",
-    intensitySpectrum: [
-      { word: "Pleased", level: "Mild" },
-      { word: "Delighted", level: "Medium" },
-      { word: "Rapturous", level: "High" },
-      { word: "Ecstatic", level: "Extreme" }
-    ]
+    characterHook: "Concert Fans",
+    hookWhy: "Screaming, crying, clapping for Arijit Singh."
   },
   {
     word: "Salubrious",
@@ -102,7 +84,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Unhealthy", "Insalubrious", "Harmful"],
     trick: "Salu (Salman) + Brio -> Salu bhai is very healthy/fit.",
     tone: "Positive (+)",
-    collocation: "Salubrious Climate"
+    collocation: "Salubrious Climate",
+    characterHook: "Salman Khan / Akshay Kumar",
+    hookWhy: "Fitness icons, always healthy."
   },
   {
     word: "Propitious",
@@ -114,7 +98,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Unfavorable", "Inauspicious", "Unlucky"],
     trick: "Proper + Profit -> A time that is proper for profit.",
     tone: "Positive (+)",
-    collocation: "Propitious Moment"
+    collocation: "Propitious Moment",
+    characterHook: "Diwali Muhurat Trading",
+    hookWhy: "The perfect lucky time to start business."
   },
   {
     word: "Serene",
@@ -127,12 +113,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Siren -> When the ambulance siren stops, it becomes serene.",
     tone: "Positive (+)",
     collocation: "Serene Smile",
-    intensitySpectrum: [
-      { word: "Quiet", level: "Mild" },
-      { word: "Calm", level: "Medium" },
-      { word: "Serene", level: "High" },
-      { word: "Tranquil", level: "Extreme" }
-    ]
+    characterHook: "Buddha Statue",
+    hookWhy: "The ultimate symbol of peace."
   },
   {
     word: "Halcyon",
@@ -145,12 +127,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Hall + Cyan -> A hall painted cyan (blue) feels peaceful.",
     tone: "Positive (+)",
     collocation: "Halcyon Days",
-    intensitySpectrum: [
-      { word: "Pleasant", level: "Mild" },
-      { word: "Happy", level: "Medium" },
-      { word: "Halcyon", level: "High" },
-      { word: "Idyllic", level: "Extreme" }
-    ]
+    characterHook: "90s Kids",
+    hookWhy: "Always talking about how '90s were the best'."
   },
   {
     word: "Winsome",
@@ -162,7 +140,9 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     antonyms: ["Repulsive", "Unattractive", "Loathsome"],
     trick: "Win + Some -> You can win some hearts if you are winsome.",
     tone: "Positive (+)",
-    collocation: "Winsome Smile"
+    collocation: "Winsome Smile",
+    characterHook: "Alia Bhatt (early movies)",
+    hookWhy: "Cute, bubbly, charming."
   },
   {
     word: "Stoic",
@@ -175,12 +155,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Stone -> Be like a stone; no feelings.",
     tone: "Neutral (0)",
     collocation: "Stoic Silence",
-    intensitySpectrum: [
-      { word: "Reserved", level: "Mild" },
-      { word: "Unemotional", level: "Medium" },
-      { word: "Stoic", level: "High" },
-      { word: "Impassive", level: "Extreme" }
-    ]
+    characterHook: "Indian Soldier on Border",
+    hookWhy: "Standing in snow/heat without complaint."
   },
   {
     word: "Impassive",
@@ -193,12 +169,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "I'm Passive -> I am not active with emotions; I am passive.",
     tone: "Neutral (0)",
     collocation: "Impassive Face",
-    intensitySpectrum: [
-      { word: "Blank", level: "Mild" },
-      { word: "Expressionless", level: "Medium" },
-      { word: "Impassive", level: "High" },
-      { word: "Catatonic", level: "Extreme" }
-    ]
+    characterHook: "Poker Player",
+    hookWhy: "Cannot show cards on face."
   },
   {
     word: "Harrowing",
@@ -211,12 +183,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Arrow -> Getting hit by an arrow is a harrowing experience.",
     tone: "Negative (-)",
     collocation: "Harrowing Experience",
-    intensitySpectrum: [
-      { word: "Upsetting", level: "Mild" },
-      { word: "Distressing", level: "Medium" },
-      { word: "Harrowing", level: "High" },
-      { word: "Traumatic", level: "Extreme" }
-    ]
+    characterHook: "The Kashmir Files",
+    hookWhy: "The scenes were painful to watch."
   },
   {
     word: "Sullen",
@@ -229,12 +197,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Swollen -> When you cry, your face gets swollen and you look sullen.",
     tone: "Negative (-)",
     collocation: "Sullen Silence",
-    intensitySpectrum: [
-      { word: "Upset", level: "Mild" },
-      { word: "Sulky", level: "Medium" },
-      { word: "Sullen", level: "High" },
-      { word: "Morose", level: "Extreme" }
-    ]
+    characterHook: "Teenager grounded",
+    hookWhy: "Sitting in room, refusing to talk."
   },
   {
     word: "Trepidation",
@@ -247,12 +211,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Trap -> Fear of getting caught in a trap.",
     tone: "Negative (-)",
     collocation: "With Trepidation",
-    intensitySpectrum: [
-      { word: "Nervousness", level: "Mild" },
-      { word: "Anxiety", level: "Medium" },
-      { word: "Trepidation", level: "High" },
-      { word: "Terror", level: "Extreme" }
-    ]
+    characterHook: "Student checking Exam Results",
+    hookWhy: "Hands shaking before entering roll number."
   },
   {
     word: "Dejected",
@@ -265,12 +225,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rejected -> If you get rejected, you feel dejected.",
     tone: "Negative (-)",
     collocation: "Dejected Look",
-    intensitySpectrum: [
-      { word: "Sad", level: "Mild" },
-      { word: "Disappointed", level: "Medium" },
-      { word: "Dejected", level: "High" },
-      { word: "Despondent", level: "Extreme" }
-    ]
+    characterHook: "Losing Team in Dressing Room",
+    hookWhy: "Heads down, silence."
   },
   {
     word: "Forlorn",
@@ -283,12 +239,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "For + Loan -> If you ask for a loan and get no money, you feel forlorn.",
     tone: "Negative (-)",
     collocation: "Forlorn Hope",
-    intensitySpectrum: [
-      { word: "Lonely", level: "Mild" },
-      { word: "Sad", level: "Medium" },
-      { word: "Forlorn", level: "High" },
-      { word: "Desolate", level: "Extreme" }
-    ]
+    characterHook: "Stray Puppy in Rain",
+    hookWhy: "Looking for shelter, shivering."
   },
   {
     word: "Wretched",
@@ -301,12 +253,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Retch -> Feeling so bad/sick that you want to retch (vomit).",
     tone: "Negative (-)",
     collocation: "Wretched Life",
-    intensitySpectrum: [
-      { word: "Uncomfortable", level: "Mild" },
-      { word: "Miserable", level: "Medium" },
-      { word: "Wretched", level: "High" },
-      { word: "Abject", level: "Extreme" }
-    ]
+    characterHook: "Beggar in Slum",
+    hookWhy: "Worst possible living condition."
   },
   {
     word: "Callous",
@@ -319,12 +267,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Call + Us -> He never calls us; he is callous (doesn't care).",
     tone: "Negative (-)",
     collocation: "Callous Attitude",
-    intensitySpectrum: [
-      { word: "Indifferent", level: "Mild" },
-      { word: "Insensitive", level: "Medium" },
-      { word: "Callous", level: "High" },
-      { word: "Heartless", level: "Extreme" }
-    ]
+    characterHook: "Typical Villain",
+    hookWhy: "Laughing while hero suffers."
   },
   {
     word: "Rancid",
@@ -337,12 +281,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rain + Acid -> Smells bad like acid rain.",
     tone: "Negative (-)",
     collocation: "Rancid Butter",
-    intensitySpectrum: [
-      { word: "Stale", level: "Mild" },
-      { word: "Off", level: "Medium" },
-      { word: "Rancid", level: "High" },
-      { word: "Putrid", level: "Extreme" }
-    ]
+    characterHook: "Bachelor's Fridge",
+    hookWhy: "Milk from 3 weeks ago."
   },
   {
     word: "Melancholy",
@@ -355,12 +295,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Melon + Colic -> Eating a bad melon gives you colic pain -> makes you sad.",
     tone: "Negative (-)",
     collocation: "Deep Melancholy",
-    intensitySpectrum: [
-      { word: "Sadness", level: "Mild" },
-      { word: "Gloom", level: "Medium" },
-      { word: "Melancholy", level: "High" },
-      { word: "Despair", level: "Extreme" }
-    ]
+    characterHook: "Arijit Singh Songs",
+    hookWhy: "Makes you miss an ex you never had."
   },
   {
     word: "Ire",
@@ -373,12 +309,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fire -> Ire sounds like Fire; burning with anger.",
     tone: "Negative (-)",
     collocation: "Draw the Ire",
-    intensitySpectrum: [
-      { word: "Annoyance", level: "Mild" },
-      { word: "Anger", level: "Medium" },
-      { word: "Ire", level: "High" },
-      { word: "Fury", level: "Extreme" }
-    ]
+    characterHook: "Amrish Puri Eyes",
+    hookWhy: "Just the look shows the ire."
   },
   {
     word: "Flustered",
@@ -391,12 +323,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Flush -> Blood rushes to face (flush) when you are nervous/flustered.",
     tone: "Negative (-)",
     collocation: "Visibly Flustered",
-    intensitySpectrum: [
-      { word: "Unsettled", level: "Mild" },
-      { word: "Confused", level: "Medium" },
-      { word: "Flustered", level: "High" },
-      { word: "Panicked", level: "Extreme" }
-    ]
+    characterHook: "Student in Viva",
+    hookWhy: "Forgot the answer, teacher staring, sweating."
   },
   {
     word: "Envy",
@@ -409,12 +337,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Enemy -> You often feel envy towards an enemy's success.",
     tone: "Negative (-)",
     collocation: "Green with Envy",
-    intensitySpectrum: [
-      { word: "Longing", level: "Mild" },
-      { word: "Jealousy", level: "Medium" },
-      { word: "Envy", level: "High" },
-      { word: "Resentment", level: "Extreme" }
-    ]
+    characterHook: "3 Idiots (Marks Scene)",
+    hookWhy: "Friend fails = Sad. Friend comes 1st = Envy."
   },
   {
     word: "Cheerful",
@@ -427,12 +351,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Cheers! -> In a party, saying 'Cheers' makes everyone cheerful.",
     tone: "Positive (+)",
     collocation: "Cheerful Disposition",
-    intensitySpectrum: [
-      { word: "Glad", level: "Mild" },
-      { word: "Cheerful", level: "Medium" },
-      { word: "Joyful", level: "High" },
-      { word: "Jubilant", level: "Extreme" }
-    ]
+    characterHook: "Ranveer Singh",
+    hookWhy: "Always high energy, smiling, colorful."
   },
   {
     word: "Jubilant",
@@ -445,12 +365,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Jubilee -> Silver/Golden Jubilee celebrations make people jubilant.",
     tone: "Positive (+)",
     collocation: "Jubilant Mood",
-    intensitySpectrum: [
-      { word: "Happy", level: "Mild" },
-      { word: "Thrilled", level: "Medium" },
-      { word: "Jubilant", level: "High" },
-      { word: "Triumphant", level: "Extreme" }
-    ]
+    characterHook: "Election Winning Candidate",
+    hookWhy: "Garlands, dancing, sweets."
   },
   {
     word: "Delighted",
@@ -463,2436 +379,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "De-Light -> When the light comes back after a power cut, we feel delighted.",
     tone: "Positive (+)",
     collocation: "Absolutely Delighted",
-    intensitySpectrum: [
-      { word: "Pleased", level: "Mild" },
-      { word: "Happy", level: "Medium" },
-      { word: "Delighted", level: "High" },
-      { word: "Thrilled", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Tranquil",
-    partOfSpeech: "Adjective",
-    meaning: "Calm and peaceful state, often long-lasting.",
-    translation: "शांत",
-    sentence: "The tranquil lake reflected the mountains perfectly.",
-    synonyms: ["Serene", "Placid", "Calm", "Peaceful"],
-    antonyms: ["Turbulent", "Chaotic", "Agitated"],
-    trick: "Train + Quill -> Writing with a quill on a quiet train is a tranquil experience.",
-    tone: "Positive (+)",
-    collocation: "Tranquil Lake",
-    intensitySpectrum: [
-      { word: "Quiet", level: "Mild" },
-      { word: "Calm", level: "Medium" },
-      { word: "Tranquil", level: "High" },
-      { word: "Serene", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Sanguine",
-    partOfSpeech: "Adjective",
-    meaning: "Optimistic, hopeful attitude despite difficulties.",
-    translation: "आशावादी",
-    sentence: "He remained sanguine about the company's recovery despite the losses.",
-    synonyms: ["Optimistic", "Buoyant", "Hopeful"],
-    antonyms: ["Pessimistic", "Gloomy", "Cynical"],
-    trick: "Sang + Win -> He sang because he was sure he would win (optimistic).",
-    tone: "Positive (+)",
-    collocation: "Sanguine Attitude",
-    intensitySpectrum: [
-      { word: "Hopeful", level: "Mild" },
-      { word: "Optimistic", level: "Medium" },
-      { word: "Sanguine", level: "High" },
-      { word: "Confident", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Beatific",
-    partOfSpeech: "Adjective",
-    meaning: "Spiritual joy and bliss.",
-    translation: "परम सुखी / दिव्य",
-    sentence: "The monk had a beatific smile on his face while meditating.",
-    synonyms: ["Blissful", "Saintly", "Angelic"],
-    antonyms: ["Demonic", "Miserable", "Wretched"],
-    trick: "Beautiful + Terrific -> Divine happiness is beautiful and terrific.",
-    tone: "Positive (+)",
-    collocation: "Beatific Smile",
-    intensitySpectrum: [
-      { word: "Happy", level: "Mild" },
-      { word: "Serene", level: "Medium" },
-      { word: "Beatific", level: "High" },
-      { word: "Divine", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Exuberant",
-    partOfSpeech: "Adjective",
-    meaning: "Energetic and enthusiastic happiness.",
-    translation: "ऊर्जावान / प्रफुल्लित",
-    sentence: "The exuberant crowd cheered loudly for the rock star.",
-    synonyms: ["Ebullient", "Spirited", "Energetic"],
-    antonyms: ["Lethargic", "Apathetic", "Listless"],
-    trick: "Ex + Uber -> You need extra energy to drive an Uber all day.",
-    tone: "Positive (+)",
-    collocation: "Exuberant Personality",
-    intensitySpectrum: [
-      { word: "Lively", level: "Mild" },
-      { word: "Energetic", level: "Medium" },
-      { word: "Exuberant", level: "High" },
-      { word: "Manic", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Mellifluous",
-    partOfSpeech: "Adjective",
-    meaning: "Sweet sounding, especially related to voice or music.",
-    translation: "मधुर",
-    sentence: "She has a rich, mellifluous voice that soothes the soul.",
-    synonyms: ["Dulcet", "Melodious", "Euphonious"],
-    antonyms: ["Cacophonous", "Harsh", "Grating"],
-    trick: "Melody + Flow -> A melody that flows smoothly is mellifluous.",
-    tone: "Positive (+)",
-    collocation: "Mellifluous Voice"
-  },
-  {
-    word: "Magnanimous",
-    partOfSpeech: "Adjective",
-    meaning: "Generous and noble-hearted.",
-    translation: "उदार / महामना",
-    sentence: "He was magnanimous in victory, praising his opponent's skill.",
-    synonyms: ["Benevolent", "Generous", "Altruistic"],
-    antonyms: ["Petty", "Vindictive", "Selfish"],
-    trick: "Mega + Animus -> 'Mega' means big, 'Animus' means soul. Big-souled.",
-    tone: "Positive (+)",
-    collocation: "Magnanimous Gesture",
-    intensitySpectrum: [
-      { word: "Fair", level: "Mild" },
-      { word: "Generous", level: "Medium" },
-      { word: "Magnanimous", level: "High" },
-      { word: "Altruistic", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Benign",
-    partOfSpeech: "Adjective",
-    meaning: "Harmless, kind in nature.",
-    translation: "सौम्य / अनुकूल",
-    sentence: "The tumor turned out to be benign, much to the patient's relief.",
-    synonyms: ["Gentle", "Harmless", "Kindly"],
-    antonyms: ["Malignant", "Harmful", "Hostile"],
-    trick: "Be Nine -> Be innocent and harmless like a nine-year-old.",
-    tone: "Positive (+)",
-    collocation: "Benign Tumor"
-  },
-  {
-    word: "Vexed",
-    partOfSpeech: "Adjective",
-    meaning: "Irritated or annoyed.",
-    translation: "तंग / खीझा हुआ",
-    sentence: "The vexed customer demanded to speak to the manager immediately.",
-    synonyms: ["Irked", "Annoyed", "Agitated"],
-    antonyms: ["Pleased", "Soothed", "Delighted"],
-    trick: "Wax -> Getting your hair waxed is painful and makes you vexed.",
-    tone: "Negative (-)",
-    collocation: "Vexed Question",
-    intensitySpectrum: [
-      { word: "Annoyed", level: "Mild" },
-      { word: "Vexed", level: "Medium" },
-      { word: "Irate", level: "High" },
-      { word: "Incensed", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Irate",
-    partOfSpeech: "Adjective",
-    meaning: "Very angry, often reacting sharply.",
-    translation: "क्रद्ध",
-    sentence: "He received an irate email from a dissatisfied client.",
-    synonyms: ["Furious", "Enraged", "Incensed"],
-    antonyms: ["Calm", "Composed", "Pacified"],
-    trick: "Pirate -> Pirates are always fighting and irate.",
-    tone: "Negative (-)",
-    collocation: "Irate Customer",
-    intensitySpectrum: [
-      { word: "Annoyed", level: "Mild" },
-      { word: "Vexed", level: "Medium" },
-      { word: "Irate", level: "High" },
-      { word: "Incensed", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Morose",
-    partOfSpeech: "Adjective",
-    meaning: "Sullen, gloomy, showing silent displeasure or sadness.",
-    translation: "उदास / चिड़चिड़ा",
-    sentence: "He sat in the corner, silent and morose, refusing to talk.",
-    synonyms: ["Sullen", "Gloomy", "Glum"],
-    antonyms: ["Cheerful", "Genial", "Happy"],
-    trick: "No Rose -> If you get no rose on Valentine's day, you feel morose.",
-    tone: "Negative (-)",
-    collocation: "Morose Silence",
-    intensitySpectrum: [
-      { word: "Gloomy", level: "Mild" },
-      { word: "Glum", level: "Medium" },
-      { word: "Morose", level: "High" },
-      { word: "Depressed", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Apprehension",
-    partOfSpeech: "Noun",
-    meaning: "Anxiety or fear about future events.",
-    translation: "आशंका / डर",
-    sentence: "She felt a wave of apprehension before the exam results were announced.",
-    synonyms: ["Anxiety", "Dread", "Unease"],
-    antonyms: ["Confidence", "Calmness"],
-    trick: "Pre-Tension -> Tension before an event happens is apprehension.",
-    tone: "Negative (-)",
-    collocation: "Deep Apprehension",
-    intensitySpectrum: [
-      { word: "Worry", level: "Mild" },
-      { word: "Anxiety", level: "Medium" },
-      { word: "Apprehension", level: "High" },
-      { word: "Dread", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Skeptical",
-    partOfSpeech: "Adjective",
-    meaning: "Doubtful, questioning the truth or validity of something.",
-    translation: "संशयवादी",
-    sentence: "Investors were skeptical about the startup's ambitious claims.",
-    synonyms: ["Dubious", "Cynical", "Unconvinced"],
-    antonyms: ["Convinced", "Gullible", "Certain"],
-    trick: "Skip it -> You want to skip the plan because you doubt it will work.",
-    tone: "Neutral (0)",
-    collocation: "Skeptical About",
-    intensitySpectrum: [
-      { word: "Unsure", level: "Mild" },
-      { word: "Doubtful", level: "Medium" },
-      { word: "Skeptical", level: "High" },
-      { word: "Cynical", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Repulsed",
-    partOfSpeech: "Verb / Adj",
-    meaning: "Filled with disgust.",
-    translation: "घृणा करना",
-    sentence: "She was repulsed by the smell of the rotting garbage.",
-    synonyms: ["Disgusted", "Revolted", "Repelled"],
-    antonyms: ["Attracted", "Enchanted", "Allured"],
-    trick: "Pulse -> Seeing something so gross your pulse drops.",
-    tone: "Negative (-)",
-    collocation: "Utterly Repulsed",
-    intensitySpectrum: [
-      { word: "Disliked", level: "Mild" },
-      { word: "Distaste", level: "Medium" },
-      { word: "Repulsed", level: "High" },
-      { word: "Disgusted", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Perturb",
-    partOfSpeech: "Verb",
-    meaning: "To disturb or unsettle mentally or emotionally.",
-    translation: "व्याकुल करना",
-    sentence: "The loud noises outside perturbed his concentration.",
-    synonyms: ["Unsettle", "Disturb", "Agitate"],
-    antonyms: ["Calm", "Soothe", "Reassure"],
-    trick: "Turbo -> Putting a car in turbo mode disturbs the silence.",
-    tone: "Negative (-)",
-    collocation: "Deeply Perturbed",
-    intensitySpectrum: [
-      { word: "Bother", level: "Mild" },
-      { word: "Unsettle", level: "Medium" },
-      { word: "Perturb", level: "High" },
-      { word: "Agitate", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Despondent",
-    partOfSpeech: "Adjective",
-    meaning: "Feeling hopeless or discouraged.",
-    translation: "हताश / निराश",
-    sentence: "After failing the interview, he became despondent.",
-    synonyms: ["Disheartened", "Hopeless", "Dejected"],
-    antonyms: ["Hopeful", "Cheerful", "Sanguine"],
-    trick: "The Pond -> Feeling so sad you want to jump in the pond.",
-    tone: "Negative (-)",
-    collocation: "Despondent Mood",
-    intensitySpectrum: [
-      { word: "Sad", level: "Mild" },
-      { word: "Hopeless", level: "Medium" },
-      { word: "Despondent", level: "High" },
-      { word: "Despairing", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Woeful",
-    partOfSpeech: "Adjective",
-    meaning: "Extremely sad and sorrowful.",
-    translation: "दुखी / खेदजनक",
-    sentence: "The puppy gave a woeful look when I left for work.",
-    synonyms: ["Miserable", "Sorrowful", "Wretched"],
-    antonyms: ["Joyful", "Cheerful", "Delighted"],
-    trick: "Woe -> Sounds like 'Oh no', expressing deep sadness.",
-    tone: "Negative (-)",
-    collocation: "Woeful Tale",
-    intensitySpectrum: [
-      { word: "Sad", level: "Mild" },
-      { word: "Sorrowful", level: "Medium" },
-      { word: "Woeful", level: "High" },
-      { word: "Wretched", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Lax",
-    partOfSpeech: "Adjective",
-    meaning: "Not sufficiently strict, severe, or careful.",
-    translation: "ढीला / लापरवाह",
-    sentence: "The security at the airport was lax, allowing people to enter easily.",
-    synonyms: ["Slack", "Negligent", "Careless"],
-    antonyms: ["Strict", "Stringent", "Careful"],
-    trick: "Relax -> If you relax too much at work, you become lax.",
-    tone: "Negative (-)",
-    collocation: "Lax Security",
-    intensitySpectrum: [
-      { word: "Relaxed", level: "Mild" },
-      { word: "Careless", level: "Medium" },
-      { word: "Lax", level: "High" },
-      { word: "Negligent", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Solvency",
-    partOfSpeech: "Noun",
-    meaning: "The ability to pay all debts; financial stability.",
-    translation: "ऋण शोधन क्षमता",
-    sentence: "The bank had to prove its solvency to the regulators.",
-    synonyms: ["Stability", "Soundness", "Wealth"],
-    antonyms: ["Insolvency", "Bankruptcy", "Debt"],
-    trick: "Solve + Currency -> Ability to solve problems with currency.",
-    tone: "Positive (+)",
-    collocation: "Financial Solvency"
-  },
-  {
-    word: "Obtuse",
-    partOfSpeech: "Adjective",
-    meaning: "Annoyingly insensitive or slow to understand.",
-    translation: "मंदबुद्धि",
-    sentence: "He was being deliberately obtuse to avoid answering the question.",
-    synonyms: ["Stupid", "Slow-witted", "Insensitive"],
-    antonyms: ["Sharp", "Astute", "Clever"],
-    trick: "Obtuse Angle -> An angle > 90° is blunt and wide, not sharp.",
-    tone: "Negative (-)",
-    collocation: "Deliberately Obtuse",
-    intensitySpectrum: [
-      { word: "Slow", level: "Mild" },
-      { word: "Dull", level: "Medium" },
-      { word: "Obtuse", level: "High" },
-      { word: "Dense", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Pragmatic",
-    partOfSpeech: "Adjective",
-    meaning: "Dealing with things sensibly and realistically.",
-    translation: "व्यावहारिक",
-    sentence: "We need a pragmatic solution, not just a theoretical one.",
-    synonyms: ["Practical", "Realistic", "Sensible"],
-    antonyms: ["Idealistic", "Impractical", "Dreamy"],
-    trick: "Programmer -> Good programmers are practical (pragmatic), not emotional.",
-    tone: "Positive (+)",
-    collocation: "Pragmatic Approach"
-  },
-  {
-    word: "Erudite",
-    partOfSpeech: "Adjective",
-    meaning: "Having or showing great knowledge or learning.",
-    translation: "विद्वान / ज्ञानी",
-    sentence: "The professor’s erudite lecture impressed the students.",
-    synonyms: ["Learned", "Scholarly", "Knowledgeable"],
-    antonyms: ["Ignorant", "Uneducated", "Illiterate"],
-    trick: "Rude? -> No, he is not rude, he is educated (E-rudite).",
-    tone: "Positive (+)",
-    collocation: "Erudite Scholar"
-  },
-  {
-    word: "Usurp",
-    partOfSpeech: "Verb",
-    meaning: "Take (a position of power) illegally or by force.",
-    translation: "हड़पना",
-    sentence: "The general tried to usurp the throne from the king.",
-    synonyms: ["Seize", "Commandeer", "Hijack"],
-    antonyms: ["Surrender", "Relinquish", "Give in"],
-    trick: "U + Slurp -> You slurp (drink) someone else's drink illegally.",
-    tone: "Negative (-)",
-    collocation: "Usurp Power"
-  },
-  {
-    word: "Riveting",
-    partOfSpeech: "Adjective",
-    meaning: "Completely engrossing; compelling.",
-    translation: "दिलचस्प",
-    sentence: "The movie was so riveting that I couldn't look away.",
-    synonyms: ["Fascinating", "Gripping", "Absorbing"],
-    antonyms: ["Boring", "Dull", "Tedious"],
-    trick: "Rivet -> A metal pin that holds things tight. It holds your attention tight.",
-    tone: "Positive (+)",
-    collocation: "Riveting Story"
-  },
-  {
-    word: "Insipid",
-    partOfSpeech: "Adjective",
-    meaning: "Lacking flavor; lacking vigor or interest.",
-    translation: "फीका / नीरस",
-    sentence: "The soup was insipid and tasted like hot water.",
-    synonyms: ["Tasteless", "Bland", "Boring"],
-    antonyms: ["Tasty", "Interesting", "Piquant"],
-    trick: "In + Sip -> When you sip it, there is no taste in it.",
-    tone: "Negative (-)",
-    collocation: "Insipid Taste"
-  },
-  {
-    word: "Sporadic",
-    partOfSpeech: "Adjective",
-    meaning: "Occurring at irregular intervals or only in a few places.",
-    translation: "छिटपुट / अनियमित",
-    sentence: "Sporadic gunfire was heard throughout the night.",
-    synonyms: ["Occasional", "Infrequent", "Irregular"],
-    antonyms: ["Constant", "Frequent", "Steady"],
-    trick: "Spot -> Occurring in random spots, not everywhere.",
-    tone: "Neutral (0)",
-    collocation: "Sporadic Incidents"
-  },
-  {
-    word: "Erratic",
-    partOfSpeech: "Adjective",
-    meaning: "Not even or regular in pattern or movement; unpredictable.",
-    translation: "अनिश्चित / अस्थिर",
-    sentence: "The stock market has been erratic due to global wars.",
-    synonyms: ["Unpredictable", "Inconsistent", "Volatile"],
-    antonyms: ["Consistent", "Stable", "Predictable"],
-    trick: "Error -> Acting like a computer error or glitch.",
-    tone: "Negative (-)",
-    collocation: "Erratic Behavior"
-  },
-  {
-    word: "Diabolical",
-    partOfSpeech: "Adjective",
-    meaning: "Disgracefully bad or unpleasant; characteristic of the Devil.",
-    translation: "शैतानी / नृशंस",
-    sentence: "The villain hatched a diabolical plot to destroy the city.",
-    synonyms: ["Devilish", "Fiendish", "Wicked"],
-    antonyms: ["Angelic", "Good", "Saintly"],
-    trick: "Diablo -> Diablo means Devil in Spanish.",
-    tone: "Negative (-)",
-    collocation: "Diabolical Plot",
-    intensitySpectrum: [
-      { word: "Bad", level: "Mild" },
-      { word: "Wicked", level: "Medium" },
-      { word: "Evil", level: "High" },
-      { word: "Diabolical", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Heinous",
-    partOfSpeech: "Adjective",
-    meaning: "(Of a person or wrongful act) utterly odious or wicked.",
-    translation: "जघन्य",
-    sentence: "The judge sentenced him to life for the heinous crime.",
-    synonyms: ["Atrocious", "Abominable", "Monstrous"],
-    antonyms: ["Admirable", "Commendable", "Good"],
-    trick: "Highness -> A crime of such 'highness' (magnitude) that it is evil.",
-    tone: "Negative (-)",
-    collocation: "Heinous Crime",
-    intensitySpectrum: [
-      { word: "Mean", level: "Mild" },
-      { word: "Wicked", level: "Medium" },
-      { word: "Heinous", level: "High" },
-      { word: "Diabolical", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Fiendish",
-    partOfSpeech: "Adjective",
-    meaning: "Extremely cruel or unpleasant; extremely complex.",
-    translation: "पिशाच तुल्य / क्रूर",
-    sentence: "The puzzle was fiendishly difficult to solve.",
-    synonyms: ["Wicked", "Cruel", "Vicious"],
-    antonyms: ["Kind", "Gentle", "Benevolent"],
-    trick: "Friend -> Opposite of a Friend is a Fiend (Enemy/Devil).",
-    tone: "Negative (-)",
-    collocation: "Fiendishly Difficult",
-    intensitySpectrum: [
-      { word: "Unpleasant", level: "Mild" },
-      { word: "Cruel", level: "Medium" },
-      { word: "Fiendish", level: "High" },
-      { word: "Evil", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Atrocious",
-    partOfSpeech: "Adjective",
-    meaning: "Horrifyingly wicked; of a very poor quality.",
-    translation: "अति दुष्ट / बहुत बुरा",
-    sentence: "The weather has been atrocious all week.",
-    synonyms: ["Appalling", "Dreadful", "Terrible"],
-    antonyms: ["Excellent", "Superb", "Wonderful"],
-    trick: "Atrocity -> Committing an atrocity makes you atrocious.",
-    tone: "Negative (-)",
-    collocation: "Atrocious Weather",
-    intensitySpectrum: [
-      { word: "Bad", level: "Mild" },
-      { word: "Terrible", level: "Medium" },
-      { word: "Atrocious", level: "High" },
-      { word: "Horrific", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Silos",
-    partOfSpeech: "Noun",
-    meaning: "A system/department causing isolation from others (Corporate Term).",
-    translation: "एकांत / विभाग",
-    sentence: "We need to break down the silos and encourage teamwork between departments.",
-    synonyms: ["Isolation", "Separation", "Pockets"],
-    antonyms: ["Integration", "Unity", "Collaboration"],
-    trick: "Solo -> Working solo (alone) creates silos.",
-    tone: "Negative (-)",
-    collocation: "Organizational Silos"
-  },
-  {
-    word: "Emulate",
-    partOfSpeech: "Verb",
-    meaning: "Match or surpass (a person or achievement), typically by imitation.",
-    translation: "अनुकरण करना",
-    sentence: "Young players try to emulate their sporting heroes.",
-    synonyms: ["Imitate", "Copy", "Mirror"],
-    antonyms: ["Neglect", "Reject", "Ignore"],
-    trick: "Simulator -> A simulator tries to copy real life.",
-    tone: "Positive (+)",
-    collocation: "Emulate Success"
-  },
-  {
-    word: "Virulent",
-    partOfSpeech: "Adjective",
-    meaning: "(of a disease) extremely severe/harmful; bitterly hostile.",
-    translation: "विषैला / संक्रामक",
-    sentence: "A virulent strain of the flu is spreading.",
-    synonyms: ["Toxic", "Deadly", "Venomous"],
-    antonyms: ["Harmless", "Benign", "Mild"],
-    trick: "Virus -> Related to a dangerous virus.",
-    tone: "Negative (-)",
-    collocation: "Virulent Strain"
-  },
-  {
-    word: "Hostile",
-    partOfSpeech: "Adjective",
-    meaning: "Unfriendly; antagonistic.",
-    translation: "शत्रुतापूर्ण",
-    sentence: "The audience was hostile towards the comedian.",
-    synonyms: ["Aggressive", "Belligerent", "Unfriendly"],
-    antonyms: ["Friendly", "Warm", "Welcoming"],
-    trick: "Hostel -> Hostel wardens are often hostile (strict/unfriendly).",
-    tone: "Negative (-)",
-    collocation: "Hostile Takeover",
-    intensitySpectrum: [
-      { word: "Unfriendly", level: "Mild" },
-      { word: "Aggressive", level: "Medium" },
-      { word: "Hostile", level: "High" },
-      { word: "Belligerent", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Churlish",
-    partOfSpeech: "Adjective",
-    meaning: "Rude in a mean-spirited and surly way.",
-    translation: "अभद्र / गंवार",
-    sentence: "It would be churlish to refuse such a generous offer.",
-    synonyms: ["Rude", "Impolite", "Boorish"],
-    antonyms: ["Polite", "Gracious", "Courteous"],
-    trick: "Childish -> Acting rude like a spoiled child.",
-    tone: "Negative (-)",
-    collocation: "Churlish Behavior",
-    intensitySpectrum: [
-      { word: "Impolite", level: "Mild" },
-      { word: "Rude", level: "Medium" },
-      { word: "Churlish", level: "High" },
-      { word: "Boorish", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Loutish",
-    partOfSpeech: "Adjective",
-    meaning: "Uncouth and aggressive.",
-    translation: "गंवार / अशिष्ट",
-    sentence: "His loutish behavior at the party embarrassed his wife.",
-    synonyms: ["Thuggish", "Boorish", "Oafish"],
-    antonyms: ["Refined", "Gentlemanly", "Polite"],
-    trick: "Loud -> Loud and aggressive people are loutish.",
-    tone: "Negative (-)",
-    collocation: "Loutish Behavior",
-    intensitySpectrum: [
-      { word: "Uncouth", level: "Mild" },
-      { word: "Aggressive", level: "Medium" },
-      { word: "Loutish", level: "High" },
-      { word: "Thuggish", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Ebullient",
-    partOfSpeech: "Adjective",
-    meaning: "Cheerful and full of energy.",
-    translation: "जोशीला",
-    sentence: "The ebullient host kept the party alive all night.",
-    synonyms: ["Buoyant", "Cheerful", "Joyful"],
-    antonyms: ["Depressed", "Apathetic", "Sullen"],
-    trick: "Bull -> Having the energy of a raging bull (happy energy).",
-    tone: "Positive (+)",
-    collocation: "Ebullient Mood",
-    intensitySpectrum: [
-      { word: "Cheerful", level: "Mild" },
-      { word: "Lively", level: "Medium" },
-      { word: "Ebullient", level: "High" },
-      { word: "Ecstatic", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Placid",
-    partOfSpeech: "Adjective",
-    meaning: "Not easily upset or excited; calm.",
-    translation: "शांत",
-    sentence: "The placid waters of the lake reflected the moon.",
-    synonyms: ["Calm", "Tranquil", "Serene"],
-    antonyms: ["Excitable", "Temperamental", "Angry"],
-    trick: "Plastic -> Plastic doesn't move or react; it stays calm.",
-    tone: "Positive (+)",
-    collocation: "Placid Waters",
-    intensitySpectrum: [
-      { word: "Quiet", level: "Mild" },
-      { word: "Calm", level: "Medium" },
-      { word: "Placid", level: "High" },
-      { word: "Serene", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Lethargic",
-    partOfSpeech: "Adjective",
-    meaning: "Affected by lethargy; sluggish and apathetic.",
-    translation: "सुस्त",
-    sentence: "The hot weather made everyone feel lethargic.",
-    synonyms: ["Sluggish", "Inert", "Torpid"],
-    antonyms: ["Energetic", "Vigorous", "Active"],
-    trick: "Leather -> Moving as if you are made of heavy leather.",
-    tone: "Negative (-)",
-    collocation: "Feeling Lethargic",
-    intensitySpectrum: [
-      { word: "Tired", level: "Mild" },
-      { word: "Sluggish", level: "Medium" },
-      { word: "Lethargic", level: "High" },
-      { word: "Torpid", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Adroit",
-    partOfSpeech: "Adjective",
-    meaning: "Clever or skillful in using the hands or mind.",
-    translation: "निपुण / चतुर",
-    sentence: "She was adroit at avoiding awkward questions.",
-    synonyms: ["Skillful", "Adept", "Dexterous"],
-    antonyms: ["Clumsy", "Incompetent", "Inept"],
-    trick: "Android -> Androids (robots) are programmed to be skillful.",
-    tone: "Positive (+)",
-    collocation: "Adroit Handling"
-  },
-  {
-    word: "Doctrine",
-    partOfSpeech: "Noun",
-    meaning: "A belief or set of beliefs held and taught by a Church, party, or group.",
-    translation: "सिद्धांत",
-    sentence: "The government is committed to the doctrine of free trade.",
-    synonyms: ["Creed", "Dogma", "Principle"],
-    antonyms: ["Skepticism", "Disbelief", "Doubt"],
-    trick: "Doctor -> A doctor follows the rules of medicine strictly.",
-    tone: "Neutral (0)",
-    collocation: "Official Doctrine"
-  },
-  {
-    word: "Dogma",
-    partOfSpeech: "Noun",
-    meaning: "A principle or set of principles laid down by an authority as incontrovertibly true.",
-    translation: "हठधर्मिता / मत",
-    sentence: "He challenged the political dogma of the party.",
-    synonyms: ["Tenet", "Canon", "Belief"],
-    antonyms: ["Open-mindedness", "Ambiguity", "Doubt"],
-    trick: "Dog -> A dog follows its master's orders without questioning.",
-    tone: "Neutral (0)",
-    collocation: "Political Dogma"
-  },
-  {
-    word: "Dexterous",
-    partOfSpeech: "Adjective",
-    meaning: "Showing or having skill, especially with the hands.",
-    translation: "निपुण / कुशल",
-    sentence: "The magician's dexterous hands amazed the audience.",
-    synonyms: ["Deft", "Adept", "Agile"],
-    antonyms: ["Clumsy", "Awkward", "Unskilled"],
-    trick: "Dexter -> Dexter (from the cartoon) was a genius kid with machines.",
-    tone: "Positive (+)",
-    collocation: "Dexterous Movement"
-  },
-  {
-    word: "Vagabond",
-    partOfSpeech: "Noun/Adj",
-    meaning: "A person who wanders from place to place without a home.",
-    translation: "आवारा / घुमक्कड़",
-    sentence: "He lived the life of a vagabond, traveling with just a backpack.",
-    synonyms: ["Wanderer", "Nomad", "Drifter"],
-    antonyms: ["Resident", "Settler", "Inhabitant"],
-    trick: "James Bond -> James Bond is always traveling like a vagabond.",
-    tone: "Neutral (0)",
-    collocation: "Vagabond Life"
-  },
-  {
-    word: "Peregrine",
-    partOfSpeech: "Adjective",
-    meaning: "Wandering, traveling, or migratory.",
-    translation: "विदेशी / घुमंतू",
-    sentence: "The peregrine falcon is known for its long migrations.",
-    synonyms: ["Migratory", "Wandering", "Roving"],
-    antonyms: ["Native", "Indigenous", "Resident"],
-    trick: "Per + Agri -> Moving per (through) agri (fields/land).",
-    tone: "Neutral (0)",
-    collocation: "Peregrine Falcon"
-  },
-  {
-    word: "Sedentary",
-    partOfSpeech: "Adjective",
-    meaning: "Tending to spend much time seated; somewhat inactive.",
-    translation: "निष्क्रिय / बैठा रहने वाला",
-    sentence: "A sedentary lifestyle can lead to health problems like obesity.",
-    synonyms: ["Inactive", "Stationary", "Desk-bound"],
-    antonyms: ["Active", "Mobile", "Energetic"],
-    trick: "Sediment -> Sediment settles at the bottom and doesn't move.",
-    tone: "Negative (-)",
-    collocation: "Sedentary Lifestyle"
-  },
-  {
-    word: "Endemic",
-    partOfSpeech: "Adjective",
-    meaning: "(Of a disease or condition) regularly found among particular people or in a certain area.",
-    translation: "स्थानीय / विशेष क्षेत्र का",
-    sentence: "Malaria is endemic to many tropical countries.",
-    synonyms: ["Indigenous", "Native", "Local"],
-    antonyms: ["Foreign", "Exotic", "Pandemic"],
-    trick: "End + Mic -> The sound of the mic ends here; it is local to this room.",
-    tone: "Neutral (0)",
-    collocation: "Endemic Disease"
-  },
-  {
-    word: "Prerogative",
-    partOfSpeech: "Noun",
-    meaning: "A right or privilege exclusive to a particular individual or class.",
-    translation: "विशेषाधिकार",
-    sentence: "Making executive decisions is the prerogative of the CEO.",
-    synonyms: ["Privilege", "Right", "Entitlement"],
-    antonyms: ["Duty", "Obligation", "Disqualification"],
-    trick: "Pre-rogative -> A King's right before (Pre) anyone else questions (Interrogative).",
-    tone: "Neutral (0)",
-    collocation: "Royal Prerogative"
-  },
-  {
-    word: "Perquisite",
-    partOfSpeech: "Noun",
-    meaning: "A benefit which one enjoys or is entitled to on account of one's job.",
-    translation: "अनुलाभ / ऊपरी लाभ",
-    sentence: "Free travel is a perquisite of working for an airline.",
-    synonyms: ["Perk", "Bonus", "Benefit"],
-    antonyms: ["Loss", "Penalty", "Disadvantage"],
-    trick: "Perk -> The word 'Perk' is just a short form of Perquisite.",
-    tone: "Positive (+)",
-    collocation: "Job Perquisite"
-  },
-  {
-    word: "Sanction",
-    partOfSpeech: "Noun/Verb",
-    meaning: "1. Official permission. 2. A penalty for disobeying a law.",
-    translation: "1. मंजूरी 2. प्रतिबंध",
-    sentence: "The project received official sanction. 2. Trade sanctions were imposed.",
-    synonyms: ["Authorization", "Penalty"],
-    antonyms: ["Prohibition", "Reward"],
-    trick: "Sank -> If you get a sanction (penalty), your business sank.",
-    tone: "Neutral (0)",
-    collocation: "Official Sanction"
-  },
-  {
-    word: "Indulgent",
-    partOfSpeech: "Adjective",
-    meaning: "Having or indicating a tendency to be overly generous to or lenient with someone.",
-    translation: "उदार / पक्षपाती",
-    sentence: "The indulgent grandmother gave the kids candy before dinner.",
-    synonyms: ["Lenient", "Permissive", "Tolerant"],
-    antonyms: ["Strict", "Severe", "Stern"],
-    trick: "Indulge -> If you indulge in chocolate, you are being indulgent to yourself.",
-    tone: "Negative (-)",
-    collocation: "Indulgent Parent"
-  },
-  {
-    word: "Leeway",
-    partOfSpeech: "Noun",
-    meaning: "The amount of freedom to move or act that is available.",
-    translation: "छूट / गुंजाइश",
-    sentence: "The manager gave us some leeway to finish the project late.",
-    synonyms: ["Latitude", "Freedom", "Scope"],
-    antonyms: ["Restriction", "Constraint", "Tightness"],
-    trick: "Lee + Way -> Leaving a way open for movement.",
-    tone: "Positive (+)",
-    collocation: "Give Leeway"
-  },
-  {
-    word: "Latitude",
-    partOfSpeech: "Noun",
-    meaning: "Scope for freedom of action or thought.",
-    translation: "स्वतंत्रता / विस्तार",
-    sentence: "Journalists should have considerable latitude in criticizing public officials.",
-    synonyms: ["Freedom", "Liberty", "Leeway"],
-    antonyms: ["Limitation", "Restriction", "Bondage"],
-    trick: "Map Lines -> Latitude lines show how wide the world is (width/freedom).",
-    tone: "Positive (+)",
-    collocation: "Wide Latitude"
-  },
-  {
-    word: "Deposition",
-    partOfSpeech: "Noun",
-    meaning: "1. The action of deposing someone, especially a monarch. 2. A formal legal statement.",
-    translation: "1. पदच्युति 2. बयान",
-    sentence: "The deposition of the dictator led to chaos. 2. He gave a deposition in court.",
-    synonyms: ["Removal", "Testimony"],
-    antonyms: ["Installation", "Coronation"],
-    trick: "De-Position -> Removing someone from their Position.",
-    tone: "Neutral (0)",
-    collocation: "Legal Deposition"
-  },
-  {
-    word: "Abdication",
-    partOfSpeech: "Noun",
-    meaning: "An act of renouncing the throne or authority.",
-    translation: "त्याग",
-    sentence: "The king's abdication shocked the nation.",
-    synonyms: ["Resignation", "Renunciation", "Surrender"],
-    antonyms: ["Coronation", "Accession", "Acceptance"],
-    trick: "Ab-Dictation -> The Dictator leaves (Absent).",
-    tone: "Neutral (0)",
-    collocation: "Abdication of Duty"
-  },
-  {
-    word: "Impeachment",
-    partOfSpeech: "Noun",
-    meaning: "A charge of misconduct made against the holder of a public office.",
-    translation: "महाभियोग",
-    sentence: "The president faced impeachment for corruption.",
-    synonyms: ["Indictment", "Accusation", "Charge"],
-    antonyms: ["Absolution", "Exoneration", "Praise"],
-    trick: "Peach -> A peach bruises easily; impeachment bruises your reputation.",
-    tone: "Negative (-)",
-    collocation: "Face Impeachment"
-  },
-  {
-    word: "Disavowal",
-    partOfSpeech: "Noun",
-    meaning: "The denial of any responsibility or support for something.",
-    translation: "इनकार / अस्वीकृति",
-    sentence: "The government issued a disavowal of the secret operation.",
-    synonyms: ["Denial", "Rejection", "Repudiation"],
-    antonyms: ["Admission", "Acknowledgment", "Confession"],
-    trick: "Dis-Vow -> To break a vow or promise; to say you didn't do it.",
-    tone: "Negative (-)",
-    collocation: "Public Disavowal"
-  },
-  {
-    word: "Credence",
-    partOfSpeech: "Noun",
-    meaning: "Belief in or acceptance of something as true.",
-    translation: "विश्वास / साख",
-    sentence: "The letters give credence to the theory that he was murdered.",
-    synonyms: ["Credibility", "Belief", "Trust"],
-    antonyms: ["Disbelief", "Distrust", "Skepticism"],
-    trick: "Credit -> If you have credit, people give credence to you.",
-    tone: "Positive (+)",
-    collocation: "Give Credence"
-  },
-  {
-    word: "Vain",
-    partOfSpeech: "Adjective",
-    meaning: "1. Having or showing an excessively high opinion of one's appearance. 2. Producing no result; useless.",
-    translation: "1. अहंकारी 2. व्यर्थ",
-    sentence: "He is so vain about his hair. 2. They made a vain attempt to escape.",
-    synonyms: ["Conceited", "Futile"],
-    antonyms: ["Modest", "Successful"],
-    trick: "Vein -> Looking at your veins in the mirror (Self-obsessed) OR 'In vain' (useless).",
-    tone: "Negative (-)",
-    collocation: "In Vain"
-  },
-  {
-    word: "Abortive",
-    partOfSpeech: "Adjective",
-    meaning: "Failing to produce the intended result.",
-    translation: "निष्फल / अधूरा",
-    sentence: "The rebels made an abortive attempt to seize power.",
-    synonyms: ["Unsuccessful", "Failed", "Futile"],
-    antonyms: ["Successful", "Fruitful", "Effective"],
-    trick: "Abort -> To abort a mission means it failed.",
-    tone: "Negative (-)",
-    collocation: "Abortive Attempt"
-  },
-  {
-    word: "Pompous",
-    partOfSpeech: "Adjective",
-    meaning: "Affectedly and irritatingly grand, solemn, or self-important.",
-    translation: "आडंबरपूर्ण / घमंडी",
-    sentence: "The pompous official refused to talk to the common people.",
-    synonyms: ["Arrogant", "Pretentious", "Haughty"],
-    antonyms: ["Humble", "Modest", "Unassuming"],
-    trick: "Pomp -> 'Pomp and Show' -> Showing off too much.",
-    tone: "Negative (-)",
-    collocation: "Pompous Ass"
-  },
-  {
-    word: "Efficacious",
-    partOfSpeech: "Adjective",
-    meaning: "(Typically of something inanimate or abstract) successful in producing a desired or intended result.",
-    translation: "प्रभावकारी",
-    sentence: "The vaccine proved to be highly efficacious against the virus.",
-    synonyms: ["Effective", "Productive", "Potent"],
-    antonyms: ["Ineffective", "Useless", "Weak"],
-    trick: "Effect -> Something that produces a good effect.",
-    tone: "Positive (+)",
-    collocation: "Highly Efficacious"
-  },
-  {
-    word: "Prolific",
-    partOfSpeech: "Adjective",
-    meaning: "(Of a plant, animal, or person) producing much fruit or foliage or many offspring.",
-    translation: "उपजाऊ / बहुफलदायक",
-    sentence: "Picasso was a prolific artist, creating thousands of works.",
-    synonyms: ["Productive", "Creative", "Fertile"],
-    antonyms: ["Unproductive", "Barren", "Sterile"],
-    trick: "Pro-Life -> Creating a lot of life (or work).",
-    tone: "Positive (+)",
-    collocation: "Prolific Writer"
-  },
-  {
-    word: "Advent",
-    partOfSpeech: "Noun",
-    meaning: "The arrival of a notable person, thing, or event.",
-    translation: "आगमन",
-    sentence: "The advent of the internet changed the world forever.",
-    synonyms: ["Arrival", "Appearance", "Emergence"],
-    antonyms: ["Departure", "Disappearance", "Exit"],
-    trick: "Adventure -> Every adventure starts with an advent (arrival).",
-    tone: "Neutral (0)",
-    collocation: "Advent of Technology"
-  },
-  {
-    word: "Inception",
-    partOfSpeech: "Noun",
-    meaning: "The establishment or starting point of an institution or activity.",
-    translation: "आरंभ / शुरुआत",
-    sentence: "Since its inception, the company has grown rapidly.",
-    synonyms: ["Beginning", "Commencement", "Origin"],
-    antonyms: ["Conclusion", "End", "Termination"],
-    trick: "Incept -> Movie 'Inception' was about planting an idea (the start).",
-    tone: "Neutral (0)",
-    collocation: "Since Inception"
-  },
-  {
-    word: "Cessation",
-    partOfSpeech: "Noun",
-    meaning: "The fact or process of ending or being brought to an end.",
-    translation: "समाप्ति / विराम",
-    sentence: "The treaty called for a cessation of hostilities.",
-    synonyms: ["End", "Stoppage", "Halt"],
-    antonyms: ["Commencement", "Start", "Continuation"],
-    trick: "Cease -> Ceasefire means stopping the fire.",
-    tone: "Neutral (0)",
-    collocation: "Cessation of Hostilities"
-  },
-  {
-    word: "Ratified",
-    partOfSpeech: "Verb",
-    meaning: "Sign or give formal consent to (a treaty, contract, or agreement), making it officially valid.",
-    translation: "पुष्टि करना / मंजूर करना",
-    sentence: "The parliament ratified the peace treaty.",
-    synonyms: ["Approved", "Confirmed", "Endorsed"],
-    antonyms: ["Rejected", "Vetoed", "Revoked"],
-    trick: "Rate -> You rate something 5 stars to approve/validate it.",
-    tone: "Positive (+)",
-    collocation: "Ratified Treaty"
-  },
-  {
-    word: "Repudiate",
-    partOfSpeech: "Verb",
-    meaning: "Refuse to accept or be associated with; deny the truth or validity of.",
-    translation: "अस्वीकार करना",
-    sentence: "The politician repudiated the allegations of corruption.",
-    synonyms: ["Reject", "Deny", "Renounce"],
-    antonyms: ["Accept", "Embrace", "Confirm"],
-    trick: "Reputation -> To save your reputation, you reject (repudiate) bad claims.",
-    tone: "Negative (-)",
-    collocation: "Repudiate Claims"
-  },
-  {
-    word: "Abrogate",
-    partOfSpeech: "Verb",
-    meaning: "Repeal or do away with (a law, right, or formal agreement).",
-    translation: "रद्द करना",
-    sentence: "The new government promised to abrogate the old tax laws.",
-    synonyms: ["Repeal", "Revoke", "Annul"],
-    antonyms: ["Enact", "Institute", "Establish"],
-    trick: "Abe-Gate -> Close the gate on a law; cancel it.",
-    tone: "Negative (-)",
-    collocation: "Abrogate Treaty"
-  },
-  {
-    word: "Concomitant",
-    partOfSpeech: "Adjective",
-    meaning: "Naturally accompanying or associated.",
-    translation: "सहगामी / साथ में",
-    sentence: "Inflation is a concomitant of rapid economic growth.",
-    synonyms: ["Accompanying", "Associated", "Related"],
-    antonyms: ["Unrelated", "Independent", "Separate"],
-    trick: "Come + Commit -> Things that come together and are committed to each other.",
-    tone: "Neutral (0)",
-    collocation: "Concomitant Risk"
-  },
-  {
-    word: "Profound",
-    partOfSpeech: "Adjective",
-    meaning: "Showing great knowledge, insight, or intensity; reaching to the depths of one's nature.",
-    translation: "गहरा / गंभीर",
-    sentence: "The speaker's words had a profound impact on the audience, changing their perspective forever.",
-    synonyms: ["Deep", "Intense", "Insightful"],
-    antonyms: ["Superficial", "Shallow", "Trivial"],
-    trick: "Pro + Found -> A 'Pro' (professional) person has 'Found' deep knowledge that is not just on the surface.",
-    tone: "Positive (+)",
-    collocation: "Profound Impact"
-  },
-  {
-    word: "Bleak",
-    partOfSpeech: "Adjective",
-    meaning: "Lacking in warmth, life, or hope; cold and miserable.",
-    translation: "बेरंग / निराशाजनक",
-    sentence: "The future of the company looks bleak unless they find a new investor soon.",
-    synonyms: ["Gloomy", "Desolate", "Cheerless"],
-    antonyms: ["Bright", "Cheerful", "Promising"],
-    trick: "Leak -> If your roof has a leak during a cold, rainy winter night, the situation becomes bleak.",
-    tone: "Negative (-)",
-    collocation: "Bleak Future"
-  },
-  {
-    word: "Vitiate",
-    partOfSpeech: "Verb",
-    meaning: "To spoil or impair the quality or efficiency of something.",
-    translation: "दूषित करना / भ्रष्ट करना",
-    sentence: "A single technical error can vitiate the entire contract.",
-    synonyms: ["Spoil", "Impair", "Mar"],
-    antonyms: ["Purify", "Validate", "Strengthen"],
-    trick: "Wish + Ate -> If you 'ate' a wish, you spoiled it.",
-    tone: "Negative (-)",
-    collocation: "Vitiate the atmosphere",
-    intensitySpectrum: [
-      { word: "Damage", level: "Mild" },
-      { word: "Spoil", level: "Medium" },
-      { word: "Vitiate", level: "High" },
-      { word: "Destroy", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Detrimental",
-    partOfSpeech: "Adjective",
-    meaning: "Tending to cause harm.",
-    translation: "हानिकारक",
-    sentence: "Smoking is detrimental to your health.",
-    synonyms: ["Harmful", "Damaging", "Injurious"],
-    antonyms: ["Beneficial", "Advantageous", "Helpful"],
-    trick: "De-trim -> If you trim a plant too much, it is detrimental.",
-    tone: "Negative (-)",
-    collocation: "Detrimental Effect",
-    intensitySpectrum: [
-      { word: "Unfavorable", level: "Mild" },
-      { word: "Harmful", level: "Medium" },
-      { word: "Detrimental", level: "High" },
-      { word: "Fatal", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Antagonize",
-    partOfSpeech: "Verb",
-    meaning: "To cause someone to become hostile.",
-    translation: "विरोध करना / दुश्मन बनाना",
-    sentence: "He managed to antagonize his coworkers with his rude comments.",
-    synonyms: ["Alienate", "Provoke", "Annoy"],
-    antonyms: ["Pacify", "Placate", "Befriend"],
-    trick: "Anti + Gone -> Going anti (against) someone makes them gone (hostile).",
-    tone: "Negative (-)",
-    collocation: "Antagonize the voters",
-    intensitySpectrum: [
-      { word: "Annoy", level: "Mild" },
-      { word: "Provoke", level: "Medium" },
-      { word: "Antagonize", level: "High" },
-      { word: "Enrage", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Conducive",
-    partOfSpeech: "Adjective",
-    meaning: "Making a certain situation or outcome likely or possible.",
-    translation: "सहायक / अनुकूल",
-    sentence: "A quiet room is conducive to studying.",
-    synonyms: ["Favorable", "Beneficial", "Helpful"],
-    antonyms: ["Unfavorable", "Hindering", "Detrimental"],
-    trick: "Conduct -> Good conduct is conducive to success.",
-    tone: "Positive (+)",
-    collocation: "Conducive Environment",
-    intensitySpectrum: [
-      { word: "Helpful", level: "Mild" },
-      { word: "Useful", level: "Medium" },
-      { word: "Conducive", level: "High" },
-      { word: "Essential", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Deleterious",
-    partOfSpeech: "Adjective",
-    meaning: "Causing harm or damage.",
-    translation: "हानिकारक / घातक",
-    sentence: "The chemical has deleterious effects on the nervous system.",
-    synonyms: ["Harmful", "Injurious", "Detrimental"],
-    antonyms: ["Beneficial", "Safe", "Innocuous"],
-    trick: "Delete -> It 'deletes' your health.",
-    tone: "Negative (-)",
-    collocation: "Deleterious Consequences",
-    intensitySpectrum: [
-      { word: "Bad", level: "Mild" },
-      { word: "Harmful", level: "Medium" },
-      { word: "Deleterious", level: "High" },
-      { word: "Lethal", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Rampant",
-    partOfSpeech: "Adjective",
-    meaning: "Flourishing or spreading unchecked.",
-    translation: "अनियंत्रित / व्याप्त",
-    sentence: "Corruption was rampant in the local government.",
-    synonyms: ["Uncontrolled", "Widespread", "Unchecked"],
-    antonyms: ["Controlled", "Restrained", "Limited"],
-    trick: "Ramp -> Walking up a ramp without brakes (Uncontrolled).",
-    tone: "Negative (-)",
-    collocation: "Rampant Corruption",
-    intensitySpectrum: [
-      { word: "Growing", level: "Mild" },
-      { word: "Spreading", level: "Medium" },
-      { word: "Rampant", level: "High" },
-      { word: "Ubiquitous", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Pervasive",
-    partOfSpeech: "Adjective",
-    meaning: "Spreading widely throughout an area or a group of people.",
-    translation: "व्यापक / सर्वत्र",
-    sentence: "The pervasive smell of coffee filled the office.",
-    synonyms: ["Prevalent", "Penetrating", "Ubiquitous"],
-    antonyms: ["Rare", "Scarce", "Localized"],
-    trick: "Per + Vase -> Water in a vase spreads everywhere (pervasively).",
-    tone: "Neutral (0)",
-    collocation: "Pervasive Influence",
-    intensitySpectrum: [
-      { word: "Common", level: "Mild" },
-      { word: "Widespread", level: "Medium" },
-      { word: "Pervasive", level: "High" },
-      { word: "Omnipresent", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Curbed",
-    partOfSpeech: "Verb/Adj",
-    meaning: "Restrained or kept in check.",
-    translation: "नियंत्रित किया गया",
-    sentence: "Strict measures were taken to curb the rising inflation.",
-    synonyms: ["Restrained", "Suppressed", "Checked"],
-    antonyms: ["Released", "Unleashed", "Encouraged"],
-    trick: "Curve -> You slow down (curb speed) at a curve.",
-    tone: "Neutral (0)",
-    collocation: "Curb the spread",
-    intensitySpectrum: [
-      { word: "Slowed", level: "Mild" },
-      { word: "Limited", level: "Medium" },
-      { word: "Curbed", level: "High" },
-      { word: "Halted", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Conundrum",
-    partOfSpeech: "Noun",
-    meaning: "A confusing and difficult problem or question.",
-    translation: "पहेली / जटिल समस्या",
-    sentence: "The physics problem was a conundrum even for the professor.",
-    synonyms: ["Dilemma", "Puzzle", "Riddle"],
-    antonyms: ["Solution", "Clarification", "Answer"],
-    trick: "Drum -> Beating a drum in confusion.",
-    tone: "Negative (-)",
-    collocation: "Ethical Conundrum",
-    intensitySpectrum: [
-      { word: "Question", level: "Mild" },
-      { word: "Problem", level: "Medium" },
-      { word: "Conundrum", level: "High" },
-      { word: "Impossibility", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Enigma",
-    partOfSpeech: "Noun",
-    meaning: "A person or thing that is mysterious or difficult to understand.",
-    translation: "रहस्य / पहेली",
-    sentence: "His motives remain an enigma to everyone.",
-    synonyms: ["Mystery", "Puzzle", "Riddle"],
-    antonyms: ["Open book", "Known fact", "Clarity"],
-    trick: "Nig (Night) + Ma -> Dark/mysterious like night.",
-    tone: "Neutral (0)",
-    collocation: "Remain an enigma",
-    intensitySpectrum: [
-      { word: "Secret", level: "Mild" },
-      { word: "Mystery", level: "Medium" },
-      { word: "Enigma", level: "High" },
-      { word: "Incomprehensibility", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Quandary",
-    partOfSpeech: "Noun",
-    meaning: "A state of perplexity or uncertainty over what to do in a difficult situation.",
-    translation: "असमंजस / दुविधा",
-    sentence: "He was in a quandary about which job offer to accept.",
-    synonyms: ["Dilemma", "Predicament", "Plight"],
-    antonyms: ["Certainty", "Resolution", "Confidence"],
-    trick: "Wander -> Mind wandering because you don't know what to do.",
-    tone: "Negative (-)",
-    collocation: "In a quandary",
-    intensitySpectrum: [
-      { word: "Doubt", level: "Mild" },
-      { word: "Confusion", level: "Medium" },
-      { word: "Quandary", level: "High" },
-      { word: "Paralysis", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Protract",
-    partOfSpeech: "Verb",
-    meaning: "Prolong.",
-    translation: "लंबा करना / खींचना",
-    sentence: "They tried to protract the discussion to delay the vote.",
-    synonyms: ["Prolong", "Extend", "Lengthen"],
-    antonyms: ["Curtail", "Shorten", "Abridge"],
-    trick: "Pro + Tractor -> A tractor moves slowly and pulls things long.",
-    tone: "Negative (-)",
-    collocation: "Protracted Negotiation",
-    intensitySpectrum: [
-      { word: "Continue", level: "Mild" },
-      { word: "Extend", level: "Medium" },
-      { word: "Protract", level: "High" },
-      { word: "Drag on", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Deferred",
-    partOfSpeech: "Verb/Adj",
-    meaning: "Put off (an action or event) to a later time; postpone.",
-    translation: "स्थगित",
-    sentence: "The decision was deferred until the next meeting.",
-    synonyms: ["Postponed", "Delayed", "Shelved"],
-    antonyms: ["Expedited", "Hastened", "Advanced"],
-    trick: "De-Fare -> Do the fare (payment) later.",
-    tone: "Neutral (0)",
-    collocation: "Deferred Payment",
-    intensitySpectrum: [
-      { word: "Paused", level: "Mild" },
-      { word: "Delayed", level: "Medium" },
-      { word: "Deferred", level: "High" },
-      { word: "Cancelled", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Redacted",
-    partOfSpeech: "Verb/Adj",
-    meaning: "Censored or obscured for legal or security reasons.",
-    translation: "संपादित (हटाया गया)",
-    sentence: "The sensitive names were redacted from the public report.",
-    synonyms: ["Censored", "Obscured", "Edited"],
-    antonyms: ["Revealed", "Exposed", "Published"],
-    trick: "Red Act -> Paint it red/black to hide the act.",
-    tone: "Neutral (0)",
-    collocation: "Redacted Document",
-    intensitySpectrum: [
-      { word: "Edited", level: "Mild" },
-      { word: "Censored", level: "Medium" },
-      { word: "Redacted", level: "High" },
-      { word: "Erased", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Expurgate",
-    partOfSpeech: "Verb",
-    meaning: "Remove matter thought to be objectionable or unsuitable from a book or account.",
-    translation: "शुद्ध करना / छांटना",
-    sentence: "The movie was expurgated to make it suitable for children.",
-    synonyms: ["Censor", "Bowdlerize", "Clean up"],
-    antonyms: ["Include", "Permit", "Uncensor"],
-    trick: "Purge -> To purge (remove) the bad parts.",
-    tone: "Neutral (0)",
-    collocation: "Expurgated Version",
-    intensitySpectrum: [
-      { word: "Edit", level: "Mild" },
-      { word: "Clean", level: "Medium" },
-      { word: "Expurgate", level: "High" },
-      { word: "Sterilize", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Placate",
-    partOfSpeech: "Verb",
-    meaning: "Make (someone) less angry or hostile.",
-    translation: "शांत करना",
-    sentence: "He tried to placate the angry customer with a refund.",
-    synonyms: ["Pacify", "Appease", "Mollify"],
-    antonyms: ["Provoke", "Antagonize", "Enrage"],
-    trick: "Plate + Cake -> Give a plate of cake to calm them down.",
-    tone: "Positive (+)",
-    collocation: "Placate the crowd",
-    intensitySpectrum: [
-      { word: "Calm", level: "Mild" },
-      { word: "Soothe", level: "Medium" },
-      { word: "Placate", level: "High" },
-      { word: "Grovel", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Assuage",
-    partOfSpeech: "Verb",
-    meaning: "Make (an unpleasant feeling) less intense.",
-    translation: "कम करना / शांत करना",
-    sentence: "The letter failed to assuage her fears.",
-    synonyms: ["Relieve", "Ease", "Alleviate"],
-    antonyms: ["Aggravate", "Intensify", "Worsen"],
-    trick: "Sausage -> Eating a sausage assuages hunger.",
-    tone: "Positive (+)",
-    collocation: "Assuage guilt/grief",
-    intensitySpectrum: [
-      { word: "Ease", level: "Mild" },
-      { word: "Relieve", level: "Medium" },
-      { word: "Assuage", level: "High" },
-      { word: "Eliminate", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Mollify",
-    partOfSpeech: "Verb",
-    meaning: "Appease the anger or anxiety of (someone).",
-    translation: "मुलायम करना / शांत करना",
-    sentence: "The manager tried to mollify the critics with promises of change.",
-    synonyms: ["Appease", "Placate", "Pacify"],
-    antonyms: ["Inflame", "Irritate", "Vex"],
-    trick: "Molly (Soft) -> Make someone soft (calm).",
-    tone: "Positive (+)",
-    collocation: "Mollify the investors",
-    intensitySpectrum: [
-      { word: "Calm", level: "Mild" },
-      { word: "Mollify", level: "Medium" },
-      { word: "Pacify", level: "High" },
-      { word: "Seduce", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Banality",
-    partOfSpeech: "Noun",
-    meaning: "Unoriginality; the condition of being banal.",
-    translation: "तुच्छता / घिसा-पिटापन",
-    sentence: "The movie was criticized for the banality of its script.",
-    synonyms: ["Cliché", "Truism", "Commonplace"],
-    antonyms: ["Originality", "Novelty", "Freshness"],
-    trick: "Ban All -> Ban all these boring/common ideas.",
-    tone: "Negative (-)",
-    collocation: "Sheer Banality",
-    intensitySpectrum: [
-      { word: "Commonness", level: "Mild" },
-      { word: "Dullness", level: "Medium" },
-      { word: "Banality", level: "High" },
-      { word: "Insipidity", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Platitude",
-    partOfSpeech: "Noun",
-    meaning: "A remark or statement, especially one with a moral content, that has been used too often to be interesting or thoughtful.",
-    translation: "सामान्य बात / तुच्छ उक्ति",
-    sentence: "He ended his speech with a few empty platitudes about hard work.",
-    synonyms: ["Cliché", "Banality", "Truism"],
-    antonyms: ["Profundity", "Insight", "Wisdom"],
-    trick: "Flat -> A flat attitude/statement with no depth.",
-    tone: "Negative (-)",
-    collocation: "Empty Platitudes",
-    intensitySpectrum: [
-      { word: "Saying", level: "Mild" },
-      { word: "Cliché", level: "Medium" },
-      { word: "Platitude", level: "High" },
-      { word: "Nonsense", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Profoundness",
-    partOfSpeech: "Noun",
-    meaning: "Great depth of insight or quality (More commonly 'Profundity').",
-    translation: "गहराई / गंभीरता",
-    sentence: "She was struck by the profoundness of his silence.",
-    synonyms: ["Depth", "Wisdom", "Insight"],
-    antonyms: ["Superficiality", "Shallowness", "Triviality"],
-    trick: "Pro + Found -> Professionals found deep meaning.",
-    tone: "Positive (+)",
-    collocation: "Profoundness of thought",
-    intensitySpectrum: [
-      { word: "Insight", level: "Mild" },
-      { word: "Depth", level: "Medium" },
-      { word: "Profoundness", level: "High" },
-      { word: "Enlightenment", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Adorn",
-    partOfSpeech: "Verb",
-    meaning: "Make more beautiful or attractive.",
-    translation: "सजाना",
-    sentence: "Paintings adorned the walls of the palace.",
-    synonyms: ["Decorate", "Embellish", "Ornament"],
-    antonyms: ["Disfigure", "Mar", "Strip"],
-    trick: "Add + Ornament -> To add ornaments.",
-    tone: "Positive (+)",
-    collocation: "Adorn with jewels",
-    intensitySpectrum: [
-      { word: "Decorate", level: "Mild" },
-      { word: "Adorn", level: "Medium" },
-      { word: "Beautify", level: "High" },
-      { word: "Gild", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Exacerbate",
-    partOfSpeech: "Verb",
-    meaning: "Make (a problem, bad situation, or negative feeling) worse.",
-    translation: "बिगाड़ना / भड़काना",
-    sentence: "The loud music only exacerbated his headache.",
-    synonyms: ["Aggravate", "Worsen", "Intensify"],
-    antonyms: ["Alleviate", "Improve", "Mitigate"],
-    trick: "Extra + Acerb (Bitter) -> Make it extra bitter.",
-    tone: "Negative (-)",
-    collocation: "Exacerbate the crisis",
-    intensitySpectrum: [
-      { word: "Worsen", level: "Mild" },
-      { word: "Aggravate", level: "Medium" },
-      { word: "Exacerbate", level: "High" },
-      { word: "Inflame", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Embellish",
-    partOfSpeech: "Verb",
-    meaning: "1. Make more attractive. 2. Make a story more interesting by adding extra details (often untrue).",
-    translation: "सजाना / नमक-मिर्च लगाना",
-    sentence: "He embellished the story of his trip to make it sound more dangerous.",
-    synonyms: ["Decorate", "Exaggerate", "Elaborate"],
-    antonyms: ["Simplify", "Deface", "Understate"],
-    trick: "Bell -> Put bells on it to make it fancy.",
-    tone: "Neutral (0)",
-    collocation: "Embellish the truth",
-    intensitySpectrum: [
-      { word: "Add detail", level: "Mild" },
-      { word: "Enhance", level: "Medium" },
-      { word: "Embellish", level: "High" },
-      { word: "Fabricate", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Malaise",
-    partOfSpeech: "Noun",
-    meaning: "A general feeling of discomfort, illness, or uneasiness whose exact cause is difficult to identify.",
-    translation: "बेचैनी / अस्वस्थता",
-    sentence: "An economic malaise is affecting the entire country.",
-    synonyms: ["Unease", "Discomfort", "Lassitude"],
-    antonyms: ["Well-being", "Health", "Vigor"],
-    trick: "Mal (Bad) + Ease -> Bad ease (No ease).",
-    tone: "Negative (-)",
-    collocation: "Economic Malaise",
-    intensitySpectrum: [
-      { word: "Unease", level: "Mild" },
-      { word: "Discomfort", level: "Medium" },
-      { word: "Malaise", level: "High" },
-      { word: "Depression", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Stagnation",
-    partOfSpeech: "Noun",
-    meaning: "The state of not flowing or moving; lack of activity/growth.",
-    translation: "स्थिरता / जड़ता",
-    sentence: "The policy led to economic stagnation and high unemployment.",
-    synonyms: ["Inactivity", "Dormancy", "Stasis"],
-    antonyms: ["Growth", "Flow", "Progress"],
-    trick: "Stay + Nation -> A nation that stays in one place (no growth).",
-    tone: "Negative (-)",
-    collocation: "Market Stagnation",
-    intensitySpectrum: [
-      { word: "Slowness", level: "Mild" },
-      { word: "Standstill", level: "Medium" },
-      { word: "Stagnation", level: "High" },
-      { word: "Decay", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Lassitude",
-    partOfSpeech: "Noun",
-    meaning: "A state of physical or mental weariness; lack of energy.",
-    translation: "सुस्ती / थकान",
-    sentence: "She was overcome by lassitude and refused to get out of bed.",
-    synonyms: ["Lethargy", "Fatigue", "Weariness"],
-    antonyms: ["Vigor", "Energy", "Vitality"],
-    trick: "Lassi -> Drinking Lassi makes you sleepy and lazy.",
-    tone: "Negative (-)",
-    collocation: "Overcome by lassitude",
-    intensitySpectrum: [
-      { word: "Tiredness", level: "Mild" },
-      { word: "Lethargy", level: "Medium" },
-      { word: "Lassitude", level: "High" },
-      { word: "Exhaustion", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Stasis",
-    partOfSpeech: "Noun",
-    meaning: "A period or state of inactivity or equilibrium.",
-    translation: "संतुलन / ठहराव",
-    sentence: "The company entered a period of stasis with no new products.",
-    synonyms: ["Equilibrium", "Standstill", "Inactivity"],
-    antonyms: ["Flux", "Change", "Movement"],
-    trick: "Stay + Sis -> Sister, stay there. Don't move.",
-    tone: "Neutral (0)",
-    collocation: "Political Stasis",
-    intensitySpectrum: [
-      { word: "Pause", level: "Mild" },
-      { word: "Stability", level: "Medium" },
-      { word: "Stasis", level: "High" },
-      { word: "Paralysis", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Atrophy",
-    partOfSpeech: "Verb/Noun",
-    meaning: "Waste away, typically due to the degeneration of cells; decline in effectiveness.",
-    translation: "क्षय होना / सूखना",
-    sentence: "Muscles atrophy when they are not used for a long time.",
-    synonyms: ["Wither", "Shrink", "Decay"],
-    antonyms: ["Grow", "Strengthen", "Flourish"],
-    trick: "A (No) + Trophy -> If you don't win trophies, your skills atrophy.",
-    tone: "Negative (-)",
-    collocation: "Muscle Atrophy",
-    intensitySpectrum: [
-      { word: "Weaken", level: "Mild" },
-      { word: "Shrink", level: "Medium" },
-      { word: "Atrophy", level: "High" },
-      { word: "Die", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Proclivity",
-    partOfSpeech: "Noun",
-    meaning: "A tendency to choose or do something regularly; an inclination.",
-    translation: "झुकाव / प्रवृत्ति",
-    sentence: "He has a proclivity for arriving late.",
-    synonyms: ["Inclination", "Tendency", "Propensity"],
-    antonyms: ["Aversion", "Dislike", "Antipathy"],
-    trick: "Pro + Cliff -> Inclined towards the cliff (leaning forward).",
-    tone: "Neutral (0)",
-    collocation: "Proclivity for violence",
-    intensitySpectrum: [
-      { word: "Liking", level: "Mild" },
-      { word: "Inclination", level: "Medium" },
-      { word: "Proclivity", level: "High" },
-      { word: "Addiction", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Malapropism",
-    partOfSpeech: "Noun",
-    meaning: "The mistaken use of a word in place of a similar-sounding one, often with unintentionally amusing effect.",
-    translation: "शब्द का हास्यास्पद प्रयोग",
-    sentence: "Saying 'dance a flamingo' instead of 'dance a flamenco' is a malapropism.",
-    synonyms: ["Misusage", "Blunder", "Solecism"],
-    antonyms: ["Correctness", "Accuracy", "Precision"],
-    trick: "Mal (Bad) + Proper -> Not using the proper word.",
-    tone: "Neutral (0)",
-    collocation: "Amusing Malapropism",
-    intensitySpectrum: [
-      { word: "Slip", level: "Mild" },
-      { word: "Error", level: "Medium" },
-      { word: "Malapropism", level: "High" },
-      { word: "Absurdity", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Abet",
-    partOfSpeech: "Verb",
-    meaning: "Encourage or assist (someone) to do something wrong, in particular, to commit a crime.",
-    translation: "दुष्प्रेरित करना / साथ देना (अपराध में)",
-    sentence: "He was charged with aiding and abetting the robbery.",
-    synonyms: ["Assist", "Encourage", "Incite"],
-    antonyms: ["Hinder", "Discourage", "Prevent"],
-    trick: "A Bet -> Encouraging someone to take a bad bet.",
-    tone: "Negative (-)",
-    collocation: "Aid and Abet",
-    intensitySpectrum: [
-      { word: "Help", level: "Mild" },
-      { word: "Support", level: "Medium" },
-      { word: "Abet", level: "High" },
-      { word: "Conspire", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Suborn",
-    partOfSpeech: "Verb",
-    meaning: "Bribe or otherwise induce (someone) to commit an unlawful act such as perjury.",
-    translation: "घूस देकर अपराध कराना",
-    sentence: "The lawyer attempted to suborn the witness to lie in court.",
-    synonyms: ["Bribe", "Corrupt", "Instigate"],
-    antonyms: ["Deter", "Prevent", "Discourage"],
-    trick: "Sub (Under) + Born -> Created (born) under the table (illegal).",
-    tone: "Negative (-)",
-    collocation: "Suborn perjury",
-    intensitySpectrum: [
-      { word: "Persuade", level: "Mild" },
-      { word: "Bribe", level: "Medium" },
-      { word: "Suborn", level: "High" },
-      { word: "Blackmail", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Deter",
-    partOfSpeech: "Verb",
-    meaning: "Discourage (someone) from doing something by instilling doubt or fear of the consequences.",
-    translation: "रोकना / डराना",
-    sentence: "Higher fines are meant to deter careless driving.",
-    synonyms: ["Discourage", "Prevent", "Dissuade"],
-    antonyms: ["Encourage", "Incentivize", "Promote"],
-    trick: "Detour -> Making them take a detour away from the crime.",
-    tone: "Neutral (0)",
-    collocation: "Nuclear Deterrent",
-    intensitySpectrum: [
-      { word: "Warn", level: "Mild" },
-      { word: "Discourage", level: "Medium" },
-      { word: "Deter", level: "High" },
-      { word: "Prohibit", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Assimilation",
-    partOfSpeech: "Noun",
-    meaning: "The process of taking in and fully understanding information or ideas; becoming part of a wider group.",
-    translation: "समावेश / आत्मसात",
-    sentence: "The assimilation of immigrants into the local culture takes time.",
-    synonyms: ["Absorption", "Integration", "Incorporation"],
-    antonyms: ["Segregation", "Exclusion", "Rejection"],
-    trick: "Similar -> Making things similar to the main group.",
-    tone: "Neutral (0)",
-    collocation: "Cultural Assimilation",
-    intensitySpectrum: [
-      { word: "Learning", level: "Mild" },
-      { word: "Integration", level: "Medium" },
-      { word: "Assimilation", level: "High" },
-      { word: "Homogeneity", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Acculturation",
-    partOfSpeech: "Noun",
-    meaning: "Assimilation to a different culture, typically the dominant one.",
-    translation: "परसंस्कृतिग्रहण",
-    sentence: "Acculturation often results in the loss of traditional customs.",
-    synonyms: ["Assimilation", "Socialization", "Adaptation"],
-    antonyms: ["Isolation", "Separation", "Segregation"],
-    trick: "Add + Culture -> Adding a new culture.",
-    tone: "Neutral (0)",
-    collocation: "Process of acculturation",
-    intensitySpectrum: [
-      { word: "Contact", level: "Mild" },
-      { word: "Adaptation", level: "Medium" },
-      { word: "Acculturation", level: "High" },
-      { word: "Conversion", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Alienation",
-    partOfSpeech: "Noun",
-    meaning: "The state or experience of being isolated from a group or an activity to which one should belong.",
-    translation: "अलगाव / बेगानापन",
-    sentence: "Technology can sometimes lead to the alienation of individuals from society.",
-    synonyms: ["Isolation", "Estrangement", "Detachment"],
-    antonyms: ["Integration", "Belonging", "Connection"],
-    trick: "Alien -> Feeling like an alien among humans.",
-    tone: "Negative (-)",
-    collocation: "Social Alienation",
-    intensitySpectrum: [
-      { word: "Distance", level: "Mild" },
-      { word: "Isolation", level: "Medium" },
-      { word: "Alienation", level: "High" },
-      { word: "Exile", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Hegemonic",
-    partOfSpeech: "Adjective",
-    meaning: "Ruling or dominant in a political or social context.",
-    translation: "आधिपत्य / प्रधान",
-    sentence: "The hegemonic power of the empire was challenged by the rebels.",
-    synonyms: ["Dominant", "Supreme", "Paramount"],
-    antonyms: ["Subordinate", "Weak", "Dependent"],
-    trick: "Huge Money -> Who has huge money? The ruler/dominant one.",
-    tone: "Neutral (0)",
-    collocation: "Hegemonic Masculinity",
-    intensitySpectrum: [
-      { word: "Influential", level: "Mild" },
-      { word: "Dominant", level: "Medium" },
-      { word: "Hegemonic", level: "High" },
-      { word: "Totalitarian", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Ostracize",
-    partOfSpeech: "Verb",
-    meaning: "Exclude (someone) from a society or group.",
-    translation: "बहिष्कृत करना / हुक्का-पानी बंद करना",
-    sentence: "He was ostracized by the village for violating their traditions.",
-    synonyms: ["Shun", "Exclude", "Ban"],
-    antonyms: ["Welcome", "Accept", "Include"],
-    trick: "Ostrich -> Like an ostrich hiding its head, people ignore you.",
-    tone: "Negative (-)",
-    collocation: "Socially Ostracized",
-    intensitySpectrum: [
-      { word: "Ignore", level: "Mild" },
-      { word: "Reject", level: "Medium" },
-      { word: "Ostracize", level: "High" },
-      { word: "Banish", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Pariah",
-    partOfSpeech: "Noun",
-    meaning: "An outcast.",
-    translation: "अछूत / बहिष्कृत व्यक्ति",
-    sentence: "His scandal made him a pariah in the business community.",
-    synonyms: ["Outcast", "Leper", "Undesirable"],
-    antonyms: ["Icon", "Insider", "Member"],
-    trick: "Paraya (Hindi) -> Paraya means not ours/outsider.",
-    tone: "Negative (-)",
-    collocation: "Social Pariah",
-    intensitySpectrum: [
-      { word: "Outsider", level: "Mild" },
-      { word: "Reject", level: "Medium" },
-      { word: "Pariah", level: "High" },
-      { word: "Enemy", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Sequester",
-    partOfSpeech: "Verb",
-    meaning: "Isolate or hide away.",
-    translation: "एकांत में रखना / जब्त करना",
-    sentence: "The jury was sequestered to prevent outside influence.",
-    synonyms: ["Isolate", "Seclude", "Segregate"],
-    antonyms: ["Reveal", "Integrate", "Uncover"],
-    trick: "Seek West -> Go west to hide away.",
-    tone: "Neutral (0)",
-    collocation: "Sequester Carbon",
-    intensitySpectrum: [
-      { word: "Separate", level: "Mild" },
-      { word: "Hide", level: "Medium" },
-      { word: "Sequester", level: "High" },
-      { word: "Imprison", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Shun",
-    partOfSpeech: "Verb",
-    meaning: "Persistently avoid, ignore, or reject (someone or something).",
-    translation: "किनारा करना / त्यागना",
-    sentence: "After the argument, she shunned him at parties.",
-    synonyms: ["Avoid", "Evade", "Eschew"],
-    antonyms: ["Seek", "Embrace", "Welcome"],
-    trick: "Sun -> Stay out of the sun (avoid it).",
-    tone: "Negative (-)",
-    collocation: "Shun publicity",
-    intensitySpectrum: [
-      { word: "Avoid", level: "Mild" },
-      { word: "Ignore", level: "Medium" },
-      { word: "Shun", level: "High" },
-      { word: "Boycott", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Disenchanted",
-    partOfSpeech: "Adjective",
-    meaning: "Disappointed by someone or something previously respected or admired.",
-    translation: "मोहभंग",
-    sentence: "Voters are becoming disenchanted with the current government.",
-    synonyms: ["Disillusioned", "Disappointed", "Cynical"],
-    antonyms: ["Enchanted", "Enthusiastic", "Captivated"],
-    trick: "Dis + Chant -> The magic spell (chant) is broken.",
-    tone: "Negative (-)",
-    collocation: "Disenchanted voters",
-    intensitySpectrum: [
-      { word: "Bored", level: "Mild" },
-      { word: "Disappointed", level: "Medium" },
-      { word: "Disenchanted", level: "High" },
-      { word: "Embittered", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Cynical",
-    partOfSpeech: "Adjective",
-    meaning: "Believing that people are motivated by self-interest; distrustful of human sincerity.",
-    translation: "कुटिल / निंदक / संशयवादी",
-    sentence: "He is cynical about politicians' promises.",
-    synonyms: ["Skeptical", "Distrustful", "Pessimistic"],
-    antonyms: ["Optimistic", "Trusting", "Idealistic"],
-    trick: "Sin -> Seeing 'sin' in everyone's actions.",
-    tone: "Negative (-)",
-    collocation: "Cynical attitude",
-    intensitySpectrum: [
-      { word: "Doubtful", level: "Mild" },
-      { word: "Skeptical", level: "Medium" },
-      { word: "Cynical", level: "High" },
-      { word: "Misanthropic", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Jaded",
-    partOfSpeech: "Adjective",
-    meaning: "Tired, bored, or lacking enthusiasm, typically after having had too much of something.",
-    translation: "थका हुआ / उबा हुआ",
-    sentence: "The jaded travelers were not impressed by the scenery.",
-    synonyms: ["Sated", "Weary", "Blasé"],
-    antonyms: ["Fresh", "Enthusiastic", "Keen"],
-    trick: "Faded -> Energy has faded away.",
-    tone: "Negative (-)",
-    collocation: "Jaded palate",
-    intensitySpectrum: [
-      { word: "Bored", level: "Mild" },
-      { word: "Tired", level: "Medium" },
-      { word: "Jaded", level: "High" },
-      { word: "Burned out", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Zealous",
-    partOfSpeech: "Adjective",
-    meaning: "Having or showing great energy or enthusiasm in pursuit of a cause or an objective.",
-    translation: "उत्साही / कट्टर",
-    sentence: "The detective was zealous in his pursuit of the truth.",
-    synonyms: ["Fervent", "Passionate", "Fanatical"],
-    antonyms: ["Apathetic", "Indifferent", "Lethargic"],
-    trick: "Jealous? No, Zealous -> Not envious, but energetic.",
-    tone: "Positive (+)",
-    collocation: "Zealous supporter",
-    intensitySpectrum: [
-      { word: "Keen", level: "Mild" },
-      { word: "Enthusiastic", level: "Medium" },
-      { word: "Zealous", level: "High" },
-      { word: "Fanatical", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Fallacious",
-    partOfSpeech: "Adjective",
-    meaning: "Based on a mistaken belief.",
-    translation: "भ्रामक / तर्कहीन",
-    sentence: "His argument was based on fallacious reasoning.",
-    synonyms: ["False", "Erroneous", "Misleading"],
-    antonyms: ["True", "Correct", "Valid"],
-    trick: "False -> Fallacious sounds like False.",
-    tone: "Negative (-)",
-    collocation: "Fallacious Argument",
-    intensitySpectrum: [
-      { word: "Incorrect", level: "Mild" },
-      { word: "Wrong", level: "Medium" },
-      { word: "Fallacious", level: "High" },
-      { word: "Delusional", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Spurious",
-    partOfSpeech: "Adjective",
-    meaning: "Not being what it purports to be; false or fake.",
-    translation: "जाली / बनावटी",
-    sentence: "He made spurious claims about his military service.",
-    synonyms: ["Bogus", "Fake", "Counterfeit"],
-    antonyms: ["Genuine", "Authentic", "Valid"],
-    trick: "Spur -> Like a spur-of-the-moment lie (fake).",
-    tone: "Negative (-)",
-    collocation: "Spurious Allegations",
-    intensitySpectrum: [
-      { word: "Dubious", level: "Mild" },
-      { word: "False", level: "Medium" },
-      { word: "Spurious", level: "High" },
-      { word: "Fraudulent", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Mendacious",
-    partOfSpeech: "Adjective",
-    meaning: "Not telling the truth; lying.",
-    translation: "झूठा / मिथ्यावादी",
-    sentence: "The propaganda was dismissed as mendacious nonsense.",
-    synonyms: ["Dishonest", "Deceitful", "Untruthful"],
-    antonyms: ["Truthful", "Honest", "Veracious"],
-    trick: "Mend -> Someone who has to 'mend' (fix) their story constantly.",
-    tone: "Negative (-)",
-    collocation: "Mendacious Press",
-    intensitySpectrum: [
-      { word: "Insincere", level: "Mild" },
-      { word: "Dishonest", level: "Medium" },
-      { word: "Mendacious", level: "High" },
-      { word: "Perfidious", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Forthright",
-    partOfSpeech: "Adjective",
-    meaning: "Direct and outspoken; straightforward and honest.",
-    translation: "स्पष्टवादी",
-    sentence: "She was forthright about her objections to the plan.",
-    synonyms: ["Frank", "Direct", "Candid"],
-    antonyms: ["Secretive", "Evasive", "Dishonest"],
-    trick: "Forth + Right -> Coming forth and being right (honest).",
-    tone: "Positive (+)",
-    collocation: "Forthright Answer",
-    intensitySpectrum: [
-      { word: "Open", level: "Mild" },
-      { word: "Direct", level: "Medium" },
-      { word: "Forthright", level: "High" },
-      { word: "Blunt", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Impede",
-    partOfSpeech: "Verb",
-    meaning: "Delay or prevent (someone or something) by obstructing them.",
-    translation: "बाधा डालना",
-    sentence: "Fallen trees impeded the flow of traffic.",
-    synonyms: ["Hinder", "Obstruct", "Hamper"],
-    antonyms: ["Facilitate", "Assist", "Expedite"],
-    trick: "Im + Ped (Foot) -> Putting shackles on feet to stop walking.",
-    tone: "Negative (-)",
-    collocation: "Impede progress",
-    intensitySpectrum: [
-      { word: "Slow", level: "Mild" },
-      { word: "Hinder", level: "Medium" },
-      { word: "Impede", level: "High" },
-      { word: "Block", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Deterrents",
-    partOfSpeech: "Noun",
-    meaning: "A thing that discourages or is intended to discourage someone from doing something.",
-    translation: "निवारक / रोकनेवाला",
-    sentence: "Cameras operate as a deterrent to crime.",
-    synonyms: ["Disincentive", "Obstacle", "Damper"],
-    antonyms: ["Incentive", "Encouragement", "Stimulus"],
-    trick: "Deter -> Agent that deters.",
-    tone: "Neutral (0)",
-    collocation: "Effective Deterrent",
-    intensitySpectrum: [
-      { word: "Warning", level: "Mild" },
-      { word: "Obstacle", level: "Medium" },
-      { word: "Deterrent", level: "High" },
-      { word: "Barrier", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Runaway",
-    partOfSpeech: "Adjective",
-    meaning: "Becoming uncontrollable.",
-    translation: "बेकाबू",
-    sentence: "Runaway inflation destroyed the economy.",
-    synonyms: ["Uncontrolled", "Rampant", "Unchecked"],
-    antonyms: ["Controlled", "Stable", "Moderate"],
-    trick: "Run Away -> It ran away and you can't catch it.",
-    tone: "Negative (-)",
-    collocation: "Runaway Inflation/Victory",
-    intensitySpectrum: [
-      { word: "Fast", level: "Mild" },
-      { word: "Unchecked", level: "Medium" },
-      { word: "Runaway", level: "High" },
-      { word: "Catastrophic", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Predicament",
-    partOfSpeech: "Noun",
-    meaning: "A difficult, unpleasant, or embarrassing situation.",
-    translation: "विकट स्थिति",
-    sentence: "He found himself in a predicament when he lost his wallet abroad.",
-    synonyms: ["Dilemma", "Plight", "Quagmire"],
-    antonyms: ["Solution", "Blessing", "Benefit"],
-    trick: "Predict -> You didn't predict this bad situation.",
-    tone: "Negative (-)",
-    collocation: "Financial Predicament",
-    intensitySpectrum: [
-      { word: "Issue", level: "Mild" },
-      { word: "Problem", level: "Medium" },
-      { word: "Predicament", level: "High" },
-      { word: "Crisis", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Juxtapose",
-    partOfSpeech: "Verb",
-    meaning: "Place or deal with close together for contrasting effect.",
-    translation: "पास-पास रखना (तुलना के लिए)",
-    sentence: "The exhibition juxtaposes Picasso's early drawings with his later works.",
-    synonyms: ["Contrast", "Collocate", "Compare"],
-    antonyms: ["Separate", "Disconnect", "Isolate"],
-    trick: "Just + Pose -> Just pose them next to each other.",
-    tone: "Neutral (0)",
-    collocation: "Juxtapose images",
-    intensitySpectrum: [
-      { word: "Place", level: "Mild" },
-      { word: "Pair", level: "Medium" },
-      { word: "Juxtapose", level: "High" },
-      { word: "Clash", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Stride",
-    partOfSpeech: "Noun/Verb",
-    meaning: "1. Walk with long steps. 2. Progress toward a goal.",
-    translation: "लंबी चाल / प्रगति",
-    sentence: "We have made great strides in cancer research.",
-    synonyms: ["Progress", "Advance", "Headway"],
-    antonyms: ["Regression", "Retreat", "Step back"],
-    trick: "Ride -> Walk so fast it's like a ride.",
-    tone: "Positive (+)",
-    collocation: "Make strides",
-    intensitySpectrum: [
-      { word: "Step", level: "Mild" },
-      { word: "Walk", level: "Medium" },
-      { word: "Stride", level: "High" },
-      { word: "Sprint", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Headway",
-    partOfSpeech: "Noun",
-    meaning: "Forward movement or progress, especially in difficult circumstances.",
-    translation: "प्रगति",
-    sentence: "We are making little headway against the strong wind.",
-    synonyms: ["Progress", "Advance", "Inroads"],
-    antonyms: ["Regression", "Setback", "Stagnation"],
-    trick: "Head + Way -> Moving your head forward along the way.",
-    tone: "Positive (+)",
-    collocation: "Make headway",
-    intensitySpectrum: [
-      { word: "Movement", level: "Mild" },
-      { word: "Progress", level: "Medium" },
-      { word: "Headway", level: "High" },
-      { word: "Breakthrough", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Dwindle",
-    partOfSpeech: "Verb",
-    meaning: "Diminish gradually in size, amount, or strength.",
-    translation: "घटना / क्षीण होना",
-    sentence: "His savings dwindled after he lost his job.",
-    synonyms: ["Diminish", "Decrease", "Shrink"],
-    antonyms: ["Increase", "Grow", "Flourish"],
-    trick: "Wind -> Like sand blowing away in the wind.",
-    tone: "Negative (-)",
-    collocation: "Supplies dwindled",
-    intensitySpectrum: [
-      { word: "Drop", level: "Mild" },
-      { word: "Decrease", level: "Medium" },
-      { word: "Dwindle", level: "High" },
-      { word: "Vanish", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Wither",
-    partOfSpeech: "Verb",
-    meaning: "Become dry and shriveled; lose vitality.",
-    translation: "मुरझाना",
-    sentence: "The plants withered in the intense heat.",
-    synonyms: ["Shrivel", "Fade", "Wilt"],
-    antonyms: ["Bloom", "Flourish", "Thrive"],
-    trick: "Weather -> Bad weather makes plants wither.",
-    tone: "Negative (-)",
-    collocation: "Wither on the vine",
-    intensitySpectrum: [
-      { word: "Fade", level: "Mild" },
-      { word: "Wilt", level: "Medium" },
-      { word: "Wither", level: "High" },
-      { word: "Perish", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Wane",
-    partOfSpeech: "Verb",
-    meaning: "Decrease in vigor, power, or extent; become weaker.",
-    translation: "पतन होना / कम होना",
-    sentence: "His influence began to wane as he got older.",
-    synonyms: ["Decline", "Diminish", "Decrease"],
-    antonyms: ["Wax", "Grow", "Increase"],
-    trick: "Rain -> Like rain stopping slowly.",
-    tone: "Negative (-)",
-    collocation: "Moon wanes",
-    intensitySpectrum: [
-      { word: "Dip", level: "Mild" },
-      { word: "Decline", level: "Medium" },
-      { word: "Wane", level: "High" },
-      { word: "Fade out", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Ebb",
-    partOfSpeech: "Verb",
-    meaning: "Move away from the land; recede; gradually lessen.",
-    translation: "भाटा / उतार",
-    sentence: "His confidence began to ebb as the interview progressed.",
-    synonyms: ["Recede", "Retreat", "Subside"],
-    antonyms: ["Flow", "Surge", "Increase"],
-    trick: "Web -> A spider web is thin/weak.",
-    tone: "Negative (-)",
-    collocation: "Ebb and flow",
-    intensitySpectrum: [
-      { word: "Recede", level: "Mild" },
-      { word: "Lessen", level: "Medium" },
-      { word: "Ebb", level: "High" },
-      { word: "Disappear", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Diatribe",
-    partOfSpeech: "Noun",
-    meaning: "A forceful and bitter verbal attack.",
-    translation: "कठोर निंदा",
-    sentence: "He launched into a long diatribe against the government.",
-    synonyms: ["Tirade", "Harangue", "Invective"],
-    antonyms: ["Praise", "Eulogy", "Tribute"],
-    trick: "Die + Tribe -> A speech wishing a whole tribe would die.",
-    tone: "Negative (-)",
-    collocation: "Bitter Diatribe",
-    intensitySpectrum: [
-      { word: "Criticism", level: "Mild" },
-      { word: "Rant", level: "Medium" },
-      { word: "Diatribe", level: "High" },
-      { word: "Vitriol", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Invective",
-    partOfSpeech: "Noun",
-    meaning: "Insulting, abusive, or highly critical language.",
-    translation: "गाली-गलौज / फटकार",
-    sentence: "The debate turned into a stream of invective and insults.",
-    synonyms: ["Abuse", "Insults", "Vitriol"],
-    antonyms: ["Praise", "Compliment", "Flattery"],
-    trick: "Infect -> Words that infect the mind like poison.",
-    tone: "Negative (-)",
-    collocation: "Stream of Invective",
-    intensitySpectrum: [
-      { word: "Insult", level: "Mild" },
-      { word: "Abuse", level: "Medium" },
-      { word: "Invective", level: "High" },
-      { word: "Obscenity", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Philippic",
-    partOfSpeech: "Noun",
-    meaning: "A bitter attack or denunciation, especially a verbal one.",
-    translation: "निंदात्मक भाषण",
-    sentence: "The senator delivered a scathing philippic against the corruption bill.",
-    synonyms: ["Tirade", "Diatribe", "Broadside"],
-    antonyms: ["Encomium", "Eulogy", "Praise"],
-    trick: "Philip -> Ancient speeches attacking King Philip of Macedon.",
-    tone: "Negative (-)",
-    collocation: "Launch a philippic",
-    intensitySpectrum: [
-      { word: "Critique", level: "Mild" },
-      { word: "Denunciation", level: "Medium" },
-      { word: "Philippic", level: "High" },
-      { word: "Anathema", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Jeremiad",
-    partOfSpeech: "Noun",
-    meaning: "A long, mournful complaint or lamentation; a list of woes.",
-    translation: "विलाप / शोकगीत",
-    sentence: "His book is basically a jeremiad about the decline of modern society.",
-    synonyms: ["Lament", "Complaint", "Tirade"],
-    antonyms: ["Celebration", "Rejoicing", "Praise"],
-    trick: "Jeremiah -> The Prophet Jeremiah wrote the book of Lamentations (sadness).",
-    tone: "Negative (-)",
-    collocation: "Long Jeremiad",
-    intensitySpectrum: [
-      { word: "Complaint", level: "Mild" },
-      { word: "Gripe", level: "Medium" },
-      { word: "Jeremiad", level: "High" },
-      { word: "Wailing", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Harangue",
-    partOfSpeech: "Noun/Verb",
-    meaning: "A lengthy and aggressive speech.",
-    translation: "उग्र भाषण",
-    sentence: "He delivered a violent harangue to his followers.",
-    synonyms: ["Lecture", "Berate", "Rant"],
-    antonyms: ["Chat", "Whisper", "Discussion"],
-    trick: "Harass -> A speech that harasses the audience.",
-    tone: "Negative (-)",
-    collocation: "Harangue the crowd",
-    intensitySpectrum: [
-      { word: "Speech", level: "Mild" },
-      { word: "Lecture", level: "Medium" },
-      { word: "Harangue", level: "High" },
-      { word: "Assault", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Screed",
-    partOfSpeech: "Noun",
-    meaning: "A long speech or piece of writing, typically one regarded as tedious.",
-    translation: "लंबा-चौड़ा भाषण / लेख",
-    sentence: "He published a ranting screed against the media.",
-    synonyms: ["Tirade", "Rant", "Monologue"],
-    antonyms: ["Summary", "Brief", "Note"],
-    trick: "Scroll + Read -> A scroll you have to read forever.",
-    tone: "Negative (-)",
-    collocation: "Angry Screed",
-    intensitySpectrum: [
-      { word: "Article", level: "Mild" },
-      { word: "Essay", level: "Medium" },
-      { word: "Screed", level: "High" },
-      { word: "Manifesto", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Prodigious",
-    partOfSpeech: "Adjective",
-    meaning: "Remarkably or impressively great in extent, size, or degree.",
-    translation: "विशाल / अद्भुत",
-    sentence: "He had a prodigious appetite for both food and knowledge.",
-    synonyms: ["Enormous", "Huge", "Immense"],
-    antonyms: ["Small", "Tiny", "Insignificant"],
-    trick: "Prodigy -> A child prodigy has prodigious talent.",
-    tone: "Positive (+)",
-    collocation: "Prodigious Talent",
-    intensitySpectrum: [
-      { word: "Big", level: "Mild" },
-      { word: "Huge", level: "Medium" },
-      { word: "Prodigious", level: "High" },
-      { word: "Colossal", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Stupendous",
-    partOfSpeech: "Adjective",
-    meaning: "Extremely impressive.",
-    translation: "अतिविशाल / शानदार",
-    sentence: "The team achieved a stupendous victory.",
-    synonyms: ["Amazing", "Astounding", "Phenomenal"],
-    antonyms: ["Ordinary", "Average", "Unimpressive"],
-    trick: "Stupidly Good -> So good it makes you look stupid (stunned).",
-    tone: "Positive (+)",
-    collocation: "Stupendous Achievement",
-    intensitySpectrum: [
-      { word: "Good", level: "Mild" },
-      { word: "Great", level: "Medium" },
-      { word: "Stupendous", level: "High" },
-      { word: "Miraculous", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Paltry",
-    partOfSpeech: "Adjective",
-    meaning: "Small or meager.",
-    translation: "तुच्छ / नगण्य",
-    sentence: "He received a paltry sum for his hard work.",
-    synonyms: ["Measly", "Trivial", "Insignificant"],
-    antonyms: ["Substantial", "Considerable", "Generous"],
-    trick: "Poultry -> Chicken feed (very small amount).",
-    tone: "Negative (-)",
-    collocation: "Paltry sum",
-    intensitySpectrum: [
-      { word: "Small", level: "Mild" },
-      { word: "Meager", level: "Medium" },
-      { word: "Paltry", level: "High" },
-      { word: "Worthless", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Quixotic",
-    partOfSpeech: "Adjective",
-    meaning: "Exceedingly idealistic; unrealistic and impractical.",
-    translation: "अवास्तविक / कल्पनाशील",
-    sentence: "His quixotic plan to end all war was doomed to fail.",
-    synonyms: ["Idealistic", "Romantic", "Impractical"],
-    antonyms: ["Pragmatic", "Realistic", "Practical"],
-    trick: "Don Quixote -> Character who fought windmills thinking they were giants.",
-    tone: "Neutral (0)",
-    collocation: "Quixotic quest",
-    intensitySpectrum: [
-      { word: "Dreamy", level: "Mild" },
-      { word: "Idealistic", level: "Medium" },
-      { word: "Quixotic", level: "High" },
-      { word: "Delusional", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Utopian",
-    partOfSpeech: "Adjective",
-    meaning: "Modeled on or aiming for a state in which everything is perfect; idealistic.",
-    translation: "आदर्शलोक / रामराज्य",
-    sentence: "The socialist vision was dismissed as a utopian dream.",
-    synonyms: ["Idealistic", "Visionary", "Perfect"],
-    antonyms: ["Dystopian", "Realistic", "Cynical"],
-    trick: "Top -> A world at the 'top' level of perfection.",
-    tone: "Positive (+)",
-    collocation: "Utopian Society",
-    intensitySpectrum: [
-      { word: "Hopeful", level: "Mild" },
-      { word: "Ideal", level: "Medium" },
-      { word: "Utopian", level: "High" },
-      { word: "Impossible", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Chimerical",
-    partOfSpeech: "Adjective",
-    meaning: "Existing only as the product of unchecked imagination; fantastically improbable.",
-    translation: "काल्पनिक / असंभव",
-    sentence: "His schemes for making money were purely chimerical.",
-    synonyms: ["Illusionary", "Fanciful", "Imaginary"],
-    antonyms: ["Real", "Tangible", "Probable"],
-    trick: "Chimera -> Mythical monster (Lion+Goat+Snake). Impossible to exist.",
-    tone: "Negative (-)",
-    collocation: "Chimerical idea",
-    intensitySpectrum: [
-      { word: "Unlikely", level: "Mild" },
-      { word: "Fanciful", level: "Medium" },
-      { word: "Chimerical", level: "High" },
-      { word: "Absurd", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Sagacious",
-    partOfSpeech: "Adjective",
-    meaning: "Having or showing keen mental discernment and good judgment.",
-    translation: "बुद्धिमान / दूरदर्शी",
-    sentence: "The sagacious leader guided the country through the crisis.",
-    synonyms: ["Wise", "Shrewd", "Insightful"],
-    antonyms: ["Foolish", "Ignorant", "Stupid"],
-    trick: "Sage -> A sage (saint) is wise.",
-    tone: "Positive (+)",
-    collocation: "Sagacious advice",
-    intensitySpectrum: [
-      { word: "Smart", level: "Mild" },
-      { word: "Wise", level: "Medium" },
-      { word: "Sagacious", level: "High" },
-      { word: "Omniscient", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Clandestine",
-    partOfSpeech: "Adjective",
-    meaning: "Kept secret or done secretively, especially because illicit.",
-    translation: "गुप्त / अवैध",
-    sentence: "They held a clandestine meeting to plan the coup.",
-    synonyms: ["Secret", "Covert", "Stealthy"],
-    antonyms: ["Open", "Public", "Overt"],
-    trick: "Clan + Destiny -> The clan's destiny is a secret.",
-    tone: "Neutral (0)",
-    collocation: "Clandestine operation",
-    intensitySpectrum: [
-      { word: "Private", level: "Mild" },
-      { word: "Secret", level: "Medium" },
-      { word: "Clandestine", level: "High" },
-      { word: "Top Secret", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Furtive",
-    partOfSpeech: "Adjective",
-    meaning: "Attempting to avoid notice or attention, typically because of guilt.",
-    translation: "चोरी-छिपे / संदिग्ध",
-    sentence: "He cast a furtive glance at the clock during the boring meeting.",
-    synonyms: ["Secretive", "Surreptitious", "Sneaky"],
-    antonyms: ["Open", "Honest", "Direct"],
-    trick: "Fugitive -> A fugitive has to be furtive (sneaky).",
-    tone: "Negative (-)",
-    collocation: "Furtive glance",
-    intensitySpectrum: [
-      { word: "Shy", level: "Mild" },
-      { word: "Secretive", level: "Medium" },
-      { word: "Furtive", level: "High" },
-      { word: "Paranoid", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Vicarious",
-    partOfSpeech: "Adjective",
-    meaning: "Experienced in the imagination through the feelings or actions of another person.",
-    translation: "प्रतिनिधिक / परोक्ष",
-    sentence: "He gets a vicarious thrill from watching horror movies.",
-    synonyms: ["Indirect", "Second-hand", "Surrogate"],
-    antonyms: ["Direct", "First-hand", "Personal"],
-    trick: "Vice-Captain -> The Vice-Captain acts for the Captain (Second-hand).",
-    tone: "Neutral (0)",
-    collocation: "Vicarious pleasure",
-    intensitySpectrum: [
-      { word: "Observant", level: "Mild" },
-      { word: "Sympathetic", level: "Medium" },
-      { word: "Vicarious", level: "High" },
-      { word: "Identical", level: "Extreme" }
-    ]
-  },
-  {
-    word: "Arcane",
-    partOfSpeech: "Adjective",
-    meaning: "Understood by few; mysterious or secret.",
-    translation: "गुप्त / रहस्यमयी",
-    sentence: "The professor specialized in arcane rituals of ancient civilizations.",
-    synonyms: ["Esoteric", "Obscure", "Recondite"],
-    antonyms: ["Common", "Known", "Exoteric"],
-    trick: "Are + Cane -> Walking with a cane implies an old, mysterious wizard.",
-    tone: "Neutral (0)",
-    collocation: "Arcane knowledge",
-    intensitySpectrum: [
-      { word: "Unknown", level: "Mild" },
-      { word: "Secret", level: "Medium" },
-      { word: "Arcane", level: "High" },
-      { word: "Occult", level: "Extreme" }
-    ]
+    characterHook: "Guest receiving Gift",
+    hookWhy: "Polite happiness when getting a present."
   },
   {
     word: "Rancor",
@@ -2905,12 +393,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rank -> A rank (rotten) smell creates bitterness.",
     tone: "Negative (-)",
     collocation: "Deep-seated rancor",
-    intensitySpectrum: [
-      { word: "Dislike", level: "Mild" },
-      { word: "Resentment", level: "Medium" },
-      { word: "Rancor", level: "High" },
-      { word: "Hatred", level: "Extreme" }
-    ]
+    characterHook: "India vs Pakistan Cricket",
+    hookWhy: "The historical bitterness and resentment on the field (though players are friends now, the vibe remains)."
   },
   {
     word: "Facade",
@@ -2923,12 +407,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Face + Aid -> A fake face to aid in hiding the truth.",
     tone: "Neutral (0)",
     collocation: "Crumbling facade",
-    intensitySpectrum: [
-      { word: "Look", level: "Mild" },
-      { word: "Front", level: "Medium" },
-      { word: "Facade", level: "High" },
-      { word: "Deception", level: "Extreme" }
-    ]
+    characterHook: "Instagram Influencers",
+    hookWhy: "Posting happy photos (facade) while being sad in real life. A deceptive front."
   },
   {
     word: "Abash",
@@ -2941,12 +421,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Bash -> If you get bashed (hit) publicly, you feel abashed.",
     tone: "Negative (-)",
     collocation: "Stand abashed",
-    intensitySpectrum: [
-      { word: "Shy", level: "Mild" },
-      { word: "Embarrass", level: "Medium" },
-      { word: "Abash", level: "High" },
-      { word: "Mortify", level: "Extreme" }
-    ]
+    characterHook: "Auntie finding Cigarettes",
+    hookWhy: "The feeling of total embarrassment when caught doing something wrong by an elder."
   },
   {
     word: "Conspicuous",
@@ -2959,12 +435,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Can See Pic -> You 'Can See the Pic' clearly because it stands out.",
     tone: "Neutral (0)",
     collocation: "Conspicuous consumption",
-    intensitySpectrum: [
-      { word: "Visible", level: "Mild" },
-      { word: "Noticeable", level: "Medium" },
-      { word: "Conspicuous", level: "High" },
-      { word: "Glaring", level: "Extreme" }
-    ]
+    characterHook: "Ranveer Singh's Clothes",
+    hookWhy: "Wearing neon pink in a crowd of black suits; standing out clearly."
   },
   {
     word: "Panacea",
@@ -2977,12 +449,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pan (All) + Ace -> An Ace card that wins 'all' games.",
     tone: "Positive (+)",
     collocation: "Universal panacea",
-    intensitySpectrum: [
-      { word: "Help", level: "Mild" },
-      { word: "Remedy", level: "Medium" },
-      { word: "Cure", level: "High" },
-      { word: "Panacea", level: "Extreme" }
-    ]
+    characterHook: "Baba Ramdev's Yoga / Aloe Vera",
+    hookWhy: "Claimed to be the cure for every single disease (Cure-all)."
   },
   {
     word: "Modicum",
@@ -2995,12 +463,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Moderate -> A moderate/small amount.",
     tone: "Neutral (0)",
     collocation: "Modicum of truth",
-    intensitySpectrum: [
-      { word: "Drop", level: "Mild" },
-      { word: "Bit", level: "Medium" },
-      { word: "Modicum", level: "High" },
-      { word: "Trace", level: "Extreme" }
-    ]
+    characterHook: "Free 'Dhaniya' (Coriander)",
+    hookWhy: "The vegetable vendor gives you a tiny amount (modicum) for free."
   },
   {
     word: "Frugal",
@@ -3013,12 +477,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fruit + Gal -> A girl who eats only fruits to save money.",
     tone: "Positive (+)",
     collocation: "Frugal lifestyle",
-    intensitySpectrum: [
-      { word: "Careful", level: "Mild" },
-      { word: "Economical", level: "Medium" },
-      { word: "Frugal", level: "High" },
-      { word: "Miserly", level: "Extreme" }
-    ]
+    characterHook: "Middle-Class Dad",
+    hookWhy: "Squeezing the toothpaste tube until the last atom comes out to save money."
   },
   {
     word: "Quintessential",
@@ -3031,12 +491,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Queen + Essential -> Essential qualities of a Queen (Perfect).",
     tone: "Positive (+)",
     collocation: "Quintessential example",
-    intensitySpectrum: [
-      { word: "Good", level: "Mild" },
-      { word: "Typical", level: "Medium" },
-      { word: "Quintessential", level: "High" },
-      { word: "Perfect", level: "Extreme" }
-    ]
+    characterHook: "Rahul Dravid",
+    hookWhy: "The perfect, classic example of a Gentleman Cricketer."
   },
   {
     word: "Aver",
@@ -3049,12 +505,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ver (Truth) -> To state as verify/truth.",
     tone: "Neutral (0)",
     collocation: "Averred that",
-    intensitySpectrum: [
-      { word: "Say", level: "Mild" },
-      { word: "State", level: "Medium" },
-      { word: "Aver", level: "High" },
-      { word: "Swear", level: "Extreme" }
-    ]
+    characterHook: "Sunny Deol (Damini)",
+    hookWhy: "Standing in court screaming 'Tarikh pe Tarikh', asserting the truth forcefully."
   },
   {
     word: "Fetid",
@@ -3067,12 +519,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Feet -> Smelly feet are fetid.",
     tone: "Negative (-)",
     collocation: "Fetid odor",
-    intensitySpectrum: [
-      { word: "Smelly", level: "Mild" },
-      { word: "Stinky", level: "Medium" },
-      { word: "Fetid", level: "High" },
-      { word: "Noxious", level: "Extreme" }
-    ]
+    characterHook: "Public Toilet near Bus Stand",
+    hookWhy: "The smell is so strong and unpleasant it makes you cover your nose."
   },
   {
     word: "Dulcet",
@@ -3085,12 +533,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Dil (Heart) + Set -> Sets the heart at ease.",
     tone: "Positive (+)",
     collocation: "Dulcet tones",
-    intensitySpectrum: [
-      { word: "Pleasant", level: "Mild" },
-      { word: "Sweet", level: "Medium" },
-      { word: "Dulcet", level: "High" },
-      { word: "Angelic", level: "Extreme" }
-    ]
+    characterHook: "Lullaby (Lori)",
+    hookWhy: "The sweet, soothing sound of a mother singing to put a baby to sleep."
   },
   {
     word: "Remission",
@@ -3103,12 +547,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Re-Mission -> Mission cancelled/paused.",
     tone: "Positive (+)",
     collocation: "Cancer remission",
-    intensitySpectrum: [
-      { word: "Pause", level: "Mild" },
-      { word: "Reduction", level: "Medium" },
-      { word: "Remission", level: "High" },
-      { word: "Cure", level: "Extreme" }
-    ]
+    characterHook: "Farm Loan Waiver",
+    hookWhy: "The government cancels or reduces the debt (remission) for farmers."
   },
   {
     word: "Skirmish",
@@ -3121,12 +561,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Skirt -> Fighting over the skirt (boundary) of a territory.",
     tone: "Negative (-)",
     collocation: "Border skirmish",
-    intensitySpectrum: [
-      { word: "Argument", level: "Mild" },
-      { word: "Scuffle", level: "Medium" },
-      { word: "Skirmish", level: "High" },
-      { word: "Battle", level: "Extreme" }
-    ]
+    characterHook: "Seat Fight in Local Train",
+    hookWhy: "A small, short fight for space, not a full-blown war."
   },
   {
     word: "Mercurial",
@@ -3139,12 +575,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Mercury -> Liquid metal that moves fast and changes shape.",
     tone: "Negative (-)",
     collocation: "Mercurial nature",
-    intensitySpectrum: [
-      { word: "Moody", level: "Mild" },
-      { word: "Changeable", level: "Medium" },
-      { word: "Mercurial", level: "High" },
-      { word: "Bipolar", level: "Extreme" }
-    ]
+    characterHook: "Kangana Ranaut",
+    hookWhy: "Her mood and public statements change unpredictably and rapidly."
   },
   {
     word: "Indolent",
@@ -3157,12 +589,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "In + Dole -> Someone who lives on 'dole' (unemployment money) and doesn't work.",
     tone: "Negative (-)",
     collocation: "Indolent lifestyle",
-    intensitySpectrum: [
-      { word: "Relaxed", level: "Mild" },
-      { word: "Lazy", level: "Medium" },
-      { word: "Indolent", level: "High" },
-      { word: "Slothful", level: "Extreme" }
-    ]
+    characterHook: "Bank Lunch Hour",
+    hookWhy: "The staff moving slowly or not working at all; avoiding exertion."
   },
   {
     word: "Mantle",
@@ -3175,12 +603,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Man + Tall -> A tall man wearing a long cloak (mantle).",
     tone: "Neutral (0)",
     collocation: "Assume the mantle",
-    intensitySpectrum: [
-      { word: "Cover", level: "Mild" },
-      { word: "Cloak", level: "Medium" },
-      { word: "Mantle", level: "High" },
-      { word: "Burden", level: "Extreme" }
-    ]
+    characterHook: "Baahubali",
+    hookWhy: "Shivudu taking up the responsibility (mantle) of saving the kingdom."
   },
   {
     word: "Obdurate",
@@ -3193,12 +617,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Dura (Hard) -> Hard headed and durable in opinion.",
     tone: "Negative (-)",
     collocation: "Obdurate refusal",
-    intensitySpectrum: [
-      { word: "Firm", level: "Mild" },
-      { word: "Stubborn", level: "Medium" },
-      { word: "Obdurate", level: "High" },
-      { word: "Pig-headed", level: "Extreme" }
-    ]
+    characterHook: "Ziddi Child",
+    hookWhy: "Refusing to eat food no matter how much the mother pleads (Stubborn)."
   },
   {
     word: "Doyen",
@@ -3211,12 +631,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Do + Yen -> Someone who has to 'Doing' it for 'Yens' (Years).",
     tone: "Positive (+)",
     collocation: "Doyen of industry",
-    intensitySpectrum: [
-      { word: "Senior", level: "Mild" },
-      { word: "Expert", level: "Medium" },
-      { word: "Doyen", level: "High" },
-      { word: "Legend", level: "Extreme" }
-    ]
+    characterHook: "Amitabh Bachchan",
+    hookWhy: "The most respected, senior, and prominent figure in the film industry."
   },
   {
     word: "Recondite",
@@ -3229,12 +645,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Re-conduct -> Research that is hard to conduct again.",
     tone: "Neutral (0)",
     collocation: "Recondite subject",
-    intensitySpectrum: [
-      { word: "Hard", level: "Mild" },
-      { word: "Complex", level: "Medium" },
-      { word: "Recondite", level: "High" },
-      { word: "Incomprehensible", level: "Extreme" }
-    ]
+    characterHook: "CA Final Syllabus",
+    hookWhy: "Knowledge that is so deep and complex, only a few understand it."
   },
   {
     word: "Hamlet",
@@ -3247,12 +659,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Helmet -> A small covering; a small village.",
     tone: "Neutral (0)",
     collocation: "Rural hamlet",
-    intensitySpectrum: [
-      { word: "House", level: "Mild" },
-      { word: "Hamlet", level: "Medium" },
-      { word: "Village", level: "High" },
-      { word: "Town", level: "Extreme" }
-    ]
+    characterHook: "Phulera (Panchayat Web Series)",
+    hookWhy: "A very small village settlement."
   },
   {
     word: "Creche",
@@ -3265,12 +673,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Crash -> A place where kids 'crash' (sleep/play) while parents work.",
     tone: "Neutral (0)",
     collocation: "Office creche",
-    intensitySpectrum: [
-      { word: "Babysitter", level: "Mild" },
-      { word: "Nursery", level: "Medium" },
-      { word: "Creche", level: "High" },
-      { word: "School", level: "Extreme" }
-    ]
+    characterHook: "Office Daycare",
+    hookWhy: "A place where working parents leave their babies."
   },
   {
     word: "Esoteric",
@@ -3283,12 +687,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Iso -> Isolated knowledge for few people.",
     tone: "Neutral (0)",
     collocation: "Esoteric rituals",
-    intensitySpectrum: [
-      { word: "Niche", level: "Mild" },
-      { word: "Specialized", level: "Medium" },
-      { word: "Esoteric", level: "High" },
-      { word: "Secret", level: "Extreme" }
-    ]
+    characterHook: "Aghori Sadhus",
+    hookWhy: "Their rituals and knowledge are secret and understood only by them."
   },
   {
     word: "Maestro",
@@ -3301,12 +701,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Master -> Maestro sounds like Master.",
     tone: "Positive (+)",
     collocation: "Musical maestro",
-    intensitySpectrum: [
-      { word: "Musician", level: "Mild" },
-      { word: "Expert", level: "Medium" },
-      { word: "Virtuoso", level: "High" },
-      { word: "Maestro", level: "Extreme" }
-    ]
+    characterHook: "Ilaiyaraaja",
+    hookWhy: "A master musician and conductor."
   },
   {
     word: "Fawning",
@@ -3319,12 +715,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fan -> A fan acting like a servant to a star.",
     tone: "Negative (-)",
     collocation: "Fawning attention",
-    intensitySpectrum: [
-      { word: "Nice", level: "Mild" },
-      { word: "Complimentary", level: "Medium" },
-      { word: "Fawning", level: "High" },
-      { word: "Groveling", level: "Extreme" }
-    ]
+    characterHook: "The 'Chamcha'",
+    hookWhy: "Excessively praising the boss to get a promotion."
   },
   {
     word: "Shoal",
@@ -3337,12 +729,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Shore -> Fish gather in shoals near the shore.",
     tone: "Neutral (0)",
     collocation: "Shoal of herring",
-    intensitySpectrum: [
-      { word: "Couple", level: "Mild" },
-      { word: "Group", level: "Medium" },
-      { word: "Shoal", level: "High" },
-      { word: "Swarm", level: "Extreme" }
-    ]
+    characterHook: "Discovery Channel Fish",
+    hookWhy: "Thousands of fish swimming together in a group."
   },
   {
     word: "Bevy",
@@ -3355,12 +743,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Heavy -> A heavy crowd of people.",
     tone: "Neutral (0)",
     collocation: "Bevy of beauties",
-    intensitySpectrum: [
-      { word: "Few", level: "Mild" },
-      { word: "Bunch", level: "Medium" },
-      { word: "Bevy", level: "High" },
-      { word: "Horde", level: "Extreme" }
-    ]
+    characterHook: "Kitty Party Group",
+    hookWhy: "A large group of ladies chatting together."
   },
   {
     word: "Facsimile",
@@ -3373,12 +757,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fax -> Fax machines send facsimiles.",
     tone: "Neutral (0)",
     collocation: "Digital facsimile",
-    intensitySpectrum: [
-      { word: "Likeness", level: "Mild" },
-      { word: "Copy", level: "Medium" },
-      { word: "Facsimile", level: "High" },
-      { word: "Clone", level: "Extreme" }
-    ]
+    characterHook: "Xerox Shop",
+    hookWhy: "Producing an exact copy of the document."
   },
   {
     word: "Caucus",
@@ -3391,12 +771,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Discuss -> They 'Discuss' in a Cau-'cus'.",
     tone: "Neutral (0)",
     collocation: "Party caucus",
-    intensitySpectrum: [
-      { word: "Gathering", level: "Mild" },
-      { word: "Meeting", level: "Medium" },
-      { word: "Caucus", level: "High" },
-      { word: "Congress", level: "Extreme" }
-    ]
+    characterHook: "Party High Command",
+    hookWhy: "A closed meeting of political leaders to decide strategy."
   },
   {
     word: "Cortege",
@@ -3409,12 +785,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Cart -> A cart carrying a body in a procession.",
     tone: "Negative (-)",
     collocation: "Funeral cortege",
-    intensitySpectrum: [
-      { word: "Line", level: "Mild" },
-      { word: "Procession", level: "Medium" },
-      { word: "Cortege", level: "High" },
-      { word: "Parade", level: "Extreme" }
-    ]
+    characterHook: "Antim Yatra (Funeral)",
+    hookWhy: "The solemn line of cars/people following the body."
   },
   {
     word: "Facile",
@@ -3427,12 +799,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Face -> Only looking at the face (surface), ignoring the depth.",
     tone: "Negative (-)",
     collocation: "Facile argument",
-    intensitySpectrum: [
-      { word: "Easy", level: "Mild" },
-      { word: "Simple", level: "Medium" },
-      { word: "Facile", level: "High" },
-      { word: "Mindless", level: "Extreme" }
-    ]
+    characterHook: "'Just be Happy' Advice",
+    hookWhy: "Ignoring life's complexities and giving a superficial solution."
   },
   {
     word: "Polyglot",
@@ -3445,12 +813,8 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Poly (Many) + Glot (Throat/Tongue) -> Many tongues.",
     tone: "Positive (+)",
     collocation: "Polyglot society",
-    intensitySpectrum: [
-      { word: "Bilingual", level: "Mild" },
-      { word: "Trilingual", level: "Medium" },
-      { word: "Polyglot", level: "High" },
-      { word: "Hyperpolyglot", level: "Extreme" }
-    ]
+    characterHook: "Tourist Guide at Taj Mahal",
+    hookWhy: "Speaking French, English, German, and Hindi fluently."
   },
   {
     word: "Debonair",
@@ -3463,66 +827,50 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "De + Bone + Air -> Good posture (bone) and an air of confidence.",
     tone: "Positive (+)",
     collocation: "Debonair gentleman",
-    intensitySpectrum: [
-      { word: "Polite", level: "Mild" },
-      { word: "Charming", level: "Medium" },
-      { word: "Debonair", level: "High" },
-      { word: "Dashing", level: "Extreme" }
-    ]
+    characterHook: "Shah Rukh Khan in a Suit",
+    hookWhy: "Charming, stylish, and confident gentleman."
   },
   {
     word: "Tantamount",
     partOfSpeech: "Adjective",
     meaning: "Equivalent in seriousness to; virtually the same as.",
     translation: "समान / बराबर",
-    sentence: "His silence was tantamount to a confession.",
+    sentence: "His silence was tantamount to an admission of guilt.",
     synonyms: ["Equivalent", "Synonymous", "Equal"],
     antonyms: ["Different", "Opposite", "Unrelated"],
-    trick: "Amount -> The same amount (Equal).",
+    trick: "Ta-ta + Mount -> Two mountains of the same size (equal).",
     tone: "Neutral (0)",
     collocation: "Tantamount to treason",
-    intensitySpectrum: [
-      { word: "Like", level: "Mild" },
-      { word: "Similar", level: "Medium" },
-      { word: "Tantamount", level: "High" },
-      { word: "Identical", level: "Extreme" }
-    ]
+    characterHook: "Silence = Yes",
+    hookWhy: "In many situations, remaining silent is equal to (tantamount to) admitting guilt."
   },
   {
     word: "Odium",
     partOfSpeech: "Noun",
     meaning: "General or widespread hatred or disgust directed toward someone as a result of their actions.",
-    translation: "घृणा / बदनामी",
-    sentence: "He faced the odium of the public after the scandal.",
-    synonyms: ["Hatred", "Disgust", "Repugnance"],
-    antonyms: ["Admiration", "Affection", "Approval"],
-    trick: "Odor -> A bad odor makes people hate/disgust you.",
+    translation: "घृणा / अपयश",
+    sentence: "He incurred the odium of the public after the scandal.",
+    synonyms: ["Hatred", "Disgust", "Abhorrence"],
+    antonyms: ["Affection", "Admiration", "Love"],
+    trick: "Odor -> A bad smell (odor) makes people hate you.",
     tone: "Negative (-)",
-    collocation: "Public odium",
-    intensitySpectrum: [
-      { word: "Dislike", level: "Mild" },
-      { word: "Contempt", level: "Medium" },
-      { word: "Odium", level: "High" },
-      { word: "Abhorrence", level: "Extreme" }
-    ]
+    collocation: "Public Odium",
+    characterHook: "Scam 1992 (Harshad Mehta End)",
+    hookWhy: "The public hatred and disgust he faced after the scam was exposed."
   },
   {
     word: "Avowed",
     partOfSpeech: "Adjective",
     meaning: "That has been asserted, admitted, or stated publicly.",
-    translation: "स्वीकृत / घोषित",
-    sentence: "He is an avowed vegetarian.",
-    synonyms: ["Declared", "Admitted", "Self-confessed"],
-    antonyms: ["Secret", "Denyed", "Closeted"],
-    trick: "Vow -> Took a vow publicly.",
+    translation: "स्वीकार किया हुआ / घोषित",
+    sentence: "He is an avowed vegetarian and animal rights activist.",
+    synonyms: ["Declared", "Sworn", "Admitted"],
+    antonyms: ["Secret", "Denried", "Covert"],
+    trick: "A Vow -> Someone who has taken a vow publicly.",
     tone: "Neutral (0)",
     collocation: "Avowed enemy",
-    intensitySpectrum: [
-      { word: "Open", level: "Mild" },
-      { word: "Stated", level: "Medium" },
-      { word: "Avowed", level: "High" },
-      { word: "Sworn", level: "Extreme" }
-    ]
+    characterHook: "RSS Pracharak",
+    hookWhy: "Someone who has publicly declared and sworn to a specific lifestyle/belief."
   },
   {
     word: "Querulous",
@@ -3530,362 +878,2388 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Complaining in a petulant or whining manner.",
     translation: "विलापी / शिकायती",
     sentence: "He became querulous and demanding in his old age.",
-    synonyms: ["Whining", "Cantankerous", "Peevish"],
-    antonyms: ["Cheerful", "Patient", "Stoic"],
-    trick: "Query -> Always raising a 'query' or complaint about everything.",
+    synonyms: ["Complaining", "Whining", "Peevish"],
+    antonyms: ["Cheerful", "Patient", "Content"],
+    trick: "Query -> Asking too many queries (questions/complaints) in a whining tone.",
     tone: "Negative (-)",
-    collocation: "Querulous voice",
-    intensitySpectrum: [
-      { word: "Unhappy", level: "Mild" },
-      { word: "Complaining", level: "Medium" },
-      { word: "Querulous", level: "High" },
-      { word: "Unbearable", level: "Extreme" }
-    ]
+    collocation: "Querulous tone",
+    characterHook: "Fufa-ji at Wedding",
+    hookWhy: "Always complaining about the food or AC in a whining tone."
   },
   {
     word: "Equable",
     partOfSpeech: "Adjective",
-    meaning: "Not easily disturbed or angered; calm and even-tempered.",
-    translation: "शांत / एक समान",
-    sentence: "Her equable temperament made her a perfect mediator.",
-    synonyms: ["Calm", "Composed", "Placid"],
-    antonyms: ["Temperamental", "Moody", "Excitable"],
-    trick: "Equal -> Mood stays 'equal' (stable) in all situations.",
+    meaning: "(Of a person) not easily disturbed or angered; calm and even-tempered.",
+    translation: "शांत / एक-सा",
+    sentence: "She remained equable despite the stress of the situation.",
+    synonyms: ["Calm", "Composed", "Even-tempered"],
+    antonyms: ["Excitable", "Temperamental", "Moody"],
+    trick: "Equal -> Always equal mood, never up or down.",
     tone: "Positive (+)",
-    collocation: "Equable climate/temperament",
-    intensitySpectrum: [
-      { word: "Steady", level: "Mild" },
-      { word: "Calm", level: "Medium" },
-      { word: "Equable", level: "High" },
-      { word: "Unflappable", level: "Extreme" }
-    ]
+    collocation: "Equable temperament",
+    characterHook: "MS Dhoni",
+    hookWhy: "Never gets angry or too excited; always calm."
   },
   {
     word: "Irascible",
     partOfSpeech: "Adjective",
     meaning: "Having or showing a tendency to be easily angered.",
     translation: "चिड़चिड़ा / क्रोधी",
-    sentence: "The irascible old man shouted at the kids playing on his lawn.",
+    sentence: "The irascible old man shouted at the kids playing near his house.",
     synonyms: ["Irritable", "Short-tempered", "Testy"],
-    antonyms: ["Good-natured", "Affable", "Placid"],
+    antonyms: ["Good-natured", "Cheerful", "Placid"],
     trick: "Rascal -> A rascal makes you irascible (angry).",
     tone: "Negative (-)",
     collocation: "Irascible nature",
-    intensitySpectrum: [
-      { word: "Grumpy", level: "Mild" },
-      { word: "Irritable", level: "Medium" },
-      { word: "Irascible", level: "High" },
-      { word: "Volatile", level: "Extreme" }
-    ]
+    characterHook: "Virus (3 Idiots)",
+    hookWhy: "Getting angry at students for small mistakes instantly."
   },
   {
     word: "Peevish",
     partOfSpeech: "Adjective",
     meaning: "Easily irritated, especially by unimportant things.",
-    translation: "चिड़चिड़ा / तुनकमिज़ाज",
+    translation: "झगड़ालू / चिड़चिड़ा",
     sentence: "Lack of sleep made him peevish and impatient.",
-    synonyms: ["Fretful", "Petulant", "Crabby"],
-    antonyms: ["Agreeable", "Friendly", "Patient"],
-    trick: "Pea -> Getting annoyed by a small 'pea' under the mattress.",
+    synonyms: ["Irritable", "Fretful", "Cross"],
+    antonyms: ["Affable", "Easygoing", "Pleasant"],
+    trick: "Pee -> A baby who needs to pee is peevish (cranky).",
     tone: "Negative (-)",
-    collocation: "Peevish complaint",
-    intensitySpectrum: [
-      { word: "Annoyed", level: "Mild" },
-      { word: "Peevish", level: "Medium" },
-      { word: "Cranky", level: "High" },
-      { word: "Furious", level: "Extreme" }
-    ]
+    collocation: "Peevish child",
+    characterHook: "Sleepy Toddler",
+    hookWhy: "Getting annoyed and crying over small things because of tiredness."
   },
   {
     word: "Fretful",
     partOfSpeech: "Adjective",
     meaning: "Feeling or expressing distress or irritation.",
-    translation: "बेचैन / झुँझलाया हुआ",
+    translation: "बेचैन / चिड़चिड़ा",
     sentence: "The baby was tired and fretful.",
-    synonyms: ["Restless", "Uneasy", "Agitated"],
-    antonyms: ["Calm", "Content", "Peaceful"],
-    trick: "Fret -> Don't fret (worry); fretting makes you fretful.",
+    synonyms: ["Distressed", "Upset", "Restless"],
+    antonyms: ["Calm", "Contented", "Peaceful"],
+    trick: "Fret -> Don't fret (worry); stop being fretful.",
     tone: "Negative (-)",
     collocation: "Fretful sleep",
-    intensitySpectrum: [
-      { word: "Concerned", level: "Mild" },
-      { word: "Worried", level: "Medium" },
-      { word: "Fretful", level: "High" },
-      { word: "Distraught", level: "Extreme" }
-    ]
+    characterHook: "Indian Mom waiting at night",
+    hookWhy: "Visibly worried and agitated when you are late."
   },
   {
     word: "Fractious",
     partOfSpeech: "Adjective",
     meaning: "(Typically of children) irritable and quarrelsome.",
-    translation: "झगड़ालू / चिड़चिड़ा",
-    sentence: "The long journey made the children fractious.",
-    synonyms: ["Grumpy", "Grouchy", "Unruly"],
-    antonyms: ["Obedient", "Affable", "Happy"],
-    trick: "Fracture -> Relationships 'fracture' easily when you are quarrelsome.",
+    translation: "झगड़ालू / अनियंत्रित",
+    sentence: "The children became fractious after the long journey.",
+    synonyms: ["Grumpy", "Bad-tempered", "Unruly"],
+    antonyms: ["Contented", "Obedient", "Affable"],
+    trick: "Fracture -> A relationship fracture caused by fighting.",
     tone: "Negative (-)",
     collocation: "Fractious crowd",
-    intensitySpectrum: [
-      { word: "Restless", level: "Mild" },
-      { word: "Irritable", level: "Medium" },
-      { word: "Fractious", level: "High" },
-      { word: "Uncontrollable", level: "Extreme" }
-    ]
+    characterHook: "Kids on a Flight",
+    hookWhy: "Crying, kicking seats, and refusing to listen."
   },
   {
     word: "Petulant",
     partOfSpeech: "Adjective",
     meaning: "(Of a person or their manner) childishly sulky or bad-tempered.",
-    translation: "ढीठ / तुनकमिज़ाज",
-    sentence: "He stormed out of the room like a petulant child.",
-    synonyms: ["Sulky", "Moody", "Peevish"],
-    antonyms: ["Good-humored", "Mature", "Resilient"],
-    trick: "Pet -> Acting like a spoiled 'pet' or child who didn't get a treat.",
+    translation: "ढीठ / तुनकमिजाज",
+    sentence: "He behaved like a petulant child when he didn't get his way.",
+    synonyms: ["Sulky", "Peonish", "Moody"],
+    antonyms: ["Good-humored", "Mature", "Gracious"],
+    trick: "Pet -> A spoiled pet gets angry if not fed.",
     tone: "Negative (-)",
     collocation: "Petulant behavior",
-    intensitySpectrum: [
-      { word: "Upset", level: "Mild" },
-      { word: "Sulky", level: "Medium" },
-      { word: "Petulant", level: "High" },
-      { word: "Tantrum-throwing", level: "Extreme" }
-    ]
+    characterHook: "Spoiled Brat",
+    hookWhy: "Sulking because they didn't get the specific toy they wanted."
   },
   {
     word: "Amenable",
     partOfSpeech: "Adjective",
-    meaning: "Open and responsive to suggestion; easily persuaded or controlled.",
-    translation: "आज्ञाकारी / जिम्मेदार",
-    sentence: "They are usually amenable to our advice.",
-    synonyms: ["Compliant", "Manageable", "Agreeable"],
-    antonyms: ["Stubborn", "Recalcitrant", "Defiant"],
-    trick: "Amen -> Someone who says 'Amen' (Yes) to everything.",
+    meaning: "(Of a person) open and responsive to suggestion; easily persuaded or controlled.",
+    translation: "आज्ञाकारी / उत्तरदायी",
+    sentence: "They found him amenable to the idea of a compromise.",
+    synonyms: ["Cooperative", "Compliant", "Responsive"],
+    antonyms: ["Uncooperative", "Stubborn", "Resistant"],
+    trick: "Amen -> Someone who says 'Amen' (Yes/So be it) to everything.",
     tone: "Positive (+)",
     collocation: "Amenable to reason",
-    intensitySpectrum: [
-      { word: "Open", level: "Mild" },
-      { word: "Willing", level: "Medium" },
-      { word: "Amenable", level: "High" },
-      { word: "Submissive", level: "Extreme" }
-    ]
+    characterHook: "Circuit (Munna Bhai)",
+    hookWhy: "Always agrees with whatever Munna says."
   },
   {
     word: "Temerity",
     partOfSpeech: "Noun",
     meaning: "Excessive confidence or boldness; audacity.",
-    translation: "दुस्साहस",
-    sentence: "No one had the temerity to question his decision.",
+    translation: "दुस्साहस / ढिठाई",
+    sentence: "No one had the temerity to question his authority.",
     synonyms: ["Audacity", "Boldness", "Nerve"],
     antonyms: ["Shyness", "Bashfulness", "Caution"],
-    trick: "Team -> It takes 'temerity' to lead a team into a fire.",
+    trick: "Team -> A team player needs confidence, but too much is temerity.",
     tone: "Negative (-)",
     collocation: "Have the temerity",
-    intensitySpectrum: [
-      { word: "Confidence", level: "Mild" },
-      { word: "Boldness", level: "Medium" },
-      { word: "Temerity", level: "High" },
-      { word: "Recklessness", level: "Extreme" }
-    ]
+    characterHook: "Ashneer Grover",
+    hookWhy: "The boldness to insult people on national TV ('Doglapan')."
   },
   {
     word: "Prudence",
     partOfSpeech: "Noun",
     meaning: "The quality of being prudent; cautiousness.",
     translation: "विवेक / सावधानी",
-    sentence: "We need to exercise prudence in our financial planning.",
-    synonyms: ["Wisdom", "Caution", "Foresight"],
-    antonyms: ["Recklessness", "Folly", "Impulsiveness"],
-    trick: "Prude -> A 'prude' person is very careful and avoids risks/scandals.",
+    sentence: "We need to exercise prudence in our financial spending.",
+    synonyms: ["Wisdom", "Caution", "Judgment"],
+    antonyms: ["Recklessness", "Folly", "Extravagance"],
+    trick: "Proud -> Be proud of your wise choices.",
     tone: "Positive (+)",
     collocation: "Financial prudence",
-    intensitySpectrum: [
-      { word: "Care", level: "Mild" },
-      { word: "Caution", level: "Medium" },
-      { word: "Prudence", level: "High" },
-      { word: "Wisdom", level: "Extreme" }
-    ]
+    characterHook: "Investing in FD",
+    hookWhy: "Choosing a safe, wise option rather than gambling on crypto."
   },
   {
     word: "Insolent",
     partOfSpeech: "Adjective",
     meaning: "Showing a rude and arrogant lack of respect.",
-    translation: "बदतमीज़ / धृष्ट",
-    sentence: "The student was suspended for his insolent behavior towards the teacher.",
+    translation: "बदतमीज / ढीठ",
+    sentence: "The teacher punished the student for his insolent behavior.",
     synonyms: ["Impertinent", "Impudent", "Cheeky"],
-    antonyms: ["Polite", "Respectful", "Courteous"],
-    trick: "Insult -> An insolent person 'insults' everyone.",
+    antonyms: ["Polite", "Respectful", "Deferential"],
+    trick: "Insult -> Someone who insults others is insolent.",
     tone: "Negative (-)",
     collocation: "Insolent tone",
-    intensitySpectrum: [
-      { word: "Rude", level: "Mild" },
-      { word: "Disrespectful", level: "Medium" },
-      { word: "Insolent", level: "High" },
-      { word: "Abusive", level: "Extreme" }
-    ]
+    characterHook: "Backbencher mocking Teacher",
+    hookWhy: "Showing a rude lack of respect for authority."
   },
   {
     word: "Contumacious",
     partOfSpeech: "Adjective",
     meaning: "(Especially of a defendant's behavior) stubbornly or willfully disobedient to authority.",
-    translation: "अवज्ञाकारी / ढीठ",
-    sentence: "The judge punished the contumacious witness for refusing to answer.",
-    synonyms: ["Rebellious", "Defiant", "Recalcitrant"],
+    translation: "अवज्ञाकारी / जिद्दी",
+    sentence: "The judge cited the contumacious witness for contempt of court.",
+    synonyms: ["Rebellious", "Defiant", "Insubordinate"],
     antonyms: ["Obedient", "Submissive", "Compliant"],
-    trick: "Continue -> Continuing to argue with the judge.",
+    trick: "Tum (You) + Action -> You act against authority.",
     tone: "Negative (-)",
     collocation: "Contumacious conduct",
-    intensitySpectrum: [
-      { word: "Stubborn", level: "Mild" },
-      { word: "Disobedient", level: "Medium" },
-      { word: "Contumacious", level: "High" },
-      { word: "Mutinous", level: "Extreme" }
-    ]
+    characterHook: "Vijay Mallya",
+    hookWhy: "Refusing to return to India despite court orders (Willful disobedience)."
   },
   {
     word: "Obsequious",
     partOfSpeech: "Adjective",
     meaning: "Obedient or attentive to an excessive or servile degree.",
-    translation: "चापलूसी करनेवाला / जी-हुज़ूरिया",
-    sentence: "The obsequious assistant agreed with everything the boss said.",
-    synonyms: ["Servile", "Fawning", "Sycophantic"],
-    antonyms: ["Domineering", "Assertive", "Independent"],
-    trick: "Sequence -> Follows the 'sequence' of orders blindly like a robot.",
+    translation: "चापलूस",
+    sentence: "They were served by obsequious waiters.",
+    synonyms: ["Servile", "Ingratiating", "Sycophantic"],
+    antonyms: ["Domineering", "Assertive", "Arrogant"],
+    trick: "Sequence -> Always following in sequence behind the master.",
     tone: "Negative (-)",
     collocation: "Obsequious bow",
-    intensitySpectrum: [
-      { word: "Helpful", level: "Mild" },
-      { word: "Compliant", level: "Medium" },
-      { word: "Obsequious", level: "High" },
-      { word: "Groveling", level: "Extreme" }
-    ]
+    characterHook: "Corporate 'Yes Man'",
+    hookWhy: "Agreeing with the boss excessively to gain favor."
   },
   {
     word: "Abysmal",
     partOfSpeech: "Adjective",
     meaning: "Extremely bad; appalling.",
-    translation: "बेहद खराब / रसातल",
-    sentence: "The quality of service at the hotel was abysmal.",
+    translation: "बहुत खराब / अथाह",
+    sentence: "The quality of her work was abysmal.",
     synonyms: ["Dreadful", "Awful", "Terrible"],
     antonyms: ["Superb", "Excellent", "Outstanding"],
-    trick: "Abyss -> Like falling into a bottomless pit (Abyss).",
+    trick: "Abyss -> A bottomless pit; deep and dark (bad).",
     tone: "Negative (-)",
-    collocation: "Abysmal performance",
-    intensitySpectrum: [
-      { word: "Poor", level: "Mild" },
-      { word: "Bad", level: "Medium" },
-      { word: "Abysmal", level: "High" },
-      { word: "Catastrophic", level: "Extreme" }
-    ]
+    collocation: "Abysmal failure",
+    characterHook: "Adipurush VFX",
+    hookWhy: "The quality was so shockingly bad it became a meme."
   },
   {
     word: "Preponderance",
     partOfSpeech: "Noun",
     meaning: "The quality or fact of being greater in number, quantity, or importance.",
-    translation: "प्रधानता / बाहुल्य",
+    translation: "प्रधानता / बहुलता",
     sentence: "There is a preponderance of female students in the class.",
-    synonyms: ["Majority", "Prevalence", "Dominance"],
-    antonyms: ["Minority", "Scarcity", "Paucity"],
-    trick: "Ponder -> Ponderous means heavy. Preponderance means heavier/greater weight.",
+    synonyms: ["Prevalence", "Dominance", "Majority"],
+    antonyms: ["Scarcity", "Minority", "Paucity"],
+    trick: "Ponder -> Need to ponder (think) because there is a huge amount.",
     tone: "Neutral (0)",
     collocation: "Preponderance of evidence",
-    intensitySpectrum: [
-      { word: "More", level: "Mild" },
-      { word: "Majority", level: "Medium" },
-      { word: "Preponderance", level: "High" },
-      { word: "Monopoly", level: "Extreme" }
-    ]
+    characterHook: "Engineers in India",
+    hookWhy: "In any random crowd, there is a high likelihood (majority) of finding engineers."
   },
   {
     word: "Prevalence",
     partOfSpeech: "Noun",
     meaning: "The fact or condition of being prevalent; commonness.",
-    translation: "प्रसार / व्यापकता",
-    sentence: "The prevalence of obesity is a major health concern.",
+    translation: "प्रचलन / प्रसार",
+    sentence: "The prevalence of obesity is increasing in modern society.",
     synonyms: ["Commonness", "Frequency", "Ubiquity"],
-    antonyms: ["Rarity", "Uncommonness", "Infrequency"],
-    trick: "Prevail -> To win/spread everywhere. If it prevails, it has prevalence.",
+    antonyms: ["Rarity", "Uncommonness"],
+    trick: "Prevail -> To win/exist everywhere.",
     tone: "Neutral (0)",
     collocation: "High prevalence",
-    intensitySpectrum: [
-      { word: "Presence", level: "Mild" },
-      { word: "Frequency", level: "Medium" },
-      { word: "Prevalence", level: "High" },
-      { word: "Ubiquity", level: "Extreme" }
-    ]
+    characterHook: "QR Codes",
+    hookWhy: "Found commonly in every shop from malls to roadside tea stalls."
   },
   {
     word: "Ascendancy",
     partOfSpeech: "Noun",
     meaning: "Occupation of a position of dominant power or influence.",
-    translation: "प्रभुत्व / चढ़ाई",
-    sentence: "The party is slowly gaining ascendancy in the region.",
-    synonyms: ["Dominance", "Supremacy", "Sovereignty"],
-    antonyms: ["Subordination", "Decline", "Fall"],
-    trick: "Ascend -> Going up to the top position.",
+    translation: "प्रभुत्व",
+    sentence: "The poor have moral ascendancy over the rich.",
+    synonyms: ["Dominance", "Supremacy", "Authority"],
+    antonyms: ["Subordination", "Inferiority", "Weakness"],
+    trick: "Ascend -> To go up (to the top power).",
     tone: "Positive (+)",
     collocation: "Gain ascendancy",
-    intensitySpectrum: [
-      { word: "Influence", level: "Mild" },
-      { word: "Control", level: "Medium" },
-      { word: "Ascendancy", level: "High" },
-      { word: "Supremacy", level: "Extreme" }
-    ]
+    characterHook: "Modi Wave (2014)",
+    hookWhy: "Rising to a position of dominant power."
   },
   {
     word: "Pugnacious",
     partOfSpeech: "Adjective",
     meaning: "Eager or quick to argue, quarrel, or fight.",
-    translation: "झगड़ालू / लड़ाकू",
-    sentence: "The pugnacious little boy was always getting into fights.",
+    translation: "झगड़ालू",
+    sentence: "The pugnacious boy was always getting into fights at school.",
     synonyms: ["Combative", "Aggressive", "Belligerent"],
-    antonyms: ["Peaceable", "Friendly", "Conciliatory"],
-    trick: "Pug -> A Pug dog might look small but can be pugnacious (fighter).",
+    antonyms: ["Peaceable", "Friendly", "Harmonious"],
+    trick: "Pug -> A pug dog that wants to fight everyone.",
     tone: "Negative (-)",
-    collocation: "Pugnacious mood",
-    intensitySpectrum: [
-      { word: "Assertive", level: "Mild" },
-      { word: "Aggressive", level: "Medium" },
-      { word: "Pugnacious", level: "High" },
-      { word: "Belligerent", level: "Extreme" }
-    ]
+    collocation: "Pugnacious attitude",
+    characterHook: "Road Rage Guy",
+    hookWhy: "Ready to fight instantly, saying 'Tu jaanta nahi mera baap kaun hai'."
   },
-
+  // --- Group: Atrophy (Restored) ---
+  {
+    word: "Atrophy",
+    partOfSpeech: "Verb",
+    meaning: "Waste away, typically due to the degeneration of cells, or become vestigial during evolution.",
+    translation: "क्षय होना",
+    sentence: "Muscles that are not used will eventually atrophy.",
+    synonyms: ["Wither", "Shrivel", "Decay"],
+    antonyms: ["Strengthen", "Grow", "Flourish"],
+    trick: "A (No) + Trophy -> You win no trophy if your skills waste away.",
+    tone: "Negative (-)",
+    collocation: "Muscle atrophy",
+    characterHook: "Plaster Cast on Leg",
+    hookWhy: "When the cast is removed after months, the leg looks thin because the muscles have wasted away (atrophied) from lack of use."
+  },
+  {
+    word: "Proclivity",
+    partOfSpeech: "Noun",
+    meaning: "A tendency to choose or do something regularly; an inclination or predisposition toward a particular thing.",
+    translation: "झुकाव / प्रवृत्ति",
+    sentence: "He has a proclivity for hard work.",
+    synonyms: ["Inclination", "Tendency", "Leaning"],
+    antonyms: ["Aversion", "Disinclination", "Dislike"],
+    trick: "Pro + Cliff -> Inclined towards the cliff (danger).",
+    tone: "Neutral (0)",
+    collocation: "Proclivity for violence",
+    characterHook: "Indian Moms asking for 'Free Dhaniya'",
+    hookWhy: "A natural tendency or inclination to ask for something extra when buying vegetables."
+  },
+  {
+    word: "Malapropism",
+    partOfSpeech: "Noun",
+    meaning: "The mistaken use of a word in place of a similar-sounding one, often with unintentionally amusing effect.",
+    translation: "शब्द का अशुद्ध प्रयोग",
+    sentence: "His speech was full of amusing malapropisms.",
+    synonyms: ["Misusage", "Solecism", "Blunder"],
+    antonyms: ["Accuracy", "Correctness"],
+    trick: "Mal (Bad) + Prop -> Using a bad prop (word) on stage.",
+    tone: "Negative (-)",
+    collocation: "Comical malapropism",
+    characterHook: "English Speaking Class (Comedy Scenes)",
+    hookWhy: "Mistakenly saying 'I want to marry your daughter' instead of 'bury your daughter'. Using the wrong word that sounds similar."
+  },
+  {
+    word: "Abet",
+    partOfSpeech: "Verb",
+    meaning: "Encourage or assist (someone) to do something wrong, in particular, to commit a crime or other offense.",
+    translation: "दुष्प्रेरित करना",
+    sentence: "He was charged with aiding and abetting the robbery.",
+    synonyms: ["Assist", "Aid", "Help"],
+    antonyms: ["Hinder", "Prevent", "Deter"],
+    trick: "A bet -> Encourage someone to take a bad bet.",
+    tone: "Negative (-)",
+    collocation: "Aid and abet",
+    characterHook: "The Villain's Sidekick",
+    hookWhy: "He doesn't kill the hero, but he holds the gun for the villain. He helps (abets) the crime."
+  },
+  {
+    word: "Suborn",
+    partOfSpeech: "Verb",
+    meaning: "Bribe or otherwise induce (someone) to commit an unlawful act such as perjury.",
+    translation: "रिश्वत देकर गवाही दिलवाना",
+    sentence: "He was accused of conspiring to suborn witnesses.",
+    synonyms: ["Bribe", "Corrupt", "Instigate"],
+    antonyms: ["None"],
+    trick: "Sub (Under) + Born -> Born under bad influence (bribed).",
+    tone: "Negative (-)",
+    collocation: "Suborn perjury",
+    characterHook: "Jolly LLB (Corrupt Lawyer)",
+    hookWhy: "Paying money to a witness to lie in court (Bribing for perjury)."
+  },
+  {
+    word: "Deter",
+    partOfSpeech: "Verb",
+    meaning: "Discourage (someone) from doing something, typically by instilling doubt or fear of the consequences.",
+    translation: "डराना / रोकना",
+    sentence: "High prices deter many people from buying organic food.",
+    synonyms: ["Discourage", "Dissuade", "Prevent"],
+    antonyms: ["Encourage", "Promote", "Incentivize"],
+    trick: "De-tear -> Stop someone from tearing something up.",
+    tone: "Neutral (0)",
+    collocation: "Deter crime",
+    characterHook: "'Beware of Dog' Sign",
+    hookWhy: "The sign puts fear in you and stops (deters) you from entering the gate."
+  },
+  {
+    word: "Assimilation",
+    partOfSpeech: "Noun",
+    meaning: "The process of taking in and fully understanding information or ideas.",
+    translation: "आत्मसात करना",
+    sentence: "The assimilation of immigrants into American culture.",
+    synonyms: ["Integration", "Absorption", "Digestion"],
+    antonyms: ["Rejection", "Exclusion", "Segregation"],
+    trick: "Similar -> Making things similar to the main group.",
+    tone: "Neutral (0)",
+    collocation: "Cultural assimilation",
+    characterHook: "Sugar in Milk",
+    hookWhy: "The sugar dissolves completely and becomes part of the milk (fully integrated)."
+  },
+  {
+    word: "Acculturation",
+    partOfSpeech: "Noun",
+    meaning: "Assimilation to a different culture, typically the dominant one.",
+    translation: "संस्कृति-संक्रमण",
+    sentence: "The process of acculturation can be difficult for refugees.",
+    synonyms: ["Socialization", "Civilization", "Adaptation"],
+    antonyms: ["None"],
+    trick: "Culture -> Adding a new culture (Ac-culture).",
+    tone: "Neutral (0)",
+    collocation: "Process of acculturation",
+    characterHook: "NRI Kids in USA",
+    hookWhy: "Indian kids starting to speak with an American accent and celebrating Halloween (Adopting new culture)."
+  },
+  {
+    word: "Alienation",
+    partOfSpeech: "Noun",
+    meaning: "The state or experience of being isolated from a group or an activity to which one should belong or in which one should be involved.",
+    translation: "अलगाव / बेगानापन",
+    sentence: "Unemployment may generate a sense of alienation.",
+    synonyms: ["Isolation", "Detachment", "Estrangement"],
+    antonyms: ["Integration", "Connection", "Belonging"],
+    trick: "Alien -> Feeling like an alien (stranger) in a group.",
+    tone: "Negative (-)",
+    collocation: "Social alienation",
+    characterHook: "The Kid picked last for Cricket",
+    hookWhy: "Standing alone at the boundary while everyone else plays; feeling isolated and excluded."
+  },
+  {
+    word: "Hegemonic",
+    partOfSpeech: "Adjective",
+    meaning: "Ruling or dominant in a political or social context.",
+    translation: "वर्चस्ववादी",
+    sentence: "The hegemonic power of the ruling party.",
+    synonyms: ["Dominant", "Supreme", "Paramount"],
+    antonyms: ["Subordinate", "Weak", "Minor"],
+    trick: "Huge Money -> Those with huge money usually have hegemonic power.",
+    tone: "Neutral (0)",
+    collocation: "Hegemonic masculinity",
+    characterHook: "Bollywood Khans (90s-2000s)",
+    hookWhy: "Their dominance over the box office was absolute and unchallenged."
+  },
+  {
+    word: "Ostracize",
+    partOfSpeech: "Verb",
+    meaning: "Exclude (someone) from a society or group.",
+    translation: "बहिष्कृत करना",
+    sentence: "She was ostracized by her colleagues for refusing to support the strike.",
+    synonyms: ["Exclude", "Shun", "Reject"],
+    antonyms: ["Welcome", "Accept", "Include"],
+    trick: "Ostrich -> Like an ostrich hiding its head, society hides from you.",
+    tone: "Negative (-)",
+    collocation: "Socially ostracized",
+    characterHook: "Village Panchayat 'Hookah Pani Band'",
+    hookWhy: "The community decides to totally ignore and exclude a family as punishment."
+  },
+  {
+    word: "Pariah",
+    partOfSpeech: "Noun",
+    meaning: "An outcast.",
+    translation: "अछूत / बहिष्कृत व्यक्ति",
+    sentence: "They treated him like a social pariah.",
+    synonyms: ["Outcast", "Leper", "Unperson"],
+    antonyms: ["Icon", "Idol", "Insider"],
+    trick: "Paraya (Hindi) -> Someone who is 'paraya' (stranger/outsider).",
+    tone: "Negative (-)",
+    collocation: "Social pariah",
+    characterHook: "Vijay Mallya / Nirav Modi",
+    hookWhy: "Once rich icons, now social outcasts who cannot return home."
+  },
+  {
+    word: "Sequester",
+    partOfSpeech: "Verb",
+    meaning: "Isolate or hide away.",
+    translation: "अलग करना / एकांत में रखना",
+    sentence: "The jury was sequestered until a verdict was reached.",
+    synonyms: ["Isolate", "Segregate", "Seclude"],
+    antonyms: ["Integrate", "Mix", "Combine"],
+    trick: "Seek + Wester -> Seek a place in the west to hide away.",
+    tone: "Neutral (0)",
+    collocation: "Sequester the jury",
+    characterHook: "Politicians in a Resort",
+    hookWhy: "Hiding MLAs in a hotel before a floor test so no one can contact them (Isolation)."
+  },
+  {
+    word: "Shun",
+    partOfSpeech: "Verb",
+    meaning: "Persistently avoid, ignore, or reject (someone or something) through antipathy or caution.",
+    translation: "किनारा करना / बचना",
+    sentence: "He shunned fashionable society.",
+    synonyms: ["Avoid", "Evade", "Eschew"],
+    antonyms: ["Seek", "Accept", "Embrace"],
+    trick: "Sun -> Stay away from the sun to avoid tanning.",
+    tone: "Negative (-)",
+    collocation: "Shun publicity",
+    characterHook: "Ex-Girlfriend/Boyfriend at a Party",
+    hookWhy: "You deliberately look away and avoid talking to them (Active avoidance)."
+  },
+  {
+    word: "Disenchanted",
+    partOfSpeech: "Adjective",
+    meaning: "Disappointed by someone or something previously respected or admired; disillusioned.",
+    translation: "मोहभंग",
+    sentence: "He became disenchanted with politics.",
+    synonyms: ["Disillusioned", "Disappointed", "Cynical"],
+    antonyms: ["Enchanted", "Enthusiastic", "Delighted"],
+    trick: "Dis + Chant -> The magic chant stopped working.",
+    tone: "Negative (-)",
+    collocation: "Disenchanted voters",
+    characterHook: "Voters after 5 Years",
+    hookWhy: "They believed the promises initially, but now the magic has faded and they are disappointed."
+  },
+  {
+    word: "Cynical",
+    partOfSpeech: "Adjective",
+    meaning: "Believing that people are motivated by self-interest; distrustful of human sincerity or integrity.",
+    translation: "निंदक / कुटिल",
+    sentence: "He was cynical about the politicians' promises.",
+    synonyms: ["Skeptical", "Doubtful", "Distrustful"],
+    antonyms: ["Optimistic", "Trusting", "Idealistic"],
+    trick: "Sin -> Sees sin in everyone.",
+    tone: "Negative (-)",
+    collocation: "Cynical view",
+    characterHook: "Old Uncles discussing Politics",
+    hookWhy: "They believe every politician is a thief and nothing will ever improve (Distrustful)."
+  },
+  {
+    word: "Jaded",
+    partOfSpeech: "Adjective",
+    meaning: "Tired, bored, or lacking enthusiasm, typically after having had too much of something.",
+    translation: "थका हुआ / उबा हुआ",
+    sentence: "Meals out were a treat for jaded palates.",
+    synonyms: ["Satiated", "Bored", "Weary"],
+    antonyms: ["Fresh", "Enthusiastic", "Keen"],
+    trick: "Fade -> Excitement has faded away.",
+    tone: "Negative (-)",
+    collocation: "Jaded appetite",
+    characterHook: "Food Critic",
+    hookWhy: "Having eaten the best food everywhere, they are now bored and hard to impress."
+  },
+  {
+    word: "Zealous",
+    partOfSpeech: "Adjective",
+    meaning: "Having or showing zeal.",
+    translation: "उत्साही",
+    sentence: "The detective was zealous in her pursuit of the kidnappers.",
+    synonyms: ["Fervent", "Ardent", "Passionate"],
+    antonyms: ["Apathetic", "Indifferent", "Lethargic"],
+    trick: "Zeal -> Full of zeal (energy).",
+    tone: "Positive (+)",
+    collocation: "Zealous supporter",
+    characterHook: "Political Party 'Karyakarta'",
+    hookWhy: "Working with extreme energy and passion, sometimes too much, for their leader."
+  },
+  {
+    word: "Fallacious",
+    partOfSpeech: "Adjective",
+    meaning: "Based on a mistaken belief.",
+    translation: "भ्रामक / तर्कहीन",
+    sentence: "The argument was based on a fallacious premise.",
+    synonyms: ["False", "Erroneous", "Untrue"],
+    antonyms: ["True", "Correct", "Valid"],
+    trick: "False -> Sounds like false.",
+    tone: "Negative (-)",
+    collocation: "Fallacious reasoning",
+    characterHook: "WhatsApp Forward Logic",
+    hookWhy: "'UNESCO declared Indian anthem best' - sounds good but based on false logic."
+  },
+  {
+    word: "Spurious",
+    partOfSpeech: "Adjective",
+    meaning: "Not being what it purports to be; false or fake.",
+    translation: "जाली / नकली",
+    sentence: "He was arrested for making spurious claims about the product.",
+    synonyms: ["Bogus", "Fake", "Counterfeit"],
+    antonyms: ["Genuine", "Authentic", "Real"],
+    trick: "Spur -> Done on the spur of the moment, likely not real/thought out.",
+    tone: "Negative (-)",
+    collocation: "Spurious claim",
+    characterHook: "Bisleri vs 'Bilsleri'",
+    hookWhy: "The bottle looks real, but it is a fake (spurious) copy."
+  },
+  {
+    word: "Mendacious",
+    partOfSpeech: "Adjective",
+    meaning: "Not telling the truth; lying.",
+    translation: "झूठा / मिथ्यावादी",
+    sentence: "The mendacious propaganda deceived many people.",
+    synonyms: ["Dishonest", "Deceitful", "Untruthful"],
+    antonyms: ["Truthful", "Honest", "Veracious"],
+    trick: "Mend -> Someone who has to mend (fix) their story constantly because they lie.",
+    tone: "Negative (-)",
+    collocation: "Mendacious report",
+    characterHook: "Pinocchio",
+    hookWhy: "His nose grows because he is a liar. (Fancy word for lying)."
+  },
+  {
+    word: "Forthright",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a person or their manner or speech) direct and outspoken; straightforward and honest.",
+    translation: "स्पष्टवादी / मुंहफट",
+    sentence: "She was quite forthright about her opinion.",
+    synonyms: ["Direct", "Frank", "Candid"],
+    antonyms: ["Secretive", "Evasive", "Dishonest"],
+    trick: "Forth + Right -> Comes forth and says what is right/true.",
+    tone: "Positive (+)",
+    collocation: "Forthright manner",
+    characterHook: "Kangana Ranaut",
+    hookWhy: "She speaks her mind directly and bluntly, without hiding anything."
+  },
+  {
+    word: "Impede",
+    partOfSpeech: "Verb",
+    meaning: "Delay or prevent (someone or something) by obstructing them; hinder.",
+    translation: "बाधा डालना",
+    sentence: "The construction work impeded traffic flow.",
+    synonyms: ["Hinder", "Obstruct", "Hamper"],
+    antonyms: ["Facilitate", "Help", "Assist"],
+    trick: "Stampede -> A stampede impedes orderly movement.",
+    tone: "Negative (-)",
+    collocation: "Impede progress",
+    characterHook: "Cow on the Road",
+    hookWhy: "The traffic is moving, but the cow blocks (impedes) the flow."
+  },
+  {
+    word: "Deterrents",
+    partOfSpeech: "Noun",
+    meaning: "A thing that discourages or is intended to discourage someone from doing something.",
+    translation: "निवारक",
+    sentence: "Nuclear weapons are seen as a deterrent to war.",
+    synonyms: ["Disincentive", "Discouragement", "Obstacle"],
+    antonyms: ["Incentive", "Encouragement", "Stimulus"],
+    trick: "Deter -> Things that deter.",
+    tone: "Neutral (0)",
+    collocation: "Effective deterrent",
+    characterHook: "Traffic Police Cameras",
+    hookWhy: "You slow down not because you want to, but because the camera discourages speeding."
+  },
+  {
+    word: "Runaway",
+    partOfSpeech: "Adjective",
+    meaning: "Happening or done quickly and easily; uncontrollable.",
+    translation: "बेकाबू",
+    sentence: "The play was a runaway success.",
+    synonyms: ["Uncontrolled", "Unchecked", "Rampant"],
+    antonyms: ["Controlled", "Moderate"],
+    trick: "Run Away -> Moving so fast it runs away from control.",
+    tone: "Neutral (0)",
+    collocation: "Runaway inflation",
+    characterHook: "Price of Onions",
+    hookWhy: "The price goes up uncontrollably (Runaway inflation) during shortages."
+  },
+  {
+    word: "Predicament",
+    partOfSpeech: "Noun",
+    meaning: "A difficult, unpleasant, or embarrassing situation.",
+    translation: "दुर्दशा / कठिन स्थिति",
+    sentence: "He found himself in a difficult predicament.",
+    synonyms: ["Dilemma", "Plight", "Quandary"],
+    antonyms: ["Solution", "Benefit", "Blessing"],
+    trick: "Predict -> Hard to predict the outcome of a messy situation.",
+    tone: "Negative (-)",
+    collocation: "Financial predicament",
+    characterHook: "Forgetting Anniversary",
+    hookWhy: "Wife asks 'Do you know what day it is?' - You are in a difficult situation."
+  },
+  {
+    word: "Juxtapose",
+    partOfSpeech: "Verb",
+    meaning: "Place or deal with close together for contrasting effect.",
+    translation: "पास-पास रखना (तुलना के लिए)",
+    sentence: "The exhibition juxtaposes Picasso's early drawings with his later paintings.",
+    synonyms: ["Compare", "Contrast", "Collocate"],
+    antonyms: ["Separate", "Disconnect"],
+    trick: "Just + Pose -> Pose two things just next to each other.",
+    tone: "Neutral (0)",
+    collocation: "Juxtapose images",
+    characterHook: "Weight Loss 'Before & After' Photos",
+    hookWhy: "Placing the fat photo next to the fit photo to show the contrast clearly."
+  },
+  {
+    word: "Stride",
+    partOfSpeech: "Noun/Verb",
+    meaning: "Walk with long, decisive steps in a specified direction.",
+    translation: "लंबे कदम / प्रगति",
+    sentence: "She strode confidently into the room.",
+    synonyms: ["March", "Pace", "Step"],
+    antonyms: ["Shuffle", "Crawl"],
+    trick: "Ride -> Walk as fast as a ride.",
+    tone: "Positive (+)",
+    collocation: "Make strides",
+    characterHook: "Amitabh Bachchan's Walk",
+    hookWhy: "He takes long, confident steps (strides) when he enters KBC."
+  },
+  {
+    word: "Headway",
+    partOfSpeech: "Noun",
+    meaning: "Forward movement or progress, especially when this is slow or difficult.",
+    translation: "प्रगति",
+    sentence: "We are making little headway with the negotiations.",
+    synonyms: ["Progress", "Advance", "Inroads"],
+    antonyms: ["Regression", "Retreat"],
+    trick: "Head + Way -> Moving the head forward along the way.",
+    tone: "Positive (+)",
+    collocation: "Make headway",
+    characterHook: "Bike in a Traffic Jam",
+    hookWhy: "Cars are stuck, but the bike makes slow progress (headway) through the gaps."
+  },
+  {
+    word: "Dwindle",
+    partOfSpeech: "Verb",
+    meaning: "Diminish gradually in size, amount, or strength.",
+    translation: "सूखना / कम होना",
+    sentence: "Traffic has dwindled to a trickle.",
+    synonyms: ["Diminish", "Decrease", "Reduce"],
+    antonyms: ["Increase", "Grow", "Expand"],
+    trick: "Wind -> Blown away by wind until little is left.",
+    tone: "Negative (-)",
+    collocation: "Dwindling supplies",
+    characterHook: "Salary at Month End",
+    hookWhy: "It starts big on the 1st, but slowly shrinks (dwindles) to zero by the 30th."
+  },
+  {
+    word: "Wither",
+    partOfSpeech: "Verb",
+    meaning: "(Of a plant) become dry and shriveled.",
+    translation: "मुरझाना",
+    sentence: "The grass had withered in the warm sun.",
+    synonyms: ["Shrivel", "Fade", "Wilt"],
+    antonyms: ["Thrive", "Bloom", "Flourish"],
+    trick: "Weather -> Bad weather makes plants wither.",
+    tone: "Negative (-)",
+    collocation: "Wither away",
+    characterHook: "Rose kept in a Book",
+    hookWhy: "Over time, it loses moisture, dries up, and shrinks."
+  },
+  {
+    word: "Wane",
+    partOfSpeech: "Verb",
+    meaning: "(Of the moon) have a progressively smaller part of its visible surface illuminated, so that it appears to decrease in size.",
+    translation: "घटना / कम होना",
+    sentence: "Confidence in the government is waning.",
+    synonyms: ["Decrease", "Decline", "Diminish"],
+    antonyms: ["Wax", "Increase", "Grow"],
+    trick: "Vain -> Efforts in vain lead to waning hope.",
+    tone: "Negative (-)",
+    collocation: "Wax and wane",
+    characterHook: "The Moon (Krishna Paksha)",
+    hookWhy: "The moon slowly gets smaller (wanes) until Amavasya."
+  },
+  {
+    word: "Ebb",
+    partOfSpeech: "Noun/Verb",
+    meaning: "The movement of the tide out to sea.",
+    translation: "भाटा / उतार",
+    sentence: "His popularity began to ebb.",
+    synonyms: ["Recede", "Retreat", "Subside"],
+    antonyms: ["Flow", "Increase", "Rise"],
+    trick: "Web -> Like a web being pulled back.",
+    tone: "Negative (-)",
+    collocation: "Ebb and flow",
+    characterHook: "Juhu Beach Tide",
+    hookWhy: "The water recedes (moves back) from the shore during low tide."
+  },
+  {
+    word: "Diatribe",
+    partOfSpeech: "Noun",
+    meaning: "A forceful and bitter verbal attack against someone or something.",
+    translation: "कठोर समालोचना",
+    sentence: "He launched a bitter diatribe against the younger generation.",
+    synonyms: ["Tirade", "Harangue", "Onslaught"],
+    antonyms: ["Praise", "Commendation", "Eulogy"],
+    trick: "Tribe -> Two tribes shouting at each other.",
+    tone: "Negative (-)",
+    collocation: "Launch a diatribe",
+    characterHook: "Arnab Goswami Rant",
+    hookWhy: "A long, angry, shouting speech attacking someone."
+  },
+  {
+    word: "Invective",
+    partOfSpeech: "Noun",
+    meaning: "Insulting, abusive, or highly critical language.",
+    translation: "गाली-गलौज / अपशब्द",
+    sentence: "He let out a stream of invective.",
+    synonyms: ["Abuse", "Insults", "Vituperation"],
+    antonyms: ["Praise", "Compliment", "Flattery"],
+    trick: "Infect -> Words that infect the mind with hate.",
+    tone: "Negative (-)",
+    collocation: "Stream of invective",
+    characterHook: "Road Rage Abuse",
+    hookWhy: "Shouting insults like 'Tu jaanta nahi mera baap kaun hai!' (Abusive language)."
+  },
+  {
+    word: "Philippic",
+    partOfSpeech: "Noun",
+    meaning: "A bitter attack or denunciation, especially a verbal one.",
+    translation: "निंदात्मक भाषण",
+    sentence: "The senator delivered a philippic against the proposed law.",
+    synonyms: ["Tirade", "Diatribe", "Invective"],
+    antonyms: ["Eulogy", "Panegyric"],
+    trick: "Philip -> Speeches against King Philip were called Philippics.",
+    tone: "Negative (-)",
+    collocation: "Deliver a philippic",
+    characterHook: "Opposition Leader in Parliament",
+    hookWhy: "A bitter, formal speech attacking the ruling government's policies."
+  },
+  {
+    word: "Jeremiad",
+    partOfSpeech: "Noun",
+    meaning: "A long, mournful complaint or lamentation; a list of woes.",
+    translation: "विलाप",
+    sentence: "The book is a jeremiad against the modern world.",
+    synonyms: ["Lament", "Complaint", "Tirade"],
+    antonyms: ["Celebration", "Praise"],
+    trick: "Jeremiah -> The prophet Jeremiah wrote Lamentations.",
+    tone: "Negative (-)",
+    collocation: "Long jeremiad",
+    characterHook: "Grandparents Complaining",
+    hookWhy: "A long list of woes about how 'today's generation is ruined'."
+  },
+  {
+    word: "Harangue",
+    partOfSpeech: "Noun/Verb",
+    meaning: "A lengthy and aggressive speech.",
+    translation: "उग्र भाषण",
+    sentence: "He harangued the audience for an hour.",
+    synonyms: ["Tirade", "Lecture", "Rant"],
+    antonyms: ["Chat", "Discussion"],
+    trick: "Rang -> Rang (Rang/Color) in the face from shouting.",
+    tone: "Negative (-)",
+    collocation: "Angry harangue",
+    characterHook: "Boss Shouting for Targets",
+    hookWhy: "A loud, aggressive speech lecturing employees about sales."
+  },
+  {
+    word: "Screed",
+    partOfSpeech: "Noun",
+    meaning: "A long speech or piece of writing, typically one regarded as tedious.",
+    translation: "लंबा-चौड़ा भाषण",
+    sentence: "He published a screed against the government.",
+    synonyms: ["Tirade", "Diatribe", "Rant"],
+    antonyms: ["Brief", "Note"],
+    trick: "Screen -> A text so long it fills many screens.",
+    tone: "Negative (-)",
+    collocation: "Boring screed",
+    characterHook: "Terms & Conditions Document",
+    hookWhy: "A long, boring piece of text that goes on forever."
+  },
+  {
+    word: "Prodigious",
+    partOfSpeech: "Adjective",
+    meaning: "Remarkably or impressively great in extent, size, or degree.",
+    translation: "अद्भुत / विशाल",
+    sentence: "The stove consumed a prodigious amount of fuel.",
+    synonyms: ["Enormous", "Colossal", "Huge"],
+    antonyms: ["Small", "Tiny", "Insignificant"],
+    trick: "Prodigy -> A child prodigy has prodigious talent.",
+    tone: "Positive (+)",
+    collocation: "Prodigious memory",
+    characterHook: "Kumbh Mela Crowd",
+    hookWhy: "The sheer size and number of people is massive (prodigious)."
+  },
+  {
+    word: "Stupendous",
+    partOfSpeech: "Adjective",
+    meaning: "Extremely impressive.",
+    translation: "अतिविशाल / आश्चर्यजनक",
+    sentence: "The team achieved a stupendous victory.",
+    synonyms: ["Amazing", "Astounding", "Staggering"],
+    antonyms: ["Ordinary", "Unimpressive", "Average"],
+    trick: "Stupid -> So big it makes you look stupid/dumbstruck.",
+    tone: "Positive (+)",
+    collocation: "Stupendous achievement",
+    characterHook: "Bahubali Box Office",
+    hookWhy: "The success was so huge it stunned everyone."
+  },
+  {
+    word: "Paltry",
+    partOfSpeech: "Adjective",
+    meaning: "(Of an amount) small or meager.",
+    translation: "तुच्छ / नगण्य",
+    sentence: "She would earn a paltry $33 a month.",
+    synonyms: ["Small", "Meager", "Trifling"],
+    antonyms: ["Considerable", "Substantial", "Significant"],
+    trick: "Poultry -> Chicken feed is small/cheap.",
+    tone: "Negative (-)",
+    collocation: "Paltry sum",
+    characterHook: "Yearly Salary Increment",
+    hookWhy: "Getting a 2% hike feels like a tiny, insulting amount (peanuts)."
+  },
+  {
+    word: "Quixotic",
+    partOfSpeech: "Adjective",
+    meaning: "Exceedingly idealistic; unrealistic and impractical.",
+    translation: "अवास्तविक / ख्याली",
+    sentence: "A vast and perhaps quixotic project.",
+    synonyms: ["Idealistic", "Romantic", "Impractical"],
+    antonyms: ["Practical", "Pragmatic", "Realistic"],
+    trick: "Don Quixote -> The character who fought windmills thinking they were giants.",
+    tone: "Negative (-)",
+    collocation: "Quixotic quest",
+    characterHook: "Nayak (Movie) Concept",
+    hookWhy: "Thinking you can remove all corruption in 1 day is idealistic but impractical."
+  },
+  {
+    word: "Utopian",
+    partOfSpeech: "Adjective",
+    meaning: "Modeled on or aiming for a state in which everything is perfect; idealistic.",
+    translation: "आदर्शलोक",
+    sentence: "A utopian vision of a society without crime.",
+    synonyms: ["Idealistic", "Perfect", "Visionary"],
+    antonyms: ["Dystopian", "Realistic"],
+    trick: "Top -> The top/best possible world.",
+    tone: "Positive (+)",
+    collocation: "Utopian society",
+    characterHook: "Ram Rajya",
+    hookWhy: "The concept of a perfect world where no one is unhappy."
+  },
+  {
+    word: "Chimerical",
+    partOfSpeech: "Adjective",
+    meaning: "Existing only as the product of unchecked imagination; fantastically improbable.",
+    translation: "काल्पनिक / असंभव",
+    sentence: "His chimerical scheme to make money instantly failed.",
+    synonyms: ["Imaginary", "Fanciful", "Illusiory"],
+    antonyms: ["Real", "Actual", "Probable"],
+    trick: "Chimera -> A mythical beast (lion+goat+snake) that isn't real.",
+    tone: "Negative (-)",
+    collocation: "Chimerical dream",
+    characterHook: "Money Growing on Trees",
+    hookWhy: "A fantasy idea that is impossible to exist in reality."
+  },
+  {
+    word: "Sagacious",
+    partOfSpeech: "Adjective",
+    meaning: "Having or showing keen mental discernment and good judgment; shrewd.",
+    translation: "बुद्धिमान / विवेकी",
+    sentence: "They were sagacious enough to avoid any outright confrontation.",
+    synonyms: ["Wise", "Clever", "Intelligent"],
+    antonyms: ["Foolish", "Stupid", "Ignorant"],
+    trick: "Sage -> A sage (saint) is wise.",
+    tone: "Positive (+)",
+    collocation: "Sagacious advice",
+    characterHook: "Chanakya",
+    hookWhy: "Known for his deep wisdom and sharp political judgment."
+  },
+  {
+    word: "Clandestine",
+    partOfSpeech: "Adjective",
+    meaning: "Kept secret or done secretively, especially because illicit.",
+    translation: "गुप्त / अवैध",
+    sentence: "They had a clandestine meeting in the park.",
+    synonyms: ["Secret", "Covert", "Stealthy"],
+    antonyms: ["Open", "Public", "Overt"],
+    trick: "Clan -> Clans often have secret rituals.",
+    tone: "Neutral (0)",
+    collocation: "Clandestine affair",
+    characterHook: "Couples in Parks",
+    hookWhy: "Hiding behind bushes to have a secret meeting away from society."
+  },
+  {
+    word: "Furtive",
+    partOfSpeech: "Adjective",
+    meaning: "Attempting to avoid notice or attention, typically because of guilt or a belief that discovery would lead to trouble; secretive.",
+    translation: "चोर-नज़र / गुप्त",
+    sentence: "They spent a furtive day together.",
+    synonyms: ["Secretive", "Sly", "Sneaky"],
+    antonyms: ["Open", "Honest", "Direct"],
+    trick: "Fugitive -> A fugitive must be furtive to avoid capture.",
+    tone: "Negative (-)",
+    collocation: "Furtive glance",
+    characterHook: "Cheating in Exam",
+    hookWhy: "Looking around nervously while hiding a chit (Sneaky)."
+  },
+  {
+    word: "Vicarious",
+    partOfSpeech: "Adjective",
+    meaning: "Experienced in the imagination through the feelings or actions of another person.",
+    translation: "प्रतिनिधिक / दूसरे के अनुभव से",
+    sentence: "She took a vicarious pleasure in her friend's achievements.",
+    synonyms: ["Indirect", "Second-hand", "Surrogate"],
+    antonyms: ["Direct", "First-hand", "Personal"],
+    trick: "Vice -> A vice-president acts for the president.",
+    tone: "Neutral (0)",
+    collocation: "Vicarious thrill",
+    characterHook: "Indian Parents",
+    hookWhy: "Living their own failed dreams through their children ('Mera beta Doctor banega')."
+  },
+  {
+    word: "Arcane",
+    partOfSpeech: "Adjective",
+    meaning: "Understood by few; mysterious or secret.",
+    translation: "रहस्यमय / गुप्त",
+    sentence: "Modern math can look like arcane nonsense to the uninitiated.",
+    synonyms: ["Mysterious", "Secret", "Esoteric"],
+    antonyms: ["Common", "Known", "Open"],
+    trick: "Ark -> What was in Noah's Ark is a mystery.",
+    tone: "Neutral (0)",
+    collocation: "Arcane knowledge",
+    characterHook: "Tantrik Rituals",
+    hookWhy: "Mysterious knowledge understood only by a few wizards/babas."
+  },
+  // --- Group: Indulgent (Restored) ---
+  {
+    word: "Indulgent",
+    partOfSpeech: "Adjective",
+    meaning: "Having or indicating a tendency to be overly generous to or lenient with someone.",
+    translation: "पक्षपाती / उदार",
+    sentence: "She was an indulgent grandmother.",
+    synonyms: ["Lenient", "Permissive", "Tolerant"],
+    antonyms: ["Strict", "Severe", "Intolerant"],
+    trick: "Dull -> If you indulge too much, you become dull/lazy.",
+    tone: "Neutral (0)",
+    collocation: "Indulgent smile",
+    characterHook: "Indian Grandparents",
+    hookWhy: "They secretly give you sweets and money even when parents say no."
+  },
+  {
+    word: "Leeway",
+    partOfSpeech: "Noun",
+    meaning: "The amount of freedom to move or act that is available.",
+    translation: "छूट / गुंजाइश",
+    sentence: "The government has little leeway in this matter.",
+    synonyms: ["Freedom", "Scope", "Latitude"],
+    antonyms: ["Restriction", "Constraint"],
+    trick: "Lee (Side) + Way -> Extra space on the side to move.",
+    tone: "Positive (+)",
+    collocation: "Give some leeway",
+    characterHook: "Grace Marks in Exams",
+    hookWhy: "The examiner gives you a little extra margin (leeway) to help you pass."
+  },
+  {
+    word: "Latitude",
+    partOfSpeech: "Noun",
+    meaning: "Scope for freedom of action or thought.",
+    translation: "स्वतंत्रता / विस्तार",
+    sentence: "Journalists have considerable latitude in criticizing public officials.",
+    synonyms: ["Freedom", "Scope", "Leeway"],
+    antonyms: ["Restriction", "Limitation"],
+    trick: "Lateral -> Moving sideways freely.",
+    tone: "Positive (+)",
+    collocation: "Wide latitude",
+    characterHook: "College Fests",
+    hookWhy: "Students are given full freedom (latitude) to organize events however they want."
+  },
+  {
+    word: "Deposition",
+    partOfSpeech: "Noun",
+    meaning: "1. The process of giving sworn evidence. 2. The act of removing someone from office.",
+    translation: "बयान / पदच्युति",
+    sentence: "The deposition took place in a lawyer's office.",
+    synonyms: ["Statement", "Affidavit", "Removal"],
+    antonyms: ["Silence", "Installation"],
+    trick: "Deposit -> Depositing your statement in court.",
+    tone: "Neutral (0)",
+    collocation: "Sworn deposition",
+    characterHook: "Kasab's Confession",
+    hookWhy: "Recording the formal statement of a witness or criminal in court."
+  },
+  {
+    word: "Abdication",
+    partOfSpeech: "Noun",
+    meaning: "An act of renouncing the throne.",
+    translation: "त्याग / पदत्याग",
+    sentence: "The king's abdication caused a crisis.",
+    synonyms: ["Resignation", "Renunciation", "Surrender"],
+    antonyms: ["Coronation", "Accession", "Acceptance"],
+    trick: "Ab (Away) + Dicate (Speak) -> Speak to go away from power.",
+    tone: "Neutral (0)",
+    collocation: "Abdication of duty",
+    characterHook: "Sonia Gandhi (2004)",
+    hookWhy: "She stepped aside and gave the PM post to Manmohan Singh (Renouncing power)."
+  },
+  {
+    word: "Impeachment",
+    partOfSpeech: "Noun",
+    meaning: "A charge of misconduct made against the holder of a public office.",
+    translation: "महाभियोग",
+    sentence: "The president faced impeachment for his actions.",
+    synonyms: ["Indictment", "Accusation", "Charge"],
+    antonyms: ["Acquittal", "Exoneration"],
+    trick: "Peach -> Throwing a rotten peach at a leader to remove them.",
+    tone: "Negative (-)",
+    collocation: "Impeachment motion",
+    characterHook: "Indian Chief Justice",
+    hookWhy: "The rare and difficult legal process to remove a high official from power."
+  },
+  {
+    word: "Disavowal",
+    partOfSpeech: "Noun",
+    meaning: "The denial of any responsibility or support for something.",
+    translation: "इनकार / अस्वीकरण",
+    sentence: "His disavowal of his previous statement surprised everyone.",
+    synonyms: ["Denial", "Rejection", "Repudiation"],
+    antonyms: ["Admission", "Acceptance", "Confession"],
+    trick: "Dis + Avow -> Not vowing/promising anymore.",
+    tone: "Negative (-)",
+    collocation: "Public disavowal",
+    characterHook: "Politicians after a Scam",
+    hookWhy: "They immediately say 'I don't know this person', denying any connection."
+  },
+  {
+    word: "Credence",
+    partOfSpeech: "Noun",
+    meaning: "Belief in or acceptance of something as true.",
+    translation: "विश्वास / साख",
+    sentence: "The scientific evidence gave credence to his theory.",
+    synonyms: ["Belief", "Faith", "Trust"],
+    antonyms: ["Disbelief", "Skepticism", "Doubt"],
+    trick: "Credit -> Give credit/belief to someone.",
+    tone: "Positive (+)",
+    collocation: "Lend credence",
+    characterHook: "Bank Loan Approval",
+    hookWhy: "The bank gives you money only if your history has 'credibility' or trust."
+  },
+  {
+    word: "Vain",
+    partOfSpeech: "Adjective",
+    meaning: "Having or showing an excessively high opinion of one's appearance, abilities, or worth.",
+    translation: "व्यर्थ / घमंडी",
+    sentence: "She was too vain to wear glasses.",
+    synonyms: ["Conceited", "Narcissistic", "Arrogant"],
+    antonyms: ["Modest", "Humble"],
+    trick: "Vein -> Looking at your own veins/body all the time.",
+    tone: "Negative (-)",
+    collocation: "Vain attempt",
+    characterHook: "Poo (K3G)",
+    hookWhy: "Looking in the mirror saying 'Main apni favourite hoon'. Total obsession with looks."
+  },
+  {
+    word: "Abortive",
+    partOfSpeech: "Adjective",
+    meaning: "Failing to produce the intended result.",
+    translation: "निष्फल / अधूरा",
+    sentence: "The rebel officers made an abortive attempt to seize power.",
+    synonyms: ["Failed", "Unsuccessful", "Futile"],
+    antonyms: ["Successful", "Fruitful", "Effective"],
+    trick: "Abort -> Stop before finishing.",
+    tone: "Negative (-)",
+    collocation: "Abortive attempt",
+    characterHook: "Goa Trip Plans",
+    hookWhy: "99% of student Goa plans fail (abort) before they even start."
+  },
+  {
+    word: "Pompous",
+    partOfSpeech: "Adjective",
+    meaning: "Affected and irritatingly grand, solemn, or self-important.",
+    translation: "आडंबरपूर्ण",
+    sentence: "A pompous official who loved the sound of his own voice.",
+    synonyms: ["Self-important", "Arrogant", "Pretentious"],
+    antonyms: ["Modest", "Humble", "Unassuming"],
+    trick: "Pomp -> Full of pomp and show.",
+    tone: "Negative (-)",
+    collocation: "Pompous ass",
+    characterHook: "SoBo (South Bombay) Kids",
+    hookWhy: "Acting superior and using fancy accents to show self-importance."
+  },
+  {
+    word: "Efficacious",
+    partOfSpeech: "Adjective",
+    meaning: "(Of something inanimate or abstract) successful in producing a desired or intended result; effective.",
+    translation: "प्रभावशाली / कारगर",
+    sentence: "The vaccine has proved both efficacious and safe.",
+    synonyms: ["Effective", "Successful", "Productive"],
+    antonyms: ["Ineffective", "Useless"],
+    trick: "Effect -> Has a good effect.",
+    tone: "Positive (+)",
+    collocation: "Efficacious remedy",
+    characterHook: "Dadi ke Nuskhe (Turmeric Milk)",
+    hookWhy: "It actually produces the desired result (healing) effectively."
+  },
+  {
+    word: "Prolific",
+    partOfSpeech: "Adjective",
+    meaning: "Producing much fruit or foliage or many offspring.",
+    translation: "उपजाऊ / बहुफलदायक",
+    sentence: "He was a prolific writer, producing a book a year.",
+    synonyms: ["Productive", "Creative", "Fertile"],
+    antonyms: ["Unproductive", "Barren"],
+    trick: "Pro + Life -> Creating a lot of life/work.",
+    tone: "Positive (+)",
+    collocation: "Prolific writer",
+    characterHook: "A.R. Rahman",
+    hookWhy: "He has produced thousands of hit songs across decades (High output)."
+  },
+  {
+    word: "Advent",
+    partOfSpeech: "Noun",
+    meaning: "The arrival of a notable person, thing, or event.",
+    translation: "आगमन / अवतार",
+    sentence: "The advent of the internet changed the world.",
+    synonyms: ["Arrival", "Appearance", "Emergence"],
+    antonyms: ["Departure", "Exit", "Disappearance"],
+    trick: "Adventure -> A new adventure begins with an arrival.",
+    tone: "Neutral (0)",
+    collocation: "Advent of technology",
+    characterHook: "Reliance Jio Launch",
+    hookWhy: "The arrival (advent) of Jio changed the internet landscape in India forever."
+  },
+  {
+    word: "Inception",
+    partOfSpeech: "Noun",
+    meaning: "The establishment or starting point of an institution or activity.",
+    translation: "आरंभ / शुरुआत",
+    sentence: "Since its inception in 1968, the company has been at the forefront of computer development.",
+    synonyms: ["Beginning", "Start", "Commencement"],
+    antonyms: ["End", "Conclusion", "Termination"],
+    trick: "Concept -> The first concept/start of an idea.",
+    tone: "Neutral (0)",
+    collocation: "Since inception",
+    characterHook: "Shark Tank Pitch",
+    hookWhy: "The very beginning or starting point of a business idea."
+  },
+  {
+    word: "Cessation",
+    partOfSpeech: "Noun",
+    meaning: "The fact or process of ending or being brought to an end.",
+    translation: "समाप्ति / विराम",
+    sentence: "The cessation of hostilities allowed for peace talks.",
+    synonyms: ["End", "Stopping", "Halt"],
+    antonyms: ["Start", "Beginning", "Commencement"],
+    trick: "Cease -> To cease is to stop.",
+    tone: "Neutral (0)",
+    collocation: "Cessation of smoking",
+    characterHook: "Demonetization (Nov 8, 2016)",
+    hookWhy: "The sudden stopping (cessation) of 500 and 1000 rupee notes."
+  },
+  {
+    word: "Ratified",
+    partOfSpeech: "Verb",
+    meaning: "Sign or give formal consent to (a treaty, contract, or agreement), making it officially valid.",
+    translation: "पुष्टि करना / मंजूर करना",
+    sentence: "The treaty was ratified by both countries.",
+    synonyms: ["Confirm", "Approve", "Sanction"],
+    antonyms: ["Reject", "Revoke"],
+    trick: "Rate -> Rated and approved.",
+    tone: "Positive (+)",
+    collocation: "Ratified treaty",
+    characterHook: "GST Bill in Parliament",
+    hookWhy: "It became a law only after all states formally approved (ratified) it."
+  },
+  {
+    word: "Repudiate",
+    partOfSpeech: "Verb",
+    meaning: "Refuse to accept or be associated with.",
+    translation: "अस्वीकार करना / परित्याग करना",
+    sentence: "He repudiated the allegation.",
+    synonyms: ["Reject", "Renounce", "Deny"],
+    antonyms: ["Accept", "Embrace", "Confirm"],
+    trick: "Re + Put + Ate -> Put it back/spit it out (reject).",
+    tone: "Negative (-)",
+    collocation: "Repudiate claims",
+    characterHook: "Celebrity denying Rumors",
+    hookWhy: "Rejecting a scandalous news story as 'False and Baseless'."
+  },
+  {
+    word: "Abrogate",
+    partOfSpeech: "Verb",
+    meaning: "Repeal or do away with (a law, right, or formal agreement).",
+    translation: "रद्द करना / अभिनिषेध करना",
+    sentence: "The new law abrogated the old one.",
+    synonyms: ["Repeal", "Revoke", "Annul"],
+    antonyms: ["Enact", "Institute", "Introduce"],
+    trick: "Gate -> Close the gate on a law.",
+    tone: "Neutral (0)",
+    collocation: "Abrogate responsibility",
+    characterHook: "Article 370",
+    hookWhy: "The government officially cancelled (abrogated) the special status law."
+  },
+  {
+    word: "Concomitant",
+    partOfSpeech: "Adjective",
+    meaning: "Naturally accompanying or associated.",
+    translation: "सहवर्ती / साथ का",
+    sentence: "Loss of memory is a concomitant symptom of old age.",
+    synonyms: ["Accompanying", "Associated", "Related"],
+    antonyms: ["Unrelated", "Independent"],
+    trick: "Come + Commit -> Committed to come together.",
+    tone: "Neutral (0)",
+    collocation: "Concomitant risks",
+    characterHook: "Samosa and Chutney",
+    hookWhy: "They naturally go together; you rarely find one without the other."
+  },
+  {
+    word: "Profound",
+    partOfSpeech: "Adjective",
+    meaning: "1. (Of a state, quality, or emotion) very great or intense. 2. (Of a person or statement) having or showing great knowledge or insight.",
+    translation: "गहरा / गहन",
+    sentence: "His speech had a profound impact on me.",
+    synonyms: ["Deep", "Intense", "Wise"],
+    antonyms: ["Superficial", "Mild", "Ignorant"],
+    trick: "Found -> Found deep meaning.",
+    tone: "Positive (+)",
+    collocation: "Profound impact",
+    characterHook: "Osho / Sadhguru Quotes",
+    hookWhy: "Statements that sound very deep and require intense thinking."
+  },
+  {
+    word: "Bleak",
+    partOfSpeech: "Adjective",
+    meaning: "(Of an area of land) lacking vegetation and exposed to the elements; (of a situation) not hopeful or encouraging.",
+    translation: "बेरंग / उदास",
+    sentence: "The future looks bleak for the company.",
+    synonyms: ["Dreary", "Desolate", "Hopeless"],
+    antonyms: ["Promising", "Bright", "Cheerfull"],
+    trick: "Leak -> If a boat leaks, the situation is bleak.",
+    tone: "Negative (-)",
+    collocation: "Bleak outlook",
+    characterHook: "Delhi Smog in November",
+    hookWhy: "You can't see the sun, everything looks grey and hopeless."
+  },
+  {
+    word: "Vitiate",
+    partOfSpeech: "Verb",
+    meaning: "Spoil or impair the quality or efficiency of.",
+    translation: "दूषित करना / बिगाड़ना",
+    sentence: "Development programs have been vitiated by the rise in population.",
+    synonyms: ["Spoil", "Impair", "Damage"],
+    antonyms: ["Improve", "Enhance"],
+    trick: "Vice -> Introduce a vice (bad habit) to spoil something.",
+    tone: "Negative (-)",
+    collocation: "Vitiate the atmosphere",
+    characterHook: "Lemon in Milk",
+    hookWhy: "A single drop spoils (vitiates) the entire vessel of milk."
+  },
+  {
+    word: "Detrimental",
+    partOfSpeech: "Adjective",
+    meaning: "Tending to cause harm.",
+    translation: "हानिकारक",
+    sentence: "Smoking is detrimental to health.",
+    synonyms: ["Harmful", "Damaging", "Injurious"],
+    antonyms: ["Beneficial", "Helpful", "Advantageous"],
+    trick: "De-trim -> Trimming down health.",
+    tone: "Negative (-)",
+    collocation: "Detrimental effect",
+    characterHook: "Mukesh (Anti-Smoking Ad)",
+    hookWhy: "The ad before movies showing how smoking causes detrimental damage to lungs."
+  },
+  {
+    word: "Antagonize",
+    partOfSpeech: "Verb",
+    meaning: "Cause (someone) to become hostile.",
+    translation: "विरोध करना / शत्रु बनाना",
+    sentence: "He antagonized his colleagues with his arrogance.",
+    synonyms: ["Provoke", "Annoy", "Alienate"],
+    antonyms: ["Pacify", "Placate", "Charm"],
+    trick: "Antagonist -> To act like a villain (antagonist).",
+    tone: "Negative (-)",
+    collocation: "Antagonize the crowd",
+    characterHook: "Poking a Street Dog",
+    hookWhy: "Doing something to deliberately make the dog angry/hostile."
+  },
+  {
+    word: "Conducive",
+    partOfSpeech: "Adjective",
+    meaning: "Making a certain situation or outcome likely or possible.",
+    translation: "सहायक / अनुकूल",
+    sentence: "Soft music is conducive to sleep.",
+    synonyms: ["Favorable", "Beneficial", "Helpful"],
+    antonyms: ["Unfavorable", "Hindering"],
+    trick: "Conduct -> Helps to conduct an activity.",
+    tone: "Positive (+)",
+    collocation: "Conducive environment",
+    characterHook: "Library Environment",
+    hookWhy: "The silence is helpful (conducive) for studying."
+  },
+  {
+    word: "Deleterious",
+    partOfSpeech: "Adjective",
+    meaning: "Causing harm or damage.",
+    translation: "हानिकारक / घातक",
+    sentence: "Divorce is assumed to have deleterious effects on children.",
+    synonyms: ["Harmful", "Damaging", "Detrimental"],
+    antonyms: ["Beneficial", "Advantageous"],
+    trick: "Delete -> Helps to delete/remove health.",
+    tone: "Negative (-)",
+    collocation: "Deleterious impact",
+    characterHook: "Gutka / Pan Masala",
+    hookWhy: "It slowly causes damage and cancer (Harmful)."
+  },
+  {
+    word: "Rampant",
+    partOfSpeech: "Adjective",
+    meaning: "(Especially of something unwelcome or unpleasant) flourishing or spreading unchecked.",
+    translation: "अनियंत्रित / उग्र",
+    sentence: "Political corruption is rampant in the country.",
+    synonyms: ["Uncontrolled", "Widespread", "Unchecked"],
+    antonyms: ["Controlled", "Restrained"],
+    trick: "Ramp -> Going up a ramp fast and out of control.",
+    tone: "Negative (-)",
+    collocation: "Rampant corruption",
+    characterHook: "Mosquitoes in Monsoon",
+    hookWhy: "They spread everywhere uncontrollably during the rainy season."
+  },
+  {
+    word: "Pervasive",
+    partOfSpeech: "Adjective",
+    meaning: "(Especially of an unwelcome influence or physical effect) spreading widely throughout an area or a group of people.",
+    translation: "व्यापक / सब जगह फैलनेवाला",
+    sentence: "Ageism is pervasive and entrenched in our society.",
+    synonyms: ["Prevalent", "Ubiquitous", "Widespread"],
+    antonyms: ["Rare", "Localized"],
+    trick: "Vase -> Like water in a vase, filling every corner.",
+    tone: "Neutral (0)",
+    collocation: "Pervasive smell",
+    characterHook: "Agarbatti Smell",
+    hookWhy: "Light it in one room, and the scent spreads (pervades) through the whole house."
+  },
+  {
+    word: "Curbed",
+    partOfSpeech: "Verb",
+    meaning: "Restrain or keep in check.",
+    translation: "नियंत्रण करना",
+    sentence: "She promised to curb her temper.",
+    synonyms: ["Restrain", "Control", "Limit"],
+    antonyms: ["Release", "Unleash"],
+    trick: "Kerb -> A kerb on the road limits where cars go.",
+    tone: "Neutral (0)",
+    collocation: "Curb spending",
+    characterHook: "Speed Breakers",
+    hookWhy: "They physically force you to control (curb) your speed."
+  },
+  {
+    word: "Conundrum",
+    partOfSpeech: "Noun",
+    meaning: "A confusing and difficult problem or question.",
+    translation: "पहेली / समस्या",
+    sentence: "The new tax law is a conundrum for accountants.",
+    synonyms: ["Problem", "Puzzle", "Riddle"],
+    antonyms: ["Solution", "Answer"],
+    trick: "Drum -> Banging a drum because you are confused.",
+    tone: "Neutral (0)",
+    collocation: "Solve a conundrum",
+    characterHook: "Katappa ne Baahubali ko kyu maara?",
+    hookWhy: "The question that confused the entire nation for 2 years."
+  },
+  {
+    word: "Enigma",
+    partOfSpeech: "Noun",
+    meaning: "A person or thing that is mysterious, puzzling, or difficult to understand.",
+    translation: "पहेली / रहस्य",
+    sentence: "The Mona Lisa's smile is an enigma.",
+    synonyms: ["Mystery", "Puzzle", "Riddle"],
+    antonyms: ["Open book"],
+    trick: "Egg -> What's inside the egg is a mystery.",
+    tone: "Neutral (0)",
+    collocation: "Total enigma",
+    characterHook: "Rekha (Actress)",
+    hookWhy: "She is mysterious, private, and difficult to understand."
+  },
+  {
+    word: "Quandary",
+    partOfSpeech: "Noun",
+    meaning: "A state of perplexity or uncertainty over what to do in a difficult situation.",
+    translation: "असमंजस / व्याकुलता",
+    sentence: "Kate is in a quandary about which job to accept.",
+    synonyms: ["Dilemma", "Predicament", "Confusion"],
+    antonyms: ["Certainty", "Resolution"],
+    trick: "Wander -> Mind wandering because you can't decide.",
+    tone: "Negative (-)",
+    collocation: "In a quandary",
+    characterHook: "Engineering vs Medical",
+    hookWhy: "The difficult choice (dilemma) every Indian student faces after Class 10."
+  },
+  {
+    word: "Protract",
+    partOfSpeech: "Verb",
+    meaning: "Prolong.",
+    translation: "लंबे समय तक खींचना",
+    sentence: "He had no wish to protract the argument.",
+    synonyms: ["Prolong", "Extend", "Lengthen"],
+    antonyms: ["Curtail", "Shorten"],
+    trick: "Tractor -> A tractor moves slowly and takes a long time.",
+    tone: "Neutral (0)",
+    collocation: "Protracted war",
+    characterHook: "Indian Court Cases",
+    hookWhy: "'Taareekh pe Taareekh' - dragging a case out for 20 years."
+  },
+  {
+    word: "Deferred",
+    partOfSpeech: "Verb",
+    meaning: "Put off (an action or event) to a later time; postpone.",
+    translation: "टालना / स्थगित करना",
+    sentence: "They deferred the decision until next week.",
+    synonyms: ["Postpone", "Delay", "Put off"],
+    antonyms: ["Expedite", "Hasten"],
+    trick: "Differ -> To do it at a different time.",
+    tone: "Neutral (0)",
+    collocation: "Deferred payment",
+    characterHook: "EMI Moratorium",
+    hookWhy: "During COVID, banks allowed people to pay (defer) their EMI later."
+  },
+  {
+    word: "Redacted",
+    partOfSpeech: "Verb",
+    meaning: "Censor or obscure (part of a text) for legal or security purposes.",
+    translation: "संपादित करना (हटाना)",
+    sentence: "The names were redacted from the report.",
+    synonyms: ["Censor", "Obscure", "Edit"],
+    antonyms: ["Reveal", "Publish"],
+    trick: "Red -> Use a red pen to cross out words.",
+    tone: "Neutral (0)",
+    collocation: "Heavily redacted",
+    characterHook: "Raw / IB Documents",
+    hookWhy: "Secret files with black ink covering the names to hide information."
+  },
+  {
+    word: "Expurgate",
+    partOfSpeech: "Verb",
+    meaning: "Remove matter thought to be objectionable or unsuitable from (a book or account).",
+    translation: "छांटना / शुद्ध करना",
+    sentence: "The editors expurgated the offensive passages.",
+    synonyms: ["Censor", "Bowdlerize", "Clean up"],
+    antonyms: ["Uncensor"],
+    trick: "Purge -> To purge (cleanse) the bad parts.",
+    tone: "Neutral (0)",
+    collocation: "Expurgated edition",
+    characterHook: "CBFC (Censor Board) Beeps",
+    hookWhy: "Removing 'bad words' from movies to make them 'clean' for TV."
+  },
+  {
+    word: "Placate",
+    partOfSpeech: "Verb",
+    meaning: "Make (someone) less angry or hostile.",
+    translation: "शांत करना / मनाना",
+    sentence: "They attempted to placate the students with promises.",
+    synonyms: ["Pacify", "Calm", "Appease"],
+    antonyms: ["Provoke", "Anger"],
+    trick: "Plate -> Give a plate of food to calm someone down.",
+    tone: "Positive (+)",
+    collocation: "Placate the crowd",
+    characterHook: "Giving Chocolate to Crying Baby",
+    hookWhy: "Doing something sweet to stop the anger/crying immediately."
+  },
+  {
+    word: "Assuage",
+    partOfSpeech: "Verb",
+    meaning: "Make (an unpleasant feeling) less intense.",
+    translation: "कम करना / शांत करना",
+    sentence: "The letter assuaged her fears.",
+    synonyms: ["Relieve", "Ease", "Alleviate"],
+    antonyms: ["Aggravate", "Intensify"],
+    trick: "Sausage -> Comfort food like sausage eases hunger/pain.",
+    tone: "Positive (+)",
+    collocation: "Assuage guilt",
+    characterHook: "Burnol on a Burn",
+    hookWhy: "It immediately soothes and lessens the intensity of the pain."
+  },
+  {
+    word: "Mollify",
+    partOfSpeech: "Verb",
+    meaning: "Appease the anger or anxiety of (someone).",
+    translation: "मुलायम करना / शांत करना",
+    sentence: "Nature reserves were set up to mollify local conservationists.",
+    synonyms: ["Appease", "Placate", "Pacify"],
+    antonyms: ["Enrage", "Inflame"],
+    trick: "Molly -> Molly is a soft/gentle name; to soften.",
+    tone: "Positive (+)",
+    collocation: "Mollify critics",
+    characterHook: "Police talking to a Mob",
+    hookWhy: "Using soft words to calm down an angry crowd."
+  },
+  {
+    word: "Banality",
+    partOfSpeech: "Noun",
+    meaning: "The fact or condition of being banal; unoriginality.",
+    translation: "तुच्छता / साधारणता",
+    sentence: "The banality of the conversation bored him.",
+    synonyms: ["Trite", "Cliché", "Commonplace"],
+    antonyms: ["Originality", "Freshness"],
+    trick: "Banana -> A common fruit, nothing special.",
+    tone: "Negative (-)",
+    collocation: "Sheer banality",
+    characterHook: "'Good Morning' WhatsApp Forwards",
+    hookWhy: "They are so common and unoriginal that they become boring."
+  },
+  {
+    word: "Platitude",
+    partOfSpeech: "Noun",
+    meaning: "A remark or statement, especially one with a moral content, that has been used too often to be interesting or thoughtful.",
+    translation: "घिसी-पिटी बात",
+    sentence: "She bored us with her platitudes about hard work.",
+    synonyms: ["Cliché", "Truism", "Banality"],
+    antonyms: ["Insight", "Nuance"],
+    trick: "Flat -> A flat statement with no depth.",
+    tone: "Negative (-)",
+    collocation: "Empty platitudes",
+    characterHook: "People saying 'Everything happens for a reason'",
+    hookWhy: "A statement that is true but used so often it has lost meaning."
+  },
+  {
+    word: "Profoundness",
+    partOfSpeech: "Noun",
+    meaning: "Great depth of insight or knowledge.",
+    translation: "गहराई",
+    sentence: "The profoundness of his silence spoke volumes.",
+    synonyms: ["Depth", "Wisdom", "Insight"],
+    antonyms: ["Shallowness"],
+    trick: "Pro -> A pro has deep knowledge.",
+    tone: "Positive (+)",
+    collocation: "Intellectual profoundness",
+    characterHook: "The Bhagavad Gita",
+    hookWhy: "The depth of wisdom in the text is endless."
+  },
+  {
+    word: "Adorn",
+    partOfSpeech: "Verb",
+    meaning: "Make more beautiful or attractive.",
+    translation: "सजाना / अलंकृत करना",
+    sentence: "Pictures and posters adorned his walls.",
+    synonyms: ["Decorate", "Embellish", "Ornament"],
+    antonyms: ["Disfigure", "Mar"],
+    trick: "Add + Ornament -> To add ornaments.",
+    tone: "Positive (+)",
+    collocation: "Adorn with jewels",
+    characterHook: "Indian Bride",
+    hookWhy: "Decorating with jewelry, mehendi, and flowers to look beautiful."
+  },
+  {
+    word: "Exacerbate",
+    partOfSpeech: "Verb",
+    meaning: "Make (a problem, bad situation, or negative feeling) worse.",
+    translation: "बिगाड़ना / और खराब करना",
+    sentence: "The exorbitant cost of land exacerbated the problem.",
+    synonyms: ["Aggravate", "Worsen", "Inflame"],
+    antonyms: ["Calm", "Reduce", "Improve"],
+    trick: "Axe -> Using an axe on a wound makes it worse.",
+    tone: "Negative (-)",
+    collocation: "Exacerbate the situation",
+    characterHook: "Salt on a Wound",
+    hookWhy: "The wound was already bad; salt made it much worse."
+  },
+  {
+    word: "Embellish",
+    partOfSpeech: "Verb",
+    meaning: "Make (a statement or story) more interesting or entertaining by adding extra details, especially ones that are not true.",
+    translation: "सँवारना / नमक-मिर्च लगाना",
+    sentence: "She embellished her account of the party with funny details.",
+    synonyms: ["Elaborate", "Exaggerate", "Decorate"],
+    antonyms: ["Simplify", "Strip"],
+    trick: "Bell -> Adding bells to a story to make it sound better.",
+    tone: "Neutral (0)",
+    collocation: "Embellish the truth",
+    characterHook: "News Channels ('Masala')",
+    hookWhy: "Adding extra dramatic details to a simple story to make it exciting."
+  },
+  {
+    word: "Malaise",
+    partOfSpeech: "Noun",
+    meaning: "A general feeling of discomfort, illness, or uneasiness whose exact cause is difficult to identify.",
+    translation: "बेचैनी / अस्वस्थता",
+    sentence: "A general air of malaise hung over the office.",
+    synonyms: ["Unhappiness", "Unease", "Discomfort"],
+    antonyms: ["Comfort", "Well-being"],
+    trick: "Mal (Bad) + Ease -> Not at ease.",
+    tone: "Negative (-)",
+    collocation: "Economic malaise",
+    characterHook: "Post-Lunch Office Mood",
+    hookWhy: "That general feeling of uneasiness and laziness where you don't want to work."
+  },
+  {
+    word: "Stagnation",
+    partOfSpeech: "Noun",
+    meaning: "The state of not flowing or moving.",
+    translation: "स्थिरता / ठहराव",
+    sentence: "The country is suffering from economic stagnation.",
+    synonyms: ["Inactivity", "Dormancy", "Stasis"],
+    antonyms: ["Flow", "Progress", "Growth"],
+    trick: "Stag -> A stag standing still in the forest.",
+    tone: "Negative (-)",
+    collocation: "Economic stagnation",
+    characterHook: "Bangalore Traffic (Silk Board)",
+    hookWhy: "Cars standing still for hours; zero movement or progress."
+  },
+  {
+    word: "Lassitude",
+    partOfSpeech: "Noun",
+    meaning: "A state of physical or mental weariness; lack of energy.",
+    translation: "थकान / सुस्ती",
+    sentence: "She was overcome by lassitude and retired to bed.",
+    synonyms: ["Lethargy", "Weariness", "Fatigue"],
+    antonyms: ["Vigor", "Energy"],
+    trick: "Lazy + Dude -> A lazy dude creates lassitude.",
+    tone: "Negative (-)",
+    collocation: "Overcome by lassitude",
+    characterHook: "Sunday Afternoon Nap",
+    hookWhy: "Physical weariness where lifting a finger feels like hard work."
+  },
+  {
+    word: "Stasis",
+    partOfSpeech: "Noun",
+    meaning: "A period or state of inactivity or equilibrium.",
+    translation: "संतुलन / ठहराव",
+    sentence: "Creative stasis.",
+    synonyms: ["Inactivity", "Equilibrium", "Standstill"],
+    antonyms: ["Flux", "Change"],
+    trick: "Stay -> Stay as is.",
+    tone: "Neutral (0)",
+    collocation: "In stasis",
+    characterHook: "Statue Game",
+    hookWhy: "Everything stops moving and stays in equilibrium/balance."
+  },
+  // --- Group: Tranquil (Restored) ---
+  {
+    word: "Tranquil",
+    partOfSpeech: "Adjective",
+    meaning: "Free from disturbance; calm.",
+    translation: "शांत",
+    sentence: "The lake was tranquil in the early morning.",
+    synonyms: ["Peaceful", "Calm", "Serene"],
+    antonyms: ["Disturbed", "Noisy", "Busy"],
+    trick: "Quil (Quilt) -> Sleeping under a quilt is tranquil.",
+    tone: "Positive (+)",
+    collocation: "Tranquil waters",
+    characterHook: "Golden Temple (Amritsar)",
+    hookWhy: "Sitting by the Sarovar at 4 AM provides a feeling of absolute peace."
+  },
+  {
+    word: "Sanguine",
+    partOfSpeech: "Adjective",
+    meaning: "Optimistic or positive, especially in an apparently bad or difficult situation.",
+    translation: "आशावादी",
+    sentence: "He is sanguine about prospects for the global economy.",
+    synonyms: ["Optimistic", "Bullish", "Hopeful"],
+    antonyms: ["Pessimistic", "Gloomy"],
+    trick: "Sang (Blood) -> Red blooded, full of life and hope.",
+    tone: "Positive (+)",
+    collocation: "Sanguine disposition",
+    characterHook: "RCB Fans (IPL)",
+    hookWhy: "Despite losing every year, they always say 'Ee Sala Cup Namde' (Next year is ours). Pure optimism."
+  },
+  {
+    word: "Beatific",
+    partOfSpeech: "Adjective",
+    meaning: "Blissfully happy.",
+    translation: "परम सुखी",
+    sentence: "A beatific smile.",
+    synonyms: ["Joyful", "Ecstatic", "Seraphic"],
+    antonyms: ["Miserable", "Sorrowful"],
+    trick: "Beauty -> A beautiful, happy state.",
+    tone: "Positive (+)",
+    collocation: "Beatific smile",
+    characterHook: "Sadhu in the Himalayas",
+    hookWhy: "The glowing, blissful smile of someone in deep meditation."
+  },
+  {
+    word: "Exuberant",
+    partOfSpeech: "Adjective",
+    meaning: "Filled with or characterized by a lively energy and excitement.",
+    translation: "उल्लासपूर्ण / जोशीला",
+    sentence: "Giddily exuberant crowds.",
+    synonyms: ["Buoyant", "Cheerful", "Energetic"],
+    antonyms: ["Gloomy", "Lethargic"],
+    trick: "Uber -> Super energy.",
+    tone: "Positive (+)",
+    collocation: "Exuberant personality",
+    characterHook: "Govinda in 90s Songs",
+    hookWhy: "High energy dancing, colorful clothes, and unstoppable enthusiasm."
+  },
+  {
+    word: "Mellifluous",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a voice or words) sweet or musical; pleasant to hear.",
+    translation: "मधुर / रसीला",
+    sentence: "She has a rich, mellifluous voice.",
+    synonyms: ["Sweet-sounding", "Dulcet", "Honeyed"],
+    antonyms: ["Cacophonous", "Harsh"],
+    trick: "Melody + Flow -> Melody flows smoothly.",
+    tone: "Positive (+)",
+    collocation: "Mellifluous voice",
+    characterHook: "Shreya Ghoshal / Lata Mangeshkar",
+    hookWhy: "Their voices are as sweet as honey (Melli = Honey)."
+  },
+  {
+    word: "Magnanimous",
+    partOfSpeech: "Adjective",
+    meaning: "Generous or forgiving, especially toward a rival or less powerful person.",
+    translation: "उदार / महानुभाव",
+    sentence: "She was too magnanimous to resent all the things he had said to her.",
+    synonyms: ["Generous", "Charitable", "Benevolent"],
+    antonyms: ["Mean", "Selfish", "Petty"],
+    trick: "Mega -> Mega (Big) heart.",
+    tone: "Positive (+)",
+    collocation: "Magnanimous gesture",
+    characterHook: "Sonu Sood (During Lockdown)",
+    hookWhy: "Helping thousands of strangers purely out of a big heart."
+  },
+  {
+    word: "Benign",
+    partOfSpeech: "Adjective",
+    meaning: "Gentle and kindly.",
+    translation: "सौम्य / दयालु",
+    sentence: "Her face was calm and benign.",
+    synonyms: ["Kindly", "Kind", "Warmhearted"],
+    antonyms: ["Unfriendly", "Hostile", "Malignant"],
+    trick: "Bene (Good) -> Good natured.",
+    tone: "Positive (+)",
+    collocation: "Benign smile",
+    characterHook: "Alok Nath (Sanskaari Babuji)",
+    hookWhy: "He looks completely harmless, kind, and gentle in every movie."
+  },
+  {
+    word: "Vexed",
+    partOfSpeech: "Adjective",
+    meaning: "Annoyed, frustrated, or worried.",
+    translation: "परेशान / खिन्न",
+    sentence: "I'm very vexed with you!",
+    synonyms: ["Irritated", "Annoyed", "Cross"],
+    antonyms: ["Calm", "Pleased"],
+    trick: "Hex -> Like someone put a hex (curse) on you to annoy you.",
+    tone: "Negative (-)",
+    collocation: "Vexed question",
+    characterHook: "Calling Customer Care",
+    hookWhy: "Press 1, Press 2... 'All executives are busy'. Makes you totally vexed."
+  },
+  {
+    word: "Irate",
+    partOfSpeech: "Adjective",
+    meaning: "Feeling or characterized by great anger.",
+    translation: "क्रुद्ध",
+    sentence: "A barrage of irate letters.",
+    synonyms: ["Angry", "Furious", "Incensed"],
+    antonyms: ["Calm", "Composed"],
+    trick: "Rate -> High heart rate from anger.",
+    tone: "Negative (-)",
+    collocation: "Irate customer",
+    characterHook: "Arnab Goswami (The Debate)",
+    hookWhy: "Screaming 'The Nation Wants To Know!' displays extreme anger."
+  },
+  {
+    word: "Morose",
+    partOfSpeech: "Adjective",
+    meaning: "Sullen and ill-tempered.",
+    translation: "उदास / चिड़चिड़ा",
+    sentence: "She was morose and silent when she got home.",
+    synonyms: ["Sullen", "Sulky", "Gloomy"],
+    antonyms: ["Cheerful", "Happy"],
+    trick: "No Rose -> Life has no roses (joy), so sad.",
+    tone: "Negative (-)",
+    collocation: "Morose silence",
+    characterHook: "Devdas",
+    hookWhy: "Sitting alone, drinking, and refusing to talk to anyone."
+  },
+  {
+    word: "Apprehension",
+    partOfSpeech: "Noun",
+    meaning: "Anxiety or fear that something bad or unpleasant will happen.",
+    translation: "आशंका / डर",
+    sentence: "He felt sick with apprehension.",
+    synonyms: ["Anxiety", "Angst", "Alarm"],
+    antonyms: ["Confidence"],
+    trick: "Pre-tension -> Tension before something happens.",
+    tone: "Negative (-)",
+    collocation: "Deep apprehension",
+    characterHook: "Result Day Morning",
+    hookWhy: "That sinking feeling in your stomach before checking the website."
+  },
+  {
+    word: "Skeptical",
+    partOfSpeech: "Adjective",
+    meaning: "Not easily convinced; having doubts or reservations.",
+    translation: "संशयी / शक्की",
+    sentence: "The public were deeply skeptical about some of the proposals.",
+    synonyms: ["Dubious", "Doubtful", "Cynical"],
+    antonyms: ["Certain", "Convinced", "Trusting"],
+    trick: "Scope -> Looking through a scope to check if it's real.",
+    tone: "Neutral (0)",
+    collocation: "Skeptical audience",
+    characterHook: "ACP Pradyuman (CID)",
+    hookWhy: "Always saying 'Kuch toh gadbad hai Daya' (Doubting the obvious)."
+  },
+  {
+    word: "Repulsed",
+    partOfSpeech: "Verb",
+    meaning: "Cause (someone) to feel intense distaste and aversion.",
+    translation: "खदेड़ना / घृणा उत्पन्न करना",
+    sentence: "Audiences were repulsed by the film's brutality.",
+    synonyms: ["Revolt", "Disgust", "Repel"],
+    antonyms: ["Attract", "Delight"],
+    trick: "Pulse -> Your pulse races with disgust to run away.",
+    tone: "Negative (-)",
+    collocation: "Repulsed by",
+    characterHook: "Elaichi in Biryani",
+    hookWhy: "The moment you bite into it, you feel instant disgust."
+  },
+  {
+    word: "Perturb",
+    partOfSpeech: "Verb",
+    meaning: "Make (someone) anxious or unsettled.",
+    translation: "व्याकुल करना",
+    sentence: "They were perturbed by her capricious behavior.",
+    synonyms: ["Worry", "Upset", "Unsettle"],
+    antonyms: ["Reassure", "Calm"],
+    trick: "Disturb -> Per-turb is a thorough disturbance.",
+    tone: "Negative (-)",
+    collocation: "Perturbed state",
+    characterHook: "Neighbour using Drilling Machine",
+    hookWhy: "The noise disturbs your mental peace and unsettles you."
+  },
+  {
+    word: "Despondent",
+    partOfSpeech: "Adjective",
+    meaning: "In low spirits from loss of hope or courage.",
+    translation: "हताश / निराश",
+    sentence: "She grew more and more despondent.",
+    synonyms: ["Disheartened", "Discouraged", "Dispiritied"],
+    antonyms: ["Hopeful", "Cheerful"],
+    trick: "Pond -> Looking into a pond sadly.",
+    tone: "Negative (-)",
+    collocation: "Despondent mood",
+    characterHook: "Unemployed Engineer",
+    hookWhy: "Giving 50 interviews and getting rejected everywhere creates hopelessness."
+  },
+  {
+    word: "Woeful",
+    partOfSpeech: "Adjective",
+    meaning: "Characterized by, expressing, or causing sorrow or misery.",
+    translation: "दुखद / खेदजनक",
+    sentence: "Her face was woeful.",
+    synonyms: ["Sad", "Unhappy", "Miserable"],
+    antonyms: ["Joyful", "Cheerful"],
+    trick: "Woe -> Woe is sadness.",
+    tone: "Negative (-)",
+    collocation: "Woeful tale",
+    characterHook: "Indian Team (2003 World Cup Final)",
+    hookWhy: "The sorrow of the entire nation after losing to Australia."
+  },
+  {
+    word: "Lax",
+    partOfSpeech: "Adjective",
+    meaning: "Not sufficiently strict, severe, or careful.",
+    translation: "ढीला / सुस्त",
+    sentence: "Lax security arrangements at the airport.",
+    synonyms: ["Slack", "Slipshod", "Negligent"],
+    antonyms: ["Strict", "Careful"],
+    trick: "Relax -> Too relaxed to be careful.",
+    tone: "Negative (-)",
+    collocation: "Lax discipline",
+    characterHook: "Government Office Clerk (Stereotype)",
+    hookWhy: "Coming late, long lunch breaks, 'Kal aana' attitude (Careless/Slack)."
+  },
+  {
+    word: "Solvency",
+    partOfSpeech: "Noun",
+    meaning: "The possession of assets in excess of liabilities; ability to pay one's debts.",
+    translation: "ऋणशोधन क्षमता",
+    sentence: "The company was confident of its solvency.",
+    synonyms: ["Financial stability", "Wealth"],
+    antonyms: ["Insolvency", "Bankruptcy"],
+    trick: "Solve -> Ability to solve money problems.",
+    tone: "Positive (+)",
+    collocation: "Financial solvency",
+    characterHook: "Mukesh Ambani",
+    hookWhy: "He has enough cash to pay off any debt instantly."
+  },
+  {
+    word: "Obtuse",
+    partOfSpeech: "Adjective",
+    meaning: "Annoyingly insensitive or slow to understand.",
+    translation: "मंदबुद्धि",
+    sentence: "He wondered if the doctor was being deliberately obtuse.",
+    synonyms: ["Stupid", "Slow", "Dull-witted"],
+    antonyms: ["Clever", "Astute"],
+    trick: "Obtuse Angle -> Greater than 90 degrees; not 'sharp'.",
+    tone: "Negative (-)",
+    collocation: "Obtuse remark",
+    characterHook: "Tubelight (Salman Khan Character)",
+    hookWhy: "Slow to understand things; the light bulb turns on late."
+  },
+  {
+    word: "Pragmatic",
+    partOfSpeech: "Adjective",
+    meaning: "Dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.",
+    translation: "व्यावहारिक",
+    sentence: "A pragmatic approach to politics.",
+    synonyms: ["Practical", "Sensible", "Realistic"],
+    antonyms: ["Idealistic", "Impractical"],
+    trick: "Program -> Follow a practical program.",
+    tone: "Positive (+)",
+    collocation: "Pragmatic approach",
+    characterHook: "Nitin Gadkari",
+    hookWhy: "Focuses on building roads (practical results) rather than just political speeches."
+  },
+  {
+    word: "Erudite",
+    partOfSpeech: "Adjective",
+    meaning: "Having or showing great knowledge or learning.",
+    translation: "विद्वान / ज्ञानी",
+    sentence: "Ken could turn any conversation into an erudite discussion.",
+    synonyms: ["Learned", "Scholarly", "Educated"],
+    antonyms: ["Ignorant", "Ill-educated"],
+    trick: "Rude -> Often smart people seem rude (but Erudite is smart).",
+    tone: "Positive (+)",
+    collocation: "Erudite scholar",
+    characterHook: "Shashi Tharoor",
+    hookWhy: "Uses words like 'Floccinaucinihilipilification'. Highly learned."
+  },
+  {
+    word: "Usurp",
+    partOfSpeech: "Verb",
+    meaning: "Take (a position of power or importance) illegally or by force.",
+    translation: "हड़पना",
+    sentence: "Richard usurped the throne.",
+    synonyms: ["Seize", "Take over", "Expropriate"],
+    antonyms: ["Surrender", "Relinquish"],
+    trick: "Use + Sharp -> Use sharp weapons to take power.",
+    tone: "Negative (-)",
+    collocation: "Usurp power",
+    characterHook: "Aurangzeb / Kans",
+    hookWhy: "Imprisoning their own family to illegally take the throne."
+  },
+  {
+    word: "Riveting",
+    partOfSpeech: "Adjective",
+    meaning: "Completely engrossing; compelling.",
+    translation: "दिलचस्प",
+    sentence: "The book is a riveting account of the legendary freedom fighter.",
+    synonyms: ["Fascinating", "Gripping", "Absorbing"],
+    antonyms: ["Boring", "Dull"],
+    trick: "Rivet -> Held fast (like a rivet holds metal) by interest.",
+    tone: "Positive (+)",
+    collocation: "Riveting story",
+    characterHook: "Drishyam Climax",
+    hookWhy: "You cannot look away; your attention is completely fixed (riveted)."
+  },
+  {
+    word: "Insipid",
+    partOfSpeech: "Adjective",
+    meaning: "Lacking flavor.",
+    translation: "फीका / बेस्वाद",
+    sentence: "Mugs of insipid coffee.",
+    synonyms: ["Tasteless", "Flavorless", "Bland"],
+    antonyms: ["Tasty", "Flavorful"],
+    trick: "Sip -> Take a sip and it has no taste.",
+    tone: "Negative (-)",
+    collocation: "Insipid food",
+    characterHook: "Khichdi for Patients",
+    hookWhy: "Boiled, no masala, completely tasteless and boring."
+  },
+  {
+    word: "Sporadic",
+    partOfSpeech: "Adjective",
+    meaning: "Occurring at irregular intervals or only in a few places; scattered or isolated.",
+    translation: "छिटपुट / अनियमित",
+    sentence: "Sporadic fighting broke out.",
+    synonyms: ["Occasional", "Infrequent", "Irregular"],
+    antonyms: ["Frequent", "Constant", "Steady"],
+    trick: "Spore -> Spores fly randomly in the air.",
+    tone: "Neutral (0)",
+    collocation: "Sporadic rain",
+    characterHook: "Electricity in Indian Villages",
+    hookWhy: "Comes for 1 hour, goes for 3 hours. Happens at irregular intervals."
+  },
+  {
+    word: "Erratic",
+    partOfSpeech: "Adjective",
+    meaning: "Not even or regular in pattern or movement; unpredictable.",
+    translation: "अनियंत्रित / अस्थिर",
+    sentence: "Her breathing was erratic.",
+    synonyms: ["Unpredictable", "Inconsistent", "Changeable"],
+    antonyms: ["Consistent", "Regular"],
+    trick: "Error -> Full of errors and unpredictability.",
+    tone: "Negative (-)",
+    collocation: "Erratic behavior",
+    characterHook: "Rishabh Pant (Early Career)",
+    hookWhy: "Sometimes hits a 6, sometimes gets out on 0. Totally unpredictable."
+  },
+  {
+    word: "Diabolical",
+    partOfSpeech: "Adjective",
+    meaning: "Belonging to or so evil as to recall the Devil.",
+    translation: "शैतानी / क्रूर",
+    sentence: "His diabolical cunning.",
+    synonyms: ["Devilish", "Fiendish", "Wicked"],
+    antonyms: ["Angelic", "Good"],
+    trick: "Diablo -> Devil.",
+    tone: "Negative (-)",
+    collocation: "Diabolical plan",
+    characterHook: "Mogambo (Mr. India)",
+    hookWhy: "His plans to destroy India were purely evil and devilish."
+  },
+  {
+    word: "Heinous",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a person or wrongful act, especially a crime) utterly odious or wicked.",
+    translation: "जघन्य / घोर",
+    sentence: "A battery of heinous crimes.",
+    synonyms: ["Odious", "Wicked", "Evil"],
+    antonyms: ["Admirable"],
+    trick: "Hate + Us -> A crime that makes everyone hate us.",
+    tone: "Negative (-)",
+    collocation: "Heinous crime",
+    characterHook: "Ajmal Kasab / Terrorists",
+    hookWhy: "Killing innocent people is a crime of maximum evil."
+  },
+  {
+    word: "Fiendish",
+    partOfSpeech: "Adjective",
+    meaning: "Extremely cruel or unpleasant; devilish.",
+    translation: "पिशाच-तुल्य / क्रूर",
+    sentence: "A fiendish smile.",
+    synonyms: ["Wicked", "Cruel", "Vicious"],
+    antonyms: ["Kind", "Virtuous"],
+    trick: "Friend -> Opposite of a friend.",
+    tone: "Negative (-)",
+    collocation: "Fiendish plot",
+    characterHook: "Shakuni Mama (Mahabharat)",
+    hookWhy: "His dice game plans were complex, cruel, and clever."
+  },
+  {
+    word: "Atrocious",
+    partOfSpeech: "Adjective",
+    meaning: "Horrifyingly wicked.",
+    translation: "नृशंस / बहुत बुरा",
+    sentence: "Atrocious cruelties.",
+    synonyms: ["Brutal", "Barbaric", "Appalling"],
+    antonyms: ["Admirable", "Superb"],
+    trick: "Atrocity -> Committing an atrocity.",
+    tone: "Negative (-)",
+    collocation: "Atrocious weather",
+    characterHook: "Dhinchak Pooja Songs",
+    hookWhy: "The quality is so bad it feels like a crime against music."
+  },
+  {
+    word: "Silos",
+    partOfSpeech: "Noun",
+    meaning: "A system, process, department, etc. that operates in isolation from others.",
+    translation: "एकांतता / सिलो",
+    sentence: "It's vital that we move away from working in silos.",
+    synonyms: ["Isolation", "Separation"],
+    antonyms: ["Integration"],
+    trick: "Solo -> Working solo in a group.",
+    tone: "Negative (-)",
+    collocation: "Work in silos",
+    characterHook: "Typical Corporate/Govt Departments",
+    hookWhy: "The Sales team doesn't talk to the Tech team; they work in isolation."
+  },
+  {
+    word: "Emulate",
+    partOfSpeech: "Verb",
+    meaning: "Match or surpass (a person or achievement), typically by imitation.",
+    translation: "अनुकरण करना",
+    sentence: "Lesser men trying to emulate his greatness.",
+    synonyms: ["Imitate", "Copy", "Mirror"],
+    antonyms: ["Original"],
+    trick: "Emulator -> Software that copies hardware.",
+    tone: "Positive (+)",
+    collocation: "Emulate success",
+    characterHook: "Kids playing Cricket",
+    hookWhy: "Every kid tries to copy (emulate) Sachin or Virat's stance."
+  },
+  {
+    word: "Virulent",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a disease or poison) extremely severe or harmful in its effects.",
+    translation: "विषैला / संक्रामक",
+    sentence: "A virulent attack on liberalism.",
+    synonyms: ["Poisonous", "Toxic", "Venomous"],
+    antonyms: ["Harmless", "Benign"],
+    trick: "Virus -> Like a deadly virus.",
+    tone: "Negative (-)",
+    collocation: "Virulent strain",
+    characterHook: "WhatsApp Fake News",
+    hookWhy: "Spreads poison in society faster than a biological virus."
+  },
+  {
+    word: "Hostile",
+    partOfSpeech: "Adjective",
+    meaning: "Unfriendly; antagonistic.",
+    translation: "शत्रुतापूर्ण",
+    sentence: "A hostile audience.",
+    synonyms: ["Unfriendly", "Antagonistic", "Aggressive"],
+    antonyms: ["Friendly", "Warm"],
+    trick: "Host -> A bad host is hostile.",
+    tone: "Negative (-)",
+    collocation: "Hostile takeover",
+    characterHook: "Hostel Warden",
+    hookWhy: "Always looks at you like an enemy; strict and unfriendly."
+  },
+  {
+    word: "Churlish",
+    partOfSpeech: "Adjective",
+    meaning: "Rude in a mean-spirited and surly way.",
+    translation: "अशिष्ट / गंवार",
+    sentence: "It seems churlish to complain.",
+    synonyms: ["Rude", "Ill-mannered", "Impolite"],
+    antonyms: ["Polite", "Courteous"],
+    trick: "Childish -> Acting rude like a spoiled child.",
+    tone: "Negative (-)",
+    collocation: "Churlish behavior",
+    characterHook: "Rude Waiter / Taxi Driver",
+    hookWhy: "Refusing to go to a location or slamming the plate down (Ill-mannered)."
+  },
+  {
+    word: "Loutish",
+    partOfSpeech: "Adjective",
+    meaning: "Uncouth and aggressive.",
+    translation: "गंवारू / असभ्य",
+    sentence: "Loutish behavior.",
+    synonyms: ["Rude", "Boorish", "Oafish"],
+    antonyms: ["Refined", "Polite"],
+    trick: "Lout -> A loud lout.",
+    tone: "Negative (-)",
+    collocation: "Loutish manner",
+    characterHook: "Kabir Singh (Drunk)",
+    hookWhy: "Aggressive, shouting at servants, breaking things (uncouth)."
+  },
+  {
+    word: "Ebullient",
+    partOfSpeech: "Adjective",
+    meaning: "Cheerful and full of energy.",
+    translation: "उबाल वाला / जोशीला",
+    sentence: "She sounded ebullient and happy.",
+    synonyms: ["Exuberant", "Buoyant", "Cheerful"],
+    antonyms: ["Depressed", "Apathetic"],
+    trick: "Bull -> Energy of a bull.",
+    tone: "Positive (+)",
+    collocation: "Ebullient mood",
+    characterHook: "Archana Puran Singh",
+    hookWhy: "Laughing loudly, full of bubbling energy on the comedy show."
+  },
+  {
+    word: "Placid",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a person or animal) not easily upset or excited.",
+    translation: "शांत / सौम्य",
+    sentence: "This horse has a placid nature.",
+    synonyms: ["Calm", "Tranquil", "Equable"],
+    antonyms: ["Excitable", "Temperamental"],
+    trick: "Place -> Sitting in a quiet place.",
+    tone: "Positive (+)",
+    collocation: "Placid nature",
+    characterHook: "Manmohan Singh",
+    hookWhy: "No matter what happens, his expression remains calm and peaceful."
+  },
+  {
+    word: "Lethargic",
+    partOfSpeech: "Adjective",
+    meaning: "Affected by lethargy; sluggish and apathetic.",
+    translation: "सुस्त / निद्रालु",
+    sentence: "I felt tired and a little lethargic.",
+    synonyms: ["Sluggish", "Inert", "Inactive"],
+    antonyms: ["Vigorous", "Energetic"],
+    trick: "Leather -> Heavy like leather, hard to move.",
+    tone: "Negative (-)",
+    collocation: "Lethargic pace",
+    characterHook: "Sunday Afternoon after Biryani",
+    hookWhy: "That heavy feeling where you cannot move a muscle."
+  },
+  {
+    word: "Adroit",
+    partOfSpeech: "Adjective",
+    meaning: "Clever or skillful in using the hands or mind.",
+    translation: "निपुण / चालाक",
+    sentence: "He was adroit at tax avoidance.",
+    synonyms: ["Skillful", "Adept", "Dexterous"],
+    antonyms: ["Clumsy", "Incompetent"],
+    trick: "Android -> An android robot is skillful.",
+    tone: "Positive (+)",
+    collocation: "Adroit negotiation",
+    characterHook: "Pickpockets in Local Trains",
+    hookWhy: "Their hands move so skillfully you don't even feel your wallet gone."
+  },
+  {
+    word: "Doctrine",
+    partOfSpeech: "Noun",
+    meaning: "A belief or set of beliefs held and taught by a Church, political party, or other group.",
+    translation: "सिद्धांत / मत",
+    sentence: "The doctrine of predestination.",
+    synonyms: ["Creed", "Credo", "Dogma"],
+    antonyms: ["Disbelief"],
+    trick: "Doctor -> A doctor follows medical doctrine.",
+    tone: "Neutral (0)",
+    collocation: "Political doctrine",
+    characterHook: "RSS / Communist Party",
+    hookWhy: "They follow a strict set of beliefs and principles."
+  },
+  {
+    word: "Dogma",
+    partOfSpeech: "Noun",
+    meaning: "A principle or set of principles laid down by an authority as incontrovertibly true.",
+    translation: "हठधर्मिता / सिद्धांत",
+    sentence: "Rejection of political dogma.",
+    synonyms: ["Teaching", "Belief", "Tenet"],
+    antonyms: ["Doubt"],
+    trick: "Dog -> Following like a dog without question.",
+    tone: "Neutral (0)",
+    collocation: "Religious dogma",
+    characterHook: "Religious Superstitions",
+    hookWhy: "Beliefs like 'don't cut nails at night' followed without questioning."
+  },
+  {
+    word: "Dexterous",
+    partOfSpeech: "Adjective",
+    meaning: "Showing or having skill, especially with the hands.",
+    translation: "निपुण / कुशल",
+    sentence: "Dexterous accordion playing.",
+    synonyms: ["Deft", "Adept", "Handy"],
+    antonyms: ["Clumsy"],
+    trick: "Dexter -> Dexter's Laboratory (smart kid).",
+    tone: "Positive (+)",
+    collocation: "Dexterous fingers",
+    characterHook: "Zakir Hussain (Tabla)",
+    hookWhy: "His fingers move with such skill and speed it looks like magic."
+  },
+  {
+    word: "Vagabond",
+    partOfSpeech: "Noun",
+    meaning: "A person who wanders from place to place without a home or job.",
+    translation: "आवारा / घुमक्कड़",
+    sentence: "A vagabond life.",
+    synonyms: ["Wanderer", "Nomad", "Tramp"],
+    antonyms: ["Settled", "Resident"],
+    trick: "Bag -> Lives out of a bag.",
+    tone: "Neutral (0)",
+    collocation: "Vagabond existence",
+    characterHook: "Ranbir Kapoor (Yeh Jawaani Hai Deewani)",
+    hookWhy: "Bunny wants to travel, never settle, living out of a backpack."
+  },
+  {
+    word: "Peregrine",
+    partOfSpeech: "Adjective/Noun",
+    meaning: "Coming from another country; foreign or wandering.",
+    translation: "विदेशी / घुमक्कड़",
+    sentence: "Peregrine falcon.",
+    synonyms: ["Wandering", "Migratory"],
+    antonyms: ["Native"],
+    trick: "Per -> Per region travel.",
+    tone: "Neutral (0)",
+    collocation: "Peregrine falcon",
+    characterHook: "Siberian Cranes",
+    hookWhy: "Birds that travel thousands of miles to India (Wandering/Migratory)."
+  },
+  {
+    word: "Sedentary",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a person) tending to spend much time seated; somewhat inactive.",
+    translation: "गतिहीन / बैठा रहने वाला",
+    sentence: "A sedentary lifestyle.",
+    synonyms: ["Sitting", "Inactive", "Desk-bound"],
+    antonyms: ["Active", "Mobile"],
+    trick: "Sedan -> Sitting in a sedan chair/car.",
+    tone: "Negative (-)",
+    collocation: "Sedentary lifestyle",
+    characterHook: "IT Employee",
+    hookWhy: "Sitting in a chair for 10 hours a day with zero physical movement."
+  },
+  {
+    word: "Endemic",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a disease or condition) regularly found among particular people or in a certain area.",
+    translation: "स्थानीय / विशेष क्षेत्रीय",
+    sentence: "Malaria is endemic to the tropics.",
+    synonyms: ["Native", "Indigenous", "Local"],
+    antonyms: ["Exotic", "Imported"],
+    trick: "End -> Doesn't end in that region.",
+    tone: "Neutral (0)",
+    collocation: "Endemic disease",
+    characterHook: "Alphonso Mango (Ratnagiri)",
+    hookWhy: "It is native only to that specific region."
+  },
+  {
+    word: "Prerogative",
+    partOfSpeech: "Noun",
+    meaning: "A right or privilege exclusive to a particular individual or class.",
+    translation: "विशेषाधिकार",
+    sentence: "It's the writer's prerogative to decide the ending.",
+    synonyms: ["Entitlement", "Right", "Privilege"],
+    antonyms: ["Duty", "Obligation"],
+    trick: "Pre + Rog -> Previous request granted.",
+    tone: "Neutral (0)",
+    collocation: "Royal prerogative",
+    characterHook: "The Bride at a Wedding",
+    hookWhy: "It is her special right to be late; no one can complain."
+  },
+  {
+    word: "Perquisite",
+    partOfSpeech: "Noun",
+    meaning: "A perk; a special right or privilege enjoyed as a result of one's position.",
+    translation: "ऊपरी लाभ / अनुलाभ",
+    sentence: "The wife of the president has all the perquisites of stardom.",
+    synonyms: ["Perk", "Bonus", "Benefit"],
+    antonyms: ["Loss", "Penalty"],
+    trick: "Perk -> Perquisite is the formal word for Perk.",
+    tone: "Positive (+)",
+    collocation: "Job perquisite",
+    characterHook: "Sarkari Afsar (Official)",
+    hookWhy: "Getting a Red Beacon car and a Bungalow are the perks of the job."
+  },
+  {
+    word: "Sanction",
+    partOfSpeech: "Noun/Verb",
+    meaning: "1. A threatened penalty for disobeying a law or rule. 2. Official permission or approval for an action.",
+    translation: "मंजूरी / दंड",
+    sentence: "He appealed to the bishop for his sanction.",
+    synonyms: ["Penalty", "Punishment", "Authorization"],
+    antonyms: ["Reward", "Prohibition"],
+    trick: "Saint -> A saint gives approval (sanction).",
+    tone: "Neutral (0)",
+    collocation: "Official sanction",
+    characterHook: "Mom saying 'Yes' to Goa Trip",
+    hookWhy: "You need official permission (sanction) from the supreme authority."
+  },
+  // --- Group: Master Collection (General/Mixed) ---
+  {
+    word: "Adduce",
+    partOfSpeech: "Verb",
+    meaning: "To cite as evidence or proof.",
+    translation: "प्रमाण प्रस्तुत करना",
+    sentence: "The lawyer failed to adduce enough evidence to support his argument.",
+    synonyms: ["Cite", "Quote", "Present", "Proffer", "Mention"],
+    antonyms: ["Hide", "Conceal", "Withdraw", "Retract", "Obscure"],
+    trick: "Add + Use = To ADD facts to USE as proof.",
+    tone: "Neutral (0)",
+    collocation: "Adduce evidence",
+    intensitySpectrum: []
+  },
   {
     word: "Armistice",
     partOfSpeech: "Noun",
     meaning: "An agreement made by opposing sides in a war to stop fighting for a certain time; a truce.",
     translation: "युद्धविराम",
     sentence: "The armistice was signed on November 11, ending the hostilities.",
-    synonyms: [
-      "Truce",
-      "Ceasefire",
-      "Peace"
-    ],
-    antonyms: [
-      "War",
-      "Hostility",
-      "Conflict"
-    ],
+    synonyms: ["Truce", "Ceasefire", "Peace"],
+    antonyms: ["War", "Hostility", "Conflict"],
     trick: "Arm + Is + Ice -> Arms (Weapons) are put on Ice (Frozen/Stopped).",
     tone: "Positive (+)",
     collocation: "Sign an armistice",
     intensitySpectrum: [
-      {
-        word: "Pause",
-        level: "Mild"
-      },
-      {
-        word: "Ceasefire",
-        level: "Medium"
-      },
-      {
-        word: "Armistice",
-        level: "High"
-      },
-      {
-        word: "Treaty",
-        level: "Extreme"
-      }
-    ]
+      { word: "Pause", level: "Mild" },
+      { word: "Ceasefire", level: "Medium" },
+      { word: "Armistice", level: "High" },
+      { word: "Treaty", level: "Extreme" }
+    ],
+    characterHook: "Wagah Border Ceremony",
+    hookWhy: "Soldiers from both sides meet, shake hands (or show aggression), but there is no shooting. It is a controlled armistice."
   },
   {
     word: "Ruckus",
@@ -3893,37 +3267,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "A disturbance or commotion.",
     translation: "हंगामा / शोरगुल",
     sentence: "The protesters caused a ruckus outside the city hall.",
-    synonyms: [
-      "Commotion",
-      "Uproar",
-      "Fracas"
-    ],
-    antonyms: [
-      "Calm",
-      "Peace",
-      "Order"
-    ],
+    synonyms: ["Commotion", "Uproar", "Fracas"],
+    antonyms: ["Calm", "Peace", "Order"],
     trick: "Raavan + Kus (Kushti) -> Like a wrestling match causing noise.",
     tone: "Negative (-)",
     collocation: "Cause a ruckus",
     intensitySpectrum: [
-      {
-        word: "Noise",
-        level: "Mild"
-      },
-      {
-        word: "Disturbance",
-        level: "Medium"
-      },
-      {
-        word: "Ruckus",
-        level: "High"
-      },
-      {
-        word: "Riot",
-        level: "Extreme"
-      }
-    ]
+      { word: "Noise", level: "Mild" },
+      { word: "Disturbance", level: "Medium" },
+      { word: "Ruckus", level: "High" },
+      { word: "Riot", level: "Extreme" }
+    ],
+    characterHook: "Fish Market (Machli Bazaar)",
+    hookWhy: "The ultimate Indian metaphor for noise and confusion."
   },
   {
     word: "Fracas",
@@ -3931,37 +3287,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "A noisy disturbance or quarrel.",
     translation: "कलह / दंगा",
     sentence: "He was injured in a drunken fracas at the bar.",
-    synonyms: [
-      "Brawl",
-      "Scuffle",
-      "Melee"
-    ],
-    antonyms: [
-      "Harmony",
-      "Agreement",
-      "Peace"
-    ],
+    synonyms: ["Brawl", "Scuffle", "Melee"],
+    antonyms: ["Harmony", "Agreement", "Peace"],
     trick: "Fracture -> A fight that causes fractures.",
     tone: "Negative (-)",
     collocation: "Drunken fracas",
     intensitySpectrum: [
-      {
-        word: "Argument",
-        level: "Mild"
-      },
-      {
-        word: "Scuffle",
-        level: "Medium"
-      },
-      {
-        word: "Fracas",
-        level: "High"
-      },
-      {
-        word: "Mayhem",
-        level: "Extreme"
-      }
-    ]
+      { word: "Argument", level: "Mild" },
+      { word: "Scuffle", level: "Medium" },
+      { word: "Fracas", level: "High" },
+      { word: "Mayhem", level: "Extreme" }
+    ],
+    characterHook: "Indian Parliament (Monsoon Session)",
+    hookWhy: "Chairs thrown, papers torn, shouting matches - a political fracas."
   },
   {
     word: "Rebarbative",
@@ -3969,37 +3307,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Unattractive and objectionable.",
     translation: "अरुचिकर / अप्रिय",
     sentence: "I found his rebarbative attitude impossible to deal with.",
-    synonyms: [
-      "Repellent",
-      "Repulsive",
-      "Unpleasant"
-    ],
-    antonyms: [
-      "Attractive",
-      "Pleasant",
-      "Appealing"
-    ],
+    synonyms: ["Repellent", "Repulsive", "Unpleasant"],
+    antonyms: ["Attractive", "Pleasant", "Appealing"],
     trick: "Barbed Wire -> Something prickly and repellent like barbed wire.",
     tone: "Negative (-)",
     collocation: "Rebarbative nature",
     intensitySpectrum: [
-      {
-        word: "Unpleasant",
-        level: "Mild"
-      },
-      {
-        word: "Off-putting",
-        level: "Medium"
-      },
-      {
-        word: "Rebarbative",
-        level: "High"
-      },
-      {
-        word: "Abhorrent",
-        level: "Extreme"
-      }
-    ]
+      { word: "Unpleasant", level: "Mild" },
+      { word: "Off-putting", level: "Medium" },
+      { word: "Rebarbative", level: "High" },
+      { word: "Abhorrent", level: "Extreme" }
+    ],
+    characterHook: "Kachra Seth (Hera Pheri)",
+    hookWhy: "His attitude, his look, his voice - everything was unpleasant."
   },
   {
     word: "Ineluctable",
@@ -4007,37 +3327,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Unable to be resisted or avoided; inescapable.",
     translation: "अनिवार्य / अपरिहार्य",
     sentence: "The ineluctable conclusion was that the company had to close.",
-    synonyms: [
-      "Unavoidable",
-      "Inevitable",
-      "Inescapable"
-    ],
-    antonyms: [
-      "Avoidable",
-      "Preventable",
-      "Uncertain"
-    ],
+    synonyms: ["Unavoidable", "Inevitable", "Inescapable"],
+    antonyms: ["Avoidable", "Preventable", "Uncertain"],
     trick: "In (Not) + Elect (Choose) -> You cannot choose to avoid it.",
     tone: "Neutral (0)",
     collocation: "Ineluctable fate",
     intensitySpectrum: [
-      {
-        word: "Likely",
-        level: "Mild"
-      },
-      {
-        word: "Probable",
-        level: "Medium"
-      },
-      {
-        word: "Ineluctable",
-        level: "High"
-      },
-      {
-        word: "Destined",
-        level: "Extreme"
-      }
-    ]
+      { word: "Likely", level: "Mild" },
+      { word: "Probable", level: "Medium" },
+      { word: "Ineluctable", level: "High" },
+      { word: "Destined", level: "Extreme" }
+    ],
+    characterHook: "Thanos",
+    hookWhy: "'I am Inevitable' (Ineluctable). You cannot stop him."
   },
   {
     word: "Stifle",
@@ -4045,37 +3347,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "1. Make (someone) unable to breathe properly. 2. Restrain (a reaction) or stop oneself acting.",
     translation: "दबाना / दम घोंटना",
     sentence: "She tried to stifle a yawn during the meeting.",
-    synonyms: [
-      "Suppress",
-      "Smother",
-      "Choke"
-    ],
-    antonyms: [
-      "Encourage",
-      "Release",
-      "Vent"
-    ],
+    synonyms: ["Suppress", "Smother", "Choke"],
+    antonyms: ["Encourage", "Release", "Vent"],
     trick: "Stiff -> Make something stiff/stop moving.",
     tone: "Negative (-)",
     collocation: "Stifle dissent/yawn",
     intensitySpectrum: [
-      {
-        word: "Hide",
-        level: "Mild"
-      },
-      {
-        word: "Restrain",
-        level: "Medium"
-      },
-      {
-        word: "Stifle",
-        level: "High"
-      },
-      {
-        word: "Suffocate",
-        level: "Extreme"
-      }
-    ]
+      { word: "Hide", level: "Mild" },
+      { word: "Restrain", level: "Medium" },
+      { word: "Stifle", level: "High" },
+      { word: "Suffocate", level: "Extreme" }
+    ],
+    characterHook: "Students in Morning Assembly",
+    hookWhy: "Trying to stop laughing (stifle) when the Principal is shouting."
   },
   {
     word: "Apoplectic",
@@ -4083,37 +3367,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Overcome with anger; extremely indignant.",
     translation: "आग बबूला / अत्यंत क्रुद्ध",
     sentence: "He was apoplectic with rage when he saw the damage.",
-    synonyms: [
-      "Furious",
-      "Enraged",
-      "Incensed"
-    ],
-    antonyms: [
-      "Calm",
-      "Pleased",
-      "Delighted"
-    ],
+    synonyms: ["Furious", "Enraged", "Incensed"],
+    antonyms: ["Calm", "Pleased", "Delighted"],
     trick: "Pop -> So angry a vein is about to 'pop'.",
     tone: "Negative (-)",
     collocation: "Apoplectic with rage",
     intensitySpectrum: [
-      {
-        word: "Angry",
-        level: "Mild"
-      },
-      {
-        word: "Furious",
-        level: "Medium"
-      },
-      {
-        word: "Apoplectic",
-        level: "High"
-      },
-      {
-        word: "Homicidal",
-        level: "Extreme"
-      }
-    ]
+      { word: "Angry", level: "Mild" },
+      { word: "Furious", level: "Medium" },
+      { word: "Apoplectic", level: "High" },
+      { word: "Homicidal", level: "Extreme" }
+    ],
+    characterHook: "Sunny Deol (Ghatak)",
+    hookWhy: "'Saato ko saath maarunga!' - Shaking with rage."
   },
   {
     word: "Lachrymose",
@@ -4121,37 +3387,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Tearful or given to weeping.",
     translation: "रोनेवाला / अश्रुपूर्ण",
     sentence: "The funeral was a lachrymose affair.",
-    synonyms: [
-      "Tearful",
-      "Weepy",
-      "Sentimental"
-    ],
-    antonyms: [
-      "Cheerful",
-      "Beaming",
-      "Laughing"
-    ],
+    synonyms: ["Tearful", "Weepy", "Sentimental"],
+    antonyms: ["Cheerful", "Beaming", "Laughing"],
     trick: "Lac (Lake) + Cry -> Crying a lake of tears.",
     tone: "Negative (-)",
     collocation: "Lachrymose drama",
     intensitySpectrum: [
-      {
-        word: "Sad",
-        level: "Mild"
-      },
-      {
-        word: "Weepy",
-        level: "Medium"
-      },
-      {
-        word: "Lachrymose",
-        level: "High"
-      },
-      {
-        word: "Inconsolable",
-        level: "Extreme"
-      }
-    ]
+      { word: "Sad", level: "Mild" },
+      { word: "Weepy", level: "Medium" },
+      { word: "Lachrymose", level: "High" },
+      { word: "Inconsolable", level: "Extreme" }
+    ],
+    characterHook: "Nirupa Roy (The Mother)",
+    hookWhy: "Always crying in old Bollywood movies."
   },
   {
     word: "Incandescent",
@@ -4159,37 +3407,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "1. Emitting light as a result of being heated. 2. Full of strong emotion; passionate or angry.",
     translation: "तप्त / अत्यंत क्रुद्ध",
     sentence: "She was incandescent with rage at the accusation.",
-    synonyms: [
-      "Burning",
-      "Furious",
-      "Radiant"
-    ],
-    antonyms: [
-      "Dark",
-      "Calm",
-      "Cool"
-    ],
+    synonyms: ["Burning", "Furious", "Radiant"],
+    antonyms: ["Dark", "Calm", "Cool"],
     trick: "Candle -> Burning bright and hot like a candle.",
     tone: "Negative (-)",
     collocation: "Incandescent with rage",
     intensitySpectrum: [
-      {
-        word: "Hot",
-        level: "Mild"
-      },
-      {
-        word: "Glowing",
-        level: "Medium"
-      },
-      {
-        word: "Incandescent",
-        level: "High"
-      },
-      {
-        word: "Blinding",
-        level: "Extreme"
-      }
-    ]
+      { word: "Hot", level: "Mild" },
+      { word: "Glowing", level: "Medium" },
+      { word: "Incandescent", level: "High" },
+      { word: "Blinding", level: "Extreme" }
+    ],
+    characterHook: "Angry Shiva (Rudra)",
+    hookWhy: "Glowing with power and anger."
   },
   {
     word: "Frenzied",
@@ -4197,37 +3427,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Wildly excited or uncontrolled.",
     translation: "उन्मत्त / पागलपन भरा",
     sentence: "The rock star was greeted by frenzied screaming from fans.",
-    synonyms: [
-      "Frantic",
-      "Wild",
-      "Hysterical"
-    ],
-    antonyms: [
-      "Calm",
-      "Composed",
-      "Tranquil"
-    ],
+    synonyms: ["Frantic", "Wild", "Hysterical"],
+    antonyms: ["Calm", "Composed", "Tranquil"],
     trick: "Friend + Z (Zombie) -> Running like crazy from a zombie friend.",
     tone: "Negative (-)",
     collocation: "Frenzied attack",
     intensitySpectrum: [
-      {
-        word: "Excited",
-        level: "Mild"
-      },
-      {
-        word: "Manic",
-        level: "Medium"
-      },
-      {
-        word: "Frenzied",
-        level: "High"
-      },
-      {
-        word: "Berserk",
-        level: "Extreme"
-      }
-    ]
+      { word: "Excited", level: "Mild" },
+      { word: "Manic", level: "Medium" },
+      { word: "Frenzied", level: "High" },
+      { word: "Berserk", level: "Extreme" }
+    ],
+    characterHook: "Stock Market Traders (Scam 1992)",
+    hookWhy: "Shouting 'Buy! Buy!' in the ring - total frenzy."
   },
   {
     word: "Rabid",
@@ -4235,37 +3447,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "1. Having extreme or fanatical support or belief. 2. Affected with rabies.",
     translation: "कट्टर / पागल",
     sentence: "He is a rabid supporter of the football team.",
-    synonyms: [
-      "Fanatical",
-      "Extreme",
-      "Maniacal"
-    ],
-    antonyms: [
-      "Moderate",
-      "Indifferent",
-      "Sane"
-    ],
+    synonyms: ["Fanatical", "Extreme", "Maniacal"],
+    antonyms: ["Moderate", "Indifferent", "Sane"],
     trick: "Rabbit -> A mad rabbit biting people (Rabies).",
     tone: "Negative (-)",
     collocation: "Rabid fan",
     intensitySpectrum: [
-      {
-        word: "Keen",
-        level: "Mild"
-      },
-      {
-        word: "Obsessed",
-        level: "Medium"
-      },
-      {
-        word: "Rabid",
-        level: "High"
-      },
-      {
-        word: "Psychotic",
-        level: "Extreme"
-      }
-    ]
+      { word: "Keen", level: "Mild" },
+      { word: "Obsessed", level: "Medium" },
+      { word: "Rabid", level: "High" },
+      { word: "Psychotic", level: "Extreme" }
+    ],
+    characterHook: "Salman Khan Fans",
+    hookWhy: "Will fight anyone who says a bad word about 'Bhai'."
   },
   {
     word: "Quell",
@@ -4273,37 +3467,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Put an end to (a rebellion or other disorder), typically by the use of force.",
     translation: "कुचलना / शांत करना",
     sentence: "Police were sent to quell the riots.",
-    synonyms: [
-      "Suppress",
-      "Crush",
-      "Subdue"
-    ],
-    antonyms: [
-      "Incite",
-      "Provoke",
-      "Agitate"
-    ],
+    synonyms: ["Suppress", "Crush", "Subdue"],
+    antonyms: ["Incite", "Provoke", "Agitate"],
     trick: "Well -> Throw them in a well to stop the noise.",
     tone: "Negative (-)",
     collocation: "Quell the uprising",
     intensitySpectrum: [
-      {
-        word: "Calm",
-        level: "Mild"
-      },
-      {
-        word: "Subdue",
-        level: "Medium"
-      },
-      {
-        word: "Quell",
-        level: "High"
-      },
-      {
-        word: "Annihilate",
-        level: "Extreme"
-      }
-    ]
+      { word: "Calm", level: "Mild" },
+      { word: "Subdue", level: "Medium" },
+      { word: "Quell", level: "High" },
+      { word: "Annihilate", level: "Extreme" }
+    ],
+    characterHook: "Baahubali",
+    hookWhy: "Stopping the enemy army alone."
   },
   {
     word: "Smother",
@@ -4311,37 +3487,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "1. Kill by covering the nose and mouth. 2. Suppress (a feeling or action).",
     translation: "दम घोंटना / छिपाना",
     sentence: "She tried to smother her laughter in the library.",
-    synonyms: [
-      "Suffocate",
-      "Stifle",
-      "Muffle"
-    ],
-    antonyms: [
-      "Breathe",
-      "Express",
-      "Vent"
-    ],
+    synonyms: ["Suffocate", "Stifle", "Muffle"],
+    antonyms: ["Breathe", "Express", "Vent"],
     trick: "Mother -> An overprotective mother smothers you with too much care.",
     tone: "Negative (-)",
     collocation: "Smother a fire",
     intensitySpectrum: [
-      {
-        word: "Cover",
-        level: "Mild"
-      },
-      {
-        word: "Suppress",
-        level: "Medium"
-      },
-      {
-        word: "Smother",
-        level: "High"
-      },
-      {
-        word: "Asphyxiate",
-        level: "Extreme"
-      }
-    ]
+      { word: "Cover", level: "Mild" },
+      { word: "Suppress", level: "Medium" },
+      { word: "Smother", level: "High" },
+      { word: "Asphyxiate", level: "Extreme" }
+    ],
+    characterHook: "Overprotective Indian Mom",
+    hookWhy: "Smothers you with kisses, food, and questions."
   },
   {
     word: "Dolorous",
@@ -4349,37 +3507,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Feeling or expressing great sorrow or distress.",
     translation: "दर्दनाक / शोकपूर्ण",
     sentence: "She let out a dolorous cry when she heard the news.",
-    synonyms: [
-      "Mournful",
-      "Sorrowful",
-      "Woeful"
-    ],
-    antonyms: [
-      "Joyful",
-      "Happy",
-      "Cheer"
-    ],
+    synonyms: ["Mournful", "Sorrowful", "Woeful"],
+    antonyms: ["Joyful", "Happy", "Cheer"],
     trick: "Dole -> To give out 'dole' (charity) to sad/poor people. Also 'Dolor' means pain.",
     tone: "Negative (-)",
     collocation: "Dolorous ballad",
     intensitySpectrum: [
-      {
-        word: "Sad",
-        level: "Mild"
-      },
-      {
-        word: "Mournful",
-        level: "Medium"
-      },
-      {
-        word: "Dolorous",
-        level: "High"
-      },
-      {
-        word: "Heartbroken",
-        level: "Extreme"
-      }
-    ]
+      { word: "Sad", level: "Mild" },
+      { word: "Mournful", level: "Medium" },
+      { word: "Dolorous", level: "High" },
+      { word: "Heartbroken", level: "Extreme" }
+    ],
+    characterHook: "Widows in old movies (White Saree)",
+    hookWhy: "Singing sad songs of separation."
   },
   {
     word: "Maudlin",
@@ -4387,37 +3527,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Self-pityingly or tearfully sentimental, often through drunkenness.",
     translation: "भावुक (शराब के नशे में)",
     sentence: "He gets maudlin and starts talking about his ex-wife after a few drinks.",
-    synonyms: [
-      "Sentimental",
-      "Weepy",
-      "Mushy"
-    ],
-    antonyms: [
-      "Pragmatic",
-      "Stoic",
-      "Unemotional"
-    ],
+    synonyms: ["Sentimental", "Weepy", "Mushy"],
+    antonyms: ["Pragmatic", "Stoic", "Unemotional"],
     trick: "Modeling -> Models crying dramatically for attention.",
     tone: "Negative (-)",
     collocation: "Maudlin self-pity",
     intensitySpectrum: [
-      {
-        word: "Emotional",
-        level: "Mild"
-      },
-      {
-        word: "Sentimental",
-        level: "Medium"
-      },
-      {
-        word: "Maudlin",
-        level: "High"
-      },
-      {
-        word: "Melodramatic",
-        level: "Extreme"
-      }
-    ]
+      { word: "Emotional", level: "Mild" },
+      { word: "Sentimental", level: "Medium" },
+      { word: "Maudlin", level: "High" },
+      { word: "Melodramatic", level: "Extreme" }
+    ],
+    characterHook: "Aditya Roy Kapur (Aashiqui 2)",
+    hookWhy: "Drunk, crying on stage, blaming himself."
   },
   {
     word: "Lugubrious",
@@ -4425,37 +3547,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Looking or sounding sad and dismal.",
     translation: "विषादपूर्ण / उदास",
     sentence: "The lugubrious music set a somber mood for the movie.",
-    synonyms: [
-      "Mournful",
-      "Gloomy",
-      "Dismal"
-    ],
-    antonyms: [
-      "Cheerful",
-      "Sunny",
-      "Optimistic"
-    ],
+    synonyms: ["Mournful", "Gloomy", "Dismal"],
+    antonyms: ["Cheerful", "Sunny", "Optimistic"],
     trick: "Luggage -> Dragging heavy luggage makes you look sad/tired.",
     tone: "Negative (-)",
     collocation: "Lugubrious face",
     intensitySpectrum: [
-      {
-        word: "Serious",
-        level: "Mild"
-      },
-      {
-        word: "Gloomy",
-        level: "Medium"
-      },
-      {
-        word: "Lugubrious",
-        level: "High"
-      },
-      {
-        word: "Funereal",
-        level: "Extreme"
-      }
-    ]
+      { word: "Serious", level: "Mild" },
+      { word: "Gloomy", level: "Medium" },
+      { word: "Lugubrious", level: "High" },
+      { word: "Funereal", level: "Extreme" }
+    ],
+    characterHook: "Eeyore (Winnie the Pooh)",
+    hookWhy: "The donkey who is always depressed."
   },
   {
     word: "Jovial",
@@ -4463,37 +3567,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Cheerful and friendly.",
     translation: "उल्लासपूर्ण / हंसमुख",
     sentence: "He was in a jovial mood at the party.",
-    synonyms: [
-      "Merry",
-      "Jolly",
-      "Convivial"
-    ],
-    antonyms: [
-      "Miserable",
-      "Gloomy",
-      "Morose"
-    ],
+    synonyms: ["Merry", "Jolly", "Convivial"],
+    antonyms: ["Miserable", "Gloomy", "Morose"],
     trick: "Joy -> Full of Joy.",
     tone: "Positive (+)",
     collocation: "Jovial host",
     intensitySpectrum: [
-      {
-        word: "Happy",
-        level: "Mild"
-      },
-      {
-        word: "Cheerful",
-        level: "Medium"
-      },
-      {
-        word: "Jovial",
-        level: "High"
-      },
-      {
-        word: "Ecstatic",
-        level: "Extreme"
-      }
-    ]
+      { word: "Happy", level: "Mild" },
+      { word: "Cheerful", level: "Medium" },
+      { word: "Jovial", level: "High" },
+      { word: "Ecstatic", level: "Extreme" }
+    ],
+    characterHook: "Santa Claus / Sidhu Paaji",
+    hookWhy: "Always laughing loudly 'Thoko Taali!'"
   },
   {
     word: "Insouciant",
@@ -4501,37 +3587,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Showing a casual lack of concern; indifferent.",
     translation: "बेपरवाह / चिंतामुक्त",
     sentence: "She wandered into the meeting with an insouciant air.",
-    synonyms: [
-      "Nonchalant",
-      "Unconcerned",
-      "Carefree"
-    ],
-    antonyms: [
-      "Anxious",
-      "Concerned",
-      "Worried"
-    ],
+    synonyms: ["Nonchalant", "Unconcerned", "Carefree"],
+    antonyms: ["Anxious", "Concerned", "Worried"],
     trick: "Soup -> Drinking soup slowly without a care in the world.",
     tone: "Neutral (0)",
     collocation: "Insouciant shrug",
     intensitySpectrum: [
-      {
-        word: "Relaxed",
-        level: "Mild"
-      },
-      {
-        word: "Unconcerned",
-        level: "Medium"
-      },
-      {
-        word: "Insouciant",
-        level: "High"
-      },
-      {
-        word: "Negligent",
-        level: "Extreme"
-      }
-    ]
+      { word: "Relaxed", level: "Mild" },
+      { word: "Unconcerned", level: "Medium" },
+      { word: "Insouciant", level: "High" },
+      { word: "Negligent", level: "Extreme" }
+    ],
+    characterHook: "Rancho (3 Idiots)",
+    hookWhy: "Exams? No tension. Life? All is well."
   },
   {
     word: "Nonchalant",
@@ -4539,36 +3607,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "(of a person or manner) feeling or appearing casually calm and relaxed.",
     translation: "बेपरवाह / उदासीन",
     sentence: "He was surprisingly nonchalant about winning the lottery.",
-    synonyms: [
-      "Calm",
-      "Cool",
-      "Unconcerned"
-    ],
-    antonyms: [
-      "Anxious",
-      "Excited",
-      "Agitated"
-    ],
+    synonyms: ["Calm", "Cool", "Unconcerned"],
+    antonyms: ["Anxious", "Excited", "Agitated"],
     trick: "No + Challan -> No traffic fine (challan), so I am relaxed.",
     tone: "Neutral (0)",
     collocation: "Nonchalant attitude",
     intensitySpectrum: [
-      {
-        word: "Calm",
-        level: "Mild"
-      },
-      {
-        word: "Relaxed", level: "Medium"
-      },
-      {
-        word: "Nonchalant",
-        level: "High"
-      },
-      {
-        word: "Indifferent",
-        level: "Extreme"
-      }
-    ]
+      { word: "Calm", level: "Mild" },
+      { word: "Relaxed", level: "Medium" },
+      { word: "Nonchalant", level: "High" },
+      { word: "Indifferent", level: "Extreme" }
+    ],
+    characterHook: "James Bond / Don (SRK)",
+    hookWhy: "Bullets flying, but he fixes his tie calmly."
   },
   {
     word: "Phlegmatic",
@@ -4576,37 +3627,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "(Of a person) having an unemotional and stolidly calm disposition.",
     translation: "सुस्त / आवेगहीन",
     sentence: "The phlegmatic British character is a stereotype.",
-    synonyms: [
-      "Calm",
-      "Stolid",
-      "Impassive"
-    ],
-    antonyms: [
-      "Excitable",
-      "Emotional",
-      "Demonstrative"
-    ],
+    synonyms: ["Calm", "Stolid", "Impassive"],
+    antonyms: ["Excitable", "Emotional", "Demonstrative"],
     trick: "Phlegm -> Mucus is slow and sticky; implies a slow/calm person.",
     tone: "Neutral (0)",
     collocation: "Phlegmatic temperament",
     intensitySpectrum: [
-      {
-        word: "Calm",
-        level: "Mild"
-      },
-      {
-        word: "Unemotional",
-        level: "Medium"
-      },
-      {
-        word: "Phlegmatic",
-        level: "High"
-      },
-      {
-        word: "Comatose",
-        level: "Extreme"
-      }
-    ]
+      { word: "Calm", level: "Mild" },
+      { word: "Unemotional", level: "Medium" },
+      { word: "Phlegmatic", level: "High" },
+      { word: "Comatose", level: "Extreme" }
+    ],
+    characterHook: "Kumbhakarna",
+    hookWhy: "Sleeps for 6 months, nothing bothers him."
   },
   {
     word: "Cavalier",
@@ -4614,37 +3647,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Showing a lack of proper concern; offhand.",
     translation: "अभिमानपूर्ण / लापरवाह",
     sentence: "He has a cavalier attitude towards safety regulations.",
-    synonyms: [
-      "Dismissive",
-      "Indifferent",
-      "Arrogant"
-    ],
-    antonyms: [
-      "Thoughtful",
-      "Careful",
-      "Concerned"
-    ],
+    synonyms: ["Dismissive", "Indifferent", "Arrogant"],
+    antonyms: ["Thoughtful", "Careful", "Concerned"],
     trick: "Cavalry -> A soldier on a horse looking down on others.",
     tone: "Negative (-)",
     collocation: "Cavalier dismissal",
     intensitySpectrum: [
-      {
-        word: "Casual",
-        level: "Mild"
-      },
-      {
-        word: "Dismissive",
-        level: "Medium"
-      },
-      {
-        word: "Cavalier",
-        level: "High"
-      },
-      {
-        word: "Scornful",
-        level: "Extreme"
-      }
-    ]
+      { word: "Casual", level: "Mild" },
+      { word: "Dismissive", level: "Medium" },
+      { word: "Cavalier", level: "High" },
+      { word: "Scornful", level: "Extreme" }
+    ],
+    characterHook: "Rich Brat in Daddy's Car",
+    hookWhy: "Drives rashly, doesn't care about others."
   },
   {
     word: "Obtrusive",
@@ -4652,37 +3667,19 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Noticeable or prominent in an unwelcome or intrusive way.",
     translation: "बाधा डालनेवाला / जो जबरदस्ती दिखे",
     sentence: "The waiter was attentive without being obtrusive.",
-    synonyms: [
-      "Conspicuous",
-      "Intrusive",
-      "Bold"
-    ],
-    antonyms: [
-      "Unobtrusive",
-      "Subtle",
-      "Discreet"
-    ],
+    synonyms: ["Conspicuous", "Intrusive", "Bold"],
+    antonyms: ["Unobtrusive", "Subtle", "Discreet"],
     trick: "Obstruction -> Something that obstructs your view/peace.",
     tone: "Negative (-)",
     collocation: "Obtrusive behavior",
     intensitySpectrum: [
-      {
-        word: "Visible",
-        level: "Mild"
-      },
-      {
-        word: "Noticeable",
-        level: "Medium"
-      },
-      {
-        word: "Obtrusive",
-        level: "High"
-      },
-      {
-        word: "Blatant",
-        level: "Extreme"
-      }
-    ]
+      { word: "Visible", level: "Mild" },
+      { word: "Noticeable", level: "Medium" },
+      { word: "Obtrusive", level: "High" },
+      { word: "Blatant", level: "Extreme" }
+    ],
+    characterHook: "Pop-up Ads",
+    hookWhy: "They jump in your face when you don't want them."
   },
   {
     word: "Prying",
@@ -4690,37 +3687,18 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     meaning: "Excessively interested in a person's private affairs.",
     translation: "तांक-झांक करनेवाला",
     sentence: "I hate prying neighbors who watch everything I do.",
-    synonyms: [
-      "Inquisitive",
-      "Meddling",
-      "Nosy"
-    ],
-    antonyms: [
-      "Discreet",
-      "Uninterested",
-      "Respectful"
-    ],
+    synonyms: ["Inquisitive", "Meddling", "Nosy"],
+    antonyms: ["Discreet", "Uninterested", "Respectful"],
     trick: "Prise -> To 'prise' (force) open a box/secret.",
     tone: "Negative (-)",
     collocation: "Prying eyes",
     intensitySpectrum: [
-      {
-        word: "Curious",
-        level: "Mild"
-      },
-      {
-        word: "Inquisitive",
-        level: "Medium"
-      },
-      {
-        word: "Prying",
-        level: "High"
-      },
-      {
-        word: "Intrusive",
-        level: "Extreme"
-      }
-    ]
-  },
-
+      { word: "Curious", level: "Mild" },
+      { word: "Inquisitive", level: "Medium" },
+      { word: "Prying", level: "High" },
+      { word: "Intrusive", level: "Extreme" }
+    ],
+    characterHook: "Neighbourhood Aunties",
+    hookWhy: "Watching who visits your house at 10 PM."
+  }
 ];

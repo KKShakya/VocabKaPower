@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Volume2, Heart, Plus, Minus, Circle, Link as LinkIcon, Thermometer } from 'lucide-react';
+import { Volume2, Heart, Plus, Minus, Circle, Link as LinkIcon, Thermometer, Clapperboard } from 'lucide-react';
 import { WordAnalysis, SavedWord } from '../types';
 
 interface WordCardProps {
@@ -121,6 +121,25 @@ export const WordCard: React.FC<WordCardProps> = ({ data, imageUrl, onSave, isSa
                 <p className="text-sm text-slate-500 font-medium">{data.translation}</p>
             )}
         </div>
+
+        {/* Character Hook (NEW) */}
+        {data.characterHook && (
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-5 rounded-2xl border border-purple-100/50 relative mx-2">
+                <div className="flex items-center gap-2 mb-2">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-purple-800/60 flex items-center gap-1">
+                        <Clapperboard size={12} /> Character Match
+                    </span>
+                </div>
+                <p className="text-purple-900 text-center font-bold text-lg font-serif">
+                    {data.characterHook}
+                </p>
+                {data.hookWhy && (
+                    <p className="text-purple-800/70 text-center text-xs mt-2 italic border-t border-purple-200/50 pt-2 leading-relaxed">
+                        "{data.hookWhy}"
+                    </p>
+                )}
+            </div>
+        )}
 
         {/* Intensity Spectrum */}
         {data.intensitySpectrum && data.intensitySpectrum.length > 0 && (

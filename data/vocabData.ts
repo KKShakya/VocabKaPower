@@ -37,7 +37,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Ceasefire", level: "Medium" },
           { word: "Armistice", level: "High" },
           { word: "Treaty", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Wagah Border Ceremony",
+        hookWhy: "Soldiers from both sides meet, shake hands (or show aggression), but there is no shooting. It is a controlled armistice."
       }
     },
     {
@@ -58,7 +60,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Disturbance", level: "Medium" },
           { word: "Ruckus", level: "High" },
           { word: "Riot", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Fish Market (Machli Bazaar)",
+        hookWhy: "The ultimate Indian metaphor for noise and confusion."
       }
     },
     {
@@ -79,7 +83,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Scuffle", level: "Medium" },
           { word: "Fracas", level: "High" },
           { word: "Mayhem", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Indian Parliament (Monsoon Session)",
+        hookWhy: "Chairs thrown, papers torn, shouting matches - a political fracas."
       }
     },
     {
@@ -100,7 +106,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Off-putting", level: "Medium" },
           { word: "Rebarbative", level: "High" },
           { word: "Abhorrent", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Kachra Seth (Hera Pheri)",
+        hookWhy: "His attitude, his look, his voice - everything was unpleasant."
       }
     },
     {
@@ -121,7 +129,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Probable", level: "Medium" },
           { word: "Ineluctable", level: "High" },
           { word: "Destined", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Thanos",
+        hookWhy: "'I am Inevitable' (Ineluctable). You cannot stop him."
       }
     },
     {
@@ -142,7 +152,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Restrain", level: "Medium" },
           { word: "Stifle", level: "High" },
           { word: "Suffocate", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Students in Morning Assembly",
+        hookWhy: "Trying to stop laughing (stifle) when the Principal is shouting."
       }
     },
     {
@@ -163,7 +175,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Furious", level: "Medium" },
           { word: "Apoplectic", level: "High" },
           { word: "Homicidal", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Sunny Deol (Ghatak)",
+        hookWhy: "'Saato ko saath maarunga!' - Shaking with rage."
       }
     },
     {
@@ -184,7 +198,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Weepy", level: "Medium" },
           { word: "Lachrymose", level: "High" },
           { word: "Inconsolable", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Nirupa Roy (The Mother)",
+        hookWhy: "Always crying in old Bollywood movies."
       }
     },
     {
@@ -205,7 +221,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Glowing", level: "Medium" },
           { word: "Incandescent", level: "High" },
           { word: "Blinding", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Angry Shiva (Rudra)",
+        hookWhy: "Glowing with power and anger."
       }
     },
     {
@@ -226,7 +244,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Manic", level: "Medium" },
           { word: "Frenzied", level: "High" },
           { word: "Berserk", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Stock Market Traders (Scam 1992)",
+        hookWhy: "Shouting 'Buy! Buy!' in the ring - total frenzy."
       }
     },
     {
@@ -247,7 +267,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Obsessed", level: "Medium" },
           { word: "Rabid", level: "High" },
           { word: "Psychotic", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Salman Khan Fans",
+        hookWhy: "Will fight anyone who says a bad word about 'Bhai'."
       }
     },
     {
@@ -268,7 +290,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Subdue", level: "Medium" },
           { word: "Quell", level: "High" },
           { word: "Annihilate", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Baahubali",
+        hookWhy: "Stopping the enemy army alone."
       }
     },
     {
@@ -289,7 +313,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Suppress", level: "Medium" },
           { word: "Smother", level: "High" },
           { word: "Asphyxiate", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Overprotective Indian Mom",
+        hookWhy: "Smothers you with kisses, food, and questions."
       }
     },
     {
@@ -310,7 +336,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Mournful", level: "Medium" },
           { word: "Dolorous", level: "High" },
           { word: "Heartbroken", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Widows in old movies (White Saree)",
+        hookWhy: "Singing sad songs of separation."
       }
     },
     {
@@ -331,7 +359,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Sentimental", level: "Medium" },
           { word: "Maudlin", level: "High" },
           { word: "Melodramatic", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Aditya Roy Kapur (Aashiqui 2)",
+        hookWhy: "Drunk, crying on stage, blaming himself."
       }
     },
     {
@@ -352,7 +382,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Gloomy", level: "Medium" },
           { word: "Lugubrious", level: "High" },
           { word: "Funereal", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Eeyore (Winnie the Pooh)",
+        hookWhy: "The donkey who is always depressed."
       }
     },
     {
@@ -373,7 +405,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Cheerful", level: "Medium" },
           { word: "Jovial", level: "High" },
           { word: "Ecstatic", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Santa Claus / Sidhu Paaji",
+        hookWhy: "Always laughing loudly 'Thoko Taali!'"
       }
     },
     {
@@ -394,7 +428,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Unconcerned", level: "Medium" },
           { word: "Insouciant", level: "High" },
           { word: "Negligent", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Rancho (3 Idiots)",
+        hookWhy: "Exams? No tension. Life? All is well."
       }
     },
     {
@@ -415,7 +451,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Relaxed", level: "Medium" },
           { word: "Nonchalant", level: "High" },
           { word: "Indifferent", level: "Extreme" }
-        ]
+        ],
+        characterHook: "James Bond / Don (SRK)",
+        hookWhy: "Bullets flying, but he fixes his tie calmly."
       }
     },
     {
@@ -436,7 +474,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Unemotional", level: "Medium" },
           { word: "Phlegmatic", level: "High" },
           { word: "Comatose", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Kumbhakarna",
+        hookWhy: "Sleeps for 6 months, nothing bothers him."
       }
     },
     {
@@ -457,7 +497,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Dismissive", level: "Medium" },
           { word: "Cavalier", level: "High" },
           { word: "Scornful", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Rich Brat in Daddy's Car",
+        hookWhy: "Drives rashly, doesn't care about others."
       }
     },
     {
@@ -478,7 +520,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Noticeable", level: "Medium" },
           { word: "Obtrusive", level: "High" },
           { word: "Blatant", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Pop-up Ads",
+        hookWhy: "They jump in your face when you don't want them."
       }
     },
     {
@@ -499,7 +543,9 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
           { word: "Inquisitive", level: "Medium" },
           { word: "Prying", level: "High" },
           { word: "Intrusive", level: "Extreme" }
-        ]
+        ],
+        characterHook: "Neighbourhood Aunties",
+        hookWhy: "Watching who visits your house at 10 PM."
       }
     }
   ],

@@ -11,6 +11,8 @@ export interface WordAnalysis {
   tone?: string; // e.g. "Negative (-)" or "Positive (+)"
   collocation?: string; // e.g. "Heinous Crime" (The "Best Friend" word)
   intensitySpectrum?: { word: string; level: string }[]; // The Intensity Training Spectrum
+  characterHook?: string; // Pop culture or character reference
+  hookWhy?: string; // Explanation for the character hook
 }
 
 export interface SavedWord extends WordAnalysis {
