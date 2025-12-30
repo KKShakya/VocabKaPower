@@ -28,8 +28,12 @@ export const Notebook: React.FC = () => {
     return "from-brand-500 to-accent-600";
   };
 
+  const getIcon = (hook: string | undefined) => {
+    return <Clapperboard size={18} />;
+  };
+
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-7xl mx-auto pb-12">
        <div className="flex flex-col md:flex-row justify-between items-end md:items-center mb-8 gap-4">
         <div>
             <h2 className="text-3xl font-bold text-slate-900">My Notebook</h2>
@@ -67,36 +71,51 @@ export const Notebook: React.FC = () => {
             <p className="text-slate-500 max-w-sm">Try a different search term.</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredWords.map((word, idx) => (
                 <div 
                     key={`${word.word}-${idx}`} 
                     onClick={() => setSelectedWord(word)}
-                    className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden cursor-pointer hover:shadow-md hover:border-brand-200 transition-all group flex flex-col relative h-full"
+                    className={`relative w-full rounded-3xl shadow-xl hover:shadow-2xl overflow-hidden bg-gradient-to-br ${getGradient(word.tone)} p-8 text-white cursor-pointer transform transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col justify-between border border-white/20`}
                 >
-                    <div className={`relative overflow-hidden flex flex-col items-center justify-center bg-gradient-to-br ${getGradient(word.tone)} p-6 min-h-[14rem]`}>
-                        <div className="text-white text-center relative z-10 w-full flex flex-col items-center">
-                            <h3 className="text-2xl font-bold capitalize mb-1 shadow-black/10 drop-shadow-md">{word.word}</h3>
-                            <p className="text-white/90 text-[10px] font-bold uppercase tracking-widest mb-3 opacity-80">{word.partOfSpeech}</p>
-                            
-                            {word.characterHook && (
-                                <div className="mt-2 w-full max-w-[95%] bg-white shadow-xl shadow-black/10 rounded-xl px-3 py-2.5 transform transition-transform group-hover:-translate-y-1 duration-300">
-                                    <div className="flex items-center gap-1.5 justify-center mb-1.5">
-                                        <div className="bg-indigo-50 p-1 rounded text-indigo-600">
-                                            <Clapperboard size={12} strokeWidth={2.5} /> 
-                                        </div>
-                                        <span className="text-slate-800 text-xs font-bold leading-none tracking-tight">{word.characterHook}</span>
-                                    </div>
-                                    {word.hookWhy && (
-                                         <p className="text-slate-500 text-[10px] leading-tight line-clamp-2 italic border-t border-slate-100 pt-1.5 text-center">"{word.hookWhy}"</p>
-                                    )}
-                                </div>
-                            )}
+                    <div>
+                        {/* --- HEADER: Word & Part of Speech --- */}
+                        <div className="text-center mb-6">
+                            <h1 className="text-4xl font-extrabold tracking-tight drop-shadow-sm mb-2 capitalize break-words">
+                            {word.word}
+                            </h1>
+                            <span className="inline-block px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm border border-white/20 shadow-sm">
+                            {word.partOfSpeech}
+                            </span>
                         </div>
+
+                        {/* --- BODY: The "Hook" (Glassmorphism Style) --- */}
+                        {word.characterHook && (
+                            <div className="bg-white/95 text-slate-800 rounded-2xl p-5 shadow-lg mb-6 transform transition group-hover:scale-[1.02] duration-300 border border-white/50 relative z-10">
+                                {/* Hook Title (Character Name) */}
+                                <div className="flex items-center justify-center gap-2 mb-3 text-indigo-600 font-bold text-sm border-b border-indigo-100 pb-2">
+                                    {getIcon(word.characterHook)}
+                                    <span className="line-clamp-1">{word.characterHook}</span>
+                                </div>
+
+                                {/* Hook Description (The "Why") */}
+                                <p className="text-center text-slate-600 italic font-medium text-xs leading-relaxed line-clamp-4">
+                                    "{word.hookWhy}"
+                                </p>
+                            </div>
+                        )}
                     </div>
-                    <div className="p-4 flex-1 flex flex-col bg-white">
-                        <p className="text-slate-500 text-sm line-clamp-3 leading-relaxed">{word.meaning}</p>
+
+                    {/* --- FOOTER: Meaning --- */}
+                    <div className="text-center opacity-90 relative z-10 mt-auto">
+                        <p className="text-sm font-medium leading-relaxed line-clamp-3 text-white/90">
+                        {word.meaning}
+                        </p>
                     </div>
+
+                    {/* Optional: Decorative Background Circle */}
+                    <div className="absolute -top-12 -right-12 w-48 h-48 bg-white/10 rounded-full blur-3xl pointer-events-none transition-transform duration-700 group-hover:scale-125"></div>
+                    <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-black/10 rounded-full blur-2xl pointer-events-none"></div>
                 </div>
             ))}
         </div>
@@ -104,14 +123,13 @@ export const Notebook: React.FC = () => {
 
       {/* Detail Modal */}
       {selectedWord && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm" onClick={() => setSelectedWord(null)}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md animate-fade-in" onClick={() => setSelectedWord(null)}>
             <div className="w-full max-w-md max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
                 <WordCard 
                     data={selectedWord} 
-                    // No onSave prop passed, so it's read-only
                 />
                  <div className="mt-4 text-center">
-                    <button onClick={() => setSelectedWord(null)} className="text-white/80 hover:text-white text-sm bg-white/10 px-4 py-2 rounded-full backdrop-blur-md transition-colors">Close Card</button>
+                    <button onClick={() => setSelectedWord(null)} className="text-white/80 hover:text-white text-sm bg-white/10 px-4 py-2 rounded-full backdrop-blur-md transition-colors border border-white/10 shadow-lg">Close Card</button>
                  </div>
             </div>
         </div>
