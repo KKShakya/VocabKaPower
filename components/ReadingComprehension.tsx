@@ -81,29 +81,20 @@ export const ReadingComprehension: React.FC = () => {
         <div className="space-y-8 animate-fade-in">
           
           {/* Main Passage */}
-          <div className="bg-white p-8 md:p-12 rounded-3xl shadow-md border border-slate-100 relative overflow-hidden">
+          <div className="bg-white p-8 md:p-10 rounded-3xl shadow-md border border-slate-100 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-brand-500 to-accent-600"></div>
-            <div className="mb-8 border-b border-slate-100 pb-6">
-                <div className="flex items-center gap-3 mb-4">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500 bg-slate-50 px-2 py-1 rounded border border-slate-100">Editorial</span>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-brand-700 bg-brand-50 px-2 py-1 rounded border border-brand-100">{data.sourceTopic}</span>
+            <div className="mb-6 border-b border-slate-100 pb-6">
+                <div className="flex items-center gap-2 mb-3">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 bg-slate-50 px-2 py-1 rounded">Editorial</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-2 py-1 rounded">{data.sourceTopic}</span>
                 </div>
-                <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 leading-tight tracking-tight">{data.title}</h2>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 leading-tight">{data.title}</h2>
             </div>
             
-            {/* Improved Typography for Reading Smoothness */}
-            <div className="prose prose-lg prose-slate max-w-none text-slate-700 leading-loose font-serif selection:bg-brand-100 selection:text-brand-900">
+            <div className="prose prose-lg prose-slate max-w-none text-slate-700 leading-relaxed font-serif">
               {data.passage.split('\n').map((para, idx) => {
                   if(!para.trim()) return null;
-                  // First paragraph Drop Cap
-                  if (idx === 0) {
-                      return (
-                        <p key={idx} className="mb-6 first-letter:text-5xl first-letter:font-bold first-letter:text-slate-900 first-letter:mr-2 first-letter:float-left first-letter:leading-none">
-                            {para}
-                        </p>
-                      )
-                  }
-                  return <p key={idx} className="mb-6">{para}</p>
+                  return <p key={idx} className="mb-4 first-letter:text-5xl first-letter:font-bold first-letter:text-slate-900 first-letter:mr-1 first-letter:float-left">{para}</p>
               })}
             </div>
           </div>
@@ -144,7 +135,7 @@ export const ReadingComprehension: React.FC = () => {
                             className={className}
                             disabled={showResults}
                         >
-                            <span className="flex-1 leading-relaxed">{opt}</span>
+                            <span className="flex-1">{opt}</span>
                             {showResults && isCorrect && <CheckCircle size={18} className="text-emerald-600 ml-2 shrink-0" />}
                             {showResults && isSelected && !isCorrect && <XCircle size={18} className="text-red-600 ml-2 shrink-0" />}
                             {!showResults && <div className={`w-4 h-4 rounded-full border-2 ${isSelected ? 'border-brand-500 bg-brand-500' : 'border-slate-300 group-hover:border-brand-300'} ml-2 transition-colors`}></div>}

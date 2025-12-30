@@ -3847,5 +3847,880 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
       { word: "Pugnacious", level: "High" },
       { word: "Belligerent", level: "Extreme" }
     ]
-  }
+  },
+
+  {
+    "word": "Armistice",
+    "partOfSpeech": "Noun",
+    "meaning": "An agreement made by opposing sides in a war to stop fighting for a certain time; a truce.",
+    "translation": "युद्धविराम",
+    "sentence": "The armistice was signed on November 11, ending the hostilities.",
+    "synonyms": [
+      "Truce",
+      "Ceasefire",
+      "Peace"
+    ],
+    "antonyms": [
+      "War",
+      "Hostility",
+      "Conflict"
+    ],
+    "trick": "Arm + Is + Ice -> Arms (Weapons) are put on Ice (Frozen/Stopped).",
+    "tone": "Positive (+)",
+    "collocation": "Sign an armistice",
+    "intensitySpectrum": [
+      {
+        "word": "Pause",
+        "level": "Mild"
+      },
+      {
+        "word": "Ceasefire",
+        "level": "Medium"
+      },
+      {
+        "word": "Armistice",
+        "level": "High"
+      },
+      {
+        "word": "Treaty",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Ruckus",
+    "partOfSpeech": "Noun",
+    "meaning": "A disturbance or commotion.",
+    "translation": "हंगामा / शोरगुल",
+    "sentence": "The protesters caused a ruckus outside the city hall.",
+    "synonyms": [
+      "Commotion",
+      "Uproar",
+      "Fracas"
+    ],
+    "antonyms": [
+      "Calm",
+      "Peace",
+      "Order"
+    ],
+    "trick": "Raavan + Kus (Kushti) -> Like a wrestling match causing noise.",
+    "tone": "Negative (-)",
+    "collocation": "Cause a ruckus",
+    "intensitySpectrum": [
+      {
+        "word": "Noise",
+        "level": "Mild"
+      },
+      {
+        "word": "Disturbance",
+        "level": "Medium"
+      },
+      {
+        "word": "Ruckus",
+        "level": "High"
+      },
+      {
+        "word": "Riot",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Fracas",
+    "partOfSpeech": "Noun",
+    "meaning": "A noisy disturbance or quarrel.",
+    "translation": "कलह / दंगा",
+    "sentence": "He was injured in a drunken fracas at the bar.",
+    "synonyms": [
+      "Brawl",
+      "Scuffle",
+      "Melee"
+    ],
+    "antonyms": [
+      "Harmony",
+      "Agreement",
+      "Peace"
+    ],
+    "trick": "Fracture -> A fight that causes fractures.",
+    "tone": "Negative (-)",
+    "collocation": "Drunken fracas",
+    "intensitySpectrum": [
+      {
+        "word": "Argument",
+        "level": "Mild"
+      },
+      {
+        "word": "Scuffle",
+        "level": "Medium"
+      },
+      {
+        "word": "Fracas",
+        "level": "High"
+      },
+      {
+        "word": "Mayhem",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Rebarbative",
+    "partOfSpeech": "Adjective",
+    "meaning": "Unattractive and objectionable.",
+    "translation": "अरुचिकर / अप्रिय",
+    "sentence": "I found his rebarbative attitude impossible to deal with.",
+    "synonyms": [
+      "Repellent",
+      "Repulsive",
+      "Unpleasant"
+    ],
+    "antonyms": [
+      "Attractive",
+      "Pleasant",
+      "Appealing"
+    ],
+    "trick": "Barbed Wire -> Something prickly and repellent like barbed wire.",
+    "tone": "Negative (-)",
+    "collocation": "Rebarbative nature",
+    "intensitySpectrum": [
+      {
+        "word": "Unpleasant",
+        "level": "Mild"
+      },
+      {
+        "word": "Off-putting",
+        "level": "Medium"
+      },
+      {
+        "word": "Rebarbative",
+        "level": "High"
+      },
+      {
+        "word": "Abhorrent",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Ineluctable",
+    "partOfSpeech": "Adjective",
+    "meaning": "Unable to be resisted or avoided; inescapable.",
+    "translation": "अनिवार्य / अपरिहार्य",
+    "sentence": "The ineluctable conclusion was that the company had to close.",
+    "synonyms": [
+      "Unavoidable",
+      "Inevitable",
+      "Inescapable"
+    ],
+    "antonyms": [
+      "Avoidable",
+      "Preventable",
+      "Uncertain"
+    ],
+    "trick": "In (Not) + Elect (Choose) -> You cannot choose to avoid it.",
+    "tone": "Neutral (0)",
+    "collocation": "Ineluctable fate",
+    "intensitySpectrum": [
+      {
+        "word": "Likely",
+        "level": "Mild"
+      },
+      {
+        "word": "Probable",
+        "level": "Medium"
+      },
+      {
+        "word": "Ineluctable",
+        "level": "High"
+      },
+      {
+        "word": "Destined",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Stifle",
+    "partOfSpeech": "Verb",
+    "meaning": "1. Make (someone) unable to breathe properly. 2. Restrain (a reaction) or stop oneself acting.",
+    "translation": "दबाना / दम घोंटना",
+    "sentence": "She tried to stifle a yawn during the meeting.",
+    "synonyms": [
+      "Suppress",
+      "Smother",
+      "Choke"
+    ],
+    "antonyms": [
+      "Encourage",
+      "Release",
+      "Vent"
+    ],
+    "trick": "Stiff -> Make something stiff/stop moving.",
+    "tone": "Negative (-)",
+    "collocation": "Stifle dissent/yawn",
+    "intensitySpectrum": [
+      {
+        "word": "Hide",
+        "level": "Mild"
+      },
+      {
+        "word": "Restrain",
+        "level": "Medium"
+      },
+      {
+        "word": "Stifle",
+        "level": "High"
+      },
+      {
+        "word": "Suffocate",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Apoplectic",
+    "partOfSpeech": "Adjective",
+    "meaning": "Overcome with anger; extremely indignant.",
+    "translation": "आग बबूला / अत्यंत क्रुद्ध",
+    "sentence": "He was apoplectic with rage when he saw the damage.",
+    "synonyms": [
+      "Furious",
+      "Enraged",
+      "Incensed"
+    ],
+    "antonyms": [
+      "Calm",
+      "Pleased",
+      "Delighted"
+    ],
+    "trick": "Pop -> So angry a vein is about to 'pop'.",
+    "tone": "Negative (-)",
+    "collocation": "Apoplectic with rage",
+    "intensitySpectrum": [
+      {
+        "word": "Angry",
+        "level": "Mild"
+      },
+      {
+        "word": "Furious",
+        "level": "Medium"
+      },
+      {
+        "word": "Apoplectic",
+        "level": "High"
+      },
+      {
+        "word": "Homicidal",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Lachrymose",
+    "partOfSpeech": "Adjective",
+    "meaning": "Tearful or given to weeping.",
+    "translation": "रोनेवाला / अश्रुपूर्ण",
+    "sentence": "The funeral was a lachrymose affair.",
+    "synonyms": [
+      "Tearful",
+      "Weepy",
+      "Sentimental"
+    ],
+    "antonyms": [
+      "Cheerful",
+      "Beaming",
+      "Laughing"
+    ],
+    "trick": "Lac (Lake) + Cry -> Crying a lake of tears.",
+    "tone": "Negative (-)",
+    "collocation": "Lachrymose drama",
+    "intensitySpectrum": [
+      {
+        "word": "Sad",
+        "level": "Mild"
+      },
+      {
+        "word": "Weepy",
+        "level": "Medium"
+      },
+      {
+        "word": "Lachrymose",
+        "level": "High"
+      },
+      {
+        "word": "Inconsolable",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Incandescent",
+    "partOfSpeech": "Adjective",
+    "meaning": "1. Emitting light as a result of being heated. 2. Full of strong emotion; passionate or angry.",
+    "translation": "तप्त / अत्यंत क्रुद्ध",
+    "sentence": "She was incandescent with rage at the accusation.",
+    "synonyms": [
+      "Burning",
+      "Furious",
+      "Radiant"
+    ],
+    "antonyms": [
+      "Dark",
+      "Calm",
+      "Cool"
+    ],
+    "trick": "Candle -> Burning bright and hot like a candle.",
+    "tone": "Negative (-)",
+    "collocation": "Incandescent with rage",
+    "intensitySpectrum": [
+      {
+        "word": "Hot",
+        "level": "Mild"
+      },
+      {
+        "word": "Glowing",
+        "level": "Medium"
+      },
+      {
+        "word": "Incandescent",
+        "level": "High"
+      },
+      {
+        "word": "Blinding",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Frenzied",
+    "partOfSpeech": "Adjective",
+    "meaning": "Wildly excited or uncontrolled.",
+    "translation": "उन्मत्त / पागलपन भरा",
+    "sentence": "The rock star was greeted by frenzied screaming from fans.",
+    "synonyms": [
+      "Frantic",
+      "Wild",
+      "Hysterical"
+    ],
+    "antonyms": [
+      "Calm",
+      "Composed",
+      "Tranquil"
+    ],
+    "trick": "Friend + Z (Zombie) -> Running like crazy from a zombie friend.",
+    "tone": "Negative (-)",
+    "collocation": "Frenzied attack",
+    "intensitySpectrum": [
+      {
+        "word": "Excited",
+        "level": "Mild"
+      },
+      {
+        "word": "Manic",
+        "level": "Medium"
+      },
+      {
+        "word": "Frenzied",
+        "level": "High"
+      },
+      {
+        "word": "Berserk",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Rabid",
+    "partOfSpeech": "Adjective",
+    "meaning": "1. Having extreme or fanatical support or belief. 2. Affected with rabies.",
+    "translation": "कट्टर / पागल",
+    "sentence": "He is a rabid supporter of the football team.",
+    "synonyms": [
+      "Fanatical",
+      "Extreme",
+      "Maniacal"
+    ],
+    "antonyms": [
+      "Moderate",
+      "Indifferent",
+      "Sane"
+    ],
+    "trick": "Rabbit -> A mad rabbit biting people (Rabies).",
+    "tone": "Negative (-)",
+    "collocation": "Rabid fan",
+    "intensitySpectrum": [
+      {
+        "word": "Keen",
+        "level": "Mild"
+      },
+      {
+        "word": "Obsessed",
+        "level": "Medium"
+      },
+      {
+        "word": "Rabid",
+        "level": "High"
+      },
+      {
+        "word": "Psychotic",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Quell",
+    "partOfSpeech": "Verb",
+    "meaning": "Put an end to (a rebellion or other disorder), typically by the use of force.",
+    "translation": "कुचलना / शांत करना",
+    "sentence": "Police were sent to quell the riots.",
+    "synonyms": [
+      "Suppress",
+      "Crush",
+      "Subdue"
+    ],
+    "antonyms": [
+      "Incite",
+      "Provoke",
+      "Agitate"
+    ],
+    "trick": "Well -> Throw them in a well to stop the noise.",
+    "tone": "Negative (-)",
+    "collocation": "Quell the uprising",
+    "intensitySpectrum": [
+      {
+        "word": "Calm",
+        "level": "Mild"
+      },
+      {
+        "word": "Subdue",
+        "level": "Medium"
+      },
+      {
+        "word": "Quell",
+        "level": "High"
+      },
+      {
+        "word": "Annihilate",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Smother",
+    "partOfSpeech": "Verb",
+    "meaning": "1. Kill by covering the nose and mouth. 2. Suppress (a feeling or action).",
+    "translation": "दम घोंटना / छिपाना",
+    "sentence": "She tried to smother her laughter in the library.",
+    "synonyms": [
+      "Suffocate",
+      "Stifle",
+      "Muffle"
+    ],
+    "antonyms": [
+      "Breathe",
+      "Express",
+      "Vent"
+    ],
+    "trick": "Mother -> An overprotective mother smothers you with too much care.",
+    "tone": "Negative (-)",
+    "collocation": "Smother a fire",
+    "intensitySpectrum": [
+      {
+        "word": "Cover",
+        "level": "Mild"
+      },
+      {
+        "word": "Suppress",
+        "level": "Medium"
+      },
+      {
+        "word": "Smother",
+        "level": "High"
+      },
+      {
+        "word": "Asphyxiate",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Dolorous",
+    "partOfSpeech": "Adjective",
+    "meaning": "Feeling or expressing great sorrow or distress.",
+    "translation": "दर्दनाक / शोकपूर्ण",
+    "sentence": "She let out a dolorous cry when she heard the news.",
+    "synonyms": [
+      "Mournful",
+      "Sorrowful",
+      "Woeful"
+    ],
+    "antonyms": [
+      "Joyful",
+      "Happy",
+      "Cheer"
+    ],
+    "trick": "Dole -> To give out 'dole' (charity) to sad/poor people. Also 'Dolor' means pain.",
+    "tone": "Negative (-)",
+    "collocation": "Dolorous ballad",
+    "intensitySpectrum": [
+      {
+        "word": "Sad",
+        "level": "Mild"
+      },
+      {
+        "word": "Mournful",
+        "level": "Medium"
+      },
+      {
+        "word": "Dolorous",
+        "level": "High"
+      },
+      {
+        "word": "Heartbroken",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Maudlin",
+    "partOfSpeech": "Adjective",
+    "meaning": "Self-pityingly or tearfully sentimental, often through drunkenness.",
+    "translation": "भावुक (शराब के नशे में)",
+    "sentence": "He gets maudlin and starts talking about his ex-wife after a few drinks.",
+    "synonyms": [
+      "Sentimental",
+      "Weepy",
+      "Mushy"
+    ],
+    "antonyms": [
+      "Pragmatic",
+      "Stoic",
+      "Unemotional"
+    ],
+    "trick": "Modeling -> Models crying dramatically for attention.",
+    "tone": "Negative (-)",
+    "collocation": "Maudlin self-pity",
+    "intensitySpectrum": [
+      {
+        "word": "Emotional",
+        "level": "Mild"
+      },
+      {
+        "word": "Sentimental",
+        "level": "Medium"
+      },
+      {
+        "word": "Maudlin",
+        "level": "High"
+      },
+      {
+        "word": "Melodramatic",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Lugubrious",
+    "partOfSpeech": "Adjective",
+    "meaning": "Looking or sounding sad and dismal.",
+    "translation": "विषादपूर्ण / उदास",
+    "sentence": "The lugubrious music set a somber mood for the movie.",
+    "synonyms": [
+      "Mournful",
+      "Gloomy",
+      "Dismal"
+    ],
+    "antonyms": [
+      "Cheerful",
+      "Sunny",
+      "Optimistic"
+    ],
+    "trick": "Luggage -> Dragging heavy luggage makes you look sad/tired.",
+    "tone": "Negative (-)",
+    "collocation": "Lugubrious face",
+    "intensitySpectrum": [
+      {
+        "word": "Serious",
+        "level": "Mild"
+      },
+      {
+        "word": "Gloomy",
+        "level": "Medium"
+      },
+      {
+        "word": "Lugubrious",
+        "level": "High"
+      },
+      {
+        "word": "Funereal",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Jovial",
+    "partOfSpeech": "Adjective",
+    "meaning": "Cheerful and friendly.",
+    "translation": "उल्लासपूर्ण / हंसमुख",
+    "sentence": "He was in a jovial mood at the party.",
+    "synonyms": [
+      "Merry",
+      "Jolly",
+      "Convivial"
+    ],
+    "antonyms": [
+      "Miserable",
+      "Gloomy",
+      "Morose"
+    ],
+    "trick": "Joy -> Full of Joy.",
+    "tone": "Positive (+)",
+    "collocation": "Jovial host",
+    "intensitySpectrum": [
+      {
+        "word": "Happy",
+        "level": "Mild"
+      },
+      {
+        "word": "Cheerful",
+        "level": "Medium"
+      },
+      {
+        "word": "Jovial",
+        "level": "High"
+      },
+      {
+        "word": "Ecstatic",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Insouciant",
+    "partOfSpeech": "Adjective",
+    "meaning": "Showing a casual lack of concern; indifferent.",
+    "translation": "बेपरवाह / चिंतामुक्त",
+    "sentence": "She wandered into the meeting with an insouciant air.",
+    "synonyms": [
+      "Nonchalant",
+      "Unconcerned",
+      "Carefree"
+    ],
+    "antonyms": [
+      "Anxious",
+      "Concerned",
+      "Worried"
+    ],
+    "trick": "Soup -> Drinking soup slowly without a care in the world.",
+    "tone": "Neutral (0)",
+    "collocation": "Insouciant shrug",
+    "intensitySpectrum": [
+      {
+        "word": "Relaxed",
+        "level": "Mild"
+      },
+      {
+        "word": "Unconcerned",
+        "level": "Medium"
+      },
+      {
+        "word": "Insouciant",
+        "level": "High"
+      },
+      {
+        "word": "Negligent",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Nonchalant",
+    "partOfSpeech": "Adjective",
+    "meaning": "(of a person or manner) feeling or appearing casually calm and relaxed.",
+    "translation": "बेपरवाह / उदासीन",
+    "sentence": "He was surprisingly nonchalant about winning the lottery.",
+    "synonyms": [
+      "Calm",
+      "Cool",
+      "Unconcerned"
+    ],
+    "antonyms": [
+      "Anxious",
+      "Excited",
+      "Agitated"
+    ],
+    "trick": "No + Challan -> No traffic fine (challan), so I am relaxed.",
+    "tone": "Neutral (0)",
+    "collocation": "Nonchalant attitude",
+    "intensitySpectrum": [
+      {
+        "word": "Calm",
+        "level": "Mild"
+      },
+      {
+        "word": "Relaxed", "level": "Medium"
+      },
+      {
+        "word": "Nonchalant",
+        "level": "High"
+      },
+      {
+        "word": "Indifferent",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Phlegmatic",
+    "partOfSpeech": "Adjective",
+    "meaning": "(Of a person) having an unemotional and stolidly calm disposition.",
+    "translation": "सुस्त / आवेगहीन",
+    "sentence": "The phlegmatic British character is a stereotype.",
+    "synonyms": [
+      "Calm",
+      "Stolid",
+      "Impassive"
+    ],
+    "antonyms": [
+      "Excitable",
+      "Emotional",
+      "Demonstrative"
+    ],
+    "trick": "Phlegm -> Mucus is slow and sticky; implies a slow/calm person.",
+    "tone": "Neutral (0)",
+    "collocation": "Phlegmatic temperament",
+    "intensitySpectrum": [
+      {
+        "word": "Calm",
+        "level": "Mild"
+      },
+      {
+        "word": "Unemotional",
+        "level": "Medium"
+      },
+      {
+        "word": "Phlegmatic",
+        "level": "High"
+      },
+      {
+        "word": "Comatose",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Cavalier",
+    "partOfSpeech": "Adjective",
+    "meaning": "Showing a lack of proper concern; offhand.",
+    "translation": "अभिमानपूर्ण / लापरवाह",
+    "sentence": "He has a cavalier attitude towards safety regulations.",
+    "synonyms": [
+      "Dismissive",
+      "Indifferent",
+      "Arrogant"
+    ],
+    "antonyms": [
+      "Thoughtful",
+      "Careful",
+      "Concerned"
+    ],
+    "trick": "Cavalry -> A soldier on a horse looking down on others.",
+    "tone": "Negative (-)",
+    "collocation": "Cavalier dismissal",
+    "intensitySpectrum": [
+      {
+        "word": "Casual",
+        "level": "Mild"
+      },
+      {
+        "word": "Dismissive",
+        "level": "Medium"
+      },
+      {
+        "word": "Cavalier",
+        "level": "High"
+      },
+      {
+        "word": "Scornful",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Obtrusive",
+    "partOfSpeech": "Adjective",
+    "meaning": "Noticeable or prominent in an unwelcome or intrusive way.",
+    "translation": "बाधा डालनेवाला / जो जबरदस्ती दिखे",
+    "sentence": "The waiter was attentive without being obtrusive.",
+    "synonyms": [
+      "Conspicuous",
+      "Intrusive",
+      "Bold"
+    ],
+    "antonyms": [
+      "Unobtrusive",
+      "Subtle",
+      "Discreet"
+    ],
+    "trick": "Obstruction -> Something that obstructs your view/peace.",
+    "tone": "Negative (-)",
+    "collocation": "Obtrusive behavior",
+    "intensitySpectrum": [
+      {
+        "word": "Visible",
+        "level": "Mild"
+      },
+      {
+        "word": "Noticeable",
+        "level": "Medium"
+      },
+      {
+        "word": "Obtrusive",
+        "level": "High"
+      },
+      {
+        "word": "Blatant",
+        "level": "Extreme"
+      }
+    ]
+  },
+  {
+    "word": "Prying",
+    "partOfSpeech": "Adjective",
+    "meaning": "Excessively interested in a person's private affairs.",
+    "translation": "तांक-झांक करनेवाला",
+    "sentence": "I hate prying neighbors who watch everything I do.",
+    "synonyms": [
+      "Inquisitive",
+      "Meddling",
+      "Nosy"
+    ],
+    "antonyms": [
+      "Discreet",
+      "Uninterested",
+      "Respectful"
+    ],
+    "trick": "Prise -> To 'prise' (force) open a box/secret.",
+    "tone": "Negative (-)",
+    "collocation": "Prying eyes",
+    "intensitySpectrum": [
+      {
+        "word": "Curious",
+        "level": "Mild"
+      },
+      {
+        "word": "Inquisitive",
+        "level": "Medium"
+      },
+      {
+        "word": "Prying",
+        "level": "High"
+      },
+      {
+        "word": "Intrusive",
+        "level": "Extreme"
+      }
+    ]
+  },
+
 ];

@@ -7,9 +7,7 @@ export interface WordAnalysis {
   sentence: string;
   synonyms: string[];
   antonyms: string[];
-  trick: string; // Renamed back from mnemonic
-  characterHook?: string; // e.g. "Munna Bhai" or "Kabir Singh" style hook
-  hookWhy?: string; // Explanation for the character hook
+  trick: string; // Mnemonic
   tone?: string; // e.g. "Negative (-)" or "Positive (+)"
   collocation?: string; // e.g. "Heinous Crime" (The "Best Friend" word)
   intensitySpectrum?: { word: string; level: string }[]; // The Intensity Training Spectrum
