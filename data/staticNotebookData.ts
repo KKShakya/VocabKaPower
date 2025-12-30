@@ -2,7 +2,7 @@
 import { WordAnalysis } from "../types";
 
 export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
-  // --- Group: Joy & Bliss / General (Restored) ---
+  // --- Group: Joy & Bliss / General ---
   {
     word: "Elation",
     partOfSpeech: "Noun",
@@ -29,6 +29,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fell in City -> If you fell in love in a city, you found felicity.",
     tone: "Positive (+)",
     collocation: "Domestic Felicity",
+    intensitySpectrum: [{ word: "Pleasure", level: "Mild" }, { word: "Happiness", level: "Medium" }, { word: "Felicity", level: "High" }, { word: "Bliss", level: "Extreme" }],
     characterHook: "Sooraj Barjatya Movies",
     hookWhy: "Everyone is happy, singing, eating together."
   },
@@ -43,6 +44,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Magic -> Kings use magic to look majestic.",
     tone: "Positive (+)",
     collocation: "Majestic View",
+    intensitySpectrum: [{ word: "Impressive", level: "Mild" }, { word: "Grand", level: "Medium" }, { word: "Majestic", level: "High" }, { word: "Awe-inspiring", level: "Extreme" }],
     characterHook: "Baahubali Set / Mysore Palace",
     hookWhy: "Grand, huge, royal."
   },
@@ -57,6 +59,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "U + For + Ic -> You are for Ice cream (makes you happy).",
     tone: "Positive (+)",
     collocation: "Euphoric Mood",
+    intensitySpectrum: [{ word: "Happy", level: "Mild" }, { word: "Excited", level: "Medium" }, { word: "Euphoric", level: "High" }, { word: "Delirious", level: "Extreme" }],
     characterHook: "Winning Lottery Ticket Holder",
     hookWhy: "Can't believe the luck, floating on air."
   },
@@ -71,6 +74,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rap -> Good Rap music makes the crowd rapturous.",
     tone: "Positive (+)",
     collocation: "Rapturous Applause",
+    intensitySpectrum: [{ word: "Pleased", level: "Mild" }, { word: "Delighted", level: "Medium" }, { word: "Rapturous", level: "High" }, { word: "Ecstatic", level: "Extreme" }],
     characterHook: "Concert Fans",
     hookWhy: "Screaming, crying, clapping for Arijit Singh."
   },
@@ -85,6 +89,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Salu (Salman) + Brio -> Salu bhai is very healthy/fit.",
     tone: "Positive (+)",
     collocation: "Salubrious Climate",
+    intensitySpectrum: [{ word: "Clean", level: "Mild" }, { word: "Healthy", level: "Medium" }, { word: "Salubrious", level: "High" }, { word: "Invigorating", level: "Extreme" }],
     characterHook: "Salman Khan / Akshay Kumar",
     hookWhy: "Fitness icons, always healthy."
   },
@@ -99,6 +104,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Proper + Profit -> A time that is proper for profit.",
     tone: "Positive (+)",
     collocation: "Propitious Moment",
+    intensitySpectrum: [{ word: "Good", level: "Mild" }, { word: "Favorable", level: "Medium" }, { word: "Propitious", level: "High" }, { word: "Providential", level: "Extreme" }],
     characterHook: "Diwali Muhurat Trading",
     hookWhy: "The perfect lucky time to start business."
   },
@@ -113,6 +119,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Siren -> When the ambulance siren stops, it becomes serene.",
     tone: "Positive (+)",
     collocation: "Serene Smile",
+    intensitySpectrum: [{ word: "Quiet", level: "Mild" }, { word: "Calm", level: "Medium" }, { word: "Serene", level: "High" }, { word: "Placid", level: "Extreme" }],
     characterHook: "Buddha Statue",
     hookWhy: "The ultimate symbol of peace."
   },
@@ -127,6 +134,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Hall + Cyan -> A hall painted cyan (blue) feels peaceful.",
     tone: "Positive (+)",
     collocation: "Halcyon Days",
+    intensitySpectrum: [{ word: "Peaceful", level: "Mild" }, { word: "Happy", level: "Medium" }, { word: "Halcyon", level: "High" }, { word: "Idyllic", level: "Extreme" }],
     characterHook: "90s Kids",
     hookWhy: "Always talking about how '90s were the best'."
   },
@@ -141,6 +149,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Win + Some -> You can win some hearts if you are winsome.",
     tone: "Positive (+)",
     collocation: "Winsome Smile",
+    intensitySpectrum: [{ word: "Cute", level: "Mild" }, { word: "Appealing", level: "Medium" }, { word: "Winsome", level: "High" }, { word: "Captivating", level: "Extreme" }],
     characterHook: "Alia Bhatt (early movies)",
     hookWhy: "Cute, bubbly, charming."
   },
@@ -155,6 +164,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Stone -> Be like a stone; no feelings.",
     tone: "Neutral (0)",
     collocation: "Stoic Silence",
+    intensitySpectrum: [{ word: "Calm", level: "Mild" }, { word: "Controlled", level: "Medium" }, { word: "Stoic", level: "High" }, { word: "Impassive", level: "Extreme" }],
     characterHook: "Indian Soldier on Border",
     hookWhy: "Standing in snow/heat without complaint."
   },
@@ -169,6 +179,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "I'm Passive -> I am not active with emotions; I am passive.",
     tone: "Neutral (0)",
     collocation: "Impassive Face",
+    intensitySpectrum: [{ word: "Reserved", level: "Mild" }, { word: "Unemotional", level: "Medium" }, { word: "Impassive", level: "High" }, { word: "Catatonic", level: "Extreme" }],
     characterHook: "Poker Player",
     hookWhy: "Cannot show cards on face."
   },
@@ -183,6 +194,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Arrow -> Getting hit by an arrow is a harrowing experience.",
     tone: "Negative (-)",
     collocation: "Harrowing Experience",
+    intensitySpectrum: [{ word: "Scary", level: "Mild" }, { word: "Distressing", level: "Medium" }, { word: "Harrowing", level: "High" }, { word: "Traumatic", level: "Extreme" }],
     characterHook: "The Kashmir Files",
     hookWhy: "The scenes were painful to watch."
   },
@@ -197,6 +209,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Swollen -> When you cry, your face gets swollen and you look sullen.",
     tone: "Negative (-)",
     collocation: "Sullen Silence",
+    intensitySpectrum: [{ word: "Sad", level: "Mild" }, { word: "Gloomy", level: "Medium" }, { word: "Sullen", level: "High" }, { word: "Morose", level: "Extreme" }],
     characterHook: "Teenager grounded",
     hookWhy: "Sitting in room, refusing to talk."
   },
@@ -211,6 +224,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Trap -> Fear of getting caught in a trap.",
     tone: "Negative (-)",
     collocation: "With Trepidation",
+    intensitySpectrum: [{ word: "Unease", level: "Mild" }, { word: "Nervousness", level: "Medium" }, { word: "Trepidation", level: "High" }, { word: "Terror", level: "Extreme" }],
     characterHook: "Student checking Exam Results",
     hookWhy: "Hands shaking before entering roll number."
   },
@@ -225,6 +239,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rejected -> If you get rejected, you feel dejected.",
     tone: "Negative (-)",
     collocation: "Dejected Look",
+    intensitySpectrum: [{ word: "Sad", level: "Mild" }, { word: "Disappointed", level: "Medium" }, { word: "Dejected", level: "High" }, { word: "Despondent", level: "Extreme" }],
     characterHook: "Losing Team in Dressing Room",
     hookWhy: "Heads down, silence."
   },
@@ -239,6 +254,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "For + Loan -> If you ask for a loan and get no money, you feel forlorn.",
     tone: "Negative (-)",
     collocation: "Forlorn Hope",
+    intensitySpectrum: [{ word: "Lonely", level: "Mild" }, { word: "Abandoned", level: "Medium" }, { word: "Forlorn", level: "High" }, { word: "Desolate", level: "Extreme" }],
     characterHook: "Stray Puppy in Rain",
     hookWhy: "Looking for shelter, shivering."
   },
@@ -253,6 +269,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Retch -> Feeling so bad/sick that you want to retch (vomit).",
     tone: "Negative (-)",
     collocation: "Wretched Life",
+    intensitySpectrum: [{ word: "Unhappy", level: "Mild" }, { word: "Miserable", level: "Medium" }, { word: "Wretched", level: "High" }, { word: "Abject", level: "Extreme" }],
     characterHook: "Beggar in Slum",
     hookWhy: "Worst possible living condition."
   },
@@ -267,6 +284,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Call + Us -> He never calls us; he is callous (doesn't care).",
     tone: "Negative (-)",
     collocation: "Callous Attitude",
+    intensitySpectrum: [{ word: "Uncaring", level: "Mild" }, { word: "Insensitive", level: "Medium" }, { word: "Callous", level: "High" }, { word: "Heartless", level: "Extreme" }],
     characterHook: "Typical Villain",
     hookWhy: "Laughing while hero suffers."
   },
@@ -281,6 +299,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rain + Acid -> Smells bad like acid rain.",
     tone: "Negative (-)",
     collocation: "Rancid Butter",
+    intensitySpectrum: [{ word: "Stale", level: "Mild" }, { word: "Sour", level: "Medium" }, { word: "Rancid", level: "High" }, { word: "Putrid", level: "Extreme" }],
     characterHook: "Bachelor's Fridge",
     hookWhy: "Milk from 3 weeks ago."
   },
@@ -295,6 +314,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Melon + Colic -> Eating a bad melon gives you colic pain -> makes you sad.",
     tone: "Negative (-)",
     collocation: "Deep Melancholy",
+    intensitySpectrum: [{ word: "Sadness", level: "Mild" }, { word: "Gloom", level: "Medium" }, { word: "Melancholy", level: "High" }, { word: "Despair", level: "Extreme" }],
     characterHook: "Arijit Singh Songs",
     hookWhy: "Makes you miss an ex you never had."
   },
@@ -309,6 +329,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fire -> Ire sounds like Fire; burning with anger.",
     tone: "Negative (-)",
     collocation: "Draw the Ire",
+    intensitySpectrum: [{ word: "Annoyance", level: "Mild" }, { word: "Anger", level: "Medium" }, { word: "Ire", level: "High" }, { word: "Fury", level: "Extreme" }],
     characterHook: "Amrish Puri Eyes",
     hookWhy: "Just the look shows the ire."
   },
@@ -323,6 +344,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Flush -> Blood rushes to face (flush) when you are nervous/flustered.",
     tone: "Negative (-)",
     collocation: "Visibly Flustered",
+    intensitySpectrum: [{ word: "Nervous", level: "Mild" }, { word: "Confused", level: "Medium" }, { word: "Flustered", level: "High" }, { word: "Panicked", level: "Extreme" }],
     characterHook: "Student in Viva",
     hookWhy: "Forgot the answer, teacher staring, sweating."
   },
@@ -337,6 +359,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Enemy -> You often feel envy towards an enemy's success.",
     tone: "Negative (-)",
     collocation: "Green with Envy",
+    intensitySpectrum: [{ word: "Desire", level: "Mild" }, { word: "Jealousy", level: "Medium" }, { word: "Envy", level: "High" }, { word: "Covetousness", level: "Extreme" }],
     characterHook: "3 Idiots (Marks Scene)",
     hookWhy: "Friend fails = Sad. Friend comes 1st = Envy."
   },
@@ -351,6 +374,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Cheers! -> In a party, saying 'Cheers' makes everyone cheerful.",
     tone: "Positive (+)",
     collocation: "Cheerful Disposition",
+    intensitySpectrum: [{ word: "Happy", level: "Mild" }, { word: "Cheerful", level: "Medium" }, { word: "Joyful", level: "High" }, { word: "Exuberant", level: "Extreme" }],
     characterHook: "Ranveer Singh",
     hookWhy: "Always high energy, smiling, colorful."
   },
@@ -365,6 +389,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Jubilee -> Silver/Golden Jubilee celebrations make people jubilant.",
     tone: "Positive (+)",
     collocation: "Jubilant Mood",
+    intensitySpectrum: [{ word: "Happy", level: "Mild" }, { word: "Excited", level: "Medium" }, { word: "Jubilant", level: "High" }, { word: "Triumphant", level: "Extreme" }],
     characterHook: "Election Winning Candidate",
     hookWhy: "Garlands, dancing, sweets."
   },
@@ -379,6 +404,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "De-Light -> When the light comes back after a power cut, we feel delighted.",
     tone: "Positive (+)",
     collocation: "Absolutely Delighted",
+    intensitySpectrum: [{ word: "Pleased", level: "Mild" }, { word: "Happy", level: "Medium" }, { word: "Delighted", level: "High" }, { word: "Overjoyed", level: "Extreme" }],
     characterHook: "Guest receiving Gift",
     hookWhy: "Polite happiness when getting a present."
   },
@@ -393,6 +419,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rank -> A rank (rotten) smell creates bitterness.",
     tone: "Negative (-)",
     collocation: "Deep-seated rancor",
+    intensitySpectrum: [{ word: "Dislike", level: "Mild" }, { word: "Resentment", level: "Medium" }, { word: "Rancor", level: "High" }, { word: "Hatred", level: "Extreme" }],
     characterHook: "India vs Pakistan Cricket",
     hookWhy: "The historical bitterness and resentment on the field (though players are friends now, the vibe remains)."
   },
@@ -407,6 +434,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Face + Aid -> A fake face to aid in hiding the truth.",
     tone: "Neutral (0)",
     collocation: "Crumbling facade",
+    intensitySpectrum: [{ word: "Appearance", level: "Mild" }, { word: "Mask", level: "Medium" }, { word: "Facade", level: "High" }, { word: "Deception", level: "Extreme" }],
     characterHook: "Instagram Influencers",
     hookWhy: "Posting happy photos (facade) while being sad in real life. A deceptive front."
   },
@@ -421,6 +449,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Bash -> If you get bashed (hit) publicly, you feel abashed.",
     tone: "Negative (-)",
     collocation: "Stand abashed",
+    intensitySpectrum: [{ word: "Embarrass", level: "Mild" }, { word: "Humiliate", level: "Medium" }, { word: "Abash", level: "High" }, { word: "Mortify", level: "Extreme" }],
     characterHook: "Auntie finding Cigarettes",
     hookWhy: "The feeling of total embarrassment when caught doing something wrong by an elder."
   },
@@ -435,6 +464,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Can See Pic -> You 'Can See the Pic' clearly because it stands out.",
     tone: "Neutral (0)",
     collocation: "Conspicuous consumption",
+    intensitySpectrum: [{ word: "Visible", level: "Mild" }, { word: "Noticeable", level: "Medium" }, { word: "Conspicuous", level: "High" }, { word: "Blatant", level: "Extreme" }],
     characterHook: "Ranveer Singh's Clothes",
     hookWhy: "Wearing neon pink in a crowd of black suits; standing out clearly."
   },
@@ -449,6 +479,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pan (All) + Ace -> An Ace card that wins 'all' games.",
     tone: "Positive (+)",
     collocation: "Universal panacea",
+    intensitySpectrum: [{ word: "Help", level: "Mild" }, { word: "Solution", level: "Medium" }, { word: "Panacea", level: "High" }, { word: "Miracle", level: "Extreme" }],
     characterHook: "Baba Ramdev's Yoga / Aloe Vera",
     hookWhy: "Claimed to be the cure for every single disease (Cure-all)."
   },
@@ -463,6 +494,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Moderate -> A moderate/small amount.",
     tone: "Neutral (0)",
     collocation: "Modicum of truth",
+    intensitySpectrum: [{ word: "Bit", level: "Mild" }, { word: "Crumb", level: "Medium" }, { word: "Modicum", level: "High" }, { word: "Particle", level: "Extreme" }],
     characterHook: "Free 'Dhaniya' (Coriander)",
     hookWhy: "The vegetable vendor gives you a tiny amount (modicum) for free."
   },
@@ -477,6 +509,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fruit + Gal -> A girl who eats only fruits to save money.",
     tone: "Positive (+)",
     collocation: "Frugal lifestyle",
+    intensitySpectrum: [{ word: "Careful", level: "Mild" }, { word: "Thrifty", level: "Medium" }, { word: "Frugal", level: "High" }, { word: "Miserly", level: "Extreme" }],
     characterHook: "Middle-Class Dad",
     hookWhy: "Squeezing the toothpaste tube until the last atom comes out to save money."
   },
@@ -491,6 +524,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Queen + Essential -> Essential qualities of a Queen (Perfect).",
     tone: "Positive (+)",
     collocation: "Quintessential example",
+    intensitySpectrum: [{ word: "Typical", level: "Mild" }, { word: "Classic", level: "Medium" }, { word: "Quintessential", level: "High" }, { word: "Archetypal", level: "Extreme" }],
     characterHook: "Rahul Dravid",
     hookWhy: "The perfect, classic example of a Gentleman Cricketer."
   },
@@ -505,6 +539,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ver (Truth) -> To state as verify/truth.",
     tone: "Neutral (0)",
     collocation: "Averred that",
+    intensitySpectrum: [{ word: "Say", level: "Mild" }, { word: "State", level: "Medium" }, { word: "Aver", level: "High" }, { word: "Swear", level: "Extreme" }],
     characterHook: "Sunny Deol (Damini)",
     hookWhy: "Standing in court screaming 'Tarikh pe Tarikh', asserting the truth forcefully."
   },
@@ -519,6 +554,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Feet -> Smelly feet are fetid.",
     tone: "Negative (-)",
     collocation: "Fetid odor",
+    intensitySpectrum: [{ word: "Smelly", level: "Mild" }, { word: "Stinking", level: "Medium" }, { word: "Fetid", level: "High" }, { word: "Noxious", level: "Extreme" }],
     characterHook: "Public Toilet near Bus Stand",
     hookWhy: "The smell is so strong and unpleasant it makes you cover your nose."
   },
@@ -533,6 +569,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Dil (Heart) + Set -> Sets the heart at ease.",
     tone: "Positive (+)",
     collocation: "Dulcet tones",
+    intensitySpectrum: [{ word: "Pleasant", level: "Mild" }, { word: "Sweet", level: "Medium" }, { word: "Dulcet", level: "High" }, { word: "Angelic", level: "Extreme" }],
     characterHook: "Lullaby (Lori)",
     hookWhy: "The sweet, soothing sound of a mother singing to put a baby to sleep."
   },
@@ -547,6 +584,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Re-Mission -> Mission cancelled/paused.",
     tone: "Positive (+)",
     collocation: "Cancer remission",
+    intensitySpectrum: [{ word: "Reduction", level: "Mild" }, { word: "Decrease", level: "Medium" }, { word: "Remission", level: "High" }, { word: "Elimination", level: "Extreme" }],
     characterHook: "Farm Loan Waiver",
     hookWhy: "The government cancels or reduces the debt (remission) for farmers."
   },
@@ -561,6 +599,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Skirt -> Fighting over the skirt (boundary) of a territory.",
     tone: "Negative (-)",
     collocation: "Border skirmish",
+    intensitySpectrum: [{ word: "Argument", level: "Mild" }, { word: "Fight", level: "Medium" }, { word: "Skirmish", level: "High" }, { word: "Battle", level: "Extreme" }],
     characterHook: "Seat Fight in Local Train",
     hookWhy: "A small, short fight for space, not a full-blown war."
   },
@@ -575,6 +614,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Mercury -> Liquid metal that moves fast and changes shape.",
     tone: "Negative (-)",
     collocation: "Mercurial nature",
+    intensitySpectrum: [{ word: "Changeable", level: "Mild" }, { word: "Unpredictable", level: "Medium" }, { word: "Mercurial", level: "High" }, { word: "Volatile", level: "Extreme" }],
     characterHook: "Kangana Ranaut",
     hookWhy: "Her mood and public statements change unpredictably and rapidly."
   },
@@ -589,6 +629,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "In + Dole -> Someone who lives on 'dole' (unemployment money) and doesn't work.",
     tone: "Negative (-)",
     collocation: "Indolent lifestyle",
+    intensitySpectrum: [{ word: "Slow", level: "Mild" }, { word: "Lazy", level: "Medium" }, { word: "Indolent", level: "High" }, { word: "Slothful", level: "Extreme" }],
     characterHook: "Bank Lunch Hour",
     hookWhy: "The staff moving slowly or not working at all; avoiding exertion."
   },
@@ -603,6 +644,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Man + Tall -> A tall man wearing a long cloak (mantle).",
     tone: "Neutral (0)",
     collocation: "Assume the mantle",
+    intensitySpectrum: [{ word: "Role", level: "Mild" }, { word: "Job", level: "Medium" }, { word: "Mantle", level: "High" }, { word: "Burden", level: "Extreme" }],
     characterHook: "Baahubali",
     hookWhy: "Shivudu taking up the responsibility (mantle) of saving the kingdom."
   },
@@ -617,6 +659,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Dura (Hard) -> Hard headed and durable in opinion.",
     tone: "Negative (-)",
     collocation: "Obdurate refusal",
+    intensitySpectrum: [{ word: "Firm", level: "Mild" }, { word: "Stubborn", level: "Medium" }, { word: "Obdurate", level: "High" }, { word: "Pig-headed", level: "Extreme" }],
     characterHook: "Ziddi Child",
     hookWhy: "Refusing to eat food no matter how much the mother pleads (Stubborn)."
   },
@@ -631,6 +674,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Do + Yen -> Someone who has to 'Doing' it for 'Yens' (Years).",
     tone: "Positive (+)",
     collocation: "Doyen of industry",
+    intensitySpectrum: [{ word: "Expert", level: "Mild" }, { word: "Master", level: "Medium" }, { word: "Doyen", level: "High" }, { word: "Legend", level: "Extreme" }],
     characterHook: "Amitabh Bachchan",
     hookWhy: "The most respected, senior, and prominent figure in the film industry."
   },
@@ -645,6 +689,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Re-conduct -> Research that is hard to conduct again.",
     tone: "Neutral (0)",
     collocation: "Recondite subject",
+    intensitySpectrum: [{ word: "Hard", level: "Mild" }, { word: "Complex", level: "Medium" }, { word: "Recondite", level: "High" }, { word: "Incomprehensible", level: "Extreme" }],
     characterHook: "CA Final Syllabus",
     hookWhy: "Knowledge that is so deep and complex, only a few understand it."
   },
@@ -659,6 +704,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Helmet -> A small covering; a small village.",
     tone: "Neutral (0)",
     collocation: "Rural hamlet",
+    intensitySpectrum: [{ word: "House", level: "Mild" }, { word: "Settlement", level: "Medium" }, { word: "Hamlet", level: "High" }, { word: "Village", level: "Extreme" }],
     characterHook: "Phulera (Panchayat Web Series)",
     hookWhy: "A very small village settlement."
   },
@@ -673,6 +719,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Crash -> A place where kids 'crash' (sleep/play) while parents work.",
     tone: "Neutral (0)",
     collocation: "Office creche",
+    intensitySpectrum: [{ word: "Playgroup", level: "Mild" }, { word: "Nursery", level: "Medium" }, { word: "Creche", level: "High" }, { word: "Daycare", level: "Extreme" }],
     characterHook: "Office Daycare",
     hookWhy: "A place where working parents leave their babies."
   },
@@ -687,6 +734,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Iso -> Isolated knowledge for few people.",
     tone: "Neutral (0)",
     collocation: "Esoteric rituals",
+    intensitySpectrum: [{ word: "Uncommon", level: "Mild" }, { word: "Rare", level: "Medium" }, { word: "Esoteric", level: "High" }, { word: "Occult", level: "Extreme" }],
     characterHook: "Aghori Sadhus",
     hookWhy: "Their rituals and knowledge are secret and understood only by them."
   },
@@ -701,6 +749,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Master -> Maestro sounds like Master.",
     tone: "Positive (+)",
     collocation: "Musical maestro",
+    intensitySpectrum: [{ word: "Expert", level: "Mild" }, { word: "Leader", level: "Medium" }, { word: "Maestro", level: "High" }, { word: "Virtuoso", level: "Extreme" }],
     characterHook: "Ilaiyaraaja",
     hookWhy: "A master musician and conductor."
   },
@@ -715,6 +764,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fan -> A fan acting like a servant to a star.",
     tone: "Negative (-)",
     collocation: "Fawning attention",
+    intensitySpectrum: [{ word: "Praising", level: "Mild" }, { word: "Flattering", level: "Medium" }, { word: "Fawning", level: "High" }, { word: "Groveling", level: "Extreme" }],
     characterHook: "The 'Chamcha'",
     hookWhy: "Excessively praising the boss to get a promotion."
   },
@@ -729,6 +779,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Shore -> Fish gather in shoals near the shore.",
     tone: "Neutral (0)",
     collocation: "Shoal of herring",
+    intensitySpectrum: [{ word: "Group", level: "Mild" }, { word: "Bunch", level: "Medium" }, { word: "Shoal", level: "High" }, { word: "Multitude", level: "Extreme" }],
     characterHook: "Discovery Channel Fish",
     hookWhy: "Thousands of fish swimming together in a group."
   },
@@ -743,6 +794,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Heavy -> A heavy crowd of people.",
     tone: "Neutral (0)",
     collocation: "Bevy of beauties",
+    intensitySpectrum: [{ word: "Group", level: "Mild" }, { word: "Crowd", level: "Medium" }, { word: "Bevy", level: "High" }, { word: "Throng", level: "Extreme" }],
     characterHook: "Kitty Party Group",
     hookWhy: "A large group of ladies chatting together."
   },
@@ -757,6 +809,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fax -> Fax machines send facsimiles.",
     tone: "Neutral (0)",
     collocation: "Digital facsimile",
+    intensitySpectrum: [{ word: "Likeness", level: "Mild" }, { word: "Copy", level: "Medium" }, { word: "Facsimile", level: "High" }, { word: "Clone", level: "Extreme" }],
     characterHook: "Xerox Shop",
     hookWhy: "Producing an exact copy of the document."
   },
@@ -771,6 +824,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Discuss -> They 'Discuss' in a Cau-'cus'.",
     tone: "Neutral (0)",
     collocation: "Party caucus",
+    intensitySpectrum: [{ word: "Meeting", level: "Mild" }, { word: "Gathering", level: "Medium" }, { word: "Caucus", level: "High" }, { word: "Conclave", level: "Extreme" }],
     characterHook: "Party High Command",
     hookWhy: "A closed meeting of political leaders to decide strategy."
   },
@@ -785,6 +839,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Cart -> A cart carrying a body in a procession.",
     tone: "Negative (-)",
     collocation: "Funeral cortege",
+    intensitySpectrum: [{ word: "Line", level: "Mild" }, { word: "Procession", level: "Medium" }, { word: "Cortege", level: "High" }, { word: "Parade", level: "Extreme" }],
     characterHook: "Antim Yatra (Funeral)",
     hookWhy: "The solemn line of cars/people following the body."
   },
@@ -799,6 +854,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Face -> Only looking at the face (surface), ignoring the depth.",
     tone: "Negative (-)",
     collocation: "Facile argument",
+    intensitySpectrum: [{ word: "Simple", level: "Mild" }, { word: "Easy", level: "Medium" }, { word: "Facile", level: "High" }, { word: "Superficial", level: "Extreme" }],
     characterHook: "'Just be Happy' Advice",
     hookWhy: "Ignoring life's complexities and giving a superficial solution."
   },
@@ -813,6 +869,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Poly (Many) + Glot (Throat/Tongue) -> Many tongues.",
     tone: "Positive (+)",
     collocation: "Polyglot society",
+    intensitySpectrum: [{ word: "Bilingual", level: "Mild" }, { word: "Trilingual", level: "Medium" }, { word: "Polyglot", level: "High" }, { word: "Hyperpolyglot", level: "Extreme" }],
     characterHook: "Tourist Guide at Taj Mahal",
     hookWhy: "Speaking French, English, German, and Hindi fluently."
   },
@@ -827,6 +884,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "De + Bone + Air -> Good posture (bone) and an air of confidence.",
     tone: "Positive (+)",
     collocation: "Debonair gentleman",
+    intensitySpectrum: [{ word: "Nice", level: "Mild" }, { word: "Stylish", level: "Medium" }, { word: "Debonair", level: "High" }, { word: "Suave", level: "Extreme" }],
     characterHook: "Shah Rukh Khan in a Suit",
     hookWhy: "Charming, stylish, and confident gentleman."
   },
@@ -841,6 +899,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ta-ta + Mount -> Two mountains of the same size (equal).",
     tone: "Neutral (0)",
     collocation: "Tantamount to treason",
+    intensitySpectrum: [{ word: "Similar", level: "Mild" }, { word: "Like", level: "Medium" }, { word: "Tantamount", level: "High" }, { word: "Identical", level: "Extreme" }],
     characterHook: "Silence = Yes",
     hookWhy: "In many situations, remaining silent is equal to (tantamount to) admitting guilt."
   },
@@ -855,6 +914,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Odor -> A bad smell (odor) makes people hate you.",
     tone: "Negative (-)",
     collocation: "Public Odium",
+    intensitySpectrum: [{ word: "Dislike", level: "Mild" }, { word: "Disgust", level: "Medium" }, { word: "Odium", level: "High" }, { word: "Abhorrence", level: "Extreme" }],
     characterHook: "Scam 1992 (Harshad Mehta End)",
     hookWhy: "The public hatred and disgust he faced after the scam was exposed."
   },
@@ -869,6 +929,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "A Vow -> Someone who has taken a vow publicly.",
     tone: "Neutral (0)",
     collocation: "Avowed enemy",
+    intensitySpectrum: [{ word: "Stated", level: "Mild" }, { word: "Declared", level: "Medium" }, { word: "Avowed", level: "High" }, { word: "Sworn", level: "Extreme" }],
     characterHook: "RSS Pracharak",
     hookWhy: "Someone who has publicly declared and sworn to a specific lifestyle/belief."
   },
@@ -883,6 +944,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Query -> Asking too many queries (questions/complaints) in a whining tone.",
     tone: "Negative (-)",
     collocation: "Querulous tone",
+    intensitySpectrum: [{ word: "Whining", level: "Mild" }, { word: "Complaining", level: "Medium" }, { word: "Querulous", level: "High" }, { word: "Peevish", level: "Extreme" }],
     characterHook: "Fufa-ji at Wedding",
     hookWhy: "Always complaining about the food or AC in a whining tone."
   },
@@ -897,6 +959,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Equal -> Always equal mood, never up or down.",
     tone: "Positive (+)",
     collocation: "Equable temperament",
+    intensitySpectrum: [{ word: "Calm", level: "Mild" }, { word: "Steady", level: "Medium" }, { word: "Equable", level: "High" }, { word: "Unflappable", level: "Extreme" }],
     characterHook: "MS Dhoni",
     hookWhy: "Never gets angry or too excited; always calm."
   },
@@ -911,6 +974,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rascal -> A rascal makes you irascible (angry).",
     tone: "Negative (-)",
     collocation: "Irascible nature",
+    intensitySpectrum: [{ word: "Grumpy", level: "Mild" }, { word: "Irritable", level: "Medium" }, { word: "Irascible", level: "High" }, { word: "Explosive", level: "Extreme" }],
     characterHook: "Virus (3 Idiots)",
     hookWhy: "Getting angry at students for small mistakes instantly."
   },
@@ -925,6 +989,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pee -> A baby who needs to pee is peevish (cranky).",
     tone: "Negative (-)",
     collocation: "Peevish child",
+    intensitySpectrum: [{ word: "Annoyed", level: "Mild" }, { word: "Cranky", level: "Medium" }, { word: "Peevish", level: "High" }, { word: "Fractious", level: "Extreme" }],
     characterHook: "Sleepy Toddler",
     hookWhy: "Getting annoyed and crying over small things because of tiredness."
   },
@@ -939,6 +1004,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fret -> Don't fret (worry); stop being fretful.",
     tone: "Negative (-)",
     collocation: "Fretful sleep",
+    intensitySpectrum: [{ word: "Worried", level: "Mild" }, { word: "Anxious", level: "Medium" }, { word: "Fretful", level: "High" }, { word: "Distressed", level: "Extreme" }],
     characterHook: "Indian Mom waiting at night",
     hookWhy: "Visibly worried and agitated when you are late."
   },
@@ -953,6 +1019,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fracture -> A relationship fracture caused by fighting.",
     tone: "Negative (-)",
     collocation: "Fractious crowd",
+    intensitySpectrum: [{ word: "Grumpy", level: "Mild" }, { word: "Irritable", level: "Medium" }, { word: "Fractious", level: "High" }, { word: "Unruly", level: "Extreme" }],
     characterHook: "Kids on a Flight",
     hookWhy: "Crying, kicking seats, and refusing to listen."
   },
@@ -967,6 +1034,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pet -> A spoiled pet gets angry if not fed.",
     tone: "Negative (-)",
     collocation: "Petulant behavior",
+    intensitySpectrum: [{ word: "Moody", level: "Mild" }, { word: "Sulky", level: "Medium" }, { word: "Petulant", level: "High" }, { word: "Bratty", level: "Extreme" }],
     characterHook: "Spoiled Brat",
     hookWhy: "Sulking because they didn't get the specific toy they wanted."
   },
@@ -981,6 +1049,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Amen -> Someone who says 'Amen' (Yes/So be it) to everything.",
     tone: "Positive (+)",
     collocation: "Amenable to reason",
+    intensitySpectrum: [{ word: "Open", level: "Mild" }, { word: "Agreeable", level: "Medium" }, { word: "Amenable", level: "High" }, { word: "Compliant", level: "Extreme" }],
     characterHook: "Circuit (Munna Bhai)",
     hookWhy: "Always agrees with whatever Munna says."
   },
@@ -995,6 +1064,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Team -> A team player needs confidence, but too much is temerity.",
     tone: "Negative (-)",
     collocation: "Have the temerity",
+    intensitySpectrum: [{ word: "Nerve", level: "Mild" }, { word: "Boldness", level: "Medium" }, { word: "Temerity", level: "High" }, { word: "Recklessness", level: "Extreme" }],
     characterHook: "Ashneer Grover",
     hookWhy: "The boldness to insult people on national TV ('Doglapan')."
   },
@@ -1009,6 +1079,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Proud -> Be proud of your wise choices.",
     tone: "Positive (+)",
     collocation: "Financial prudence",
+    intensitySpectrum: [{ word: "Care", level: "Mild" }, { word: "Caution", level: "Medium" }, { word: "Prudence", level: "High" }, { word: "Wisdom", level: "Extreme" }],
     characterHook: "Investing in FD",
     hookWhy: "Choosing a safe, wise option rather than gambling on crypto."
   },
@@ -1023,6 +1094,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Insult -> Someone who insults others is insolent.",
     tone: "Negative (-)",
     collocation: "Insolent tone",
+    intensitySpectrum: [{ word: "Rude", level: "Mild" }, { word: "Disrespectful", level: "Medium" }, { word: "Insolent", level: "High" }, { word: "Defiant", level: "Extreme" }],
     characterHook: "Backbencher mocking Teacher",
     hookWhy: "Showing a rude lack of respect for authority."
   },
@@ -1037,6 +1109,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Tum (You) + Action -> You act against authority.",
     tone: "Negative (-)",
     collocation: "Contumacious conduct",
+    intensitySpectrum: [{ word: "Disobedient", level: "Mild" }, { word: "Rebellious", level: "Medium" }, { word: "Contumacious", level: "High" }, { word: "Mutinous", level: "Extreme" }],
     characterHook: "Vijay Mallya",
     hookWhy: "Refusing to return to India despite court orders (Willful disobedience)."
   },
@@ -1051,6 +1124,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Sequence -> Always following in sequence behind the master.",
     tone: "Negative (-)",
     collocation: "Obsequious bow",
+    intensitySpectrum: [{ word: "Helpful", level: "Mild" }, { word: "Submissive", level: "Medium" }, { word: "Obsequious", level: "High" }, { word: "Slavish", level: "Extreme" }],
     characterHook: "Corporate 'Yes Man'",
     hookWhy: "Agreeing with the boss excessively to gain favor."
   },
@@ -1065,6 +1139,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Abyss -> A bottomless pit; deep and dark (bad).",
     tone: "Negative (-)",
     collocation: "Abysmal failure",
+    intensitySpectrum: [{ word: "Bad", level: "Mild" }, { word: "Terrible", level: "Medium" }, { word: "Abysmal", level: "High" }, { word: "Horrific", level: "Extreme" }],
     characterHook: "Adipurush VFX",
     hookWhy: "The quality was so shockingly bad it became a meme."
   },
@@ -1079,6 +1154,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ponder -> Need to ponder (think) because there is a huge amount.",
     tone: "Neutral (0)",
     collocation: "Preponderance of evidence",
+    intensitySpectrum: [{ word: "Majority", level: "Mild" }, { word: "Bulk", level: "Medium" }, { word: "Preponderance", level: "High" }, { word: "Domination", level: "Extreme" }],
     characterHook: "Engineers in India",
     hookWhy: "In any random crowd, there is a high likelihood (majority) of finding engineers."
   },
@@ -1093,6 +1169,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Prevail -> To win/exist everywhere.",
     tone: "Neutral (0)",
     collocation: "High prevalence",
+    intensitySpectrum: [{ word: "Commonness", level: "Mild" }, { word: "Frequency", level: "Medium" }, { word: "Prevalence", level: "High" }, { word: "Ubiquity", level: "Extreme" }],
     characterHook: "QR Codes",
     hookWhy: "Found commonly in every shop from malls to roadside tea stalls."
   },
@@ -1107,6 +1184,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ascend -> To go up (to the top power).",
     tone: "Positive (+)",
     collocation: "Gain ascendancy",
+    intensitySpectrum: [{ word: "Influence", level: "Mild" }, { word: "Power", level: "Medium" }, { word: "Ascendancy", level: "High" }, { word: "Supremacy", level: "Extreme" }],
     characterHook: "Modi Wave (2014)",
     hookWhy: "Rising to a position of dominant power."
   },
@@ -1121,10 +1199,11 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pug -> A pug dog that wants to fight everyone.",
     tone: "Negative (-)",
     collocation: "Pugnacious attitude",
+    intensitySpectrum: [{ word: "Argumentative", level: "Mild" }, { word: "Aggressive", level: "Medium" }, { word: "Pugnacious", level: "High" }, { word: "Belligerent", level: "Extreme" }],
     characterHook: "Road Rage Guy",
     hookWhy: "Ready to fight instantly, saying 'Tu jaanta nahi mera baap kaun hai'."
   },
-  // --- Group: Atrophy (Restored) ---
+  // --- Group: Atrophy ---
   {
     word: "Atrophy",
     partOfSpeech: "Verb",
@@ -1136,6 +1215,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "A (No) + Trophy -> You win no trophy if your skills waste away.",
     tone: "Negative (-)",
     collocation: "Muscle atrophy",
+    intensitySpectrum: [{ word: "Weaken", level: "Mild" }, { word: "Shrink", level: "Medium" }, { word: "Atrophy", level: "High" }, { word: "Wither", level: "Extreme" }],
     characterHook: "Plaster Cast on Leg",
     hookWhy: "When the cast is removed after months, the leg looks thin because the muscles have wasted away (atrophied) from lack of use."
   },
@@ -1150,6 +1230,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pro + Cliff -> Inclined towards the cliff (danger).",
     tone: "Neutral (0)",
     collocation: "Proclivity for violence",
+    intensitySpectrum: [{ word: "Liking", level: "Mild" }, { word: "Tendency", level: "Medium" }, { word: "Proclivity", level: "High" }, { word: "Obsession", level: "Extreme" }],
     characterHook: "Indian Moms asking for 'Free Dhaniya'",
     hookWhy: "A natural tendency or inclination to ask for something extra when buying vegetables."
   },
@@ -1164,6 +1245,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Mal (Bad) + Prop -> Using a bad prop (word) on stage.",
     tone: "Negative (-)",
     collocation: "Comical malapropism",
+    intensitySpectrum: [{ word: "Slip", level: "Mild" }, { word: "Error", level: "Medium" }, { word: "Malapropism", level: "High" }, { word: "Blunder", level: "Extreme" }],
     characterHook: "English Speaking Class (Comedy Scenes)",
     hookWhy: "Mistakenly saying 'I want to marry your daughter' instead of 'bury your daughter'. Using the wrong word that sounds similar."
   },
@@ -1178,6 +1260,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "A bet -> Encourage someone to take a bad bet.",
     tone: "Negative (-)",
     collocation: "Aid and abet",
+    intensitySpectrum: [{ word: "Help", level: "Mild" }, { word: "Assist", level: "Medium" }, { word: "Abet", level: "High" }, { word: "Conspire", level: "Extreme" }],
     characterHook: "The Villain's Sidekick",
     hookWhy: "He doesn't kill the hero, but he holds the gun for the villain. He helps (abets) the crime."
   },
@@ -1192,6 +1275,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Sub (Under) + Born -> Born under bad influence (bribed).",
     tone: "Negative (-)",
     collocation: "Suborn perjury",
+    intensitySpectrum: [{ word: "Influence", level: "Mild" }, { word: "Bribe", level: "Medium" }, { word: "Suborn", level: "High" }, { word: "Corrupt", level: "Extreme" }],
     characterHook: "Jolly LLB (Corrupt Lawyer)",
     hookWhy: "Paying money to a witness to lie in court (Bribing for perjury)."
   },
@@ -1206,6 +1290,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "De-tear -> Stop someone from tearing something up.",
     tone: "Neutral (0)",
     collocation: "Deter crime",
+    intensitySpectrum: [{ word: "Warn", level: "Mild" }, { word: "Discourage", level: "Medium" }, { word: "Deter", level: "High" }, { word: "Prevent", level: "Extreme" }],
     characterHook: "'Beware of Dog' Sign",
     hookWhy: "The sign puts fear in you and stops (deters) you from entering the gate."
   },
@@ -1220,6 +1305,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Similar -> Making things similar to the main group.",
     tone: "Neutral (0)",
     collocation: "Cultural assimilation",
+    intensitySpectrum: [{ word: "Mixing", level: "Mild" }, { word: "Blending", level: "Medium" }, { word: "Assimilation", level: "High" }, { word: "Absorption", level: "Extreme" }],
     characterHook: "Sugar in Milk",
     hookWhy: "The sugar dissolves completely and becomes part of the milk (fully integrated)."
   },
@@ -1234,6 +1320,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Culture -> Adding a new culture (Ac-culture).",
     tone: "Neutral (0)",
     collocation: "Process of acculturation",
+    intensitySpectrum: [{ word: "Learning", level: "Mild" }, { word: "Adapting", level: "Medium" }, { word: "Acculturation", level: "High" }, { word: "Integration", level: "Extreme" }],
     characterHook: "NRI Kids in USA",
     hookWhy: "Indian kids starting to speak with an American accent and celebrating Halloween (Adopting new culture)."
   },
@@ -1248,6 +1335,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Alien -> Feeling like an alien (stranger) in a group.",
     tone: "Negative (-)",
     collocation: "Social alienation",
+    intensitySpectrum: [{ word: "Distance", level: "Mild" }, { word: "Isolation", level: "Medium" }, { word: "Alienation", level: "High" }, { word: "Estrangement", level: "Extreme" }],
     characterHook: "The Kid picked last for Cricket",
     hookWhy: "Standing alone at the boundary while everyone else plays; feeling isolated and excluded."
   },
@@ -1262,6 +1350,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Huge Money -> Those with huge money usually have hegemonic power.",
     tone: "Neutral (0)",
     collocation: "Hegemonic masculinity",
+    intensitySpectrum: [{ word: "Leading", level: "Mild" }, { word: "Dominant", level: "Medium" }, { word: "Hegemonic", level: "High" }, { word: "Supreme", level: "Extreme" }],
     characterHook: "Bollywood Khans (90s-2000s)",
     hookWhy: "Their dominance over the box office was absolute and unchallenged."
   },
@@ -1276,6 +1365,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ostrich -> Like an ostrich hiding its head, society hides from you.",
     tone: "Negative (-)",
     collocation: "Socially ostracized",
+    intensitySpectrum: [{ word: "Ignore", level: "Mild" }, { word: "Exclude", level: "Medium" }, { word: "Ostracize", level: "High" }, { word: "Banish", level: "Extreme" }],
     characterHook: "Village Panchayat 'Hookah Pani Band'",
     hookWhy: "The community decides to totally ignore and exclude a family as punishment."
   },
@@ -1290,6 +1380,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Paraya (Hindi) -> Someone who is 'paraya' (stranger/outsider).",
     tone: "Negative (-)",
     collocation: "Social pariah",
+    intensitySpectrum: [{ word: "Outsider", level: "Mild" }, { word: "Outcast", level: "Medium" }, { word: "Pariah", level: "High" }, { word: "Untouchable", level: "Extreme" }],
     characterHook: "Vijay Mallya / Nirav Modi",
     hookWhy: "Once rich icons, now social outcasts who cannot return home."
   },
@@ -1304,6 +1395,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Seek + Wester -> Seek a place in the west to hide away.",
     tone: "Neutral (0)",
     collocation: "Sequester the jury",
+    intensitySpectrum: [{ word: "Separate", level: "Mild" }, { word: "Isolate", level: "Medium" }, { word: "Sequester", level: "High" }, { word: "Quarantine", level: "Extreme" }],
     characterHook: "Politicians in a Resort",
     hookWhy: "Hiding MLAs in a hotel before a floor test so no one can contact them (Isolation)."
   },
@@ -1318,6 +1410,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Sun -> Stay away from the sun to avoid tanning.",
     tone: "Negative (-)",
     collocation: "Shun publicity",
+    intensitySpectrum: [{ word: "Avoid", level: "Mild" }, { word: "Ignore", level: "Medium" }, { word: "Shun", level: "High" }, { word: "Reject", level: "Extreme" }],
     characterHook: "Ex-Girlfriend/Boyfriend at a Party",
     hookWhy: "You deliberately look away and avoid talking to them (Active avoidance)."
   },
@@ -1332,6 +1425,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Dis + Chant -> The magic chant stopped working.",
     tone: "Negative (-)",
     collocation: "Disenchanted voters",
+    intensitySpectrum: [{ word: "Bored", level: "Mild" }, { word: "Disappointed", level: "Medium" }, { word: "Disenchanted", level: "High" }, { word: "Cynical", level: "Extreme" }],
     characterHook: "Voters after 5 Years",
     hookWhy: "They believed the promises initially, but now the magic has faded and they are disappointed."
   },
@@ -1346,6 +1440,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Sin -> Sees sin in everyone.",
     tone: "Negative (-)",
     collocation: "Cynical view",
+    intensitySpectrum: [{ word: "Doubtful", level: "Mild" }, { word: "Skeptical", level: "Medium" }, { word: "Cynical", level: "High" }, { word: "Nihilistic", level: "Extreme" }],
     characterHook: "Old Uncles discussing Politics",
     hookWhy: "They believe every politician is a thief and nothing will ever improve (Distrustful)."
   },
@@ -1360,6 +1455,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fade -> Excitement has faded away.",
     tone: "Negative (-)",
     collocation: "Jaded appetite",
+    intensitySpectrum: [{ word: "Tired", level: "Mild" }, { word: "Bored", level: "Medium" }, { word: "Jaded", level: "High" }, { word: "Exhausted", level: "Extreme" }],
     characterHook: "Food Critic",
     hookWhy: "Having eaten the best food everywhere, they are now bored and hard to impress."
   },
@@ -1374,6 +1470,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Zeal -> Full of zeal (energy).",
     tone: "Positive (+)",
     collocation: "Zealous supporter",
+    intensitySpectrum: [{ word: "Keen", level: "Mild" }, { word: "Eager", level: "Medium" }, { word: "Zealous", level: "High" }, { word: "Fanatical", level: "Extreme" }],
     characterHook: "Political Party 'Karyakarta'",
     hookWhy: "Working with extreme energy and passion, sometimes too much, for their leader."
   },
@@ -1388,6 +1485,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "False -> Sounds like false.",
     tone: "Negative (-)",
     collocation: "Fallacious reasoning",
+    intensitySpectrum: [{ word: "Wrong", level: "Mild" }, { word: "Incorrect", level: "Medium" }, { word: "Fallacious", level: "High" }, { word: "Delusional", level: "Extreme" }],
     characterHook: "WhatsApp Forward Logic",
     hookWhy: "'UNESCO declared Indian anthem best' - sounds good but based on false logic."
   },
@@ -1402,6 +1500,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Spur -> Done on the spur of the moment, likely not real/thought out.",
     tone: "Negative (-)",
     collocation: "Spurious claim",
+    intensitySpectrum: [{ word: "Dubious", level: "Mild" }, { word: "Fake", level: "Medium" }, { word: "Spurious", level: "High" }, { word: "Counterfeit", level: "Extreme" }],
     characterHook: "Bisleri vs 'Bilsleri'",
     hookWhy: "The bottle looks real, but it is a fake (spurious) copy."
   },
@@ -1416,6 +1515,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Mend -> Someone who has to mend (fix) their story constantly because they lie.",
     tone: "Negative (-)",
     collocation: "Mendacious report",
+    intensitySpectrum: [{ word: "Dishonest", level: "Mild" }, { word: "Lying", level: "Medium" }, { word: "Mendacious", level: "High" }, { word: "Deceitful", level: "Extreme" }],
     characterHook: "Pinocchio",
     hookWhy: "His nose grows because he is a liar. (Fancy word for lying)."
   },
@@ -1430,6 +1530,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Forth + Right -> Comes forth and says what is right/true.",
     tone: "Positive (+)",
     collocation: "Forthright manner",
+    intensitySpectrum: [{ word: "Open", level: "Mild" }, { word: "Honest", level: "Medium" }, { word: "Forthright", level: "High" }, { word: "Blunt", level: "Extreme" }],
     characterHook: "Kangana Ranaut",
     hookWhy: "She speaks her mind directly and bluntly, without hiding anything."
   },
@@ -1444,6 +1545,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Stampede -> A stampede impedes orderly movement.",
     tone: "Negative (-)",
     collocation: "Impede progress",
+    intensitySpectrum: [{ word: "Slow", level: "Mild" }, { word: "Block", level: "Medium" }, { word: "Impede", level: "High" }, { word: "Stop", level: "Extreme" }],
     characterHook: "Cow on the Road",
     hookWhy: "The traffic is moving, but the cow blocks (impedes) the flow."
   },
@@ -1458,6 +1560,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Deter -> Things that deter.",
     tone: "Neutral (0)",
     collocation: "Effective deterrent",
+    intensitySpectrum: [{ word: "Warning", level: "Mild" }, { word: "Obstacle", level: "Medium" }, { word: "Deterrent", level: "High" }, { word: "Barrier", level: "Extreme" }],
     characterHook: "Traffic Police Cameras",
     hookWhy: "You slow down not because you want to, but because the camera discourages speeding."
   },
@@ -1472,6 +1575,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Run Away -> Moving so fast it runs away from control.",
     tone: "Neutral (0)",
     collocation: "Runaway inflation",
+    intensitySpectrum: [{ word: "Fast", level: "Mild" }, { word: "Uncontrolled", level: "Medium" }, { word: "Runaway", level: "High" }, { word: "Rampant", level: "Extreme" }],
     characterHook: "Price of Onions",
     hookWhy: "The price goes up uncontrollably (Runaway inflation) during shortages."
   },
@@ -1486,6 +1590,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Predict -> Hard to predict the outcome of a messy situation.",
     tone: "Negative (-)",
     collocation: "Financial predicament",
+    intensitySpectrum: [{ word: "Issue", level: "Mild" }, { word: "Problem", level: "Medium" }, { word: "Predicament", level: "High" }, { word: "Crisis", level: "Extreme" }],
     characterHook: "Forgetting Anniversary",
     hookWhy: "Wife asks 'Do you know what day it is?' - You are in a difficult situation."
   },
@@ -1500,6 +1605,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Just + Pose -> Pose two things just next to each other.",
     tone: "Neutral (0)",
     collocation: "Juxtapose images",
+    intensitySpectrum: [{ word: "Compare", level: "Mild" }, { word: "Contrast", level: "Medium" }, { word: "Juxtapose", level: "High" }, { word: "Oppose", level: "Extreme" }],
     characterHook: "Weight Loss 'Before & After' Photos",
     hookWhy: "Placing the fat photo next to the fit photo to show the contrast clearly."
   },
@@ -1514,6 +1620,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ride -> Walk as fast as a ride.",
     tone: "Positive (+)",
     collocation: "Make strides",
+    intensitySpectrum: [{ word: "Step", level: "Mild" }, { word: "Walk", level: "Medium" }, { word: "Stride", level: "High" }, { word: "March", level: "Extreme" }],
     characterHook: "Amitabh Bachchan's Walk",
     hookWhy: "He takes long, confident steps (strides) when he enters KBC."
   },
@@ -1528,6 +1635,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Head + Way -> Moving the head forward along the way.",
     tone: "Positive (+)",
     collocation: "Make headway",
+    intensitySpectrum: [{ word: "Movement", level: "Mild" }, { word: "Progress", level: "Medium" }, { word: "Headway", level: "High" }, { word: "Advance", level: "Extreme" }],
     characterHook: "Bike in a Traffic Jam",
     hookWhy: "Cars are stuck, but the bike makes slow progress (headway) through the gaps."
   },
@@ -1542,6 +1650,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Wind -> Blown away by wind until little is left.",
     tone: "Negative (-)",
     collocation: "Dwindling supplies",
+    intensitySpectrum: [{ word: "Shrink", level: "Mild" }, { word: "Decrease", level: "Medium" }, { word: "Dwindle", level: "High" }, { word: "Vanish", level: "Extreme" }],
     characterHook: "Salary at Month End",
     hookWhy: "It starts big on the 1st, but slowly shrinks (dwindles) to zero by the 30th."
   },
@@ -1556,6 +1665,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Weather -> Bad weather makes plants wither.",
     tone: "Negative (-)",
     collocation: "Wither away",
+    intensitySpectrum: [{ word: "Dry", level: "Mild" }, { word: "Shrivel", level: "Medium" }, { word: "Wither", level: "High" }, { word: "Die", level: "Extreme" }],
     characterHook: "Rose kept in a Book",
     hookWhy: "Over time, it loses moisture, dries up, and shrinks."
   },
@@ -1570,6 +1680,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Vain -> Efforts in vain lead to waning hope.",
     tone: "Negative (-)",
     collocation: "Wax and wane",
+    intensitySpectrum: [{ word: "Decrease", level: "Mild" }, { word: "Fade", level: "Medium" }, { word: "Wane", level: "High" }, { word: "Disappear", level: "Extreme" }],
     characterHook: "The Moon (Krishna Paksha)",
     hookWhy: "The moon slowly gets smaller (wanes) until Amavasya."
   },
@@ -1584,6 +1695,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Web -> Like a web being pulled back.",
     tone: "Negative (-)",
     collocation: "Ebb and flow",
+    intensitySpectrum: [{ word: "Recede", level: "Mild" }, { word: "Retreat", level: "Medium" }, { word: "Ebb", level: "High" }, { word: "Vanish", level: "Extreme" }],
     characterHook: "Juhu Beach Tide",
     hookWhy: "The water recedes (moves back) from the shore during low tide."
   },
@@ -1598,6 +1710,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Tribe -> Two tribes shouting at each other.",
     tone: "Negative (-)",
     collocation: "Launch a diatribe",
+    intensitySpectrum: [{ word: "Criticism", level: "Mild" }, { word: "Attack", level: "Medium" }, { word: "Diatribe", level: "High" }, { word: "Vituperation", level: "Extreme" }],
     characterHook: "Arnab Goswami Rant",
     hookWhy: "A long, angry, shouting speech attacking someone."
   },
@@ -1612,6 +1725,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Infect -> Words that infect the mind with hate.",
     tone: "Negative (-)",
     collocation: "Stream of invective",
+    intensitySpectrum: [{ word: "Insult", level: "Mild" }, { word: "Abuse", level: "Medium" }, { word: "Invective", level: "High" }, { word: "Vitriol", level: "Extreme" }],
     characterHook: "Road Rage Abuse",
     hookWhy: "Shouting insults like 'Tu jaanta nahi mera baap kaun hai!' (Abusive language)."
   },
@@ -1626,6 +1740,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Philip -> Speeches against King Philip were called Philippics.",
     tone: "Negative (-)",
     collocation: "Deliver a philippic",
+    intensitySpectrum: [{ word: "Speech", level: "Mild" }, { word: "Criticism", level: "Medium" }, { word: "Philippic", level: "High" }, { word: "Attack", level: "Extreme" }],
     characterHook: "Opposition Leader in Parliament",
     hookWhy: "A bitter, formal speech attacking the ruling government's policies."
   },
@@ -1640,6 +1755,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Jeremiah -> The prophet Jeremiah wrote Lamentations.",
     tone: "Negative (-)",
     collocation: "Long jeremiad",
+    intensitySpectrum: [{ word: "Complaint", level: "Mild" }, { word: "Lament", level: "Medium" }, { word: "Jeremiad", level: "High" }, { word: "Wailing", level: "Extreme" }],
     characterHook: "Grandparents Complaining",
     hookWhy: "A long list of woes about how 'today's generation is ruined'."
   },
@@ -1654,6 +1770,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rang -> Rang (Rang/Color) in the face from shouting.",
     tone: "Negative (-)",
     collocation: "Angry harangue",
+    intensitySpectrum: [{ word: "Speech", level: "Mild" }, { word: "Lecture", level: "Medium" }, { word: "Harangue", level: "High" }, { word: "Rant", level: "Extreme" }],
     characterHook: "Boss Shouting for Targets",
     hookWhy: "A loud, aggressive speech lecturing employees about sales."
   },
@@ -1668,6 +1785,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Screen -> A text so long it fills many screens.",
     tone: "Negative (-)",
     collocation: "Boring screed",
+    intensitySpectrum: [{ word: "Text", level: "Mild" }, { word: "Rant", level: "Medium" }, { word: "Screed", level: "High" }, { word: "Diatribe", level: "Extreme" }],
     characterHook: "Terms & Conditions Document",
     hookWhy: "A long, boring piece of text that goes on forever."
   },
@@ -1682,6 +1800,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Prodigy -> A child prodigy has prodigious talent.",
     tone: "Positive (+)",
     collocation: "Prodigious memory",
+    intensitySpectrum: [{ word: "Big", level: "Mild" }, { word: "Huge", level: "Medium" }, { word: "Prodigious", level: "High" }, { word: "Colossal", level: "Extreme" }],
     characterHook: "Kumbh Mela Crowd",
     hookWhy: "The sheer size and number of people is massive (prodigious)."
   },
@@ -1696,6 +1815,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Stupid -> So big it makes you look stupid/dumbstruck.",
     tone: "Positive (+)",
     collocation: "Stupendous achievement",
+    intensitySpectrum: [{ word: "Good", level: "Mild" }, { word: "Great", level: "Medium" }, { word: "Stupendous", level: "High" }, { word: "Amazing", level: "Extreme" }],
     characterHook: "Bahubali Box Office",
     hookWhy: "The success was so huge it stunned everyone."
   },
@@ -1710,6 +1830,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Poultry -> Chicken feed is small/cheap.",
     tone: "Negative (-)",
     collocation: "Paltry sum",
+    intensitySpectrum: [{ word: "Small", level: "Mild" }, { word: "Meager", level: "Medium" }, { word: "Paltry", level: "High" }, { word: "Insignificant", level: "Extreme" }],
     characterHook: "Yearly Salary Increment",
     hookWhy: "Getting a 2% hike feels like a tiny, insulting amount (peanuts)."
   },
@@ -1724,6 +1845,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Don Quixote -> The character who fought windmills thinking they were giants.",
     tone: "Negative (-)",
     collocation: "Quixotic quest",
+    intensitySpectrum: [{ word: "Dreamy", level: "Mild" }, { word: "Unrealistic", level: "Medium" }, { word: "Quixotic", level: "High" }, { word: "Impossible", level: "Extreme" }],
     characterHook: "Nayak (Movie) Concept",
     hookWhy: "Thinking you can remove all corruption in 1 day is idealistic but impractical."
   },
@@ -1738,6 +1860,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Top -> The top/best possible world.",
     tone: "Positive (+)",
     collocation: "Utopian society",
+    intensitySpectrum: [{ word: "Good", level: "Mild" }, { word: "Ideal", level: "Medium" }, { word: "Utopian", level: "High" }, { word: "Perfect", level: "Extreme" }],
     characterHook: "Ram Rajya",
     hookWhy: "The concept of a perfect world where no one is unhappy."
   },
@@ -1752,6 +1875,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Chimera -> A mythical beast (lion+goat+snake) that isn't real.",
     tone: "Negative (-)",
     collocation: "Chimerical dream",
+    intensitySpectrum: [{ word: "Fanciful", level: "Mild" }, { word: "Imaginary", level: "Medium" }, { word: "Chimerical", level: "High" }, { word: "Impossible", level: "Extreme" }],
     characterHook: "Money Growing on Trees",
     hookWhy: "A fantasy idea that is impossible to exist in reality."
   },
@@ -1766,6 +1890,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Sage -> A sage (saint) is wise.",
     tone: "Positive (+)",
     collocation: "Sagacious advice",
+    intensitySpectrum: [{ word: "Smart", level: "Mild" }, { word: "Wise", level: "Medium" }, { word: "Sagacious", level: "High" }, { word: "Enlightened", level: "Extreme" }],
     characterHook: "Chanakya",
     hookWhy: "Known for his deep wisdom and sharp political judgment."
   },
@@ -1780,6 +1905,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Clan -> Clans often have secret rituals.",
     tone: "Neutral (0)",
     collocation: "Clandestine affair",
+    intensitySpectrum: [{ word: "Private", level: "Mild" }, { word: "Secret", level: "Medium" }, { word: "Clandestine", level: "High" }, { word: "Top Secret", level: "Extreme" }],
     characterHook: "Couples in Parks",
     hookWhy: "Hiding behind bushes to have a secret meeting away from society."
   },
@@ -1794,6 +1920,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Fugitive -> A fugitive must be furtive to avoid capture.",
     tone: "Negative (-)",
     collocation: "Furtive glance",
+    intensitySpectrum: [{ word: "Shy", level: "Mild" }, { word: "Secretive", level: "Medium" }, { word: "Furtive", level: "High" }, { word: "Sneaky", level: "Extreme" }],
     characterHook: "Cheating in Exam",
     hookWhy: "Looking around nervously while hiding a chit (Sneaky)."
   },
@@ -1808,6 +1935,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Vice -> A vice-president acts for the president.",
     tone: "Neutral (0)",
     collocation: "Vicarious thrill",
+    intensitySpectrum: [{ word: "Shared", level: "Mild" }, { word: "Indirect", level: "Medium" }, { word: "Vicarious", level: "High" }, { word: "Surrogate", level: "Extreme" }],
     characterHook: "Indian Parents",
     hookWhy: "Living their own failed dreams through their children ('Mera beta Doctor banega')."
   },
@@ -1822,10 +1950,11 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ark -> What was in Noah's Ark is a mystery.",
     tone: "Neutral (0)",
     collocation: "Arcane knowledge",
+    intensitySpectrum: [{ word: "Unknown", level: "Mild" }, { word: "Secret", level: "Medium" }, { word: "Arcane", level: "High" }, { word: "Unknowable", level: "Extreme" }],
     characterHook: "Tantrik Rituals",
     hookWhy: "Mysterious knowledge understood only by a few wizards/babas."
   },
-  // --- Group: Indulgent (Restored) ---
+  // --- Group: Indulgent ---
   {
     word: "Indulgent",
     partOfSpeech: "Adjective",
@@ -1837,6 +1966,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Dull -> If you indulge too much, you become dull/lazy.",
     tone: "Neutral (0)",
     collocation: "Indulgent smile",
+    intensitySpectrum: [{ word: "Nice", level: "Mild" }, { word: "Lenient", level: "Medium" }, { word: "Indulgent", level: "High" }, { word: "Permissive", level: "Extreme" }],
     characterHook: "Indian Grandparents",
     hookWhy: "They secretly give you sweets and money even when parents say no."
   },
@@ -1851,6 +1981,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Lee (Side) + Way -> Extra space on the side to move.",
     tone: "Positive (+)",
     collocation: "Give some leeway",
+    intensitySpectrum: [{ word: "Space", level: "Mild" }, { word: "Freedom", level: "Medium" }, { word: "Leeway", level: "High" }, { word: "License", level: "Extreme" }],
     characterHook: "Grace Marks in Exams",
     hookWhy: "The examiner gives you a little extra margin (leeway) to help you pass."
   },
@@ -1865,6 +1996,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Lateral -> Moving sideways freely.",
     tone: "Positive (+)",
     collocation: "Wide latitude",
+    intensitySpectrum: [{ word: "Room", level: "Mild" }, { word: "Freedom", level: "Medium" }, { word: "Latitude", level: "High" }, { word: "Carte Blanche", level: "Extreme" }],
     characterHook: "College Fests",
     hookWhy: "Students are given full freedom (latitude) to organize events however they want."
   },
@@ -1879,6 +2011,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Deposit -> Depositing your statement in court.",
     tone: "Neutral (0)",
     collocation: "Sworn deposition",
+    intensitySpectrum: [{ word: "Statement", level: "Mild" }, { word: "Testimony", level: "Medium" }, { word: "Deposition", level: "High" }, { word: "Evidence", level: "Extreme" }],
     characterHook: "Kasab's Confession",
     hookWhy: "Recording the formal statement of a witness or criminal in court."
   },
@@ -1893,6 +2026,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ab (Away) + Dicate (Speak) -> Speak to go away from power.",
     tone: "Neutral (0)",
     collocation: "Abdication of duty",
+    intensitySpectrum: [{ word: "Quitting", level: "Mild" }, { word: "Resignation", level: "Medium" }, { word: "Abdication", level: "High" }, { word: "Renunciation", level: "Extreme" }],
     characterHook: "Sonia Gandhi (2004)",
     hookWhy: "She stepped aside and gave the PM post to Manmohan Singh (Renouncing power)."
   },
@@ -1907,6 +2041,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Peach -> Throwing a rotten peach at a leader to remove them.",
     tone: "Negative (-)",
     collocation: "Impeachment motion",
+    intensitySpectrum: [{ word: "Blame", level: "Mild" }, { word: "Charge", level: "Medium" }, { word: "Impeachment", level: "High" }, { word: "Removal", level: "Extreme" }],
     characterHook: "Indian Chief Justice",
     hookWhy: "The rare and difficult legal process to remove a high official from power."
   },
@@ -1921,6 +2056,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Dis + Avow -> Not vowing/promising anymore.",
     tone: "Negative (-)",
     collocation: "Public disavowal",
+    intensitySpectrum: [{ word: "Denial", level: "Mild" }, { word: "Rejection", level: "Medium" }, { word: "Disavowal", level: "High" }, { word: "Repudiation", level: "Extreme" }],
     characterHook: "Politicians after a Scam",
     hookWhy: "They immediately say 'I don't know this person', denying any connection."
   },
@@ -1935,6 +2071,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Credit -> Give credit/belief to someone.",
     tone: "Positive (+)",
     collocation: "Lend credence",
+    intensitySpectrum: [{ word: "Trust", level: "Mild" }, { word: "Belief", level: "Medium" }, { word: "Credence", level: "High" }, { word: "Faith", level: "Extreme" }],
     characterHook: "Bank Loan Approval",
     hookWhy: "The bank gives you money only if your history has 'credibility' or trust."
   },
@@ -1949,6 +2086,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Vein -> Looking at your own veins/body all the time.",
     tone: "Negative (-)",
     collocation: "Vain attempt",
+    intensitySpectrum: [{ word: "Proud", level: "Mild" }, { word: "Conceited", level: "Medium" }, { word: "Vain", level: "High" }, { word: "Narcissistic", level: "Extreme" }],
     characterHook: "Poo (K3G)",
     hookWhy: "Looking in the mirror saying 'Main apni favourite hoon'. Total obsession with looks."
   },
@@ -1963,6 +2101,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Abort -> Stop before finishing.",
     tone: "Negative (-)",
     collocation: "Abortive attempt",
+    intensitySpectrum: [{ word: "Stopped", level: "Mild" }, { word: "Failed", level: "Medium" }, { word: "Abortive", level: "High" }, { word: "Futile", level: "Extreme" }],
     characterHook: "Goa Trip Plans",
     hookWhy: "99% of student Goa plans fail (abort) before they even start."
   },
@@ -1977,6 +2116,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pomp -> Full of pomp and show.",
     tone: "Negative (-)",
     collocation: "Pompous ass",
+    intensitySpectrum: [{ word: "Proud", level: "Mild" }, { word: "Arrogant", level: "Medium" }, { word: "Pompous", level: "High" }, { word: "Grandiose", level: "Extreme" }],
     characterHook: "SoBo (South Bombay) Kids",
     hookWhy: "Acting superior and using fancy accents to show self-importance."
   },
@@ -1991,6 +2131,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Effect -> Has a good effect.",
     tone: "Positive (+)",
     collocation: "Efficacious remedy",
+    intensitySpectrum: [{ word: "Useful", level: "Mild" }, { word: "Effective", level: "Medium" }, { word: "Efficacious", level: "High" }, { word: "Potent", level: "Extreme" }],
     characterHook: "Dadi ke Nuskhe (Turmeric Milk)",
     hookWhy: "It actually produces the desired result (healing) effectively."
   },
@@ -2005,6 +2146,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pro + Life -> Creating a lot of life/work.",
     tone: "Positive (+)",
     collocation: "Prolific writer",
+    intensitySpectrum: [{ word: "Active", level: "Mild" }, { word: "Productive", level: "Medium" }, { word: "Prolific", level: "High" }, { word: "Abundant", level: "Extreme" }],
     characterHook: "A.R. Rahman",
     hookWhy: "He has produced thousands of hit songs across decades (High output)."
   },
@@ -2019,6 +2161,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Adventure -> A new adventure begins with an arrival.",
     tone: "Neutral (0)",
     collocation: "Advent of technology",
+    intensitySpectrum: [{ word: "Arrival", level: "Mild" }, { word: "Start", level: "Medium" }, { word: "Advent", level: "High" }, { word: "Dawn", level: "Extreme" }],
     characterHook: "Reliance Jio Launch",
     hookWhy: "The arrival (advent) of Jio changed the internet landscape in India forever."
   },
@@ -2033,6 +2176,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Concept -> The first concept/start of an idea.",
     tone: "Neutral (0)",
     collocation: "Since inception",
+    intensitySpectrum: [{ word: "Idea", level: "Mild" }, { word: "Start", level: "Medium" }, { word: "Inception", level: "High" }, { word: "Birth", level: "Extreme" }],
     characterHook: "Shark Tank Pitch",
     hookWhy: "The very beginning or starting point of a business idea."
   },
@@ -2047,6 +2191,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Cease -> To cease is to stop.",
     tone: "Neutral (0)",
     collocation: "Cessation of smoking",
+    intensitySpectrum: [{ word: "Stop", level: "Mild" }, { word: "End", level: "Medium" }, { word: "Cessation", level: "High" }, { word: "Termination", level: "Extreme" }],
     characterHook: "Demonetization (Nov 8, 2016)",
     hookWhy: "The sudden stopping (cessation) of 500 and 1000 rupee notes."
   },
@@ -2061,6 +2206,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rate -> Rated and approved.",
     tone: "Positive (+)",
     collocation: "Ratified treaty",
+    intensitySpectrum: [{ word: "Signed", level: "Mild" }, { word: "Approved", level: "Medium" }, { word: "Ratified", level: "High" }, { word: "Enacted", level: "Extreme" }],
     characterHook: "GST Bill in Parliament",
     hookWhy: "It became a law only after all states formally approved (ratified) it."
   },
@@ -2075,6 +2221,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Re + Put + Ate -> Put it back/spit it out (reject).",
     tone: "Negative (-)",
     collocation: "Repudiate claims",
+    intensitySpectrum: [{ word: "Deny", level: "Mild" }, { word: "Reject", level: "Medium" }, { word: "Repudiate", level: "High" }, { word: "Disown", level: "Extreme" }],
     characterHook: "Celebrity denying Rumors",
     hookWhy: "Rejecting a scandalous news story as 'False and Baseless'."
   },
@@ -2089,6 +2236,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Gate -> Close the gate on a law.",
     tone: "Neutral (0)",
     collocation: "Abrogate responsibility",
+    intensitySpectrum: [{ word: "Cancel", level: "Mild" }, { word: "Repeal", level: "Medium" }, { word: "Abrogate", level: "High" }, { word: "Annul", level: "Extreme" }],
     characterHook: "Article 370",
     hookWhy: "The government officially cancelled (abrogated) the special status law."
   },
@@ -2103,6 +2251,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Come + Commit -> Committed to come together.",
     tone: "Neutral (0)",
     collocation: "Concomitant risks",
+    intensitySpectrum: [{ word: "Related", level: "Mild" }, { word: "Linked", level: "Medium" }, { word: "Concomitant", level: "High" }, { word: "Inseparable", level: "Extreme" }],
     characterHook: "Samosa and Chutney",
     hookWhy: "They naturally go together; you rarely find one without the other."
   },
@@ -2117,6 +2266,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Found -> Found deep meaning.",
     tone: "Positive (+)",
     collocation: "Profound impact",
+    intensitySpectrum: [{ word: "Deep", level: "Mild" }, { word: "Serious", level: "Medium" }, { word: "Profound", level: "High" }, { word: "Bottomless", level: "Extreme" }],
     characterHook: "Osho / Sadhguru Quotes",
     hookWhy: "Statements that sound very deep and require intense thinking."
   },
@@ -2131,6 +2281,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Leak -> If a boat leaks, the situation is bleak.",
     tone: "Negative (-)",
     collocation: "Bleak outlook",
+    intensitySpectrum: [{ word: "Grey", level: "Mild" }, { word: "Grim", level: "Medium" }, { word: "Bleak", level: "High" }, { word: "Hopeless", level: "Extreme" }],
     characterHook: "Delhi Smog in November",
     hookWhy: "You can't see the sun, everything looks grey and hopeless."
   },
@@ -2145,6 +2296,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Vice -> Introduce a vice (bad habit) to spoil something.",
     tone: "Negative (-)",
     collocation: "Vitiate the atmosphere",
+    intensitySpectrum: [{ word: "Spoil", level: "Mild" }, { word: "Damage", level: "Medium" }, { word: "Vitiate", level: "High" }, { word: "Ruin", level: "Extreme" }],
     characterHook: "Lemon in Milk",
     hookWhy: "A single drop spoils (vitiates) the entire vessel of milk."
   },
@@ -2159,6 +2311,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "De-trim -> Trimming down health.",
     tone: "Negative (-)",
     collocation: "Detrimental effect",
+    intensitySpectrum: [{ word: "Bad", level: "Mild" }, { word: "Harmful", level: "Medium" }, { word: "Detrimental", level: "High" }, { word: "Deadly", level: "Extreme" }],
     characterHook: "Mukesh (Anti-Smoking Ad)",
     hookWhy: "The ad before movies showing how smoking causes detrimental damage to lungs."
   },
@@ -2173,6 +2326,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Antagonist -> To act like a villain (antagonist).",
     tone: "Negative (-)",
     collocation: "Antagonize the crowd",
+    intensitySpectrum: [{ word: "Annoy", level: "Mild" }, { word: "Provoke", level: "Medium" }, { word: "Antagonize", level: "High" }, { word: "Enrage", level: "Extreme" }],
     characterHook: "Poking a Street Dog",
     hookWhy: "Doing something to deliberately make the dog angry/hostile."
   },
@@ -2187,6 +2341,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Conduct -> Helps to conduct an activity.",
     tone: "Positive (+)",
     collocation: "Conducive environment",
+    intensitySpectrum: [{ word: "Helpful", level: "Mild" }, { word: "Useful", level: "Medium" }, { word: "Conducive", level: "High" }, { word: "Essential", level: "Extreme" }],
     characterHook: "Library Environment",
     hookWhy: "The silence is helpful (conducive) for studying."
   },
@@ -2201,6 +2356,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Delete -> Helps to delete/remove health.",
     tone: "Negative (-)",
     collocation: "Deleterious impact",
+    intensitySpectrum: [{ word: "Bad", level: "Mild" }, { word: "Harmful", level: "Medium" }, { word: "Deleterious", level: "High" }, { word: "Toxic", level: "Extreme" }],
     characterHook: "Gutka / Pan Masala",
     hookWhy: "It slowly causes damage and cancer (Harmful)."
   },
@@ -2215,6 +2371,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Ramp -> Going up a ramp fast and out of control.",
     tone: "Negative (-)",
     collocation: "Rampant corruption",
+    intensitySpectrum: [{ word: "Growing", level: "Mild" }, { word: "Spreading", level: "Medium" }, { word: "Rampant", level: "High" }, { word: "Uncontrollable", level: "Extreme" }],
     characterHook: "Mosquitoes in Monsoon",
     hookWhy: "They spread everywhere uncontrollably during the rainy season."
   },
@@ -2229,6 +2386,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Vase -> Like water in a vase, filling every corner.",
     tone: "Neutral (0)",
     collocation: "Pervasive smell",
+    intensitySpectrum: [{ word: "Common", level: "Mild" }, { word: "Widespread", level: "Medium" }, { word: "Pervasive", level: "High" }, { word: "Omnipresent", level: "Extreme" }],
     characterHook: "Agarbatti Smell",
     hookWhy: "Light it in one room, and the scent spreads (pervades) through the whole house."
   },
@@ -2243,6 +2401,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Kerb -> A kerb on the road limits where cars go.",
     tone: "Neutral (0)",
     collocation: "Curb spending",
+    intensitySpectrum: [{ word: "Slowed", level: "Mild" }, { word: "Limited", level: "Medium" }, { word: "Curbed", level: "High" }, { word: "Stopped", level: "Extreme" }],
     characterHook: "Speed Breakers",
     hookWhy: "They physically force you to control (curb) your speed."
   },
@@ -2257,6 +2416,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Drum -> Banging a drum because you are confused.",
     tone: "Neutral (0)",
     collocation: "Solve a conundrum",
+    intensitySpectrum: [{ word: "Trick", level: "Mild" }, { word: "Problem", level: "Medium" }, { word: "Conundrum", level: "High" }, { word: "Mystery", level: "Extreme" }],
     characterHook: "Katappa ne Baahubali ko kyu maara?",
     hookWhy: "The question that confused the entire nation for 2 years."
   },
@@ -2271,6 +2431,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Egg -> What's inside the egg is a mystery.",
     tone: "Neutral (0)",
     collocation: "Total enigma",
+    intensitySpectrum: [{ word: "Puzzle", level: "Mild" }, { word: "Mystery", level: "Medium" }, { word: "Enigma", level: "High" }, { word: "Cipher", level: "Extreme" }],
     characterHook: "Rekha (Actress)",
     hookWhy: "She is mysterious, private, and difficult to understand."
   },
@@ -2285,6 +2446,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Wander -> Mind wandering because you can't decide.",
     tone: "Negative (-)",
     collocation: "In a quandary",
+    intensitySpectrum: [{ word: "Doubt", level: "Mild" }, { word: "Confusion", level: "Medium" }, { word: "Quandary", level: "High" }, { word: "Dilemma", level: "Extreme" }],
     characterHook: "Engineering vs Medical",
     hookWhy: "The difficult choice (dilemma) every Indian student faces after Class 10."
   },
@@ -2299,6 +2461,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Tractor -> A tractor moves slowly and takes a long time.",
     tone: "Neutral (0)",
     collocation: "Protracted war",
+    intensitySpectrum: [{ word: "Delay", level: "Mild" }, { word: "Extend", level: "Medium" }, { word: "Protract", level: "High" }, { word: "Drag out", level: "Extreme" }],
     characterHook: "Indian Court Cases",
     hookWhy: "'Taareekh pe Taareekh' - dragging a case out for 20 years."
   },
@@ -2313,6 +2476,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Differ -> To do it at a different time.",
     tone: "Neutral (0)",
     collocation: "Deferred payment",
+    intensitySpectrum: [{ word: "Late", level: "Mild" }, { word: "Delayed", level: "Medium" }, { word: "Deferred", level: "High" }, { word: "Postponed", level: "Extreme" }],
     characterHook: "EMI Moratorium",
     hookWhy: "During COVID, banks allowed people to pay (defer) their EMI later."
   },
@@ -2327,6 +2491,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Red -> Use a red pen to cross out words.",
     tone: "Neutral (0)",
     collocation: "Heavily redacted",
+    intensitySpectrum: [{ word: "Edited", level: "Mild" }, { word: "Hidden", level: "Medium" }, { word: "Redacted", level: "High" }, { word: "Censored", level: "Extreme" }],
     characterHook: "Raw / IB Documents",
     hookWhy: "Secret files with black ink covering the names to hide information."
   },
@@ -2341,6 +2506,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Purge -> To purge (cleanse) the bad parts.",
     tone: "Neutral (0)",
     collocation: "Expurgated edition",
+    intensitySpectrum: [{ word: "Clean", level: "Mild" }, { word: "Edit", level: "Medium" }, { word: "Expurgate", level: "High" }, { word: "Sanitize", level: "Extreme" }],
     characterHook: "CBFC (Censor Board) Beeps",
     hookWhy: "Removing 'bad words' from movies to make them 'clean' for TV."
   },
@@ -2355,6 +2521,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Plate -> Give a plate of food to calm someone down.",
     tone: "Positive (+)",
     collocation: "Placate the crowd",
+    intensitySpectrum: [{ word: "Calm", level: "Mild" }, { word: "Soothe", level: "Medium" }, { word: "Placate", level: "High" }, { word: "Satisfy", level: "Extreme" }],
     characterHook: "Giving Chocolate to Crying Baby",
     hookWhy: "Doing something sweet to stop the anger/crying immediately."
   },
@@ -2369,6 +2536,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Sausage -> Comfort food like sausage eases hunger/pain.",
     tone: "Positive (+)",
     collocation: "Assuage guilt",
+    intensitySpectrum: [{ word: "Ease", level: "Mild" }, { word: "Relieve", level: "Medium" }, { word: "Assuage", level: "High" }, { word: "Eliminate", level: "Extreme" }],
     characterHook: "Burnol on a Burn",
     hookWhy: "It immediately soothes and lessens the intensity of the pain."
   },
@@ -2383,6 +2551,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Molly -> Molly is a soft/gentle name; to soften.",
     tone: "Positive (+)",
     collocation: "Mollify critics",
+    intensitySpectrum: [{ word: "Soften", level: "Mild" }, { word: "Calm", level: "Medium" }, { word: "Mollify", level: "High" }, { word: "Pacify", level: "Extreme" }],
     characterHook: "Police talking to a Mob",
     hookWhy: "Using soft words to calm down an angry crowd."
   },
@@ -2397,6 +2566,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Banana -> A common fruit, nothing special.",
     tone: "Negative (-)",
     collocation: "Sheer banality",
+    intensitySpectrum: [{ word: "Dullness", level: "Mild" }, { word: "Boredom", level: "Medium" }, { word: "Banality", level: "High" }, { word: "Triteness", level: "Extreme" }],
     characterHook: "'Good Morning' WhatsApp Forwards",
     hookWhy: "They are so common and unoriginal that they become boring."
   },
@@ -2411,6 +2581,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Flat -> A flat statement with no depth.",
     tone: "Negative (-)",
     collocation: "Empty platitudes",
+    intensitySpectrum: [{ word: "Saying", level: "Mild" }, { word: "Cliché", level: "Medium" }, { word: "Platitude", level: "High" }, { word: "Truism", level: "Extreme" }],
     characterHook: "People saying 'Everything happens for a reason'",
     hookWhy: "A statement that is true but used so often it has lost meaning."
   },
@@ -2425,6 +2596,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pro -> A pro has deep knowledge.",
     tone: "Positive (+)",
     collocation: "Intellectual profoundness",
+    intensitySpectrum: [{ word: "Depth", level: "Mild" }, { word: "Wisdom", level: "Medium" }, { word: "Profoundness", level: "High" }, { word: "Sagacity", level: "Extreme" }],
     characterHook: "The Bhagavad Gita",
     hookWhy: "The depth of wisdom in the text is endless."
   },
@@ -2439,6 +2611,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Add + Ornament -> To add ornaments.",
     tone: "Positive (+)",
     collocation: "Adorn with jewels",
+    intensitySpectrum: [{ word: "Add", level: "Mild" }, { word: "Decorate", level: "Medium" }, { word: "Adorn", level: "High" }, { word: "Beautify", level: "Extreme" }],
     characterHook: "Indian Bride",
     hookWhy: "Decorating with jewelry, mehendi, and flowers to look beautiful."
   },
@@ -2453,6 +2626,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Axe -> Using an axe on a wound makes it worse.",
     tone: "Negative (-)",
     collocation: "Exacerbate the situation",
+    intensitySpectrum: [{ word: "Worsen", level: "Mild" }, { word: "Aggravate", level: "Medium" }, { word: "Exacerbate", level: "High" }, { word: "Intensify", level: "Extreme" }],
     characterHook: "Salt on a Wound",
     hookWhy: "The wound was already bad; salt made it much worse."
   },
@@ -2467,6 +2641,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Bell -> Adding bells to a story to make it sound better.",
     tone: "Neutral (0)",
     collocation: "Embellish the truth",
+    intensitySpectrum: [{ word: "Add", level: "Mild" }, { word: "Decorate", level: "Medium" }, { word: "Embellish", level: "High" }, { word: "Exaggerate", level: "Extreme" }],
     characterHook: "News Channels ('Masala')",
     hookWhy: "Adding extra dramatic details to a simple story to make it exciting."
   },
@@ -2481,6 +2656,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Mal (Bad) + Ease -> Not at ease.",
     tone: "Negative (-)",
     collocation: "Economic malaise",
+    intensitySpectrum: [{ word: "Unease", level: "Mild" }, { word: "Discomfort", level: "Medium" }, { word: "Malaise", level: "High" }, { word: "Sickness", level: "Extreme" }],
     characterHook: "Post-Lunch Office Mood",
     hookWhy: "That general feeling of uneasiness and laziness where you don't want to work."
   },
@@ -2495,6 +2671,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Stag -> A stag standing still in the forest.",
     tone: "Negative (-)",
     collocation: "Economic stagnation",
+    intensitySpectrum: [{ word: "Slow", level: "Mild" }, { word: "Stop", level: "Medium" }, { word: "Stagnation", level: "High" }, { word: "Rot", level: "Extreme" }],
     characterHook: "Bangalore Traffic (Silk Board)",
     hookWhy: "Cars standing still for hours; zero movement or progress."
   },
@@ -2509,6 +2686,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Lazy + Dude -> A lazy dude creates lassitude.",
     tone: "Negative (-)",
     collocation: "Overcome by lassitude",
+    intensitySpectrum: [{ word: "Tiredness", level: "Mild" }, { word: "Fatigue", level: "Medium" }, { word: "Lassitude", level: "High" }, { word: "Exhaustion", level: "Extreme" }],
     characterHook: "Sunday Afternoon Nap",
     hookWhy: "Physical weariness where lifting a finger feels like hard work."
   },
@@ -2523,10 +2701,11 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Stay -> Stay as is.",
     tone: "Neutral (0)",
     collocation: "In stasis",
+    intensitySpectrum: [{ word: "Pause", level: "Mild" }, { word: "Stop", level: "Medium" }, { word: "Stasis", level: "High" }, { word: "Frozen", level: "Extreme" }],
     characterHook: "Statue Game",
     hookWhy: "Everything stops moving and stays in equilibrium/balance."
   },
-  // --- Group: Tranquil (Restored) ---
+  // --- Group: Tranquil ---
   {
     word: "Tranquil",
     partOfSpeech: "Adjective",
@@ -2538,6 +2717,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Quil (Quilt) -> Sleeping under a quilt is tranquil.",
     tone: "Positive (+)",
     collocation: "Tranquil waters",
+    intensitySpectrum: [{ word: "Quiet", level: "Mild" }, { word: "Calm", level: "Medium" }, { word: "Tranquil", level: "High" }, { word: "Peaceful", level: "Extreme" }],
     characterHook: "Golden Temple (Amritsar)",
     hookWhy: "Sitting by the Sarovar at 4 AM provides a feeling of absolute peace."
   },
@@ -2552,6 +2732,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Sang (Blood) -> Red blooded, full of life and hope.",
     tone: "Positive (+)",
     collocation: "Sanguine disposition",
+    intensitySpectrum: [{ word: "Hopeful", level: "Mild" }, { word: "Optimistic", level: "Medium" }, { word: "Sanguine", level: "High" }, { word: "Confident", level: "Extreme" }],
     characterHook: "RCB Fans (IPL)",
     hookWhy: "Despite losing every year, they always say 'Ee Sala Cup Namde' (Next year is ours). Pure optimism."
   },
@@ -2566,6 +2747,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Beauty -> A beautiful, happy state.",
     tone: "Positive (+)",
     collocation: "Beatific smile",
+    intensitySpectrum: [{ word: "Happy", level: "Mild" }, { word: "Blissful", level: "Medium" }, { word: "Beatific", level: "High" }, { word: "Divine", level: "Extreme" }],
     characterHook: "Sadhu in the Himalayas",
     hookWhy: "The glowing, blissful smile of someone in deep meditation."
   },
@@ -2580,6 +2762,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Uber -> Super energy.",
     tone: "Positive (+)",
     collocation: "Exuberant personality",
+    intensitySpectrum: [{ word: "Happy", level: "Mild" }, { word: "Energetic", level: "Medium" }, { word: "Exuberant", level: "High" }, { word: "Wild", level: "Extreme" }],
     characterHook: "Govinda in 90s Songs",
     hookWhy: "High energy dancing, colorful clothes, and unstoppable enthusiasm."
   },
@@ -2594,6 +2777,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Melody + Flow -> Melody flows smoothly.",
     tone: "Positive (+)",
     collocation: "Mellifluous voice",
+    intensitySpectrum: [{ word: "Nice", level: "Mild" }, { word: "Sweet", level: "Medium" }, { word: "Mellifluous", level: "High" }, { word: "Heavenly", level: "Extreme" }],
     characterHook: "Shreya Ghoshal / Lata Mangeshkar",
     hookWhy: "Their voices are as sweet as honey (Melli = Honey)."
   },
@@ -2608,6 +2792,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Mega -> Mega (Big) heart.",
     tone: "Positive (+)",
     collocation: "Magnanimous gesture",
+    intensitySpectrum: [{ word: "Kind", level: "Mild" }, { word: "Generous", level: "Medium" }, { word: "Magnanimous", level: "High" }, { word: "Noble", level: "Extreme" }],
     characterHook: "Sonu Sood (During Lockdown)",
     hookWhy: "Helping thousands of strangers purely out of a big heart."
   },
@@ -2622,6 +2807,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Bene (Good) -> Good natured.",
     tone: "Positive (+)",
     collocation: "Benign smile",
+    intensitySpectrum: [{ word: "Nice", level: "Mild" }, { word: "Gentle", level: "Medium" }, { word: "Benign", level: "High" }, { word: "Harmless", level: "Extreme" }],
     characterHook: "Alok Nath (Sanskaari Babuji)",
     hookWhy: "He looks completely harmless, kind, and gentle in every movie."
   },
@@ -2636,6 +2822,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Hex -> Like someone put a hex (curse) on you to annoy you.",
     tone: "Negative (-)",
     collocation: "Vexed question",
+    intensitySpectrum: [{ word: "Annoyed", level: "Mild" }, { word: "Bothered", level: "Medium" }, { word: "Vexed", level: "High" }, { word: "Frustrated", level: "Extreme" }],
     characterHook: "Calling Customer Care",
     hookWhy: "Press 1, Press 2... 'All executives are busy'. Makes you totally vexed."
   },
@@ -2650,6 +2837,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rate -> High heart rate from anger.",
     tone: "Negative (-)",
     collocation: "Irate customer",
+    intensitySpectrum: [{ word: "Mad", level: "Mild" }, { word: "Angry", level: "Medium" }, { word: "Irate", level: "High" }, { word: "Furious", level: "Extreme" }],
     characterHook: "Arnab Goswami (The Debate)",
     hookWhy: "Screaming 'The Nation Wants To Know!' displays extreme anger."
   },
@@ -2664,6 +2852,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "No Rose -> Life has no roses (joy), so sad.",
     tone: "Negative (-)",
     collocation: "Morose silence",
+    intensitySpectrum: [{ word: "Sad", level: "Mild" }, { word: "Gloomy", level: "Medium" }, { word: "Morose", level: "High" }, { word: "Depressed", level: "Extreme" }],
     characterHook: "Devdas",
     hookWhy: "Sitting alone, drinking, and refusing to talk to anyone."
   },
@@ -2678,6 +2867,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pre-tension -> Tension before something happens.",
     tone: "Negative (-)",
     collocation: "Deep apprehension",
+    intensitySpectrum: [{ word: "Worry", level: "Mild" }, { word: "Fear", level: "Medium" }, { word: "Apprehension", level: "High" }, { word: "Dread", level: "Extreme" }],
     characterHook: "Result Day Morning",
     hookWhy: "That sinking feeling in your stomach before checking the website."
   },
@@ -2692,6 +2882,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Scope -> Looking through a scope to check if it's real.",
     tone: "Neutral (0)",
     collocation: "Skeptical audience",
+    intensitySpectrum: [{ word: "Unsure", level: "Mild" }, { word: "Doubtful", level: "Medium" }, { word: "Skeptical", level: "High" }, { word: "Disbelieving", level: "Extreme" }],
     characterHook: "ACP Pradyuman (CID)",
     hookWhy: "Always saying 'Kuch toh gadbad hai Daya' (Doubting the obvious)."
   },
@@ -2706,6 +2897,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pulse -> Your pulse races with disgust to run away.",
     tone: "Negative (-)",
     collocation: "Repulsed by",
+    intensitySpectrum: [{ word: "Disliked", level: "Mild" }, { word: "Disgusted", level: "Medium" }, { word: "Repulsed", level: "High" }, { word: "Sickened", level: "Extreme" }],
     characterHook: "Elaichi in Biryani",
     hookWhy: "The moment you bite into it, you feel instant disgust."
   },
@@ -2720,6 +2912,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Disturb -> Per-turb is a thorough disturbance.",
     tone: "Negative (-)",
     collocation: "Perturbed state",
+    intensitySpectrum: [{ word: "Bother", level: "Mild" }, { word: "Worry", level: "Medium" }, { word: "Perturb", level: "High" }, { word: "Distrub", level: "Extreme" }],
     characterHook: "Neighbour using Drilling Machine",
     hookWhy: "The noise disturbs your mental peace and unsettles you."
   },
@@ -2734,6 +2927,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pond -> Looking into a pond sadly.",
     tone: "Negative (-)",
     collocation: "Despondent mood",
+    intensitySpectrum: [{ word: "Sad", level: "Mild" }, { word: "Hopeless", level: "Medium" }, { word: "Despondent", level: "High" }, { word: "Suicidal", level: "Extreme" }],
     characterHook: "Unemployed Engineer",
     hookWhy: "Giving 50 interviews and getting rejected everywhere creates hopelessness."
   },
@@ -2748,6 +2942,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Woe -> Woe is sadness.",
     tone: "Negative (-)",
     collocation: "Woeful tale",
+    intensitySpectrum: [{ word: "Sad", level: "Mild" }, { word: "Miserable", level: "Medium" }, { word: "Woeful", level: "High" }, { word: "Tragic", level: "Extreme" }],
     characterHook: "Indian Team (2003 World Cup Final)",
     hookWhy: "The sorrow of the entire nation after losing to Australia."
   },
@@ -2762,6 +2957,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Relax -> Too relaxed to be careful.",
     tone: "Negative (-)",
     collocation: "Lax discipline",
+    intensitySpectrum: [{ word: "Loose", level: "Mild" }, { word: "Careless", level: "Medium" }, { word: "Lax", level: "High" }, { word: "Negligent", level: "Extreme" }],
     characterHook: "Government Office Clerk (Stereotype)",
     hookWhy: "Coming late, long lunch breaks, 'Kal aana' attitude (Careless/Slack)."
   },
@@ -2776,6 +2972,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Solve -> Ability to solve money problems.",
     tone: "Positive (+)",
     collocation: "Financial solvency",
+    intensitySpectrum: [{ word: "Cash", level: "Mild" }, { word: "Stability", level: "Medium" }, { word: "Solvency", level: "High" }, { word: "Wealth", level: "Extreme" }],
     characterHook: "Mukesh Ambani",
     hookWhy: "He has enough cash to pay off any debt instantly."
   },
@@ -2790,6 +2987,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Obtuse Angle -> Greater than 90 degrees; not 'sharp'.",
     tone: "Negative (-)",
     collocation: "Obtuse remark",
+    intensitySpectrum: [{ word: "Slow", level: "Mild" }, { word: "Dull", level: "Medium" }, { word: "Obtuse", level: "High" }, { word: "Stupid", level: "Extreme" }],
     characterHook: "Tubelight (Salman Khan Character)",
     hookWhy: "Slow to understand things; the light bulb turns on late."
   },
@@ -2804,6 +3002,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Program -> Follow a practical program.",
     tone: "Positive (+)",
     collocation: "Pragmatic approach",
+    intensitySpectrum: [{ word: "Useful", level: "Mild" }, { word: "Practical", level: "Medium" }, { word: "Pragmatic", level: "High" }, { word: "Realistic", level: "Extreme" }],
     characterHook: "Nitin Gadkari",
     hookWhy: "Focuses on building roads (practical results) rather than just political speeches."
   },
@@ -2818,6 +3017,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rude -> Often smart people seem rude (but Erudite is smart).",
     tone: "Positive (+)",
     collocation: "Erudite scholar",
+    intensitySpectrum: [{ word: "Smart", level: "Mild" }, { word: "Knowledgeable", level: "Medium" }, { word: "Erudite", level: "High" }, { word: "Genius", level: "Extreme" }],
     characterHook: "Shashi Tharoor",
     hookWhy: "Uses words like 'Floccinaucinihilipilification'. Highly learned."
   },
@@ -2832,6 +3032,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Use + Sharp -> Use sharp weapons to take power.",
     tone: "Negative (-)",
     collocation: "Usurp power",
+    intensitySpectrum: [{ word: "Take", level: "Mild" }, { word: "Seize", level: "Medium" }, { word: "Usurp", level: "High" }, { word: "Steal", level: "Extreme" }],
     characterHook: "Aurangzeb / Kans",
     hookWhy: "Imprisoning their own family to illegally take the throne."
   },
@@ -2846,6 +3047,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Rivet -> Held fast (like a rivet holds metal) by interest.",
     tone: "Positive (+)",
     collocation: "Riveting story",
+    intensitySpectrum: [{ word: "Interesting", level: "Mild" }, { word: "Exciting", level: "Medium" }, { word: "Riveting", level: "High" }, { word: "Hypnotic", level: "Extreme" }],
     characterHook: "Drishyam Climax",
     hookWhy: "You cannot look away; your attention is completely fixed (riveted)."
   },
@@ -2860,6 +3062,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Sip -> Take a sip and it has no taste.",
     tone: "Negative (-)",
     collocation: "Insipid food",
+    intensitySpectrum: [{ word: "Bland", level: "Mild" }, { word: "Tasteless", level: "Medium" }, { word: "Insipid", level: "High" }, { word: "Boring", level: "Extreme" }],
     characterHook: "Khichdi for Patients",
     hookWhy: "Boiled, no masala, completely tasteless and boring."
   },
@@ -2874,6 +3077,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Spore -> Spores fly randomly in the air.",
     tone: "Neutral (0)",
     collocation: "Sporadic rain",
+    intensitySpectrum: [{ word: "Rare", level: "Mild" }, { word: "Occasional", level: "Medium" }, { word: "Sporadic", level: "High" }, { word: "Random", level: "Extreme" }],
     characterHook: "Electricity in Indian Villages",
     hookWhy: "Comes for 1 hour, goes for 3 hours. Happens at irregular intervals."
   },
@@ -2888,6 +3092,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Error -> Full of errors and unpredictability.",
     tone: "Negative (-)",
     collocation: "Erratic behavior",
+    intensitySpectrum: [{ word: "Odd", level: "Mild" }, { word: "Unpredictable", level: "Medium" }, { word: "Erratic", level: "High" }, { word: "Chaotic", level: "Extreme" }],
     characterHook: "Rishabh Pant (Early Career)",
     hookWhy: "Sometimes hits a 6, sometimes gets out on 0. Totally unpredictable."
   },
@@ -2902,6 +3107,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Diablo -> Devil.",
     tone: "Negative (-)",
     collocation: "Diabolical plan",
+    intensitySpectrum: [{ word: "Bad", level: "Mild" }, { word: "Evil", level: "Medium" }, { word: "Diabolical", level: "High" }, { word: "Satanic", level: "Extreme" }],
     characterHook: "Mogambo (Mr. India)",
     hookWhy: "His plans to destroy India were purely evil and devilish."
   },
@@ -2916,6 +3122,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Hate + Us -> A crime that makes everyone hate us.",
     tone: "Negative (-)",
     collocation: "Heinous crime",
+    intensitySpectrum: [{ word: "Bad", level: "Mild" }, { word: "Wicked", level: "Medium" }, { word: "Heinous", level: "High" }, { word: "Monstrous", level: "Extreme" }],
     characterHook: "Ajmal Kasab / Terrorists",
     hookWhy: "Killing innocent people is a crime of maximum evil."
   },
@@ -2930,6 +3137,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Friend -> Opposite of a friend.",
     tone: "Negative (-)",
     collocation: "Fiendish plot",
+    intensitySpectrum: [{ word: "Cruel", level: "Mild" }, { word: "Wicked", level: "Medium" }, { word: "Fiendish", level: "High" }, { word: "Demonic", level: "Extreme" }],
     characterHook: "Shakuni Mama (Mahabharat)",
     hookWhy: "His dice game plans were complex, cruel, and clever."
   },
@@ -2944,6 +3152,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Atrocity -> Committing an atrocity.",
     tone: "Negative (-)",
     collocation: "Atrocious weather",
+    intensitySpectrum: [{ word: "Bad", level: "Mild" }, { word: "Terrible", level: "Medium" }, { word: "Atrocious", level: "High" }, { word: "Horrific", level: "Extreme" }],
     characterHook: "Dhinchak Pooja Songs",
     hookWhy: "The quality is so bad it feels like a crime against music."
   },
@@ -2958,6 +3167,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Solo -> Working solo in a group.",
     tone: "Negative (-)",
     collocation: "Work in silos",
+    intensitySpectrum: [{ word: "Groups", level: "Mild" }, { word: "Bubbles", level: "Medium" }, { word: "Silos", level: "High" }, { word: "Isolation", level: "Extreme" }],
     characterHook: "Typical Corporate/Govt Departments",
     hookWhy: "The Sales team doesn't talk to the Tech team; they work in isolation."
   },
@@ -2972,6 +3182,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Emulator -> Software that copies hardware.",
     tone: "Positive (+)",
     collocation: "Emulate success",
+    intensitySpectrum: [{ word: "Copy", level: "Mild" }, { word: "Mimic", level: "Medium" }, { word: "Emulate", level: "High" }, { word: "Perfect", level: "Extreme" }],
     characterHook: "Kids playing Cricket",
     hookWhy: "Every kid tries to copy (emulate) Sachin or Virat's stance."
   },
@@ -2986,6 +3197,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Virus -> Like a deadly virus.",
     tone: "Negative (-)",
     collocation: "Virulent strain",
+    intensitySpectrum: [{ word: "Sick", level: "Mild" }, { word: "Toxic", level: "Medium" }, { word: "Virulent", level: "High" }, { word: "Deadly", level: "Extreme" }],
     characterHook: "WhatsApp Fake News",
     hookWhy: "Spreads poison in society faster than a biological virus."
   },
@@ -3000,6 +3212,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Host -> A bad host is hostile.",
     tone: "Negative (-)",
     collocation: "Hostile takeover",
+    intensitySpectrum: [{ word: "Cold", level: "Mild" }, { word: "Unfriendly", level: "Medium" }, { word: "Hostile", level: "High" }, { word: "Aggressive", level: "Extreme" }],
     characterHook: "Hostel Warden",
     hookWhy: "Always looks at you like an enemy; strict and unfriendly."
   },
@@ -3014,6 +3227,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Childish -> Acting rude like a spoiled child.",
     tone: "Negative (-)",
     collocation: "Churlish behavior",
+    intensitySpectrum: [{ word: "Rude", level: "Mild" }, { word: "Impolite", level: "Medium" }, { word: "Churlish", level: "High" }, { word: "Boorish", level: "Extreme" }],
     characterHook: "Rude Waiter / Taxi Driver",
     hookWhy: "Refusing to go to a location or slamming the plate down (Ill-mannered)."
   },
@@ -3028,6 +3242,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Lout -> A loud lout.",
     tone: "Negative (-)",
     collocation: "Loutish manner",
+    intensitySpectrum: [{ word: "Rough", level: "Mild" }, { word: "Crude", level: "Medium" }, { word: "Loutish", level: "High" }, { word: "Violent", level: "Extreme" }],
     characterHook: "Kabir Singh (Drunk)",
     hookWhy: "Aggressive, shouting at servants, breaking things (uncouth)."
   },
@@ -3042,6 +3257,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Bull -> Energy of a bull.",
     tone: "Positive (+)",
     collocation: "Ebullient mood",
+    intensitySpectrum: [{ word: "Happy", level: "Mild" }, { word: "Cheerful", level: "Medium" }, { word: "Ebullient", level: "High" }, { word: "Explosive", level: "Extreme" }],
     characterHook: "Archana Puran Singh",
     hookWhy: "Laughing loudly, full of bubbling energy on the comedy show."
   },
@@ -3056,6 +3272,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Place -> Sitting in a quiet place.",
     tone: "Positive (+)",
     collocation: "Placid nature",
+    intensitySpectrum: [{ word: "Quiet", level: "Mild" }, { word: "Calm", level: "Medium" }, { word: "Placid", level: "High" }, { word: "Still", level: "Extreme" }],
     characterHook: "Manmohan Singh",
     hookWhy: "No matter what happens, his expression remains calm and peaceful."
   },
@@ -3070,6 +3287,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Leather -> Heavy like leather, hard to move.",
     tone: "Negative (-)",
     collocation: "Lethargic pace",
+    intensitySpectrum: [{ word: "Tired", level: "Mild" }, { word: "Slow", level: "Medium" }, { word: "Lethargic", level: "High" }, { word: "Comatose", level: "Extreme" }],
     characterHook: "Sunday Afternoon after Biryani",
     hookWhy: "That heavy feeling where you cannot move a muscle."
   },
@@ -3084,6 +3302,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Android -> An android robot is skillful.",
     tone: "Positive (+)",
     collocation: "Adroit negotiation",
+    intensitySpectrum: [{ word: "Skilled", level: "Mild" }, { word: "Clever", level: "Medium" }, { word: "Adroit", level: "High" }, { word: "Masterful", level: "Extreme" }],
     characterHook: "Pickpockets in Local Trains",
     hookWhy: "Their hands move so skillfully you don't even feel your wallet gone."
   },
@@ -3098,6 +3317,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Doctor -> A doctor follows medical doctrine.",
     tone: "Neutral (0)",
     collocation: "Political doctrine",
+    intensitySpectrum: [{ word: "Idea", level: "Mild" }, { word: "Belief", level: "Medium" }, { word: "Doctrine", level: "High" }, { word: "Law", level: "Extreme" }],
     characterHook: "RSS / Communist Party",
     hookWhy: "They follow a strict set of beliefs and principles."
   },
@@ -3112,6 +3332,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Dog -> Following like a dog without question.",
     tone: "Neutral (0)",
     collocation: "Religious dogma",
+    intensitySpectrum: [{ word: "Belief", level: "Mild" }, { word: "Rule", level: "Medium" }, { word: "Dogma", level: "High" }, { word: "Truth", level: "Extreme" }],
     characterHook: "Religious Superstitions",
     hookWhy: "Beliefs like 'don't cut nails at night' followed without questioning."
   },
@@ -3126,6 +3347,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Dexter -> Dexter's Laboratory (smart kid).",
     tone: "Positive (+)",
     collocation: "Dexterous fingers",
+    intensitySpectrum: [{ word: "Handy", level: "Mild" }, { word: "Skilled", level: "Medium" }, { word: "Dexterous", level: "High" }, { word: "Expert", level: "Extreme" }],
     characterHook: "Zakir Hussain (Tabla)",
     hookWhy: "His fingers move with such skill and speed it looks like magic."
   },
@@ -3140,6 +3362,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Bag -> Lives out of a bag.",
     tone: "Neutral (0)",
     collocation: "Vagabond existence",
+    intensitySpectrum: [{ word: "Traveler", level: "Mild" }, { word: "Wanderer", level: "Medium" }, { word: "Vagabond", level: "High" }, { word: "Drifter", level: "Extreme" }],
     characterHook: "Ranbir Kapoor (Yeh Jawaani Hai Deewani)",
     hookWhy: "Bunny wants to travel, never settle, living out of a backpack."
   },
@@ -3154,6 +3377,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Per -> Per region travel.",
     tone: "Neutral (0)",
     collocation: "Peregrine falcon",
+    intensitySpectrum: [{ word: "Foreign", level: "Mild" }, { word: "Wandering", level: "Medium" }, { word: "Peregrine", level: "High" }, { word: "Migratory", level: "Extreme" }],
     characterHook: "Siberian Cranes",
     hookWhy: "Birds that travel thousands of miles to India (Wandering/Migratory)."
   },
@@ -3168,6 +3392,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Sedan -> Sitting in a sedan chair/car.",
     tone: "Negative (-)",
     collocation: "Sedentary lifestyle",
+    intensitySpectrum: [{ word: "Sitting", level: "Mild" }, { word: "Inactive", level: "Medium" }, { word: "Sedentary", level: "High" }, { word: "Immobile", level: "Extreme" }],
     characterHook: "IT Employee",
     hookWhy: "Sitting in a chair for 10 hours a day with zero physical movement."
   },
@@ -3182,6 +3407,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "End -> Doesn't end in that region.",
     tone: "Neutral (0)",
     collocation: "Endemic disease",
+    intensitySpectrum: [{ word: "Local", level: "Mild" }, { word: "Native", level: "Medium" }, { word: "Endemic", level: "High" }, { word: "Exclusive", level: "Extreme" }],
     characterHook: "Alphonso Mango (Ratnagiri)",
     hookWhy: "It is native only to that specific region."
   },
@@ -3196,6 +3422,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Pre + Rog -> Previous request granted.",
     tone: "Neutral (0)",
     collocation: "Royal prerogative",
+    intensitySpectrum: [{ word: "Choice", level: "Mild" }, { word: "Right", level: "Medium" }, { word: "Prerogative", level: "High" }, { word: "Privilege", level: "Extreme" }],
     characterHook: "The Bride at a Wedding",
     hookWhy: "It is her special right to be late; no one can complain."
   },
@@ -3210,6 +3437,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Perk -> Perquisite is the formal word for Perk.",
     tone: "Positive (+)",
     collocation: "Job perquisite",
+    intensitySpectrum: [{ word: "Gift", level: "Mild" }, { word: "Bonus", level: "Medium" }, { word: "Perquisite", level: "High" }, { word: "Right", level: "Extreme" }],
     characterHook: "Sarkari Afsar (Official)",
     hookWhy: "Getting a Red Beacon car and a Bungalow are the perks of the job."
   },
@@ -3224,10 +3452,11 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     trick: "Saint -> A saint gives approval (sanction).",
     tone: "Neutral (0)",
     collocation: "Official sanction",
+    intensitySpectrum: [{ word: "Okay", level: "Mild" }, { word: "Approval", level: "Medium" }, { word: "Sanction", level: "High" }, { word: "Decree", level: "Extreme" }],
     characterHook: "Mom saying 'Yes' to Goa Trip",
     hookWhy: "You need official permission (sanction) from the supreme authority."
   },
-  // --- Group: Master Collection (General/Mixed) ---
+    // --- Group: Master Collection (General/Mixed) ---
   {
     word: "Adduce",
     partOfSpeech: "Verb",
@@ -3700,5 +3929,7 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
     ],
     characterHook: "Neighbourhood Aunties",
     hookWhy: "Watching who visits your house at 10 PM."
-  }
+  },
+
+
 ];
