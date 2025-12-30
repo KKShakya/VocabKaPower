@@ -71,29 +71,29 @@ export const Notebook: React.FC = () => {
             <p className="text-slate-500 max-w-sm">Try a different search term.</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredWords.map((word, idx) => (
                 <div 
                     key={`${word.word}-${idx}`} 
                     onClick={() => setSelectedWord(word)}
-                    className={`relative w-full rounded-3xl shadow-xl hover:shadow-2xl overflow-hidden bg-gradient-to-br ${getGradient(word.tone)} p-8 text-white cursor-pointer transform transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col justify-between border border-white/20`}
+                    className={`relative w-full rounded-3xl shadow-xl hover:shadow-2xl overflow-hidden bg-gradient-to-br ${getGradient(word.tone)} p-6 text-white cursor-pointer transform transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col justify-between border border-white/20`}
                 >
                     <div>
                         {/* --- HEADER: Word & Part of Speech --- */}
-                        <div className="text-center mb-6">
-                            <h1 className="text-4xl font-extrabold tracking-tight drop-shadow-sm mb-2 capitalize break-words">
+                        <div className="flex items-center justify-center gap-3 mb-4">
+                            <h1 className="text-3xl font-extrabold tracking-tight drop-shadow-sm capitalize break-words leading-none">
                             {word.word}
                             </h1>
-                            <span className="inline-block px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm border border-white/20 shadow-sm">
+                            <span className="px-3 py-1 bg-white/20 rounded-full text-[10px] font-bold uppercase tracking-widest backdrop-blur-sm border border-white/20 shadow-sm shrink-0">
                             {word.partOfSpeech}
                             </span>
                         </div>
 
                         {/* --- BODY: The "Hook" (Glassmorphism Style) --- */}
                         {word.characterHook && (
-                            <div className="bg-white/95 text-slate-800 rounded-2xl p-5 shadow-lg mb-6 transform transition group-hover:scale-[1.02] duration-300 border border-white/50 relative z-10">
+                            <div className="bg-white/95 text-slate-800 rounded-2xl p-4 shadow-lg mb-4 transform transition group-hover:scale-[1.02] duration-300 border border-white/50 relative z-10">
                                 {/* Hook Title (Character Name) */}
-                                <div className="flex items-center justify-center gap-2 mb-3 text-indigo-600 font-bold text-sm border-b border-indigo-100 pb-2">
+                                <div className="flex items-center justify-center gap-2 mb-2 text-indigo-600 font-bold text-sm border-b border-indigo-100 pb-2">
                                     {getIcon(word.characterHook)}
                                     <span className="line-clamp-1">{word.characterHook}</span>
                                 </div>
@@ -123,7 +123,7 @@ export const Notebook: React.FC = () => {
 
       {/* Detail Modal */}
       {selectedWord && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md animate-fade-in" onClick={() => setSelectedWord(null)}>
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md animate-fade-in" onClick={() => setSelectedWord(null)}>
             <div className="w-full max-w-md max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
                 <WordCard 
                     data={selectedWord} 
