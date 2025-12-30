@@ -1,13 +1,14 @@
 
 import React, { useState, useMemo } from 'react';
-import { History, GitCompare, TrendingUp, ChevronRight, GraduationCap, ArrowLeft, Smile, CloudRain, Flame, Shield, Skull, HelpCircle, Zap, Coffee, Quote, Gavel, Timer } from 'lucide-react';
-import { SilsilaCategory, SilsilaItem } from '../types';
+import { History, GitCompare, TrendingUp, ChevronRight, GraduationCap, ArrowLeft, Smile, CloudRain, Flame, Shield, Skull, HelpCircle, Zap, Coffee, Quote, Gavel, Timer, Layers } from 'lucide-react';
+import { SilsilaCategory, SilsilaItem, WordAnalysis } from '../types';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
 import { WordCard } from './WordCard';
 
 // Define Categories for Master Collection
 const EMOTION_MAP: Record<string, string[]> = {
+    "General": [], // Placeholder for static items
     "Joy & Bliss": ["Elation", "Felicity", "Euphoric", "Rapturous", "Winsome", "Cheerful", "Jubilant", "Delighted", "Beatific", "Exuberant", "Ebullient"],
     "Gloom & Despair": ["Harrowing", "Sullen", "Dejected", "Forlorn", "Wretched", "Melancholy", "Despondent", "Woeful", "Morose", "Bleak", "Abash", "Cortege"],
     "Calm & Composed": ["Serene", "Halcyon", "Stoic", "Impassive", "Tranquil", "Salubrious", "Placid", "Dulcet", "Remission", "Hamlet", "Equable", "Amenable"],
@@ -22,6 +23,7 @@ const EMOTION_MAP: Record<string, string[]> = {
 };
 
 const EMOTION_CONFIG: Record<string, { icon: React.ElementType, color: string, bg: string }> = {
+    "General": { icon: Layers, color: "text-slate-700", bg: "bg-slate-100" },
     "Joy & Bliss": { icon: Smile, color: "text-amber-600", bg: "bg-amber-100" },
     "Gloom & Despair": { icon: CloudRain, color: "text-slate-600", bg: "bg-slate-200" },
     "Calm & Composed": { icon: Shield, color: "text-cyan-600", bg: "bg-cyan-100" },
@@ -85,7 +87,7 @@ const CATEGORIES = [
 
 export const VocabSilsila: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<SilsilaCategory | null>(null);
-  const [activeEmotion, setActiveEmotion] = useState<string>("Joy & Bliss");
+  const [activeEmotion, setActiveEmotion] = useState<string>("General");
   const [items, setItems] = useState<SilsilaItem[]>([]);
 
   const handleSelect = (category: SilsilaCategory) => {
@@ -104,6 +106,15 @@ export const VocabSilsila: React.FC = () => {
   const masterCollectionItems = useMemo(() => {
      if (selectedCategory !== SilsilaCategory.MASTER_COLLECTION) return [];
      
+     // 1. General Tab: Load from STATIC_VOCAB_DATA
+     if (activeEmotion === "General") {
+        const staticItems = STATIC_VOCAB_DATA[SilsilaCategory.MASTER_COLLECTION] || [];
+        return staticItems
+            .map(item => (item.type === 'detailed' ? item.data : null))
+            .filter(Boolean) as WordAnalysis[];
+     }
+
+     // 2. Emotion Tabs: Load from STATIC_NOTEBOOK_DATA
      const targetWords = EMOTION_MAP[activeEmotion] || [];
      return STATIC_NOTEBOOK_DATA.filter(word => targetWords.includes(word.word));
   }, [selectedCategory, activeEmotion]);
