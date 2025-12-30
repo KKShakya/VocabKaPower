@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { WordAnalysis } from '../types';
-import { Search, Book, Sparkles } from 'lucide-react';
+import { Search, Book, Sparkles, Clapperboard } from 'lucide-react';
 import { WordCard } from './WordCard';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
 
@@ -74,10 +74,24 @@ export const Notebook: React.FC = () => {
                     onClick={() => setSelectedWord(word)}
                     className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden cursor-pointer hover:shadow-md hover:border-brand-200 transition-all group flex flex-col relative h-full"
                 >
-                    <div className={`h-32 relative overflow-hidden flex items-center justify-center bg-gradient-to-br ${getGradient(word.tone)}`}>
-                        <div className="text-white text-center p-4">
-                            <h3 className="text-2xl font-bold capitalize mb-1">{word.word}</h3>
-                            <p className="text-white/80 text-xs uppercase tracking-wider">{word.partOfSpeech}</p>
+                    <div className={`relative overflow-hidden flex flex-col items-center justify-center bg-gradient-to-br ${getGradient(word.tone)} p-6 min-h-[14rem]`}>
+                        <div className="text-white text-center relative z-10 w-full flex flex-col items-center">
+                            <h3 className="text-2xl font-bold capitalize mb-1 shadow-black/10 drop-shadow-md">{word.word}</h3>
+                            <p className="text-white/90 text-[10px] font-bold uppercase tracking-widest mb-3 opacity-80">{word.partOfSpeech}</p>
+                            
+                            {word.characterHook && (
+                                <div className="mt-2 w-full max-w-[95%] bg-white shadow-xl shadow-black/10 rounded-xl px-3 py-2.5 transform transition-transform group-hover:-translate-y-1 duration-300">
+                                    <div className="flex items-center gap-1.5 justify-center mb-1.5">
+                                        <div className="bg-indigo-50 p-1 rounded text-indigo-600">
+                                            <Clapperboard size={12} strokeWidth={2.5} /> 
+                                        </div>
+                                        <span className="text-slate-800 text-xs font-bold leading-none tracking-tight">{word.characterHook}</span>
+                                    </div>
+                                    {word.hookWhy && (
+                                         <p className="text-slate-500 text-[10px] leading-tight line-clamp-2 italic border-t border-slate-100 pt-1.5 text-center">"{word.hookWhy}"</p>
+                                    )}
+                                </div>
+                            )}
                         </div>
                     </div>
                     <div className="p-4 flex-1 flex flex-col bg-white">
