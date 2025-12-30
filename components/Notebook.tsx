@@ -28,7 +28,7 @@ export const Notebook: React.FC = () => {
     return "from-brand-500 to-accent-600";
   };
 
-  const getIcon = (hook: string | undefined) => {
+  const getIcon = (_: string | undefined) => {
     return <Clapperboard size={18} />;
   };
 
