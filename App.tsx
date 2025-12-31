@@ -46,7 +46,7 @@ const App: React.FC = () => {
 
   const navItems = [
     { id: AppTab.EXPLORER, label: 'Explorer', icon: Compass },
-    { id: AppTab.SILSILA, label: 'Silsila', icon: Layers },
+    { id: AppTab.SILSILA, label: 'Words Ebb', icon: Layers },
     { id: AppTab.NOTEBOOK, label: 'Notebook', icon: Bookmark },
     { id: AppTab.READING, label: 'Reading', icon: Book },
     { id: AppTab.PRACTICE, label: 'Practice', icon: Zap },

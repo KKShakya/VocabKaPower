@@ -32,22 +32,28 @@ export const WordExplorer: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto space-y-12 pb-12">
-      <div className="text-center space-y-6 pt-8">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/40 border border-white/50 backdrop-blur-md shadow-sm text-sm font-medium text-brand-700 animate-fade-in">
-           <Sparkles size={14} className="text-brand-500" /> AI-Powered Vocabulary Builder
+    <div className={`max-w-4xl mx-auto space-y-8 pb-12 pt-8 relative min-h-[60vh] flex flex-col ${data ? 'justify-start' : 'justify-center'}`}>
+      
+      {/* Intro Section - Hidden when data is present */}
+      {!data && (
+        <div className="text-center space-y-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/40 border border-white/50 backdrop-blur-md shadow-sm text-sm font-medium text-brand-700 animate-fade-in">
+            <Sparkles size={14} className="text-brand-500" /> AI-Powered Vocabulary Builder
+            </div>
+            
+            <h2 className="text-5xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight leading-tight">
+            Master words with <br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-accent-600">Crystal Clarity</span>
+            </h2>
+            
+            <p className="text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">
+            Type any word below to get instant definitions, visual mnemonics, and detailed context.
+            </p>
         </div>
-        
-        <h2 className="text-5xl md:text-6xl font-serif font-bold text-slate-900 tracking-tight leading-tight">
-          Master words with <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-accent-600">Crystal Clarity</span>
-        </h2>
-        
-        <p className="text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">
-          Type any word below to get instant definitions, visual mnemonics, and detailed context.
-        </p>
-        
-        <form onSubmit={handleSearch} className="max-w-xl mx-auto relative z-10">
+      )}
+
+      {/* Search Bar - Always on top relative to results */}
+      <form onSubmit={handleSearch} className="max-w-xl mx-auto relative z-10 w-full transition-all duration-500">
             {/* Glass Search Capsule */}
             <div className="relative group transition-all duration-300 transform hover:scale-[1.01]">
                 <div className="absolute inset-0 bg-gradient-to-r from-brand-400 to-accent-400 rounded-full blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
@@ -59,24 +65,23 @@ export const WordExplorer: React.FC = () => {
                         type="text"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
-                        placeholder="e.g. Serendipity..."
-                        className="w-full bg-transparent border-none focus:ring-0 text-xl text-slate-800 placeholder-slate-400/80 h-14 px-4 font-serif"
+                        placeholder={data ? "Search another word..." : "e.g. Serendipity..."}
+                        className="w-full bg-transparent border-none focus:ring-0 outline-none text-xl text-slate-800 placeholder-slate-400/80 h-14 px-4 font-serif"
                     />
                     <Button 
                         type="submit" 
                         isLoading={loading} 
                         className="rounded-full h-12 px-8 shadow-none"
                     >
-                        {!loading && "Explore"}
+                        {!loading && (data ? "Search" : "Explore")}
                     </Button>
                 </div>
             </div>
-        </form>
-        {error && <p className="text-red-500 bg-red-50 inline-block px-4 py-2 rounded-lg text-sm">{error}</p>}
-      </div>
+      </form>
 
+      {/* Word Card - Displays below the search bar */}
       {data && (
-        <div className="flex justify-center animate-fade-in py-4">
+        <div className="flex justify-center animate-fade-in pb-4">
           <div className="w-full max-w-md perspective-1000">
             <WordCard 
                 data={data} 
@@ -86,6 +91,8 @@ export const WordExplorer: React.FC = () => {
           </div>
         </div>
       )}
+      
+      {error && <div className="text-center"><p className="text-red-500 bg-red-50 inline-block px-4 py-2 rounded-lg text-sm">{error}</p></div>}
     </div>
   );
 };

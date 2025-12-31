@@ -3932,4 +3932,348 @@ export const STATIC_NOTEBOOK_DATA: WordAnalysis[] = [
   },
 
 
+  {
+    word: "Perfidious",
+    partOfSpeech: "Adjective",
+    meaning: "Deceitful and untrustworthy.",
+    translation: "विश्वासघाती / दगाबाज़",
+    sentence: "The perfidious soldier sold secrets to the enemy.",
+    synonyms: ["Treacherous", "Duplicitous", "Deceitful"],
+    antonyms: ["Faithful", "Loyal", "Trustworthy"],
+    trick: "Perfume + Hide -> Hiding poison in perfume (Betrayal).",
+    tone: "Negative (-)",
+    collocation: "Perfidious act",
+    intensitySpectrum: [
+      { word: "Dishonest", level: "Mild" },
+      { word: "Deceitful", level: "Medium" },
+      { word: "Perfidious", level: "High" },
+      { word: "Treasonous", level: "Extreme" }
+    ],
+    characterHook: "Katappa (Baahubali)",
+    hookWhy: "He betrayed Baahubali by stabbing him in the back."
+  },
+  {
+    word: "Baleful",
+    partOfSpeech: "Adjective",
+    meaning: "Threatening harm; menacing.",
+    translation: "हानिकारक / डरावना",
+    sentence: "He gave me a baleful look that made me shudder.",
+    synonyms: ["Menacing", "Threatening", "Malevolent"],
+    antonyms: ["Benevolent", "Friendly", "Kindly"],
+    trick: "Bale (Evil) + Full -> Full of evil intentions.",
+    tone: "Negative (-)",
+    collocation: "Baleful stare",
+    intensitySpectrum: [
+      { word: "Unfriendly", level: "Mild" },
+      { word: "Hostile", level: "Medium" },
+      { word: "Baleful", level: "High" },
+      { word: "Murderous", level: "Extreme" }
+    ],
+    characterHook: "Gabbar Singh (Sholay)",
+    hookWhy: "His glare and laughter were purely menacing."
+  },
+  {
+    word: "Pernicious",
+    partOfSpeech: "Adjective",
+    meaning: "Having a harmful effect, especially in a gradual or subtle way.",
+    translation: "घातक / विनाशकारी",
+    sentence: "The pernicious influence of fake news is destroying society.",
+    synonyms: ["Harmful", "Damaging", "Destructive"],
+    antonyms: ["Beneficial", "Benign", "Salubrious"],
+    trick: "Parni (Leaf) + Vicious -> Tobacco leaf is vicious (harmful).",
+    tone: "Negative (-)",
+    collocation: "Pernicious effect",
+    intensitySpectrum: [
+      { word: "Harmful", level: "Mild" },
+      { word: "Damaging", level: "Medium" },
+      { word: "Pernicious", level: "High" },
+      { word: "Fatal", level: "Extreme" }
+    ],
+    characterHook: "Gutkha / Pan Masala",
+    hookWhy: "It tastes sweet initially but causes cancer slowly and silently."
+  },
+  {
+    word: "Vagary",
+    partOfSpeech: "Noun",
+    meaning: "An unexpected and inexplicable change in a situation or in someone's behavior.",
+    translation: "मौज / सनक",
+    sentence: "The vagaries of the weather upset our picnic plans.",
+    synonyms: ["Quirk", "Idiosyncrasy", "Whim"],
+    antonyms: ["Consistency", "Certainty", "Predictability"],
+    trick: "Vague -> The outcome is vague because of constant changes.",
+    tone: "Neutral (0)",
+    collocation: "Vagaries of weather",
+    intensitySpectrum: [
+      { word: "Change", level: "Mild" },
+      { word: "Fluctuation", level: "Medium" },
+      { word: "Vagary", level: "High" },
+      { word: "Chaos", level: "Extreme" }
+    ],
+    characterHook: "Indian Monsoon",
+    hookWhy: "You never know if it will be a flood or a drought; totally unpredictable."
+  },
+  {
+    word: "Sesquipedalian",
+    partOfSpeech: "Adjective",
+    meaning: "(Of a word) very long; (of a person) given to using long words.",
+    translation: "लंबे शब्दों वाला",
+    sentence: "His sesquipedalian speech confused the simple villagers.",
+    synonyms: ["Polysyllabic", "Long-winded", "Verbose"],
+    antonyms: ["Concise", "Brief", "Simple"],
+    trick: "Sasquatch (Bigfoot) + Pedal (Walk) -> Walking with long words.",
+    tone: "Neutral (0)",
+    collocation: "Sesquipedalian style",
+    intensitySpectrum: [
+      { word: "Wordy", level: "Mild" },
+      { word: "Verbose", level: "Medium" },
+      { word: "Sesquipedalian", level: "High" },
+      { word: "Logorrheic", level: "Extreme" }
+    ],
+    characterHook: "Shashi Tharoor",
+    hookWhy: "He uses words like 'Floccinaucinihilipilification' which requires a dictionary."
+  },
+  {
+    word: "Prolix",
+    partOfSpeech: "Adjective",
+    meaning: "Using or containing too many words; tediously lengthy.",
+    translation: "अतिविस्तृत / उबाऊ",
+    sentence: "The author's prolix style made the book difficult to read.",
+    synonyms: ["Verbose", "Wordy", "Long-winded"],
+    antonyms: ["Concise", "Terse", "Laconic"],
+    trick: "Pro + Licks -> Licking/dragging the topic like a pro.",
+    tone: "Negative (-)",
+    collocation: "Prolix speech",
+    intensitySpectrum: [
+      { word: "Chatty", level: "Mild" },
+      { word: "Wordy", level: "Medium" },
+      { word: "Prolix", level: "High" },
+      { word: "Never-ending", level: "Extreme" }
+    ],
+    characterHook: "Principal's Speech",
+    hookWhy: "The morning assembly speech that goes on for 45 minutes."
+  },
+  {
+    word: "Grandiloquent",
+    partOfSpeech: "Adjective",
+    meaning: "Pompous or extravagant in language, style, or manner.",
+    translation: "आडंबरपूर्ण / शब्दाडंबरपूर्ण",
+    sentence: "His grandiloquent claims about saving the world were met with laughter.",
+    synonyms: ["Pompous", "Bombastic", "Magniloquent"],
+    antonyms: ["Simple", "Plain", "Humble"],
+    trick: "Grand + Eloquent -> Speaking in a grand, showy way.",
+    tone: "Negative (-)",
+    collocation: "Grandiloquent language",
+    intensitySpectrum: [
+      { word: "Formal", level: "Mild" },
+      { word: "Fancy", level: "Medium" },
+      { word: "Grandiloquent", level: "High" },
+      { word: "Bombastic", level: "Extreme" }
+    ],
+    characterHook: "SoBo (South Bombay) Kids",
+    hookWhy: "Using fancy vocabulary just to sound superior and rich."
+  },
+  {
+    word: "Anemic",
+    partOfSpeech: "Adjective",
+    meaning: "Lacking vigor, energy, or spirit.",
+    translation: "कमज़ोर / निस्तेज",
+    sentence: "The team gave an anemic performance and lost the match.",
+    synonyms: ["Weak", "Feeble", "Insipid"],
+    antonyms: ["Vigorous", "Strong", "Robust"],
+    trick: "Enemy -> Enemy took all your energy, leaving you anemic.",
+    tone: "Negative (-)",
+    collocation: "Anemic growth",
+    intensitySpectrum: [
+      { word: "Tired", level: "Mild" },
+      { word: "Weak", level: "Medium" },
+      { word: "Anemic", level: "High" },
+      { word: "Lifeless", level: "Extreme" }
+    ],
+    characterHook: "India vs Australia (36 All Out)",
+    hookWhy: "The batting performance was completely lifeless and weak."
+  },
+  {
+    word: "Tepid",
+    partOfSpeech: "Adjective",
+    meaning: "Only slightly warm; showing little enthusiasm.",
+    translation: "गुनगुना / उत्साहहीन",
+    sentence: "The movie received a tepid response from the audience.",
+    synonyms: ["Lukewarm", "Unenthusiastic", "Apathetic"],
+    antonyms: ["Enthusiastic", "Passionate", "Ardent"],
+    trick: "Tea + Dip -> Dipping tea repeatedly makes it cool (tepid).",
+    tone: "Negative (-)",
+    collocation: "Tepid applause",
+    intensitySpectrum: [
+      { word: "Cool", level: "Mild" },
+      { word: "Uninterested", level: "Medium" },
+      { word: "Tepid", level: "High" },
+      { word: "Indifferent", level: "Extreme" }
+    ],
+    characterHook: "Audience watching a Flop Movie",
+    hookWhy: "Clapping slowly and looking bored (zero excitement)."
+  },
+  {
+    word: "Capricious",
+    partOfSpeech: "Adjective",
+    meaning: "Given to sudden and unaccountable changes of mood or behavior.",
+    translation: "सनकी / मनमौजी",
+    sentence: "The capricious climate made farming difficult.",
+    synonyms: ["Fickle", "Volatile", "Mercurial"],
+    antonyms: ["Stable", "Consistent", "Steady"],
+    trick: "Caprice -> Price of a cab (Cap) changes suddenly (Surge pricing).",
+    tone: "Negative (-)",
+    collocation: "Capricious nature",
+    intensitySpectrum: [
+      { word: "Changeable", level: "Mild" },
+      { word: "Moody", level: "Medium" },
+      { word: "Capricious", level: "High" },
+      { word: "Erratic", level: "Extreme" }
+    ],
+    characterHook: "Auto Rickshaw Drivers",
+    hookWhy: "Will they say Yes or No? It is purely based on their sudden mood."
+  },
+  {
+    word: "Eloquent",
+    partOfSpeech: "Adjective",
+    meaning: "Fluent or persuasive in speaking or writing.",
+    translation: "सुवक्ता",
+    sentence: "He gave an eloquent speech that moved everyone to tears.",
+    synonyms: ["Articulate", "Expressive", "Persuasive"],
+    antonyms: ["Inarticulate", "Tongue-tied", "Dull"],
+    trick: "E + Loqu (Speak) -> Speaking extremely well.",
+    tone: "Positive (+)",
+    collocation: "Eloquent speaker",
+    intensitySpectrum: [
+      { word: "Clear", level: "Mild" },
+      { word: "Fluent", level: "Medium" },
+      { word: "Eloquent", level: "High" },
+      { word: "Spellbinding", level: "Extreme" }
+    ],
+    characterHook: "Atal Bihari Vajpayee",
+    hookWhy: "His speeches were like poetry; he could convince anyone."
+  },
+  {
+    word: "Perspicuous",
+    partOfSpeech: "Adjective",
+    meaning: "Clearly expressed and easily understood; lucid.",
+    translation: "स्पष्ट / सुबोध",
+    sentence: "The teacher gave a perspicuous explanation of the complex theory.",
+    synonyms: ["Clear", "Lucid", "Intelligible"],
+    antonyms: ["Obscure", "Vague", "Ambiguous"],
+    trick: "Perspective -> Giving a clear perspective.",
+    tone: "Positive (+)",
+    collocation: "Perspicuous argument",
+    intensitySpectrum: [
+      { word: "Understandable", level: "Mild" },
+      { word: "Clear", level: "Medium" },
+      { word: "Perspicuous", level: "High" },
+      { word: "Crystal-clear", level: "Extreme" }
+    ],
+    characterHook: "Dr. APJ Abdul Kalam",
+    hookWhy: "He explained complex science in such simple language."
+  },
+  {
+    word: "Archaic",
+    partOfSpeech: "Adjective",
+    meaning: "Very old or old-fashioned.",
+    translation: "प्राचीन / पुराना",
+    sentence: "The laws are archaic and need to be updated.",
+    synonyms: ["Obsolete", "Antiquated", "Outdated"],
+    antonyms: ["Modern", "Contemporary", "Current"],
+    trick: "Arc -> Noah's Ark (Very old history).",
+    tone: "Negative (-)",
+    collocation: "Archaic laws",
+    intensitySpectrum: [
+      { word: "Old", level: "Mild" },
+      { word: "Outdated", level: "Medium" },
+      { word: "Archaic", level: "High" },
+      { word: "Prehistoric", level: "Extreme" }
+    ],
+    characterHook: "Dial-up Internet / Landlines",
+    hookWhy: "Gen Z looks at these as if they are from the stone age."
+  },
+  {
+    word: "Atavistic",
+    partOfSpeech: "Adjective",
+    meaning: "Relating to or characterized by reversion to something ancient or ancestral.",
+    translation: "पैतृक / पूर्वजों जैसा",
+    sentence: "The violence triggered an atavistic instinct for survival.",
+    synonyms: ["Primal", "Primitive", "Ancestral"],
+    antonyms: ["Modern", "Evolved", "Civilized"],
+    trick: "Avatar -> Going back to a previous avatar/ancestor.",
+    tone: "Neutral (0)",
+    collocation: "Atavistic fear",
+    intensitySpectrum: [
+      { word: "Old", level: "Mild" },
+      { word: "Instinctive", level: "Medium" },
+      { word: "Atavistic", level: "High" },
+      { word: "Feral", level: "Extreme" }
+    ],
+    characterHook: "Road Rage Fighting",
+    hookWhy: "Civilized people suddenly behaving like cavemen hitting each other."
+  },
+  {
+    word: "Timeworn",
+    partOfSpeech: "Adjective",
+    meaning: "Damaged or impaired, or made trite, by long use.",
+    translation: "जीर्ण-शीर्ण / घिसा-पिटा",
+    sentence: "He repeated the same timeworn excuses.",
+    synonyms: ["Worn", "Hackneyed", "Weather-beaten"],
+    antonyms: ["Fresh", "New", "Original"],
+    trick: "Time + Worn -> Worn out by the passage of time.",
+    tone: "Negative (-)",
+    collocation: "Timeworn clichés",
+    intensitySpectrum: [
+      { word: "Used", level: "Mild" },
+      { word: "Old", level: "Medium" },
+      { word: "Timeworn", level: "High" },
+      { word: "Decrepit", level: "Extreme" }
+    ],
+    characterHook: "Grandmother's Saree",
+    hookWhy: "It is old, faded, and used a thousand times, but still carries history."
+  },
+  {
+    word: "Vapid",
+    partOfSpeech: "Adjective",
+    meaning: "Offering nothing that is stimulating or challenging; bland.",
+    translation: "नीरस / बेस्वाद",
+    sentence: "The conversation was vapid and boring.",
+    synonyms: ["Insipid", "Uninspired", "Bland"],
+    antonyms: ["Lively", "Interesting", "Stimulating"],
+    trick: "Vapor -> Empty and gas-like (No substance).",
+    tone: "Negative (-)",
+    collocation: "Vapid conversation",
+    intensitySpectrum: [
+      { word: "Dull", level: "Mild" },
+      { word: "Boring", level: "Medium" },
+      { word: "Vapid", level: "High" },
+      { word: "Mind-numbing", level: "Extreme" }
+    ],
+    characterHook: "Ananya Panday's 'Struggle' Comment",
+    hookWhy: "The statement felt empty, shallow, and lacking real substance."
+  },
+  {
+    word: "Antediluvian",
+    partOfSpeech: "Adjective",
+    meaning: "Ridiculously old-fashioned (literally 'before the flood').",
+    translation: "अतिप्राचीन / बाबा आदम के जमाने का",
+    sentence: "His views on women are completely antediluvian.",
+    synonyms: ["Outdated", "Prehistoric", "Primeval"],
+    antonyms: ["Modern", "Current", "Up-to-date"],
+    trick: "Ante (Before) + Diluvian (Deluge/Flood).",
+    tone: "Negative (-)",
+    collocation: "Antediluvian attitudes",
+    intensitySpectrum: [
+      { word: "Old", level: "Mild" },
+      { word: "Ancient", level: "Medium" },
+      { word: "Antediluvian", level: "High" },
+      { word: "Fossilized", level: "Extreme" }
+    ],
+    characterHook: "Indian Rote Learning System",
+    hookWhy: "Using 100-year-old methods ('Ratta maar') in the age of AI."
+  }
+,
+
+
+
 ];
