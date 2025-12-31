@@ -22,7 +22,9 @@ interface GameQuestion {
   topic?: string;
   context?: string;
   synonyms?: string[]; 
-  antonyms?: string[]; 
+  antonyms?: string[];
+  translation?: string; // NEW
+  hookWhy?: string;     // NEW
 }
 
 interface WrongAnswer {
@@ -39,6 +41,8 @@ interface VocabSourceItem {
   trick?: string;
   synonyms?: string[];
   antonyms?: string[];
+  translation?: string; // NEW
+  hookWhy?: string;     // NEW
 }
 
 // Fisher-Yates Shuffle Algorithm for unbiased randomization
@@ -71,7 +75,9 @@ export const Practice: React.FC = () => {
         sentence: w.sentence,
         trick: w.trick,
         synonyms: w.synonyms,
-        antonyms: w.antonyms
+        antonyms: w.antonyms,
+        translation: w.translation,
+        hookWhy: w.hookWhy
     }));
 
     STATIC_VOCAB_DATA[SilsilaCategory.MASTER_COLLECTION].forEach(item => {
@@ -81,7 +87,9 @@ export const Practice: React.FC = () => {
             sentence: item.data.sentence,
             trick: item.data.trick,
             synonyms: item.data.synonyms,
-            antonyms: item.data.antonyms
+            antonyms: item.data.antonyms,
+            translation: item.data.translation,
+            hookWhy: item.data.hookWhy
         });
     });
     
@@ -159,7 +167,9 @@ export const Practice: React.FC = () => {
                     options: shuffleArray([target, ...distractors]),
                     trick: item.trick,
                     synonyms: item.synonyms,
-                    antonyms: item.antonyms
+                    antonyms: item.antonyms,
+                    translation: item.translation,
+                    hookWhy: item.hookWhy
                 };
             }
 
@@ -179,7 +189,9 @@ export const Practice: React.FC = () => {
                     options: shuffleArray([target, ...distractors]),
                     trick: item.trick,
                     synonyms: item.synonyms,
-                    antonyms: item.antonyms
+                    antonyms: item.antonyms,
+                    translation: item.translation,
+                    hookWhy: item.hookWhy
                 };
             }
 
@@ -200,7 +212,9 @@ export const Practice: React.FC = () => {
                 options: options,
                 trick: item.trick,
                 synonyms: item.synonyms,
-                antonyms: item.antonyms
+                antonyms: item.antonyms,
+                translation: item.translation,
+                hookWhy: item.hookWhy
             };
         });
     } else if (currentLevel === 'level2') {
@@ -225,7 +239,9 @@ export const Practice: React.FC = () => {
                 trick: item.trick,
                 context: item.meaning,
                 synonyms: item.synonyms,
-                antonyms: item.antonyms
+                antonyms: item.antonyms,
+                translation: item.translation,
+                hookWhy: item.hookWhy
             };
         });
     } else {
@@ -543,11 +559,15 @@ export const Practice: React.FC = () => {
          {selectedOption !== null && (
              <div className="bg-slate-50 border-t border-slate-100 p-4 animate-fade-in">
                 
-                {/* 1. Memory Hook (Trick) */}
-                {(currentLevel === 'level1' || currentLevel === 'level2') && currentQ.trick && (
+                {/* 1. Context / Hook (Translation + HookWhy) - REPLACES TRICK */}
+                {(currentLevel === 'level1' || currentLevel === 'level2') && (currentQ.translation || currentQ.hookWhy) && (
                     <div className="mb-3 bg-amber-50 border border-amber-100 rounded-lg p-2.5 flex gap-2 items-start">
                         <Lightbulb size={16} className="text-amber-500 shrink-0 mt-0.5" />
-                        <p className="text-amber-900 text-sm italic font-serif leading-snug">"{currentQ.trick}"</p>
+                        <p className="text-amber-900 text-sm italic font-serif leading-snug">
+                            {currentQ.translation && <span className="font-bold not-italic text-amber-800 mr-2">{currentQ.translation}</span>}
+                            {currentQ.translation && currentQ.hookWhy && <span className="mr-2 opacity-60">➤</span>}
+                            {currentQ.hookWhy}
+                        </p>
                     </div>
                 )}
                 

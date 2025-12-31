@@ -1,4 +1,5 @@
 
+
 export interface WordAnalysis {
   word: string;
   partOfSpeech: string;
@@ -62,6 +63,7 @@ export interface ApiSettings {
 export enum AppTab {
   EXPLORER = 'explorer',
   NOTEBOOK = 'notebook',
+  NOTEBOOK2 = 'notebook2',
   READING = 'reading',
   SILSILA = 'silsila',
   PRACTICE = 'practice',

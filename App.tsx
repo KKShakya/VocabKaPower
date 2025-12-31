@@ -5,10 +5,11 @@ import { ReadingComprehension } from './components/ReadingComprehension';
 import { VocabSilsila } from './components/VocabSilsila';
 import { Practice } from './components/Practice';
 import { Notebook } from './components/Notebook';
+import { Notebook2 } from './components/Notebook2';
 import { SettingsModal } from './components/SettingsModal';
 import { initStorage } from './services/storageService';
 import { AppTab } from './types';
-import { Compass, Book, Layers, Zap, Bookmark } from 'lucide-react';
+import { Compass, Book, Layers, Zap, Bookmark, Scroll } from 'lucide-react';
 
 const App: React.FC = () => {
   const [currentTab, setCurrentTab] = useState<AppTab>(AppTab.EXPLORER);
@@ -37,6 +38,7 @@ const App: React.FC = () => {
     switch (currentTab) {
       case AppTab.EXPLORER: return <WordExplorer key={refreshTrigger} />;
       case AppTab.NOTEBOOK: return <Notebook key={refreshTrigger} />;
+      case AppTab.NOTEBOOK2: return <Notebook2 key={refreshTrigger} />;
       case AppTab.READING: return <ReadingComprehension key={refreshTrigger} />;
       case AppTab.SILSILA: return <VocabSilsila key={refreshTrigger} />;
       case AppTab.PRACTICE: return <Practice key={refreshTrigger} />;
@@ -48,6 +50,7 @@ const App: React.FC = () => {
     { id: AppTab.EXPLORER, label: 'Explorer', icon: Compass },
     { id: AppTab.SILSILA, label: 'Words Ebb', icon: Layers },
     { id: AppTab.NOTEBOOK, label: 'Notebook', icon: Bookmark },
+    { id: AppTab.NOTEBOOK2, label: 'NB 2', icon: Scroll },
     { id: AppTab.READING, label: 'Reading', icon: Book },
     { id: AppTab.PRACTICE, label: 'Practice', icon: Zap },
   ];
@@ -57,7 +60,7 @@ const App: React.FC = () => {
       
       {/* Floating Glass Header */}
       <div className="fixed top-0 left-0 right-0 z-50 p-4 flex justify-center pointer-events-none">
-        <header className={`pointer-events-auto transition-all duration-500 ease-out flex items-center justify-between px-2 sm:px-4 py-2 rounded-full border border-white/50 shadow-xl backdrop-blur-xl bg-white/70 max-w-5xl w-full ${scrolled ? 'shadow-slate-200/50 bg-white/80' : 'shadow-sm'}`}>
+        <header className={`pointer-events-auto transition-all duration-500 ease-out flex items-center justify-between px-2 sm:px-4 py-2 rounded-full border border-white/50 shadow-xl backdrop-blur-xl bg-white/70 max-w-6xl w-full ${scrolled ? 'shadow-slate-200/50 bg-white/80' : 'shadow-sm'}`}>
           
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer pl-2 group" onClick={() => setCurrentTab(AppTab.EXPLORER)}>
@@ -81,7 +84,7 @@ const App: React.FC = () => {
                 <button
                   key={item.id}
                   onClick={() => setCurrentTab(item.id)}
-                  className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 relative overflow-hidden
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 relative overflow-hidden
                     ${isActive 
                       ? 'text-white shadow-lg' 
                       : 'text-slate-500 hover:text-slate-900 hover:bg-white/60'
@@ -112,16 +115,16 @@ const App: React.FC = () => {
       </main>
 
       {/* Mobile Nav (Bottom Glass) */}
-      <nav className="md:hidden fixed bottom-6 left-4 right-4 bg-white/80 backdrop-blur-xl border border-white/60 rounded-2xl shadow-2xl z-50 p-2 flex justify-around items-center">
+      <nav className="md:hidden fixed bottom-6 left-2 right-2 bg-white/80 backdrop-blur-xl border border-white/60 rounded-2xl shadow-2xl z-50 p-2 flex justify-around items-center">
         {navItems.map((item) => {
            const isActive = currentTab === item.id;
            return (
              <button
                 key={item.id}
                 onClick={() => setCurrentTab(item.id)}
-                className={`flex flex-col items-center justify-center w-14 h-14 rounded-xl transition-all ${isActive ? 'bg-slate-900 text-white shadow-lg shadow-slate-900/20 scale-110' : 'text-slate-400 hover:bg-slate-50'}`}
+                className={`flex flex-col items-center justify-center w-12 h-12 rounded-xl transition-all ${isActive ? 'bg-slate-900 text-white shadow-lg shadow-slate-900/20 scale-105' : 'text-slate-400 hover:bg-slate-50'}`}
              >
-               <item.icon size={20} className={isActive ? 'text-brand-300' : ''} />
+               <item.icon size={18} className={isActive ? 'text-brand-300' : ''} />
              </button>
            )
         })}
