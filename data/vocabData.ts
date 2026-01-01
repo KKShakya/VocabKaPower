@@ -771,6 +771,144 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
       word: "Beat Around the Bush",
       context: "Common Idiom",
       definition: "Avoiding the main topic; not speaking directly about the issue.\nUsage: 'Stop beating around the bush and tell me what happened.'"
+    },
+    {
+      type: 'simple',
+      word: "Red Herring",
+      context: "Common Idiom",
+      definition: "Something that distracts attention from the real issue.\nUsage: 'The clues were just a red herring to keep us from finding the real culprit.'"
+    },
+    {
+      type: 'simple',
+      word: "Silver Lining",
+      context: "Common Idiom",
+      definition: "A positive aspect in an otherwise negative situation.\nUsage: 'The silver lining of losing my job was that I finally started my own business.'"
+    },
+    {
+      type: 'simple',
+      word: "Flesh Out",
+      context: "Common Idiom",
+      definition: "To add more details or develop.\nUsage: 'You need to flesh out your essay with more examples.'"
+    },
+    {
+      type: 'simple',
+      word: "Play Out",
+      context: "Common Idiom",
+      definition: "To unfold over time.\nUsage: 'We have to wait and see how the situation plays out.'"
+    },
+    {
+      type: 'simple',
+      word: "Acid Test",
+      context: "Common Idiom",
+      definition: "A decisive test that proves true worth or quality.\nUsage: 'The next match will be the acid test for the new team.'"
+    },
+    {
+      type: 'simple',
+      word: "Wind Down",
+      context: "Common Idiom",
+      definition: "Bring something to an end or relax.\nUsage: 'The party began to wind down around midnight.'"
+    },
+    {
+      type: 'simple',
+      word: "Draw a Line in the Sand",
+      context: "Common Idiom",
+      definition: "Limit beyond which no compromise is possible.\nUsage: 'The manager drew a line in the sand regarding budget cuts.'"
+    },
+    {
+      type: 'simple',
+      word: "In the Offing",
+      context: "Common Idiom",
+      definition: "Likely to happen soon.\nUsage: 'Major changes are in the offing for the company.'"
+    },
+    {
+      type: 'simple',
+      word: "At the Helm of",
+      context: "Common Idiom",
+      definition: "In charge of.\nUsage: 'With the new CEO at the helm of the company, profits are rising.'"
+    },
+    {
+      type: 'simple',
+      word: "By Leaps and Bounds",
+      context: "Common Idiom",
+      definition: "Very rapidly or quickly.\nUsage: 'Her English is improving by leaps and bounds.'"
+    },
+    {
+      type: 'simple',
+      word: "On the Back of",
+      context: "Common Idiom",
+      definition: "Because of, as a direct result of.\nUsage: 'Profits rose on the back of strong sales in Asia.'"
+    },
+    {
+      type: 'simple',
+      word: "The Writing on the Wall",
+      context: "Common Idiom",
+      definition: "Clear signs that something bad is going to happen.\nUsage: 'He saw the writing on the wall and resigned before he was fired.'"
+    },
+    {
+      type: 'simple',
+      word: "Edge Out",
+      context: "Common Idiom",
+      definition: "To defeat or surpass someone by a small margin.\nUsage: 'She edged out her rival for the gold medal.'"
+    },
+    {
+      type: 'simple',
+      word: "Throw Cold Water On",
+      context: "Common Idiom",
+      definition: "To discourage or dampen enthusiasm.\nUsage: 'He threw cold water on my plans to travel Europe.'"
+    },
+    {
+      type: 'simple',
+      word: "Hold One's Feet to the Fire",
+      context: "Common Idiom",
+      definition: "To put strong pressure on someone to act or explain.\nUsage: 'The reporters held the politician feet to the fire regarding the scandal.'"
+    },
+    {
+      type: 'simple',
+      word: "Bear Out",
+      context: "Common Idiom",
+      definition: "To confirm or support a claim.\nUsage: 'The evidence bears out his testimony.'"
+    },
+    {
+      type: 'simple',
+      word: "Zero Out",
+      context: "Common Idiom",
+      definition: "To reduce something to nothing.\nUsage: 'We need to zero out our debt by next year.'"
+    },
+    {
+      type: 'simple',
+      word: "At Loggerheads",
+      context: "Common Idiom",
+      definition: "In strong disagreement.\nUsage: 'The management and the union have been at loggerheads for weeks.'"
+    },
+    {
+      type: 'simple',
+      word: "Carry the Day",
+      context: "Common Idiom",
+      definition: "To win support or succeed after debate or struggle.\nUsage: 'Despite strong opposition, his proposal carried the day.'"
+    },
+    {
+      type: 'simple',
+      word: "Keep One's Powder Dry",
+      context: "Common Idiom",
+      definition: "To remain cautious and prepared for the future.\nUsage: 'We should invest some now, but keep our powder dry for better opportunities.'"
+    },
+    {
+      type: 'simple',
+      word: "Hammer Out",
+      context: "Common Idiom",
+      definition: "To negotiate and finalize after discussion.\nUsage: 'They managed to hammer out a deal by midnight.'"
+    },
+    {
+      type: 'simple',
+      word: "Call Someone's Bluff",
+      context: "Common Idiom",
+      definition: "To challenge a threat or claim believed to be empty.\nUsage: 'He threatened to quit, so I called his bluff and accepted his resignation.'"
+    },
+    {
+      type: 'simple',
+      word: "Sour the Mood",
+      context: "Common Idiom",
+      definition: "To spoil the atmosphere.\nUsage: 'His rude comment soured the mood of the party.'"
     }
   ]
 };
