@@ -149,6 +149,7 @@ export const generateSilsila = async (category: SilsilaCategory): Promise<Silsil
     [SilsilaCategory.TRENDING]: "List 5 trending or sophisticated English words used in top editorial columns recently (like 'starkly', 'expatriate').",
     [SilsilaCategory.MASTER_COLLECTION]: "List 5 essential master vocabulary words for advanced learners.",
     [SilsilaCategory.IDIOMS]: "List 5 common English idioms or phrases useful for competitive exams, with their meanings and an example sentence.",
+    [SilsilaCategory.ROOT_WORDS]: "List 5 common English root words with their meanings and examples.",
   };
 
   const schema: Schema = {
