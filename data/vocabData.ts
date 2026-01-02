@@ -910,5 +910,252 @@ export const STATIC_VOCAB_DATA: Record<SilsilaCategory, SilsilaItem[]> = {
       context: "Common Idiom",
       definition: "To spoil the atmosphere.\nUsage: 'His rude comment soured the mood of the party.'"
     }
+  ],
+  [SilsilaCategory.ROOT_WORDS]: [
+    {
+      type: 'root',
+      root: "Anim",
+      meaning: "Life / Spirit / Mind",
+      examples: ["Animal", "Animated", "Unanimous", "Animosity", "Equanimity"],
+      trick: "Animation -> Bringing drawings to 'life'."
+    },
+    {
+      type: 'root',
+      root: "Culp",
+      meaning: "Blame / Fault",
+      examples: ["Culprit", "Culpable", "Exculpate", "Mea Culpa"],
+      trick: "Culprit -> The person who is to 'blame'."
+    },
+    {
+      type: 'root',
+      root: "Doc / Doct",
+      meaning: "Teach",
+      examples: ["Doctor", "Doctrine", "Docile", "Document"],
+      trick: "Document -> A paper that 'teaches' or proves something."
+    },
+    {
+      type: 'root',
+      root: "Err",
+      meaning: "Wander / Mistake",
+      examples: ["Error", "Erratic", "Aberration", "Erroneous"],
+      trick: "Error -> A 'mistake' made by wandering off the right path."
+    },
+    {
+      type: 'root',
+      root: "Flu / Flux",
+      meaning: "Flow",
+      examples: ["Fluid", "Fluent", "Influx", "Superfluous", "Confluence"],
+      trick: "Flu -> When you have the flu, your nose 'flows'."
+    },
+    {
+      type: 'root',
+      root: "Gen",
+      meaning: "Birth / Race / Kind",
+      examples: ["Generation", "Genesis", "Genocide", "Progeny", "Congenital"],
+      trick: "Gene -> Your genes determine your 'birth' and characteristics."
+    },
+    {
+      type: 'root',
+      root: "Ject",
+      meaning: "Throw",
+      examples: ["Eject", "Reject", "Inject", "Conjecture", "Projectile"],
+      trick: "Eject -> To 'throw' something out."
+    },
+    {
+      type: 'root',
+      root: "Jur / Jus",
+      meaning: "Law / Right",
+      examples: ["Jury", "Justice", "Perjury", "Jurisdiction"],
+      trick: "Jury -> A group sworn to uphold the 'law'."
+    },
+    {
+      type: 'root',
+      root: "Mis / Mit",
+      meaning: "Send",
+      examples: ["Mission", "Transmit", "Remit", "Dismiss", "Missile"],
+      trick: "Missile -> A weapon 'sent' to a target."
+    },
+    {
+      type: 'root',
+      root: "Mut",
+      meaning: "Change",
+      examples: ["Mutation", "Commute", "Immutable", "Transmute"],
+      trick: "Mutant -> Someone whose DNA has 'changed'."
+    },
+    {
+      type: 'root',
+      root: "Nov",
+      meaning: "New",
+      examples: ["Novel", "Innovate", "Novice", "Renovate"],
+      trick: "Renovate -> To make a house look 'new' again."
+    },
+    {
+      type: 'root',
+      root: "Port",
+      meaning: "Carry",
+      examples: ["Portable", "Export", "Transport", "Deport", "Porter"],
+      trick: "Porter -> A person who 'carries' luggage at the station."
+    },
+    {
+      type: 'root',
+      root: "Rupt",
+      meaning: "Break / Burst",
+      examples: ["Eruption", "Interrupt", "Bankrupt", "Corrupt", "Rupture"],
+      trick: "Rip -> To 'break' or tear something apart."
+    },
+    {
+      type: 'root',
+      root: "Sci",
+      meaning: "Know",
+      examples: ["Science", "Conscience", "Omniscient", "Prescient"],
+      trick: "Science -> The systematic study to 'know' the world."
+    },
+    {
+      type: 'root',
+      root: "Scrib / Script",
+      meaning: "Write",
+      examples: ["Scripture", "Describe", "Manuscript", "Inscribe", "Scribble"],
+      trick: "Scribble -> To 'write' carelessly."
+    },
+    {
+      type: 'root',
+      root: "Sol",
+      meaning: "Alone",
+      examples: ["Solo", "Solitary", "Desolate", "Soliloquy"],
+      trick: "Solo -> Performing 'alone'."
+    },
+    {
+      type: 'root',
+      root: "Tact / Tang",
+      meaning: "Touch",
+      examples: ["Contact", "Tactile", "Tangible", "Intact", "Contagious"],
+      trick: "Contact -> To be in 'touch' with someone."
+    },
+    {
+      type: 'root',
+      root: "Ten / Tin / Tain",
+      meaning: "Hold",
+      examples: ["Contain", "Retain", "Tenacious", "Tenure", "Sustain"],
+      trick: "Container -> An object that 'holds' things."
+    },
+    {
+      type: 'root',
+      root: "Vid / Vis",
+      meaning: "See",
+      examples: ["Video", "Vision", "Invisible", "Evident", "Supervise"],
+      trick: "Visual -> Something related to 'seeing'."
+    },
+    {
+      type: 'root',
+      root: "Viv / Vit",
+      meaning: "Life",
+      examples: ["Vivid", "Vital", "Revive", "Vivacious", "Vitamin"],
+      trick: "Vitamin -> Essential nutrients for 'life'."
+    },
+    {
+      type: 'root',
+      root: "Spect",
+      meaning: "Look / See",
+      examples: ["Spectator", "Inspect", "Spectacle", "Retrospect"],
+      trick: "Spectacles -> You need specs to 'see' clearly."
+    },
+    {
+      type: 'root',
+      root: "Voc / Vok",
+      meaning: "Voice / Call",
+      examples: ["Vocal", "Provoke", "Advocate", "Evoke"],
+      trick: "Vocal -> Using your voice loudly."
+    },
+    {
+      type: 'root',
+      root: "Vert / Vers",
+      meaning: "Turn",
+      examples: ["Introvert", "Convert", "Revert", "Controversy"],
+      trick: "Reverse -> To 'turn' the car back."
+    },
+    {
+      type: 'root',
+      root: "Dict",
+      meaning: "Speak / Say",
+      examples: ["Dictator", "Verdict", "Predict", "Contradict"],
+      trick: "Dictionary -> A book full of 'words/sayings'."
+    },
+    {
+      type: 'root',
+      root: "Gress / Grad",
+      meaning: "Step / Go",
+      examples: ["Progress", "Aggressive", "Graduate", "Digress"],
+      trick: "Grade -> You go a 'step' up when you pass a grade."
+    },
+    {
+      type: 'root',
+      root: "Duc / Duct",
+      meaning: "Lead / Pull",
+      examples: ["Conduct", "Educate", "Induct", "Abduct"],
+      trick: "Conductor -> The person who 'leads' the bus passengers."
+    },
+    {
+      type: 'root',
+      root: "Tract",
+      meaning: "Pull / Drag",
+      examples: ["Tractor", "Attract", "Distract", "Contract"],
+      trick: "Tractor -> A vehicle used to 'pull' heavy loads."
+    },
+    {
+      type: 'root',
+      root: "Omni",
+      meaning: "All",
+      examples: ["Omnipresent", "Omnipotent", "Omnivore"],
+      trick: "Omni Van -> The van that fits 'ALL' the family members."
+    },
+    {
+      type: 'root',
+      root: "Mort",
+      meaning: "Death",
+      examples: ["Mortal", "Immortal", "Mortuary", "Postmortem"],
+      trick: "Mortein -> The spray that causes 'death' to mosquitoes."
+    },
+    {
+      type: 'root',
+      root: "Phil",
+      meaning: "Love",
+      examples: ["Philanthropy", "Philosophy", "Bibliophile"],
+      trick: "Feel -> Love is a 'feeling'."
+    },
+    {
+      type: 'root',
+      root: "Somn",
+      meaning: "Sleep",
+      examples: ["Insomnia", "Somnambulist", "Somnolent"],
+      trick: "Sound -> Sleeping 'soundly'."
+    },
+    {
+      type: 'root',
+      root: "Luc / Lum",
+      meaning: "Light",
+      examples: ["Lucid", "Illuminate", "Translucent", "Luminary"],
+      trick: "Luminous -> Giving off light (like a battery/bulb)."
+    },
+    {
+      type: 'root',
+      root: "Derm",
+      meaning: "Skin",
+      examples: ["Dermatologist", "Epidermis", "Pachyderm"],
+      trick: "Dermi Cool -> Powder for the 'skin'."
+    },
+    {
+      type: 'root',
+      root: "Crat / Cracy",
+      meaning: "Rule / Power",
+      examples: ["Democracy", "Bureaucrat", "Aristocrat", "Autocracy"],
+      trick: "Create -> Those who 'create' the rules."
+    },
+    {
+      type: 'root',
+      root: "Theo",
+      meaning: "God",
+      examples: ["Theist", "Atheist", "Theology", "Monotheism"],
+      trick: "The -> The God."
+    }
   ]
 };

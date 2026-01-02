@@ -3,6 +3,7 @@ import React, { useState, useMemo } from 'react';
 import { Brain, Trophy, ArrowRight, RotateCcw, CheckCircle2, XCircle, Lightbulb, Target, AlertTriangle, BookOpen, Layers, ChevronLeft } from 'lucide-react';
 import { Button } from './Button';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
+import { STATIC_NOTEBOOK_DATA_2 } from '../data/staticNotebookData2';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
 import { STATIC_GRAMMAR_DATA } from '../data/grammarData';
 import { SilsilaCategory, PracticeLevel, GrammarItem } from '../types';
@@ -69,6 +70,7 @@ export const Practice: React.FC = () => {
   const vocabSource = useMemo<VocabSourceItem[]>(() => {
     const combined: VocabSourceItem[] = [];
     
+    // Add Notebook 1
     STATIC_NOTEBOOK_DATA.forEach(w => combined.push({ 
         word: w.word, 
         meaning: w.meaning, 
@@ -80,6 +82,19 @@ export const Practice: React.FC = () => {
         hookWhy: w.hookWhy
     }));
 
+    // Add Notebook 2
+    STATIC_NOTEBOOK_DATA_2.forEach(w => combined.push({ 
+        word: w.word, 
+        meaning: w.meaning, 
+        sentence: w.sentence,
+        trick: w.trick,
+        synonyms: w.synonyms,
+        antonyms: w.antonyms,
+        translation: w.translation,
+        hookWhy: w.hookWhy
+    }));
+
+    // Add Silsila
     STATIC_VOCAB_DATA[SilsilaCategory.MASTER_COLLECTION].forEach(item => {
         if(item.type === 'detailed') combined.push({ 
             word: item.data.word, 

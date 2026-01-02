@@ -1,5 +1,4 @@
 
-
 export interface WordAnalysis {
   word: string;
   partOfSpeech: string;
@@ -45,7 +44,8 @@ export interface ReadingComprehension {
 // Discriminated Union for Silsila Items
 export type SilsilaItem = 
   | { type: 'simple'; word: string; context: string; definition: string }
-  | { type: 'detailed'; data: WordAnalysis };
+  | { type: 'detailed'; data: WordAnalysis }
+  | { type: 'root'; root: string; meaning: string; examples: string[]; trick: string };
 
 export interface PracticeQuestion {
   type: 'meaning_to_word' | 'word_to_meaning';
@@ -75,6 +75,7 @@ export enum SilsilaCategory {
   CONFUSING = 'Commonly Confusing',
   TRENDING = 'Trending Words',
   IDIOMS = 'Idioms & Phrases',
+  ROOT_WORDS = 'Root Words',
 }
 
 // --- NEW PRACTICE TYPES ---

@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { History, GitCompare, TrendingUp, ChevronRight, GraduationCap, ArrowLeft, Smile, CloudRain, Flame, Shield, Skull, HelpCircle, Zap, Coffee, Quote, Gavel, Timer, Layers } from 'lucide-react';
+import { History, GitCompare, TrendingUp, ChevronRight, GraduationCap, ArrowLeft, Smile, CloudRain, Flame, Shield, Skull, HelpCircle, Zap, Coffee, Quote, Gavel, Timer, Layers, Sprout } from 'lucide-react';
 import { SilsilaCategory, SilsilaItem, WordAnalysis } from '../types';
 import { STATIC_VOCAB_DATA } from '../data/vocabData';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
@@ -82,6 +82,15 @@ const CATEGORIES = [
     gradient: "from-emerald-400 to-emerald-600",
     bg: "bg-emerald-50",
     text: "text-emerald-700"
+  },
+  {
+    id: SilsilaCategory.ROOT_WORDS,
+    title: "Root Words",
+    description: "Understand the building blocks of English (Etymology).",
+    icon: Sprout,
+    gradient: "from-amber-400 to-orange-600",
+    bg: "bg-amber-50",
+    text: "text-amber-700"
   },
   {
     id: SilsilaCategory.PREVIOUS_YEAR,
@@ -201,7 +210,7 @@ export const VocabSilsila: React.FC = () => {
     // --- MASTER COLLECTION VIEW ---
     if (selectedCategory === SilsilaCategory.MASTER_COLLECTION) {
         return (
-            <div className="max-w-4xl mx-auto pb-12">
+            <div className="max-w-6xl mx-auto pb-12">
                 <button 
                     onClick={clearSelection} 
                     className="mb-6 group flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-sm border border-white/60 hover:bg-white text-slate-600 hover:text-slate-900 transition-all shadow-sm"
@@ -275,7 +284,7 @@ export const VocabSilsila: React.FC = () => {
 
     // --- OTHER COLLECTIONS VIEW ---
     return (
-      <div className="max-w-5xl mx-auto pb-12">
+      <div className="max-w-6xl mx-auto pb-12">
         <button 
             onClick={clearSelection} 
             className="mb-8 group flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-sm border border-white/60 hover:bg-white text-slate-600 hover:text-slate-900 transition-all shadow-sm"
@@ -286,10 +295,10 @@ export const VocabSilsila: React.FC = () => {
 
         <div className="mb-8 pl-2">
             <h2 className="text-4xl font-serif font-bold text-slate-900 mb-2">{selectedCategory}</h2>
-            <p className="text-slate-500">Curated list of {items.length} words</p>
+            <p className="text-slate-500">Curated list of {items.length} items</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {items.map((item, idx) => {
               if (item.type === 'detailed') {
                 return (
@@ -298,8 +307,36 @@ export const VocabSilsila: React.FC = () => {
                   </div>
                 );
               }
+
+              if (item.type === 'root') {
+                return (
+                    <div key={idx} className="glass-card rounded-2xl p-6 hover:shadow-xl hover:bg-white/80 transition-all duration-300 group border border-white/60 relative overflow-hidden flex flex-col h-full">
+                        <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-amber-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="flex justify-between items-center mb-4 border-b border-slate-100 pb-3">
+                            <h3 className="text-2xl font-serif font-bold text-slate-800 group-hover:text-amber-700 transition-colors">{item.root}</h3>
+                            <span className="text-xs font-bold px-3 py-1 bg-amber-50 text-amber-700 rounded-full border border-amber-100 uppercase tracking-wide whitespace-nowrap overflow-hidden text-ellipsis max-w-[50%]">{item.meaning}</span>
+                        </div>
+                        
+                        <div className="space-y-4 flex-1">
+                             <div className="bg-slate-50 p-3 rounded-xl border border-slate-100 text-sm text-slate-600">
+                                <span className="font-bold text-[10px] text-slate-400 uppercase tracking-wider block mb-1">Memory Hook</span>
+                                <span className="font-medium text-slate-800">{item.trick}</span>
+                            </div>
+            
+                            <div>
+                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-2">Common Words</span>
+                                <div className="flex flex-wrap gap-2">
+                                    {item.examples.map((ex, i) => (
+                                        <span key={i} className="text-xs font-semibold bg-white border border-slate-200 px-2 py-1 rounded-md text-slate-600 shadow-sm">{ex}</span>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )
+              }
               
-              // Simple Glass Card with Enhanced Typography
+              // Simple Glass Card for other types
               return (
                 <div key={idx} className="glass-card rounded-2xl p-6 hover:shadow-xl hover:bg-white/80 transition-all duration-300 group border border-white/60 relative overflow-hidden flex flex-col h-full">
                     <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-brand-400 to-brand-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -319,7 +356,7 @@ export const VocabSilsila: React.FC = () => {
   }
 
   return (
-    <div className="max-w-5xl mx-auto pb-12">
+    <div className="max-w-6xl mx-auto pb-12">
       <div className="text-center mb-16 space-y-4">
         <h2 className="text-5xl font-serif font-bold text-slate-900">Vocab Silsila</h2>
         <p className="text-lg text-slate-500 max-w-2xl mx-auto">
@@ -328,12 +365,12 @@ export const VocabSilsila: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-2">
         {CATEGORIES.map((cat) => (
           <div 
             key={cat.id}
             onClick={() => handleSelect(cat.id)}
-            className="group relative bg-white/40 backdrop-blur-md border border-white/60 rounded-3xl p-8 cursor-pointer hover:bg-white/70 transition-all duration-500 hover:shadow-2xl hover:shadow-brand-900/5 overflow-hidden hover:-translate-y-1"
+            className="group relative bg-white/40 backdrop-blur-md border border-white/60 rounded-3xl p-8 cursor-pointer hover:bg-white/70 transition-all duration-500 hover:shadow-2xl hover:shadow-brand-900/5 overflow-hidden hover:-translate-y-1 h-full"
           >
             {/* Background Gradient Blob */}
             <div className={`absolute -right-10 -top-10 w-40 h-40 bg-gradient-to-br ${cat.gradient} rounded-full opacity-10 blur-3xl group-hover:opacity-20 transition-opacity duration-500`}></div>
