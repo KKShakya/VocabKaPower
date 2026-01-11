@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { WordAnalysis } from '../types';
-import { Search, Book, Sparkles, Clapperboard, X, Minus } from 'lucide-react';
+import { Search, Book, Sparkles, Clapperboard, Minus } from 'lucide-react';
 import { WordCard } from './WordCard';
 import { STATIC_NOTEBOOK_DATA } from '../data/staticNotebookData';
 

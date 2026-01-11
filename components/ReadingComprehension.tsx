@@ -11,7 +11,7 @@ export const ReadingComprehension: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const [showResults, setShowResults] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(240); // 4 minutes in seconds
+  const [timeLeft, setTimeLeft] = useState(210); // 3 minutes 30 seconds
 
   const fetchPassage = async () => {
     if (!topic.trim()) return;
@@ -19,7 +19,7 @@ export const ReadingComprehension: React.FC = () => {
     setData(null);
     setSelectedAnswers({});
     setShowResults(false);
-    setTimeLeft(240); // Reset timer
+    setTimeLeft(210); // Reset timer to 3m 30s
     try {
       const result = await generateReadingComprehension(topic);
       setData(result);

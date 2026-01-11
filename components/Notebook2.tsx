@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { WordAnalysis } from '../types';
-import { Search, Book, Sparkles, Clapperboard, X, Minus } from 'lucide-react';
+import { Search, Book, Sparkles, Clapperboard, Minus } from 'lucide-react';
 import { WordCard } from './WordCard';
 import { STATIC_NOTEBOOK_DATA_2 } from '../data/staticNotebookData2';
 
@@ -124,15 +124,15 @@ export const Notebook2: React.FC = () => {
 
       {/* Detail Modal */}
       {selectedWord && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-2 bg-slate-900/60 backdrop-blur-md animate-fade-in" onClick={() => setSelectedWord(null)}>
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md animate-fade-in" onClick={() => setSelectedWord(null)}>
             
             {/* Mobile Minimize Button - Floating Bottom Right */}
             <button 
                 onClick={(e) => { e.stopPropagation(); setSelectedWord(null); }}
-                className="md:hidden fixed bottom-10 right-4 z-[120] w-8 h-8 bg-white text-slate-800 rounded-full shadow-xl flex items-center justify-center active:scale-60 transition-all border border-slate-200 ring-4 ring-black/5"
+                className="md:hidden fixed bottom-32 right-6 z-[120] w-12 h-12 bg-white text-slate-800 rounded-full shadow-2xl flex items-center justify-center active:scale-90 transition-all border border-slate-200 ring-4 ring-black/5"
                 aria-label="Minimize"
             >
-                <Minus size={10} strokeWidth={3} />
+                <Minus size={24} strokeWidth={3} />
             </button>
 
             <div className="w-full max-w-md max-h-[85vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
