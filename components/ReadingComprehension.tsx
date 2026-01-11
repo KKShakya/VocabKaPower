@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { BookOpen, CheckCircle, XCircle, RefreshCw, Feather, Target, HelpCircle, FileText, ArrowRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { BookOpen, CheckCircle, XCircle, RefreshCw, Feather, Target, HelpCircle, FileText, ArrowRight, Timer } from 'lucide-react';
 import { generateReadingComprehension } from '../services/geminiService';
 import { ReadingComprehension as RCData } from '../types';
 import { Button } from './Button';
@@ -11,6 +11,7 @@ export const ReadingComprehension: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const [showResults, setShowResults] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(240); // 4 minutes in seconds
 
   const fetchPassage = async () => {
     if (!topic.trim()) return;
@@ -18,6 +19,7 @@ export const ReadingComprehension: React.FC = () => {
     setData(null);
     setSelectedAnswers({});
     setShowResults(false);
+    setTimeLeft(240); // Reset timer
     try {
       const result = await generateReadingComprehension(topic);
       setData(result);
@@ -42,12 +44,33 @@ export const ReadingComprehension: React.FC = () => {
     }, 100);
   };
 
+  useEffect(() => {
+    if (!data || showResults) return;
+
+    if (timeLeft === 0) {
+      checkAnswers();
+      return;
+    }
+
+    const timerId = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, [data, showResults, timeLeft]);
+
   const score = data ? data.questions.reduce((acc, q) => {
     return acc + (selectedAnswers[q.id] === q.correctAnswer ? 1 : 0);
   }, 0) : 0;
 
+  const formatTime = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+  };
+
   return (
-    <div className="max-w-4xl mx-auto pb-12">
+    <div className="max-w-4xl mx-auto pb-12 relative">
       
       {/* Search Header */}
       <div className={`transition-all duration-500 ${!data ? 'min-h-[60vh] flex flex-col justify-center' : 'mb-8'}`}>
@@ -78,8 +101,23 @@ export const ReadingComprehension: React.FC = () => {
       </div>
 
       {data && (
-        <div className="space-y-8 animate-fade-in">
+        <div className="space-y-8 animate-fade-in relative">
           
+          {/* Timer Sticky Header */}
+          {!showResults && (
+            <div className="sticky top-24 z-30 flex justify-center pointer-events-none">
+                <div className={`pointer-events-auto flex items-center gap-3 px-6 py-2 rounded-full shadow-lg border backdrop-blur-md transition-colors duration-500 ${
+                    timeLeft < 30 ? 'bg-red-500 text-white border-red-400 animate-pulse' : 
+                    timeLeft < 60 ? 'bg-amber-100 text-amber-800 border-amber-200' : 
+                    'bg-slate-900 text-white border-slate-700'
+                }`}>
+                    <Timer size={18} className={timeLeft < 30 ? 'animate-spin' : ''} />
+                    <span className="font-mono font-bold text-lg">{formatTime(timeLeft)}</span>
+                    <span className="text-xs opacity-80 uppercase font-bold tracking-wider border-l pl-3 ml-1 border-white/20">Time Remaining</span>
+                </div>
+            </div>
+          )}
+
           {/* Main Passage */}
           <div className="bg-white p-8 md:p-10 rounded-3xl shadow-md border border-slate-100 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-brand-500 to-accent-600"></div>
@@ -155,7 +193,7 @@ export const ReadingComprehension: React.FC = () => {
                 onClick={checkAnswers} 
                 className="shadow-2xl scale-110"
                 size="lg"
-                disabled={Object.keys(selectedAnswers).length < data.questions.length}
+                disabled={Object.keys(selectedAnswers).length < data.questions.length && timeLeft > 0}
               >
                 Submit Answers <ArrowRight size={18} />
               </Button>
