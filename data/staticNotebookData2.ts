@@ -446,5 +446,265 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     ],
     characterHook: "Ravi Shastri (Commentary)",
     hookWhy: "He extols every boundary with 'That went like a tracer bullet!'"
+  },
+  {
+    word: "Protract",
+    partOfSpeech: "Verb",
+    meaning: "Prolong or extend the duration of something.",
+    translation: "लंबा खींचना / बढ़ाना",
+    sentence: "The legal battle was protracted for over a decade.",
+    synonyms: ["Prolong", "Elongate", "Draw out"],
+    antonyms: ["Shorten", "Curtail", "Abridge"],
+    trick: "Pro + Tract -> Traction makes things drag on longer.",
+    tone: "Negative (-)",
+    collocation: "Protracted negotiation",
+    intensitySpectrum: [
+      { word: "Delay", level: "Mild" },
+      { word: "Extend", level: "Medium" },
+      { word: "Protract", level: "High" },
+      { word: "Drag on", level: "Extreme" }
+    ],
+    characterHook: "Indian Court Cases (Tarikh pe Tarikh)",
+    hookWhy: "Cases drag on (protract) for 20-30 years without a verdict."
+  },
+  {
+    word: "Impunity",
+    partOfSpeech: "Noun",
+    meaning: "Exemption from punishment or freedom from the injurious consequences of an action.",
+    translation: "दंड मुक्ति",
+    sentence: "The rich brat broke the law with impunity.",
+    synonyms: ["Immunity", "Exemption", "Freedom"],
+    antonyms: ["Liability", "Accountability", "Culpability"],
+    trick: "Im (No) + Punish -> No punishment.",
+    tone: "Negative (-)",
+    collocation: "Act with impunity",
+    intensitySpectrum: [
+      { word: "Freedom", level: "Mild" },
+      { word: "Privilege", level: "Medium" },
+      { word: "Impunity", level: "High" },
+      { word: "Invincibility", level: "Extreme" }
+    ],
+    characterHook: "Politician's Son",
+    hookWhy: "Believes he can do anything because 'Chacha Vidhayak Hain' (No fear of punishment)."
+  },
+  {
+    word: "Unassailable",
+    partOfSpeech: "Adjective",
+    meaning: "Unable to be attacked, questioned, or defeated.",
+    translation: "अभेद्य / अकाट्य",
+    sentence: "Sachin's record of 100 centuries seemed unassailable for a long time.",
+    synonyms: ["Invincible", "Indisputable", "Impregnable"],
+    antonyms: ["Vulnerable", "Defenseless", "Weak"],
+    trick: "Un + Assail (Attack) -> Cannot be attacked.",
+    tone: "Positive (+)",
+    collocation: "Unassailable lead",
+    intensitySpectrum: [
+      { word: "Strong", level: "Mild" },
+      { word: "Secure", level: "Medium" },
+      { word: "Unassailable", level: "High" },
+      { word: "Invincible", level: "Extreme" }
+    ],
+    characterHook: "The Great Wall of China / Gabba Fortress",
+    hookWhy: "A defense or record that nobody can break or question."
+  },
+  {
+    word: "Pliable",
+    partOfSpeech: "Adjective",
+    meaning: "Easily bent; flexible. Also, easily influenced.",
+    translation: "लचीला / मानने योग्य",
+    sentence: "The manager wanted pliable employees who wouldn't ask questions.",
+    synonyms: ["Flexible", "Malleable", "Compliant"],
+    antonyms: ["Rigid", "Stubborn", "Inflexible"],
+    trick: "Ply -> Like plywood, it can be bent/shaped.",
+    tone: "Neutral (0)",
+    collocation: "Pliable clay",
+    intensitySpectrum: [
+      { word: "Soft", level: "Mild" },
+      { word: "Flexible", level: "Medium" },
+      { word: "Pliable", level: "High" },
+      { word: "Weak", level: "Extreme" }
+    ],
+    characterHook: "Chapati Dough (Atta)",
+    hookWhy: "You can mold it into any shape you want easily."
+  },
+  {
+    word: "Expedite",
+    partOfSpeech: "Verb",
+    meaning: "Make (an action or process) happen sooner or be accomplished more quickly.",
+    translation: "शीघ्र निपाटना / तेज़ करना",
+    sentence: "Please expedite the delivery of my passport.",
+    synonyms: ["Accelerate", "Hasten", "Speed up"],
+    antonyms: ["Delay", "Hinder", "Retard"],
+    trick: "Ex (Out) + Ped (Foot) -> Getting the foot out of the trap fast.",
+    tone: "Positive (+)",
+    collocation: "Expedite the process",
+    intensitySpectrum: [
+      { word: "Quick", level: "Mild" },
+      { word: "Fast", level: "Medium" },
+      { word: "Expedite", level: "High" },
+      { word: "Rush", level: "Extreme" }
+    ],
+    characterHook: "Tatkal Ticket Scheme",
+    hookWhy: "You pay extra money just to speed up (expedite) the booking process."
+  },
+  {
+    word: "Dilate",
+    partOfSpeech: "Verb",
+    meaning: "Make or become wider, larger, or more open.",
+    translation: "फैलाना / चौड़ा करना",
+    sentence: "The doctor put drops in my eyes to dilate the pupils.",
+    synonyms: ["Enlarge", "Expand", "Widen"],
+    antonyms: ["Contract", "Constrict", "Shrink"],
+    trick: "Die + Late -> If you die late, your life expands (dilates). (Stretch logic)",
+    tone: "Neutral (0)",
+    collocation: "Dilate pupils",
+    intensitySpectrum: [
+      { word: "Open", level: "Mild" },
+      { word: "Widen", level: "Medium" },
+      { word: "Dilate", level: "High" },
+      { word: "Expand", level: "Extreme" }
+    ],
+    characterHook: "Eye Checkup Drops",
+    hookWhy: "The drops that make your pupils huge and vision blurry."
+  },
+  {
+    word: "Inimical",
+    partOfSpeech: "Adjective",
+    meaning: "Tending to obstruct or harm; unfriendly/hostile.",
+    translation: "विरोधी / हानिकारक",
+    sentence: "High inflation is inimical to economic growth.",
+    synonyms: ["Harmful", "Hostile", "Detrimental"],
+    antonyms: ["Friendly", "Helpful", "Conducive"],
+    trick: "Enemy -> Inimical sounds like Enemy-cal.",
+    tone: "Negative (-)",
+    collocation: "Inimical to interests",
+    intensitySpectrum: [
+      { word: "Unfriendly", level: "Mild" },
+      { word: "Harmful", level: "Medium" },
+      { word: "Inimical", level: "High" },
+      { word: "Destructive", level: "Extreme" }
+    ],
+    characterHook: "Sugar for Diabetics",
+    hookWhy: "Sugar acts like an enemy (inimical) to their health."
+  },
+  {
+    word: "Indemnity",
+    partOfSpeech: "Noun",
+    meaning: "Security or protection against a loss or other financial burden.",
+    translation: "हर्जाना / क्षतिपूर्ति",
+    sentence: "The insurance policy provides indemnity against theft.",
+    synonyms: ["Insurance", "Protection", "Compensation"],
+    antonyms: ["Liability", "Risk", "Exposure"],
+    trick: "In + Damn + Ity -> If something gets 'Damned' (damaged), you get money.",
+    tone: "Positive (+)",
+    collocation: "Seek indemnity",
+    intensitySpectrum: [
+      { word: "Refund", level: "Mild" },
+      { word: "Compensation", level: "Medium" },
+      { word: "Indemnity", level: "High" },
+      { word: "Guarantee", level: "Extreme" }
+    ],
+    characterHook: "LIC Policy (Jeevan Anand)",
+    hookWhy: "Paying for protection against future loss (Indemnity)."
+  },
+  {
+    word: "Amnesty",
+    partOfSpeech: "Noun",
+    meaning: "An official pardon for people who have been convicted of political offenses.",
+    translation: "आम माफ़ी / राजक्षमा",
+    sentence: "The government declared an amnesty for tax evaders.",
+    synonyms: ["Pardon", "Forgiveness", "Reprieve"],
+    antonyms: ["Punishment", "Conviction", "Penalty"],
+    trick: "Amnesia -> The government gets 'Amnesia' and forgets your crimes.",
+    tone: "Positive (+)",
+    collocation: "Grant amnesty",
+    intensitySpectrum: [
+      { word: "Forgive", level: "Mild" },
+      { word: "Pardon", level: "Medium" },
+      { word: "Amnesty", level: "High" },
+      { word: "Absolution", level: "Extreme" }
+    ],
+    characterHook: "Black Money Scheme",
+    hookWhy: "Government telling people: 'Just declare your cash now, we won't arrest you' (Amnesty)."
+  },
+  {
+    word: "Expedient",
+    partOfSpeech: "Adjective",
+    meaning: "Convenient and practical although possibly improper or immoral.",
+    translation: "फायदेमंद / कामचलाऊ",
+    sentence: "It was politically expedient to ignore the scandal.",
+    synonyms: ["Convenient", "Advantageous", "Pragmatic"],
+    antonyms: ["Principled", "Ethical", "Right"],
+    trick: "Expedite -> Doing something fast/convenient just to get it done.",
+    tone: "Neutral (0)",
+    collocation: "Politically expedient",
+    intensitySpectrum: [
+      { word: "Useful", level: "Mild" },
+      { word: "Practical", level: "Medium" },
+      { word: "Expedient", level: "High" },
+      { word: "Opportunistic", level: "Extreme" }
+    ],
+    characterHook: "Jugaad",
+    hookWhy: "Fixing a broken fan with tape—it's not the 'correct' way, but it works right now."
+  },
+  {
+    word: "Utilitarian",
+    partOfSpeech: "Adjective",
+    meaning: "Designed to be useful or practical rather than attractive.",
+    translation: "उपयोगी / व्यवहारिक",
+    sentence: "The office building was strictly utilitarian with no decorations.",
+    synonyms: ["Functional", "Practical", "Pragmatic"],
+    antonyms: ["Decorative", "Ornamental", "Aesthetic"],
+    trick: "Utility -> Using something for its utility only.",
+    tone: "Neutral (0)",
+    collocation: "Utilitarian design",
+    intensitySpectrum: [
+      { word: "Plain", level: "Mild" },
+      { word: "Useful", level: "Medium" },
+      { word: "Utilitarian", level: "High" },
+      { word: "Spartan", level: "Extreme" }
+    ],
+    characterHook: "Bata School Shoes / Steel Thali",
+    hookWhy: "Zero fashion, zero design, but lasts for 10 years (Purely functional)."
+  },
+  {
+    word: "Epistemic",
+    partOfSpeech: "Adjective",
+    meaning: "Relating to knowledge or to the degree of its validation.",
+    translation: "ज्ञान-संबंधी",
+    sentence: "There is an epistemic gap between what we know and what we assume.",
+    synonyms: ["Cognitive", "Intellectual", "Conceptual"],
+    antonyms: ["Ignorant", "Unfounded", "Baseless"],
+    trick: "Epistemology -> Study of knowledge.",
+    tone: "Neutral (0)",
+    collocation: "Epistemic uncertainty",
+    intensitySpectrum: [
+      { word: "Mental", level: "Mild" },
+      { word: "Knowledgeable", level: "Medium" },
+      { word: "Epistemic", level: "High" },
+      { word: "Philosophical", level: "Extreme" }
+    ],
+    characterHook: "The 'Vedas' / Ancient Scholars",
+    hookWhy: "Focusing purely on the nature of knowledge and truth."
+  },
+  {
+    word: "Culpability",
+    partOfSpeech: "Noun",
+    meaning: "Responsibility for a fault or wrong; blame.",
+    translation: "दोष / अपराधिता",
+    sentence: "The court determined the degree of his culpability in the accident.",
+    synonyms: ["Guilt", "Blame", "Liability"],
+    antonyms: ["Innocence", "Immunity", "Exoneration"],
+    trick: "Culprit -> The ability to be a culprit.",
+    tone: "Negative (-)",
+    collocation: "Admit culpability",
+    intensitySpectrum: [
+      { word: "Fault", level: "Mild" },
+      { word: "Blame", level: "Medium" },
+      { word: "Culpability", level: "High" },
+      { word: "Guilt", level: "Extreme" }
+    ],
+    characterHook: "Hit and Run Driver",
+    hookWhy: "The main question in court: Was he driving? Does he hold culpability?"
   }
 ];
