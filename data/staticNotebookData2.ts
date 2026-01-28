@@ -706,5 +706,176 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     ],
     characterHook: "Hit and Run Driver",
     hookWhy: "The main question in court: Was he driving? Does he hold culpability?"
+  },
+  {
+    word: "Parity",
+    partOfSpeech: "Noun",
+    meaning: "The state or condition of being equal, especially regarding status or pay.",
+    translation: "समानता / बराबरी",
+    sentence: "The bank employees union is demanding pay parity with central government officers.",
+    synonyms: ["Equality", "Equivalence", "Uniformity"],
+    antonyms: ["Disparity", "Inequality", "Divergence"],
+    trick: "Pari (Fairy) + Tea -> A fairy having tea with a human shows equality (parity).",
+    tone: "Neutral/Formal",
+    collocation: "Purchasing power parity, Gender parity, Pay parity",
+    intensitySpectrum: [
+      { word: "Similarity", level: "Low" },
+      { word: "Equality", level: "Medium" },
+      { word: "Parity", level: "High" }
+    ],
+    characterHook: "Raju Rastogi (3 Idiots)",
+    hookWhy: "Raju always wanted parity (equality) in treatment, not just to be judged by grades."
+  },
+  {
+    word: "Onerous",
+    partOfSpeech: "Adjective",
+    meaning: "(of a task, duty, or responsibility) involving an amount of effort and difficulty that is oppressively burdensome.",
+    translation: "कष्टदायक / भारी / दुर्वह",
+    sentence: "The new KYC norms have made the account opening process quite onerous for customers.",
+    synonyms: ["Burdensome", "Arduous", "Taxing"],
+    antonyms: ["Easy", "Effortless", "Light"],
+    trick: "One + Rous (sounds like 'rocks') -> One person carrying heavy rocks is onerous.",
+    tone: "Negative (-)",
+    collocation: "Onerous task, Onerous duty, Onerous contract",
+    intensitySpectrum: [
+      { word: "Difficult", level: "Low" },
+      { word: "Demanding", level: "Medium" },
+      { word: "Onerous", level: "High" }
+    ],
+    characterHook: "Bahubali (carrying the Shivalinga)",
+    hookWhy: "Carrying the massive Shivalinga was an onerous task that only Bahubali could do effortlessly."
+  },
+  {
+    word: "Byzantine",
+    partOfSpeech: "Adjective",
+    meaning: "Excessively complicated, and typically involving a great deal of administrative detail.",
+    translation: "जटिल / पेचीदा",
+    sentence: "The byzantine rules of the tax department confuse even the most experienced CAs.",
+    synonyms: ["Complicated", "Labyrinthine", "Convoluted"],
+    antonyms: ["Streamlined", "Simple", "Straightforward"],
+    trick: "Busy + Time -> This system is so complex, it will keep you busy for a very long time.",
+    tone: "Negative (-)",
+    collocation: "Byzantine bureaucracy, Byzantine complexity, Byzantine rules",
+    intensitySpectrum: [
+      { word: "Complex", level: "Low" },
+      { word: "Intricate", level: "Medium" },
+      { word: "Byzantine", level: "High" }
+    ],
+    characterHook: "SBI Clerk (Meme version)",
+    hookWhy: "The stereotypical SBI process ('Lunch ke baad aana', form A then form B) is often byzantine."
+  },
+  {
+    word: "Esoteric",
+    partOfSpeech: "Adjective",
+    meaning: "Intended for or likely to be understood by only a small number of people with a specialized knowledge or interest.",
+    translation: "गुप्त / रहस्यमय",
+    sentence: "The RBI governor's speech was full of esoteric economic terms that the layman couldn't grasp.",
+    synonyms: ["Obscure", "Arcane", "Abstruse"],
+    antonyms: ["Common", "Familiar", "Exoteric"],
+    trick: "Eso (Aisa - like this) + Trick -> A trick done 'like this' is only known to a few magicians (esoteric).",
+    tone: "Neutral (0)",
+    collocation: "Esoteric knowledge, Esoteric interests, Esoteric philosophy",
+    intensitySpectrum: [
+      { word: "Uncommon", level: "Low" },
+      { word: "Specialized", level: "Medium" },
+      { word: "Esoteric", level: "High" }
+    ],
+    characterHook: "Chatur Ramalingam (Silencer)",
+    hookWhy: "Chatur used esoteric words (that he didn't understand) in his speech to sound smart."
+  },
+  {
+    word: "Baroque",
+    partOfSpeech: "Adjective",
+    meaning: "Highly ornate and extravagant in style.",
+    translation: "सजावटी / विचित्र / अलंकृत",
+    sentence: "The baroque architecture of the old palace featured intricate carvings on every pillar.",
+    synonyms: ["Ornate", "Florid", "Elaborate"],
+    antonyms: ["Plain", "Minimalist", "Simple"],
+    trick: "Bar + Rock -> A rock carved with so many details it looks like a decoration in a fancy bar.",
+    tone: "Neutral (0)",
+    collocation: "Baroque style, Baroque architecture, Baroque details",
+    intensitySpectrum: [
+      { word: "Decorative", level: "Low" },
+      { word: "Elaborate", level: "Medium" },
+      { word: "Baroque", level: "High" }
+    ],
+    characterHook: "Sanjay Leela Bhansali Movies",
+    hookWhy: "Bhansali's sets (like in Devdas or Padmavat) are famous for their baroque, highly detailed style."
+  },
+  {
+    word: "Prolix",
+    partOfSpeech: "Adjective",
+    meaning: "(of speech or writing) using or containing too many words; tediously lengthy.",
+    translation: "शब्दबहुल / विस्तृत / उबाऊ",
+    sentence: "The legal document was so prolix that it took three lawyers to interpret it.",
+    synonyms: ["Verbose", "Long-winded", "Wordy"],
+    antonyms: ["Concise", "Laconic", "Terse"],
+    trick: "Pro + Licks -> A 'Pro' who 'Licks' (speaks) too much without stopping.",
+    tone: "Negative (-)",
+    collocation: "Prolix speech, Prolix writer, Prolix explanation",
+    intensitySpectrum: [
+      { word: "Talkative", level: "Low" },
+      { word: "Verbose", level: "Medium" },
+      { word: "Prolix", level: "High" }
+    ],
+    characterHook: "Basanti (Sholay)",
+    hookWhy: "Basanti's non-stop talking is the perfect example of a prolix style."
+  },
+  {
+    word: "Arduous",
+    partOfSpeech: "Adjective",
+    meaning: "Involving or requiring strenuous effort; difficult and tiring.",
+    translation: "कठिन / श्रमसाध्य",
+    sentence: "Preparing for bank PO exams is an arduous journey requiring months of dedication.",
+    synonyms: ["Laborious", "Strenuous", "Grueling"],
+    antonyms: ["Easy", "Effortless", "Facile"],
+    trick: "Hard + us -> It is very 'hard' for 'us' to climb this mountain.",
+    tone: "Negative (-)",
+    collocation: "Arduous journey, Arduous task, Arduous climb",
+    intensitySpectrum: [
+      { word: "Hard", level: "Low" },
+      { word: "Tough", level: "Medium" },
+      { word: "Arduous", level: "High" }
+    ],
+    characterHook: "Dashrath Manjhi (The Mountain Man)",
+    hookWhy: "Cutting a mountain with a hammer was the most arduous task imaginable."
+  },
+  {
+    word: "Unkempt",
+    partOfSpeech: "Adjective",
+    meaning: "(especially of a person) having an untidy or disheveled appearance.",
+    translation: "अव्यवस्थित / मैला-कुचैला",
+    sentence: "He showed up to the interview in unkempt clothes, which left a bad impression.",
+    synonyms: ["Disheveled", "Messy", "Scruffy"],
+    antonyms: ["Neat", "Tidy", "Groomed"],
+    trick: "Un + Kept -> Not kept or maintained properly, leading to a messy look.",
+    tone: "Negative (-)",
+    collocation: "Unkempt hair, Unkempt appearance, Unkempt lawn",
+    intensitySpectrum: [
+      { word: "Messy", level: "Low" },
+      { word: "Untidy", level: "Medium" },
+      { word: "Unkempt", level: "High" }
+    ],
+    characterHook: "Kabir Singh (Post-breakup)",
+    hookWhy: "Kabir Singh's beard and hair after his heartbreak is the definition of unkempt."
+  },
+  {
+    word: "Convoluted",
+    partOfSpeech: "Adjective",
+    meaning: "(especially of an argument, story, or sentence) extremely complex and difficult to follow.",
+    translation: "पेचीदा / घुमावदार",
+    sentence: "The logic behind the new seating arrangement was so convoluted that no one knew where to sit.",
+    synonyms: ["Intricate", "Complicated", "Tortuous"],
+    antonyms: ["Simple", "Straightforward", "Direct"],
+    trick: "Corn + Loop -> Like a maze made of corn loops; hard to find the way out.",
+    tone: "Negative (-)",
+    collocation: "Convoluted plot, Convoluted argument, Convoluted path",
+    intensitySpectrum: [
+      { word: "Twisted", level: "Low" },
+      { word: "Complex", level: "Medium" },
+      { word: "Convoluted", level: "High" }
+    ],
+    characterHook: "Hera Pheri Plot",
+    hookWhy: "The plan to exchange the ransom money in Hera Pheri was hilariously convoluted."
   }
 ];
