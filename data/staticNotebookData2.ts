@@ -877,5 +877,157 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     ],
     characterHook: "Hera Pheri Plot",
     hookWhy: "The plan to exchange the ransom money in Hera Pheri was hilariously convoluted."
+  },
+  {
+    word: "Intractable",
+    partOfSpeech: "Adjective",
+    meaning: "Hard to control or deal with; stubborn.",
+    translation: "अड़ियल / जिसे काबू करना मुश्किल हो",
+    sentence: "The unemployment problem in the country has become intractable despite several government schemes.",
+    synonyms: ["Unmanageable", "Stubborn", "Obstinate"],
+    antonyms: ["Manageable", "Compliant", "Docile"],
+    trick: "In + Track + Able -> Not 'able' to bring back on the 'track'.",
+    tone: "Negative (-)",
+    collocation: "Intractable problem, Intractable conflict",
+    intensitySpectrum: [
+      { word: "Difficult", level: "Low" },
+      { word: "Stubborn", level: "Medium" },
+      { word: "Intractable", level: "High" }
+    ],
+    characterHook: "Betaal (Vikram & Betaal)",
+    hookWhy: "Betaal was intractable; no matter how many times Vikram caught him, he would escape again."
+  },
+  {
+    word: "Accost",
+    partOfSpeech: "Verb",
+    meaning: "To approach and address (someone) boldly or aggressively.",
+    translation: "टोकना / आक्रामक रूप से जा कर बोलना",
+    sentence: "Reporters accosted the minister as soon as he stepped out of his car.",
+    synonyms: ["Confront", "Waylay", "Buttonhole"],
+    antonyms: ["Avoid", "Evade", "Shun"],
+    trick: "At + Cost -> To approach someone 'at any cost', even if they don't want to talk.",
+    tone: "Negative (-)",
+    collocation: "Accosted by a stranger, Accosted for money",
+    intensitySpectrum: [
+      { word: "Approach", level: "Low" },
+      { word: "Confront", level: "Medium" },
+      { word: "Accost", level: "High" }
+    ],
+    characterHook: "Street Vendors / Salesmen",
+    hookWhy: "They often accost passersby to sell their products aggressively."
+  },
+  {
+    word: "Fervent",
+    partOfSpeech: "Adjective",
+    meaning: "Having or displaying a passionate intensity.",
+    translation: "उत्साही / जोशि‍ला",
+    sentence: "He is a fervent supporter of the cricket team and never misses a match.",
+    synonyms: ["Passionate", "Intense", "Vehement", "Ardent"],
+    antonyms: ["Apathetic", "Indifferent", "Cool"],
+    trick: "Servant -> A loyal servant serves his master with 'fervent' devotion. (Also sounds like 'Fever' - heat/passion).",
+    tone: "Positive (+)",
+    collocation: "Fervent hope, Fervent prayer",
+    intensitySpectrum: [
+      { word: "Interested", level: "Low" },
+      { word: "Enthusiastic", level: "Medium" },
+      { word: "Fervent", level: "High" }
+    ],
+    characterHook: "Bhagat Singh",
+    hookWhy: "His fervent patriotism and desire for freedom inspired the entire nation."
+  },
+  {
+    word: "Burgeon",
+    partOfSpeech: "Verb",
+    meaning: "Begin to grow or increase rapidly; flourish.",
+    translation: "तेजी से बढ़ना / फलना-फूलना",
+    sentence: "The startup scene in India has burgeoned in the last decade.",
+    synonyms: ["Flourish", "Thrive", "Proliferate", "Mushroom"],
+    antonyms: ["Shrink", "Wither", "Diminish"],
+    trick: "Burger -> If you eat too many burgers, your belly will 'burgeon' (expand).",
+    tone: "Positive (+)",
+    collocation: "Burgeoning population, Burgeoning market",
+    intensitySpectrum: [
+      { word: "Grow", level: "Low" },
+      { word: "Expand", level: "Medium" },
+      { word: "Burgeon", level: "High" }
+    ],
+    characterHook: "Share Market Graph",
+    hookWhy: "A green candle in a bull market represents a burgeoning economy."
+  },
+  {
+    word: "Recalcitrant",
+    partOfSpeech: "Adjective",
+    meaning: "Having an obstinately uncooperative attitude toward authority or discipline.",
+    translation: "आज्ञा न मानने वाला / अड़ियल",
+    sentence: "The recalcitrant student refused to follow the dress code despite multiple warnings.",
+    synonyms: ["Uncooperative", "Intractable", "Truant", "Defiant"],
+    antonyms: ["Compliant", "Amenable", "Obedient"],
+    trick: "Re + Calci (Calculator) -> A student who refuses to use a calculator (technology) is recalcitrant (stubborn).",
+    tone: "Negative (-)",
+    collocation: "Recalcitrant child, Recalcitrant nature",
+    intensitySpectrum: [
+      { word: "Unwilling", level: "Low" },
+      { word: "Disobedient", level: "Medium" },
+      { word: "Recalcitrant", level: "High" }
+    ],
+    characterHook: "A Mule / Donkey",
+    hookWhy: "Donkeys are famously recalcitrant; if they decide not to move, they won't."
+  },
+  {
+    word: "Ardent",
+    partOfSpeech: "Adjective",
+    meaning: "Very enthusiastic or passionate.",
+    translation: "प्रचंड / उत्सुक / उत्साही",
+    sentence: "She is an ardent reader and finishes a novel every week.",
+    synonyms: ["Avid", "Fervent", "Zealous", "Passionate"],
+    antonyms: ["Half-hearted", "Indifferent", "Apathetic"],
+    trick: "Hard + Dent -> You need 'ardent' (passionate) energy to make a 'hard dent' in the universe.",
+    tone: "Positive (+)",
+    collocation: "Ardent fan, Ardent supporter",
+    intensitySpectrum: [
+      { word: "Keen", level: "Low" },
+      { word: "Eager", level: "Medium" },
+      { word: "Ardent", level: "High" }
+    ],
+    characterHook: "Meera Bai",
+    hookWhy: "Meera Bai was an ardent devotee of Lord Krishna."
+  },
+  {
+    word: "Slipshod",
+    partOfSpeech: "Adjective",
+    meaning: "(typically of a person or method of work) characterized by a lack of care, thought, or organization.",
+    translation: "लापरवाह / बेतरतीब",
+    sentence: "The construction work was slipshod, leading to leaks in the roof within a month.",
+    synonyms: ["Careless", "Slapdash", "Sloppy", "Shoddy"],
+    antonyms: ["Meticulous", "Painstaking", "Careful"],
+    trick: "Slip + Shoe -> Wearing shoes that 'slip' off because you were too careless to tie them properly.",
+    tone: "Negative (-)",
+    collocation: "Slipshod work, Slipshod manner, Slipshod management",
+    intensitySpectrum: [
+      { word: "Messy", level: "Low" },
+      { word: "Careless", level: "Medium" },
+      { word: "Slipshod", level: "High" }
+    ],
+    characterHook: "Local Contractor (stereotypical)",
+    hookWhy: "Doing a 'jugaad' job that falls apart the next day is an example of slipshod work."
+  },
+  {
+    word: "Buttonhole",
+    partOfSpeech: "Verb",
+    meaning: "Attract the attention of and detain (someone) in conversation, typically against their will.",
+    translation: "रोक कर रखना (बातचीत के लिए)",
+    sentence: "He buttonholed me at the party and talked about his insurance plans for an hour.",
+    synonyms: ["Accost", "Detain", "Corner", "Waylay"],
+    antonyms: ["Release", "Ignore", "Let go"],
+    trick: "Button + Hole -> Imagine holding someone by their shirt button/hole so they cannot run away while you talk.",
+    tone: "Negative (-)",
+    collocation: "Buttonholed by a stranger, Buttonholed in the hallway",
+    intensitySpectrum: [
+      { word: "Chat with", level: "Low" },
+      { word: "Hold up", level: "Medium" },
+      { word: "Buttonhole", level: "High" }
+    ],
+    characterHook: "LIC Agent / Relative at Wedding",
+    hookWhy: "That one uncle who catches you and won't let you leave until he tells his whole life story."
   }
 ];
