@@ -1,4 +1,3 @@
-
 import { WordAnalysis } from "../types";
 
 export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
@@ -716,8 +715,8 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     synonyms: ["Equality", "Equivalence", "Uniformity"],
     antonyms: ["Disparity", "Inequality", "Divergence"],
     trick: "Pari (Fairy) + Tea -> A fairy having tea with a human shows equality (parity).",
-    tone: "Neutral/Formal",
-    collocation: "Purchasing power parity, Gender parity, Pay parity",
+    tone: "Neutral (0)",
+    collocation: "Pay parity",
     intensitySpectrum: [
       { word: "Similarity", level: "Low" },
       { word: "Equality", level: "Medium" },
@@ -736,7 +735,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Easy", "Effortless", "Light"],
     trick: "One + Rous (sounds like 'rocks') -> One person carrying heavy rocks is onerous.",
     tone: "Negative (-)",
-    collocation: "Onerous task, Onerous duty, Onerous contract",
+    collocation: "Onerous task",
     intensitySpectrum: [
       { word: "Difficult", level: "Low" },
       { word: "Demanding", level: "Medium" },
@@ -755,7 +754,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Streamlined", "Simple", "Straightforward"],
     trick: "Busy + Time -> This system is so complex, it will keep you busy for a very long time.",
     tone: "Negative (-)",
-    collocation: "Byzantine bureaucracy, Byzantine complexity, Byzantine rules",
+    collocation: "Byzantine bureaucracy",
     intensitySpectrum: [
       { word: "Complex", level: "Low" },
       { word: "Intricate", level: "Medium" },
@@ -774,7 +773,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Common", "Familiar", "Exoteric"],
     trick: "Eso (Aisa - like this) + Trick -> A trick done 'like this' is only known to a few magicians (esoteric).",
     tone: "Neutral (0)",
-    collocation: "Esoteric knowledge, Esoteric interests, Esoteric philosophy",
+    collocation: "Esoteric knowledge",
     intensitySpectrum: [
       { word: "Uncommon", level: "Low" },
       { word: "Specialized", level: "Medium" },
@@ -793,7 +792,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Plain", "Minimalist", "Simple"],
     trick: "Bar + Rock -> A rock carved with so many details it looks like a decoration in a fancy bar.",
     tone: "Neutral (0)",
-    collocation: "Baroque style, Baroque architecture, Baroque details",
+    collocation: "Baroque architecture",
     intensitySpectrum: [
       { word: "Decorative", level: "Low" },
       { word: "Elaborate", level: "Medium" },
@@ -812,7 +811,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Concise", "Laconic", "Terse"],
     trick: "Pro + Licks -> A 'Pro' who 'Licks' (speaks) too much without stopping.",
     tone: "Negative (-)",
-    collocation: "Prolix speech, Prolix writer, Prolix explanation",
+    collocation: "Prolix speech",
     intensitySpectrum: [
       { word: "Talkative", level: "Low" },
       { word: "Verbose", level: "Medium" },
@@ -831,7 +830,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Easy", "Effortless", "Facile"],
     trick: "Hard + us -> It is very 'hard' for 'us' to climb this mountain.",
     tone: "Negative (-)",
-    collocation: "Arduous journey, Arduous task, Arduous climb",
+    collocation: "Arduous journey",
     intensitySpectrum: [
       { word: "Hard", level: "Low" },
       { word: "Tough", level: "Medium" },
@@ -850,7 +849,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Neat", "Tidy", "Groomed"],
     trick: "Un + Kept -> Not kept or maintained properly, leading to a messy look.",
     tone: "Negative (-)",
-    collocation: "Unkempt hair, Unkempt appearance, Unkempt lawn",
+    collocation: "Unkempt hair",
     intensitySpectrum: [
       { word: "Messy", level: "Low" },
       { word: "Untidy", level: "Medium" },
@@ -863,13 +862,13 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     word: "Convoluted",
     partOfSpeech: "Adjective",
     meaning: "(especially of an argument, story, or sentence) extremely complex and difficult to follow.",
-    translation: "पेचीदा / घुमावदार",
+    translation: "पेचीदा / घुवावदार",
     sentence: "The logic behind the new seating arrangement was so convoluted that no one knew where to sit.",
     synonyms: ["Intricate", "Complicated", "Tortuous"],
     antonyms: ["Simple", "Straightforward", "Direct"],
     trick: "Corn + Loop -> Like a maze made of corn loops; hard to find the way out.",
     tone: "Negative (-)",
-    collocation: "Convoluted plot, Convoluted argument, Convoluted path",
+    collocation: "Convoluted plot",
     intensitySpectrum: [
       { word: "Twisted", level: "Low" },
       { word: "Complex", level: "Medium" },
@@ -888,7 +887,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Manageable", "Compliant", "Docile"],
     trick: "In + Track + Able -> Not 'able' to bring back on the 'track'.",
     tone: "Negative (-)",
-    collocation: "Intractable problem, Intractable conflict",
+    collocation: "Intractable problem",
     intensitySpectrum: [
       { word: "Difficult", level: "Low" },
       { word: "Stubborn", level: "Medium" },
@@ -907,7 +906,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Avoid", "Evade", "Shun"],
     trick: "At + Cost -> To approach someone 'at any cost', even if they don't want to talk.",
     tone: "Negative (-)",
-    collocation: "Accosted by a stranger, Accosted for money",
+    collocation: "Accosted by a stranger",
     intensitySpectrum: [
       { word: "Approach", level: "Low" },
       { word: "Confront", level: "Medium" },
@@ -926,7 +925,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Apathetic", "Indifferent", "Cool"],
     trick: "Servant -> A loyal servant serves his master with 'fervent' devotion. (Also sounds like 'Fever' - heat/passion).",
     tone: "Positive (+)",
-    collocation: "Fervent hope, Fervent prayer",
+    collocation: "Fervent hope",
     intensitySpectrum: [
       { word: "Interested", level: "Low" },
       { word: "Enthusiastic", level: "Medium" },
@@ -945,7 +944,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Shrink", "Wither", "Diminish"],
     trick: "Burger -> If you eat too many burgers, your belly will 'burgeon' (expand).",
     tone: "Positive (+)",
-    collocation: "Burgeoning population, Burgeoning market",
+    collocation: "Burgeoning population",
     intensitySpectrum: [
       { word: "Grow", level: "Low" },
       { word: "Expand", level: "Medium" },
@@ -964,7 +963,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Compliant", "Amenable", "Obedient"],
     trick: "Re + Calci (Calculator) -> A student who refuses to use a calculator (technology) is recalcitrant (stubborn).",
     tone: "Negative (-)",
-    collocation: "Recalcitrant child, Recalcitrant nature",
+    collocation: "Recalcitrant child",
     intensitySpectrum: [
       { word: "Unwilling", level: "Low" },
       { word: "Disobedient", level: "Medium" },
@@ -983,7 +982,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Half-hearted", "Indifferent", "Apathetic"],
     trick: "Hard + Dent -> You need 'ardent' (passionate) energy to make a 'hard dent' in the universe.",
     tone: "Positive (+)",
-    collocation: "Ardent fan, Ardent supporter",
+    collocation: "Ardent fan",
     intensitySpectrum: [
       { word: "Keen", level: "Low" },
       { word: "Eager", level: "Medium" },
@@ -1002,7 +1001,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Meticulous", "Painstaking", "Careful"],
     trick: "Slip + Shoe -> Wearing shoes that 'slip' off because you were too careless to tie them properly.",
     tone: "Negative (-)",
-    collocation: "Slipshod work, Slipshod manner, Slipshod management",
+    collocation: "Slipshod work",
     intensitySpectrum: [
       { word: "Messy", level: "Low" },
       { word: "Careless", level: "Medium" },
@@ -1021,7 +1020,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["Release", "Ignore", "Let go"],
     trick: "Button + Hole -> Imagine holding someone by their shirt button/hole so they cannot run away while you talk.",
     tone: "Negative (-)",
-    collocation: "Buttonholed by a stranger, Buttonholed in the hallway",
+    collocation: "Buttonholed by a stranger",
     intensitySpectrum: [
       { word: "Chat with", level: "Low" },
       { word: "Hold up", level: "Medium" },
@@ -1029,5 +1028,575 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     ],
     characterHook: "LIC Agent / Relative at Wedding",
     hookWhy: "That one uncle who catches you and won't let you leave until he tells his whole life story."
+  },
+  {
+    word: "Circumvent",
+    partOfSpeech: "Verb",
+    meaning: "Find a way around (an obstacle).",
+    translation: "गतिरोध हटाना / बचना / धोखा देना",
+    sentence: "Tech-savvy students often find ways to circumvent the school's internet firewall.",
+    synonyms: ["Bypass", "Evade", "Sidestep", "Dodge"],
+    antonyms: ["Confront", "Face", "Follow", "Obey"],
+    trick: "Circle + Vent -> The thief had to go in a 'circle' to find a 'vent' to bypass the security door.",
+    tone: "Neutral (0)",
+    collocation: "Circumvent the rules",
+    intensitySpectrum: [
+      { word: "Avoid", level: "Low" },
+      { word: "Bypass", level: "Medium" },
+      { word: "Circumvent", level: "High" }
+    ],
+    characterHook: "Jack Sparrow (Pirates of the Caribbean)",
+    hookWhy: "He always finds a clever way to circumvent the law and escape difficult situations."
+  },
+  {
+    word: "Corpulent",
+    partOfSpeech: "Adjective",
+    meaning: "(of a person) fat.",
+    translation: "मोटा / स्थूलकाय",
+    sentence: "The corpulent king struggled to fit into his royal carriage.",
+    synonyms: ["Obese", "Overweight", "Portly", "Stout"],
+    antonyms: ["Thin", "Slender", "Skinny", "Gaunt"],
+    trick: "Car + Pull -> He is so heavy (corpulent) that we need a 'Car' to 'Pull' him.",
+    tone: "Neutral (0)",
+    collocation: "Corpulent figure",
+    intensitySpectrum: [
+      { word: "Chubby", level: "Low" },
+      { word: "Fat", level: "Medium" },
+      { word: "Corpulent", level: "High" }
+    ],
+    characterHook: "Motu (Motu Patlu)",
+    hookWhy: "Motu is the classic example of a corpulent character who loves samosas."
+  },
+  {
+    word: "Ossify",
+    partOfSpeech: "Verb",
+    meaning: "Turn into bone or bony tissue; become rigid or fixed in attitude or position.",
+    translation: "हड्डी बन जाना / कठोर हो जाना (विचारों में)",
+    sentence: "If an organization doesn't innovate, its methods will ossify and it will fail.",
+    synonyms: ["Harden", "Solidify", "Fossilize", "Rigidify"],
+    antonyms: ["Soften", "Flex", "Change", "Adapt"],
+    trick: "Fossil -> 'Ossify' sounds like 'Fossil'. Bones become fossils; ideas become rigid like fossils.",
+    tone: "Negative (-)",
+    collocation: "Ossified beliefs",
+    intensitySpectrum: [
+      { word: "Stiffen", level: "Low" },
+      { word: "Harden", level: "Medium" },
+      { word: "Ossify", level: "High" }
+    ],
+    characterHook: "Dolores Umbridge (Harry Potter)",
+    hookWhy: "Her rules and mindset were completely ossified; she refused to accept any change or truth."
+  },
+  {
+    word: "Risible",
+    partOfSpeech: "Adjective",
+    meaning: "Such as to provoke laughter.",
+    translation: "हसने योग्य / मज़ाकिया",
+    sentence: "The proposal was so risible that even the serious investors started laughing.",
+    synonyms: ["Laughable", "Ridiculous", "Comic", "Amusing"],
+    antonyms: ["Serious", "Solemn", "Grave"],
+    trick: "Rise + Able -> A joke so funny that laughter is 'able' to 'rise' from your belly.",
+    tone: "Neutral (0)",
+    collocation: "Risible suggestion",
+    intensitySpectrum: [
+      { word: "Funny", level: "Low" },
+      { word: "Amusing", level: "Medium" },
+      { word: "Risible", level: "High" }
+    ],
+    characterHook: "Mr. Bean",
+    hookWhy: "Everything Mr. Bean does is inherently risible (laughable)."
+  },
+  {
+    word: "Eschew",
+    partOfSpeech: "Verb",
+    meaning: "Deliberately avoid using; abstain from.",
+    translation: "त्याग करना / परहेज़ करना",
+    sentence: "Vegetarians eschew meat, fish, and poultry.",
+    synonyms: ["Abstain from", "Refrain from", "Shun", "Renounce"],
+    antonyms: ["Indulge in", "Embrace", "Use", "Seek"],
+    trick: "Ah-Choo (Sneeze) -> If someone sneezes 'Ah-Choo', you 'eschew' (avoid) them to stay healthy.",
+    tone: "Neutral (0)",
+    collocation: "Eschew violence",
+    intensitySpectrum: [
+      { word: "Avoid", level: "Low" },
+      { word: "Abstain", level: "Medium" },
+      { word: "Eschew", level: "High" }
+    ],
+    characterHook: "Mahatma Gandhi",
+    hookWhy: "He famously eschewed violence (Ahimsa) and material possessions."
+  },
+  {
+    word: "Twiddle",
+    partOfSpeech: "Verb",
+    meaning: "Twist or move or fiddle with something idly.",
+    translation: "उंगलियों से खेलना / समय बर्बाद करना",
+    sentence: "Stop twiddling your pen and focus on the exam!",
+    synonyms: ["Fiddle", "Twist", "Play", "Jiggle"],
+    antonyms: ["Work", "Focus", "Stay still"],
+    trick: "Thumb + Middle -> Twisting your 'Thumb' and 'Middle' finger when you are bored.",
+    tone: "Neutral (0)",
+    collocation: "Twiddle thumbs",
+    intensitySpectrum: [
+      { word: "Touch", level: "Low" },
+      { word: "Fiddle", level: "Medium" },
+      { word: "Twiddle", level: "High" }
+    ],
+    characterHook: "Student in Exam Hall",
+    hookWhy: "When you don't know the answer, you just sit there and twiddle your thumbs/pen."
+  },
+  {
+    word: "Adumbrate",
+    partOfSpeech: "Verb",
+    meaning: "Report or represent in outline; indicate faintly.",
+    translation: "धुंधला आभास देना / रूपरेखा प्रस्तुत करना",
+    sentence: "The architect adumbrated his plans for the new building on a napkin.",
+    synonyms: ["Outline", "Sketch", "Overshadow", "Suggest"],
+    antonyms: ["Detail", "Clarify", "Expand", "Explain"],
+    trick: "Add + Umbrella -> When you 'add' an 'umbrella', it casts a shadow (outline) on the ground.",
+    tone: "Neutral (0)",
+    collocation: "Adumbrate a plan",
+    intensitySpectrum: [
+      { word: "Hint", level: "Low" },
+      { word: "Outline", level: "Medium" },
+      { word: "Adumbrate", level: "High" }
+    ],
+    characterHook: "Sherlock Holmes",
+    hookWhy: "Holmes often adumbrates the solution early in the story before revealing the full details at the end."
+  },
+  {
+    word: "Ludicrous",
+    partOfSpeech: "Adjective",
+    meaning: "So foolish, unreasonable, or out of place as to be amusing; ridiculous.",
+    translation: "ऊटपटांग / हास्यास्पद",
+    sentence: "Paying $50 for a bottle of water is absolutely ludicrous.",
+    synonyms: ["Absurd", "Ridiculous", "Preposterous", "Farcical"],
+    antonyms: ["Reasonable", "Sensible", "Logical", "Serious"],
+    trick: "Ludo + Crush -> Getting angry and 'crushing' the 'Ludo' board because you lost is ludicrous behavior.",
+    tone: "Negative (-)",
+    collocation: "Ludicrous price",
+    intensitySpectrum: [
+      { word: "Silly", level: "Low" },
+      { word: "Ridiculous", level: "Medium" },
+      { word: "Ludicrous", level: "High" }
+    ],
+    characterHook: "Jethalal (Taarak Mehta Ka Ooltah Chashmah)",
+    hookWhy: "Jethalal often finds himself in ludicrous situations due to his own misunderstandings."
+  },
+  {
+    word: "Grotesque",
+    partOfSpeech: "Adjective",
+    meaning: "Comically or repulsively ugly or distorted.",
+    translation: "विकृत / भद्दा / अजीब",
+    sentence: "The gargoyles on the old church were grotesque figures meant to scare away evil spirits.",
+    synonyms: ["Malformed", "Distorted", "Monstrous", "Ugly"],
+    antonyms: ["Beautiful", "Normal", "Aesthetic", "Graceful"],
+    trick: "Grow + Tusk -> If a human face starts to 'Grow' a 'Tusk', it would look grotesque.",
+    tone: "Negative (-)",
+    collocation: "Grotesque figure",
+    intensitySpectrum: [
+      { word: "Ugly", level: "Low" },
+      { word: "Deformed", level: "Medium" },
+      { word: "Grotesque", level: "High" }
+    ],
+    characterHook: "Gollum (Lord of the Rings)",
+    hookWhy: "Gollum's appearance is grotesque due to centuries of corruption by the Ring."
+  },
+  {
+    word: "Piquant",
+    partOfSpeech: "Adjective",
+    meaning: "Having a pleasantly sharp taste or appetizing flavor; also, pleasantly stimulating or exciting to the mind.",
+    translation: "चटपटा / दिलचस्प",
+    sentence: "The chef added a piquant sauce that made the bland chicken taste amazing.",
+    synonyms: ["Spicy", "Tangy", "Zesty", "Intriguing", "Stimulating"],
+    antonyms: ["Bland", "Dull", "Insipid", "Boring"],
+    trick: "Pick + Ant -> If you 'pick' an 'ant' and eat it, it will have a sharp (piquant) taste.",
+    tone: "Positive (+)",
+    collocation: "Piquant sauce",
+    intensitySpectrum: [
+      { word: "Tasty", level: "Low" },
+      { word: "Spicy", level: "Medium" },
+      { word: "Piquant", level: "High" }
+    ],
+    characterHook: "Ratatouille (Remy)",
+    hookWhy: "Remy the rat was always looking for piquant flavors to create the perfect dish."
+  },
+  {
+    word: "Rebarbative",
+    partOfSpeech: "Adjective",
+    meaning: "Unattractive and objectionable.",
+    translation: "अप्रिय / घिनौना",
+    sentence: "The rebarbative behavior of the manager made all the employees quit.",
+    synonyms: ["Repellent", "Repulsive", "Unpleasant", "Disagreeable"],
+    antonyms: ["Attractive", "Appealing", "Pleasant", "Charming"],
+    trick: "Re + Barb (Barbed Wire) -> Like 'Barbed wire'; if you touch it, it is unpleasant and repels you.",
+    tone: "Negative (-)",
+    collocation: "Rebarbative nature",
+    intensitySpectrum: [
+      { word: "Unpleasant", level: "Low" },
+      { word: "Offensive", level: "Medium" },
+      { word: "Rebarbative", level: "High" }
+    ],
+    characterHook: "Miss Trunchbull (Matilda)",
+    hookWhy: "Her personality and appearance were completely rebarbative to the children."
+  },
+  {
+    word: "Mar",
+    partOfSpeech: "Verb",
+    meaning: "Impair the quality or appearance of; spoil.",
+    translation: "बिगाड़ना / खराब करना",
+    sentence: "A large scar marred his otherwise handsome face.",
+    synonyms: ["Spoil", "Ruin", "Impair", "Disfigure", "Blemish"],
+    antonyms: ["Enhance", "Improve", "Embellish", "Restore"],
+    trick: "Maar (Hindi) -> 'Maar' (beating). If you beat someone, you 'mar' (spoil) their face.",
+    tone: "Negative (-)",
+    collocation: "Mar the beauty",
+    intensitySpectrum: [
+      { word: "Scratch", level: "Low" },
+      { word: "Damage", level: "Medium" },
+      { word: "Mar", level: "High" }
+    ],
+    characterHook: "Harvey Dent (Two-Face)",
+    hookWhy: "Half of his face was severely marred by acid/fire."
+  },
+  {
+    word: "Bolster",
+    partOfSpeech: "Verb",
+    meaning: "Support or strengthen; prop up.",
+    translation: "सहारा देना / मजबूत करना",
+    sentence: "More evidence is needed to bolster the prosecution's case.",
+    synonyms: ["Strengthen", "Reinforce", "Boost", "Fortify"],
+    antonyms: ["Undermine", "Weaken", "Hinder"],
+    trick: "Booster -> Sounds like 'Booster'. A booster shot strengthens (bolsters) your immunity.",
+    tone: "Positive (+)",
+    collocation: "Bolster confidence",
+    intensitySpectrum: [
+      { word: "Help", level: "Low" },
+      { word: "Support", level: "Medium" },
+      { word: "Bolster", level: "High" }
+    ],
+    characterHook: "Samwise Gamgee (Lord of the Rings)",
+    hookWhy: "He constantly bolstered Frodo's spirit when he wanted to give up."
+  },
+  {
+    word: "Scathe",
+    partOfSpeech: "Verb",
+    meaning: "Harm, injure, or criticize severely (often used as 'Scathing').",
+    translation: "हानि पहुँचाना / तीखी आलोचना करना",
+    sentence: "The movie received a scathing review from the critics.",
+    synonyms: ["Harm", "Injure", "Scorch", "Criticize"],
+    antonyms: ["Heal", "Protect", "Praise"],
+    trick: "Scar -> If you get 'scathed' (injured/burned), you are left with a 'scar'.",
+    tone: "Negative (-)",
+    collocation: "Scathing review",
+    intensitySpectrum: [
+      { word: "Criticize", level: "Low" },
+      { word: "Attack", level: "Medium" },
+      { word: "Scathe", level: "High" }
+    ],
+    characterHook: "Gordon Ramsay",
+    hookWhy: "He is famous for his scathing remarks to chefs who cook badly."
+  },
+  {
+    word: "Paradigm",
+    partOfSpeech: "Noun",
+    meaning: "A typical example or pattern of something; a model.",
+    translation: "मिसाल / प्रतिमान",
+    sentence: "He is seen as the paradigm of the successful entrepreneur.",
+    synonyms: ["Model", "Exemplar", "Prototype", "Archetype"],
+    antonyms: ["Anomaly", "Exception", "Deviation"],
+    trick: "Parade + Diagram -> A 'Diagram' shown in a 'Parade' as the perfect model for everyone to follow.",
+    tone: "Formal/Academic",
+    collocation: "Paradigm shift",
+    intensitySpectrum: [
+      { word: "Example", level: "Low" },
+      { word: "Pattern", level: "Medium" },
+      { word: "Paradigm", level: "High" }
+    ],
+    characterHook: "Mary Poppins",
+    hookWhy: "She is the paradigm of the perfect nanny—practically perfect in every way."
+  },
+  {
+    word: "Quash",
+    partOfSpeech: "Verb",
+    meaning: "Reject as invalid, especially by legal procedure; put an end to.",
+    translation: "रद्द करना / कुचल देना",
+    sentence: "The High Court quashed the lower court's verdict due to lack of evidence.",
+    synonyms: ["Annul", "Nullify", "Suppress", "Crush"],
+    antonyms: ["Validate", "Support", "Encourage", "Permit"],
+    trick: "Squash -> To 'Squash' a rebellion or a legal order so it cannot stand.",
+    tone: "Legal/Formal",
+    collocation: "Quash the verdict",
+    intensitySpectrum: [
+      { word: "Cancel", level: "Low" },
+      { word: "Reject", level: "Medium" },
+      { word: "Quash", level: "High" }
+    ],
+    characterHook: "Judge Dredd",
+    hookWhy: "He has the power to quash judgments and rebellions instantly on the street."
+  },
+  {
+    word: "Coagulate",
+    partOfSpeech: "Verb",
+    meaning: "(of a fluid, especially blood) change to a solid or semi-solid state.",
+    translation: "जमना / गाढ़ा होना",
+    sentence: "The blood began to coagulate around the wound, stopping the bleeding.",
+    synonyms: ["Congeal", "Clot", "Thicken", "Solidify"],
+    antonyms: ["Liquefy", "Melt", "Thin", "Dissolve"],
+    trick: "Colgate -> Toothpaste (Colgate) is thick and semi-solid, just like coagulated blood.",
+    tone: "Scientific/Medical",
+    collocation: "Blood coagulates",
+    intensitySpectrum: [
+      { word: "Thicken", level: "Low" },
+      { word: "Congeal", level: "Medium" },
+      { word: "Coagulate", level: "High" }
+    ],
+    characterHook: "Wolverine (X-Men)",
+    hookWhy: "His blood coagulates instantly to heal wounds."
+  },
+  {
+    word: "Amalgamation",
+    partOfSpeech: "Noun",
+    meaning: "The action, process, or result of combining or uniting.",
+    translation: "मिश्रण / एकीकरण",
+    sentence: "The new company is an amalgamation of three smaller startups.",
+    synonyms: ["Combination", "Union", "Merger", "Blend"],
+    antonyms: ["Separation", "Division", "Segregation"],
+    trick: "Amul + Game -> Amul is a successful 'amalgamation' of many small dairy farmers playing the business game.",
+    tone: "Formal/Business",
+    collocation: "Amalgamation of cultures",
+    intensitySpectrum: [
+      { word: "Mix", level: "Low" },
+      { word: "Blend", level: "Medium" },
+      { word: "Amalgamation", level: "High" }
+    ],
+    characterHook: "Power Rangers (Megazord)",
+    hookWhy: "The Megazord is an amalgamation of all the individual Zords joining together."
+  },
+  {
+    word: "Foil",
+    partOfSpeech: "Verb",
+    meaning: "Prevent (something considered wrong or undesirable) from succeeding.",
+    translation: "विफल करना / हरा देना",
+    sentence: "The police foiled the bank robbery attempt just in time.",
+    synonyms: ["Thwart", "Frustrate", "Counter", "Obstruct"],
+    antonyms: ["Assist", "Facilitate", "Aid", "Promote"],
+    trick: "Aluminum Foil -> We wrap food in foil to 'stop' (foil) it from rotting. Also, fencing swords are called foils.",
+    tone: "Dramatic",
+    collocation: "Foil a plot",
+    intensitySpectrum: [
+      { word: "Stop", level: "Low" },
+      { word: "Block", level: "Medium" },
+      { word: "Foil", level: "High" }
+    ],
+    characterHook: "Perry the Platypus",
+    hookWhy: "He always foils Dr. Doofenshmirtz's evil plans at the last minute."
+  },
+  {
+    word: "Stymie",
+    partOfSpeech: "Verb",
+    meaning: "Prevent or hinder the progress of.",
+    translation: "बाधा डालना / रोक लगाना",
+    sentence: "Lack of funds stymied the research project for months.",
+    synonyms: ["Impede", "Hinder", "Hamper", "Obstruct"],
+    antonyms: ["Assist", "Help", "Facilitate", "Advance"],
+    trick: "Stop + Me -> Sounds like 'Tie Me'. If you tie me up, you 'stymie' (stop) my progress.",
+    tone: "Negative (-)",
+    collocation: "Stymie progress",
+    intensitySpectrum: [
+      { word: "Slow down", level: "Low" },
+      { word: "Hinder", level: "Medium" },
+      { word: "Stymie", level: "High" }
+    ],
+    characterHook: "Gandalf",
+    hookWhy: "Standing on the bridge yelling 'You Shall Not Pass!'—he stymied the Balrog."
+  },
+  {
+    word: "Flout",
+    partOfSpeech: "Verb",
+    meaning: "Openly disregard (a rule, law or convention).",
+    translation: "उल्लंघन करना (खुलेआम)",
+    sentence: "Many motorcyclists flout the law by not wearing helmets.",
+    synonyms: ["Defy", "Disregard", "Scorn", "Violate"],
+    antonyms: ["Obey", "Observe", "Respect", "Abide by"],
+    trick: "Fly + Out -> To 'Fly' 'Out' of the rules and ignore them completely.",
+    tone: "Negative/Rebellious",
+    collocation: "Flout the rules",
+    intensitySpectrum: [
+      { word: "Ignore", level: "Low" },
+      { word: "Disobey", level: "Medium" },
+      { word: "Flout", level: "High" }
+    ],
+    characterHook: "Captain Jack Sparrow",
+    hookWhy: "He constantly flouts the laws of the British Navy and acts as he pleases."
+  },
+  {
+    word: "Contravene",
+    partOfSpeech: "Verb",
+    meaning: "Violate the prohibition or order of (a law, treaty, or code of conduct).",
+    translation: "अवहेलना करना / नियम तोड़ना",
+    sentence: "The company's actions contravened the Environmental Protection Act.",
+    synonyms: ["Violate", "Breach", "Infringe", "Transgress"],
+    antonyms: ["Uphold", "Comply", "Obey"],
+    trick: "Contra (Against) + Venue -> Going 'Against' the rules of the 'Venue'.",
+    tone: "Formal/Legal",
+    collocation: "Contravene the law",
+    intensitySpectrum: [
+      { word: "Break", level: "Low" },
+      { word: "Violate", level: "Medium" },
+      { word: "Contravene", level: "High" }
+    ],
+    characterHook: "Antigone (Greek Mythology)",
+    hookWhy: "She famously contravened the King's order to bury her brother."
+  },
+  {
+    word: "Impecunious",
+    partOfSpeech: "Adjective",
+    meaning: "Having little or no money.",
+    translation: "निर्धन / गरीब",
+    sentence: "As an impecunious student, he relied on instant noodles for dinner.",
+    synonyms: ["Penniless", "Indigent", "Insolvent", "Poor"],
+    antonyms: ["Wealthy", "Affluent", "Rich", "Prosperous"],
+    trick: "Im (Not) + Pecunia (Money related) -> No money. (Think: 'Pack' is empty).",
+    tone: "Formal",
+    collocation: "Impecunious student",
+    intensitySpectrum: [
+      { word: "Broke", level: "Low" },
+      { word: "Poor", level: "Medium" },
+      { word: "Impecunious", level: "High" }
+    ],
+    characterHook: "Peter Parker (Spider-Man)",
+    hookWhy: "Despite being a superhero, he is famously impecunious and struggles to pay rent."
+  },
+  {
+    word: "Destitute",
+    partOfSpeech: "Adjective",
+    meaning: "Without the basic necessities of life.",
+    translation: "निराश्रित / बेसहारा",
+    sentence: "The floods left thousands of villagers destitute and homeless.",
+    synonyms: ["Penniless", "Impoverished", "Indigent", "Needy"],
+    antonyms: ["Rich", "Prosperous", "Secure"],
+    trick: "Dust + Statue -> Standing like a 'Statue' covered in 'Dust' because you have no home or money.",
+    tone: "Serious/Tragic",
+    collocation: "Left destitute",
+    intensitySpectrum: [
+      { word: "Needy", level: "Low" },
+      { word: "Poor", level: "Medium" },
+      { word: "Destitute", level: "High" }
+    ],
+    characterHook: "The Little Match Girl",
+    hookWhy: "She froze in the cold because she was completely destitute."
+  },
+  {
+    word: "Threadbare",
+    partOfSpeech: "Adjective",
+    meaning: "(of cloth, clothing, or furniture) becoming thin and tattered with age.",
+    translation: "घिसा-पिटा / जर्जर",
+    sentence: "He wore a threadbare coat that had seen better days.",
+    synonyms: ["Worn", "Tattered", "Ragged", "Shabby"],
+    antonyms: ["New", "Pristine", "Luxurious"],
+    trick: "Thread + Bare -> The cloth is so old that the 'threads' are 'bare' and visible.",
+    tone: "Descriptive/Negative",
+    collocation: "Threadbare carpet",
+    intensitySpectrum: [
+      { word: "Old", level: "Low" },
+      { word: "Worn out", level: "Medium" },
+      { word: "Threadbare", level: "High" }
+    ],
+    characterHook: "Remus Lupin (Harry Potter)",
+    hookWhy: "His robes are always described as threadbare, reflecting his poverty."
+  },
+  {
+    word: "Pauperized",
+    partOfSpeech: "Adjective",
+    meaning: "Made poor; reduced to beggary.",
+    translation: "कंगाल बना दिया गया",
+    sentence: "The war pauperized the once-wealthy nation.",
+    synonyms: ["Impoverished", "Bankrupted", "Ruined"],
+    antonyms: ["Enriched", "Prosperous"],
+    trick: "Paper -> Reducing someone to selling waste 'paper' because they are now 'pauperized'.",
+    tone: "Serious",
+    collocation: "Pauperized population",
+    intensitySpectrum: [
+      { word: "Poorer", level: "Low" },
+      { word: "Impoverished", level: "Medium" },
+      { word: "Pauperized", level: "High" }
+    ],
+    characterHook: "The Prince and the Pauper",
+    hookWhy: "The story contrasts a royal with a pauper (someone who is pauperized)."
+  },
+  {
+    word: "Penurious",
+    partOfSpeech: "Adjective",
+    meaning: "Extremely poor; poverty-stricken. (Can also mean stingy).",
+    translation: "दरिद्र / कंजूस",
+    sentence: "His penurious childhood made him very careful with money as an adult.",
+    synonyms: ["Destitute", "Indigent", "Parsimonious", "Miserly"],
+    antonyms: ["Wealthy", "Generous", "Lavish"],
+    trick: "Penny -> Someone who has to count every single 'Penny' to survive.",
+    tone: "Formal/Negative",
+    collocation: "Penurious existence",
+    intensitySpectrum: [
+      { word: "Thrifty", level: "Low" },
+      { word: "Stingy/Poor", level: "Medium" },
+      { word: "Penurious", level: "High" }
+    ],
+    characterHook: "Charlie Bucket's Family",
+    hookWhy: "They lived a penurious life, sharing cabbage soup and sleeping in one bed."
+  },
+  {
+    word: "Languish",
+    partOfSpeech: "Verb",
+    meaning: "Lose or lack vitality; grow weak or feeble. (Often used for being stuck in a bad place).",
+    translation: "मुरझाना / पड़े रहना (दुख में)",
+    sentence: "The innocent man languished in prison for ten years before being proven innocent.",
+    synonyms: ["Weaken", "Deteriorate", "Wither", "Rot"],
+    antonyms: ["Thrive", "Flourish", "Prosper"],
+    trick: "Anguish -> Lying in 'anguish' (mental pain) causes you to 'languish' (weaken).",
+    tone: "Sad/Serious",
+    collocation: "Languish in jail",
+    intensitySpectrum: [
+      { word: "Wait", level: "Low" },
+      { word: "Suffer", level: "Medium" },
+      { word: "Languish", level: "High" }
+    ],
+    characterHook: "Rapunzel",
+    hookWhy: "She languished in the tower for years waiting for her life to begin."
+  },
+  {
+    word: "Reinvigorate",
+    partOfSpeech: "Verb",
+    meaning: "Give new energy or strength to.",
+    translation: "नई जान डालना / पुनर्जीवित करना",
+    sentence: "A short nap can reinvigorate you for the rest of the workday.",
+    synonyms: ["Revitalize", "Rejuvenate", "Refresh", "Revive"],
+    antonyms: ["Exhaust", "Drain", "Debilitate"],
+    trick: "Re + Vigor -> 'Vigor' means energy. To add energy 'again' (Re).",
+    tone: "Positive (+)",
+    collocation: "Reinvigorate the economy",
+    intensitySpectrum: [
+      { word: "Refresh", level: "Low" },
+      { word: "Revive", level: "Medium" },
+      { word: "Reinvigorate", level: "High" }
+    ],
+    characterHook: "Popeye",
+    hookWhy: "Eating spinach immediately reinvigorates him to fight Bluto."
+  },
+  {
+    word: "Scuttle",
+    partOfSpeech: "Verb",
+    meaning: "1. Run hurriedly with short quick steps. 2. Deliberately cause a scheme or plan to fail.",
+    translation: "जल्दी में दौड़ना / योजना पर पानी फेरना",
+    sentence: "The sudden heavy rain scuttled our plans for a weekend picnic.",
+    synonyms: ["Scurry", "Scramble", "Dash", "Thwart", "Sabotage"],
+    antonyms: ["Stroll", "Amble", "Facilitate", "Aid"],
+    trick: "Scooter -> When strict dad arrives on his 'Scooter', the naughty kids 'scuttle' away to their rooms.",
+    tone: "Neutral (0)",
+    collocation: "Scuttle a plan",
+    intensitySpectrum: [
+      { word: "Run", level: "Low" },
+      { word: "Scurry", level: "Medium" },
+      { word: "Scuttle", level: "High" }
+    ],
+    characterHook: "Scrat (Ice Age)",
+    hookWhy: "He is always scuttling frantically after his acorn, and his clumsiness often scuttles (ruins) the entire landscape."
   }
 ];
