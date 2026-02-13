@@ -1495,7 +1495,7 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     antonyms: ["New", "Pristine", "Luxurious"],
     trick: "Thread + Bare -> The cloth is so old that the 'threads' are 'bare' and visible.",
     tone: "Descriptive/Negative",
-    collocation: "Threadbare carpet",
+    collocation: "Threadbare hair",
     intensitySpectrum: [
       { word: "Old", level: "Low" },
       { word: "Worn out", level: "Medium" },
@@ -1598,5 +1598,518 @@ export const STATIC_NOTEBOOK_DATA_2: WordAnalysis[] = [
     ],
     characterHook: "Scrat (Ice Age)",
     hookWhy: "He is always scuttling frantically after his acorn, and his clumsiness often scuttles (ruins) the entire landscape."
+  },
+  {
+    word: "Fraught",
+    partOfSpeech: "Adjective",
+    meaning: "(of a situation or course of action) filled with or destined to result in (something undesirable); causing or affected by great anxiety or stress.",
+    translation: "भरा हुआ / तनावपूर्ण",
+    sentence: "The journey through the dense jungle was fraught with danger.",
+    synonyms: ["Filled", "Replete", "Anxious", "Stressed"],
+    antonyms: ["Empty", "Calm", "Tranquil", "Peaceful"],
+    trick: "Fraud + Caught -> When a 'Fraud' is 'Caught', the situation becomes very fraught (tense).",
+    tone: "Negative (-)",
+    collocation: "Fraught with danger, Fraught situation, Fraught with difficulties",
+    intensitySpectrum: [
+      { word: "Tense", level: "Low" },
+      { word: "Anxious", level: "Medium" },
+      { word: "Fraught", level: "High" }
+    ],
+    characterHook: "Frodo Baggins (Lord of the Rings)",
+    hookWhy: "His journey to Mount Doom was fraught with constant peril and anxiety."
+  },
+  {
+    word: "Perpetuate",
+    partOfSpeech: "Verb",
+    meaning: "Make (something, typically an undesirable situation or an unfounded belief) continue indefinitely.",
+    translation: "बनाए रखना / निरंतर करना",
+    sentence: "If you do not correct him, you will only perpetuate his bad behavior.",
+    synonyms: ["Maintain", "Preserve", "Sustain", "Continue"],
+    antonyms: ["End", "Stop", "Halt", "Prevent"],
+    trick: "Per (Every) + Pet + Eat -> If you let your 'Pet' 'Eat' 'Every' time it cries, you perpetuate a bad habit.",
+    tone: "Negative (-)",
+    collocation: "Perpetuate a myth, Perpetuate inequality, Perpetuate a cycle",
+    intensitySpectrum: [
+      { word: "Continue", level: "Low" },
+      { word: "Maintain", level: "Medium" },
+      { word: "Perpetuate", level: "High" }
+    ],
+    characterHook: "Emperor Palpatine (Star Wars)",
+    hookWhy: "He sought to perpetuate the rule of the Sith indefinitely."
+  },
+  {
+    word: "Esurient",
+    partOfSpeech: "Adjective",
+    meaning: "Hungry or greedy.",
+    translation: "भुक्खड़ / लालची",
+    sentence: "The esurient investors grabbed all the available shares in the new startup.",
+    synonyms: ["Ravenous", "Starving", "Gluttonous", "Voracious", "Greedy"],
+    antonyms: ["Sated", "Full", "Satisfied", "Generous"],
+    trick: "E (He) + Surient (Sounds like Restaurant) -> He runs to the 'Restaurant' because he is extremely esurient (hungry/greedy).",
+    tone: "Negative (-)",
+    collocation: "Esurient appetite, Esurient gaze, Esurient corporations",
+    intensitySpectrum: [
+      { word: "Hungry", level: "Low" },
+      { word: "Ravenous", level: "Medium" },
+      { word: "Esurient", level: "High" }
+    ],
+    characterHook: "Obelix (Asterix & Obelix)",
+    hookWhy: "He has an esurient appetite for wild boar and is almost always hungry."
+  },
+  {
+    word: "Ramification",
+    partOfSpeech: "Noun",
+    meaning: "A consequence of an action or event, especially when complex or unwelcome.",
+    translation: "परिणाम / जटिल नतीजा",
+    sentence: "Have you considered all the legal ramifications of signing this contract?",
+    synonyms: ["Consequence", "Result", "Aftermath", "Outcome", "Effect"],
+    antonyms: ["Cause", "Origin", "Source", "Inception"],
+    trick: "Ram (Lord Ram) + Fication (Vacation) -> Lord Ram going on a 14-year 'vacation' (exile) had massive ramifications for Ayodhya.",
+    tone: "Neutral (0)",
+    collocation: "Legal ramifications, Political ramifications, Severe ramifications",
+    intensitySpectrum: [
+      { word: "Result", level: "Low" },
+      { word: "Consequence", level: "Medium" },
+      { word: "Ramification", level: "High" }
+    ],
+    characterHook: "The Butterfly Effect (Time Travel Trope)",
+    hookWhy: "Stepping on a single bug in the past has massive, unpredictable ramifications on the future."
+  },
+  {
+    word: "Internecine",
+    partOfSpeech: "Adjective",
+    meaning: "Destructive to both sides in a conflict; relating to conflict within a group or organization.",
+    translation: "परस्पर विनाशकारी / आपसी झगड़ा",
+    sentence: "The political party tore itself apart during the internecine struggle for leadership.",
+    synonyms: ["Mutually destructive", "Deadly", "Ruinous", "Bloody", "Internal"],
+    antonyms: ["Peaceful", "Harmonious", "Cooperative"],
+    trick: "Inter (Between) + Nec (Neck) -> Cutting each other's 'Necks' from the 'Inside' (Inter), destroying both sides.",
+    tone: "Negative (-)",
+    collocation: "Internecine warfare, Internecine conflict, Internecine struggle",
+    intensitySpectrum: [
+      { word: "Internal", level: "Low" },
+      { word: "Damaging", level: "Medium" },
+      { word: "Internecine", level: "High" }
+    ],
+    characterHook: "The Targaryen Civil War (House of the Dragon)",
+    hookWhy: "The 'Dance of the Dragons' was a brutal internecine war that nearly destroyed their own family from within."
+  },
+  {
+    word: "Fratricidal",
+    partOfSpeech: "Adjective",
+    meaning: "Relating to or denoting conflict within a single family or organization; the killing of one's brother or sister.",
+    translation: "भ्रातृघाती / भाई की हत्या से संबंधित",
+    sentence: "The country was devastated by a long, fratricidal civil war.",
+    synonyms: ["Murderous", "Internecine", "Kin-killing"],
+    antonyms: ["Peaceful", "Fraternal"],
+    trick: "Fratri (Brother) + Cide (Kill) -> Suicide is killing self, Fratricide is killing a brother.",
+    tone: "Negative (-)",
+    collocation: "Fratricidal war, Fratricidal conflict, Fratricidal bloodshed",
+    intensitySpectrum: [
+      { word: "Unfriendly", level: "Low" },
+      { word: "Hostile", level: "Medium" },
+      { word: "Fratricidal", level: "High" }
+    ],
+    characterHook: "Bhallaladeva (Baahubali)",
+    hookWhy: "His intense jealousy led to a fratricidal conflict to eliminate his brother, Amarendra Baahubali."
+  },
+  {
+    word: "Bloviate",
+    partOfSpeech: "Verb",
+    meaning: "Talk at length, especially in an inflated or empty way.",
+    translation: "बड़बोलापन / लंबी-चौड़ी बात करना",
+    sentence: "Politicians often bloviate for hours without actually saying anything important.",
+    synonyms: ["Rant", "Declaim", "Bluster", "Orate"],
+    antonyms: ["Be quiet", "Summarize", "Condense"],
+    trick: "Blow + Air -> Blowing hot air from the mouth; talking nonsense pompously.",
+    tone: "Negative (-)",
+    collocation: "Bloviate about politics, Bloviate on television",
+    intensitySpectrum: [
+      { word: "Talk", level: "Low" },
+      { word: "Lecture", level: "Medium" },
+      { word: "Bloviate", level: "High" }
+    ],
+    characterHook: "Gilderoy Lockhart (Harry Potter)",
+    hookWhy: "He would bloviate endlessly about his fake achievements."
+  },
+  {
+    word: "Orate",
+    partOfSpeech: "Verb",
+    meaning: "Make a speech, especially pompously or at length.",
+    translation: "भाषण देना",
+    sentence: "He loves to stand on the stage and orate about his philosophy of life.",
+    synonyms: ["Speak", "Declaim", "Preach", "Sermonize"],
+    antonyms: ["Listen", "Mumble"],
+    trick: "Oral + Rate -> Giving an 'Oral' speech at a high 'Rate'.",
+    tone: "Neutral (0)",
+    collocation: "Orate to the crowd, Orate on a topic",
+    intensitySpectrum: [
+      { word: "Talk", level: "Low" },
+      { word: "Speak", level: "Medium" },
+      { word: "Orate", level: "High" }
+    ],
+    characterHook: "Mark Antony (Julius Caesar)",
+    hookWhy: "His famous 'Friends, Romans, Countrymen' speech is a classic example of orating."
+  },
+  {
+    word: "Usher",
+    partOfSpeech: "Verb",
+    meaning: "Show or guide (someone) somewhere.",
+    translation: "राह दिखाना / ले जाना",
+    sentence: "The host ushered the guests into the dining hall.",
+    synonyms: ["Guide", "Escort", "Lead", "Conduct"],
+    antonyms: ["Follow", "Trail", "Mislead"],
+    trick: "Push -> You don't 'Push' guests, you 'Usher' (guide) them gently.",
+    tone: "Positive (+)",
+    collocation: "Usher in a new era, Usher guests, Usher to seats",
+    intensitySpectrum: [
+      { word: "Point", level: "Low" },
+      { word: "Guide", level: "Medium" },
+      { word: "Usher", level: "High" }
+    ],
+    characterHook: "Cinema Hall Guy",
+    hookWhy: "The person with the torch who shows you your seat is literally called an Usher."
+  },
+  {
+    word: "Execrable",
+    partOfSpeech: "Adjective",
+    meaning: "Extremely bad or unpleasant.",
+    translation: "घिनौना / बहुत खराब",
+    sentence: "The food at that hotel was execrable; we couldn't even eat it.",
+    synonyms: ["Appalling", "Atrocious", "Abominable", "Disgusting"],
+    antonyms: ["Excellent", "Admirable", "Wonderful"],
+    trick: "Ex + Crab -> If your 'Ex' serves you a rotten 'Crab', the taste is execrable.",
+    tone: "Negative (-)",
+    collocation: "Execrable taste, Execrable crime, Execrable performance",
+    intensitySpectrum: [
+      { word: "Bad", level: "Low" },
+      { word: "Terrible", level: "Medium" },
+      { word: "Execrable", level: "High" }
+    ],
+    characterHook: "Vogon Poetry (Hitchhiker's Guide)",
+    hookWhy: "Described as the third worst poetry in the universe—truly execrable."
+  },
+  {
+    word: "Impugn",
+    partOfSpeech: "Verb",
+    meaning: "Dispute the truth, validity, or honesty of (a statement or motive); call into question.",
+    translation: "चुनौती देना / संदेह करना",
+    sentence: "Are you trying to impugn my integrity by accusing me of theft?",
+    synonyms: ["Challenge", "Question", "Dispute", "Attack"],
+    antonyms: ["Support", "Validate", "Uphold", "Endorse"],
+    trick: "Im (Not) + Punga (Fight/Hindi) -> Don't take a 'punga' (fight) by questioning my honesty.",
+    tone: "Negative (-)",
+    collocation: "Impugn character, Impugn motives, Impugn reputation",
+    intensitySpectrum: [
+      { word: "Doubt", level: "Low" },
+      { word: "Question", level: "Medium" },
+      { word: "Impugn", level: "High" }
+    ],
+    characterHook: "Phoenix Wright (Ace Attorney)",
+    hookWhy: "He shouts 'Objection!' to impugn the witness's false testimony."
+  },
+  {
+    word: "Emasculate",
+    partOfSpeech: "Verb",
+    meaning: "Deprive (a man) of his male role or identity; make weaker or less effective.",
+    translation: "पौरुषहीन करना / कमजोर करना",
+    sentence: "The strict laws have emasculated the power of the local police.",
+    synonyms: ["Weaken", "Enfeeble", "Debilitate", "Castrate"],
+    antonyms: ["Strengthen", "Empower", "Invigorate"],
+    trick: "E (Exit) + Masculine -> To take the 'masculine' power out of someone.",
+    tone: "Negative (-)",
+    collocation: "Emasculate the opposition, Feeling emasculated",
+    intensitySpectrum: [
+      { word: "Discourage", level: "Low" },
+      { word: "Weaken", level: "Medium" },
+      { word: "Emasculate", level: "High" }
+    ],
+    characterHook: "Theon Greyjoy (Game of Thrones)",
+    hookWhy: "He was literally and metaphorically emasculated by Ramsay Bolton, becoming 'Reek'."
+  },
+  {
+    word: "Lopsided",
+    partOfSpeech: "Adjective",
+    meaning: "With one side lower or smaller than the other.",
+    translation: "तिरछा / एकतरफा",
+    sentence: "The football match was a lopsided victory, with one team winning 10-0.",
+    synonyms: ["Uneven", "Unbalanced", "Asymmetrical", "Skewed"],
+    antonyms: ["Balanced", "Even", "Symmetrical"],
+    trick: "Laptop + Side -> If you keep your 'Laptop' on one 'Side' of your lap, your posture becomes lopsided.",
+    tone: "Neutral (0)",
+    collocation: "Lopsided grin, Lopsided victory, Lopsided deal",
+    intensitySpectrum: [
+      { word: "Uneven", level: "Low" },
+      { word: "Tilting", level: "Medium" },
+      { word: "Lopsided", level: "High" }
+    ],
+    characterHook: "The Hunchback of Notre Dame",
+    hookWhy: "Quasimodo's physical appearance and gait were lopsided."
+  },
+  {
+    word: "Calumniate",
+    partOfSpeech: "Verb",
+    meaning: "Make false and defamatory statements about (someone).",
+    translation: "कलंक लगाना / चुगली करना",
+    sentence: "The rivals tried to calumniate the candidate to ruin his chances in the election.",
+    synonyms: ["Slander", "Defame", "Malign", "Vilify"],
+    antonyms: ["Praise", "Acclaim", "Honor"],
+    trick: "Column + Hate -> Writing 'Hateful' lies in a newspaper 'Column' to ruin someone's image.",
+    tone: "Negative (-)",
+    collocation: "Calumniate a rival, Calumniate the innocent",
+    intensitySpectrum: [
+      { word: "Criticize", level: "Low" },
+      { word: "Slander", level: "Medium" },
+      { word: "Calumniate", level: "High" }
+    ],
+    characterHook: "Rita Skeeter (Harry Potter)",
+    hookWhy: "She used her Quick-Quotes Quill to calumniate Harry and Hermione in the Daily Prophet."
+  },
+  {
+    word: "Folly",
+    partOfSpeech: "Noun",
+    meaning: "Lack of good sense; foolishness.",
+    translation: "मूर्खता / नासमझी",
+    sentence: "It would be sheer folly to quit your job without having another one lined up.",
+    synonyms: ["Foolishness", "Stupidity", "Idiocy", "Imprudence"],
+    antonyms: ["Wisdom", "Prudence", "Sense"],
+    trick: "Fall -> Foolish people often 'Fall' into traps due to their 'Folly'.",
+    tone: "Negative (-)",
+    collocation: "Sheer folly, Act of folly, Human folly",
+    intensitySpectrum: [
+      { word: "Mistake", level: "Low" },
+      { word: "Silliness", level: "Medium" },
+      { word: "Folly", level: "High" }
+    ],
+    characterHook: "King Lear",
+    hookWhy: "His decision to banish his only honest daughter was an act of tragic folly."
+  },
+  {
+    word: "Redolent",
+    partOfSpeech: "Adjective",
+    meaning: "Strongly reminiscent or suggestive of (something). Also, fragrant.",
+    translation: "याद दिलाने वाला / सुगंधित",
+    sentence: "The room was redolent of old books and tobacco.",
+    synonyms: ["Reminiscent", "Suggestive", "Fragrant", "Aromatic"],
+    antonyms: ["Odorless", "Forgetful"],
+    trick: "Red + Rose + Scent -> A 'Red' rose has a 'Scent' that is redolent of romance.",
+    tone: "Positive (+)",
+    collocation: "Redolent of the past, Redolent with spice",
+    intensitySpectrum: [
+      { word: "Smelling", level: "Low" },
+      { word: "Suggestive", level: "Medium" },
+      { word: "Redolent", level: "High" }
+    ],
+    characterHook: "Perfume (Movie/Book)",
+    hookWhy: "The main character is obsessed with scents that are redolent of specific things."
+  },
+  {
+    word: "Crescendo",
+    partOfSpeech: "Noun",
+    meaning: "The loudest point reached in a gradually increasing sound.",
+    translation: "स्वरोत्कर्ष / धीरे-धीरे बढ़ती आवाज़",
+    sentence: "The applause rose to a crescendo as the winner walked onto the stage.",
+    synonyms: ["Climax", "Peak", "Apex", "Swell"],
+    antonyms: ["Decrease", "Fade", "Bottom"],
+    trick: "Crescent -> Like the 'Crescent' moon that grows bigger and brighter (louder).",
+    tone: "Neutral (0)",
+    collocation: "Reached a crescendo, Rising to a crescendo",
+    intensitySpectrum: [
+      { word: "Increase", level: "Low" },
+      { word: "Swell", level: "Medium" },
+      { word: "Crescendo", level: "High" }
+    ],
+    characterHook: "Hans Zimmer Soundtrack",
+    hookWhy: "His music always builds up slowly to a massive, epic crescendo."
+  },
+  {
+    word: "Suffused",
+    partOfSpeech: "Verb",
+    meaning: "Gradually spread through or over.",
+    translation: "छा जाना / भर जाना (रंग या भावना)",
+    sentence: "Her face was suffused with color when she realized her mistake.",
+    synonyms: ["Permeated", "Covered", "Imbued", "Saturated"],
+    antonyms: ["Empty", "Drain", "Clear"],
+    trick: "Surface + Fuse -> When a liquid hits the 'surface', it 'fuses' and spreads everywhere.",
+    tone: "Neutral (0)",
+    collocation: "Suffused with light, Suffused with happiness, Cheeks suffused",
+    intensitySpectrum: [
+      { word: "Spread", level: "Low" },
+      { word: "Cover", level: "Medium" },
+      { word: "Suffuse", level: "High" }
+    ],
+    characterHook: "Inside Out (Emotions)",
+    hookWhy: "When Riley feels Sadness, her memories are suffused with a blue color."
+  },
+  {
+    word: "Wistful",
+    partOfSpeech: "Adjective",
+    meaning: "Having or showing a feeling of vague or regretful longing.",
+    translation: "उदास / पुरानी यादों में खोया हुआ",
+    sentence: "He looked at the old photo with a wistful smile.",
+    synonyms: ["Nostalgic", "Yearning", "Longing", "Melancholy"],
+    antonyms: ["Cheerful", "Happy", "Content"],
+    trick: "Wish-ful -> Full of 'wishes' for the past that can't come true.",
+    tone: "Negative (-)",
+    collocation: "Wistful smile, Wistful glance, Wistful sigh",
+    intensitySpectrum: [
+      { word: "Thoughtful", level: "Low" },
+      { word: "Nostalgic", level: "Medium" },
+      { word: "Wistful", level: "High" }
+    ],
+    characterHook: "Severus Snape",
+    hookWhy: "His 'Always' line represents a wistful, lifelong longing for Lily Potter."
+  },
+  {
+    word: "Absolve",
+    partOfSpeech: "Verb",
+    meaning: "Declare (someone) free from guilt, obligation, or punishment.",
+    translation: "दोषमुक्त करना / पाप से मुक्त करना",
+    sentence: "The priest absolved the man of his sins after confession.",
+    synonyms: ["Exonerate", "Acquit", "Forgive", "Pardon"],
+    antonyms: ["Blame", "Condemn", "Convict", "Punish"],
+    trick: "Ab + Solve -> Now that the case is 'Solved', we can 'Absolve' (free) the innocent suspect.",
+    tone: "Positive (+)",
+    collocation: "Absolve from guilt, Absolve of sin, Absolve responsibility",
+    intensitySpectrum: [
+      { word: "Forgive", level: "Low" },
+      { word: "Pardon", level: "Medium" },
+      { word: "Absolve", level: "High" }
+    ],
+    characterHook: "Thanos (Endgame)",
+    hookWhy: "He believed his plan would save the universe, absolving him of the guilt of killing half of it."
+  },
+  {
+    word: "Supplant",
+    partOfSpeech: "Verb",
+    meaning: "Supersede and replace.",
+    translation: "स्थान लेना / हटा कर जगह लेना",
+    sentence: "DVDs were quickly supplanted by streaming services.",
+    synonyms: ["Replace", "Supersede", "Displace", "Oust"],
+    antonyms: ["Keep", "Retain", "Surrender"],
+    trick: "Plant -> Uproot one 'Plant' and put another in its place.",
+    tone: "Neutral (0)",
+    collocation: "Supplant the old, Technolgy supplants",
+    intensitySpectrum: [
+      { word: "Change", level: "Low" },
+      { word: "Replace", level: "Medium" },
+      { word: "Supplant", level: "High" }
+    ],
+    characterHook: "Scar (The Lion King)",
+    hookWhy: "He killed Mufasa to supplant him as the King of Pride Rock."
+  },
+  {
+    word: "Defenestrate",
+    partOfSpeech: "Verb",
+    meaning: "Throw (someone) out of a window.",
+    translation: "खिड़की से बाहर फेंकना",
+    sentence: "In a fit of rage, the villain threatened to defenestrate his henchman.",
+    synonyms: ["Eject", "Throw out", "Discard"],
+    antonyms: ["Welcome in", "Admit"],
+    trick: "Defence + Frustrate -> He was so 'Frustrated' by the 'Defence' that he threw him out the window.",
+    tone: "Negative (-)",
+    collocation: "Defenestrate the enemy, Act of defenestration",
+    intensitySpectrum: [
+      { word: "Push", level: "Low" },
+      { word: "Throw", level: "Medium" },
+      { word: "Defenestrate", level: "High" }
+    ],
+    characterHook: "Jaime Lannister",
+    hookWhy: "He famously defenestrated Bran Stark from the tower window ('The things I do for love')."
+  },
+  {
+    word: "Lull",
+    partOfSpeech: "Verb",
+    meaning: "Calm or send to sleep, typically with soothing sounds or movements.",
+    translation: "सुलना / शांत करना / ठहराव",
+    sentence: "The sound of the rain lulled the baby to sleep.",
+    synonyms: ["Soothe", "Calm", "Quieten", "Hush"],
+    antonyms: ["Agitate", "Disturb", "Awaken"],
+    trick: "Lullaby -> A 'Lullaby' is sung to 'Lull' a baby to sleep.",
+    tone: "Positive (+)",
+    collocation: "Lull to sleep, Lull in the storm, False sense of security",
+    intensitySpectrum: [
+      { word: "Quiet", level: "Low" },
+      { word: "Calm", level: "Medium" },
+      { word: "Lull", level: "High" }
+    ],
+    characterHook: "Jigglypuff",
+    hookWhy: "Her song instantly lulls everyone to sleep (so she can draw on their faces)."
+  },
+  {
+    word: "Grim",
+    partOfSpeech: "Adjective",
+    meaning: "Forbidding or uninviting; depressing or worrying.",
+    translation: "भयानक / विकट / कठोर",
+    sentence: "The doctor came out with a grim expression on his face.",
+    synonyms: ["Stern", "Gloomy", "Bleak", "Dreadful"],
+    antonyms: ["Cheerful", "Bright", "Pleasant"],
+    trick: "Grim Reaper -> The personification of death is 'Grim' (scary and serious).",
+    tone: "Negative (-)",
+    collocation: "Grim reality, Grim reaper, Grim future",
+    intensitySpectrum: [
+      { word: "Serious", level: "Low" },
+      { word: "Gloomy", level: "Medium" },
+      { word: "Grim", level: "High" }
+    ],
+    characterHook: "Batman",
+    hookWhy: "He is the 'Dark Knight' who maintains a grim demeanor to scare criminals."
+  },
+  {
+    word: "Cadaverous",
+    partOfSpeech: "Adjective",
+    meaning: "Resembling a corpse in being very pale, thin, or bony.",
+    translation: "शव जैसा / बहुत दुबला-पतला",
+    sentence: "After the long illness, he looked absolutely cadaverous.",
+    synonyms: ["Pale", "Gaunt", "Emaciated", "Ghastly"],
+    antonyms: ["Healthy", "Rosy", "Plump"],
+    trick: "Cadaver (Corpse) -> Looking like a 'Cadaver'.",
+    tone: "Negative (-)",
+    collocation: "Cadaverous appearance, Cadaverous face",
+    intensitySpectrum: [
+      { word: "Thin", level: "Low" },
+      { word: "Gaunt", level: "Medium" },
+      { word: "Cadaverous", level: "High" }
+    ],
+    characterHook: "Brook (One Piece)",
+    hookWhy: "He is literally a skeleton, the ultimate cadaverous figure."
+  },
+  {
+    word: "Surmise",
+    partOfSpeech: "Verb",
+    meaning: "Suppose that something is true without having evidence to confirm it.",
+    translation: "अनुमान लगाना / शंका करना",
+    sentence: "From his guilty expression, I surmised that he had broken the vase.",
+    synonyms: ["Guess", "Conjecture", "Suspect", "Deduce"],
+    antonyms: ["Know", "Verify", "Prove"],
+    trick: "Sir + Prize -> 'Sir', I guess (surmise) there is a 'Prize' in this box.",
+    tone: "Neutral (0)",
+    collocation: "Surmise the truth, Mere surmise",
+    intensitySpectrum: [
+      { word: "Guess", level: "Low" },
+      { word: "Suspect", level: "Medium" },
+      { word: "Surmise", level: "High" }
+    ],
+    characterHook: "Sherlock Holmes",
+    hookWhy: "He can surmise a person's entire history just by looking at their shoes."
+  },
+  {
+    word: "Elusive",
+    partOfSpeech: "Adjective",
+    meaning: "Difficult to find, catch, or achieve.",
+    translation: "हाथ न आने वाला / पकड़ से बाहर",
+    sentence: "Success remained elusive for him despite years of hard work.",
+    synonyms: ["Slippery", "Evasive", "Fugitive", "Intangible"],
+    antonyms: ["Accessible", "Available", "Stable"],
+    trick: "Illusion -> Something that is an 'Illusion' is hard to catch, hence 'Elusive'.",
+    tone: "Neutral (0)",
+    collocation: "Elusive criminal, Elusive goal, Elusive memory",
+    intensitySpectrum: [
+      { word: "Hard to find", level: "Low" },
+      { word: "Tricky", level: "Medium" },
+      { word: "Elusive", level: "High" }
+    ],
+    characterHook: "The Golden Snitch (Harry Potter)",
+    hookWhy: "It is small, fast, and incredibly elusive for the Seeker to catch."
   }
 ];
