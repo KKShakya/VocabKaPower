@@ -67,6 +67,7 @@ export enum AppTab {
   READING = 'reading',
   SILSILA = 'silsila',
   PRACTICE = 'practice',
+  DESCRIPTIVE = 'descriptive',
 }
 
 export enum SilsilaCategory {
@@ -88,4 +89,38 @@ export interface GrammarItem {
   isCorrect: boolean;
   explanation: string; // Why it is correct/incorrect
   topic: string; // e.g. "Redundancy", "Collocation"
+}
+
+// --- DESCRIPTIVE TEST TYPES ---
+
+export type DescriptiveTaskType = 'essay' | 'precis' | 'letter';
+
+export enum ExamCategory {
+  NABARD = 'NABARD',
+  RBI = 'RBI',
+  SBI = 'SBI',
+  IBPS = 'IBPS',
+  SSC = 'SSC'
+}
+
+export interface DescriptiveTask {
+  id: string;
+  type: DescriptiveTaskType;
+  title: string;
+  prompt: string;
+  wordLimit: { min: number; max: number };
+  passage?: string; // For Precis
+}
+
+export interface DescriptiveEvaluation {
+  score: number; // Out of 100
+  feedback: string;
+  strengths: string[];
+  weaknesses: string[];
+  grammarErrors: { error: string; correction: string; explanation: string }[];
+  wordCount: number;
+  structureScore: number; // 0-10
+  contentScore: number; // 0-10
+  grammarScore: number; // 0-10
+  modelAnswer: string; // How a pro would have written it
 }

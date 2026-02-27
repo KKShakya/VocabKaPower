@@ -4,12 +4,13 @@ import { WordExplorer } from './components/WordExplorer';
 import { ReadingComprehension } from './components/ReadingComprehension';
 import { VocabSilsila } from './components/VocabSilsila';
 import { Practice } from './components/Practice';
+import DescriptiveTest from './components/DescriptiveTest';
 import { Notebook } from './components/Notebook';
 import { Notebook2 } from './components/Notebook2';
 import { SettingsModal } from './components/SettingsModal';
 import { initStorage } from './services/storageService';
 import { AppTab } from './types';
-import { Compass, Book, Layers, Zap, Bookmark, Scroll } from 'lucide-react';
+import { Compass, Book, Layers, Zap, Bookmark, Scroll, PenTool } from 'lucide-react';
 
 const App: React.FC = () => {
   const [currentTab, setCurrentTab] = useState<AppTab>(AppTab.EXPLORER);
@@ -42,6 +43,7 @@ const App: React.FC = () => {
       case AppTab.READING: return <ReadingComprehension key={refreshTrigger} />;
       case AppTab.SILSILA: return <VocabSilsila key={refreshTrigger} />;
       case AppTab.PRACTICE: return <Practice key={refreshTrigger} />;
+      case AppTab.DESCRIPTIVE: return <DescriptiveTest key={refreshTrigger} />;
       default: return <WordExplorer key={refreshTrigger} />;
     }
   };
@@ -53,6 +55,7 @@ const App: React.FC = () => {
     { id: AppTab.NOTEBOOK2, label: 'NB 2', icon: Scroll },
     { id: AppTab.READING, label: 'Reading', icon: Book },
     { id: AppTab.PRACTICE, label: 'Practice', icon: Zap },
+    { id: AppTab.DESCRIPTIVE, label: 'Descriptive', icon: PenTool },
   ];
 
   return (
